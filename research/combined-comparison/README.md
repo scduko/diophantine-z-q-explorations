@@ -1,4 +1,4 @@
-# Combined comparison proposal: 1,267 variables with ordinary coefficients
+# Combined comparison proposals with ordinary coefficients
 
 **Status: additive research proposal; independent mathematical review pending.**
 This combines the Version 5 source at upstream commit
@@ -7,7 +7,17 @@ exponent-19 height theorem. The exact finite artifacts pass the upstream
 independent algebraic checker. Their arithmetic interpretation is explained
 in [ARITHMETIC.md](ARITHMETIC.md), subject to the inherited theorem inputs.
 
-## Results
+## Further refinement
+
+The new candidate reaches **1,180 variables**, **1,137 quadratic residuals**, and
+**44,048 monomials**, with maximum coefficient bit length **3,247**.
+[REFINEMENTS.md](REFINEMENTS.md) gives the quotient-domain proofs and the
+separate doubled-target arithmetic argument. Independent algebraic replay passes;
+independent mathematical review remains pending. The original package below is preserved.
+Run `python3 -B research/combined-comparison/check_refined_artifacts.py` to replay
+the new artifacts, pinned in [REFINED_ARTIFACTS.json](REFINED_ARTIFACTS.json).
+
+## Original results
 
 All counts include the input coordinate.
 

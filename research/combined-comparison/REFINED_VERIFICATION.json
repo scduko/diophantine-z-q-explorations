@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "coordinates": 1180,
+  "residuals": 1137,
+  "monomials": 44048,
+  "degree": 4,
+  "primitiveContent": 1,
+  "maximumCoefficientBits": 3247,
+  "chainProjectionCheck": "passed",
+  "independentChecker": "passed_exact_algebra_checks",
+  "scope": "Exact algebraic and chain checks; arithmetic proof review pending",
+  "python": "3.12.14",
+  "node": "v24.22.1",
+  "command": "python3 -B research/combined-comparison/check_refined_artifacts.py",
+  "polynomialSha256": "5738ed088bc405cf6ad952f29ee241b395fdd83fd789e49b7f842af233403e74"
+}

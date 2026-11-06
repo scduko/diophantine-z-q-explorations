@@ -1,0 +1,65 @@
+{
+  "baseCommit": "bf2fe53459c0cceff74566ea9b966eca54d11ca5",
+  "variants": {
+    "detector_fusions": {
+      "coordinates": 1240,
+      "compiledCoordinatesBeforeFreeOmission": 1240,
+      "residuals": 1197,
+      "activeCoordinates": 1240,
+      "ordinaryCoordinateMonomials": 45493,
+      "parameterCoefficientTerms": 45493,
+      "degree": 4,
+      "maxSPower": 0,
+      "integerCoefficients": true,
+      "sIndependentCoefficientGcd": 1,
+      "maximumCoefficientBits": 4059,
+      "ordinaryExportSha256": "a4711be39f18eed50afcbba58424b373c0a99de2e15c7c8a814563bafd3a54d3",
+      "builderSha256": "a51373e08c22f78763e790736cdaa1c83ea54917aa2f259f8222f8cb86ef02d9"
+    },
+    "delta_quotient": {
+      "coordinates": 1222,
+      "compiledCoordinatesBeforeFreeOmission": 1222,
+      "residuals": 1179,
+      "activeCoordinates": 1222,
+      "ordinaryCoordinateMonomials": 45559,
+      "parameterCoefficientTerms": 45559,
+      "degree": 4,
+      "maxSPower": 0,
+      "integerCoefficients": true,
+      "sIndependentCoefficientGcd": 1,
+      "maximumCoefficientBits": 4019,
+      "ordinaryExportSha256": "05c36343e6f393e85af1b8f76b68c9d2d0ef210276b14f775132e45f51a1301b",
+      "builderSha256": "59372d93d3c4954ed17c3dda65c42d83bbf86a06f5f1a17b52e44d1c05d8f0db"
+    },
+    "scale_quotient": {
+      "coordinates": 1204,
+      "compiledCoordinatesBeforeFreeOmission": 1204,
+      "residuals": 1161,
+      "activeCoordinates": 1204,
+      "ordinaryCoordinateMonomials": 46020,
+      "parameterCoefficientTerms": 46020,
+      "degree": 4,
+      "maxSPower": 0,
+      "integerCoefficients": true,
+      "sIndependentCoefficientGcd": 1,
+      "maximumCoefficientBits": 3247,
+      "ordinaryExportSha256": "f12eef5ca75ab770be83b17a81d6f6c7d8ca7f350b7e998ba26651a2d9c1f6f7",
+      "builderSha256": "806a2975e05e96598c22dfe76856be0da169017bec3baa2a578731a68f33fffc"
+    },
+    "target_two": {
+      "coordinates": 1180,
+      "compiledCoordinatesBeforeFreeOmission": 1180,
+      "residuals": 1137,
+      "activeCoordinates": 1180,
+      "ordinaryCoordinateMonomials": 44048,
+      "parameterCoefficientTerms": 44048,
+      "degree": 4,
+      "maxSPower": 0,
+      "integerCoefficients": true,
+      "sIndependentCoefficientGcd": 1,
+      "maximumCoefficientBits": 3247,
+      "ordinaryExportSha256": "5738ed088bc405cf6ad952f29ee241b395fdd83fd789e49b7f842af233403e74",
+      "builderSha256": "a1257b117781783bcbec18d7641abf4f7588669b14468ec5f4505aa5bb96ce3c"
+    }
+  }
+}
