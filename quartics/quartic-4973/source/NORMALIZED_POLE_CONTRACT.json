@@ -1,0 +1,211 @@
+{
+  "format": "normalized-lucas-conic-pole-composition-v1",
+  "status": "Arithmetic composition and exact source interface reviewed; merged source and replay pending",
+  "source_pin_authorized": false,
+  "source_family": "H19-root37-joint-chart-normalized-lucas-conic-pole-anchor4-v1",
+  "source_id_prefix": "joint-chart-normalized-lucas-conic-pole-anchor4-k40-q12-a25-h19-s32-",
+  "composition_note_sha256": "f10ca2fe7efc52bdccf2b67adf3277e8a26dd79c73dd339a89ad9a38fe6bc258",
+  "base_contracts": {
+    "NORMALIZED_LUCAS_CONTRACT_ADDON.json": "af365079cce1bd502dc2d683fc1f76fa2a2ca85c396c22be888dbd9fb3237cb0"
+  },
+  "provenance_pole_contracts": {
+    "CONIC_POLE_CONTRACT_ADDON.json": "44bcef6a37f57a847f963313b146614b56ecf3fdb101e5443c2c65321494e4a4",
+    "LOCAL_LUCAS_POLE_CONTRACT.json": "cd7e4039c533eed79afd75fea9ba6abb53f10b7a26ea990b195b9f2c15badd8b"
+  },
+  "contract_precedence": "The normalized addon governs parent comparators and root. This composition governs source identity, 13/6/10 batch registry and the pole boundary. Provenance pole contracts supply only the explicitly reused pole equations and mathematical premises; their old source identities, batch registries, unnormalized comparator interpretation and parent selection are not inherited.",
+  "parent_normalized_packet_manifest_sha256": "47c72e39f589523d92041c6f5af26935b9efb126d0daeb3513b142c985876892",
+  "parent_pin_record_sha256": "34f06c9d06698fba1fa9549be5470a10535641fa05aabc370d6b33e67316f695",
+  "exact_override_scope": {
+    "exclusions_superseded": [
+      "normalized addon's prohibition of private-conic parity reuse",
+      "local-Lucas pole addon's prohibition of normalized residual F/C_s^2"
+    ],
+    "direct_byte_pin_comparisons_replaced": [
+      "modules/q_conic13.json",
+      "modules/q_conic6.json",
+      "modules/q_conic10.json"
+    ],
+    "replacement_check": "Restore only the two old tail coordinates/rows and old parity call; run the complete pinned conic checker; then compare the entire proposed batch against the literal permitted tail delta",
+    "new_module": "q_conicpole",
+    "all_other_exclusions_and_requirements_remain": true
+  },
+  "preserved_file_pins": {
+    "modules/Z_definition.json": "5e96bf1b0de4e1694dcc7ff21a9a7b69b5e2cc61295c2fc2816696092c5dacde",
+    "modules/q_anchor.json": "3edef11d7871866f6224bf9a6e4a6f2d99d5c8f535eef2d3c2c57f98a33f0f6f",
+    "modules/q_compare_beta.json": "75189120b018c23bbf1573de56687103160872aca41d3d1d35138abb7b05203e",
+    "modules/q_height_batch.json": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761",
+    "modules/q_primeparity.json": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a",
+    "shared.json": "f879f79eb7e8072176c8204df4c07a0097a219b7c2452c7c09bd52ca04abe83e"
+  },
+  "reference_old_batch_pins": {
+    "modules/q_conic13.json": "dc243128e59f9ef166e2b08d289a115ada1f8bd06685f0730040e8ef2a3a3f78",
+    "modules/q_conic6.json": "94cef3226b565d3b1d42dc719dd6114310cb6b306e337c911b4861156e0683f9",
+    "modules/q_conic10.json": "52295a3dc1c694ea879adf0a041f5c94db4fe4482e89bcfe4c2314efe18813c6"
+  },
+  "normalized_comparators": {
+    "modules": [
+      "q_compare4",
+      "q_compare_lucas"
+    ],
+    "check": "Exact independent normalized comparator reconstruction; no unnormalized comparator substitution",
+    "later_parent_artifact_binding": "When the normalized source artifact exists, record its source ID, source/audit/map digests and both unchanged comparator file hashes; no such output is asserted by this contract"
+  },
+  "checker_composition": {
+    "entry_point": "audit_conic_pole.check_modules(core, modules, original_six_modules, normalized_audit, conic_audit, anchor_audit)",
+    "audit_conic_pole.py": "35b774437705759c2309aa905cf8f2d1fd91c19669dc35b1489b8a466db36bff",
+    "audit_normalized_lucas.py": "105f4cc79a85649041e95be4a9059ed93e1d296fb77e0937e612f54aa801bb33",
+    "check_lucas_batch.py": "446ff0fb520d3922d1a3c96455dd4fade07206dbed5357dcc38700ce6eb2e0ce",
+    "check_conic_pole.py": "d0e11d3fa4405eff7012bee7e112f74a6eda528382ebb14ca5433982fa4e4933",
+    "check_anchor_four.py": "0e5f93f61114f9bd6589dc950271938b5d630820a920565043f63ab749081e30",
+    "core_audit.py": "0da0dfef661211fd4ada262050895ef24ca54dfdc1aca4aa4bec4e69c1dcbce8",
+    "conic_pole_kernel.py": "d9bd4564618f79a4b04f7c4d74f3a119715597fe64b0cf3a0f415e92c21d771c",
+    "no_checker_imports_producer": true,
+    "restoration_is_only_a_checked_view": "Actual new pole module, calls and full batch delta must be checked independently; restoration cannot replace those checks"
+  },
+  "unchanged_parameters": {
+    "height_exponent": 19,
+    "high_precision": 40,
+    "beta_precision": 12,
+    "anchor_squarings": 25,
+    "scalar_orders": [
+      1,
+      1,
+      1,
+      1,
+      32,
+      32
+    ],
+    "mode_counts": {
+      "q_compare4": 13,
+      "q_compare_beta": 8,
+      "q_compare_lucas": 16
+    },
+    "comparison_free": {
+      "q_compare4": 58,
+      "q_compare_beta": 28,
+      "q_compare_lucas": 47
+    },
+    "theta_error_raw_slots": {
+      "q_compare4": [
+        25,
+        26,
+        27
+      ],
+      "q_compare_beta": [
+        13,
+        14,
+        15
+      ],
+      "q_compare_lucas": [
+        20,
+        21,
+        22
+      ]
+    },
+    "field_count": 377,
+    "point_difference_sites": 145,
+    "private_conics": 37
+  },
+  "batch_registry": {
+    "q_conic13": {
+      "instances": 13,
+      "orders": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        12,
+        40,
+        40,
+        12,
+        40,
+        40,
+        40
+      ]
+    },
+    "q_conic6": {
+      "instances": 8,
+      "orders": [
+        1,
+        1,
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    "q_conic10": {
+      "instances": 16,
+      "orders": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        40,
+        40,
+        40,
+        40,
+        40
+      ]
+    }
+  },
+  "pole": {
+    "module": "q_conicpole",
+    "free": 3,
+    "locals": 12,
+    "rows": 10,
+    "calls": [],
+    "instances": 37,
+    "inputs": [
+      "same raw r",
+      "same batch private theta",
+      "same batch upper norm root W"
+    ],
+    "batch_call_slots": "[0, conic_private.theta, norm_root]",
+    "original_parity_instances": 1,
+    "original_parity_only_caller": "q_height_batch",
+    "excluded_from_old_parity_rewrites": "all q_conicpole instances"
+  },
+  "coefficient_independence": {
+    "required": "All rational coefficients of every tested field, including normalized E=F/C_s^2, are fixed before every private conic is chosen",
+    "source_check": "Exact comparator expressions, forward-only module boundaries, fresh per-occurrence allocation and complete flattening/map check exclude private theta,s_c,S_c or pole-coordinate capture through aliases or extra constraints",
+    "allowed": "Dependence on already fixed root, contact, elliptic and G data",
+    "not_allowed": "Any denominator or coefficient depending on a private conic or pole coordinate"
+  },
+  "units_and_zero_branches": {
+    "soundness": "No new local unit assumption: pole maps to old predicate including W=0; normalized soundness uses integral C_s and F=C_s^2 E",
+    "global_units": "r and s_c from conic; D_p=4theta^2-7 from nonsquareness of7; Lambda,B_s,B_t,B_z,p_H,p_t from normalized equations",
+    "completeness_only": "Assigned prime avoids fixed nonzero integer s, so C_s is a local unit; positive r and literal-one path make W>=1 for scaling",
+    "branches_preserved": [
+      "W=0 in soundness",
+      "p_s=0 or p_z=0 outside consumed primes",
+      "P_n=1/2",
+      "E_n=0",
+      "U_p=0"
+    ]
+  },
+  "completeness_order": [
+    "Fix integral input, scalar/anchor S=sP_*, integer Pell T,Z and all root target data",
+    "Choose ordinary prime pattern with all prior residue/finite conditions and every assigned prime greater than abs(s)",
+    "Choose common J, private elliptic and joint-chart points, G values and normalized coordinates; freeze all field coefficients",
+    "For each separate conic approximate the selected root of2 and simultaneously theta=3/2 at real,2,3,17 places",
+    "Evaluate packed fields and upper norm root; obtain remaining fixed-U pole witnesses"
+  ],
+  "required_execution": [
+    "Full independent combined module audit and exact preserved file pins",
+    "Normalized root/comparison mutations; old conic mutations on explicitly restored tails only after actual combined positive audit",
+    "Literal new pole and full proposed-batch delta/caller mutations, including wrong r/theta/W and forbidden height retargeting",
+    "Reject private-conic-dependent field coefficients and cross-occurrence private-coordinate capture",
+    "Full fresh source regeneration, allocation and flat residual/map verification",
+    "Fresh quadratic lift, independent reduction replay and full coefficient/degree expansion"
+  ],
+  "planned_negative_suite_counts": {
+    "normalized_with_explicit_tail_restoration": 208,
+    "actual_pole_integration": 46,
+    "locators": 75
+  },
+  "final_source_binding": "Pending; a merged source cannot be accepted solely from this arithmetic contract, inherited count, or old source hash"
+}

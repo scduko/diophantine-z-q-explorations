@@ -1,0 +1,352 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,xcolor,graphicx,eso-pic}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black,citecolor=blue!50!black]{hyperref}
+\AddToShipoutPictureBG{\AtPageCenter{\makebox(0,0){\rotatebox{45}{\textcolor[gray]{0.87}{\fontsize{66}{72}\selectfont\sffamily\upshape AI generated}}}}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}\newcommand{\R}{\mathbb R}
+\newcommand{\A}{\mathbb A}\newcommand{\PP}{\mathbb P}\newcommand{\Gm}{\mathbb G_m}
+\newcommand{\Sing}{\operatorname{Sing}}\newcommand{\rad}{\operatorname{rad}}
+\setlist{nosep,leftmargin=*}
+\title{Lower bounds for existential polynomial definitions\ of the integers in the rationals}
+\author{AI-generated research note}
+\date{October 22, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We obtain restrictions on a polynomial whose rational zero set projects exactly onto the integers. Besides the unconditional bounds of two quantified variables and total degree four, we exclude jointly quadratic witnesses and systems of two quadratic equations. For a globally nonnegative polynomial, two witnesses require degree at least eight, three require degree at least six, degree four requires at least four witnesses, and at least eight monomials are necessary. Two-witness definitions also require at least four nonscalar multiplication gates. No existence theorem for an existential definition is assumed in proving these obstructions. No claim of novelty is made.
+\end{abstract}
+
+Throughout, coefficients are rational and every quantified variable ranges over \(\Q\). We consider
+\begin{equation}\label{definition}
+ x\in\Z\quad\Longleftrightarrow\quad
+ \exists y_1,\ldots,y_r\quad P(x,y_1,\ldots,y_r)=0.
+\end{equation}
+The input \(x\) is not counted among the \(r\) witnesses. Let \(d=\deg P\) be total degree and \(d_y=\deg_{y_1,\ldots,y_r}P\) be total degree in the witnesses only. A polynomial is \emph{globally nonnegative} if it is nonnegative at every real tuple; sums of squares are examples. The results proved below include
+\[
+ r\ge2,\qquad d\ge4,\qquad d_y\ge3.
+\]
+For globally nonnegative \(P\), we obtain the additional bounds
+\begin{center}
+\begin{tabular}{@{}ll@{}}\toprule
+Restriction & Necessary bound\\\midrule
+Two witnesses & \(d\ge8\) \\
+Three witnesses & \(d\ge6\) \\
+Degree four & \(r\ge4\) \\
+\bottomrule\end{tabular}
+\end{center}
+Together with \(r\ge2\) and \(d\ge4\), these nonnegative bounds are equivalent to \(d+2r\ge12\). These are lower bounds, not constructions at the boundary. In particular, we do not establish that four witnesses suffice in degree four, or improve the unrestricted witness bound beyond two.
+
+\section{Curves, cubics and the general degree bound}
+
+\begin{lemma}\label{curve}
+Let \(C\) be a variety over \(\Q\) of dimension at most one, \(U\subseteq C\) an open subset, and \(f:U\to\A^1\) a morphism. If \(f(U(\Q))\subseteq\Z\), then this image is finite.
+\end{lemma}
+\begin{proof}
+Reduce to an irreducible curve. If its rational points are not Zariski dense, they are finite. Otherwise it is geometrically integral: in characteristic zero, a non-geometrically-integral irreducible curve has rational points only at intersections of its geometric components. Pass to the smooth projective normalization, changing only finitely many points. A constant \(f\) presents no problem. If the genus is positive and \(f\) is nonconstant, Siegel's theorem in its rational-function form gives only finitely many rational points with \(f\) integral; see \cite[Theorem 1.1]{Levin}. In genus zero, a rational point identifies the normalization with \(\PP^1\). A nonconstant rational function on \(\PP^1\) cannot take integer values at every rational parameter outside a finite set: on a real interval avoiding its poles and critical points it has a nontrivial interval as image, and rational parameters are dense.
+\end{proof}
+
+This already proves \(r\ge2\). The stronger assertion that no existential formula with one quantified variable defines \(\Z\) in \(\Q\), even allowing Boolean combinations of polynomial conditions, is stated directly in \cite[Remark 8.8]{DDF}.
+
+We will also use the following observation. If a variety admits a dominant rational parametrization over \(\Q\), a rational function taking only integer values on the rational points of a nonempty open subset is constant. Indeed, its pullback is a rational function on affine space, and the same real-continuity argument applies. Such a variety is called \emph{unirational over \(\Q\)}.
+
+\begin{lemma}\label{cubic}
+Let \(X\) be a projective hypersurface of degree at most three over \(\Q\). On any open subset of \(X\), a rational function with only integer values at rational points has finite image.
+\end{lemma}
+\begin{proof}
+Factor the equation over \(\Q\) and treat the finitely many components separately. Curves and zero-dimensional components are covered by Lemma~\ref{curve}. Linear spaces are rational. An irreducible quadric with a smooth rational point is rational; if it has no smooth rational point, its rational points lie in its singular locus, a rational linear subspace.
+
+For an irreducible cubic of dimension at least two which is not a cone, Koll\'ar's theorem gives unirationality whenever a rational point exists \cite[Theorem 2]{Kollar}. It remains to handle cones. If \(F\) is its homogeneous equation, its maximal vector space of vertex directions is
+\[
+ V=\{v:\partial_vF=0\}.
+\]
+This is defined over \(\Q\), and in characteristic zero \(F(a+v)=F(a)\). Choose a rational complement and remove vertex directions until the remaining cubic \(B\) is not a cone. Outside the vertex, the original cone is locally an affine-space bundle over \(B\). If \(\dim B\ge2\) and \(B(\Q)\ne\varnothing\), it is unirational by Koll\'ar, as is the cone. If \(B(\Q)=\varnothing\), all rational points lie in the vertex.
+
+Suppose instead that \(B\) is a curve. On each rational ruling fibre meeting the domain of the function, that function is constant, since a nonconstant rational function on an affine space takes nonintegral rational values. If \(B(\Q)\) is finite this gives a finite image. Otherwise these fibrewise constancies force the function to descend to a rational function on \(B\): in a local trivialization, its derivatives in the fibre coordinates vanish on infinitely many base points and therefore vanish identically. The projection of the domain contains an open subset of \(B\), and every rational point of that subset has a rational lift in the domain. Lemma~\ref{curve} now applies. The vertex itself is a linear space and contributes at most finitely many values. A zero-dimensional base is even simpler.
+\end{proof}
+
+\begin{corollary}\label{degree}
+Any \(P\) satisfying \eqref{definition} has total degree at least four. If an existential polynomial definition exists at all, the minimum total degree, allowing arbitrarily many witnesses, is exactly four.
+\end{corollary}
+\begin{proof}
+For the lower bound, homogenize \(P\) with coordinate \(w\) and apply Lemma~\ref{cubic} to \(x/w\) on \(w\ne0\). For the upper bound, record a division-free arithmetic circuit for any defining polynomial using a variable for each gate. Its gate equations \(Q_i=0\) have degree at most two. Include the equation asserting that the output is zero. Over \(\Q\), their conjunction is equivalent to \(\sum_iQ_i^2=0\), a single equation of degree at most four.
+\end{proof}
+
+\section{Witnesses cannot be jointly quadratic}
+
+This obstruction allows arbitrary degree in the input and any number of witnesses.
+
+\begin{theorem}\label{quadratic-fibre}
+Let \(F(T,\mathbf Y)\in\Q[T,\mathbf Y]\) have joint degree at most two in \(\mathbf Y\), and put
+\[
+ D_F=\{t\in\Q:\exists\mathbf y\in\Q^r,\ F(t,\mathbf y)=0\}.
+\]
+If \(D_F\) contains every sufficiently large integer, it contains nonintegers. Consequently \eqref{definition} requires \(d_y\ge3\).
+\end{theorem}
+\begin{proof}
+Work over \(K=\Q(T)\). Homogenize in the witnesses using \(W\), so
+\(Q_T(\mathbf Y,W)=W^2F(T,\mathbf Y/W)\) is a quadratic form. A linear change of coordinates over \(K\) gives
+\[
+ Q_T=\sum_{i=1}^s a_i(T)Z_i^2,\qquad W=L_T(\mathbf Z),\qquad a_i\ne0,
+\]
+with the remaining coordinates spanning the radical. Exclude the finitely many parameter values where a coefficient, denominator, or change-of-basis determinant needed here vanishes.
+
+If \(L\) is nonzero on the radical, a radical vector can be scaled to \(W=1\). This is a \(K\)-point of the affine equation and specializes at cofinitely many rational inputs, proving the result. Otherwise \(L\) descends nontrivially to the nondegenerate form
+\(q_T=\sum_{i=1}^s a_i(T)Z_i^2\). Every sufficiently large good integer gives a nonzero null vector of this form, so \(s\ge2\).
+
+For every prime \(p\) and every good \(t\in\Z_p\), the form \(q_t\) is isotropic over \(\Q_p\). To see this, approximate \(t\) by sufficiently large positive integers \(n_j\). Choose projective null vectors for \(q_{n_j}\); compactness of \(\PP^{s-1}(\Q_p)\) supplies a convergent subsequence. Its limit is a projective null vector for \(q_t\).
+
+Write the Laurent expansions at infinity as
+\[
+ a_i(T)=c_iT^{e_i}(1+O(T^{-1})),\qquad c_i\in\Q^\times,\quad e_i\in\Z.
+\]
+Choose an odd prime \(q\), away from the numerators and denominators of the leading coefficients and from the finitely many other coefficient denominators, for which \(-c_1/c_2\) is a square modulo \(q\). Such primes exist, for example by splitting primes in a quadratic extension. Fix a sufficiently large good integer \(n\), and set
+\[
+ t_k=n+q^{-2k}.
+\]
+For sufficiently large \(k\), the number \(-a_1(t_k)/a_2(t_k)\) is a square in \(\Q_q\): its leading factor is a square, the power of \(q\) has even exponent, and the remaining factor lies in \(1+q\Z_q\). Thus \(q_{t_k}\) is isotropic over \(\Q_q\). For \(p\ne q\), we have \(t_k\in\Z_p\), so the preceding compactness argument applies. Over \(\R\), \(q_n\) is nondegenerate and isotropic, hence indefinite; it remains indefinite near \(n\), and \(t_k\to n\) in \(\R\).
+
+The Hasse--Minkowski theorem \cite[Theorem 26.1]{Poonen} gives a nonzero rational null vector for \(q_{t_k}\). The rational null vectors of an isotropic nondegenerate quadratic space span that space. For completeness, split off a hyperbolic plane \(uv\); for any vector \(a\) in its orthogonal complement, \((1,-q(a),a)\) is null, while the two coordinate vectors of the plane are null. Since \(L_{t_k}\ne0\), some null vector therefore satisfies \(L_{t_k}\ne0\). Undoing the coordinate change and scaling to \(W=1\) gives an affine rational solution at \(t_k\). These inputs are nonintegral.
+\end{proof}
+
+The same argument works for all sufficiently large terms of any nonconstant integer arithmetic progression: substitute \(T=a+bU\) and choose \(q\nmid b\).
+
+\begin{corollary}\label{finite-union}
+A finite union of sets \(D_F\) as in Theorem~\ref{quadratic-fibre} cannot equal \(\Z\). In particular, factoring a proposed equation into finitely many factors jointly quadratic in the witnesses cannot evade the obstruction.
+\end{corollary}
+\begin{proof}
+Suppose the union contains every sufficiently large integer. Perform the generic reductions above for each factor; a radical section already proves the claim. Ignore ranks at most one and retain only forms which are indefinite over \(\R\) for all sufficiently large real parameters. The signs of their nonzero rational-function coefficients eventually stabilize, so discarded factors contribute no sufficiently large integer.
+
+Clear denominators in each remaining diagonal form, calling it \(q_{i,T}\). For each prime \(p\), the set
+\[
+ C_{i,p}=\{t\in\Z_p:q_{i,t}\text{ has a projective }\Q_p\text{-zero}\}
+\]
+is closed, including degenerate parameters, by projective compactness. The finite union of the closed sets \(A_i=\prod_p C_{i,p}\) contains all sufficiently large diagonal integers in \(\widehat\Z=\prod_p\Z_p\). Those integers are dense, so this union is all of \(\widehat\Z\). At least one \(A_i\) has nonempty interior and hence contains a congruence cylinder \(a+M\widehat\Z\). By Hasse--Minkowski and the affine recovery in the proof above, its corresponding \(D_F\) contains every sufficiently large integer congruent to \(a\pmod M\). Apply the arithmetic-progression version of Theorem~\ref{quadratic-fibre}.
+\end{proof}
+
+\section{Two quadratic constraints are insufficient}
+
+The next statement concerns total degrees of the equations, rather than witness degrees.
+
+\begin{theorem}\label{two-quadrics}
+Let \(q_0,q_1\) be homogeneous quadratic forms over \(\Q\), in any number of variables, and let \(a,b\) be linear forms. If
+\[
+ \left\{a(v)/b(v):v\in\Q^N,\ q_0(v)=q_1(v)=0,\ b(v)\ne0\right\}\subseteq\Z,
+\]
+then this set is finite. Hence two quadratic equations, even together with any number of linear equations, cannot define \(\Z\) by existential quantification.
+\end{theorem}
+\begin{proof}
+Induct on the ambient dimension. Zero or proportional equations reduce to one quadric. If two independent quadrics have a common factor, it is a rational linear factor and their common zero set is a union of linear spaces. These cases follow from Lemma~\ref{cubic}. We may assume they are relatively prime.
+
+First suppose their projective complete intersection has a smooth rational point \(p\). Put \(p=[1:0:\cdots:0]\) and write
+\[
+ q_i=X_0L_i(\mathbf Z)+Q_i(\mathbf Z),\qquad i=0,1.
+\]
+Smoothness means that \(L_0,L_1\) are independent. Projection from \(p\), outside \(L_0=L_1=0\), identifies the intersection with an open subset of the cubic
+\[
+ L_0Q_1-L_1Q_0=0.
+\]
+This cubic is nonzero: otherwise coprimality of the independent linear forms gives \(Q_i=L_iM\), making \(X_0+M\) a common factor of the quadrics. The input becomes a rational function on the cubic open, whose integer image is finite by Lemma~\ref{cubic}. The omitted locus lies in a smaller rational linear subspace and is still cut out by two quadrics, so induction handles it.
+
+It remains to consider the case of no smooth rational point. If the pencil of symmetric matrices \(A+tB\) is regular, meaning its determinant is not identically zero, replace one equation by a rational linear combination so that \(A\) is invertible. Every rational point \([v]\) of the intersection is singular, hence
+\[
+ Bv=\lambda Av
+\]
+for some \(\lambda\in\Q\). There are only finitely many possibilities, since \(\det(B-\lambda A)=0\). For each, the points in question lie on one quadric in the rational linear space \(\ker(B-\lambda A)\). Lemma~\ref{cubic} applies again.
+
+For a singular pencil use the symmetric Kronecker decomposition over \(\Q\), as stated and proved over arbitrary fields of characteristic different from two in \cite[Propositions 1.10 and 1.13]{PFR}. Besides a regular part, its blocks have the form
+\[
+ q_0=\sum_{j=0}^{h-1}u_jv_j,\qquad
+ q_1=\sum_{j=0}^{h-1}u_{j+1}v_j\qquad(h\ge1),
+\]
+or a zero block of dimension one. A block with \(h\ge1\) supplies a smooth rational point of the whole intersection: set \(v_0=1\) and every other coordinate to zero. The two gradients in the \(u_0,u_1\) directions are independent. This contradicts the current case. Thus the singular part consists only of common radical directions, and the intersection is a cone over the regular part.
+
+Let \(V\ne0\) be this common rational radical. If \(b(v)\ne0\) for some \(v\in V\), the rational line through \(v\) and any rational point in the affine chart forces the input to equal \(a(v)/b(v)\); otherwise the line already gives nonintegers. If \(b|_V=0\) but \(a|_V\ne0\), any point in the chart similarly gives all rational inputs, so there are no such points. Finally, if both forms vanish on \(V\), the equations and input descend to the quotient, of smaller dimension, with exactly the same input image. This completes the induction.
+\end{proof}
+
+\begin{corollary}\label{quartic-irreducible}
+Every degree-four polynomial satisfying \eqref{definition} is absolutely irreducible. A quartic sum-of-squares encoding needs at least three linearly independent quadratic constraints.
+\end{corollary}
+\begin{proof}
+If it factors over \(\Q\), each factor has degree at most three and gives only finitely many integer inputs by Lemma~\ref{cubic}. An irreducible quartic which is not absolutely irreducible has either four conjugate linear factors or two conjugate quadratic factors. In the first case all rational zeros lie in the common rational linear subspace. In the second, normalize a factor over its quadratic field of definition and write it as \(A+\theta B\) with rational quadratic forms \(A,B\). Rational zeros satisfy \(A=B=0\), contrary to Theorem~\ref{two-quadrics}. Finally, if the quadratic constraints in a sum of squares span a space of dimension at most two, their common zero set is defined by two quadrics.
+\end{proof}
+
+\section{Stronger bounds for nonnegative polynomials}
+
+\begin{theorem}\label{nonnegative}
+If \(P\) in \eqref{definition} is globally nonnegative, then
+\[
+ r=2\Longrightarrow d\ge8,\qquad
+ r=3\Longrightarrow d\ge6,\qquad
+ d=4\Longrightarrow r\ge4.
+\]
+\end{theorem}
+\begin{proof}
+First take \(r=2\). Choose an irreducible factor \(f\) whose rational zero set has infinitely many input values. These rational points must be Zariski dense on its surface; otherwise they lie in finitely many curves and points, and Lemma~\ref{curve} gives a finite image. Thus there is a smooth rational point on this surface away from the other factors. Near that point \(f\) changes sign, so global nonnegativity forces its multiplicity in \(P\) to be even. Since \(\deg f\ge4\) by Lemma~\ref{cubic}, we obtain \(d\ge8\).
+
+It remains to exclude \(r=3,d=4\). By Corollary~\ref{quartic-irreducible}, \(P\) is absolutely irreducible. Its degree-four homogenization \(F\) is nonnegative on \(\R^5\), by continuity from the chart \(w\ne0\). Every real zero is therefore singular. All rational zeros lie in \(\Sing(F)\subseteq\PP^4\), which has dimension at most two.
+
+Every surface component \(S\) of this singular locus has degree at most three. Indeed, a general plane section of the geometrically integral quartic threefold is an integral plane quartic, by Bertini. The plane meets \(S\) transversely in \(\deg S\) distinct points, all singular on that plane quartic. Its arithmetic genus is three, so it has at most three distinct singular points. The standard Bertini and plane-genus facts are recorded in \cite{Stacks}.
+
+If the rational input image is infinite, some geometrically integral surface component \(S\) defined over \(\Q\) has an infinite image. Indeed, the rational points on a geometric component not defined over \(\Q\) lie in its intersections with its distinct conjugates; those intersections have dimension at most one. Lemma~\ref{curve} also shows that the rational points of \(S\) are dense. If \(S\) lies in a hyperplane, it is a surface hypersurface of degree at most three, or a plane, and Lemma~\ref{cubic} applies. Otherwise it is nondegenerate in \(\PP^4\), hence has degree at least three and therefore exactly three. Projection from a smooth rational point is birational onto a quadric surface in \(\PP^3\): the degree formula gives
+\[
+ (\text{degree of projection})(\text{degree of image})=3-1=2,
+\]
+and an image plane would force \(S\) to lie in a hyperplane. Transfer the input to this quadric and use Lemma~\ref{cubic}; the exceptional closed subsets of the surfaces are curves, handled by Lemma~\ref{curve}. This is a contradiction.
+
+A nonzero globally nonnegative polynomial has even total degree. The general lower bound \(d\ge4\) and the exclusion of \(r=3,d=4\) therefore give \(d\ge6\) when \(r=3\). The already proved \(r\ge2\) and the two-witness case finish the degree-four statement.
+\end{proof}
+
+\section{Other measures of polynomial complexity}
+
+\begin{proposition}\label{partial}
+Every variable actually occurring in \(P\), including the input, has individual degree at least two. If \(N\) variables actually occur and \(P\) has \(s\) nonzero monomials, then
+\[
+ s\ge\left\lceil\frac{N}{\lfloor d/2\rfloor}\right\rceil.
+\]
+\end{proposition}
+\begin{proof}
+If a witness occurs linearly, write \(P=A(x,\mathbf z)y+B(x,\mathbf z)\) with \(A\ne0\). For all but finitely many \(x\), choose rational \(\mathbf z\) with \(A\ne0\) and solve for \(y\); the input image is cofinite in \(\Q\). If the input occurs linearly, write \(P=A(\mathbf y)x+B(\mathbf y)\). The rational function \(-B/A\) must be constant by continuity. The projection is then either that single constant or all of \(\Q\), according as \(A\) has no rational zero or has one. An absent input is plainly impossible. Finally, each variable must have exponent at least two in some monomial, while a monomial of total degree \(d\) can account for at most \(\lfloor d/2\rfloor\) such variables.
+\end{proof}
+
+The individual-degree bound is sharp when witness count is unrestricted: in the circuit construction of Corollary~\ref{degree}, give a multiplication with repeated input two distinct copies of that input, joined by a linear equality. Each gate constraint is then of degree at most one in each individual variable, so its square has individual degree at most two. The input may occur only in a copying equation \((x-t)^2\).
+
+\begin{proposition}\label{newton}
+The affine span of the exponent vectors of \(P\) has dimension at least three. In particular, \(P\) has at least four nonzero monomials.
+\end{proposition}
+\begin{proof}
+Stratify rational zeros with \(x\ne0\) by which witnesses vanish. There are finitely many strata. On each, delete the zero coordinates; all remaining coordinates are nonzero. If the restricted polynomial is identically zero, every nonzero rational input occurs, which is impossible. A nonzero monomial has no zeros there.
+
+For a remaining restriction choose one exponent vector \(a_0\) and let \(L\) be the lattice generated by the differences \(a-a_0\) of its exponent vectors. Its saturation \(L^{\mathrm{sat}}=(L\otimes\Q)\cap\Z^m\) is a direct summand of \(\Z^m\). Extend a basis \(\ell_1,\ldots,\ell_k\) of this saturation to a basis of \(\Z^m\). The monomial coordinates \(z_j=\mathbf t^{\ell_j}\) give an invertible transformation of the rational torus, with inverse also having integer exponents. After dividing by a nonzero monomial, the equation depends only on \(z_1,\ldots,z_k\).
+
+Express the input as a Laurent monomial in all the \(z_j\). If it involves a free coordinate \(z_j\) with \(j>k\), varying that coordinate multiplies a nonzero input by arbitrary rational powers of fixed nonzero integral exponent and produces a noninteger. Thus the input depends only on the first \(k\) coordinates. If \(k\le2\), its image is the rational-function image of a variety of dimension at most one, hence is finite by Lemma~\ref{curve}. Restriction to a coordinate stratum cannot increase the affine dimension of the original support. If that dimension were at most two, all strata would therefore have finite image, a contradiction.
+\end{proof}
+
+\begin{proposition}\label{nonnegative-support}
+Suppose \(P\) is globally nonnegative. If its support has \(s\) points and affine dimension \(k\), then \(s\ge k+5\). In particular, \(s\ge8\).
+\end{proposition}
+\begin{proof}
+Choose a coordinate stratum with infinitely many input values, as in Proposition~\ref{newton}, and let its restricted support have size \(s'\) and affine dimension \(k'\). Every rational zero of the restricted polynomial is a real minimum, so all its first derivatives vanish. After the invertible monomial change of coordinates used above, write the polynomial as a nonzero monomial times
+\[
+ g(\mathbf z)=\sum_{i=1}^{s'}c_i\mathbf z^{a_i},\qquad
+ \mathbf z\in\Gm^{k'}.
+\]
+The remaining coordinates are free. The input must descend to the displayed coordinates, since otherwise scaling a free coordinate gives nonintegers. The critical zero locus
+\[
+ V=\{g=0,\ z_j\partial g/\partial z_j=0\text{ for }1\le j\le k'\}
+\]
+has the same rational zeros as \(g=0\): nonnegativity gives one inclusion, and the equation \(g=0\) gives the other. Its input image is therefore infinite and contained in \(\Z\), so \(\dim V\ge2\) by Lemma~\ref{curve}.
+
+The map \(\mathbf z\mapsto[c_i\mathbf z^{a_i}]_{i=1}^{s'}\) has finite fibres, since the exponent differences span a lattice of full rank \(k'\). The image of \(V\) lies in the projectivized kernel of the matrix with columns \((1,a_i)\). That matrix has rank \(k'+1\), so
+\[
+ 2\le\dim V\le s'-k'-2.
+\]
+Adding a deleted support point increases affine dimension by at most one. Hence \(k\le k'+s-s'\), giving \(s-k\ge s'-k'\ge4\). Proposition~\ref{newton} gives \(k\ge3\), hence \(s\ge7\).
+
+Suppose \(s-k=4\). Then \(s'-k'=4\) and \(\dim V=2\). Write \(A\) for the exponent matrix above and \(K=\PP(\ker A)\cong\PP^2\). The monomial map is finite onto a closed translate \(H\) of a \(k'\)-dimensional torus in the projective coordinate torus \(T\subset\PP^{s'-1}\). Its image on \(V\) is closed, contained in \(K\cap T\), and has dimension two. Since \(K\cap T\) is irreducible, that image is all of \(K\cap T\).
+
+Restrict the projective coordinates to \(K\), obtaining nonzero rational linear forms \(\ell_i\) in three variables. For every integral vector \(b\in\ker A\), the monomial relation on \(H\) gives
+\(\prod_i(\ell_i/c_i)^{b_i}=1\). Unique factorization implies that, for each class \(I\) of proportional linear forms, \(\sum_{i\in I}b_i=0\). Thus each class indicator lies in the row space of \(A\). There are at least three classes, since the \(\ell_i\) span the linear forms on \(\PP^2\).
+
+Each class is an exposed face of the surviving support: an affine functional on the exponents takes value one on that class and zero elsewhere. This assertion is unchanged by the monomial coordinate transformation, so applies to the original restricted polynomial. Its face polynomial \(P_I\) is globally nonnegative. Indeed, choose an integral weight exposing the face and take the leading weighted limit under positive real coordinate scaling. Fix one rational torus zero \(p\). Its nonzero monomial vector \(m(p)\) lies in \(\ker A\). The indicator relation gives \(P_I(p)=0\), so nonnegativity of \(P_I\) makes all its derivatives vanish at \(p\). Therefore the vector obtained by retaining only the coordinates of \(m(p)\) in \(I\) also lies in \(\ker A\). These vectors are linearly independent because they have disjoint nonempty supports. Since \(\dim\ker A=3\), there are at most three classes, and hence exactly three, represented by independent linear forms.
+
+It follows that \(K\cap T\) is a rational translate of a split two-dimensional torus. Its inverse image under the finite monomial map is a finite union of translates of a split two-dimensional subtorus. Any such translate containing a rational point is the translate by that point. If the input character is nonconstant on it, a rational one-parameter subgroup scales that point to noninteger inputs. Otherwise the input is constant on each of these finitely many translates. Either conclusion contradicts the infinite integer-only image. Hence \(s-k\ge5\), and \(k\ge3\) gives \(s\ge8\).
+\end{proof}
+
+\begin{corollary}\label{multiplication}
+A division-free arithmetic circuit computing a defining polynomial needs at least three multiplication gates between nonconstant expressions. Additions, subtractions and multiplication by rational constants are not counted.
+\end{corollary}
+\begin{proof}
+With at most two such gates, introducing their output variables gives at most two quadratic gate equations; all other operations, including the zero-output condition, give linear equations. Eliminate the linear equations and apply Theorem~\ref{two-quadrics} to the resulting linear input coordinate.
+\end{proof}
+
+\begin{proposition}\label{addition}
+A division-free arithmetic circuit computing a defining polynomial needs at least three binary additions or subtractions, even if multiplication and nonnegative integer powers are free.
+\end{proposition}
+\begin{proof}
+Stratify by zero coordinates as in Proposition~\ref{newton}, retaining \(x\ne0\). On each remaining rational torus, a circuit with at most two additions has the form
+\[
+ A=M_1+M_2,\qquad B=M_3A^a+M_4A^b,\qquad P=M_5A^cB^e,
+\]
+where the \(M_i\) are scalar monomials and the exponents are nonnegative integers; unused gates are allowed. A restricted polynomial identically zero would give every nonzero rational input, so cannot occur. Zero scalar monomials or an \(A\) which reduces to a monomial give only monomial or binomial conditions and are covered by the next observation.
+
+On any locus defined by binomial equations \(\mathbf t^{v_i}=c_i\ne0\), either the input character \(e_x\) lies outside the rational span of the \(v_i\), in which case an integral weight annihilating all \(v_i\) scales a rational point to noninteger inputs, or \(ne_x=\sum n_iv_i\) for integers \(n\ne0,n_i\). In the latter case \(x^n=\prod c_i^{n_i}\), giving finitely many inputs. On \(A=0\), substituting into \(B\) leaves at most a further binomial condition, so this observation applies.
+
+On \(A\ne0\), zeros require \(B=0\). Introduce a nonzero variable \(z=A\). The equations
+\[
+ z-M_1-M_2=0,\qquad M_3z^a+M_4z^b=0
+\]
+have combined exponent-difference rank \(k\le3\). Their common zero set \(V\) in an \((n+1)\)-dimensional torus has dimension at most \(n-1\): the first equation has integral coordinate ring \(\Q[\mathbf t^{\pm1},A^{-1}]\), and the second does not vanish identically on it, since that would make the restricted output identically zero. Saturating the combined lattice as in Proposition~\ref{newton} gives
+\(V=V_0\times\Gm^{n+1-k}\), with \(\dim V_0\le k-2\le1\). If the input uses a free coordinate, scaling contradicts integrality. Otherwise it descends to \(V_0\), and Lemma~\ref{curve} gives a finite image. The finitely many strata complete the proof.
+\end{proof}
+
+These bounds do not imply a useful lower bound on coefficient digit length. If an existential definition exists, standard copying and arithmetic-gate constructions trade coefficient size for additional variables. Nor do the bounds establish a substantial minimum byte count for a recipe: that requires fixing precisely which operations and encodings are allowed.
+
+\section{Low-genus fibrations and the remaining two-witness case}
+
+A two-witness definition requires a surface whose rational points are Zariski dense: otherwise its rational points lie on finitely many curves and Lemma~\ref{curve} applies. In degree four its projective closure, if smooth, is a K3 surface. Zariski density of rational points does not imply their real density, and the latter cannot be assumed in attempting a lower bound. Thus the arguments here do not prove \(r\ge3\) for arbitrary polynomials.
+
+The following obstruction uses fibrations in curves of genus zero or one. A fibration here is a dominant morphism to a smooth curve whose geometric generic fibre is smooth and connected. Independence means that the joint map to the product of two base curves is dominant.
+
+\begin{proposition}\label{genus-one}
+Let \(S\) be a smooth projective geometrically integral surface over \(\Q\), \(U\subset S\) an open subset with \(U(\Q)\) Zariski dense, and \(f\in\Q(S)\) regular on \(U\), with \(f(U(\Q))\subseteq\Z\). For every fibration \(\pi:S\to B\) defined over \(\Q\) whose geometric generic fibre has genus at most one, one has \(f\in\Q(B)\). Consequently, if \(S\) has two independent such fibrations, \(f\) is constant.
+\end{proposition}
+\begin{proof}
+In genus zero, a rational point where \(\pi\) is smooth and the relative differential of \(f\) is nonzero would lie on a rational curve with infinitely many rational points and nonconstant integer-only \(f\), contradicting Lemma~\ref{curve}. Density therefore forces descent.
+
+In genus one, shrink \(B\) so that \(\pi\) is smooth, and restrict an ample line bundle on \(S\) to obtain a relative line bundle \(\mathcal L\) of constant fibre degree \(m>0\). Let \(E\to B\) be the relative Jacobian. There is a finite morphism of degree \(m^2\) on each fibre,
+\[
+ u:S_B\longrightarrow E,\qquad
+ P\longmapsto\mathcal O(mP)\otimes\mathcal L_{\pi(P)}^{-1}.
+\]
+By Mazur's torsion theorem \cite{Mazur}, a fixed integer \(N\), for example \(\operatorname{lcm}(1,\ldots,12)\), annihilates every rational torsion point on every elliptic curve over \(\Q\). Thus \(u^{-1}(E[N])\) is a closed subset finite over \(B\), hence a finite union of curves.
+
+If \(f\notin\Q(B)\), its relative differential is nonzero on a nonempty open subset of \(U\). Choose a rational point \(P\) there outside \(u^{-1}(E[N])\), using Zariski density. The smooth fibre through \(P\) has a rational point and its Jacobian has the point \(u(P)\) of infinite order. Hence this fibre has infinitely many rational points. The restriction of \(f\) is nonconstant, since its relative differential at \(P\) is nonzero. All but finitely many of those rational points lie in \(U\) and give integral values, contradicting Siegel's theorem. This proves descent. For two independent fibrations, the two base coordinates are algebraically independent; a rational function belonging to both base function fields must be constant.
+\end{proof}
+
+\begin{theorem}\label{four-multiplications}
+With two witnesses, a division-free circuit computing a defining polynomial requires at least four multiplications between nonconstant expressions.
+\end{theorem}
+\begin{proof}
+Suppose a circuit with at most three such gates computes \(P(x,y,z)\), its rational zero projection is contained in \(\Z\), and that projection is infinite. The cases of at most two gates are excluded by Theorem~\ref{two-quadrics}, so take three. After collecting linear operations, write their outputs as \(g_i=h_i k_i\), where each \(h_i,k_i\) is an affine-linear form in \(x,y,z,g_1,\ldots,g_{i-1}\). The final output is affine-linear in \(x,y,z,g_1,g_2,g_3\).
+
+Choose an irreducible factor of \(P\) whose surface \(S_0\) has an infinite rational input image. Its rational points are dense by Lemma~\ref{curve}, so it is geometrically integral. For any gate input \(h\) nonconstant on \(S_0\), fix \(h=t\) over \(\Q(t)\). In the six-coordinate circuit graph, the equations \(h=t\), its gate equation \(g_i=tk_i\), and the final zero-output equation are linear; the other two equations are quadratic. These three linear equations are independent. Indeed, the whole graph is isomorphic to \(P=0\); its generic fibre under \(h\) has dimension one, whereas rank at most two would leave two equations in at least four affine coordinates and force dimension at least two. Thus the fibre is cut out by two equations of degree at most two in affine three-space.
+
+Every geometric curve component of such a fibre has normalization of genus at most one. For relatively prime quadrics, an irreducible component has degree at most four. A component of degree at most three has genus at most one; a degree-four component exhausts the complete intersection, whose arithmetic genus is one. A linear equation gives a plane conic. A common plane factor meeting the affine chart would give an affine surface and contradict the fibre dimension; outside that plane, the common zero set is at most a line. Components supported at infinity can be discarded.
+
+Resolve the projective surface and the rational map \(h\), and take its Stein factorization: this replaces the base by a curve finite over \(\PP^1_t\) and makes the generic fibre geometrically connected. The resulting generic fibre has genus at most one. Proposition~\ref{genus-one} implies that \(x\) is algebraic over \(\Q(h)\). Since \(x\) is nonconstant, \(h\) is also algebraic over \(\Q(x)\). Constant gate inputs satisfy the latter assertion automatically.
+
+All gate outputs are consequently algebraic over \(\Q(x)\). Subtracting the earlier gate outputs from each gate input shows that its affine-linear part in \(x,y,z\) is algebraic over \(\Q(x)\). If such a part \(L\) involves \(y\) or \(z\), there is a nonzero relation \(R(x,L)=0\) on \(S_0\). Complete \(x,L\) to affine coordinates \(x,L,v\). The irreducible defining equation of \(S_0\) divides \(R(x,L)\), so is independent of \(v\). Hence \(S_0=C\times\A^1\) for a plane curve \(C\), whose integer-only rational input image is finite by Lemma~\ref{curve}, a contradiction.
+
+Thus every gate depends only on \(x\). The output is then a polynomial in \(x\) plus an affine-linear expression in the witnesses. If a witness coefficient is nonzero, every rational input occurs. Otherwise only finitely many inputs occur, since \(P\ne0\). Both conclusions contradict the hypothesis.
+\end{proof}
+
+This does not exclude three multiplications when more than two witnesses are permitted: fixing a gate input then need not leave curves, so the preceding genus argument does not apply.
+
+On a smooth quartic surface, every line defined over \(\Q\) gives a genus-one fibration by the residual plane cubics. If that line differs from \(\{X=W=0\}\), the input \(X/W\) is nonconstant on a generic such cubic, contradicting Proposition~\ref{genus-one}. Thus a smooth quartic two-witness candidate can have no rational line other than its input boundary line.
+
+There is nevertheless an additional exclusion when \(P(x,y,z)\) has total degree four and joint witness degree at most three, with smooth projective closure. The boundary line \(L=\{X=W=0\}\) lies on that quartic. Write
+\[
+ F=X A_3(Y,Z)+W B_3(Y,Z)+\text{terms in }(X,W)^2.
+\]
+Smoothness along \(L\) says that \(A_3,B_3\) have no common zero, so \(\phi=-B_3/A_3:L\to\PP^1\) has degree three. For a general \(p\in L\), the residual cubic in the plane \(X=\phi(p)W\) is smooth, passes through \(p\), and is transverse to \(L\). If \(p\) is not a flex of that cubic, the tangent at \(p\) meets it in a further rational point whenever \(p\) is rational. That point is affine, because the tangent differs from \(L\), and its input is \(\phi(p)\). This contradicts integer-only inputs by continuity. Thus the boundary line must generically consist of flexes of the residual cubics, the special case called a line of the second kind in \cite[Sections 2--3]{RS}. Such lines do exist; this is a genuine remaining case.
+
+The nonnegative bounds reach a parallel boundary. At four witnesses, three quadratic equations in five affine variables may homogenize to a smooth intersection of three quadrics in \(\PP^5\), also a K3 surface. This explains the limit of the low-degree geometry used here; it does not establish attainability of the lower bound.
+
+\begin{thebibliography}{99}
+\bibitem{DDF} N.~Daans, P.~Dittmann and A.~Fehm, \emph{Existential rank and essential dimension of diophantine sets}, arXiv:2102.06941v5 (2025), Remark 8.8. \url{https://arxiv.org/abs/2102.06941}.
+\bibitem{Kollar} J.~Koll\'ar, \emph{Unirationality of cubic hypersurfaces}, J. Inst. Math. Jussieu \textbf{1} (2002), 467--476, Theorem 2. \url{https://arxiv.org/abs/math/0005146}.
+\bibitem{Levin} A.~Levin, \emph{Siegel's theorem and the Shafarevich conjecture}, J. Th\'eor. Nombres Bordeaux \textbf{24} (2012), 705--727, Theorem 1.1. \url{https://www.numdam.org/item/10.5802/jtnb.818.pdf}.
+\bibitem{Mazur} B.~Mazur, \emph{Modular curves and the Eisenstein ideal}, Publ. Math. IH\'ES \textbf{47} (1977), 33--186. \url{https://doi.org/10.1007/BF02684339}.
+\bibitem{PFR} J.~Pl\^ut, P.-A.~Fouque and G.~Macario-Rat, \emph{Solving the ``Isomorphism of Polynomials with Two Secrets'' Problem for All Pairs of Quadratic Forms}, arXiv:1406.3163v3 (2014), Propositions 1.10 and 1.13. \url{https://arxiv.org/abs/1406.3163}.
+\bibitem{Poonen} B.~Poonen, \emph{Introduction to arithmetic geometry}, MIT 18.782 notes (2009), Theorem 26.1. \url{https://math.mit.edu/~poonen/782/782notes.pdf}.
+\bibitem{RS} S.~Rams and M.~Sch\"utt, \emph{64 lines on smooth quartic surfaces}, Math. Ann. \textbf{362} (2015), 679--698. \url{https://arxiv.org/abs/1212.3511}.
+\bibitem{Stacks} The Stacks Project, \emph{Bertini theorems}, Tag 0G4C, and \emph{Plane curves}, Tag 0BYA. \url{https://stacks.math.columbia.edu/tag/0G4C}; \url{https://stacks.math.columbia.edu/tag/0BYA}.
+\end{thebibliography}
+\end{document}

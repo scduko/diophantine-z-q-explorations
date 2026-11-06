@@ -1,0 +1,836 @@
+% Complete replacement of the released reciprocal-source subsection.
+% Reviewed source: Version 2, SHA256 38d458ba4178083766c5ae56a894da595fe27170c1ef07f6b49750fc5edf7c37.
+% Selected source: H19 / high40 / beta12 / anchor25 / scalar32 / 29 full + 8 beta.
+% No endpoint count, source pin, certificate hash, or coefficient claim is supplied here.
+\subsection{The selective reciprocal comparison source}
+\label{subsec:quartic-source}
+We use the curve, cyclic group of integer indices, pole predicate and
+arithmetic inputs of Section~\ref{sec:degree8-original}. The present
+source uses a sharper consequence of the same height construction,
+thirty-seven direct coordinate contacts, and two kinds of reciprocal
+comparison. These arithmetic changes are proved here before the
+quadratic lift. They are not justified by a change of source digest.
+Throughout,
+\[
+ K=\Q(\sqrt2),\quad d=3-\sqrt2,\quad D=d^2=11-6\sqrt2,
+ \qquad E:y^2=x^3-Dx,\qquad G=2E(K)=\Z P_*.
+\]
+An element of $K$ is represented by its two rational coefficients.
+Multiplication and inversion have their literal meanings
+\[
+ (a_0,a_1)(b_0,b_1)=(a_0b_0+2a_1b_1,a_0b_1+a_1b_0),\qquad
+ a^{-1}=\frac{(a_0,-a_1)}{a_0^2-2a_1^2}\quad(a\ne0).
+\]
+The denominator is nonzero by the irrationality of $\sqrt2$.
+All affine subtraction charts and their nonzero-abscissa guards remain.
+
+% BLOCK HEIGHT19.
+\begin{theorem}[A sharper five-contact height estimate]\label{thm:quartic-height19}
+Keep $S_*$, $\mathcal D$ and $M_5$ from Theorem~\ref{hyp:o8-height}, and put
+\[
+ B_*=\prod_{p\le76176}p,\qquad
+ A_{19}=2^{109}210^{1800},\qquad H_{19}=2A_{19}B_*^{19}+128.
+\]
+For every $a\in\mathbb Q\setminus\mathcal D$,
+\[
+ h(a)\le H_{19}M_5(a)^{19},
+ \qquad \log_2H_{19}<2093966.
+\]
+Here $h$ is the absolute logarithmic Weil height.
+\end{theorem}
+\begin{proof}
+We use the geometric construction and compatible representations in the
+proof of Theorem~\ref{hyp:o8-height}, not merely its final exponent-$24$
+inequality. Write $R=B_*M_5(a)$ and $C=210^{300}$.
+The geometric comparison there is
+\[
+ h(a)\le2\max(0,h_F(A))+128.
+\]
+All $h_F$ in this proof use the original stable Faltings metric.
+The CM estimate in that proof is $h_F(A)<854R$.
+
+In the non-CM case the same construction gives an absolutely simple
+quaternionic surface $A/L$, a normal field $L'/\mathbb Q$, and the final
+primitive weight-two newform $f$, after the finite twist has been
+absorbed, with
+\[
+ [L:\mathbb Q]\le576,\quad d'=[L':\mathbb Q]\le2304R,\quad
+ N\le CR^2,\quad \operatorname{rad}(N)\mid R.
+\]
+Its two-dimensional compatible representation $r_\ell$ satisfies
+\[
+ V_\ell(A)|_{G_{L'}}\simeq
+       (r_\ell\oplus r_\ell)|_{G_{L'}},\qquad
+ (\det r_\ell)^2|_{G_{L'}}=\chi_{\rm cyc}^2|_{G_{L'}}.
+\]
+These are (LR3)--(LR5) and the determinant calculation in the existing
+modularity argument. There is no bounded-degree hypothesis on the
+coefficient field of $f$.
+
+Let $\epsilon$ be the nebentypus of this final form. In the Tate-module
+convention, with arithmetic Frobenius, $\det r_\ell=\epsilon\chi_{\rm cyc}$;
+see \cite[\S12.5, (12.5.1)--(12.5.2) and Remark 12.5.1,
+pp.~119--120]{diamond-im}. Equivalently, at a good prime its
+characteristic polynomial is $X^2-a_pX+p\epsilon(p)$.
+A consistent contragredient convention replaces the finite character by
+its inverse, with the same kernel and order. The character $\epsilon^2$
+is trivial on $G_{L'}$, so its image order divides $d'$. Consequently
+\[
+ t=\operatorname{ord}(\epsilon)\le2d'\le4608R.
+\]
+This bounds the character order, not the coefficient-field degree.
+
+Put $H=\ker\epsilon\subset(\mathbb Z/N\mathbb Z)^*$ and
+\[
+ \Gamma_H=\left\{
+ \begin{pmatrix}a&b\\c&d\end{pmatrix}\in\Gamma_0(N):
+ d\bmod N\in H\right\}.
+\]
+Since $\epsilon(-1)=1$, this group contains $-I$.
+Let $X_H=X_1(N)/H$ for the diamond action and $J_H=\operatorname{Jac}(X_H)$.
+The curve, diamond action and quotient are defined over $\mathbb Q$.
+The rational model here parametrizes a point of exact order $N$, up to
+$H$, and is the model specified by \cite[\S2.1, (2.1.8)]{mascot-moduli};
+it introduces no cyclotomic field-degree factor.
+
+Write $q:J_1(N)\to A_f$ for the newform quotient. Its pulled-back
+differentials are spanned by all Galois conjugates of $f$; see
+\cite[Theorem~1(i),(iv), p.~526]{shimura-factors} and
+\cite[\S3.1]{baker-et-al-finiteness}. Every $h\in H$ fixes those differentials,
+since its eigenvalue on each conjugate is a conjugate of $\epsilon(h)=1$;
+the diamond convention is \cite[\S3.2.1]{baker-et-al-finiteness}.
+Homomorphisms of abelian varieties in characteristic zero are determined
+by their differentials. Hence $q\circ\langle h\rangle=q$.
+For
+\[
+ e_H=\frac1{|H|}\sum_{h\in H}\langle h\rangle
+       \in\operatorname{End}_{\mathbb Q}^0(J_1(N))
+\]
+we therefore have $qe_H=q$.
+
+Let $H_{\rm eff}$ be the image of $H$ in
+$\operatorname{Aut}(X_1(N))$, and let $\pi:X_1(N)\to X_H$ be the quotient.
+On Jacobians,
+\[
+ \pi^*\pi_*=\sum_{h\in H_{\rm eff}}h,\qquad
+ \pi_*\pi^*=[|H_{\rm eff}|].
+\]
+The averages over $H$ and $H_{\rm eff}$ agree. In particular the trivial
+action of $-1$ is not counted twice in the first identity.
+The image of $e_H$ is thus $\mathbb Q$-isogenous to $J_H$, and its
+restriction of $q$ is surjective. Poincare reducibility makes $A_f$
+a $\mathbb Q$-isogeny factor of $J_H$.
+
+The accepted realization of $r_\ell$ in $A_f$ puts it in $V_\ell(J_H)$.
+Over $L'$, Faltings' Hom theorem and extension of scalars give a nonzero
+homomorphism $A\to J_H$. Absolute simplicity and Poincare reducibility
+give an $L'$-isogeny $A\times Z\to J_H$. In particular
+$g=\dim J_H\ge2$. The Jacobian has its canonical principal polarization;
+no bound on a polarization degree of $A$ or $Z$ is being assumed.
+
+The map $X_H\to X(1)$ has degree
+\[
+ d_H=[\operatorname{SL}_2(\mathbb Z):\Gamma_H]
+     =Nt\prod_{p\mid N}(1+1/p).
+\]
+There is no factor of two here, because $-I\in\Gamma_H$.
+It is branched only over the cusp and the two elliptic points, so
+$\deg_B(X_H)\le d_H$. The congruence-curve genus bound gives
+$g\le1+d_H/12\le d_H$, using $g\ge2$.
+These degree and genus conventions, and the resulting height inequality,
+are recorded in \cite[\S4, (4.1)--(4.2), p.~8]{vonKaenel2021}.
+For every prime $p\ge5$, $(1+1/p)^6\le p$, while the possible factors
+at two and three have product at most two. It follows that
+\[
+ d_H\le9216CR^{19/6}<T,\qquad
+ T=2^{14}CR^{19/6},\qquad g<T.
+\]
+By \cite[Theorem~1.1.1 and \S2.3]{javanpeykar},
+\[
+ h_F(J_H)\le13000000\,d_H^5g<2^{24}T^6.
+\]
+This is the generic Belyi-curve estimate; no squarefree-level restriction
+or trivial-nebentypus assumption enters it.
+
+Apply \cite[Theorem~1.9(1), pp.~7--8]{GaudronRemond2023} with source
+$(J_H)_{L'}$ and target $A\times Z$. Combining its degree bound with
+half-logarithmic isogeny-height variation gives
+\[
+ h_F(A)+h_F(Z)\le h_F(J_H)+V,\quad
+ V=2g^2\left(8g^2\log(7g)+\log d'
+     +\log\max(1,\log d',h_F(J_H))\right).
+\]
+The Bost lower bound in \cite[(2.2), p.~5]{vonKaenel2021} gives
+$h_F(Z)>-3g/2$. Put $u=\log T$. Then
+\[
+ V\le16T^4(2+u)+2T^2(25+7u)\le T^6.
+\]
+Indeed $\log d'<8+\log R\le8+u$, and the last logarithm in $V$ is
+less than $17+6u$. For $T\ge16$ the inequalities
+$2+\log T\le T^2/32$ and $25+7\log T\le T^4/4$ follow at $16$
+and remain true by differentiation. Thus
+\[
+ h_F(A)<(2^{24}+1)T^6+\tfrac32T
+       <2^{25}T^6=A_{19}R^{19}.
+\]
+The earlier CM estimate is also less than this bound.
+The geometric comparison and $M_5(a)\ge1$ prove the assertion.
+Finally $B_*<2^{109445}$, $210<2^8$ and $A_{19}B_*^{19}>64$ give
+\[
+ H_{19}<4A_{19}B_*^{19}
+       <2^{\,2+109+1800\cdot8+19\cdot109445}
+       =2^{2093966}.
+\]
+\end{proof}
+
+% BLOCK ROOT37: no denominator-clearing variable is added to this source.
+\begin{lemma}[Thirty-seven contacts for rational coefficients]
+\label{lem:quartic-rational37}
+Keep $K=\Q(\sqrt2)$, $d=3-\sqrt2$, $D=d^2$, and
+$G=2E(K)=\Z P_*$ from Section~\ref{sec:degree8-original}.
+Let $A=[n]P_*,S=[s]P_*,T=[t]P_*,Z=[z]P_*$ be nonidentity points.
+Order the eight rational coefficients of
+$x(A),x(S),x(T),x(Z)$ as $a_1,\ldots,a_8$. Put
+\[
+ R_{\rm c}=47027,\quad W_0=25878772920,\quad c=18484837801,
+ \quad V_0=32W_0,
+ \qquad A_i=R_{\rm c}a_i+3,\quad w_i=A_iv-u.
+\]
+Use the following thirty-seven nonzero raw contacts:
+\begin{equation}\label{eq:quartic-contacts37}
+ r_0=v/V_0,\qquad u-\delta v\quad(\delta\in\mathcal D),
+ \qquad -(w_i-\delta v)\quad(1\le i\le8,\ \delta\in\mathcal D).
+\end{equation}
+Here and below the order within $\mathcal D$ is
+$(0,1,2401,-343/32)$. The common five positions are numbered $0,\ldots,4$;
+the other positions are numbered $5,\ldots,36$ in the displayed order.
+
+Every normalized odd contact of $u/v$ or $w_i/v$ outside $S_*$ is
+detected by an odd valuation at a raw position belonging to that slope.
+If the radicals for both slopes $u/v,w_i/v$ have their $e$th powers
+dividing an integer $N\ne0$, then, with $H=H_{19}$,
+\[
+ h(a_i)<2H|N|^{19/e}+14.
+\]
+Consequently the two coefficients of any one of the four abscissas give
+\begin{equation}\label{eq:quartic-direct-height}
+ h(x(Q))<4H|N|^{19/e}+30<7H|N|^{19/e}
+ \quad(Q\in\{A,S,T,Z\})
+\end{equation}
+whenever all its required positions have those divisibilities.
+
+Conversely, for any fixed eight rational coefficients, the inherited
+ordinary-prime construction supplies these raw contacts with every finite
+contact a positive selected prime and $r_0$ a positive rational square
+times a selected prime. Repeated positions may have equal values.
+The same pole-completeness construction applies to these values.
+\end{lemma}
+\begin{proof}
+Nonzero raw contacts imply $v\ne0$ and exclude the four finite branch
+values for every slope. At a prime outside $S_*$ all differences of
+distinct members of $\mathcal D$ are units. Write $m$ for the minimum
+of the valuations of the two coordinates of one slope. If an odd finite
+normalized contact has $m$ even, its distinguished raw linear form has
+odd valuation. If $m$ is odd, another finite form has valuation $m$.
+For an odd contact at infinity use the denominator in the first case
+and a finite form in the second. The unit $V_0$ and the signs do not
+change parity. This proof uses rational coordinates and also covers
+negative valuations; it does not presuppose that a contact is prime.
+
+Apply Theorem~\ref{thm:quartic-height19} to the two slopes. The identity
+$R_{\rm c}a_i+3=u/v+w_i/v$ and the elementary logarithmic height inequalities
+give the first bound, since $\log(6R_{\rm c})<14$. For
+$x(Q)=a+b\sqrt2$ use
+$h(x(Q))\le h(a)+h(b)+h(\sqrt2)+\log2$.
+This proves \eqref{eq:quartic-direct-height}, since $H>128$ and $|N|\ge1$.
+
+For the converse choose a positive integer $D_0$ with $D_0a_i\in\Z$
+for every $i$, after fixing the eight coefficients. This integer is a
+choice in the existence proof, not a variable of the source. Set
+\[
+ T_0=V_0D_0^2,\qquad p_0=c+W_0y,\qquad
+ u=c+W_0x,\qquad v=T_0p_0.
+\]
+For each distinct slope
+$b\in\mathcal D\cup\bigcup_i(A_i-\mathcal D)$ put
+$K_b=T_0b\in W_0\Z$ and $\Psi_b=u-K_bp_0$.
+Together with $p_0$, these are at most thirty-seven integer affine forms,
+each congruent to $c$ modulo $W_0$. Distinct slopes give independent
+linear parts. Exact duplicate slopes are removed only while applying
+the prime theorem and restored at all their original positions afterward.
+
+The value and successor admissibility in
+Section~\ref{subsec:o8-pattern-proof} remains valid. At primes dividing
+$W_0$ use the same residue $c$. If a prime $\ell>29$ divides $D_0$,
+all $K_b$ vanish modulo $\ell$, and $u=p_0=1$ avoids zero and minus one.
+If $\ell>29$ does not divide $D_0$, the change from $(u,p_0)$ to $(u,v)$
+is invertible. For $\ell=31,37,41$ there are at most eight slope residues,
+since $R_{\rm c}a_i\equiv0$; for $\ell\ge43$ there are at most thirty-six.
+Choose distinct missing residues $b_0,e_0$ and order them so that
+$e_0-b_0\ne-T_0^{-1}$. Then
+\[
+ v=(e_0-b_0)^{-1},\qquad u=b_0v
+\]
+make every $\Psi_b$ different from zero and minus one, and make
+$p_0=v/T_0$ different from zero and minus one. Interchanging the two
+missing residues permits the required ordering, because $\ell$ is odd.
+
+Choose a fixed positive cone
+$u/v>\max_i|A_i|+2413$, $v>0$. Enlarge the fixed initial cutoff past
+$82$, every prime dividing $D_0$, and the nonzero determinants of the
+distinct forms. The inherited prime-pattern proof then applies with its
+same unused third coordinate and with complexity at most $35$.
+For its fiber upper estimates, fixing $\Psi_{b_0}=p$ gives the same
+one-variable forms
+$\Psi_b=p+(K_{b_0}-K_b)p_0$.
+All coefficients, the cone, the denominator $D_0$ and the cutoff are
+fixed before the box grows. Thus the proof uses precisely the inherited
+fixed-system prime and successor estimates, not a uniform estimate in a
+growing denominator. It gives the positive ordinary primes and the
+same-prime elliptic-order conditions used there.
+
+Now $r_0=D_0^2p_0$. At a prime $\ell\mid D_0$ outside $S_*$, both $u$
+and $p_0$ are units, $v_\ell(v)=2v_\ell(D_0)$, and
+$v_\ell(A_i)\ge-v_\ell(D_0)$. Hence $w_i=A_iv-u$ is a unit.
+Both slopes have negative valuation $-2v_\ell(D_0)$, and their normalized
+infinite depths are even. No new normalized odd contact is created at
+such a denominator prime. At $p_0$, the odd valuation of $r_0$ is one.
+
+For each occurrence choose its private comparison witnesses sufficiently
+deep that its norm root is a unit at its assigned prime. The remaining
+denominator valuations in the pole argument occur in the square of that
+root. The raw contacts are positive, their reduced denominators are
+squares, and they are squares in $\Q_2,\Q_3,\Q_{17}$ by the retained
+residue $c$ and the square factor $D_0^2$. Lemma~\ref{hyp:o8-pole}
+therefore supplies the pole witnesses. Equal prime occurrences use the
+same orientation and may use separate private points. No condition on
+reduction orders at different primes has been added.
+\end{proof}
+
+% BLOCK RECIPROCAL: the released complete proofs with the stated uniform range.
+\begin{lemma}[Reciprocal logarithm and its error]
+\label{lem:quartic-reciprocal-log}
+\label{lem:quartic-uniform-reciprocal}
+Put $f=1/x$, $z=-x/y$, and define
+\[
+ a_0=1,\qquad a_1=-\frac25,\qquad
+ a_j=\frac{4j-5}{4j+1}a_{j-1}\quad(j\ge2),\qquad
+ G(w)=\sum_{j\ge0}a_jw^j.
+\]
+On the formal branch at the identity,
+\[
+ \log_E(z)=zG(Df^2).
+\]
+For every $J\ge0$ put $G_J(w)=\sum_{j=0}^{J}a_jw^j$.
+For every integer $10\le e\le64$, set $m=\lceil e/4\rceil$ and
+\[
+ G_{m-1}(w)=\sum_{j=0}^{m-1}a_jw^j,\qquad
+ L_e(z,f)=zG_{m-1}(Df^2).
+\]
+Let $p>76176$ be split and choose either place above it. If the point is
+nonidentity and lies in the formal group at that place, so
+$r=v_p(z)\ge1$ and $v_p(f)>0$, then
+\[
+ v_p\bigl(\log_E(z)-L_e(z,f)\bigr)\ge(4m+1)r,
+ \qquad \frac{L_e(z,f)}{\log_E(z)}\in1+p^e\Z_p.
+\]
+\end{lemma}
+\begin{proof}
+The curve equation gives
+\[
+ f=z^2(1-Df^2),\qquad w=Df^2,\qquad Dz^4=\frac{w}{(1-w)^2}.
+\]
+Coefficient comparison in the defining recurrence gives
+\[
+ 4w(1-w)G'(w)+(1+w)G(w)=1-w.
+\]
+Indeed the coefficient of $w$ is $5a_1+a_0=-1$, and each later
+coefficient gives $(4j+1)a_j=(4j-5)a_{j-1}$. Differentiating the
+curve identity yields $z\,dw/dz=4w(1-w)/(1+w)$. Consequently
+\[
+ \frac{d}{dz}\{zG(w)\}=\frac{1-w}{1+w}
+                   =(1+4Dz^4)^{-1/2}.
+\]
+The square root has constant term one. This is the normalized invariant
+differential for $z$, and $zG(w)$ has zero constant term, which proves
+the formal identity.
+
+At the stated place, $D$ is a unit and the formal branch gives
+$v_p(f)=2r$, hence $v_p(w)=4r$. The denominator of $a_j$, for $j\ge1$,
+divides $5\prod_{k=2}^j(4k+1)$ and therefore divides $(4j+1)!$.
+Thus
+\[
+ v_p(a_j)\ge-v_p((4j+1)!)\ge-\frac{4j+1}{p-1}.
+\]
+For $j\ge m$ with $4j+1<p$, the coefficient is $p$-integral and
+$v_p(a_jw^j)\ge4mr$. Otherwise $j\ge19044$, so $3j\ge4m$ and
+$(4j+1)/(p-1)\le j$. Therefore
+\[
+ v_p(a_jw^j)\ge4jr-j\ge4mr.
+\]
+These lower bounds tend to infinity. They control the entire infinite
+tail, including terms whose denominators are divisible by $p$.
+Multiplication by $z$ proves the first estimate. Formal logarithm isometry
+gives $v_p(\log_E(z))=r$, and proves the relative estimate.
+\end{proof}
+
+\begin{lemma}[Global nonvanishing]
+\label{lem:quartic-reciprocal-nonzero}
+For every $f\in K$ and every $J\ge2$,
+\[
+                 G_J(Df^2)\ne0.
+\]
+In particular $L_e(z,f)\ne0$ whenever $z\ne0$ and $10\le e\le64$.
+\end{lemma}
+\begin{proof}
+Let $\nu_2$ be the rational exponent-of-two valuation and put
+\[
+ v(a+b\sqrt2)=\tfrac12\nu_2(a^2-2b^2)
+             =\min\{\nu_2(a),\nu_2(b)+\tfrac12\}.
+\]
+The two terms in the norm have valuations of opposite parity when finite.
+Norm multiplicativity and the displayed minimum prove the valuation
+identities. Its finite values lie in $\tfrac12\Z$, and $v(D)=0$.
+Every $a_j$ with $j\ge1$ has valuation one, because $a_1=-2/5$ and
+all subsequent recurrence factors have odd numerator and denominator.
+If $f=0$, the assertion is immediate. If $t=v(f)\ge0$, the constant
+term of $G_J(Df^2)$ is uniquely least in valuation. If $t<0$, then
+$t\le-1/2$ and the nonconstant valuations $1+2jt$ strictly decrease;
+the last is at most $1-J<0$, below the constant term as well. In either
+case a uniquely least term proves nonvanishing. No good-reduction
+assumption at two is used.
+\end{proof}
+
+% BLOCK SELECTIVE_SPECIFICATION: the selected beta-only source.
+\subsubsection{Selective comparison systems}
+For this source put
+\begin{equation}\label{eq:quartic-selected-parameters}
+ H=H_{19},\qquad \kappa=40,\qquad q=12,
+ \qquad E_{\rm sc}=32,\qquad A_{\rm an}=25.
+\end{equation}
+Here $\kappa$ is a precision, while $K$ continues to denote the field.
+Retain $X^2=\beta-2$, the proxy equation \eqref{eq:o8-Lucas}, all four
+nonidentity root points $A,S,T,Z$, the two common auxiliary points,
+and the base pole and norm predicates. In the scalar batch use orders
+$(1,1,1,1,32,32)$ on the two coefficients each of
+$f(J_0),f(S),z(S)/z(J_0)$. In the anchor use
+$c_0=3$, $c_{i+1}=c_i^2$ for $0\le i<25$ and $C=c_{25}$.
+Thus $C$ is computed by witnesses; it is not a new coefficient of the
+polynomial. Replace the denominator-cleared height targets by precisely
+the eight coefficients in Lemma~\ref{lem:quartic-rational37}.
+
+Here is a uniform specification of the two comparator types. Write
+$n_1=n,n_2=s,n_3=t,n_4=z$ and
+$(b_1,b_2,b_3,b_4)=(\beta,\xi,\tau,\zeta)$; put
+$Q_0=P_*$ and $Q_i=[n_i]P_*$. For a chosen subset
+$I\subset\{1,2,3,4\}$ introduce private nonidentity primary points
+$P_0=[h]P_*$ and $P_i=[m_i]P_*$ for $i\in I$. Use the base affine
+subtraction charts for
+\[
+ R_0=P_0-[4]Q_0,\qquad R_i=P_i-[4]Q_i\quad(i\in I).
+\]
+Every old subtraction guard is retained: in particular the two input
+abscissas are different and these differences are nonidentity. The
+shared $J=[j]P_*\ne O$ and its reciprocal parameters are also retained.
+No identity-allowing difference model is used in this specification.
+
+For precisions $e_0$ and $e_i\le e_0$ define
+\[
+ C_i=L_{e_i}(P_i)/L_{e_0}(P_0).
+\]
+The ordered field tests are first
+\[
+ f(P_0),\ (f(P_i))_{i\in I},\ f(J)^\sigma,
+ \ \phi_0,\ (\phi_i)_{i\in I},
+ \qquad \phi_i=f(R_i)^\sigma,
+\]
+all of order one, followed by $(C_i-b_i)_{i\in I}$ of orders $e_i$,
+and then $z(R_0)^\sigma/z(J)^\sigma$ of order $e_0$ and
+$(z(R_i)^\sigma/z(J)^\sigma)_{i\in I}$ of orders $e_i$.
+Here $\sigma(\sqrt2)=-\sqrt2$, and every list indexed by $I$ is in
+increasing order. The already-conjugated common inputs are used once,
+not conjugated a second time.
+
+Before these paired field tests, retain the single rational test
+$\varepsilon=\theta^2-2$ of order one. A field expression
+$a+b\sqrt2$ of order $e$ gives the two rational tests
+$\varepsilon b,a+b\theta$, both of order $e$.
+Each resulting list has its own constant-left norm tree and the same
+pole predicate as the base compiler. The two choices are
+\[
+\begin{array}{c|c|c|c}
+ \text{type}&I&e_0&(e_i)_{i\in I}\\ \hline
+ \text{full}&\{1,2,3,4\}&40&(12,40,40,40)\\
+ \text{beta only}&\{1\}&12&(12).
+\end{array}
+\]
+Their exact rational order lists are, respectively,
+\begin{align*}
+ &\bigl(1^{[23]},12^{[2]},40^{[8]},12^{[2]},40^{[6]}\bigr),\\
+ &\bigl(1^{[11]},12^{[6]}\bigr).
+\end{align*}
+where $e^{[r]}$ means $r$ consecutive copies of $e$.
+These have lengths $41,17$; the lists specify expressions as well as
+orders. In particular the beta-only denominator has precision $12$.
+
+Assign these types to the thirty-seven positions as follows:
+\begin{equation}\label{eq:quartic-mode-partition}
+\begin{array}{c|c|c}
+ \text{positions}&\text{role}&\text{comparison}\\ \hline
+ 0\text{--}4&\text{common}&\text{full}\\
+ 5\text{--}12&x(A)&\text{beta only}\\
+ 13\text{--}20&x(S)&\text{full}\\
+ 21\text{--}28&x(T)&\text{full}\\
+ 29\text{--}36&x(Z)&\text{full}.
+\end{array}
+\end{equation}
+There are $29$ full and $8$ beta-only positions. These are
+source call counts, not polynomial variable counts. No raw position is
+removed or merged when two slopes or primes coincide.
+
+\begin{lemma}[The local conclusions of the two comparators]
+\label{lem:quartic-selective-local}
+At every $p>76176$ where a raw contact has odd valuation, a full
+comparator gives
+\[
+ \beta\in\Z_p,\quad \beta\equiv n\pmod {p^{12}},\qquad
+ (\xi,\tau,\zeta)\in\Z_p^3,\quad
+ (\xi,\tau,\zeta)\equiv(s,t,z)\pmod {p^{40}}.
+\]
+A beta-only comparator gives the displayed beta conclusion, with no
+Lucas conclusion asserted at that position.
+No ordinary-prime hypothesis is needed in this direction.
+\end{lemma}
+\begin{proof}
+Let $R=v_p(r)$ be the odd valuation of the raw contact. The all-left
+constant path of the norm tree and Lemma~\ref{hyp:o8-pole} exclude
+$R<0$. For $R>0$, descent through that tree gives, for a rational test
+$Y$ assigned order $e$,
+\[
+ v_p(Y)>(e-1)R\ge e-1,\qquad v_p(Y)\ge e.
+\]
+This argument is unchanged for each of the two tree sizes and for
+every positive integer order. It does not assume a prime raw value.
+
+The root-error test makes $\theta$ a $p$-adic unit and selects a root
+$\rho$ of $2$ with $\theta-\rho\in p\Z_p$ and $\theta+\rho$ a unit.
+Thus $p$ splits. Since
+$\theta-\rho=\varepsilon/(\theta+\rho)$, the paired inequalities
+$v_p(\varepsilon b),v_p(a+b\theta)\ge e$ imply
+$v_p(a+b\rho)\ge e$, even when $b$ is not integral.
+The order-one $f$ tests put all primary points in the formal group at
+this place, and $J,R_0,(R_i)$ in the formal group at its conjugate.
+
+Formal-logarithm homomorphism and isometry
+\cite[IV.6.4 and VII.2.1--2.2]{silverman} give
+\[
+ v_p((h-4)/j)\ge e_0,\qquad
+ v_p((m_i-4n_i)/j)\ge e_i.
+\]
+Here $j$ and all indices are integers and $j\ne0$. Therefore
+$h\equiv4\pmod {p^{e_0}}$, $m_i\equiv4n_i\pmod {p^{e_i}}$,
+and $h$ is a unit. The same homomorphism at the primary place gives
+$\log_E(P_i)/\log_E(P_0)=m_i/h\in\Z_p$.
+Lemma~\ref{lem:quartic-uniform-reciprocal} and $e_i\le e_0$ imply
+$C_i\equiv m_i/h\pmod {p^{e_i}}$. The remaining primary tests yield
+$b_i\in\Z_p$ and $b_i\equiv n_i\pmod {p^{e_i}}$, as claimed.
+\end{proof}
+
+\begin{lemma}[Scalar height and the new anchor]
+\label{lem:quartic-height19-anchor}
+Every solution of the specified scalar batch and anchor has, with
+$a=|s|$,
+\[
+ s\in2\cdot3^{2^{24}-1}\Z\setminus\{0\},\qquad
+ h(\beta)\le H a^{19/32}<a/40,
+\]
+and
+\begin{equation}\label{eq:quartic-cutoffs19}
+ a>(24H)^{10},\qquad a>(40H)^{32/13},\qquad
+ a>40,\qquad \log(40H)<a/40.
+\end{equation}
+Conversely this anchor can be imposed together with any fixed finite
+list of formal divisibilities on $s$.
+\end{lemma}
+\begin{proof}
+The exact anchor subgroup calculation in
+Section~\ref{subsec:o8-anchor-subgroup}, with $25$ squarings, gives the
+stated subgroup. Its two local computations are unchanged; the exponent
+of the final power of three is now $2^{25}$.
+In particular
+\[
+ \log_2 a>\tfrac32(2^{24}-1)=25165822.5.
+\]
+The binary height bound and $\log_2 24<5$, $\log_2 40<6$ give
+\[
+ 10\log_2(24H)<20939710<25165822.5,
+\]
+\[
+ \tfrac{32}{13}\log_2(40H)
+ <\tfrac{32}{13}\,2093972<5154400<25165822.5.
+\]
+These prove the first two cutoffs and $a>40$.
+
+Apply the same constant-left norm argument to the scalar batch. At each
+odd contact prime of $\beta$ outside $S_*$ it excludes negative odd raw
+valuation and gives the six assigned coefficient orders. The first four
+make $J_0=[j_0]P_*$ and $S$ formal at every place over that prime. The
+last two imply $v_p(s/j_0)\ge32$, hence $v_p(s)\ge32$. This reasoning
+also applies at inert primes: both rational coefficients are tested and
+the extension is unramified outside two. The retained scalar raw
+polynomial and its small-prime correction detect every prime of
+$M_5(\beta)$, including an odd infinite contact. Therefore
+\[
+ M_5(\beta)^{32}\mid s,
+ \qquad h(\beta)\le H M_5(\beta)^{19}\le Ha^{19/32}.
+\]
+The domain hypothesis holds because $\beta=X^2+2$ is in none of the four
+branch values: the only positive candidate $2401$ would require the
+nonsquare integer $2399$ to be a rational square. The second cutoff
+now gives $h(\beta)<a/40$.
+Since $32/13>2$, that cutoff also gives $a>(40H)^2$.
+For $H\ge1$, $40\log(40H)<(40H)^2$ follows at $H=1$ and then by
+differentiating the difference. This proves the last bound.
+Finally the displayed anchor subgroup contains arbitrarily divisible
+nonzero integers, exactly as required in the base completeness argument.
+\end{proof}
+
+% BLOCK FIRST_CONTRADICTION.
+\begin{lemma}[The Lucas comparison needs twenty-nine positions]
+\label{lem:quartic-selective-lucas-growth}
+The assignment in \eqref{eq:quartic-mode-partition}, together with
+the proxy equation, implies
+\[
+ t^2-s(s-2)tz+(s-2)^2z^2=1,
+ \qquad |t|>\exp(|s|-3).
+\]
+\end{lemma}
+\begin{proof}
+Put $a=|s|$, $B_L=\max(|s|,|t|,|z|)$ and
+\[
+ \Delta=t^2-s(s-2)tz+(s-2)^2z^2-1.
+\]
+Every finite position of the six coefficients of $x(S),x(T),x(Z)$,
+as well as all five common positions, retains all three Lucas
+comparisons. Lemma~\ref{lem:quartic-selective-local}
+and the proxy equation therefore give $p^{40}\mid\Delta$ at every
+odd raw-contact prime needed by these six coefficients. By the parity
+argument in Lemma~\ref{lem:quartic-rational37}, each of their normalized
+contact radicals has its fortieth power dividing $|\Delta|$ if
+$\Delta\ne0$. Choose the point among $S,T,Z$ whose index has size $B_L$.
+The index-height estimate \eqref{eq:o8-indexheight} and
+\eqref{eq:quartic-direct-height} give
+\[
+ B_L^2-6<7H|\Delta|^{19/40}
+       <7\cdot5^{19/40}HB_L^{19/10}<16HB_L^{19/10},
+\]
+where $|\Delta|<5B_L^4$. As $B_L,H\ge1$, this implies
+$B_L^{1/10}<22H<24H$, hence $B_L<(24H)^{10}$.
+It contradicts $B_L\ge a$ and \eqref{eq:quartic-cutoffs19}.
+Thus $\Delta=0$. Since $z\ne0$ and $a>40$, Lemma~\ref{lem:o8-lucas}
+gives the asserted bound on $|t|$ itself. The point $A$ and index $n$
+have not been used in this first contradiction.
+\end{proof}
+
+% BLOCK BETA_ONLY_VARIANT: retain this block for the 29/8 endpoint.
+\begin{lemma}[Soundness of the beta-only variant]
+\label{lem:quartic-beta-only}
+The beta-only assignment in \eqref{eq:quartic-mode-partition} implies
+$\beta=n$ and $X\in\Z$.
+\end{lemma}
+\begin{proof}
+Suppose $\beta\ne n$, write its difference in lowest terms, and put
+$N=|\operatorname{num}(\beta-n)|\ge1$.
+All thirty-seven positions retain a beta comparison. At every relevant
+prime $p$, the local conclusion gives $v_p(\beta-n)\ge12$; reducedness
+then shows $p\nmid\operatorname{den}(\beta-n)$ and $p^{12}\mid N$.
+Every normalized radical for all eight coefficients is covered.
+Set $B=\max(|n|,|s|,|t|,|z|)$. The upper and lower heights of the point
+realizing $B$ give
+\[
+ B^2<7HN^{19/12}+6,
+ \qquad N\le2\exp(h(\beta))B.
+\]
+The second estimate follows by writing $\beta=b/c$ in lowest terms:
+$|b|,|c|\le\exp(h(\beta))$ and $|n|\le B$.
+Since $7\cdot2^{19/12}+6<40$ and $H,B\ge1$,
+\[
+ B^{5/12}<40H\exp(19h(\beta)/12),
+ \qquad
+ \log B<\tfrac{12}{5}\log(40H)+\tfrac{19}{5}h(\beta)
+         <\tfrac{31}{200}a<a-3.
+\]
+But $B\ge|t|$, contradicting
+Lemma~\ref{lem:quartic-selective-lucas-growth}. Hence $\beta=n\in\Z$.
+The equation $X^2=\beta-2$ forces a rational $X$ to have denominator
+one, so $X\in\Z$. This second step uses the larger maximum $B$;
+there is no unproved bound on $n$ in terms of $B_L$.
+\end{proof}
+
+% BLOCK SOURCE_THEOREM: the selected 29-full / 8-beta source.
+\begin{theorem}[Arithmetic interpretation of the selective source]
+\label{thm:quartic-source-arithmetic}
+With the arithmetic inputs and source-version conventions of
+Section~\ref{sec:degree8-original}, the selective system specified
+above has rational witnesses at input $X\in\Q$ if and only if $X\in\Z$.
+The assertion also holds for its compressed primary-chart presentation
+described below. The original input coordinate is unchanged.
+\end{theorem}
+\begin{proof}
+Soundness is Lemma~\ref{lem:quartic-beta-only}.
+For completeness let $X\in\Z$, set $\beta=n=X^2+2$ and $A=[n]P_*$.
+Choose the scalar sign and small-prime squareclass correction as in the
+base construction. Choose $J_0$ sufficiently deep at its finite set of
+scalar places and then choose a positive nonzero $s$ in
+$2\cdot3^{2^{24}-1}\Z$ with all additionally required divisibilities.
+Arbitrarily deep choices give the scalar order $32$ conditions, make the
+normalized scalar leaves integral and the norm root a unit at the
+assigned primes, and preserve the local squareclasses at $2,3,17$.
+The pole theorem supplies the scalar witnesses.
+Lemma~\ref{lem:o8-lucas} supplies positive $t,z$ with the required
+index equation. Put $S=[s]P_*,T=[t]P_*,Z=[z]P_*$ and set
+$(\xi,\tau,\zeta)=(s,t,z)$.
+
+Now fix the eight rational abscissa coefficients and apply
+Lemma~\ref{lem:quartic-rational37}. Let $\mathcal P$ be the set of
+distinct selected ordinary primes, with the same orientation and
+reduction orders $d_{p,1},d_{p,2}$ as in the base proof. Put
+\[
+ j=\operatorname{lcm}_{p\in\mathcal P}d_{p,2},\qquad J=[j]P_*.
+\]
+At a position assigned to $p$ choose a private integer $h_p$ satisfying
+\[
+ h_p\equiv0\pmod {d_{p,1}},\qquad
+ h_p\equiv4\pmod {d_{p,2}},\qquad
+ h_p\equiv4\pmod {p^{40+v_p(j)}}.
+\]
+The inherited same-prime conditions
+$\gcd(d_{p,1},d_{p,2})=4$ and $p\nmid d_{p,1}d_{p,2}$ prove compatibility.
+The factor $v_p(j)$ includes orders from every other selected prime;
+no cross-prime coprimality is assumed. Avoid $h_p=0,4,-4$.
+For the type at this position take only its required points
+\[
+ P_0=[h_p]P_*,\qquad P_i=[h_pn_i]P_*\quad(i\in I).
+\]
+All are nonidentity. If a primary and its target had equal abscissa,
+they would be equal or opposite, forcing $h_p=4$ or $-4$ because
+$G$ is torsion-free and the corresponding $n_i$ is nonzero. Thus every
+retained affine subtraction guard holds. Their differences have indices
+$(h_p-4)n_i$, with $n_0=1$.
+
+The primary points are formal at the first place, and $J$ and all
+required differences at the second. The displayed congruences and
+Lemma~\ref{lem:quartic-uniform-reciprocal} give every retained test order;
+in beta-only positions the common precision $40$ choice is stronger
+than the required precision $12$. Increase the private congruence
+precision when necessary to make the norm leaves as deep as required.
+Repeated occurrences of a prime have the same orientation and otherwise
+independent private witnesses. Choose the single rational $\theta$ last,
+to meet all actual coefficientwise requirements across all positions
+and comparator types. Finite Chinese remaindering supplies it.
+
+Each norm tree retains its constant leaf on the all-left path. At the
+assigned prime its root is a unit; the positive raw value times its
+square has square reduced denominator and the three required local
+squareclasses. The last part of Lemma~\ref{lem:quartic-rational37}
+therefore supplies every remaining pole witness. This constructs a
+solution with the given $X$. The compressed presentation is equivalent
+by the following explicit maps.
+\end{proof}
+
+% BLOCK COMPRESSED: replaces the old five-point-only lemma and G15 circuit.
+\begin{lemma}[Compressed charts and exact evaluation for each type]
+\label{lem:quartic-compressed-primary}
+For each required primary point use $u_i,v_i,f_i,x_i,p_i\in K$ with
+\[
+ f_i=u_i^2,\qquad v_i^2+df_i=1,\qquad
+ p_i^2=x_i-Df_i,\qquad x_if_i=1.
+\]
+Put $G_i=G_{\lceil e_i/4\rceil-1}(Df_i^2)$, with the same convention
+for $G_0$, and replace the primary ratios by
+\[
+ \Lambda p_0=G_0,\qquad B_i=C_ip_i,\qquad B_i\Lambda=G_i
+ \quad(i\in I).
+\]
+This presentation has exactly the same rational solution projection as
+the full charts and ratios for the specified comparator. Every external
+point coordinate and the rational input $X$ are fixed.
+\end{lemma}
+\begin{proof}
+From a full chart set $p_i=y_if_i$, $\Lambda=-L_{e_0}(P_0)=G_0/p_0$
+and $B_i=C_ip_i$. The old equations give the four displayed chart
+equations and $z_i=-1/p_i$, so the ratio equations have exactly this sign.
+Conversely global nonvanishing of every $G_i$ makes $\Lambda,p_i$
+nonzero. Also $x_if_i=1$ gives $f_i\ne0$, and
+\[
+ f_ip_i^2=1-Df_i^2=v_i^2(1+df_i)
+\]
+makes $v_i\ne0$. Restore
+\[
+ y_i=x_ip_i,\qquad z_i=-1/p_i,\qquad
+ h_i=u_ip_i,\qquad w_i=u_ip_i/v_i,
+ \qquad L_i=z_iG_i.
+\]
+These satisfy every equation of \eqref{eq:o8-chart}; the old common
+logarithm inverse is $1/L_0$ and $C_i=L_i/L_0$.
+In the subtraction equations replace each $y_i$ by $x_ip_i$, keeping
+all their guards and all difference parameters. No other coordinate
+has been removed. These forward and reverse maps are rational on the
+specified nonzero loci and preserve each remaining equation.
+\end{proof}
+
+The finite evaluations used here can themselves be written quadratically.
+For precision $40$ bind four field pairs
+\[
+ w=Df^2,\qquad w_2=w^2,\qquad w_3=w_2w,\qquad U_6,
+\]
+with the fourth pair defined by the quadratic equation
+\[
+ U_6=\frac{a_3+a_4w+a_5w_2+
+                  w_3(a_6+a_7w+a_8w_2+a_9w_3)}{a_6}.
+\]
+The quadratic output expression is
+\[
+ G_9(w)=a_0+a_1w+a_2w_2+a_6w_3U_6,
+ \qquad a_6=-\frac{418}{16575}\ne0.
+\]
+For precision $12$ bind only $w=Df^2$ and use
+$G_2(w)=1+a_1w+a_2w^2$. Substitute these expressions directly into
+$\Lambda p_0=G_0$ and $B_i\Lambda=G_i$. Every product is quadratic in
+the bound rational coordinates. Expansion gives each required $a_j$
+coefficient exactly. The scale is one; no finite-error estimate is used
+as a substitute for these polynomial identities.
+
+% BLOCK SOURCE_BOUNDARY: replace old source counts/pins only from final artifact.
+The source defined by these equations is a new arithmetic specification.
+In particular neither deletion of unused comparisons nor the changes to
+the denominator logarithm and norm tree assert a coordinate-forgetting
+map between arbitrary old and new witness tuples. The preceding theorem
+proves both implications for the rational input projection. The explicit
+maps in the compressed-chart lemma concern only those chart changes.
+The base compiler remains construction machinery; the polynomial
+presented below is the single selected quartic obtained from this source.
+Its independent source check must verify the complete modules, the
+ordered expression lists and position assignment, all nonzero guards,
+the original affine height targets, scalar orders, anchor terminal
+coordinate, and the full flattening. The subsequent quadratic lift and
+certificate replay preserve the same input coordinate. Those finite
+checks establish source and polynomial identities; the arithmetic
+projection statement rests on the theorem above with the inherited
+arithmetic inputs and their existing source-version qualifications.
+
+% END BODY. BIBLIOGRAPHY INSERTS follow as comments; move them inside the
+% existing thebibliography environment, retaining the existing cited keys.
+% \bibitem{diamond-im} F. Diamond and J. Im,
+% \emph{Modular forms and modular curves}, in Seminar on Fermat's Last Theorem,
+% CMS Conference Proceedings 17 (1995), 39--133, \S12.5.
+% \bibitem{baker-et-al-finiteness} M. H. Baker, E. Gonz\'alez-Jim\'enez,
+% J. Gonz\'alez and B. Poonen, \emph{Finiteness results for modular curves
+% of genus at least 2}, American Journal of Mathematics 127 (2005),
+% 1325--1387, \S\S3.1, 3.2.1.
+% \bibitem{mascot-moduli} N. Mascot, \emph{Moduli-friendly Eisenstein series
+% over the p-adics and the computation of modular Galois representations},
+% Research in Number Theory 8 (2022), article 48,
+% \href{https://doi.org/10.1007/s40993-022-00329-6}{doi:10.1007/s40993-022-00329-6},
+% \S2.1, (2.1.8).
+

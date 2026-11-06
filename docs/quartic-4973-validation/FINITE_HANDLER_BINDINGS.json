@@ -1,0 +1,35 @@
+{
+  "checker_sha256": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe",
+  "modules": [
+    {
+      "name": "_rules_chart",
+      "outer_line": 128,
+      "sha256": "e2a3e2f006b425bdd3a1baba5c9e47f0b498fc5858ed02dcb0886971a99b8fb6",
+      "bytes": 6591
+    },
+    {
+      "name": "_rules_parity",
+      "outer_line": 130,
+      "sha256": "dd43bdbe277ec4de10e0e5ad472cc5f54ef7f2408f99b80e70ce1b852a8f020f",
+      "bytes": 5163
+    },
+    {
+      "name": "_rules_batch",
+      "outer_line": 132,
+      "sha256": "f3d14675eb656849c305f0437ca8b733bb3cb0512b92b68e5892f07af638509c",
+      "bytes": 7827
+    },
+    {
+      "name": "_relation_rules",
+      "outer_line": 135,
+      "sha256": "9db4bf4ac1501697dee6cc48e76af2cbe181f5b404a7096dcc08c9819f88c52b",
+      "bytes": 4455
+    },
+    {
+      "name": "_localized_rules",
+      "outer_line": 138,
+      "sha256": "9828978e58f6475ab1446b9d663dddb9632f35cade14d21162b6dc1e0d91e736",
+      "bytes": 8765
+    }
+  ]
+}

@@ -1,0 +1,2155 @@
+{
+  "applications": [
+    {
+      "citation_keys": [
+        "voight2021"
+      ],
+      "conventions": "Quaternion generators i^2=2,j^2=3,ij=-ji, so (ij)^2=-6; reduced norm of trace-zero element is minus its square. Local nonsplit includes ramification and inertness. No archimedean obstruction because B splits at infinity.",
+      "current_labels": [
+        "lem:v5-three-witness-anchor"
+      ],
+      "exact_source_versions": [
+        {
+          "bibliography": "J. Voight, Quaternion algebras, Springer, 2021, Chapter 14, pp. 217–240.",
+          "hash_limitation": "The published chapter is anchored by DOI, theorem and printed page, not a claimed byte pin. The older registry corrected-book pin is a distinct version.",
+          "id": "voight-2021-chapter14",
+          "inspection": "Primary published chapter read directly through browser extraction on 2026-11-06. No byte-identical local copy of this published chapter was obtained.",
+          "local_hash": null,
+          "source_bounds": "Proposition 14.6.7 and its proof; Remark 14.6.8 separates the split quadratic algebra.",
+          "url": "https://link.springer.com/content/pdf/10.1007/978-3-030-56694-4_14.pdf",
+          "version": "Published 2021 chapter, Proposition 14.6.7 on printed p.232 (PDF page 16)."
+        }
+      ],
+      "hypotheses_and_discharge": "For nonzero rational t, delta is nonzero. The proof treats square delta separately; the invoked field theorem applies to nonsquare delta. B ramifies exactly at 2 and 3. The displayed local valuation computations make K nonsplit at both precisely when t is integral at both. The t=0 case has an explicit witness.",
+      "id": "V5-VOIGHT-EMBEDDING",
+      "kind": "new_external_application",
+      "objects_and_maps": "F=Q, B=(2,3)_Q, delta=1-2/(3t^2), K=Q(sqrt(delta)); an embedding gives a trace-zero element of B of square delta, hence the ternary equation 2x^2+3y^2-6z^2=delta.",
+      "reviewed_fragment": "new1272",
+      "status": "published_theorem_source_inspected_application_independently_reviewed",
+      "theorem_or_source_locator": "Proposition 14.6.7, equivalence (iii) iff (v), published p.232; split-algebra qualification Remark 14.6.8.",
+      "translation": "Multiply the trace-zero representation by 3t^2 and substitute rational coordinates to obtain u^2+6v^2-2w^2-3t^2+2=0. The binary form A^2+AB-B^2 is anisotropic over F2 and F3, giving exactly twice the minimum valuation for the packed pair."
+    },
+    {
+      "citation_keys": [],
+      "conventions": "Valuation is normalized by v(p)=1. The logarithm is normalized with linear term z. Reciprocal coordinate f=1/x has quadratic leading term z^2. Precision uses the stated ideal p^e, not the residue-field size.",
+      "current_labels": [
+        "lem:v5-unramified-log"
+      ],
+      "exact_source_versions": [
+        {
+          "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+          "files": [
+            {
+              "bytes": 3658085,
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "workspace_relative_path": "work/astra-final-size-independent-review-001/silverman-2009.pdf"
+            }
+          ],
+          "id": "silverman",
+          "source_status": "bytes_pinned",
+          "urls": [],
+          "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file."
+        }
+      ],
+      "hypotheses_and_discharge": "The place is unramified, p is odd, and the displayed integral model has good reduction. Formal-group logarithm is an isometry on the maximal ideal. The proof uses only e in {16,52,64}, and establishes the coefficient congruence over both residue degrees.",
+      "id": "V5-SILVERMAN-UNRAMIFIED",
+      "kind": "new_application_of_inherited_source",
+      "objects_and_maps": "K=Q(sqrt(2)); a place above p>76176, split or inert; normalized curve y^2=x^3-(3-sqrt(2))^2 x; formal parameter z=-x/y.",
+      "reviewed_fragment": "new1272",
+      "status": "inherited_exact_source_new_application_independently_reviewed",
+      "theorem_or_source_locator": "Silverman 2009 IV.1, IV.2.3, IV.3.2, IV.5.5, IV.6.2–6.4; VII.2.1–2.2 and VII.6.3; inherited audited interface A071.",
+      "translation": "The new proof supplies the residue-degree-independent coefficient calculation omitted by the inherited split-prime statement; the old theorem is not silently extended."
+    },
+    {
+      "citation_keys": [],
+      "conventions": "Arithmetic Frobenius and curve point count p+1-tr(Frob). Gaussian norm N(a+bi)=a^2+b^2. The two cardinalities form an unordered pair N(pi-1),N(pi+1); they are annihilators, not asserted exact orders of P*.",
+      "current_labels": [
+        "lem:v5-two-reductions"
+      ],
+      "exact_source_versions": [
+        {
+          "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+          "files": [
+            {
+              "bytes": 3658085,
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "workspace_relative_path": "work/astra-final-size-independent-review-001/silverman-2009.pdf"
+            }
+          ],
+          "id": "silverman",
+          "source_status": "bytes_pinned",
+          "urls": [],
+          "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file."
+        }
+      ],
+      "hypotheses_and_discharge": "The chosen p satisfies p=1 mod8 and p=3 mod7. Good reduction and full rational two-torsion hold. Since the two curve parameters multiply to 7, their ratio is nonsquare modulo p, so the reductions are opposite quadratic twists. Full two-torsion forces odd real part and even imaginary part of Gaussian Frobenius.",
+      "id": "V5-SILVERMAN-CM-REDUCTION",
+      "kind": "new_application_of_inherited_source",
+      "objects_and_maps": "p=N(pi), pi Gaussian prime in the selected congruence class; the two reductions of E over the places of Q(sqrt(2)) above p; Gaussian Frobenius and its conjugate.",
+      "reviewed_fragment": "new1272",
+      "status": "inherited_exact_source_new_application_independently_reviewed",
+      "theorem_or_source_locator": "Silverman 2009 III.7.4 pp.89–91, III.8.6 p.99, V.2.3.1 p.142; inherited audited interface A072 and retained subsec:o8-pattern-proof.",
+      "translation": "Unique factorization in Z[i] identifies Frobenius up to sign/conjugation with the selected pi, and the twist changes the trace sign. Thus the two local group cardinalities equal the desired unordered norm pair."
+    },
+    {
+      "citation_keys": [
+        "v5bl"
+      ],
+      "conventions": [
+        "BL counts all integral zeros; appendix imposes global primitivity by Möbius inversion.",
+        "Hessian/determinant discriminant conventions differ only by powers of2 here.",
+        "Primitive local density is1−p^-4; conditioning denominator p^4−1."
+      ],
+      "current_labels": [
+        "lem:v5-primitive-count",
+        "eq:v5-primitive-count"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Published work verified by publisher/Crossref. Exact hypotheses checked in accepted manuscript p.17 and v2 TeX. Publisher final typeset text inaccessible; no asserted byte or layout identity.",
+          "authors": "Tim Browning; Daniel Loughran",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/BL-accepted.pdf",
+          "id": "BL",
+          "publication": "Transactions of the AMS 371 (2019), 5757–5785; electronic publication 2018-09-18",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "94411c88a12ad369896d58b43a9f943b88ff11d816f6c97a9f0d308936d2c4cb",
+          "sourceversion": "Institutional accepted author manuscript; compared with arXiv:1705.01999v2 (2018-01-23)",
+          "title": "Sieving rational points on varieties",
+          "url": "https://doi.org/10.1090/tran/7514"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "n=5 is permitted (n≥5, not n>5).",
+        "Qκ has κ≠0, rank5 and rational isotropic point (1,0,1,0,0).",
+        "Modulus squarefree, coprime to2κ, hence to2ΔQ; each residue subset is in nonzero zeros.",
+        "Smooth compact support away from origin, so gradient bounded away from0.",
+        "Error B^(n/2+ε)m^(n/2+ε) uniform in modulus/subsets; derivatives may depend on fixedτ."
+      ],
+      "id": "V5-SUN-BL-CONGRUENCES",
+      "kind": "new_external_application",
+      "objects_and_maps": "Same theorem label and hypotheses in v2 and institutional accepted text; final typeset numbering not independently observed.",
+      "qualification": "Published work verified by publisher/Crossref. Exact hypotheses checked in accepted manuscript p.17 and v2 TeX. Publisher final typeset text inaccessible; no asserted byte or layout identity.",
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": "Published work verified by publisher/Crossref. Exact hypotheses checked in accepted manuscript p.17 and v2 TeX. Publisher final typeset text inaccessible; no asserted byte or layout identity.",
+        "conventions": [
+          "BL counts all integral zeros; appendix imposes global primitivity by Möbius inversion.",
+          "Hessian/determinant discriminant conventions differ only by powers of2 here.",
+          "Primitive local density is1−p^-4; conditioning denominator p^4−1."
+        ],
+        "hypotheses": [
+          "n=5 is permitted (n≥5, not n>5).",
+          "Qκ has κ≠0, rank5 and rational isotropic point (1,0,1,0,0).",
+          "Modulus squarefree, coprime to2κ, hence to2ΔQ; each residue subset is in nonzero zeros.",
+          "Smooth compact support away from origin, so gradient bounded away from0.",
+          "Error B^(n/2+ε)m^(n/2+ε) uniform in modulus/subsets; derivatives may depend on fixedτ."
+        ],
+        "id": "V5-SUN-BL-CONGRUENCES",
+        "map": "Same theorem label and hypotheses in v2 and institutional accepted text; final typeset numbering not independently observed.",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "lem:v5-primitive-count",
+            "line": 108
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "eq:v5-primitive-count",
+            "line": 114
+          }
+        ],
+        "source": {
+          "access": "Published work verified by publisher/Crossref. Exact hypotheses checked in accepted manuscript p.17 and v2 TeX. Publisher final typeset text inaccessible; no asserted byte or layout identity.",
+          "authors": "Tim Browning; Daniel Loughran",
+          "file": "sources/BL-accepted.pdf",
+          "id": "BL",
+          "publication": "Transactions of the AMS 371 (2019), 5757–5785; electronic publication 2018-09-18",
+          "sha256": "94411c88a12ad369896d58b43a9f943b88ff11d816f6c97a9f0d308936d2c4cb",
+          "sourceversion": "Institutional accepted author manuscript; compared with arXiv:1705.01999v2 (2018-01-23)",
+          "title": "Sieving rational points on varieties",
+          "url": "https://doi.org/10.1090/tran/7514"
+        },
+        "sourceversion": "Institutional accepted author manuscript; compared with arXiv:1705.01999v2 (2018-01-23)",
+        "status": "application_checked",
+        "theorem": "Theorem 4.1; accepted manuscript p.17; BL-v2.tex:1278–1326",
+        "translation": "Rescale by h in Möbius sum. For (h,m)=1, h^-1Ω has same size; otherwise no contribution. Sum errors absolutely and calculate local densities."
+      },
+      "status": "application_checked",
+      "theorem_or_source_locator": "Theorem 4.1; accepted manuscript p.17; BL-v2.tex:1278–1326",
+      "translation": "Rescale by h in Möbius sum. For (h,m)=1, h^-1Ω has same size; otherwise no contribution. Sum errors absolutely and calculate local densities."
+    },
+    {
+      "citation_keys": [
+        "v5bhb"
+      ],
+      "conventions": [
+        "Height=max absolute coefficient.",
+        "All nonhomogeneous chart pairs explicitly checked; homogeneity of sieve polynomials is not required."
+      ],
+      "current_labels": [
+        "eq:v5-box-sieve",
+        "lem:v5-large-sieve",
+        "prop:v5-obstruction-tail"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Published work verified by publisher/Crossref. Exact lemmas checked in accepted manuscript pp.6,13–14 and v1 TeX. Publisher full-text downloads returned empty bodies; no claim final typesetting compared.",
+          "authors": "Tim D. Browning; Roger Heath-Brown",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/BHB-accepted.pdf",
+          "id": "BHB",
+          "publication": "Forum Mathematicum 33 (2021), no.1, 147–165; electronic publication 2020-10-07",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "1e2a4d3d3f731c0ee67599cfa50f899fe499e51d4a452455a04f2d0a35e7191c",
+          "sourceversion": "Oxford accepted manuscript dated 2020-09-14; compared with arXiv:2003.09593v1 (2020-03-21)",
+          "title": "The geometric sieve for quadrics",
+          "url": "https://doi.org/10.1515/forum-2020-0074"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "Rectangular side parameters and L,H at least2.",
+        "Fixed dimension3, polynomial degrees≤4; coefficient heights polynomial inB.",
+        "No common factor in Z[x,z,w], including common prime content.",
+        "After lattice substitution detE=±q²; primes outside2t stay invertible; remove only common content supported on2t."
+      ],
+      "id": "V5-SUN-BHB-BOX",
+      "kind": "new_external_application",
+      "objects_and_maps": "Same label and statement in accepted text and arXivv1; final typeset layout not observed.",
+      "qualification": "Published work verified by publisher/Crossref. Exact lemmas checked in accepted manuscript pp.6,13–14 and v1 TeX. Publisher full-text downloads returned empty bodies; no claim final typesetting compared.",
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": "Published work verified by publisher/Crossref. Exact lemmas checked in accepted manuscript pp.6,13–14 and v1 TeX. Publisher full-text downloads returned empty bodies; no claim final typesetting compared.",
+        "conventions": [
+          "Height=max absolute coefficient.",
+          "All nonhomogeneous chart pairs explicitly checked; homogeneity of sieve polynomials is not required."
+        ],
+        "hypotheses": [
+          "Rectangular side parameters and L,H at least2.",
+          "Fixed dimension3, polynomial degrees≤4; coefficient heights polynomial inB.",
+          "No common factor in Z[x,z,w], including common prime content.",
+          "After lattice substitution detE=±q²; primes outside2t stay invertible; remove only common content supported on2t."
+        ],
+        "id": "V5-SUN-BHB-BOX",
+        "map": "Same label and statement in accepted text and arXivv1; final typeset layout not observed.",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "eq:v5-box-sieve",
+            "line": 238
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "lem:v5-large-sieve",
+            "line": 256
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "prop:v5-obstruction-tail",
+            "line": 347
+          }
+        ],
+        "source": {
+          "access": "Published work verified by publisher/Crossref. Exact lemmas checked in accepted manuscript pp.6,13–14 and v1 TeX. Publisher full-text downloads returned empty bodies; no claim final typesetting compared.",
+          "authors": "Tim D. Browning; Roger Heath-Brown",
+          "file": "sources/BHB-accepted.pdf",
+          "id": "BHB",
+          "publication": "Forum Mathematicum 33 (2021), no.1, 147–165; electronic publication 2020-10-07",
+          "sha256": "1e2a4d3d3f731c0ee67599cfa50f899fe499e51d4a452455a04f2d0a35e7191c",
+          "sourceversion": "Oxford accepted manuscript dated 2020-09-14; compared with arXiv:2003.09593v1 (2020-03-21)",
+          "title": "The geometric sieve for quadrics",
+          "url": "https://doi.org/10.1515/forum-2020-0074"
+        },
+        "sourceversion": "Oxford accepted manuscript dated 2020-09-14; compared with arXiv:2003.09593v1 (2020-03-21)",
+        "status": "application_checked",
+        "theorem": "Lemma 2.1; accepted manuscript p.6; BHB-v1.tex:559–599",
+        "translation": "Apply to P,T or P′,K in short-basis coordinates; volume O(B³/q²), smallest side≫B/T. Also apply to a,b²+1 for self tail."
+      },
+      "status": "application_checked",
+      "theorem_or_source_locator": "Lemma 2.1; accepted manuscript p.6; BHB-v1.tex:559–599",
+      "translation": "Apply to P,T or P′,K in short-basis coordinates; volume O(B³/q²), smallest side≫B/T. Also apply to a,b²+1 for self tail."
+    },
+    {
+      "citation_keys": [
+        "v5bhb"
+      ],
+      "conventions": [
+        "Explicit repair: S_R contains every divisor of2κ, not merely rank-drop primes.",
+        "For m=3: number lattices≤9^ω(q)q, determinantq²; large-minimum count≪9^ω(q)q³T^-3."
+      ],
+      "current_labels": [
+        "eq:v5-lattice-tail",
+        "lem:v5-large-sieve"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Published work verified by publisher/Crossref. Exact lemmas checked in accepted manuscript pp.6,13–14 and v1 TeX. Publisher full-text downloads returned empty bodies; no claim final typesetting compared.",
+          "authors": "Tim D. Browning; Roger Heath-Brown",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/BHB-accepted.pdf",
+          "id": "BHB",
+          "publication": "Forum Mathematicum 33 (2021), no.1, 147–165; electronic publication 2020-10-07",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "1e2a4d3d3f731c0ee67599cfa50f899fe499e51d4a452455a04f2d0a35e7191c",
+          "sourceversion": "Oxford accepted manuscript dated 2020-09-14; compared with arXiv:2003.09593v1 (2020-03-21)",
+          "title": "The geometric sieve for quadrics",
+          "url": "https://doi.org/10.1515/forum-2020-0074"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "R=κw²−xz has rank3.",
+        "q is squarefree and every p|q is odd and p∤κ.",
+        "Good primes preserve rank3.",
+        "Euclidean successive minima; count with largest minimum>T."
+      ],
+      "id": "V5-SUN-BHB-LATTICES",
+      "kind": "new_external_application",
+      "objects_and_maps": "Same label and hypotheses in accepted text and arXivv1; final typeset layout not observed.",
+      "qualification": "Published work verified by publisher/Crossref. Exact lemmas checked in accepted manuscript pp.6,13–14 and v1 TeX. Publisher full-text downloads returned empty bodies; no claim final typesetting compared.",
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": "Published work verified by publisher/Crossref. Exact lemmas checked in accepted manuscript pp.6,13–14 and v1 TeX. Publisher full-text downloads returned empty bodies; no claim final typesetting compared.",
+        "conventions": [
+          "Explicit repair: S_R contains every divisor of2κ, not merely rank-drop primes.",
+          "For m=3: number lattices≤9^ω(q)q, determinantq²; large-minimum count≪9^ω(q)q³T^-3."
+        ],
+        "hypotheses": [
+          "R=κw²−xz has rank3.",
+          "q is squarefree and every p|q is odd and p∤κ.",
+          "Good primes preserve rank3.",
+          "Euclidean successive minima; count with largest minimum>T."
+        ],
+        "id": "V5-SUN-BHB-LATTICES",
+        "map": "Same label and hypotheses in accepted text and arXivv1; final typeset layout not observed.",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "eq:v5-lattice-tail",
+            "line": 249
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "lem:v5-large-sieve",
+            "line": 256
+          }
+        ],
+        "source": {
+          "access": "Published work verified by publisher/Crossref. Exact lemmas checked in accepted manuscript pp.6,13–14 and v1 TeX. Publisher full-text downloads returned empty bodies; no claim final typesetting compared.",
+          "authors": "Tim D. Browning; Roger Heath-Brown",
+          "file": "sources/BHB-accepted.pdf",
+          "id": "BHB",
+          "publication": "Forum Mathematicum 33 (2021), no.1, 147–165; electronic publication 2020-10-07",
+          "sha256": "1e2a4d3d3f731c0ee67599cfa50f899fe499e51d4a452455a04f2d0a35e7191c",
+          "sourceversion": "Oxford accepted manuscript dated 2020-09-14; compared with arXiv:2003.09593v1 (2020-03-21)",
+          "title": "The geometric sieve for quadrics",
+          "url": "https://doi.org/10.1515/forum-2020-0074"
+        },
+        "sourceversion": "Oxford accepted manuscript dated 2020-09-14; compared with arXiv:2003.09593v1 (2020-03-21)",
+        "status": "application_checked",
+        "theorem": "Lemma 4.1; accepted manuscript pp.13–14; BHB-v1.tex:949–983",
+        "translation": "Cover t|R by q|R, bound multiplicity of t for eachq, separate largest minimum atT=B^(3/4), use box sieve on remaining lattices."
+      },
+      "status": "application_checked",
+      "theorem_or_source_locator": "Lemma 4.1; accepted manuscript pp.13–14; BHB-v1.tex:949–983",
+      "translation": "Cover t|R by q|R, bound multiplicity of t for eachq, separate largest minimum atT=B^(3/4), use box sieve on remaining lattices."
+    },
+    {
+      "citation_keys": [
+        "v5ft"
+      ],
+      "conventions": [
+        "Arithmetic Frobenius throughout; σb(ζD)=ζD^b.",
+        "μj=φ(D)η summed over classes, equivalently fibre numerator divided by[K:Kab].",
+        "Prime powers removed with negligible error; use difference-multiset cube steps h−h′.",
+        "Theorem1.4 imposes no HRH/GRH assumption."
+      ],
+      "current_labels": [
+        "eq:v5-mu",
+        "prop:v5-artin-patterns",
+        "eq:v5-global-gowers"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Exact preprint theorem and proof structure inspected. Author-page and Crossref search receipts preserved. Acceptance is not treated as verification of a published version.",
+          "authors": "Christopher Frei; Magdaléna Tinková; appendix with Joachim König",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/FT-v3.tex",
+          "id": "FT",
+          "publication": "Author page says Mathematika, to appear, as checked 2026-11-06. No final published version/DOI located.",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "72ab8baf0743dd9fd597b27d8f75d656c8e606dc70530f10745bc58a3a9988a1",
+          "sourceversion": "arXiv:2408.17441v3, 2025-11-05",
+          "title": "Linear constellations in primes with arithmetic restrictions",
+          "url": "https://arxiv.org/abs/2408.17441v3"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "Fields and conjugacy classes fixed before N→∞. Finite invariant unions handled by finite summation.",
+        "Affine forms from cube vertices pairwise nonproportional, hence finite complexity.",
+        "For each fixedv, W,q and normalized coefficients are bounded constants.",
+        "Wrap-around regions are finitely many convex regions in a fixed box; normalized constant terms bounded.",
+        "J/n lies between fixed positive powers of A; absolute o(n^(2a+1)) error becomes o_v(nJ^(2a))."
+      ],
+      "id": "V5-SUN-FT-LINEAR",
+      "kind": "new_external_application",
+      "objects_and_maps": "Exact arXivv3 theorem. No final published mapping verified. Theorem1.2 is a different, conditional primitive-root theorem and is not used.",
+      "qualification": "FT internal proof is separately mapped in FT_PROOF_SCOPE.md/FT_PROOF_DEPENDENCIES.json. Its Lemma9.3 majorant exponent is repaired in rem:v5-ft-norm-repair. No all-published closure is claimed.",
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": "FT internal proof is separately mapped in FT_PROOF_SCOPE.md/FT_PROOF_DEPENDENCIES.json. Its Lemma9.3 majorant exponent is repaired in rem:v5-ft-norm-repair. No all-published closure is claimed.",
+        "conventions": [
+          "Arithmetic Frobenius throughout; σb(ζD)=ζD^b.",
+          "μj=φ(D)η summed over classes, equivalently fibre numerator divided by[K:Kab].",
+          "Prime powers removed with negligible error; use difference-multiset cube steps h−h′.",
+          "Theorem1.4 imposes no HRH/GRH assumption."
+        ],
+        "hypotheses": [
+          "Fields and conjugacy classes fixed before N→∞. Finite invariant unions handled by finite summation.",
+          "Affine forms from cube vertices pairwise nonproportional, hence finite complexity.",
+          "For each fixedv, W,q and normalized coefficients are bounded constants.",
+          "Wrap-around regions are finitely many convex regions in a fixed box; normalized constant terms bounded.",
+          "J/n lies between fixed positive powers of A; absolute o(n^(2a+1)) error becomes o_v(nJ^(2a))."
+        ],
+        "id": "V5-SUN-FT-LINEAR",
+        "map": "Exact arXivv3 theorem. No final published mapping verified. Theorem1.2 is a different, conditional primitive-root theorem and is not used.",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "eq:v5-mu",
+            "line": 414
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "prop:v5-artin-patterns",
+            "line": 422
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "eq:v5-global-gowers",
+            "line": 466
+          }
+        ],
+        "source": {
+          "access": "Exact preprint theorem and proof structure inspected. Author-page and Crossref search receipts preserved. Acceptance is not treated as verification of a published version.",
+          "authors": "Christopher Frei; Magdaléna Tinková; appendix with Joachim König",
+          "file": "sources/FT-v3.tex",
+          "id": "FT",
+          "publication": "Author page says Mathematika, to appear, as checked 2026-11-06. No final published version/DOI located.",
+          "sha256": "72ab8baf0743dd9fd597b27d8f75d656c8e606dc70530f10745bc58a3a9988a1",
+          "sourceversion": "arXiv:2408.17441v3, 2025-11-05",
+          "title": "Linear constellations in primes with arithmetic restrictions",
+          "url": "https://arxiv.org/abs/2408.17441v3"
+        },
+        "sourceversion": "arXiv:2408.17441v3, 2025-11-05",
+        "status": "application_checked_to_accepted_preprint; external_proof_not_closed",
+        "theorem": "Theorem1.4 and formula(1.15); FT-v3.tex:330–408",
+        "translation": "Compute each cube-subset main term, bound large-prime Euler factors by1+O(1/logv), then centered expansion cancels means."
+      },
+      "status": "application_checked_to_accepted_preprint; external_proof_not_closed",
+      "theorem_or_source_locator": "Theorem1.4 and formula(1.15); FT-v3.tex:330–408",
+      "translation": "Compute each cube-subset main term, bound large-prime Euler factors by1+O(1/logv), then centered expansion cancels means."
+    },
+    {
+      "citation_keys": [
+        "v5dk"
+      ],
+      "conventions": [
+        "Interval U^s norm is the cyclic zero-extension norm divided by the indicator norm.",
+        "Real-valued f; majorant nonnegative. Nilsequence bounded by1 with bounded Lipschitz constant.",
+        "The printed U^(2u) estimate alone does not imply the required U^(2u+2) estimate; monotonicity points the other way."
+      ],
+      "current_labels": [
+        "rem:v5-ft-norm-repair"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Exact Theorem5.1 checked in arXivv4 pp.12–13, dated after journal online publication. Final typeset statement not compared; same label is the citation used by FT.",
+          "authors": "Pandelis Dodos; Vassilis Kanellopoulos",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/DK-v4.pdf",
+          "id": "DK",
+          "publication": "Acta Arithmetica 203 (2022), no.3, 251–270; published online 2022-05-10",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "1d71ecfcb7a1970ce3d7a10ac426f8c94e9d1d6a88886cb378ca19a099963508",
+          "sourceversion": "arXiv:1610.00487v4, 2022-06-09; published work verified separately",
+          "title": "Uniformity norms, their weaker versions, and applications",
+          "url": "https://doi.org/10.4064/aa210728-27-2"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "Set s=u+1≥2, choose C≥max(20,C0(D)), prime Nprime in[CN,2CN].",
+        "A nonnegative majorant on Z/NprimeZ dominates the positively rescaled, truncated real centered prime weight on[N].",
+        "The target U^s[N] norm is bounded below by fixed positive delta.",
+        "Request D=4^(u+1), not the printed4^u, in FT Lemma9.1. All centered(2u+2)-cube subfamilies have ≤D forms and ≤D variables, coefficient0/1, pairwise nonproportional.",
+        "Inclusion–exclusion gives norm(nu−1,U^(2u+2))=o(1), the exact U^(2s) hypothesis; constants fixed before N→infinity."
+      ],
+      "id": "V5-SUN-DK-RELATIVE-INVERSE",
+      "kind": "new_external_application",
+      "objects_and_maps": "Published work, exact theorem checked in arXivv4; final typeset statement not compared. FT cites Theorem5.1. This repairs an application inside the imported FT proof, without adding an assumption to FT1.4.",
+      "qualification": "Repairs only the majorant exponent in the FT proof route. Does not independently establish its ideal-norm nilsequence theorem or all-published closure.",
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": "Repairs only the majorant exponent in the FT proof route. Does not independently establish its ideal-norm nilsequence theorem or all-published closure.",
+        "conventions": [
+          "Interval U^s norm is the cyclic zero-extension norm divided by the indicator norm.",
+          "Real-valued f; majorant nonnegative. Nilsequence bounded by1 with bounded Lipschitz constant.",
+          "The printed U^(2u) estimate alone does not imply the required U^(2u+2) estimate; monotonicity points the other way."
+        ],
+        "hypotheses": [
+          "Set s=u+1≥2, choose C≥max(20,C0(D)), prime Nprime in[CN,2CN].",
+          "A nonnegative majorant on Z/NprimeZ dominates the positively rescaled, truncated real centered prime weight on[N].",
+          "The target U^s[N] norm is bounded below by fixed positive delta.",
+          "Request D=4^(u+1), not the printed4^u, in FT Lemma9.1. All centered(2u+2)-cube subfamilies have ≤D forms and ≤D variables, coefficient0/1, pairwise nonproportional.",
+          "Inclusion–exclusion gives norm(nu−1,U^(2u+2))=o(1), the exact U^(2s) hypothesis; constants fixed before N→infinity."
+        ],
+        "id": "V5-SUN-DK-RELATIVE-INVERSE",
+        "map": "Published work, exact theorem checked in arXivv4; final typeset statement not compared. FT cites Theorem5.1. This repairs an application inside the imported FT proof, without adding an assumption to FT1.4.",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "rem:v5-ft-norm-repair",
+            "line": 381
+          }
+        ],
+        "source": {
+          "access": "Exact Theorem5.1 checked in arXivv4 pp.12–13, dated after journal online publication. Final typeset statement not compared; same label is the citation used by FT.",
+          "authors": "Pandelis Dodos; Vassilis Kanellopoulos",
+          "file": "sources/DK-v4.pdf",
+          "id": "DK",
+          "publication": "Acta Arithmetica 203 (2022), no.3, 251–270; published online 2022-05-10",
+          "sha256": "1d71ecfcb7a1970ce3d7a10ac426f8c94e9d1d6a88886cb378ca19a099963508",
+          "sourceversion": "arXiv:1610.00487v4, 2022-06-09; published work verified separately",
+          "title": "Uniformity norms, their weaker versions, and applications",
+          "url": "https://doi.org/10.4064/aa210728-27-2"
+        },
+        "sourceversion": "arXiv:1610.00487v4, 2022-06-09; published work verified separately",
+        "status": "local_application_repaired_and_independently_reviewed",
+        "theorem": "Theorem5.1, arXivv4 pp.12–13; FT-v3.tex:2924–2948",
+        "translation": "Increase the fixed majorant complexity before construction. The relative inverse theorem then supplies an u-step nilsequence, which FT2.3 excludes by correlation decay. Oracle independently checked this repair against DKv4 and FTv3."
+      },
+      "status": "local_application_repaired_and_independently_reviewed",
+      "theorem_or_source_locator": "Theorem5.1, arXivv4 pp.12–13; FT-v3.tex:2924–2948",
+      "translation": "Increase the fixed majorant complexity before construction. The relative inverse theorem then supplies an u-step nilsequence, which FT2.3 excludes by correlation decay. Oracle independently checked this repair against DKv4 and FTv3."
+    },
+    {
+      "citation_keys": [
+        "v5tz"
+      ],
+      "conventions": [
+        "Global and local norm approximations use the same bounded model.",
+        "Underlying cyclic group is Z/nZ; averages use the paper’s difference-multiset convention."
+      ],
+      "current_labels": [
+        "prop:v5-artin-patterns",
+        "rem:v5-tz-numbering"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Published PDF checked; explicit arXiv:1603.07817v1 to published numbering map below.",
+          "authors": "Terence Tao; Tamar Ziegler",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/TZ-published.pdf",
+          "id": "TZ",
+          "publication": "Forum of Mathematics, Pi 6 (2018), e1, 73 pp.",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "ba1645db9857dd621e8ea6a280927c1e4b7cef5f6df04a4f19e7ac7782220f43",
+          "sourceversion": "Published version, 2018-02-12",
+          "title": "Polynomial patterns in the primes",
+          "url": "https://doi.org/10.1017/fmp.2017.3"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "Use arbitrary f dominated by ordinary prime weight, not ordinary-prime special model1.",
+        "Choose complexities d′,C,B0,a beforeρ andv; B0>C+2, ρ*=ρ/B0.",
+        "Acal=A^B0=W^(1/ρ*); cutoff n^ρ*≤n^ρ.",
+        "M1≥A^-3√n; logarithmic lower bound holds for slowv; M1≤√(Acal n).",
+        "Local step polynomials have degree1 and coefficientsO(A^C), within Acal allowance."
+      ],
+      "id": "V5-SUN-TZ-MODEL",
+      "kind": "new_external_application",
+      "objects_and_maps": "arXivv1 Theorem3.1→publishedTheorem11; Corollary3.9→publishedCorollary3.",
+      "qualification": null,
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": null,
+        "conventions": [
+          "Global and local norm approximations use the same bounded model.",
+          "Underlying cyclic group is Z/nZ; averages use the paper’s difference-multiset convention."
+        ],
+        "hypotheses": [
+          "Use arbitrary f dominated by ordinary prime weight, not ordinary-prime special model1.",
+          "Choose complexities d′,C,B0,a beforeρ andv; B0>C+2, ρ*=ρ/B0.",
+          "Acal=A^B0=W^(1/ρ*); cutoff n^ρ*≤n^ρ.",
+          "M1≥A^-3√n; logarithmic lower bound holds for slowv; M1≤√(Acal n).",
+          "Local step polynomials have degree1 and coefficientsO(A^C), within Acal allowance."
+        ],
+        "id": "V5-SUN-TZ-MODEL",
+        "map": "arXivv1 Theorem3.1→publishedTheorem11; Corollary3.9→publishedCorollary3.",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "prop:v5-artin-patterns",
+            "line": 422
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "rem:v5-tz-numbering",
+            "line": 560
+          }
+        ],
+        "source": {
+          "access": "Published PDF checked; explicit arXiv:1603.07817v1 to published numbering map below.",
+          "authors": "Terence Tao; Tamar Ziegler",
+          "file": "sources/TZ-published.pdf",
+          "id": "TZ",
+          "publication": "Forum of Mathematics, Pi 6 (2018), e1, 73 pp.",
+          "sha256": "ba1645db9857dd621e8ea6a280927c1e4b7cef5f6df04a4f19e7ac7782220f43",
+          "sourceversion": "Published version, 2018-02-12",
+          "title": "Polynomial patterns in the primes",
+          "url": "https://doi.org/10.1017/fmp.2017.3"
+        },
+        "sourceversion": "Published version, 2018-02-12",
+        "status": "application_checked",
+        "theorem": "Theorem11 (p.28) and Corollary3 (p.38)",
+        "translation": "Transfer global Artin uniformity to bounded model and recover local uniformity after concatenation."
+      },
+      "status": "application_checked",
+      "theorem_or_source_locator": "Theorem11 (p.28) and Corollary3 (p.38)",
+      "translation": "Transfer global Artin uniformity to bounded model and recover local uniformity after concatenation."
+    },
+    {
+      "citation_keys": [
+        "v5tz"
+      ],
+      "conventions": [
+        "Takingv large occurs after complexity selection; then take n large for thatv."
+      ],
+      "current_labels": [
+        "eq:v5-global-gowers",
+        "prop:v5-artin-patterns",
+        "rem:v5-tz-numbering"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Published PDF checked; explicit arXiv:1603.07817v1 to published numbering map below.",
+          "authors": "Terence Tao; Tamar Ziegler",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/TZ-published.pdf",
+          "id": "TZ",
+          "publication": "Forum of Mathematics, Pi 6 (2018), e1, 73 pp.",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "ba1645db9857dd621e8ea6a280927c1e4b7cef5f6df04a4f19e7ac7782220f43",
+          "sourceversion": "Published version, 2018-02-12",
+          "title": "Polynomial patterns in the primes",
+          "url": "https://doi.org/10.1017/fmp.2017.3"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "Bounded function model minus μ.",
+        "Fixed local/global orders chosen in allowed hierarchy.",
+        "n>Acal^-1 M1²; smallness threshold independent of Acal.",
+        "q≤A^(B0a), J=floor(A^(-2B0a)M1²), nA^(-2B0a−7)≤J≤nA^(-2B0a)."
+      ],
+      "id": "V5-SUN-TZ-CONCAT",
+      "kind": "new_external_application",
+      "objects_and_maps": "arXivv1 Theorem2.5→publishedTheorem9.",
+      "qualification": null,
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": null,
+        "conventions": [
+          "Takingv large occurs after complexity selection; then take n large for thatv."
+        ],
+        "hypotheses": [
+          "Bounded function model minus μ.",
+          "Fixed local/global orders chosen in allowed hierarchy.",
+          "n>Acal^-1 M1²; smallness threshold independent of Acal.",
+          "q≤A^(B0a), J=floor(A^(-2B0a)M1²), nA^(-2B0a−7)≤J≤nA^(-2B0a)."
+        ],
+        "id": "V5-SUN-TZ-CONCAT",
+        "map": "arXivv1 Theorem2.5→publishedTheorem9.",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "eq:v5-global-gowers",
+            "line": 466
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "prop:v5-artin-patterns",
+            "line": 422
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "rem:v5-tz-numbering",
+            "line": 560
+          }
+        ],
+        "source": {
+          "access": "Published PDF checked; explicit arXiv:1603.07817v1 to published numbering map below.",
+          "authors": "Terence Tao; Tamar Ziegler",
+          "file": "sources/TZ-published.pdf",
+          "id": "TZ",
+          "publication": "Forum of Mathematics, Pi 6 (2018), e1, 73 pp.",
+          "sha256": "ba1645db9857dd621e8ea6a280927c1e4b7cef5f6df04a4f19e7ac7782220f43",
+          "sourceversion": "Published version, 2018-02-12",
+          "title": "Polynomial patterns in the primes",
+          "url": "https://doi.org/10.1017/fmp.2017.3"
+        },
+        "sourceversion": "Published version, 2018-02-12",
+        "status": "application_checked",
+        "theorem": "Theorem9, p.21",
+        "translation": "Small global Gowers norms yield small averaged local box norms."
+      },
+      "status": "application_checked",
+      "theorem_or_source_locator": "Theorem9, p.21",
+      "translation": "Small global Gowers norms yield small averaged local box norms."
+    },
+    {
+      "citation_keys": [
+        "v5tz"
+      ],
+      "conventions": [
+        "T=o√N makes boundary shiftsO(T²)=oN; ordinary majorant bounds endpoints.",
+        "Residue normalization has bounded admissible mass ∏p|Wβp."
+      ],
+      "current_labels": [
+        "eq:v5-artin-patterns",
+        "eq:v5-artin-series",
+        "rem:v5-tz-numbering"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Published PDF checked; explicit arXiv:1603.07817v1 to published numbering map below.",
+          "authors": "Terence Tao; Tamar Ziegler",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/TZ-published.pdf",
+          "id": "TZ",
+          "publication": "Forum of Mathematics, Pi 6 (2018), e1, 73 pp.",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "ba1645db9857dd621e8ea6a280927c1e4b7cef5f6df04a4f19e7ac7782220f43",
+          "sourceversion": "Published version, 2018-02-12",
+          "title": "Polynomial patterns in the primes",
+          "url": "https://doi.org/10.1017/fmp.2017.3"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "Integer quadratic polynomials c_jWm²+2c_jcm+(b+c_jc²−b_j)/W.",
+        "Distinct c_j give nonzero quadratic leading-coefficient differences.",
+        "CoefficientsO(W), within chosen coefficient bound.",
+        "Each expanded non-main product has a centered factor with vanishing local norm; other factors dominated by majorant."
+      ],
+      "id": "V5-SUN-TZ-VN",
+      "kind": "new_external_application",
+      "objects_and_maps": "arXivv1 Theorem4.1→publishedTheorem13; preprint(4.1)→published(57).",
+      "qualification": null,
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": null,
+        "conventions": [
+          "T=o√N makes boundary shiftsO(T²)=oN; ordinary majorant bounds endpoints.",
+          "Residue normalization has bounded admissible mass ∏p|Wβp."
+        ],
+        "hypotheses": [
+          "Integer quadratic polynomials c_jWm²+2c_jcm+(b+c_jc²−b_j)/W.",
+          "Distinct c_j give nonzero quadratic leading-coefficient differences.",
+          "CoefficientsO(W), within chosen coefficient bound.",
+          "Each expanded non-main product has a centered factor with vanishing local norm; other factors dominated by majorant."
+        ],
+        "id": "V5-SUN-TZ-VN",
+        "map": "arXivv1 Theorem4.1→publishedTheorem13; preprint(4.1)→published(57).",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "eq:v5-artin-patterns",
+            "line": 425
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "eq:v5-artin-series",
+            "line": 431
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "rem:v5-tz-numbering",
+            "line": 560
+          }
+        ],
+        "source": {
+          "access": "Published PDF checked; explicit arXiv:1603.07817v1 to published numbering map below.",
+          "authors": "Terence Tao; Tamar Ziegler",
+          "file": "sources/TZ-published.pdf",
+          "id": "TZ",
+          "publication": "Forum of Mathematics, Pi 6 (2018), e1, 73 pp.",
+          "sha256": "ba1645db9857dd621e8ea6a280927c1e4b7cef5f6df04a4f19e7ac7782220f43",
+          "sourceversion": "Published version, 2018-02-12",
+          "title": "Polynomial patterns in the primes",
+          "url": "https://doi.org/10.1017/fmp.2017.3"
+        },
+        "sourceversion": "Published version, 2018-02-12",
+        "status": "application_checked",
+        "theorem": "Theorem13 and equation(57), p.41",
+        "translation": "All centered polynomial averages vanish, leaving explicit singular series."
+      },
+      "status": "application_checked",
+      "theorem_or_source_locator": "Theorem13 and equation(57), p.41",
+      "translation": "All centered polynomial averages vanish, leaving explicit singular series."
+    },
+    {
+      "citation_keys": [
+        "v5tz"
+      ],
+      "conventions": [
+        "Majorant normalizes ordinary primes; it does not itself prove Artin distribution."
+      ],
+      "current_labels": [
+        "prop:v5-artin-patterns"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Published PDF checked; explicit arXiv:1603.07817v1 to published numbering map below.",
+          "authors": "Terence Tao; Tamar Ziegler",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/TZ-published.pdf",
+          "id": "TZ",
+          "publication": "Forum of Mathematics, Pi 6 (2018), e1, 73 pp.",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "ba1645db9857dd621e8ea6a280927c1e4b7cef5f6df04a4f19e7ac7782220f43",
+          "sourceversion": "Published version, 2018-02-12",
+          "title": "Polynomial patterns in the primes",
+          "url": "https://doi.org/10.1017/fmp.2017.3"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "Ordinary prime majorant suffices since0≤ΛArtin′≤Λ′.",
+        "For largev, W=E∏p≤v p withE fixed, its prime factors already≤v.",
+        "Unitb means all primes dividingW are absent from divisor conditions, regardless of exponent.",
+        "OutsideW local factors unchanged; fixedE absorbed in coefficient bounds."
+      ],
+      "id": "V5-SUN-TZ-MAJORANT",
+      "kind": "new_external_application",
+      "objects_and_maps": "Preprint(3.5)→published(36). Fixed conductor multiplier is an explained adaptation, not an unquoted literal theorem clause.",
+      "qualification": null,
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": null,
+        "conventions": [
+          "Majorant normalizes ordinary primes; it does not itself prove Artin distribution."
+        ],
+        "hypotheses": [
+          "Ordinary prime majorant suffices since0≤ΛArtin′≤Λ′.",
+          "For largev, W=E∏p≤v p withE fixed, its prime factors already≤v.",
+          "Unitb means all primes dividingW are absent from divisor conditions, regardless of exponent.",
+          "OutsideW local factors unchanged; fixedE absorbed in coefficient bounds."
+        ],
+        "id": "V5-SUN-TZ-MAJORANT",
+        "map": "Preprint(3.5)→published(36). Fixed conductor multiplier is an explained adaptation, not an unquoted literal theorem clause.",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "prop:v5-artin-patterns",
+            "line": 422
+          }
+        ],
+        "source": {
+          "access": "Published PDF checked; explicit arXiv:1603.07817v1 to published numbering map below.",
+          "authors": "Terence Tao; Tamar Ziegler",
+          "file": "sources/TZ-published.pdf",
+          "id": "TZ",
+          "publication": "Forum of Mathematics, Pi 6 (2018), e1, 73 pp.",
+          "sha256": "ba1645db9857dd621e8ea6a280927c1e4b7cef5f6df04a4f19e7ac7782220f43",
+          "sourceversion": "Published version, 2018-02-12",
+          "title": "Polynomial patterns in the primes",
+          "url": "https://doi.org/10.1017/fmp.2017.3"
+        },
+        "sourceversion": "Published version, 2018-02-12",
+        "status": "application_checked_with_explicit_fixed_modulus_adaptation",
+        "theorem": "Equation(36), p.29, and AppendixA polynomial-forms verification",
+        "translation": "Repeat published divisor-sum local-factor calculation with fixedE; obtain same polynomial-forms pseudorandomness."
+      },
+      "status": "application_checked_with_explicit_fixed_modulus_adaptation",
+      "theorem_or_source_locator": "Equation(36), p.29, and AppendixA polynomial-forms verification",
+      "translation": "Repeat published divisor-sum local-factor calculation with fixedE; obtain same polynomial-forms pseudorandomness."
+    },
+    {
+      "citation_keys": [
+        "v5kl"
+      ],
+      "conventions": [
+        "Arithmetic Frobenius x↦x^Norm(p) is explicit in publishedTheorem7.2.",
+        "Ideal Artin class of(r), not inverse class, defines residue h_r.",
+        "Cyclotomic restriction is exponentNorm(r).",
+        "No division by four in new residue kernel oncebase representative fixed."
+      ],
+      "current_labels": [
+        "eq:v5-ray-group",
+        "lem:v5-ray-fibres",
+        "eq:v5-ray-density"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Published PDF from MSP checked. Replaces Milne course-note citation for ray existence, exact sequence and reciprocity.",
+          "authors": "Gene S. Kopp; Jeffrey C. Lagarias",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/Kopp-Lagarias-published.pdf",
+          "id": "KL",
+          "publication": "Essential Number Theory 4 (2025), no.1, 1–65",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "258738fef78b451390e78c019ea33adbea9a6d45af7625136bbc84897b224667",
+          "sourceversion": "Published version, Essential Number Theory 4 (2025)",
+          "title": "Ray class groups and ray class fields for orders of number fields",
+          "url": "https://doi.org/10.2140/ent.2025.4.1"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "Base field Q(i), maximal order Z[i], finite nonzero modulusHZ[i], no real places.",
+        "Class number1 gives ray quotient of residue units by four Gaussian units.",
+        "Stable modulus under conjugation gives ray extension Galois overQ.",
+        "H0 divisible16 makes unit embedding injective; added primes avoid2H0."
+      ],
+      "id": "V5-SUN-KL-RAYS",
+      "kind": "new_external_application",
+      "objects_and_maps": "Published theorem labels used directly. Milne course-note citation replaced.",
+      "qualification": null,
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": null,
+        "conventions": [
+          "Arithmetic Frobenius x↦x^Norm(p) is explicit in publishedTheorem7.2.",
+          "Ideal Artin class of(r), not inverse class, defines residue h_r.",
+          "Cyclotomic restriction is exponentNorm(r).",
+          "No division by four in new residue kernel oncebase representative fixed."
+        ],
+        "hypotheses": [
+          "Base field Q(i), maximal order Z[i], finite nonzero modulusHZ[i], no real places.",
+          "Class number1 gives ray quotient of residue units by four Gaussian units.",
+          "Stable modulus under conjugation gives ray extension Galois overQ.",
+          "H0 divisible16 makes unit embedding injective; added primes avoid2H0."
+        ],
+        "id": "V5-SUN-KL-RAYS",
+        "map": "Published theorem labels used directly. Milne course-note citation replaced.",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "eq:v5-ray-group",
+            "line": 586
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "lem:v5-ray-fibres",
+            "line": 622
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "eq:v5-ray-density",
+            "line": 634
+          }
+        ],
+        "source": {
+          "access": "Published PDF from MSP checked. Replaces Milne course-note citation for ray existence, exact sequence and reciprocity.",
+          "authors": "Gene S. Kopp; Jeffrey C. Lagarias",
+          "file": "sources/Kopp-Lagarias-published.pdf",
+          "id": "KL",
+          "publication": "Essential Number Theory 4 (2025), no.1, 1–65",
+          "sha256": "258738fef78b451390e78c019ea33adbea9a6d45af7625136bbc84897b224667",
+          "sourceversion": "Published version, Essential Number Theory 4 (2025)",
+          "title": "Ray class groups and ray class fields for orders of number fields",
+          "url": "https://doi.org/10.2140/ent.2025.4.1"
+        },
+        "sourceversion": "Published version, Essential Number Theory 4 (2025)",
+        "status": "application_checked",
+        "theorem": "Theorems1.1 (p.4),1.3 (p.5),6.5 (p.42),7.2 (pp.47–48), Remark7.3 (p.48)",
+        "translation": "Derive exact kernel∏Bℓ, commutators∏kerNorm, abelian quotient, and surviving norm-fibre proportions at least1−4/(ℓ−1)."
+      },
+      "status": "application_checked",
+      "theorem_or_source_locator": "Theorems1.1 (p.4),1.3 (p.5),6.5 (p.42),7.2 (pp.47–48), Remark7.3 (p.48)",
+      "translation": "Derive exact kernel∏Bℓ, commutators∏kerNorm, abelian quotient, and surviving norm-fibre proportions at least1−4/(ℓ−1)."
+    },
+    {
+      "citation_keys": [
+        "v5williams"
+      ],
+      "conventions": [
+        "Positive constants in product asymptotics; χ4(p)=±1.",
+        "Taking logarithms loses only convergent∑p^-2 terms."
+      ],
+      "current_labels": [
+        "lem:v5-medium-sieve",
+        "prop:v5-cutoff-lower"
+      ],
+      "exact_source_versions": [
+        {
+          "access": "Author-hosted scan of published pages checked; Theorem1 on p.356.",
+          "authors": "Kenneth S. Williams",
+          "byte_verification": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+          "file": "sources/Williams-published.pdf",
+          "id": "WILLIAMS",
+          "publication": "Journal of Number Theory 6 (1974), 353–359",
+          "release_availability": "Hash-pinned external audit source; full text not redistributed here.",
+          "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0",
+          "sourceversion": "Published version, 1974",
+          "title": "Mertens’ theorem for arithmetic progressions",
+          "url": "https://doi.org/10.1016/0022-314X(74)90032-8"
+        }
+      ],
+      "hypotheses_and_discharge": [
+        "Fixed modulus4 with coprime residues1,3; also modulus1, or product of the two modulus4 formulas.",
+        "Only finitely many fixed exceptional primes removed."
+      ],
+      "id": "V5-SUN-WILLIAMS-MERTENS",
+      "kind": "new_external_application",
+      "objects_and_maps": "Published theorem; author-hosted scan of journal pages.",
+      "qualification": null,
+      "reviewed_fragment": "sun-appendix",
+      "source_review_record": {
+        "caveat": null,
+        "conventions": [
+          "Positive constants in product asymptotics; χ4(p)=±1.",
+          "Taking logarithms loses only convergent∑p^-2 terms."
+        ],
+        "hypotheses": [
+          "Fixed modulus4 with coprime residues1,3; also modulus1, or product of the two modulus4 formulas.",
+          "Only finitely many fixed exceptional primes removed."
+        ],
+        "id": "V5-SUN-WILLIAMS-MERTENS",
+        "map": "Published theorem; author-hosted scan of journal pages.",
+        "proofanchors": [
+          {
+            "file": "sun_appendix.tex",
+            "label": "lem:v5-medium-sieve",
+            "line": 154
+          },
+          {
+            "file": "sun_appendix.tex",
+            "label": "prop:v5-cutoff-lower",
+            "line": 680
+          }
+        ],
+        "source": {
+          "access": "Author-hosted scan of published pages checked; Theorem1 on p.356.",
+          "authors": "Kenneth S. Williams",
+          "file": "sources/Williams-published.pdf",
+          "id": "WILLIAMS",
+          "publication": "Journal of Number Theory 6 (1974), 353–359",
+          "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0",
+          "sourceversion": "Published version, 1974",
+          "title": "Mertens’ theorem for arithmetic progressions",
+          "url": "https://doi.org/10.1016/0022-314X(74)90032-8"
+        },
+        "sourceversion": "Published version, 1974",
+        "status": "application_checked",
+        "theorem": "Theorem1, p.356; ordinary formula(1.1), p.353",
+        "translation": "Gives∑g(p)=kloglogy+O(1), and ∏(1−4/(ℓ−1))^k≫(logL)^(-4k)."
+      },
+      "status": "application_checked",
+      "theorem_or_source_locator": "Theorem1, p.356; ordinary formula(1.1), p.353",
+      "translation": "Gives∑g(p)=kloglogy+O(1), and ∏(1−4/(ℓ−1))^k≫(logL)^(-4k)."
+    }
+  ],
+  "citation_classifications": [
+    {
+      "application_ids": [],
+      "contains": "goes back to Pheidas",
+      "keys": [
+        "pheidas2000"
+      ],
+      "role": "provenance"
+    },
+    {
+      "application_ids": [],
+      "contains": "Brox",
+      "keys": [
+        "Brox2026"
+      ],
+      "role": "provenance",
+      "scope": "Attribution of source design. The construction is re-proved and rebuilt here; no unavailable original gate table is a theorem input.",
+      "source_pin": {
+        "commit": "f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6",
+        "sha256": "fc8bc7b8fae727e24f934ddd7de0a7cff8a005e89c3d0cac1ea14e5191b910ca"
+      }
+    },
+    {
+      "application_ids": [],
+      "contains": "strategy is due to Sun",
+      "keys": [
+        "v5sun"
+      ],
+      "role": "provenance",
+      "scope": "Strategy attribution. The appendix supplies the actual derivation and does not invoke the Sun preprint as a black-box theorem."
+    },
+    {
+      "application_ids": [
+        "V5-SUN-FT-LINEAR"
+      ],
+      "contains": "Frei and Tinkov",
+      "keys": [
+        "v5ft"
+      ],
+      "role": "source_scope",
+      "scope": "Opening statement of exact accepted-preprint input and publication qualification."
+    },
+    {
+      "application_ids": [
+        "V5-SUN-BHB-BOX",
+        "V5-SUN-BHB-LATTICES"
+      ],
+      "contains": "We use two exact inputs",
+      "keys": [
+        "v5bhb"
+      ],
+      "role": "source_statement"
+    },
+    {
+      "application_ids": [
+        "V5-SUN-KL-RAYS"
+      ],
+      "contains": "Kopp--Lagarias",
+      "keys": [
+        "v5kl"
+      ],
+      "role": "source_statement"
+    }
+  ],
+  "current_consumption": [
+    {
+      "additional_current_lines": [
+        7815,
+        7827
+      ],
+      "application_scope": "Every doubled half-point in the new rational source has a unique nonzero integer index; equality of indices follows from infinite order.",
+      "comparison_status": "Exact inherited generator block and exact inherited unit transport.",
+      "current_labels": [
+        "prop:generator",
+        "lem:v5-point-domains"
+      ],
+      "depends_on": [],
+      "id": "generator",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-point-domains",
+          "line": 101
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "prop:generator",
+          "line": 288
+        }
+      ],
+      "statement": "For K=Q(sqrt(2)), d=3-sqrt(2), D=d^2=11-6sqrt(2), E:y^2=x^3-Dx and P*=(57/8-7sqrt(2)/2,-165/8+417sqrt(2)/32), 2E(K)=Z P*, P* has infinite order and E(K)_tors=E[2](K)."
+    },
+    {
+      "additional_current_lines": [
+        7868,
+        7875
+      ],
+      "application_scope": "The new source uses explicit half-points and duplication, then differences from [4]P* and [4 n_i]P*. It does not consume the selected V4 doubled/private conic chart.",
+      "comparison_status": "Inherited chart scope checked; new quotient-domain proof supplies the changed chart.",
+      "current_labels": [
+        "eq:o8-chart",
+        "lem:o8-chart",
+        "lem:v5-point-domains"
+      ],
+      "depends_on": [
+        "generator"
+      ],
+      "id": "point_chart_and_domains",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-point-domains",
+          "line": 101
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "eq:o8-chart",
+          "line": 7830
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:o8-chart",
+          "line": 7835
+        }
+      ],
+      "statement": "The sparse affine chart with f=1/x and z=-x/y represents precisely nonzero points of 2E(K). For Q=[4]P* as subtraction reference, x(U)=x(Q) iff U=+/-Q; the source keeps this difference denominator invertible."
+    },
+    {
+      "additional_current_lines": [
+        7877,
+        7886
+      ],
+      "application_scope": "Used for all nonzero integer root labels, with the normalized P* exactly as in the source; h is logarithmic height, not multiplicative height.",
+      "comparison_status": "Exact inherited block.",
+      "current_labels": [
+        "eq:o8-indexheight",
+        "lem:v5-height-transfer"
+      ],
+      "depends_on": [
+        "generator"
+      ],
+      "id": "index_height",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-height-transfer",
+          "line": 423
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "eq:o8-indexheight",
+          "line": 7884
+        }
+      ],
+      "statement": "For every nonzero integer n, absolute logarithmic Weil height h(x([n]P*)) >= n^2-6."
+    },
+    {
+      "additional_current_lines": [
+        6657,
+        6681,
+        7493,
+        7505
+      ],
+      "application_scope": "The new source uses this original exponent-24 bound. It does not substitute the V4 exponent-19 constant or its 2093966 bound. Nine scales transfer finite contacts and infinity through r and 1/(r-delta).",
+      "comparison_status": "Entire 875-line proof block is exact inherited text.",
+      "current_labels": [
+        "hyp:o8-height",
+        "lem:v5-height-transfer"
+      ],
+      "depends_on": [
+        "inherited_published_inputs"
+      ],
+      "id": "five_contact_height",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-height-transfer",
+          "line": 423
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "hyp:o8-height",
+          "line": 6675
+        }
+      ],
+      "statement": "For rational a outside {0,1,2401,-343/32}, h(a)<=H_* M_5(a)^24. M_5 uses normalized positive odd valuations outside primes <=76176 of the four finite contacts and infinity. H_*=2(4608^165888+6^100)(product_{p<=76176}p)^24+128 and log_2 H_*<4783227."
+    },
+    {
+      "application_scope": "Scalar certificate retains preparation. Coordinate certificates specialize t=0,U=b, using the separate preparation-zero bridge. Degenerate e,h,s,U are permitted by soundness; no unjustified extra guard is introduced.",
+      "comparison_status": "Entire statement, obstruction, simultaneous realization and completeness block exact inherited text.",
+      "current_labels": [
+        "eq:o8-pole",
+        "hyp:o8-pole",
+        "lem:original-seven-parity-soundness",
+        "lem:original-seven-parity-completeness"
+      ],
+      "depends_on": [
+        "restricted_converse",
+        "simultaneous_realization"
+      ],
+      "id": "seven_witness_pole",
+      "new_anchors": [],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "eq:o8-pole",
+          "line": 7536
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "hyp:o8-pole",
+          "line": 7541
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-parity-soundness",
+          "line": 7575
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-parity-completeness",
+          "line": 7714
+        }
+      ],
+      "statement": "For b!=0, B=17b and rational t,U,e,p,q,s,h: U(1+bt^2)=b(1-bt^2), p^2=B(1-e)(1+3e), h=e(B-U^2), Bq^2=(s^2-Bh)(s^2+3Bh). Existence excludes negative odd valuations of b outside {2,3,17}; converse holds for positive b with square reduced denominator and square in Q_2,Q_3,Q_17."
+    },
+    {
+      "additional_current_lines": [
+        1006,
+        1039
+      ],
+      "application_scope": "This non-CM rational family is used in the existing simultaneous-realization proof, not the CM normalized index curve. Its full inherited proof-status qualifications remain in force.",
+      "comparison_status": "Statement exact inherited text; this interface audit does not independently reprove the long restricted-converse chain.",
+      "current_labels": [
+        "hyp:RC"
+      ],
+      "depends_on": [
+        "inherited_published_inputs"
+      ],
+      "id": "restricted_converse",
+      "new_anchors": [],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "hyp:RC",
+          "line": 1025
+        }
+      ],
+      "statement": "For every positive squarefree ell congruent 11 mod12 and E_ell:y^2=x(x-ell)(x+3ell), corank_Z2 Sel_{2^infinity}(E_ell/Q)=1 implies analytic order at s=1 equals1."
+    },
+    {
+      "additional_current_lines": [
+        7608,
+        7711
+      ],
+      "application_scope": "This is the exact arithmetic existence input for the preparation-zero bridge; its squareclass, support, positivity and congruence assumptions are explicitly proved there.",
+      "comparison_status": "Exact inherited statement and proof.",
+      "current_labels": [
+        "lem:original-seven-simultaneous-realization",
+        "v5:preparation-zero-bridge"
+      ],
+      "depends_on": [
+        "restricted_converse"
+      ],
+      "id": "simultaneous_realization",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+          "label": "v5:preparation-zero-bridge",
+          "line": 141
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-simultaneous-realization",
+          "line": 7609
+        }
+      ],
+      "statement": "For positive squarefree mu,theta with disjoint support avoiding2,3, mu=17 mod24, theta=1 mod24 and mutual local squareness at their supporting primes, some positive squarefree n prime to6theta gives nonzero rational points in squareclass mu on E_n and E_(n theta). Theta=1 is allowed."
+    },
+    {
+      "application_scope": "All nine coordinate poles; all listed small-prime and archimedean conditions are constructed before completion.",
+      "comparison_status": "New complete proof; not an invocation of arbitrary-preparation completeness.",
+      "current_labels": [
+        "lem:original-seven-parity-soundness",
+        "lem:original-seven-simultaneous-realization",
+        "v5:preparation-zero-bridge"
+      ],
+      "depends_on": [
+        "seven_witness_pole",
+        "simultaneous_realization"
+      ],
+      "id": "preparation_zero",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+          "label": "v5:preparation-zero-bridge",
+          "line": 141
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-parity-soundness",
+          "line": 7575
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-simultaneous-realization",
+          "line": 7609
+        }
+      ],
+      "statement": "The t=0 specialization with four witnesses e,p,q,s is complete when b>0 has square denominator, is locally square at2,3,17, b<17 and v_2(b)>=3,v_3(b)>=1,v_17(b)>=2. Its one-sided obstruction has no added nonzero witness assumptions."
+    },
+    {
+      "additional_current_lines": [
+        7763,
+        7815
+      ],
+      "application_scope": "Integral X gives nonzero integer r of absolute value>1. Choose c first, h0 second, a third; final h lies in a congruence class preserving all finite scalar conditions.",
+      "comparison_status": "Exact finite-correction block plus full changed-order continuity argument in new bridge.",
+      "current_labels": [
+        "lem:original-seven-parity-completeness",
+        "v5:scalar32-bridge"
+      ],
+      "depends_on": [
+        "generator",
+        "seven_witness_pole"
+      ],
+      "id": "finite_correction_and_scalar_units",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+          "label": "v5:scalar32-bridge",
+          "line": 6
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-parity-completeness",
+          "line": 7714
+        }
+      ],
+      "statement": "The signed squarefree products of2,3,5,7,11,13,17 span the local squareclasses at Q_2,Q_3,Q_17 and the real sign. Deep successive choices of J0 and S make the norm tree a unit at every prime dividing c r."
+    },
+    {
+      "additional_current_lines": [
+        8089,
+        8130,
+        8508,
+        8547
+      ],
+      "application_scope": "The original scalar48 bound h(beta)<=H_*sqrt(|a|) is not applicable after changing the order. New proof supplies both directions, successive choices and stability under arbitrary later modulus enlargement.",
+      "comparison_status": "New changed-order proof; exact old norm argument and original height theorem are identified inputs.",
+      "current_labels": [
+        "hyp:o8-height",
+        "eq:o8-scalarheight",
+        "v5:scalar32-bridge"
+      ],
+      "depends_on": [
+        "five_contact_height",
+        "finite_correction_and_scalar_units",
+        "unramified_logarithm"
+      ],
+      "id": "scalar32",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+          "label": "v5:scalar32-bridge",
+          "line": 6
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "hyp:o8-height",
+          "line": 6675
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "eq:o8-scalarheight",
+          "line": 8531
+        }
+      ],
+      "statement": "For beta=X^2+2, r=beta(beta-1)(beta-2401)(32beta+343)(2beta-1), six component tests f(H),f(S),z(S)/z(H) with orders1,1,1,1,32,32 and the specified seven-leaf N_r norm tree imply M_5(beta)^32 divides a and h(beta)<=H_*|a|^(3/4)."
+    },
+    {
+      "application_scope": "Applies with (s,t,z)=(a,t,b), where a is the anchored scalar label. The new source tests the exact polynomial with constant term -1 directly; it does not divide by s(s-2) or use the V4 normalized beta-only variant.",
+      "comparison_status": "Exact inherited statement and proof.",
+      "current_labels": [
+        "eq:o8-Lucas",
+        "lem:o8-lucas",
+        "eq:v5-lucas-polynomial"
+      ],
+      "depends_on": [],
+      "id": "lucas",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "eq:v5-lucas-polynomial",
+          "line": 200
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "eq:o8-Lucas",
+          "line": 8551
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:o8-lucas",
+          "line": 8570
+        }
+      ],
+      "statement": "For integer s,t,z with |s|>=7 and z!=0, t^2-s(s-2)tz+(s-2)^2z^2=1 implies |t|>exp(|s|-3). For every integer s with |s|>=7 a positive integral pair t,z exists."
+    },
+    {
+      "additional_current_lines": [
+        7994,
+        8020
+      ],
+      "application_scope": "The new quaternion three-witness certificate with C=3^(2^26) therefore selects exactly nonzero n in2*3^(2^25-1) Z and yields |n|>(21H_*)^(13/2)>(20H_*)^4.",
+      "comparison_status": "Exact local calculation inherited; new exponent and three-witness formula are proved in new section.",
+      "current_labels": [
+        "subsec:o8-anchor-subgroup",
+        "lem:v5-three-witness-anchor"
+      ],
+      "depends_on": [
+        "generator",
+        "five_contact_height",
+        "quaternion_embedding_input"
+      ],
+      "id": "anchor_local_arithmetic",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-three-witness-anchor",
+          "line": 300
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "subsec:o8-anchor-subgroup",
+          "line": 7960
+        }
+      ],
+      "statement": "At3, P* reduces to order2 and v_3(z(2P*))=1. For nonzero even n, v_3(f(nP*))=2+2v_3(n); at2 both rational f coefficients are integral on nonzero even multiples."
+    },
+    {
+      "application_scope": "Applied to 1-2/(3t^2), which is nonzero. Rational-square cases are separately excluded using division. Local squareclasses are explicitly computed; t=0 has explicit witness.",
+      "comparison_status": "Published input: Voight Proposition14.6.7, not a consequence of the finite coefficient checks.",
+      "current_labels": [
+        "lem:v5-three-witness-anchor"
+      ],
+      "depends_on": [],
+      "id": "quaternion_embedding_input",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-three-witness-anchor",
+          "line": 300
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [],
+      "statement": "A quadratic field embeds in quaternion algebra (2,3)_Q iff it is a field at its ramified places2,3; pure trace-zero square represents the corresponding ternary form."
+    },
+    {
+      "additional_current_lines": [
+        9029,
+        9120
+      ],
+      "application_scope": "Both split and inert places are permitted in soundness. Completeness uses split places supplied by the Gaussian prime theorem. Formal logarithm comparison has exactly the integer index ratios.",
+      "comparison_status": "V4 extends truncation range to10..64 but still states split scope. New unramified proof closes that scope, rather than silently using the split statement.",
+      "current_labels": [
+        "lem:quartic-uniform-reciprocal",
+        "lem:v5-unramified-log"
+      ],
+      "depends_on": [
+        "generator"
+      ],
+      "id": "unramified_logarithm",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-unramified-log",
+          "line": 141
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:quartic-uniform-reciprocal",
+          "line": 9031
+        }
+      ],
+      "statement": "For rational prime p>76176 and either unramified completion of K, reciprocal logarithm truncations at e in{16,52,64} have the indicated error for formal points; denominator valuation is exactly -v(z) and truncation is globally nonzero for nonzero reciprocal f."
+    },
+    {
+      "additional_current_lines": [
+        9095,
+        9120
+      ],
+      "application_scope": "The shared formal denominator is defined even at nonformal global points. This is needed when specifying the source before selecting contact primes.",
+      "comparison_status": "Main statement and proof exact inherited text; only the listed truncation range is enlarged in V4.",
+      "current_labels": [
+        "lem:v5-point-domains",
+        "lem:quartic-reciprocal-nonzero"
+      ],
+      "depends_on": [],
+      "id": "global_reciprocal_nonvanishing",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-point-domains",
+          "line": 101
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [],
+      "statement": "For nonzero f in K and integer J>=2, the finite reciprocal polynomial used in the denominator is nonzero, with proof from signs/conjugates; the corollary covers10<=e<=64."
+    },
+    {
+      "application_scope": "The sixteen comparison functions and their direct Lucas polynomial satisfy the finite-pole hypothesis. This removes the circularity of choosing archimedean bounds only after the Sun primes and CRT modulus.",
+      "comparison_status": "New full compact-group proof; does not assert density in the whole product if the orbit closure is smaller.",
+      "current_labels": [
+        "prop:generator",
+        "v5:real-progression-bridge"
+      ],
+      "depends_on": [
+        "generator"
+      ],
+      "id": "uniform_real_progressions",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+          "label": "v5:real-progression-bridge",
+          "line": 216
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "prop:generator",
+          "line": 288
+        }
+      ],
+      "statement": "The closure G of the integer orbit in the two real elliptic groups is a compact abelian Lie group whose identity torus surjects onto both identity circles. Every nonconstant arithmetic progression meets a fixed compact pole-free region with one uniform bound chosen before its modulus."
+    },
+    {
+      "application_scope": "The inherited same-prime gcd theorem does not supply cross-prime compatibility. New Sun proof is required. It supplies gcds4,64,4 for the final three congruences after excluding odd prime factors of L.",
+      "comparison_status": "New prime theorem supplied by separate section/independent audit. Gaussian norms must explicitly be identified with the two curve reduction orders.",
+      "current_labels": [
+        "thm:v5-simultaneous-primes",
+        "thm:v5-source-projection"
+      ],
+      "depends_on": [
+        "cm_reduction_identification",
+        "uniform_real_progressions"
+      ],
+      "id": "gaussian_prime_and_crt",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "thm:v5-source-projection",
+          "line": 494
+        }
+      ],
+      "publication_status": "The new appendix explicitly consumes Frei-Tinkova arXiv version3 Theorem1.4, author-listed as accepted by Mathematika; a final published version has not been verified. This audit checks the new theorem statement against its application, not the entire new prime proof.",
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\sun-proof\\sun_appendix.tex",
+          "label": "thm:v5-simultaneous-primes",
+          "line": 24
+        }
+      ],
+      "statement": "Simultaneous prime values of the finite distinct forms u-c_j w^2 admit arbitrary finite exclusions/dilation, pi=9 mod16, pi=1+3i mod7, pi=i modM, and gcd(N(pi_p-1),N(pi_q+1))=4 for every pair p,q."
+    },
+    {
+      "additional_current_lines": [
+        8348,
+        8362
+      ],
+      "application_scope": "Orient the two places by v_2 of their orders:6 for minus,2 for plus. This ties the Gaussian theorem to the normalized index curve; no arbitrary choice of primary generator is silently made.",
+      "comparison_status": "Existing explicit CM derivation at current8348..8362 applies unchanged after checking the prescribed prime congruences. New explicit bridge lemma identifies Gaussian associates by parity.",
+      "current_labels": [
+        "lem:v5-two-reductions"
+      ],
+      "depends_on": [
+        "generator"
+      ],
+      "id": "cm_reduction_identification",
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-two-reductions",
+          "line": 466
+        }
+      ],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [],
+      "statement": "At p=1 mod8 and p=3 mod7 the conjugate values of d=3-sqrt(2) have product7 nonsquare, so the two curves are opposite quadratic twists of y^2=x^3-x. Frobenius belongs to Z[i]; full2-torsion makes its real coordinate odd. The two cardinalities are exactly the unordered pair N(pi-1),N(pi+1)."
+    },
+    {
+      "additional_current_lines": [
+        9139,
+        9158
+      ],
+      "application_scope": "This review compares and checks consumption of those statements; it does not claim a fresh proof of the complete restricted-converse, modularity, integral-moduli or prime-distribution literature.",
+      "comparison_status": "Declared trust boundary. Separate original source audits remain applicable; finite polynomial replay does not certify these inputs.",
+      "current_labels": [
+        "hyp:RC",
+        "hyp:o8-height"
+      ],
+      "depends_on": [],
+      "id": "inherited_published_inputs",
+      "new_anchors": [],
+      "review_evidence": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "source_anchors": [],
+      "statement": "The original height and restricted-converse proofs use the published arithmetic inputs with the five stated qualifications retained verbatim in substance."
+    }
+  ],
+  "evidence_pins": [
+    {
+      "path": "docs/quartic-1272/evidence/foundation-comparison.json",
+      "sha256": "f6c900379c9ec3cdaf536641299c8aab4c655088660a9c09da9519a796b9e2ac"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/author-integration-notes.md",
+      "sha256": "fc3650052f039e2ae334db789e5fb1ce7112cb8e1a8bc7b05e932277280e17e4"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/additional-source-byte-verification.json",
+      "sha256": "ffa3dc07ec0a849486bc83e94448e6a9bdc4a018e9bca9e29ccc1f6e24d1839b"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "sha256": "de2f5e9cdb11513e91d022dcd82cb2407befbc5f8e9ae2c103dd830d7fd4f727"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/sun-source-hashes.json",
+      "sha256": "7a983dd09b186e7a91548de31e9cc4a0cb09b3314bb3fab3739cfd31be301cf5"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/sun-source-byte-verification.json",
+      "sha256": "db4517120cc44ffdc7bc118a19eb147e8bf34dd84df7335bb54ca9d948922408"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/FT_PROOF_SCOPE.md",
+      "sha256": "5b50aac19b9bbc08d8e8d6f1461d933a66a1666a09a3f365475e6ea4ab1cf5ab"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/FT_PROOF_DEPENDENCIES.json",
+      "sha256": "babd1de5ce283ea4876fda796850ec8535e3e8a7dbf22413298bb7764a42bcb8"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/arithmetic-review.md",
+      "sha256": "e89da38f3af1fad8c082e972da14829890055439d672a4697983ca1668b1e63f"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/arithmetic-review-receipt.json",
+      "sha256": "0841a0a283d029fd62e4480ed1345cc25eed00ec7e97315bb9d1b350d1803993"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/arithmetic-dependency-review.json",
+      "sha256": "f4e072f42d96f79991f09180e6d6de919603e43c85905bd57ba4cc6d08a93e79"
+    },
+    {
+      "path": "docs/quartic-1272/evidence/sun-consumed-statement.tex",
+      "sha256": "348c98050f778bb326b1811565deb2b37471a3104eeaf3be847bd6584c9f779e"
+    }
+  ],
+  "external_proof_subaudits": [
+    {
+      "current_application": "V5-SUN-FT-LINEAR",
+      "explanation_path": "docs/quartic-1272/evidence/FT_PROOF_SCOPE.md",
+      "id": "FT-PROOF-SCOPE",
+      "path": "docs/quartic-1272/evidence/FT_PROOF_DEPENDENCIES.json",
+      "scope": "Inspected dependency route and local repair. Not an independently closed proof of FT Theorem1.4."
+    }
+  ],
+  "inherited_ledgers": [
+    {
+      "conventions": "Original stable Faltings metric; final primitive modular form after twist; Tate-module Hodge-Tate weights 0,-1; arithmetic Frobenius; conductor and level at p != ell. The H19 source construction is not imported into the new1272 proof.",
+      "current_translation": "The exact retained five-contact theorem and complete proof use the original constant H* and exponent 24. The final accepted modular-level route permits varying scalar-character and coefficient-field degree. Read all source-version qualifications, especially Pan and Yuan, in the embedded ledger.",
+      "id": "H5-FINAL-LEVEL",
+      "labels": [
+        "hyp:o8-height"
+      ],
+      "path": "docs/degree8-original/research/accepted-h5/height-level-repair/source-application-ledger.json"
+    },
+    {
+      "citation_keys": [
+        "GonzalezRotger2006"
+      ],
+      "current_translation": "Published quotient identification and exact branch recovery in the retained five-contact proof. The earlier unpublished quotient-model shortcut remains excluded.",
+      "id": "H5-QUOTIENT-GEOMETRY",
+      "labels": [
+        "hyp:o8-height"
+      ],
+      "path": "docs/degree8-original/research/accepted-h5/height-geometry/source-application-ledger.json"
+    },
+    {
+      "current_translation": "Retained same-field CM bound hF(A)<854R and its explicitly stated field/CM hypotheses; no new same-field descent assumption.",
+      "id": "H5-CM-HEIGHT",
+      "labels": [
+        "hyp:o8-height"
+      ],
+      "path": "docs/degree8-original/research/accepted-h5/height-cm/source-application-ledger.json"
+    },
+    {
+      "citation_keys": [
+        "GaudronRemond2023",
+        "vonKaenel2021",
+        "javanpeykar"
+      ],
+      "current_translation": "The external interfaces remain those of the exact ledger. Its historical displayed 210^48000 intermediate conclusion is not the current bound. The retained final theorem proves hF(A)<2^24*210^3600*R^24, with original stable Faltings normalization.",
+      "id": "H5-HEIGHT-TRANSFER-SOURCES",
+      "labels": [
+        "hyp:o8-height"
+      ],
+      "path": "docs/degree8-original/research/accepted-h5/height-alternative/level-source-ledger.json"
+    },
+    {
+      "citation_keys": [
+        "carayol",
+        "casselman"
+      ],
+      "current_translation": "Same primitive newform for the ell=3 and ell=5 realizations; conductor at p=5 uses ell=3, all other required primes use ell=5. These are conditional interfaces within the assembled retained proof.",
+      "id": "H5-CONDUCTOR-LEVEL",
+      "labels": [
+        "hyp:o8-height"
+      ],
+      "path": "docs/degree8-original/research/accepted-h5/height-alternative/conductor-source-ledger.json"
+    },
+    {
+      "current_translation": "The old seven-witness predicate, original constant chain and local subgroup calculations remain historical text. New1272 uses a separately proved three-witness anchor with 26 squarings; no old24-squaring numerical bound is carried over automatically.",
+      "id": "ORIGINAL-ANCHOR",
+      "labels": [
+        "eq:o8-T"
+      ],
+      "path": "docs/quartic-9625/arithmetic-evidence/baseline_anchor_sources.json",
+      "section_labels": [
+        "subsec:o8-anchor-proof",
+        "subsec:o8-anchor-subgroup",
+        "subsec:o8-anchor-cutoff"
+      ]
+    },
+    {
+      "current_translation": "The original41-prime pattern, private shifts, and common-root proof retain their exact scopes. This ledger explicitly excludes the Sun cross-prime theorem, which receives a new application record.",
+      "id": "ORIGINAL-PRIME-PATTERN",
+      "path": "docs/quartic-9625/arithmetic-evidence/baseline_sieve_applications.json",
+      "section_labels": [
+        "subsec:o8-pattern-proof",
+        "subsec:o8-common-J-proof",
+        "subsec:o8-root-proof"
+      ]
+    },
+    {
+      "current_translation": "Published GT, MN, GI, Mertens and elliptic-curve interfaces are retained together with corrected author-v5 and erratum qualifications. The old ledger does not justify the new cross-prime order theorem.",
+      "id": "ORIGINAL-PRIME-SOURCES",
+      "path": "docs/quartic-9625/arithmetic-evidence/baseline_sieve_sources.json",
+      "section_labels": [
+        "subsec:o8-pattern-proof",
+        "subsec:o8-common-J-proof",
+        "subsec:o8-root-proof"
+      ]
+    }
+  ],
+  "internal_results": [
+    {
+      "hypotheses_conventions_translation": "Complete source equivalence, certified compilation, and fixed-S table statistics; inherited arithmetic qualifications remain in force.",
+      "label": "thm:v5-1272-polynomial",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "The explicit integer quartic has 1272 coordinates, 48001 monomials, height 64*S^2, and existential rational projection exactly Z.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Nonzero points in 2E(K), unique nonzero integer index from prop:generator; explicit difference denominators exclude both signs of each reference point.",
+      "label": "lem:v5-point-domains",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "Point and quotient domains in the sparse rational source.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Unramified p>76176, good reduction, precisions16,52,64; see V5-SILVERMAN-UNRAMIFIED.",
+      "label": "lem:v5-unramified-log",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "The required formal-logarithm coefficient congruence at split and inert primes.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Quaternion field-embedding criterion and explicit valuation cases, including square delta and t=0; see V5-VOIGHT-EMBEDDING.",
+      "label": "lem:v5-three-witness-anchor",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "Three rational witnesses test simultaneous 2-adic and 3-adic integrality.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Exact pole alternatives, normtree valuations, and the new unramified logarithm lemma; no assumption that the rational prime splits.",
+      "label": "lem:v5-one-place",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "One local detector forces one of the finite integral candidates.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "New constant C=3^(2^26), anisotropic packing at2,3, inherited exact local index subgroups, and recomputed logarithmic lower bound.",
+      "label": "lem:v5-two-anchors",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "The two packed anchors make the comparison indices too large for a bad candidate.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Uses original H*<2^4783227 and exponent24, index height n^2-6, and scalar32 bridge. It does not substitute the exponent19 source.",
+      "label": "lem:v5-height-transfer",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "Original five-contact height bound transfers to the source indices.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "The selected congruences, opposite quadratic twists, CM and full2torsion; see V5-SILVERMAN-CM-REDUCTION.",
+      "label": "lem:v5-two-reductions",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "The two reduced group cardinalities form the pair N(pi-1),N(pi+1).",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Soundness and completeness are separate attached proofs. Completeness consumes the new simultaneous-prime theorem, common-index CRT, scalar preparation, and uniform real progression bounds.",
+      "label": "thm:v5-source-projection",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "The displayed rational source projects exactly to the integers.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Every rational denominator has a nonzero witness. The private affine anchor change multiplies one residual by16; it preserves zeros, not literal equality of sum-of-squares polynomials.",
+      "label": "prop:v5-compiler-projection",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "Exact gate introduction and32 eliminations preserve rational existential projection.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Certified coefficient table SHA02e4771b...; coefficient of X0^4=1;47993 fixed coefficients,7 linear-in-S and1 coefficient64S^2; domination proved without expanding S.",
+      "label": "prop:v5-table-statistics",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "new1272",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "Exact final term count, degree, primitive content and fixed-S height.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Exact inherited norm valuation proof re-applied to the new exponents; arbitrary divisibility and real bounds are preserved in the stated order of choices.",
+      "label": "v5:scalar32-bridge",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "arithmetic-bridges",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "Six-leaf scalar norm tree with orders1,1,1,1,32,32.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Explicit rational-point conversion and inherited simultaneous realization; local hypotheses at2,3,17 are checked, not inferred from positivity alone.",
+      "label": "v5:preparation-zero-bridge",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "arithmetic-bridges",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "Four-witness preparation at level zero.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "hypotheses_conventions_translation": "Closure of the cyclic orbit in the real compact group; closed-subgroup and torus multiplication facts plus finite pole sets. The proof chooses one bound before the progression modulus.",
+      "label": "v5:real-progression-bridge",
+      "review_limit": "Human source-level review plus the indicated finite certificates. This is not a formal proof in a proof assistant.",
+      "reviewed_fragment": "arithmetic-bridges",
+      "source_bounds": "Exact statement and every attached proof are rebound mechanically in internal-results.json.",
+      "statement_and_map": "Uniform real bounds valid for every admissible progression.",
+      "status": "independent_application_review_accepted"
+    },
+    {
+      "application_register": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "declared_dependencies": [
+        "prop:v5-obstruction-tail",
+        "prop:v5-artin-patterns",
+        "prop:v5-cutoff-lower",
+        "lem:v5-ray-fibres"
+      ],
+      "independent_review": "astra_rebuild_oracle accepted the preceding full appendix and separately verified the added FT norm-exponent repair against DKv4 and FTv3; final hash is recorded in the integrated review; not an independent proof of external theorems",
+      "label": "thm:v5-simultaneous-primes",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Full statement and every attached proof are rebound in internal-results.json.",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    },
+    {
+      "application_register": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "declared_dependencies": [],
+      "independent_review": "astra_rebuild_oracle accepted the preceding full appendix and separately verified the added FT norm-exponent repair against DKv4 and FTv3; final hash is recorded in the integrated review; not an independent proof of external theorems",
+      "label": "lem:v5-local-counts",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Full statement and every attached proof are rebound in internal-results.json.",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    },
+    {
+      "application_register": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "declared_dependencies": [
+        "V5-SUN-BL-CONGRUENCES",
+        "lem:v5-local-counts"
+      ],
+      "independent_review": "astra_rebuild_oracle accepted the preceding full appendix and separately verified the added FT norm-exponent repair against DKv4 and FTv3; final hash is recorded in the integrated review; not an independent proof of external theorems",
+      "label": "lem:v5-primitive-count",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Full statement and every attached proof are rebound in internal-results.json.",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    },
+    {
+      "application_register": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "declared_dependencies": [
+        "lem:v5-local-counts",
+        "lem:v5-primitive-count",
+        "V5-SUN-WILLIAMS-MERTENS"
+      ],
+      "independent_review": "astra_rebuild_oracle accepted the preceding full appendix and separately verified the added FT norm-exponent repair against DKv4 and FTv3; final hash is recorded in the integrated review; not an independent proof of external theorems",
+      "label": "lem:v5-medium-sieve",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Full statement and every attached proof are rebound in internal-results.json.",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    },
+    {
+      "application_register": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "declared_dependencies": [
+        "V5-SUN-BHB-BOX",
+        "V5-SUN-BHB-LATTICES"
+      ],
+      "independent_review": "astra_rebuild_oracle accepted the preceding full appendix and separately verified the added FT norm-exponent repair against DKv4 and FTv3; final hash is recorded in the integrated review; not an independent proof of external theorems",
+      "label": "lem:v5-large-sieve",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Full statement and every attached proof are rebound in internal-results.json.",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    },
+    {
+      "application_register": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "declared_dependencies": [
+        "lem:v5-medium-sieve",
+        "lem:v5-large-sieve",
+        "V5-SUN-BHB-BOX"
+      ],
+      "independent_review": "astra_rebuild_oracle accepted the preceding full appendix and separately verified the added FT norm-exponent repair against DKv4 and FTv3; final hash is recorded in the integrated review; not an independent proof of external theorems",
+      "label": "prop:v5-obstruction-tail",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Full statement and every attached proof are rebound in internal-results.json.",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    },
+    {
+      "application_register": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "declared_dependencies": [
+        "V5-SUN-FT-LINEAR",
+        "V5-SUN-TZ-MODEL",
+        "V5-SUN-TZ-CONCAT",
+        "V5-SUN-TZ-VN",
+        "V5-SUN-TZ-MAJORANT"
+      ],
+      "independent_review": "astra_rebuild_oracle accepted the preceding full appendix and separately verified the added FT norm-exponent repair against DKv4 and FTv3; final hash is recorded in the integrated review; not an independent proof of external theorems",
+      "label": "prop:v5-artin-patterns",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Full statement and every attached proof are rebound in internal-results.json.",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    },
+    {
+      "application_register": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "declared_dependencies": [
+        "V5-SUN-KL-RAYS"
+      ],
+      "independent_review": "astra_rebuild_oracle accepted the preceding full appendix and separately verified the added FT norm-exponent repair against DKv4 and FTv3; final hash is recorded in the integrated review; not an independent proof of external theorems",
+      "label": "lem:v5-ray-fibres",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Full statement and every attached proof are rebound in internal-results.json.",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    },
+    {
+      "application_register": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "declared_dependencies": [
+        "V5-SUN-DK-RELATIVE-INVERSE"
+      ],
+      "independent_review": "astra_rebuild_oracle accepted the preceding full appendix and separately verified the added FT norm-exponent repair against DKv4 and FTv3; final hash is recorded in the integrated review; not an independent proof of external theorems",
+      "label": "rem:v5-ft-norm-repair",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Full statement and every attached proof are rebound in internal-results.json.",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    },
+    {
+      "application_register": "docs/quartic-1272/evidence/sun-applications-review.json",
+      "declared_dependencies": [
+        "lem:v5-ray-fibres",
+        "prop:v5-artin-patterns",
+        "V5-SUN-WILLIAMS-MERTENS"
+      ],
+      "independent_review": "astra_rebuild_oracle accepted the preceding full appendix and separately verified the added FT norm-exponent repair against DKv4 and FTv3; final hash is recorded in the integrated review; not an independent proof of external theorems",
+      "label": "prop:v5-cutoff-lower",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Full statement and every attached proof are rebound in internal-results.json.",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    },
+    {
+      "declared_dependencies": [
+        "V5-SUN-TZ-MODEL",
+        "V5-SUN-TZ-CONCAT",
+        "V5-SUN-TZ-VN",
+        "V5-SUN-TZ-MAJORANT"
+      ],
+      "label": "rem:v5-tz-numbering",
+      "reviewed_fragment": "sun-appendix",
+      "source_bounds": "Published/arXiv numbering map explicitly checked against the pinned published Tao–Ziegler PDF.",
+      "status": "reviewed_source_version_mapping"
+    }
+  ],
+  "new_source_qualifications": [
+    {
+      "id": "V5-Q-VOIGHT",
+      "text": "The published 2021 Proposition 14.6.7 was inspected directly, but the local download did not yield a PDF. No byte hash of the published chapter is claimed; the old corrected-book hash is a distinct version."
+    },
+    {
+      "id": "V5-Q-FT",
+      "text": "The Frei–Tinková theorem is checked against arXiv:2408.17441v3, accepted/to appear in Mathematika as reported by the author. No final published text was verified. The proof is therefore not described as using exclusively final published theorem versions."
+    },
+    {
+      "id": "V5-Q-RECONSTRUCTION",
+      "text": "The present 1272-coordinate coefficient table is independently reconstructed. It is not identified with the unavailable Brox 1315-coordinate gate/table artifact."
+    },
+    {
+      "id": "V5-Q-BL-BHB",
+      "text": "Browning–Loughran and Browning–Heath-Brown are verified published works. Exact theorem checks used the pinned accepted manuscripts and compared preprints; inaccessible final typeset text was not compared."
+    },
+    {
+      "id": "V5-Q-DK",
+      "text": "Dodos–Kanellopoulos is a verified published work. The exact Theorem 5.1 was inspected in arXiv:1610.00487v4, after publication; the final typeset statement was not compared. The appendix repairs the majorant norm exponent in the imported Frei–Tinková proof route. That local repair does not independently close all of the preprint’s new analytic proof steps."
+    }
+  ],
+  "reviewed_fragments": [
+    {
+      "id": "new1272",
+      "path": "docs/quartic-1272/evidence/reviewed-new1272.tex",
+      "review": "Exact fragment accepted by the independent bridge and oracle reviewers; acceptance and finite-statistic scope are recorded in author-integration-notes.md.",
+      "sha256": "506675ede05bb3d369d9882945958c86d2d39c8fbe4d6e1e393c6a4e17f00000",
+      "status": "independent_bridge_and_oracle_review_accepted"
+    },
+    {
+      "id": "arithmetic-bridges",
+      "path": "docs/quartic-1272/evidence/reviewed-arithmetic-bridges.tex",
+      "review": "Arithmetic bridge author/reviewer supplied complete proofs and source-level dependencies. The full inherited source literature is not re-proved by this review.",
+      "sha256": "94696c3d3113c6ff23b8ff3039a17447424151d49f5ecbf1f178304aaf2d5544",
+      "status": "independent_bridge_review_accepted"
+    },
+    {
+      "id": "sun-appendix",
+      "path": "docs/quartic-1272/evidence/reviewed-sun-appendix.tex",
+      "review": "Independent oracle review of appendix derivation; external theorems retain their exact version and access qualifications. See sun-applications-review.json.",
+      "sha256": "620e2e5652048c827efd8a1d9dae78462679e65992beeb20c3f089b3115fb77b",
+      "status": "derivation_reviewed_relative_to_listed_inputs"
+    }
+  ],
+  "schema": "quartic-v5-reviewed-application-inputs-v1",
+  "scope": "Authored inputs for a current inventory. This file does not itself constitute independent mathematical acceptance."
+}

@@ -1,0 +1,236 @@
+--- selected-reviewed-draft
++++ integrated-appendix
+@@ -1,7 +1,7 @@
+-\section{Conventions and inherited hypotheses}
++\subsection{Conventions and inherited hypotheses}
+ \label{sec:v4-inherited}
+ 
+-Retain the field and curve of Version 3:
++Retain the field and curve of Section~\ref{sec:degree8-original}:
+ \[
+  K=\Q(\sqrt2),\qquad d=3-\sqrt2,\qquad D=d^2,
+  \qquad E:\ y^2=x^3-Dx.
+@@ -16,7 +16,7 @@
+ coefficients in that identity are conjugated as well.
+ 
+ The following arguments retain all inherited qualifications of
+-\cite{v3}. In particular, the restricted converse, rank and original
++Section~\ref{sec:degree8-original} and Appendix~\ref{app:sources}. In particular, the restricted converse, rank and original
+ arithmetic assertions retain their stated proof status. The prime-pattern
+ input retains its corrected author-version and erratum conventions,
+ including the stated version of arXiv:1009.3998v5. The Pan interface retains
+@@ -42,11 +42,11 @@
+  H=2(2^{109}210^{1800})B_*^{19}+128,
+  \qquad \log_2 H<2093966.
+ \]
+-This is the same $H_{19}$ as in Version 3, not a new height bound. The
++This is $H_{19}$ of Theorem~\ref{thm:quartic-height19}. The
+ source parameters remain high order $40$, beta order $12$, scalar orders
+ $(1,1,1,1,32,32)$ and anchor constant $C=3^{2^{25}}$.
+ 
+-We also retain the reciprocal logarithm lemma of Version 3. Explicitly,
++We also retain Lemma~\ref{lem:quartic-reciprocal-log}. Explicitly,
+ write
+ \[
+  \sqrt{1-w}\sum_{j\ge0}\frac{\binom{2j}{j}}{4^j(4j+1)}w^j
+@@ -60,7 +60,33 @@
+ $40$, and $-G_2(Df^2)/p(P)$ has relative order at least $12$. Actual formal
+ membership is required: small $z$ alone is not the premise of this lemma.
+ 
+-\section{Selective comparisons and the local elliptic chart}
++\subsubsection{The retained scalar, anchor and beta interfaces}
++The scalar input is still $\beta=X^2+2$. The scalar batch tests the two
++rational coefficients each of $f(J_0),f(S),z(S)/z(J_0)$, with orders
++$(1,1,1,1,32,32)$ in that order. Its original pole predicate is retained.
++The anchor constant is computed by
++\[
++ c_0=3,\qquad c_{i+1}=c_i^2\quad(0\le i<25),\qquad C=c_{25}.
++\]
++Thus the integer $C=3^{2^{25}}$ is a witness value, not a polynomial
++coefficient. The four-witness anchor below consumes this same terminal
++value. The height targets are the eight rational abscissa coefficients
++of Lemma~\ref{lem:quartic-rational37}.
++
++For every beta-bearing comparison, the common and beta quotient equations
++are explicitly
++\[
++ \Lambda p_H=G_H,\qquad B_A=C_Ap_A,\qquad B_A\Lambda=G_A.
++\]
++The global nonvanishing in Lemma~\ref{lem:quartic-reciprocal-nonzero}
++forces $\Lambda,p_H,B_A,p_A\ne0$. Hence $C_A$ is the ratio of the beta
++and common approximate logarithms, with their two minus signs cancelled.
++The beta residual is $C_A-2\beta$. In full comparisons $G_H$ has order
++$40$ and $G_A$ order $12$; in beta-only comparisons both have order $12$.
++The Lucas numerators use the normalized equations below, whose permitted
++zero-ordinate branches must not be excluded by this beta argument.
++
++\subsection{Selective comparisons and the local elliptic chart}
+ 
+ \begin{lemma}[Three-mode coverage]\label{lem:quartic-three-mode-coverage}
+ Number the unchanged raw contacts from $0$ to $36$. Retain full comparisons
+@@ -169,7 +195,7 @@
+ by the positive primary-$f$ valuation, but need not be excluded globally
+ for every normalized numerator.
+ 
+-\section{Private conics, packed field tests and the ordinary pole}
++\subsection{Private conics, packed field tests and the ordinary pole}
+ 
+ Each contact $r$ has its own rational variables $\theta,s_c,S_c$ with
+ \[
+@@ -353,7 +379,7 @@
+ \end{lemma}
+ \begin{proof}
+ By Definition 4, Observation 5 and Facts (a), (b), (c), (e) in the proof of
+-Proposition 6 of \cite{koenigsmann}, the algebra is ramified
++Proposition 6 of \cite{koenigsmann-defining}, the algebra is ramified
+ exactly at $2,3$, the trace set is unrestricted at the other places, and it
+ is integral at its two ramified places
+ $2,3$, contains integral traces with residues $1$ at $2$ and $0$ at $3$,
+@@ -376,7 +402,7 @@
+ quaternion witnesses.
+ \end{proof}
+ 
+-\section{Local and normalized Lucas tests}
++\subsection{Local and normalized Lucas tests}
+ 
+ Write
+ \[
+@@ -463,11 +489,9 @@
+ \label{thm:quartic-selective-arithmetic}
+ Retain the inherited scalar and contact-height conclusions, and the integer
+ root indices $n,s,t,z$ of the chosen carrier, with $s,z\ne0$. Let
+-$\beta'=\beta=X^2+2$ for the Version 3 carrier, and
+-$\beta'=2\beta$ for the general-root carrier. Suppose the
++$\beta=X^2+2$ and $\beta'=2\beta$. Suppose the
+ local tests above give $C_i\equiv n_i\pmod{p^{e_i}}$ at all consumed
+-contacts, with beta residual $C_A-\beta'$. Put $H_*=H$ for the Version 3
+-root carrier, and $H_*=5H$ for the general-root variant below. Suppose
++contacts, with beta residual $C_A-\beta'$. Put $H_*=5H$. Suppose
+ \[
+  n_Q^2-6<7H_*N^{19/e},\qquad
+  h(\beta')<a/40,\qquad \log(40H_*)<a/40,
+@@ -500,16 +524,13 @@
+ \[
+  \log B<\frac{12+19}{40(24-19)}a=\frac{31}{200}a<a-3,
+ \]
+-contrary to $B\ge|t|$. Hence $\beta'=n$ is an integer. For the original
+-carrier $\beta'=\beta=X^2+2$, giving integral $X$ by the original
+-denominator argument. For the general-root carrier $\beta'=2\beta$;
++contrary to $B\ge|t|$. Hence $\beta'=n$ is an integer. $\beta'=2\beta=2(X^2+2)$;
+ writing $X=u/v$ in lowest terms gives $v^2\mid2$, hence again $v=1$.
+ \end{proof}
+ 
+ 
+-\section{Optional general-root carrier}
++\subsection{General root carrier}
+ \label{sec:quartic-general-root-variant}
+-% INCLUDE only for a source using the reviewed general_E_mixed root rewrite.
+ 
+ \begin{lemma}[Integer doubled root indices]
+ \label{lem:quartic-doubled-indices}
+@@ -561,6 +582,27 @@
+ cannot justify deleting an unrelated guard without its incidence proof.
+ \end{proof}
+ 
++For clarity, the inherited scalar argument still applies to the new
++indices. At each odd contact prime of $\beta$ outside $S_*$, the
++constant-left scalar norm tree excludes negative odd raw valuation and
++gives all six assigned coefficient orders. The first four put $S,J_0$
++in the formal group at every place above that prime. Writing
++$2S=sP_*$ and $2J_0=j_0P_*$, with nonzero integer $j_0$, the last two
++give $v_p(s/j_0)\ge32$, hence $v_p(s)\ge32$. The logarithm comparison
++uses the exact identity $[2j_0]S=[2s]J_0$. It is valid also at inert
++primes: both rational coefficients are tested and the extension is
++unramified outside two. The unchanged scalar raw polynomial and its
++small-prime correction detect every prime of $M_5(\beta)$, including
++an odd infinite contact. Consequently
++\[
++ M_5(\beta)^{32}\mid s,\qquad
++ h(\beta)\le H M_5(\beta)^{19}\le H|s|^{19/32}.
++\]
++The height theorem's domain condition holds. The value $\beta=X^2+2$
++is none of $0,1,-343/32$, and $\beta=2401$ would require the nonsquare
++integer $2399$ to be a rational square. Doubling both indices therefore
++changes neither the scalar ratio nor its divisibility argument.
++
+ Take $H_*=5H$ and $\beta'=2\beta$. The unchanged contact-height bound
+ $h(x(Q))<7HN^{19/e}$ and the preceding lemma give
+ \[
+@@ -589,9 +631,8 @@
+ polynomial remain unchanged.
+ 
+ 
+-\subsection{Optional doubled targets}
++\subsubsection{Doubled targets}
+ \label{sec:quartic-target-two-variant}
+-% INCLUDE only for the separately audited target-two source.
+ 
+ \begin{lemma}[Targets $2Q_i$ and $P_*$]
+ \label{lem:quartic-target-two}
+@@ -665,11 +706,10 @@
+ 
+ 
+ 
+-\section{Optional exact implementation refinements}
++\subsection{Exact implementation refinements}
+ 
+ 
+ \begin{lemma}[Direct tangent equation]\label{lem:quartic-tangent-fusion}
+-% INCLUDE only where the actual first/second-doubling incidence was audited.
+ For a curve point with $q=x^2$, replace the inverse and slope equations
+ $(2y)h=1$, $\lambda=(3q-D)h$ by
+ $2y\lambda=3q-D$. This preserves all retained rational coordinates.
+@@ -700,7 +740,6 @@
+ 
+ \begin{lemma}[Shared field-square evaluation]
+ \label{lem:quartic-shared-field-square}
+-% INCLUDE only for the audited common-field square interface.
+ For the common field $F=a+b\sqrt2=\overline{f(J)}$, bind once
+ $c=a^2+2b^2$, $d_s=2ab$. In each designated order-one packed field replace
+ \[
+@@ -723,7 +762,6 @@
+ 
+ \begin{lemma}[First packed denominator and norm fusion]
+ \label{lem:quartic-first-norm-fusion}
+-% INCLUDE only for the separately reviewed first-H.f source variant.
+ For the first order-one primary field only, replace its virtual denominator
+ $W_0=T_0/r^2$ by $W_0=T_0/r$, and its first norm $N=1+rW_0^2$ by
+ \[
+@@ -754,22 +792,20 @@
+ \end{proof}
+ 
+ 
+-\section{Composition, completeness and finite realization}
++\subsection{Composition, completeness and finite realization}
+ \label{sec:quartic-composition}
+ 
+-For integral input first set $\beta=X^2+2$. In the general-root branch
+-take $A=\beta P_*$, whose doubled index is $2\beta$; otherwise use the
+-Version 3 choice. Choose $J_0,S$ together in the old subgroup with the
+-required scalar and full anchor divisibilities. In the general-root
+-branch their doubled-index ratio is unchanged. The Lucas existence lemma
+-then gives $t,z$ for the now fixed $s$, and in that branch take $T=tR$,
++For integral input first set $\beta=X^2+2$ and
++take $A=\beta P_*$, whose doubled index is $2\beta$. Choose $J_0,S$ together in the old subgroup with the
++required scalar and full anchor divisibilities. Their doubled-index ratio is unchanged. The Lucas existence lemma
++then gives $t,z$ for the now fixed $s$, and take $T=tR$,
+ $Z=zR$. Fix the eight abscissa coefficients and denominator data before
+ using the prime-pattern theorem. Exclude the divisors of the fixed nonzero
+ $s$ as well as every earlier finite exceptional set.
+ 
+ Next choose one common comparison point $J$ using the stated least common
+ multiple, then choose the private points separately for each occurrence,
+-using precisely the selected target-four or target-two CRT rule.
++using precisely the target-two CRT rule.
+ Construct all joint-graph, reciprocal-$G$, normalized-ratio and
+ shared-square fields. Only then choose each private conic point and its
+ norm/pole witnesses by simultaneous approximation. Repeated primes retain
+@@ -778,7 +814,7 @@
+ direction the conic and pole decode field orders at every odd-contact
+ prime, without an ordinariness assumption. The graph and doubled logarithm
+ arguments give integer-index congruences, and the two height contradictions
+-give the integer input. Optional exact fusions preserve the specified
++give the integer input. The exact fusions preserve the specified
+ retained coordinates; arithmetic source replacements use the full
+ soundness and completeness argument rather than a claim about arbitrary
+ old private witness tuples.

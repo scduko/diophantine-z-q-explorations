@@ -1,0 +1,21 @@
+{
+  "schema": "quartic-1272-portable-builder-v1",
+  "files": {
+    "build_source.cjs": {
+      "sha256": "68c553f987f88780d28fbd21d625278701ecc38d8cc92160215e5bf44a270c78",
+      "bytes": 17876
+    },
+    "raw-ir.json": {
+      "sha256": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+      "bytes": 3968902
+    },
+    "raw-translated-ir.json": {
+      "sha256": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e",
+      "bytes": 3969561
+    },
+    "census.json": {
+      "sha256": "ee0e454189bf965fe643548472532e75c533fdf822f60b0420ede6d4120e57dd",
+      "bytes": 2877
+    }
+  }
+}

@@ -1,0 +1,103 @@
+% Proposed additive clarification. Do not replace the pinned manuscript.
+% Intended immediately before the two-anchor lemma at Brox lines 2641--2670.
+% Covers the inherited precision 16 and 64 tests, and precision 52 in the quartic.
+
+\begin{lemma}[Reciprocal logarithms at every unramified place]
+Let $K=\mathbb Q(\sqrt2)$, $D=(3-\sqrt2)^2$, and
+$E:y^2=x^3-Dx$. Let $p>76176$ be a rational prime, and let $\mathfrak p$ be any place
+of $K$ above $p$. Normalize $v_{\mathfrak p}(p)=1$.
+For a nonidentity point $Q$ in the formal group, put
+$f=1/x(Q)$ and $z=-x(Q)/y(Q)$. Define
+\[
+ a_0=1,\qquad a_1=-2/5,\qquad
+ a_j=\frac{4j-5}{4j+1}a_{j-1}\quad(j\ge2),\qquad
+ L_e(Q)=z\sum_{j=0}^{e/4-1}a_j(Df^2)^j.
+\]
+For $e\in\{16,52,64\}$ one has
+\[
+ v_{\mathfrak p}(\log_E Q)=v_{\mathfrak p}(z)=:r\ge1,
+ \qquad
+ v_{\mathfrak p}(\log_E Q-L_e(Q))\ge(e+1)r,
+ \qquad
+ \frac{L_e(Q)}{\log_E Q}\in1+p^e\mathcal O_{K_{\mathfrak p}}.
+\]
+Consequently, for nonidentity formal points $Q,Q'$ and
+$e,e'\in\{16,52,64\}$, the truncated ratio has the same valuation
+as the full logarithm ratio, and the relative error has valuation
+at least $\min(e,e')$. If the full ratio is integral, this is also
+an absolute error bound.
+\end{lemma}
+
+\begin{proof}
+The extension $K_{\mathfrak p}/\mathbb Q_p$ is unramified, whether
+$p$ splits or is inert, and $D$ is a unit since $N_{K/\mathbb Q}(D)=49$.
+The curve has good reduction. The formal parameter identities are
+\[
+ f=z^2(1-Df^2),\quad w=Df^2,\quad
+ Dz^4=\frac{w}{(1-w)^2},\quad v_{\mathfrak p}(w)=4r.
+\]
+The recurrence gives
+\[
+ 4w(1-w)G'(w)+(1+w)G(w)=1-w,
+ \qquad G(w)=\sum_{j\ge0}a_jw^j.
+\]
+Differentiating the parameter identity proves that the derivative
+of $zG(w)$ is $(1+4Dz^4)^{-1/2}$ with constant term one. Thus
+$zG(w)$ is the normalized formal logarithm.
+
+The denominator of $a_j$ divides
+$5\prod_{k=2}^j(4k+1)$, hence divides $(4j+1)!$. It follows that
+\[
+ v_{\mathfrak p}(a_j)\ge-v_p((4j+1)!)
+ \ge-\frac{4j+1}{p-1}.
+\]
+Write $m=e/4\le16$. For $j\ge m$ with $4j+1<p$,
+the coefficient is integral and $v(a_jw^j)\ge4mr$.
+Otherwise $j\ge19044$, so $3j\ge4m$ and
+$(4j+1)/(p-1)\le j$. Therefore
+\[
+ v(a_jw^j)\ge4jr-j\ge3jr\ge4mr.
+\]
+The lower bounds tend to infinity. Multiplication by $z$ gives
+the asserted error bound. The leading term of the full logarithm
+has valuation $r$, and all later terms have larger valuation;
+equivalently one may use formal-logarithm isometry on the formal
+kernel. Division gives the relative estimate. Dividing the two
+relative estimates proves the ratio assertions.
+No step uses that the residue field has degree one.
+\end{proof}
+
+\begin{corollary}[Two anchors, including inert primes]
+Assume the cyclic-group input. Let $H=[h]P$, $U_i=[u_i]P$,
+$Q_i=[n_i]P$, $V_0=H-[4]P$, and $V_i=U_i-[4]Q_i$.
+Suppose the point and denominator guards of the shared construction
+hold and the order-one tests put $H,U_i$ in the formal group at
+$\mathfrak p$ and $V_0,V_i$ in the formal group at
+$\mathfrak p^\sigma$. Let $k_i,e'\in\{16,52,64\}$ with $e'\ge k_i$,
+use numerator precision $k_i$ and denominator precision $e'$, and suppose
+$v_{\mathfrak p}(L_i-L'_i)\ge k_i$.
+Then $L_i$ is integral and
+\[
+ L_i\equiv n_i\pmod{p^{k_i}\mathcal O_{K_{\mathfrak p}}}.
+\]
+\end{corollary}
+
+\begin{proof}
+The full logarithm ratios, after conjugating the second one, are
+$r_i=u_i/h$ and $r'_i=(u_i-4n_i)/(h-4)$. At least one of $h,h-4$
+is a $p$-unit. Its full ratio is integral, so its truncated ratio
+is integral by the lemma. The difference test makes the other
+truncated ratio integral. Valuation equality then makes both full
+ratios integral, and the relative errors are absolute errors.
+Hence $L_i\equiv r_i\equiv r'_i\pmod{p^{k_i}}$. Since
+\[
+ h r_i-(h-4)r'_i=4n_i,
+\]
+we get $4L_i\equiv4n_i\pmod{p^{k_i}}$ and can divide by four.
+If $p$ is inert, conjugation acts within the same unramified
+completion; the calculation is unchanged.
+\end{proof}
+
+% This clarification adds no variables, guards, exceptional primes, or
+% arithmetic hypothesis. It does not certify the missing coefficient DAG
+% or its reported degree/height majorants.

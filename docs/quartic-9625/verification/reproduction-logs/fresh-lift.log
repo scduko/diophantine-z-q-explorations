@@ -1,0 +1,12 @@
+{
+  "witnesses": 11687,
+  "variables": 11688,
+  "rows": 11224,
+  "degree": 4,
+  "monomials": 72097,
+  "max_abs_coefficient": 685783949153203534233601,
+  "status": "CANDIDATE: independent verification pending",
+  "fresh_source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+  "initial_lift_gates": 2370,
+  "reused_source_products": 1381
+}

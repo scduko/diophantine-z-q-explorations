@@ -1,0 +1,385 @@
+{
+  "schema": "quartic-readiness-lemma-inventory-v2",
+  "scope": "Proof dependencies and current source role; not a formal proof certificate or publication approval",
+  "selected_line": [
+    "N1",
+    "N2",
+    "N3",
+    "N4a",
+    "N4b",
+    "N4c",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "C1",
+    "N9",
+    "N10",
+    "N12",
+    "N13",
+    "N14",
+    "N15"
+  ],
+  "superseded_constant_branch": [
+    "N11"
+  ],
+  "optional_unintegrated": [
+    "O1"
+  ],
+  "nodes": [
+    {
+      "id": "N1",
+      "label": "lem:quartic-three-mode-coverage",
+      "kind": "new_arithmetic_construction",
+      "proofs": [
+        "three_mode_proof"
+      ],
+      "reviews": [
+        "three_mode_review"
+      ],
+      "depends_on": [],
+      "external": [
+        "I_H5",
+        "I_SIEVE",
+        "I_LUCAS"
+      ]
+    },
+    {
+      "id": "N2",
+      "label": "lem:quartic-doubled-private-comparison",
+      "kind": "new_arithmetic_construction",
+      "proofs": [
+        "private_comparison_proof"
+      ],
+      "reviews": [
+        "private_comparison_review"
+      ],
+      "depends_on": [],
+      "external": [
+        "I_GEN",
+        "I_FORMAL",
+        "I_RECIPROCAL"
+      ]
+    },
+    {
+      "id": "N3",
+      "label": "lem:quartic-joint-chart",
+      "kind": "exact_curve_identity_with_stated_carrier",
+      "proofs": [
+        "joint_chart_proof",
+        "two_denominator_proof"
+      ],
+      "reviews": [
+        "joint_chart_review"
+      ],
+      "depends_on": [
+        "N2"
+      ],
+      "external": []
+    },
+    {
+      "id": "N4a",
+      "label": "lem:quartic-private-conic-packing",
+      "kind": "elementary_conic_and_valuation_lemma",
+      "proofs": [
+        "conic_proof"
+      ],
+      "reviews": [
+        "conic_review"
+      ],
+      "depends_on": [],
+      "external": [
+        "I_NORM"
+      ]
+    },
+    {
+      "id": "N4b",
+      "label": "lem:quartic-private-conic-packing",
+      "kind": "field_order_decoding",
+      "proofs": [
+        "conic_proof",
+        "joint_arithmetic_proof"
+      ],
+      "reviews": [
+        "conic_review"
+      ],
+      "depends_on": [
+        "N4a",
+        "N8"
+      ],
+      "external": []
+    },
+    {
+      "id": "N4c",
+      "label": "lem:quartic-conic-completeness",
+      "kind": "elementary_conic_approximation_construction",
+      "proofs": [
+        "conic_proof",
+        "joint_arithmetic_proof"
+      ],
+      "reviews": [
+        "conic_review"
+      ],
+      "depends_on": [
+        "N4a",
+        "N8"
+      ],
+      "external": [
+        "I_SIEVE",
+        "I_CRT"
+      ]
+    },
+    {
+      "id": "N5",
+      "label": "lem:quartic-anchor-four",
+      "kind": "new_published_trace_application_and_elementary_criterion",
+      "proofs": [
+        "anchor_proof"
+      ],
+      "reviews": [
+        "anchor_review"
+      ],
+      "depends_on": [],
+      "external": [
+        "I_ANCHOR",
+        "K_TRACE_23"
+      ]
+    },
+    {
+      "id": "N6",
+      "label": "lem:quartic-local-lucas",
+      "kind": "new_arithmetic_construction",
+      "proofs": [
+        "local_lucas_proof"
+      ],
+      "reviews": [
+        "local_lucas_review"
+      ],
+      "depends_on": [
+        "N1",
+        "N2",
+        "N3",
+        "N4b",
+        "N4c"
+      ],
+      "external": [
+        "I_LUCAS"
+      ]
+    },
+    {
+      "id": "N7",
+      "label": "lem:quartic-normalized-lucas",
+      "kind": "new_arithmetic_construction_with_zero_branches",
+      "proofs": [
+        "normalized_proof"
+      ],
+      "reviews": [
+        "normalized_review"
+      ],
+      "depends_on": [
+        "N6"
+      ],
+      "external": [
+        "I_RECIPROCAL",
+        "I_SIEVE"
+      ]
+    },
+    {
+      "id": "N8",
+      "label": "lem:quartic-linear-pole",
+      "kind": "one_sided_pole_and_source_completeness",
+      "proofs": [
+        "linear_pole_proof",
+        "parity_scale_proof"
+      ],
+      "reviews": [
+        "linear_pole_review",
+        "parity_scale_review"
+      ],
+      "depends_on": [
+        "N4a"
+      ],
+      "external": [
+        "I_POLE"
+      ]
+    },
+    {
+      "id": "C1",
+      "label": null,
+      "kind": "mandatory_superseding_elementary_clarification",
+      "proofs": [
+        "mixed_mode_clarification"
+      ],
+      "reviews": [],
+      "depends_on": [
+        "N2"
+      ],
+      "external": [
+        "I_FORMAL",
+        "I_RECIPROCAL"
+      ],
+      "supersedes": "Only the uniform order40 denominator assertions in pinned general-root and target-two notes/early reviews"
+    },
+    {
+      "id": "N9",
+      "label": "lem:quartic-doubled-indices",
+      "kind": "new_arithmetic_root_carrier",
+      "proofs": [
+        "general_root_proof",
+        "mixed_mode_clarification"
+      ],
+      "reviews": [
+        "general_root_review",
+        "root_shared_source_review"
+      ],
+      "depends_on": [
+        "N1",
+        "N2",
+        "N5",
+        "N7",
+        "N8",
+        "C1"
+      ],
+      "external": [
+        "I_GEN",
+        "I_H5",
+        "I_CRT"
+      ]
+    },
+    {
+      "id": "N10",
+      "label": "lem:quartic-general-root-charts",
+      "kind": "exact_root_chart_on_reviewed_carrier",
+      "proofs": [
+        "root_chart_proof"
+      ],
+      "reviews": [
+        "root_chart_review",
+        "root_implementation_review"
+      ],
+      "depends_on": [
+        "N9"
+      ],
+      "external": []
+    },
+    {
+      "id": "N11",
+      "label": "lem:quartic-fixed-target",
+      "kind": "historical_target_four_constant_binding",
+      "proofs": [
+        "fixed_target_proof",
+        "fixed_target_values"
+      ],
+      "reviews": [
+        "fixed_target_review"
+      ],
+      "depends_on": [
+        "N10"
+      ],
+      "external": [],
+      "current_status": "superseded by N13 in target-two line; retained for measured target-four source"
+    },
+    {
+      "id": "N12",
+      "label": "lem:quartic-shared-field-square",
+      "kind": "exact_quadratic_identity_and_coordinate_map",
+      "proofs": [
+        "shared_square_proof"
+      ],
+      "reviews": [
+        "shared_square_review",
+        "shared_square_implementation_review"
+      ],
+      "depends_on": [
+        "N4a"
+      ],
+      "external": []
+    },
+    {
+      "id": "N13",
+      "label": "lem:quartic-target-two",
+      "kind": "new_arithmetic_target_and_CRT_construction",
+      "proofs": [
+        "target_two_proof",
+        "target_two_author_contract",
+        "mixed_mode_clarification"
+      ],
+      "reviews": [
+        "target_two_review",
+        "target_two_implementation_review",
+        "target_two_source_review"
+      ],
+      "depends_on": [
+        "N9",
+        "N10",
+        "N12",
+        "C1"
+      ],
+      "external": [
+        "I_GEN",
+        "I_CRT"
+      ]
+    },
+    {
+      "id": "N14",
+      "label": "lem:quartic-tangent-fusion",
+      "kind": "exact_quadratic_replacement_and_polynomial_inverse",
+      "proofs": [
+        "tangent_proof"
+      ],
+      "reviews": [
+        "tangent_review",
+        "tangent_outer_review"
+      ],
+      "depends_on": [
+        "N10",
+        "N13"
+      ],
+      "external": []
+    },
+    {
+      "id": "N15",
+      "label": "lem:quartic-first-norm-fusion",
+      "kind": "arithmetic_denominator_change_then_exact_fusion",
+      "proofs": [
+        "first_norm_proof"
+      ],
+      "reviews": [
+        "first_norm_parity_review",
+        "first_norm_arithmetic_review",
+        "first_norm_helper_review",
+        "first_norm_locator_review",
+        "first_norm_outer_review"
+      ],
+      "depends_on": [
+        "N4a",
+        "N4b",
+        "N4c",
+        "N8"
+      ],
+      "source_composition_after": [
+        "N13",
+        "N14",
+        "N12"
+      ],
+      "external": []
+    },
+    {
+      "id": "O1",
+      "label": "lem:quartic-scalar-inverse-fusion",
+      "kind": "optional_exact_quadratic_replacement",
+      "proofs": [
+        "scalar_inverse_proof"
+      ],
+      "reviews": [
+        "scalar_inverse_review"
+      ],
+      "depends_on": [
+        "N10",
+        "N13"
+      ],
+      "external": [],
+      "current_status": "unintegrated; tangent composition requires a separately pinned coordinate map"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{"step": 0, "oriented_proportional_pairs": 8, "variables": 9629}
+{"step": 1, "oriented_proportional_pairs": 6, "variables": 9628}
+{"step": 2, "oriented_proportional_pairs": 4, "variables": 9627}
+{"step": 3, "oriented_proportional_pairs": 2, "variables": 9626}
+{"step": 4, "oriented_proportional_pairs": 0, "variables": 9625}
+{
+  "witnesses": 9624,
+  "variables": 9625,
+  "rows": 9161,
+  "degree": 4,
+  "monomials": 82476,
+  "max_abs_coefficient": 685783949153203534233601,
+  "status": "CANDIDATE: independent verification pending",
+  "initial_variables": 9629,
+  "coordinate_pairs_removed": 4,
+  "oriented_pair_counts": [
+    8,
+    6,
+    4,
+    2,
+    0
+  ],
+  "seconds": 0.605
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "private-conic-field-norm-v1",
+  "status": "proposal requiring independent arithmetic review and fresh source audit",
+  "source_pin_authorized": false,
+  "proof_file": "ODD_DISCRIMINANT_PAIR_COMPRESSION.md",
+  "proof_sha256": "ef4de3f02fa3d17c18dc7c2af490960a62f35cc541eac8e4b80958d320fa8ab9",
+  "per_contact_private_coordinates": ["theta", "s", "S"],
+  "conic_residuals": ["S-s^2", "theta^2-r*S-2"],
+  "field_contract": {
+    "input": "F=A+B*sqrt(2), positive integer order e",
+    "restriction": "A and B have no dependence on local theta,s,S",
+    "retained_power": "P=r^(2*e)",
+    "generic_private_coordinates": ["Y", "W"],
+    "generic_residuals": ["Y-A-theta*B", "P*W-2*A*Y+A^2-2*B^2"],
+    "meaning": "P*W=eval_theta(F^2)"
+  },
+  "tree": {
+    "field_order": "increasing e, stable original order within each group",
+    "initial_nodes": "literal1 followed by each W in field_order",
+    "merge": "N_r(a,b)=a^2+r*b^2",
+    "schedule": "pair successive nodes and carry the final unpaired node at every level",
+    "constant_path": "all-left",
+    "pole_argument": "r*root^2"
+  },
+  "remove_only_with_incidence_audit": [
+    "old global theta and epsilon plus their root-error relation",
+    "first epsilon norm node at each contact",
+    "old paired rational test definitions and bottom norm equations",
+    "old B-square witnesses",
+    "unused odd contact powers",
+    "raw contact inverse guards, using the new conic theorem rather than the old root-error rule"
+  ],
+  "unchanged_scope": [
+    "raw contact list and comparison-mode assignment",
+    "all actual field expressions, orders and conjugations",
+    "chosen point charts and their separately approved semantics",
+    "reciprocal logarithm approximants and ratio semantics",
+    "scalar-height batch",
+    "height, anchor and arithmetic precision parameters",
+    "original input coordinate"
+  ],
+  "completeness_raw_contact": "positive r=d^2*p, p congruent1mod8, v_p(d)=0",
+  "optional_field_square_fusion": "requires separately checked retained identity C+D*sqrt(2)=F^2; then replace the two generic residuals by P*W-C-theta*D and removeY only if no outside use",
+  "measured_savings": null
+}

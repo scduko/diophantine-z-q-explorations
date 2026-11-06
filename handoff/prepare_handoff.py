@@ -1,6 +1,6 @@
 """Freeze an explicit handoff plan from one complete public Git commit.
 
-Run remotely after the Version 2 files and fresh verification receipt are
+Run remotely after the current release files and fresh verification receipt are
 committed. This neither downloads nor compresses the historical baseline.
 """
 import argparse
@@ -13,6 +13,7 @@ import re
 import subprocess
 
 from verify_handoff import safe_name, BASELINE_SHA, BASELINE_BYTES
+from release_config import validate_release, validate_current
 
 BAD_PARTS={'.git','.lake','node_modules','__pycache__','.aws','.codex','conversations','transcripts'}
 BAD_NAMES={'auth.json','credentials.json','cookies.json','cookies.sqlite','token.json','tokens.json',
@@ -53,6 +54,7 @@ def main():
     p.add_argument('--commit',required=True)
     p.add_argument('--payload',type=Path,default=Path(__file__).with_name('payload'))
     p.add_argument('--selection',type=Path,default=Path(__file__).with_name('selection.json'))
+    p.add_argument('--release',type=Path,default=Path(__file__).with_name('release.json'))
     p.add_argument('--verification-receipt',required=True,help='Repository-relative fresh full reproduction SUMMARY.json')
     p.add_argument('--output',type=Path,required=True)
     a=p.parse_args()
@@ -74,22 +76,10 @@ def main():
         objects[name]=raw
         files.append(dict(kind='git',path=name,archive_path='current/'+name,git_blob=oid,
                           bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest()))
-    for required in ('quartic_12504.tex','quartic_12504.pdf','docs/quartic-12504/README.md',
-                     'quartics/quartic-12504/reproducibility/manifest.json',a.verification_receipt):
-        if required not in objects:
-            raise ValueError('Missing required current snapshot file: '+required)
-    if not objects['quartic_12504.pdf'].startswith(b'%PDF'):
-        raise ValueError('Current PDF is not a PDF')
-    receipt=json.loads(objects[a.verification_receipt])
-    if receipt['status']!='PASS: FROZEN REPLAY AND CLEAN REPRODUCTION' or receipt['source_id']!='reciprocal64-beta16-compressed-s1-b5e836d77643':
-        raise ValueError('Fresh full reproduction did not pass')
-    package_manifest=json.loads(objects['quartics/quartic-12504/reproducibility/manifest.json'])
-    for name,record in package_manifest['files'].items():
-        raw=objects['quartics/quartic-12504/'+safe_name(name)]
-        if record!={'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}:
-            raise ValueError('Current commit changed a verified package input: '+name)
+    release=validate_release(json.loads(a.release.read_bytes()))
+    validate_current(objects.__getitem__,set(objects),release,a.verification_receipt)
     selection=json.loads(a.selection.read_bytes())
-    if selection['format']!='quartic-12504-handoff-selection/v1':
+    if selection['format']!='quartic-handoff-selection/v2':
         raise ValueError('Unknown selection format')
     for item in selection['files']:
         name=safe_name(item['path']); path=(a.payload/name).resolve()
@@ -105,11 +95,11 @@ def main():
     names=[f['archive_path'] for f in files]
     if len(names)!=len(set(names)) or len(names)!=len({n.casefold() for n in names}):
         raise ValueError('Colliding current and history names')
-    plan=dict(format='quartic-12504-handoff-plan/v1',snapshot_commit=commit,files=files,
+    plan=dict(format='quartic-handoff-plan/v2',snapshot_commit=commit,files=files,release=release,
               verification_receipt=a.verification_receipt,
               baseline=dict(filename='z-in-q-research-handoff-2026-11-04-r2.zip',sha256=BASELINE_SHA,bytes=BASELINE_BYTES,
                             url='https://github.com/elliotglazer/diophantine-z-q/releases/download/research-handoff-2026-11-04-r2/z-in-q-research-handoff-2026-11-04-r2.zip'),
-              scope='Complete public commit plus explicitly selected mathematical history; private v5 is not included',
+              scope='Complete public commit plus explicitly selected project mathematical history; raw private archives and conversations are not included',
               scan='New payload bytes and gzip text checked for credential/dialogue patterns; unchanged public baseline is not rescanned')
     a.output.parent.mkdir(parents=True,exist_ok=True)
     a.output.write_text(json.dumps(plan,sort_keys=True,indent=2)+'\n',encoding='utf-8',newline='\n')

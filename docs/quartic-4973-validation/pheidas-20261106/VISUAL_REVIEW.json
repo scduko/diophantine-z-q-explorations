@@ -1,0 +1,20 @@
+{
+  "status": "PASS: ATTRIBUTION AND BIBLIOGRAPHY VISUALLY REVIEWED",
+  "pdf_sha256": "299e5f3342ddf42a30336aab73efd81a03c258b1012eb863397a101a74325fe7",
+  "pages": 199,
+  "reviewed_pages": [
+    4,
+    198
+  ],
+  "scope": "The new introduction paragraph and bibliography entry are legible, correctly numbered and unclipped. This is not a new visual review of all inherited pages.",
+  "renders": [
+    {
+      "page": 4,
+      "sha256": "32773a66e54f47017b89bcfc67e91f47617ffb0359bedef7c1b48f48bfb592c4"
+    },
+    {
+      "page": 198,
+      "sha256": "7fa7a3cbfbdcc54905532e2d64c22497450c781627e258bfd2f35f5594f5f213"
+    }
+  ]
+}

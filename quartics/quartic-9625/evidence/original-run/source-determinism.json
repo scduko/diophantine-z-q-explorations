@@ -1,0 +1,23 @@
+{
+  "files": {
+    "BETA_SOURCE.json": "f263dafbe24f85b74ff5059df9973422217effc115941f267399bf3671a6d9fa",
+    "compiler/archive_build.py": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912",
+    "compiler/beta_kernel.py": "ed2ffbd0e1533fe071b81f9cbd3cacfd7cf2897dba7084c220b3eac23c56516d",
+    "compiler/build_source.py": "7cce6989be939c0422db3cbe3bb0735e3e31b2528beb0ff7f66be749ad2ae2b6",
+    "compiler/combined_kernel.py": "f41dc82a5dd451b3196bd20f46c14bb5a2ace4a29d6d22bc898725f1eba6e9f5",
+    "compiler/lowprecision_kernel.py": "66854ff3ee24d8dd6f4b3b54fa5ca627d87b5d0da09cafa35e3d05d47d0d5c31",
+    "counts.json": "551c3d2dc10f812261b4af7ad732ea2618c6cd5046bda0c5cfff4bcd159570bd",
+    "modules/Z_definition.json": "c79a28fdfdd42d16d37e083ba76c30a3c225be5662cc41ddaf00ebe32147b77d",
+    "modules/q_anchor.json": "e5b74df60328d739e94224f199efb16dd817c994658c95d5dd781704bcf94fb1",
+    "modules/q_batch17.json": "a1e5b8b88e69b85cb165521eeb9791f130ed342d30424d591f1dac585e5840a5",
+    "modules/q_batch41.json": "a45569adc62e09ce254b01cb38a3b31eb891842a73f515f21732eeeb24799985",
+    "modules/q_compare4.json": "ef3aba59c082b9dc312993cc5ea8d0298cc1c81b21e58d4762186bb9a53d4eb2",
+    "modules/q_compare_beta.json": "8af636d55884340de851952144e1243bb7d89c35708178055083ccf5f92659a8",
+    "modules/q_height_batch.json": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761",
+    "modules/q_primeparity.json": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a",
+    "polynomial.json": "6ab9f2e74cb75089e6ff18feb2bc3569bdb5d4543f78d306e6510093f6ef3bd4",
+    "residuals.jsonl": "d68d86cdf995a0e80c38953f1ad03262733f81145b949a0501b143eca6ac0a9c",
+    "shared.json": "f879f79eb7e8072176c8204df4c07a0097a219b7c2452c7c09bd52ca04abe83e"
+  },
+  "status": "PASS"
+}

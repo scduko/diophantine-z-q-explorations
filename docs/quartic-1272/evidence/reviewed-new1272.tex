@@ -1,0 +1,883 @@
+\section{The shared-point quartic in 1272 variables}
+\label{sec:v5-1272}
+
+This section gives a new complete quadratic compilation of the shared-point
+construction in Jos\'e Brox's public manuscript~\cite{Brox2026}.
+The shared comparison points, reciprocal-trace detectors, fixed height
+scales, direct Lucas test, and affine anchor change are Brox's arithmetic
+and algebraic improvements. The simultaneous prime theorem used to choose
+the shared points is Sun's Theorem~4.1, in the precise form of
+Theorem~\ref{thm:v5-simultaneous-primes} below. Our contribution here is an
+independently specified gate program, its source verification, and the
+complete polynomial obtained after 32 certified eliminations. The
+definition does not depend on an unavailable coefficient table.
+The public source passages are Brox's
+\href{https://github.com/JoseBrox/diophantine-z-q_improvements/blob/f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6/paper/diophantine_optimization_20261106_v3.tex#L2354-L3044}{shared-point construction},
+\href{https://github.com/JoseBrox/diophantine-z-q_improvements/blob/f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6/paper/diophantine_optimization_20261106_v3.tex#L3352-L3405}{fixed height scales},
+and
+\href{https://github.com/JoseBrox/diophantine-z-q_improvements/blob/f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6/paper/diophantine_optimization_20261106_v3.tex#L4135-L4758}{quadratic compilation and anchor translation}.
+
+We retain the arithmetic conclusions and conventions of
+Section~\ref{sec:degree8-original}, including the restricted-converse
+input to Lemma~\ref{hyp:o8-pole}. In this section the height estimate is
+Theorem~\ref{hyp:o8-height}, with exponent 24 and its original constant
+$H_*$; it is not the exponent-19 estimate used for the preceding quartic.
+Thus
+\[
+  1\le H_*<2^{4783227}.
+\]
+The exact finite compilation and coefficient assertions below require no
+arithmetic conjecture. Identifying the rational input projection with
+$\Z$ uses the stated arithmetic results and the simultaneous prime theorem.
+
+\begin{theorem}[The new quartic]\label{thm:v5-1272-polynomial}
+The complete table specified below defines a polynomial
+\[
+ P_{1272}\in\Z[X_0,\ldots,X_{1271}]
+\]
+of degree four, with exactly $48001$ nonzero coordinate monomials,
+integer coefficient content one, and coefficient height
+\[
+ H(P_{1272})=64\cdot3^{2^{28}}<2^{429496736}.
+\]
+It is the sum of the squares of 1229 quadratic residuals. Under the
+arithmetic conclusions and conventions just stated, for every $X_0\in\Q$,
+\[
+ X_0\in\Z\quad\Longleftrightarrow\quad
+ \exists X_1,\ldots,X_{1271}\in\Q:\ P_{1272}(X_0,\ldots,X_{1271})=0.
+\]
+In particular its 1272 variables include the input and 1271 existential
+witnesses.
+\end{theorem}
+
+\subsection{Points, local parameters, and quotient domains}
+\label{subsec:v5-point-source}
+
+Use the normalized curve and generator already established in
+Section~\ref{sec:degree8-original}:
+\[
+ K=\Q(\sqrt2),\quad d=3-\sqrt2,\quad D=d^2,
+ \quad E:y^2=x^3-Dx,
+\]
+\[
+ P_*=(57/8-7\sqrt2/2,-165/8+417\sqrt2/32),
+ \qquad 2E(K)=\Z P_*.
+\]
+The last assertion follows from Proposition~\ref{prop:generator} by the
+unit change of variables recorded there. Conjugation of $K/\Q$ is
+denoted by $\sigma$. All field equations below mean both rational
+component equations in the basis $1,\sqrt2$.
+
+The source uses nine nonidentity points
+\[
+ A,S,T,Z,H,U_A,U_S,U_T,U_Z\in2E(K).
+\]
+Each is represented as the double of an affine halfpoint
+$(\alpha,\eta)\in E(K)$, using four rational halfpoint coordinates.
+The equations for a double are
+\begin{equation}\label{eq:v5-double}
+ \eta^2=\alpha^3-D\alpha,\qquad
+ 2\eta m=3\alpha^2-D,\qquad
+ x=m^2-2\alpha,\qquad y=m(\alpha-x)-\eta.
+\end{equation}
+Products of degree greater than two in this display are evaluated by
+the quadratic gates specified below. Set
+\[
+ Q_0=P_*,\quad(Q_1,Q_2,Q_3,Q_4)=(A,S,T,Z),
+ \quad(U_0,U_1,U_2,U_3,U_4)=(H,U_A,U_S,U_T,U_Z).
+\]
+Compute $[4]Q_i$ by two doublings, or by fixed rational arithmetic for
+$Q_0$, and compute
+\[
+ V_i=U_i-[4]Q_i\quad(0\le i\le4).
+\]
+For the subtraction of $(x',y')$ from $(x,y)$ we retain an inverse of
+$x-x'$ in $K$ and use
+\[
+ m=(y+y')/(x-x'),\quad x''=m^2-x-x',\quad
+ y''=m(x-x'')-y.
+\]
+
+\begin{lemma}[Domains of the point quotients]\label{lem:v5-point-domains}
+The equations \eqref{eq:v5-double} force $\eta\ne0$ and describe a
+finite nonidentity point of $2E(K)$. Every such point has nonzero
+abscissa and ordinate. The guarded differences $V_i$ have the same
+properties. Consequently $f(Q)=1/x(Q)$ and $z(Q)=-x(Q)/y(Q)$ are
+defined and nonzero at every point where they are used here.
+\end{lemma}
+\begin{proof}
+If $\eta=0$, the curve equation gives $\alpha=0$ or $\alpha^2=D$.
+The right side of the slope equation is then $-D$ or $2D$, respectively,
+a contradiction. The ordinary duplication formulas therefore apply.
+They give
+\[
+ x([2](\alpha,\eta))=
+ \left(\frac{\alpha^2+D}{2\eta}\right)^2\ne0,
+\]
+because $D=d^2$ and the numerator is positive at either real embedding.
+An ordinate-zero point has abscissa $0,d$, or $-d$.
+The latter two are not squares in $K$: their rational norm is 7,
+whereas the norm of a square is a rational square. Thus the doubled
+ordinate is nonzero. A guarded affine difference is finite and is
+again in $2E(K)$, so the same argument applies. Conversely any
+nonidentity point of $2E(K)$ has an affine halfpoint of nonzero
+ordinate and is represented by these formulas.
+\end{proof}
+
+Write
+\[
+ a_0=1,\quad a_1=-2/5,\quad
+ a_j=\frac{4j-5}{4j+1}a_{j-1}\ (j\ge2),\qquad
+ G_J(w)=\sum_{j=0}^J a_jw^j,
+\]
+and, for $e=16,52$, put
+\begin{equation}\label{eq:v5-log}
+ \ell_e(Q)=z(Q)G_{e/4-1}(Df(Q)^2).
+\end{equation}
+Lemma~\ref{lem:quartic-reciprocal-nonzero} applies to both truncation
+degrees 3 and 12. Thus all these values are nonzero globally.
+
+\begin{lemma}[The logarithm estimate at unramified places]
+\label{lem:v5-unramified-log}
+Let $p>76176$ be a rational prime and $\mathfrak p\mid p$ a place
+of $K$. If a nonidentity point $Q$ is in the formal group at
+$\mathfrak p$, normalize $v(p)=1$ and put $r=v(z(Q))$. Then $r\ge1$,
+and for $e\in\{16,52,64\}$,
+\[
+ v(\log_E Q)=r,\qquad
+ v(\log_E Q-\ell_e(Q))\ge(e+1)r,\qquad
+ \ell_e(Q)/\log_E Q\in1+p^e\mathcal O_{K_{\mathfrak p}}.
+\]
+Here $\ell_{64}$ is defined by the same formula with $G_{15}$.
+Ratios with numerator precision $e$ and denominator precision $e'$
+in this set have the valuation of their full logarithm ratio and
+relative error of valuation at least $\min(e,e')$.
+\end{lemma}
+\begin{proof}
+The local extension is unramified, including when $p$ is inert.
+The curve has good reduction and $D$ is a unit. On the formal branch,
+\[
+ f=z^2(1-Df^2),\qquad w=Df^2,\qquad v(w)=4r.
+\]
+The recurrence gives
+$4w(1-w)G'(w)+(1+w)G(w)=1-w$ and hence the same identity
+$\log_E Q=zG(w)$ as in Lemma~\ref{lem:quartic-reciprocal-log}.
+For $j\ge1$ the denominator of $a_j$ divides $(4j+1)!$, so
+\[
+ v(a_j)\ge-\frac{4j+1}{p-1}.
+\]
+Set $m=e/4\le16$. If $j\ge m$ and $4j+1<p$, then
+$v(a_jw^j)\ge4mr$. Otherwise $j\ge19044$ and
+\[
+ v(a_jw^j)\ge4jr-j\ge3jr\ge4mr.
+\]
+The lower bounds tend to infinity, proving the estimate for the
+entire tail. Every nonconstant term of $G(w)$ has positive valuation,
+so the leading term gives $v(\log_E Q)=r$. Division proves the
+relative estimate, and division of two relative estimates proves
+the ratio assertion. No step uses residue degree one.
+\end{proof}
+
+\subsection{The complete rational source}
+\label{subsec:v5-complete-source}
+
+The ordinary input is $X$, and $\beta=X^2+2$. Define
+\[
+ (k_1,k_2,k_3,k_4)=(16,52,52,52),\qquad
+ L_i=\frac{\ell_{k_i}(U_i)}{\ell_{52}(H)},\qquad
+ L'_i=\sigma\!\left(\frac{\ell_{k_i}(V_i)}{\ell_{52}(V_0)}\right).
+\]
+The sixteen field tests $D_j$, with their orders $m_j$, are exactly
+\begin{equation}\label{eq:v5-test-list}
+\begin{array}{c|c}
+ f(U_0),\ldots,f(U_4),\ \sigma f(V_0),\ldots,\sigma f(V_4)&1\quad(10)\\
+ L_i-L'_i\ (1\le i\le4)&16,52,52,52\\
+ L_1-\beta&16\\
+ F(L_2,L_3,L_4)&52,
+\end{array}
+\end{equation}
+where
+\begin{equation}\label{eq:v5-lucas-polynomial}
+ F(U,V,W)=V^2-U(U-2)VW+(U-2)^2W^2-1.
+\end{equation}
+There is no rational proxy for an integer point label.
+
+For $j=1,\ldots,4$ write $x(Q_j)=x_{j,0}+x_{j,1}\sqrt2$ and set
+\[
+ \mathcal A_0=1,\quad
+ \mathcal A_{2j-1}=x_{j,0}^2,\quad
+ \mathcal A_{2j}=(1+x_{j,1}^2)^2.
+\]
+These are positive nonzero rational squares. In fact $x(Q_j)$ is
+positive at both real embeddings by Lemma~\ref{lem:v5-point-domains},
+so $x_{j,0}>0$. Retain one rational coordinate $\lambda$ and put
+\[
+ \Theta=\{0,-1/2,-1,1/2399,-32/407\},\qquad
+ F_5(T)=\prod_{\theta\in\Theta}(T-\theta),\qquad
+ t_r=\mathcal A_r\lambda,\quad\delta_r=t_r-1.
+\]
+For every $0\le r\le8$, require $t_r\notin\Theta\cup\{1\}$ and define
+\begin{align}
+ R_r&=\mathcal A_r^{-5}F_5(t_r)/\delta_r^6,
+ &\widetilde D_{r,j}&=D_j/\delta_r^{m_j+1},\label{eq:v5-detector-data}\\
+ W_r&=\prod_{j=1}^{16}
+ \left(1+R_r(\widetilde D_{r,j}/R_r^{m_j})^2\right),
+ &T_r&=\Tr_{K/\Q}(W_r^{-1}),\qquad B_r=R_r/T_r^2.
+ \label{eq:v5-detector-product}
+\end{align}
+Require $W_r,T_r\ne0$. For $B=B_r$ retain four rational witnesses
+$e_r,s_r,p_r,q_r$ and impose
+\begin{equation}\label{eq:v5-zero-pole}
+ \begin{aligned}
+ C_r&=17B_r,\qquad h_r=e_r(C_r-B_r^2),\\
+ p_r^2&=C_r(1-e_r)(1+3e_r),\\
+ C_rq_r^2&=(s_r^2-C_rh_r)(s_r^2+3C_rh_r).
+ \end{aligned}
+\end{equation}
+The first two expressions are arithmetic definitions. The last two
+are the preparation-zero specialization of the original pole predicate.
+There is no nonzero guard on $e_r,s_r,p_r,q_r$, or $h_r$.
+
+The scalar block shares the point $H$. Define
+\[
+ r_\beta=\beta(\beta-1)(\beta-2401)(32\beta+343)(2\beta-1).
+\]
+It is nonzero for rational $X$: the only positive possible root not
+excluded by $\beta\ge2$ would require $X^2=2399$.
+Let $Y_1,\ldots,Y_6$ be, in order, the two rational components of
+$f(H),f(S),z(S)/z(H)$, and set
+\[
+ (e_1,\ldots,e_6)=(1,1,1,1,32,32),\qquad
+ y_i=Y_i/r_\beta^{e_i},\qquad N_r(u,v)=u^2+rv^2.
+\]
+The scalar norm tree has no padding leaf. It is
+\begin{equation}\label{eq:v5-scalar-tree}
+ \begin{aligned}
+ n_0&=N_{r_\beta}(1,y_1),\quad n_1=N_{r_\beta}(y_2,y_3),\quad
+ n_3=N_{r_\beta}(y_5,y_6),\\
+ W_\beta&=N_{r_\beta}\bigl(N_{r_\beta}(n_0,n_1),
+                          N_{r_\beta}(y_4,n_3)\bigr).
+ \end{aligned}
+\end{equation}
+Use eight Boolean coordinates $\epsilon_-,\epsilon_p$, for
+$p\in\{2,3,5,7,11,13,17\}$, impose $\epsilon^2-\epsilon=0$, and set
+\[
+ c=(1-2\epsilon_-)\prod_p(1+(p-1)\epsilon_p),\qquad
+ b_\beta=c r_\beta W_\beta^2,\qquad C_\beta=17b_\beta.
+\]
+Require $b_\beta\ne0$. Retain five rational witnesses
+$t_\beta,e_\beta,s_\beta,p_\beta,q_\beta$ and impose
+\begin{align}
+ (1+b_\beta t_\beta^2)U_\beta
+    &=b_\beta(1-b_\beta t_\beta^2),
+ &h_\beta&=e_\beta(C_\beta-U_\beta^2),\label{eq:v5-scalar-preparation}\\
+ p_\beta^2&=C_\beta(1-e_\beta)(1+3e_\beta),
+ &C_\beta q_\beta^2&=(s_\beta^2-C_\beta h_\beta)
+                     (s_\beta^2+3C_\beta h_\beta).
+ \label{eq:v5-scalar-pole}
+\end{align}
+Here $U_\beta,h_\beta$ are arithmetic values. The preparation equation
+forces $1+b_\beta t_\beta^2\ne0$: otherwise $b_\beta t_\beta^2=-1$
+but its right side is $2b_\beta\ne0$.
+
+Finally fix the integers
+\begin{equation}\label{eq:v5-fixed-constant}
+ C=3^{2^{26}},\qquad \mathsf S=C^2=3^{2^{27}},\qquad
+ \kappa=\mathsf S^2=3^{2^{28}}.
+\end{equation}
+The symbol \texttt{S} in the coefficient files means $\mathsf S$;
+it is not the point $S$ and is not a quantified coordinate.
+Write $f(S)=f_0+f_1\sqrt2$, retain three private rational witnesses
+$u,v,w$, and impose
+\begin{equation}\label{eq:v5-physical-anchor}
+ u^2+6v^2-2w^2-3(f_0^2+f_0f_1-f_1^2)^2+2\mathsf S^2=0.
+\end{equation}
+This completes the rational source. Every rational expression has the
+displayed guard or a domain implication already proved. Equations
+\eqref{eq:v5-zero-pole} and \eqref{eq:v5-scalar-pole} retain their
+degenerate witness values.
+
+\begin{lemma}[The three-witness anchor]\label{lem:v5-three-witness-anchor}
+Equation~\eqref{eq:v5-physical-anchor} is equivalent to
+$f_0/C,f_1/C\in\Z_{(2)}\cap\Z_{(3)}$. For the nonzero integer label
+$a$ of $S=[a]P_*$ it implies
+\[
+ 0\ne a\in2\,3^{2^{25}-1}\Z,\qquad
+ |a|>(21H_*)^{13/2}>(20H_*)^4.
+\]
+Its permitted labels contain arbitrarily divisible positive integers.
+\end{lemma}
+\begin{proof}
+Put $R=\Z_{(2)}\cap\Z_{(3)}$. The quaternion algebra $(2,3)_\Q$
+ramifies exactly at 2 and 3. The quadratic embedding criterion
+\cite[Proposition 14.6.7]{voight2021} shows, for rational $t\ne0$,
+that $1-2/(3t^2)$ is represented by $2x^2+3y^2-6z^2$ precisely
+when it is nonsquare in both $\Q_2$ and $\Q_3$. This last condition
+is exactly $t\in R$. Indeed at 2 a positive valuation of $t$ gives
+odd valuation of the expression, valuation zero gives residue 3
+modulo 8, and negative valuation gives a square in $1+8\Z_2$.
+At 3, nonnegative valuation of $t$ gives odd negative valuation,
+while negative valuation gives a square in $1+3\Z_3$.
+The expression is nonzero because $t^2=2/3$ has no rational solution.
+Multiplying by $3t^2$ gives
+\[
+ t\in R\quad\Longleftrightarrow\quad
+ \exists u,v,w\in\Q:\ u^2+6v^2-2w^2-3t^2+2=0.
+\]
+The case $t=0$ has witnesses $(0,0,1)$. A rational-square value of
+$1-2/(3t^2)$ is excluded by the division-algebra criterion as well:
+a nonzero trace-zero quaternion cannot square to a nonzero rational
+square in a division algebra.
+
+The form $A^2+AB-B^2$ has no nontrivial zero over $\F_2$ or $\F_3$.
+Scaling a pair therefore proves
+$v_p(a^2+ab-b^2)=2\min(v_p(a),v_p(b))$ for $p=2,3$.
+Apply the preceding three-witness formula to
+$(f_0^2+f_0f_1-f_1^2)/C^2$ and multiply its witnesses by $C^2$.
+This gives exactly \eqref{eq:v5-physical-anchor}.
+
+The local calculation in Section~\ref{subsec:o8-anchor-subgroup}
+applies with exponent $2^{26}$: the reduction of $P_*$ at 3 has
+order two and $v_3(z(2P_*))=1$. For even nonzero $a$ it gives
+$v_3(f([a]P_*))=2+2v_3(a)$. At 2 the rational components of
+$f([a]P_*)$ are integral. The anchor is consequently equivalent to
+$0\ne a\in2\,3^{2^{25}-1}\Z$. Its minimum possible absolute value
+has binary logarithm greater than
+\[
+ 1+\tfrac32(2^{25}-1)=50331647.5,
+\]
+whereas
+$\log_2((21H_*)^{13/2})<\tfrac{13}{2}(5+4783227)=31091008$.
+The last comparison with $(20H_*)^4$ follows from
+$21^{13}>20^8$ and $H_*\ge1$. The subgroup description proves the
+last assertion.
+\end{proof}
+
+\subsection{Local tests and the height implication}
+\label{subsec:v5-soundness}
+
+\begin{lemma}[One place for every test]\label{lem:v5-one-place}
+Let $R\in\Q^*$, $D_j\in K$, and positive integers $m_j$ define
+\[
+ W=\prod_j(1+R(D_j/R^{m_j})^2),\quad
+ T=\Tr(W^{-1}),\quad B=R/T^2,
+\]
+with $W,T\ne0$ and a preparation-zero pole certificate for $B$.
+If $p>76176$ and $v_p(R)$ is odd, then $v_p(R)>0$ and some
+$\mathfrak p\mid p$ has $v_{\mathfrak p}(D_j)\ge m_j$ for every $j$.
+\end{lemma}
+\begin{proof}
+Set $\alpha=v_p(R)$. The nonconstant term in each nontrivial factor
+has odd valuation $\alpha+2(v(D_j)-m_j\alpha)$; unramifiedness
+makes these valuations integral. The factor valuation is its minimum
+with zero. Thus $\lambda_{\mathfrak p}=v_{\mathfrak p}(W)\le0$.
+Put $\lambda=\max_{\mathfrak p\mid p}\lambda_{\mathfrak p}$.
+Integrality of trace gives $v_p(T)\ge-\lambda$. Hence
+\[
+ v_p(B)\le\alpha+2\lambda.
+\]
+The left side is odd and, by Lemma~\ref{hyp:o8-pole}, not negative.
+It is positive, so $\alpha>0$ and $\lambda>-\alpha/2$.
+At a place attaining $\lambda$, each factor has valuation at least
+$\lambda$, because all factor valuations are nonpositive. For
+nonzero $D_j$ this implies
+\[
+ v(D_j)>(m_j-3/4)\alpha\ge m_j-3/4.
+\]
+Integrality gives $v(D_j)\ge m_j$; a zero $D_j$ satisfies it as well.
+\end{proof}
+
+\begin{lemma}[The two-anchor comparison]\label{lem:v5-two-anchors}
+Write the integer labels of $(A,S,T,Z)$ as $(n,a,t,b)$.
+If the first fourteen tests in \eqref{eq:v5-test-list} have their
+specified orders at a place $\mathfrak p\mid p$, $p>76176$, then
+\[
+ L_i\in\mathcal O_{K_{\mathfrak p}},\qquad
+ L_i\equiv n_i\pmod{p^{k_i}},\qquad
+ (n_1,n_2,n_3,n_4)=(n,a,t,b).
+\]
+This holds at split and inert primes.
+\end{lemma}
+\begin{proof}
+Write $H=[h]P_*$ and $U_i=[u_i]P_*$. The order-one tests put
+$H,U_i$ in the formal group at $\mathfrak p$ and $V_0,V_i$ in the
+formal group at the conjugate place. Positive valuation of $f=1/x$
+gives formal membership on this good model. The guarded points give
+$h\ne0,4$. Their full logarithm ratios, after conjugating the second,
+are
+\[
+ r_i=u_i/h,\qquad r'_i=(u_i-4n_i)/(h-4).
+\]
+These identities follow from the homomorphism property on equal
+formal multiples, and do not require $P_*$ itself to be formal.
+At least one of $h,h-4$ is a $p$-unit. Its ratio is integral, and
+Lemma~\ref{lem:v5-unramified-log} gives the same valuation to its
+truncated ratio. The cross test makes the other truncated ratio
+integral too. Both relative errors are therefore absolute errors,
+and $L_i\equiv r_i\equiv r'_i$ modulo $p^{k_i}$. Multiplication
+by $h,h-4$ and subtraction give $4L_i\equiv4n_i$. Divide by four.
+At an inert prime conjugation preserves the single local valuation,
+so the same argument applies.
+\end{proof}
+
+\begin{lemma}[Height transfer]\label{lem:v5-height-transfer}
+Let $M_r$ be the odd-contact radical of $t_r$ for the five contacts
+$\Theta$, omitting primes at most 76176. If $M_r^k$ divides a
+nonzero integer $N$ for every $r$, then
+\[
+ h(x(Q_i))<7H_*|N|^{24/k}\qquad(1\le i\le4).
+\]
+At every prime counted in $M_r$, the source imposes all sixteen
+field tests with their specified orders at one place above that prime.
+\end{lemma}
+\begin{proof}
+The fractional linear map $\phi(t)=2+1/t$ carries $\Theta$ to
+$\infty,0,1,2401,-343/32$. Its integral matrix has determinant $-1$.
+All primes dividing the relevant fixed coefficients and contact
+differences, including differences from 1, lie in
+$\{2,3,5,7,11,37,109,439,2399\}$. Thus outside the cutoff
+$M_r=M_5(\phi(t_r))$, and
+\[
+ h(t_r)\le h(\phi(t_r))+\log3
+       \le(H_*+\log3)M_r^{24}.
+\]
+At a prime of $M_r$, $\delta_r$ is a unit. Exactly one contact
+factor has odd positive valuation, while $\mathcal A_r^{-5}$ is
+a rational square. Therefore $v_p(R_r)$ is odd.
+Lemma~\ref{lem:v5-one-place} applied to $\widetilde D_{r,j}$ gives
+the asserted orders for $D_j$.
+
+Set $T_0=(H_*+\log3)|N|^{24/k}$. The case $r=0$ gives
+$h(\lambda)\le T_0$, and the other cases give
+$h(\mathcal A_r\lambda)\le T_0$. Hence
+$h(\mathcal A_r)\le2T_0$. For the first component,
+$h(x_{i,0})\le T_0$. For $x_{i,1}=a/b$ in lowest terms,
+\[
+ h(1+x_{i,1}^2)=\log(a^2+b^2)\ge2h(x_{i,1}),
+\]
+so $h(x_{i,1})\le T_0/2$. Finally
+\[
+ h(x(Q_i))\le h(x_{i,0})+h(x_{i,1})+\tfrac32\log2
+ <7H_*|N|^{24/k}.
+\]
+\end{proof}
+
+\begin{lemma}[The two reduced group cardinalities]
+\label{lem:v5-two-reductions}
+Let $p>76176$ be prime and let $\pi\in\Z[i]$ have norm $p$, with
+$\pi\equiv9\pmod{16}$ and $\pi\equiv1+3i\pmod7$.
+The two reductions of $E/K$ at the places above $p$ have group
+cardinalities $N(\pi-1)$ and $N(\pi+1)$, in some order.
+\end{lemma}
+\begin{proof}
+The congruences give $p\equiv1\pmod8$ and $p\equiv3\pmod7$.
+Thus $p$ splits in $K$ and $(7/p)=-1$. The reductions of
+$d=3-\sqrt2$ have product 7 and opposite square classes. The two
+curves $y^2=x^3-d^2x$ are consequently opposite quadratic twists
+of $y^2=x^3-x$ and have opposite traces.
+
+The Frobenius calculation already given in
+Section~\ref{subsec:o8-pattern-proof} applies: the order-four
+automorphism is defined over $\F_p$, its rational centralizer is
+$\Q(i)$, and integrality puts Frobenius in $\Z[i]$.
+Write it as $a+bi$, so $a^2+b^2=p$ and the two cardinalities are
+$p+1-2a$ and $p+1+2a$. Full rational two-torsion makes both
+cardinalities divisible by four. Since $p\equiv1\pmod4$, this
+forces $a$ odd and $b$ even. The real part of $\pi$ is odd and its
+imaginary part is even. Unique factorization in $\Z[i]$ therefore
+makes $a+bi$ one of $\pm\pi,\pm\overline\pi$; the associates
+with factor $i$ have the wrong parity. Hence the unordered
+cardinalities are exactly $N(\pi-1),N(\pi+1)$.
+\end{proof}
+
+\begin{theorem}[Arithmetic interpretation of the source]
+\label{thm:v5-source-projection}
+With the inherited arithmetic results and
+Theorem~\ref{thm:v5-simultaneous-primes}, the rational source of
+Section~\ref{subsec:v5-complete-source} has input projection exactly $\Z$.
+\end{theorem}
+\begin{proof}[Soundness]
+Let $\mathcal B=\max(|n|,|a|,|t|,|b|)$ and
+$\Delta=F(a,t,b)\in\Z$. Polynomial substitution preserves
+congruences between integral local elements. Lemmas
+\ref{lem:v5-two-anchors} and \ref{lem:v5-height-transfer} therefore
+give $M_r^{52}\mid\Delta$ whenever $\Delta\ne0$.
+The index-height estimate \eqref{eq:o8-indexheight} yields
+\[
+ \mathcal B^2-6<7H_*|\Delta|^{24/52},\qquad
+ |\Delta|<5\mathcal B^4,
+\]
+the latter because $\mathcal B\ge|a|>7$. Consequently
+\[
+ \mathcal B^{2/13}<(7\cdot5^{6/13}+6)H_*<21H_*.
+\]
+For the last strict inequality, $5^6 7^{13}<15^{13}$.
+This contradicts Lemma~\ref{lem:v5-three-witness-anchor}. Thus
+$\Delta=0$, and Lemma~\ref{lem:o8-lucas}, with $b\ne0$, gives
+$\log\mathcal B>|a|-3$.
+
+Lemma~\ref{v5:scalar32-bridge} applies to the exact tree
+\eqref{eq:v5-scalar-tree} and gives
+\[
+ h(\beta)\le H_*|a|^{3/4}<|a|/20.
+\]
+If $\beta\ne n$, put $N=|\operatorname{num}(\beta-n)|$ in lowest
+terms. The order-16 test gives $M_r^{16}\mid N$. Therefore
+\[
+ \mathcal B^2<7H_*N^{3/2}+6,\qquad
+ N\le2e^{h(\beta)}\mathcal B,
+\]
+and $\log\mathcal B<2\log(32H_*)+3h(\beta)$.
+The anchor also gives $\log(32H_*)<|a|/20$, so the right side
+is less than $|a|/4<|a|-3$, a contradiction. Hence
+$\beta=n\in\Z$. Since $X\in\Q$ and $X^2=n-2\in\Z$,
+the reduced denominator of $X$ is one.
+\end{proof}
+
+\begin{proof}[Completeness]
+Fix $X\in\Z$, set $n=X^2+2$, and choose the Boolean correction
+$c$ so that $cr_\beta>0$ is square in $\Q_2,\Q_3,\Q_{17}$,
+as in the finite squareclass computation accompanying
+Lemma~\ref{hyp:o8-pole}. Let $\mathcal S$ be the prime support of
+$cr_\beta$. The scalar completeness construction in
+Lemma~\ref{v5:scalar32-bridge} first chooses $h_0>0$ divisible by
+64 with $[h_0]P_*$ sufficiently deep at these primes. It then
+chooses a positive label $a$ sufficiently divisible relative to
+$h_0$ and satisfying the anchor. The normalized scalar leaves are
+integral at primes dividing $r_\beta$ and divisible at primes
+dividing $c$ but not $r_\beta$. Choose positive $t,b$ with
+$F(a,t,b)=0$ by Lemma~\ref{lem:o8-lucas}.
+This fixes the four root points and all scales $\mathcal A_r$.
+
+Temporarily put $H=[h]P_*$ and $U_i=[hn_i]P_*$.
+All comparison tests are rational functions of $[h]P_*$ with
+nonzero denominators at $h=h_0$. Their poles lie above finite
+sets under fixed nonzero multiplication and translation maps
+on the two real factors, as required by the real progression lemma.
+Continuity preserves the scalar
+conditions at every place over $\mathcal S$ and bounds below the
+valuations of all sixteen comparison tests at the places over
+$2,3,17$, throughout a progression
+\[
+ h\equiv h_0\pmod L,\qquad64\mid L.
+\]
+One obtains $L$ by putting sufficiently small open formal subgroups
+inside the finitely many translated neighborhoods and taking a
+common multiple of their indices. Lemma~\ref{v5:real-progression-bridge}
+gives, independently of future progression moduli, real bounds for
+the tests attained by arbitrarily large positive $h$ in each
+nonconstant progression. The direct polynomial $F$ introduces
+no denominator and has the same boundedness property.
+
+Choose a positive integer $D_0$ such that every
+$D_0^2\theta/\mathcal A_r$ is integral, and put
+\[
+ v=D_0^2w^2,\qquad\lambda=u/v.
+\]
+The contact positions are the integer forms
+$u-(D_0^2\theta/\mathcal A_r)w^2$. Delete repeated forms, but retain
+their incidences in the nine detectors. The five forms within one
+detector are distinct, and the zero contact is the common form $u$.
+Apply Theorem~\ref{thm:v5-simultaneous-primes} to these forms.
+Prescribe arbitrarily high divisibility of $w$, a sufficiently
+large lower bound for $u/w^2$, and primes larger than 76176 and
+all prime factors of the fixed scales and contact differences.
+In its odd squarefree avoidance modulus include every odd prime
+factor of $3\cdot17L$ except 7.
+Writing this modulus as $M$, the prescribed Gaussian classes are
+\[
+ \pi_p\equiv9\pmod{16},\qquad
+ \pi_p\equiv1+3i\pmod7,\qquad
+ \pi_p\equiv i\pmod M.
+\]
+
+Let the resulting Gaussian generators be $\pi_p$, and write
+$d_-(p)=N(\pi_p-1)$ and $d_+(p)=N(\pi_p+1)$ for the cardinalities
+of the two reduced elliptic groups, orienting the places by
+Lemma~\ref{lem:v5-two-reductions}. These cardinalities annihilate
+the reductions of $P_*$; their exact point orders are not needed.
+They satisfy
+\[
+ v_2(d_-)=6,\quad v_2(d_+)=2,\quad
+ \gcd(d_-(p),d_+(q))=4
+\]
+for every pair of selected primes. No odd prime factor of $L$
+divides either order. For 7 this follows separately from
+$d_+\equiv6$ and $d_-\equiv2\pmod7$.
+Set $M_-=\operatorname{lcm}_p d_-(p)$ and
+$M_+=\operatorname{lcm}_p d_+(p)$. The congruences
+\[
+ h\equiv0\pmod{M_-},\quad h\equiv4\pmod{M_+},\quad
+ h\equiv h_0\pmod L
+\]
+are compatible: their pairwise gcds are $4,64,4$, respectively.
+Choose a sufficiently large positive $h$ in this progression
+attaining the real bounds. It avoids $0,4,-4$, so all point and
+subtraction guards hold. At a selected prime, $H,U_i$ are formal
+at the place of order $d_-$, while $V_0,V_i$ are formal at its
+conjugate place. Their exact ratios are $n_i$. Lemma
+\ref{lem:v5-unramified-log} gives all sixteen required orders,
+including the order-52 polynomial test because $F(a,t,b)=0$.
+
+We check that the nine preparation-zero poles can be filled.
+For each detector,
+\[
+ R_r=\frac{\prod_{\theta\in\Theta}
+                   (u-(\theta/\mathcal A_r)v)}
+                 {v^5\delta_r^6}.
+\]
+The denominator is a rational square. At the five distinct contact
+primes of this detector $R_r$ has valuation one, and elsewhere
+its valuation is even. The primes do not divide $v$: otherwise
+two distinct forms in the same detector would give the same
+prime value, impossible since $w>0$ and their coefficients are
+distinct. The lower bound for the primes excludes the fixed scale
+and difference denominators. At either place over a
+contact prime a factor of $W_r$ has valuation zero or negative,
+and its inverse has residue one or zero, respectively. At the
+successful place every inverse factor has residue one.
+Consequently $T_r$ has residue one or two and is a unit.
+It follows that $B_r$ has positive odd valuation at its contact
+primes and even valuation elsewhere. Its reduced denominator is
+a square.
+
+The prescribed Gaussian classes make every contact prime square
+in $\Q_2,\Q_3,\Q_{17}$. The last product formula therefore makes
+$B_r$ square in each of those fields. The uniform real bounds
+and $\lambda\longrightarrow+\infty$ give
+\[
+ R_r\sim\mathcal A_r^{-6}\lambda^{-1},\quad
+ W_r=1+O(\lambda^{-3}),\quad T_r=2+O(\lambda^{-3}),\quad
+ B_r\sim(4\mathcal A_r^6\lambda)^{-1}.
+\]
+In particular $0<B_r<17$. At a small prime $p=2,3,17$, put
+$\nu_p=v_p(v)$ and $\eta_{p,r}=v_p(\mathcal A_r)$.
+The common form $u$ is a selected prime greater than these small
+primes, so $v_p(u)=0$ and $v_p(\lambda)=-\nu_p$.
+The fixed neighborhoods give $v(D_j)\ge-c_p$. For sufficiently
+large prescribed $\nu_p$ one has
+\[
+ v_p(R_r)=\nu_p-6\eta_{p,r},\qquad
+ v(\widetilde D_{r,j})\ge-c_p+(m_j+1)(\nu_p-\eta_{p,r}).
+\]
+The nonconstant factor term has valuation at least
+$3\nu_p+(10m_j-8)\eta_{p,r}-2c_p$, tending to infinity.
+Thus $T_r$ is as close to 2 as needed, including at the ramified
+prime 2, and
+\[
+ v_p(B_r)=\nu_p-6\eta_{p,r}-2v_p(2).
+\]
+Prescribing the divisibility of $w$ before applying the prime theorem
+therefore ensures $v_2(B_r)\ge3$, $v_3(B_r)\ge1$,
+$v_{17}(B_r)\ge2$. Lemma~\ref{v5:preparation-zero-bridge} supplies
+the four witnesses in every coordinate pole.
+
+Finally the progression preserved all scalar leaf conditions.
+The constant leaf on the all-left path makes $W_\beta$ a unit at
+every prime dividing $r_\beta$; the divisibility of the other
+leaves makes it a unit at primes dividing $c$ but not $r_\beta$.
+Since $|r_\beta|>1$, it is nonzero. Therefore
+$b_\beta=cr_\beta W_\beta^2$ is positive, has square reduced
+denominator, and is locally square at $2,3,17$.
+Lemma~\ref{hyp:o8-pole} supplies the scalar preparation and pole
+witnesses for this final $H$. The anchor already holds for $S$.
+All witnesses have now been supplied without changing the root points.
+\end{proof}
+
+\subsection{Exact quadratic compilation and the complete table}
+\label{subsec:v5-compilation}
+
+The implementation retains an affine rational expression whenever
+possible. For a quadratic expression it writes
+\[
+ q=cq_2+q_1,
+\]
+where $q_1$ is affine and $q_2$ is the homogeneous quadratic part
+normalized by its first nonzero coefficient. A coordinate $v$
+with equation $v-q_2=0$ is introduced once for each distinct
+normalized $q_2$, and the value $cv+q_1$ is reused. This exact
+sharing rule includes additions and fixed rational scalings without
+new coordinates. A field product is assigned through
+\[
+ v_0=a_0b_0+2a_1b_1,\qquad v_1=a_0b_1+a_1b_0.
+\]
+A field quotient uses the two equations
+$b_0z_0+2b_1z_1=a_0$, $b_0z_1+b_1z_0=a_1$.
+Inverses enforce their own domains. The other quotient domains
+were proved above; the subtraction inverse and scalar $b_\beta$
+inverse are retained explicitly.
+
+For the logarithms, the program evaluates $G_{12}$ in blocks of
+three powers and $G_3$ from its first four powers. It shares the
+coefficients of
+\[
+ E_m(T)=\prod_{j:m_j=m}(1+TD_j^2),\qquad m=1,16,52,
+\]
+whose degrees are 10, 2, and 4. For a detector put
+$e_r=(\mathcal A_r\delta_r)^5/F_5(t_r)$. Then
+\[
+ R_r=(e_r\delta_r)^{-1},\qquad
+ q_1=e_r/\delta_r^3,\quad q_{16}=q_1e_r^{30},\quad
+ q_{52}=q_1e_r^{102},\qquad
+ W_r=E_1(q_1)E_{16}(q_{16})E_{52}(q_{52}).
+\]
+These identities are precisely the weights
+$\mathcal A_r^{10m-5}\delta_r^{10m-8}/F_5(t_r)^{2m-1}$.
+The power chain uses exponents $2,3,6,12,24,48,96$ before the
+last products. The inverse of $e_r$ adds no restriction because
+$\mathcal A_r,\delta_r,F_5(t_r)$ are already nonzero.
+Writing $W_r=w_0+w_1\sqrt2$, the trace step is
+\[
+ B_r=R_r\left(\frac{w_0^2-2w_1^2}{2w_0}\right)^2.
+\]
+It needs only the inverse of $w_0$; over this quadratic field
+$w_0\ne0$ implies $W_r\ne0$ and nonzero norm.
+
+There are 90 initial rational coordinates and 47 structural residuals:
+\[
+\begin{array}{l|r|r}
+ &\text{coordinates}&\text{structural residuals}\\\hline
+ \text{input}&1&0\\
+ \text{nine halfpoints}&36&18\\
+ \text{common slope}&1&0\\
+ \text{nine coordinate poles}&36&18\\
+ \text{scalar pole with preparation}&5&2\\
+ \text{private anchor}&3&1\\
+ \text{Boolean correction}&8&8\\\hline
+ \text{total}&90&47
+\end{array}
+\]
+The complete gate list has 1214 additional coordinates and 1214
+defining equations. Thus the raw system has 1304 coordinates and
+1261 residuals. These are finite program counts, checked from the
+full saved list, rather than estimates for an unspecified circuit.
+
+Before elimination, apply the private affine change
+\begin{equation}\label{eq:v5-anchor-translation}
+ u=\mathsf S+\frac{U-3V+3W}{4},\qquad
+ v=\frac{\mathsf S}{2}+\frac V4,\qquad
+ w=\frac{3\mathsf S}{2}+\frac W4.
+\end{equation}
+Its determinant is $1/64$, with inverse
+\[
+ U=4u+12v-12w+8\mathsf S,\quad V=4v-2\mathsf S,\quad
+ W=4w-6\mathsf S.
+\]
+If $T=f_0^2+f_0f_1-f_1^2$, sixteen times the old anchor after this
+substitution is
+\begin{equation}\label{eq:v5-translated-anchor}
+ -48T^2+U^2-6UV+6UW+15V^2-18VW+7W^2+8\mathsf S U.
+\end{equation}
+This is the normalization used here. The three changed coordinates
+occur nowhere else. Multiplying this one residual by sixteen
+preserves its zero set; no identity of differently normalized raw
+sums of squares is asserted.
+
+\begin{proposition}[Projection-preserving compiler]
+\label{prop:v5-compiler-projection}
+The gate program, the private anchor transformation, and the
+certified 32 eliminations preserve the rational input projection.
+The resulting system has exactly 1272 active coordinates and
+1229 quadratic residuals.
+\end{proposition}
+\begin{proof}
+An assignment gate has a unique value once its earlier inputs are
+given. Normalizing and reusing the homogeneous quadratic part
+therefore changes no rational solution. The determinant of a
+field quotient is $b_0^2-2b_1^2$, and its nonzero domain was
+proved or explicitly imposed. Thus all gate values are the
+specified arithmetic values.
+
+Each elimination in the certificate chooses a row $aY+q=0$,
+where $a\in\Q^*$ and $q$ is independent of $Y$, substitutes
+$Y=-q/a$ into every other row, and removes the defining row.
+It is accepted only after checking that every resulting row has
+coordinate degree at most two. Insertion of $Y=-q/a$ and deletion
+are inverse maps on common zero sets. The certificate performs
+32 such operations, no row additions, and no omission of a free
+coordinate. It retains the input and all three private anchor
+coordinates. Clearing each row's rational coefficient denominators
+and dividing by its integer content also preserves its zero set.
+The full incidence check gives
+\[
+ 90+1214-32=1272,\qquad47+1214-32=1229,
+\]
+and verifies that each retained coordinate occurs. The affine
+anchor map is invertible, so it has the same projection property.
+\end{proof}
+
+Let $q_1,\ldots,q_{1229}$ be the resulting primitive integer
+residuals, with the specified integer $\mathsf S$ in their
+coefficients, and define
+\begin{equation}\label{eq:v5-final-polynomial}
+ P_{1272}(X_0,\ldots,X_{1271})=\sum_{\nu=1}^{1229}q_\nu^2.
+\end{equation}
+The full table is \nolinkurl{quartics/quartic-1272/polynomial.json}.
+An entry with coordinate list $[i_1,\ldots,i_d]$, integer
+\texttt{coefficient} $c$, and \texttt{sPower} $k$ means
+\[
+ c\mathsf S^kX_{i_1}\cdots X_{i_d}.
+\]
+Repeated indices record powers. Sum every entry; there are no
+unlisted gate values in this definition. The table has SHA-256
+\begin{center}\small
+\nolinkurl{02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586}.
+\end{center}
+This is a finite specification of an ordinary integer polynomial.
+The power notation in \eqref{eq:v5-fixed-constant} specifies fixed
+integers exactly and adds neither variables nor polynomial degree.
+
+\begin{proposition}[Exact table statistics]\label{prop:v5-table-statistics}
+The table in \eqref{eq:v5-final-polynomial} has the degree, support,
+content, and height asserted in Theorem~\ref{thm:v5-1272-polynomial}.
+\end{proposition}
+\begin{proof}
+Independent exact convolution of all 1229 residual squares gives
+48001 table entries on 48001 different coordinate monomials.
+Of these, 47993 have $\mathsf S$-independent integer coefficients,
+seven have coefficients $c\mathsf S$ with $0<|c|\le768$, and one
+has coefficient $64\mathsf S^2$. No monomial receives different
+powers of $\mathsf S$, so none disappears on specialization.
+The largest absolute $\mathsf S$-independent coefficient has bit
+length 5339, and is therefore less than $2^{5339}$.
+
+The three private anchor coordinates remain private through the
+eliminations. In the final numbering $U=X_{79}$. Squaring
+\eqref{eq:v5-translated-anchor} shows that the coefficient of
+$X_{79}^2$ is exactly $64\mathsf S^2$; it is the only coefficient
+with power two in $\mathsf S$. Since
+$\mathsf S=3^{2^{27}}>2^{2^{27}}$, this exceeds both
+$2^{5339}$ and $768\mathsf S$. Thus it is the exact height.
+The coefficient of $X_0^4$ is one, proving both degree four and
+integer coefficient content one. Finally
+\[
+ \log_2(64\mathsf S^2)<6+\tfrac85\,2^{28}<429496736,
+\]
+using $3^5<2^8$.
+\end{proof}
+
+The saved construction contains the raw source, all 1214 gate
+definitions with dependency order, the 32-step elimination
+certificate, row normalizations, the compact coordinate map,
+and the final residual and coefficient tables. The independent
+checker imports neither producer nor compiler code. It checks
+each gate identity, replays every elimination, checks every
+coefficient by a separate convolution, and verifies the fixed
+integer support and height bounds. A fresh isolated reconstruction
+reproduces the displayed table byte for byte.
+
+The source review is a separate part of the argument. It matches
+the implemented formulas and guards to the source just proved.
+Two separately written evaluators, including direct sixteen-factor
+detector products, provide additional exact finite-field and
+rational checks. Those sampled checks are not substituted for
+the domain proofs or the arithmetic theorem.
+
+\begin{proof}[Proof of Theorem~\ref{thm:v5-1272-polynomial}]
+The finite assertions follow from Propositions
+\ref{prop:v5-compiler-projection} and \ref{prop:v5-table-statistics}.
+Over $\Q$, the sum in \eqref{eq:v5-final-polynomial} is zero
+exactly when all its residuals are zero. Its rational input
+projection is therefore the one in
+Theorem~\ref{thm:v5-source-projection}, namely $\Z$.
+\end{proof}

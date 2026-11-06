@@ -6,7 +6,7 @@ Mathematical corrections, dependency checks, reproducibility reports, and improv
 
 [Open an issue](https://github.com/elliotglazer/diophantine-z-q/issues/new) with:
 
-1. The manuscript version, exact commit or file hash, and the theorem, equation, TeX label, certificate step, or archive file under discussion. Distinguish Version 2 from the October 11 manuscript and earlier November 5 revisions.
+1. The manuscript version, exact commit or file hash, and the theorem, equation, TeX label, certificate step, or archive file under discussion. Distinguish the current Version 5, its three polynomials, the October 11 manuscript and historical revisions.
 2. The exact step that needs justification or correction.
 3. The relevant hypotheses, definitions, and external theorem statements.
 4. A counterexample, calculation, proposed repair, or precise explanation of the missing implication, if available.
@@ -25,4 +25,4 @@ For a computational certificate, distinguish how the certificate was found from 
 
 Keep changes focused. Explain the problem, the resulting behavior or mathematical statement, and the checks performed. Preserve dated release artifacts; propose a new version rather than replacing a historical snapshot. Avoid including credentials or unrelated private files in logs.
 
-The repository README records Version 2's collaboration credit and distinguishes the October 11 manuscript's provenance. If AI tools contributed to a proposed proof, computation, or review, describe that contribution and the verification performed. Acceptance depends on the argument and evidence supplied.
+The repository README records the collaboration credit and distinguishes the October 11 manuscript's provenance. If AI tools contributed to a proposed proof, computation, or review, describe that contribution and the verification performed. Acceptance depends on the argument and evidence supplied.

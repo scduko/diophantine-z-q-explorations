@@ -1,0 +1,144 @@
+{
+  "schema": "original41-source-ledger/v1",
+  "date": "2026-11-05",
+  "baseline": {
+    "file": "work\\github-research-upload-20261104\\repository\\diophantine_zq.tex",
+    "sha256": "cb1148cd6c7769d2af3f1636b60ff0ada4b40431978d1e98d0c339274b3d792b"
+  },
+  "sources": [
+    {
+      "id": "GT",
+      "bibliography_key": "greentao",
+      "title": "Linear equations in primes",
+      "publication": "Annals of Mathematics 171 (2010), 1753-1850",
+      "primary_url": "https://annals.math.princeton.edu/2010/171-3/p08",
+      "local_file": "work\\private-degree8-20261105\\literature-sieve\\primary\\green-tao-linear.pdf",
+      "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+      "locations": [
+        "Definition 1.5, p.1759",
+        "Lemma 1.6, p.1761",
+        "Main Theorem, p.1763",
+        "Conjecture 1.2 and its local-factor conventions"
+      ],
+      "role": "Finite-complexity prime asymptotic; coefficients and modulus fixed before X tends to infinity",
+      "doi": "10.4007/annals.2010.171.1753",
+      "published": true
+    },
+    {
+      "id": "MN",
+      "bibliography_key": "moebius",
+      "title": "The Mobius function is strongly orthogonal to nilsequences",
+      "publication": "Annals of Mathematics 175 (2012), 541-566",
+      "primary_url": "https://annals.math.princeton.edu/2012/175-2/p03",
+      "local_file": "work\\private-degree8-20261105\\literature-sieve\\primary\\green-tao-mobius.pdf",
+      "sha256": "5259dbc9ee73df46edd765ca27c8b3c0ec466f6b78abafa5f54237b11d44a314",
+      "locations": [
+        "Theorem 1.1, pp.542-543",
+        "Remark following Theorem 1.1, p.543"
+      ],
+      "role": "Supplies MN(39) by specialization to linear nilsequences; ineffectivity is allowed",
+      "doi": "10.4007/annals.2012.175.2.3",
+      "published": true
+    },
+    {
+      "id": "GI-published",
+      "bibliography_key": "gtz",
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "publication": "Annals of Mathematics 176 (2012), 1231-1372",
+      "primary_url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v176-n2-p11-p.pdf",
+      "local_file": "work\\private-degree8-20261105\\literature-sieve\\primary\\gtz-published-2012.pdf",
+      "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "locations": [
+        "Conjecture 1.2, p.1233",
+        "Theorem 1.3, p.1235"
+      ],
+      "role": "Published all-complexity theorem, used at s=39",
+      "doi": "10.4007/annals.2012.176.2.11",
+      "published": true
+    },
+    {
+      "id": "GI-v5",
+      "bibliography_key": "gtz",
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm, corrected author version",
+      "publication": "arXiv:1009.3998v5, 23 April 2026",
+      "primary_url": "https://arxiv.org/pdf/1009.3998v5",
+      "local_file": "work\\private-degree8-20261105\\literature-sieve\\primary\\gtz-inverse-v5.pdf",
+      "sha256": "24b5b74b1c4f31986bfc75955f8528e81753efc0c45bd99bc23fee58171a4711",
+      "locations": [
+        "Theorem 1.3, p.4"
+      ],
+      "role": "Inherited baseline proof-version convention; not a new theorem assumption",
+      "published": false,
+      "inherited_from_baseline": true
+    },
+    {
+      "id": "GI-erratum",
+      "bibliography_key": "gtz",
+      "title": "Erratum for An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "publication": "Author erratum; separate journal publication not asserted",
+      "primary_url": "https://people.maths.ox.ac.uk/greenbj/papers/GI(s)-erratum.pdf",
+      "local_file": "work\\private-degree8-20261105\\literature-sieve\\primary\\gtz-erratum.pdf",
+      "sha256": "9d66017c15fc99bbae83726ef27bcc16d73128c13166916f00714c84c8523383",
+      "locations": [
+        "Section 2, filtration corrections",
+        "Proposition 3.1 and revised deduction of original Proposition 7.3",
+        "Section 4, remaining corrections"
+      ],
+      "role": "Inherited baseline correction source. Original Proposition 8.3 is not used as an uncorrected statement.",
+      "published": false,
+      "inherited_from_baseline": true
+    },
+    {
+      "id": "Mertens",
+      "bibliography_key": "williams-mertens",
+      "title": "Mertens theorem for arithmetic progressions",
+      "publication": "Journal of Number Theory 6 (1974), 353-359",
+      "primary_url": "https://people.math.carleton.ca/~williams/papers/pdf/057.pdf",
+      "local_file": "work\\private-degree8-20261105\\literature-sieve\\primary\\williams-mertens.pdf",
+      "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0",
+      "locations": [
+        "Theorem 1, p.356"
+      ],
+      "role": "Fixed moduli 2 and 4 only; finite omissions and partial summation are elementary",
+      "published": true
+    },
+    {
+      "id": "EC",
+      "bibliography_key": "silverman",
+      "title": "The Arithmetic of Elliptic Curves, second edition",
+      "publication": "Graduate Texts in Mathematics 106, Springer, 2009",
+      "primary_url": "https://doi.org/10.1007/978-0-387-09494-6",
+      "local_file": "work\\astra-final-size-independent-review-001\\silverman-2009.pdf",
+      "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+      "locations": [
+        "III.7.4, pp.89-91",
+        "III.8.6, p.99",
+        "V.1.1, p.138",
+        "V.2.3.1(b), p.142",
+        "IV.6.4, p.132",
+        "VII.2.1, pp.189-190",
+        "VII.2.2, p.191"
+      ],
+      "role": "Tate-module injection, trace/determinant, Hasse bound, integral Frobenius equation. Exactly the baseline CM applications. Formal logarithm homomorphism/isometry and reduction-kernel identification for commonJ.",
+      "published": true
+    }
+  ],
+  "new_bibliography_keys": [
+    "greentao",
+    "moebius",
+    "gtz",
+    "williams-mertens",
+    "silverman"
+  ],
+  "new_unpublished_theorem_assumptions": [],
+  "scope_exclusions": [
+    "Sun cross-prime order theorem",
+    "Frei-Tinkova/Chebotarev pattern theorem",
+    "Browning-Heath-Brown cross-order tail",
+    "all one-group/two-group allocation arguments",
+    "independent proof verification of the baseline height and pole theorems"
+  ],
+  "scope": "Published justification of original41-prime pattern, commonJ and formal comparison",
+  "source_evidence_note": "No full paper is copied into this packet. Local evidence paths and source hashes are inherited from the freshly checked published-source audit; new Silverman formal-group locators were read directly.",
+  "new_bibliography_keys_note": "These published references are new relative to the original archive bibliography, which cited only supplied manuscripts. They were already checked in the separate baseline/20371 audit."
+}

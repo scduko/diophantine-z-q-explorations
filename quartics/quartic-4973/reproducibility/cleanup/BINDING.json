@@ -1,0 +1,27 @@
+{
+  "baseline": {
+    "degree": 4,
+    "max_abs_coefficient": 685783949153203534233890,
+    "monomials": 74046,
+    "rows": 4873,
+    "variables": 5295,
+    "witnesses": 5294
+  },
+  "explicit_input_pins": {
+    "certificate": "232d536ee6e884cdc283e1ddd9528c2a7123e6c6ef1504019677b992874cf177",
+    "checker": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90",
+    "source_entry": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857"
+  },
+  "kit_manifest_sha256": "2dc466d42df919e443874c5960729730e23eb1a0bc41b547c1e7ed62f892883c",
+  "pins": {
+    "inputs/base-checker.py": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90",
+    "inputs/parent/certificate.jsonl.gz": "232d536ee6e884cdc283e1ddd9528c2a7123e6c6ef1504019677b992874cf177",
+    "inputs/parent/polynomial.expanded.txt": "058e438b3112a8d463661663a7d6581e86760f5a9bc2cf5d5d0e3e2a5bba1bad",
+    "inputs/parent/source-entry.json": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857",
+    "inputs/parent/source-residuals.jsonl.gz": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+    "tools/verify_elimination.py": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe"
+  },
+  "reviewed_core_sha256": "0c118eb0d38178f34c40096b6ff84ab7136a6fde08b3ec7a5544ab339fd37b71",
+  "scope": "Exact algebraic replay only; source arithmetic acceptance remains separate",
+  "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b"
+}

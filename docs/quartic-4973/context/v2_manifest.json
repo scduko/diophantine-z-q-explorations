@@ -1,0 +1,19 @@
+{
+  "schema": "quartic-readiness-packet-v2",
+  "scope": "Proof inventory and exact byte/metadata closure only; no publication or pending-source acceptance",
+  "files_sha256": {
+    "artifacts.json": "70dc9503105bbb56da514e5101ff30eae7668f75bcdca4f3a5068080c3bb0d71",
+    "build_note.py": "f6bc81d57cfac2249c9eb0b84cc44af3589dacf4299f65cf17a33fc581a3c262",
+    "CHECK.json": "660f442539e3be93ca0780daa850040abaa5f8db18fce47448891d4fc0f472cd",
+    "check_inventory.py": "b8e40778ed307b2d8d30abea50dc283e1cc8ef53e62ca7f70bdb1272184cf110",
+    "CURRENT_CONSUMPTION.json": "e6b8e022b779223502c7303d7693fbffb85b5aad2923216b0f137e34b6defe7c",
+    "DRAFT_LABELS.json": "cdf72a9ae497c4e094bb3c14194dbfcf26b374f6585628a5c74d88650dff7bce",
+    "freeze_pins.py": "5dc36ffc5023afe48a33f33a2775e433d44d3e0bc7369a58e34ee22106ded12b",
+    "LEMMAS.json": "07e1644b68a64e382fb56b8e64a1854e027a9ea3c91d400cf72dcd72743b317a",
+    "NEW_LEMMAS.md": "a96d15092c04e4d763efb0f721dfdcc3105812c85e4a05b68d5df704da16af41",
+    "PROOF_PINS.json": "d971fd00f0f8efe9f40d171361de4b2e5c5a681dbcf5beef9fb94d5f7bc17664",
+    "PUBLISHED_APPLICATIONS.json": "6060ed883daed4ba8c18fc39dcc94785a80ecce1e353558adbc2c90a903e1be7",
+    "READINESS.md": "2fc204bdbd032e42c657c7732860ca3bc04aed69e38e70adba452d536916b0cb",
+    "SOURCE_STATUS.json": "c6be9b785c322fc22a69ca5687b68aeff1494e45880553931e9929f0f407db9e"
+  }
+}

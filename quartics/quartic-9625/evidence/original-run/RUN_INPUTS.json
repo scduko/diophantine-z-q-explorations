@@ -1,0 +1,8 @@
+{
+  "arithmetic_acceptance": false,
+  "manifest_sha256": "eaaec2449711c625fc4afcf16dd33286c2c5d91ea568c6542317d2b1ba6623cb",
+  "mode": "exploratory",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "zlib": "1.3"
+}

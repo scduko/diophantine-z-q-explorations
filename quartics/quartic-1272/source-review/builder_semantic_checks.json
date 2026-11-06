@@ -1,0 +1,80 @@
+{
+  "source_sha256": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+  "translated_sha256": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e",
+  "sample_count": 9,
+  "samples": [
+    {
+      "prime": 1000003,
+      "seed": 1315,
+      "semantic_values_compared": 168,
+      "gate_equations_checked": 1214,
+      "structural_equations_checked": 47,
+      "translated_anchor_checked": true
+    },
+    {
+      "prime": 1000003,
+      "seed": 2718,
+      "semantic_values_compared": 168,
+      "gate_equations_checked": 1214,
+      "structural_equations_checked": 47,
+      "translated_anchor_checked": true
+    },
+    {
+      "prime": 1000003,
+      "seed": 3141,
+      "semantic_values_compared": 168,
+      "gate_equations_checked": 1214,
+      "structural_equations_checked": 47,
+      "translated_anchor_checked": true
+    },
+    {
+      "prime": 1000033,
+      "seed": 1315,
+      "semantic_values_compared": 168,
+      "gate_equations_checked": 1214,
+      "structural_equations_checked": 47,
+      "translated_anchor_checked": true
+    },
+    {
+      "prime": 1000033,
+      "seed": 2718,
+      "semantic_values_compared": 168,
+      "gate_equations_checked": 1214,
+      "structural_equations_checked": 47,
+      "translated_anchor_checked": true
+    },
+    {
+      "prime": 1000033,
+      "seed": 3141,
+      "semantic_values_compared": 168,
+      "gate_equations_checked": 1214,
+      "structural_equations_checked": 47,
+      "translated_anchor_checked": true
+    },
+    {
+      "prime": 1000037,
+      "seed": 1315,
+      "semantic_values_compared": 168,
+      "gate_equations_checked": 1214,
+      "structural_equations_checked": 47,
+      "translated_anchor_checked": true
+    },
+    {
+      "prime": 1000037,
+      "seed": 2718,
+      "semantic_values_compared": 168,
+      "gate_equations_checked": 1214,
+      "structural_equations_checked": 47,
+      "translated_anchor_checked": true
+    },
+    {
+      "prime": 1000037,
+      "seed": 3141,
+      "semantic_values_compared": 168,
+      "gate_equations_checked": 1214,
+      "structural_equations_checked": 47,
+      "translated_anchor_checked": true
+    }
+  ],
+  "scope": "Independent exact finite-field checks of formulas and all equations. This is supplementary evidence, not a proof of rational equivalence or source arithmetic."
+}

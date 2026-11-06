@@ -1,0 +1,43 @@
+{
+  "files": {
+    "BINDING_TESTS.json": {
+      "bytes": 1718,
+      "sha256": "4d8c3aa9ddc64f32af0abd91c824ab479ee563e35be1c01635fda94269ab46ab"
+    },
+    "README.md": {
+      "bytes": 5890,
+      "sha256": "e866ecdbeafe27245b9841d3f51e583385951e55030945c7e4627d1d5a6fbd18"
+    },
+    "ROOT_README.md": {
+      "bytes": 1379,
+      "sha256": "9cb4be4e78030d71b96bb1b062e124ba8d055503207950c42a5342b1edaef1ae"
+    },
+    "common.py": {
+      "bytes": 5391,
+      "sha256": "63261fbabb7a77b690f13c87552d1b7202527bd6ab84233db1f7da9544136555"
+    },
+    "freeze_runtime.py": {
+      "bytes": 1065,
+      "sha256": "7ca12ea2e769e230b91f0335777391345677d3a812dd116a571b59e031b6d59b"
+    },
+    "plan_release.py": {
+      "bytes": 8128,
+      "sha256": "ee5566d8021475a64f1becaa60f4033b0b44de045fd96be4f3b4f0b593164f43"
+    },
+    "prepare_package.py": {
+      "bytes": 2659,
+      "sha256": "2a009fdb951329418aa384b3bc54b0e06faf187b87eb3b70f647cd047750e173"
+    },
+    "run.py": {
+      "bytes": 18917,
+      "sha256": "942350a2616ae3db936f1d976837c7578d37999a3be14974efd4b9030b1b6bf9"
+    },
+    "test_binding.py": {
+      "bytes": 7316,
+      "sha256": "d3c79362bd5a943339bf3cf418a214c75bb244a49ee6dd18bf44a5b556262be6"
+    }
+  },
+  "format": "quartic-release-runtime/v1",
+  "scope": "Runtime and copy-plan tooling only; final selection and full remote reproduction remain required",
+  "source_pipeline_manifest_sha256": "7654b06f450db87a3181dd5e16fe23949cb4e57d22751aef3681fed80a1fcf26"
+}

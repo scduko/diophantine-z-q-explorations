@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-06",
+  "version": 4,
+  "change": "Historical attribution and citation to Thanases Pheidas",
+  "source_sha256": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34",
+  "pdf_sha256": "299e5f3342ddf42a30336aab73efd81a03c258b1012eb863397a101a74325fe7",
+  "previous_source_sha256": "2cb539bdd7039eef9a8fe489ee3b153bfa2d0e74c26006b8da3c617aa815c32b",
+  "previous_pdf_sha256": "d56fd71b300136e1576af8d6dfd74b82fa47e825e6f2bade978d303a9ed8a6f6",
+  "acceptance_sha256": "06dd04ceb4bdcb40875e70293bf68abba61fd17052a5e90a70ade61af649d88b",
+  "added_citation": "pheidas2000",
+  "citation_role": "historical provenance",
+  "new_mathematical_dependencies": 0,
+  "mathematical_text_changed": false,
+  "build_run": "https://github.com/elliotglazer/diophantine-z-q/actions/runs/42251774841",
+  "build_source_commit": "9d3c6901eb2a4e3ffdc48e5eed82bb95676a521a",
+  "build_artifact_id": 13521366300,
+  "build_artifact_sha256": "800fc99392bf599e127ff3de19973d0d57f701c3e3cd14a81aa358f881c8b3e2",
+  "archive_scope": "Existing release tags and research ZIPs remain immutable earlier snapshots. The updated TeX and PDF are in the repository working manuscript."
+}

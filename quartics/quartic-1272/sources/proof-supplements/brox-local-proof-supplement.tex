@@ -1,0 +1,40 @@
+% Supplement to the frozen 2026-11-06 v3 manuscript.
+% This supplies local calculations, not a replacement residual/table artifact.
+\paragraph{An explicit check of the enlarged anchor.}
+The prime $3$ is inert and unramified in $K=\mathbb Q(\sqrt2)$.
+The displayed point $P$ reduces to $(\sqrt2,0)$, a nonzero point of
+order two. Exact doubling gives
+\[
+ z(2P)=\frac{3396356159088-4135204317756\sqrt2}{3287811625151},
+ \qquad v_3(z(2P))=1.
+\]
+In the integral formal group, multiplication by a $3$-adic unit
+preserves positive integral depth, and multiplication by $3$ increases
+it by one. If $[a]P$ is formal and nonzero, then $a$ is even and
+\[
+ v_3(f([a]P))=2v_3(z([a]P))=2\bigl(1+v_3(a/2)\bigr).
+\]
+The anchor with $C=3^{2^{26}}$ forces
+$v_3(f([a]P))\ge2^{26}$. Thus
+$0\ne a\in2\,3^{2^{25}-1}\mathbb Z$.
+This proves the size estimate used in the precision-$52$ argument,
+conditional only on the stated integer-label description of the
+allowed points and the anchor's already proved semilocal equivalence.
+
+\paragraph{The support change under anchor translation.}
+Put $A=a+b-c$. The square of
+$-3A^2+16u^2+96v^2-32w^2+32s^2$ has $27$ monomials involving
+one of its three private coordinates. The square of
+\[
+ -3A^2+U^2-6UV+6UW+15V^2-18VW+7W^2+8sU
+\]
+has $64$ such monomials. Among the old monomials not involving
+private coordinates, the translation removes the constant and the
+six degree-two monomials in $a,b,c$, but leaves the degree-four
+part unchanged. The stated parent-table overlap data says that the
+constant and $a^2,b^2,c^2$ remain present in the other residual
+squares, while the three mixed degree-two monomials do not.
+The support therefore increases by $64-27-3=34$.
+Consequently the parent count $28987$, if verified from its table,
+gives $29021$ after translation. This calculation does not replace
+the verification of the parent table or its overlap data.

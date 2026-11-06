@@ -1,0 +1,131 @@
+{
+  "completed_at_utc": "2026-11-06T16:53:01.140880+00:00",
+  "status": "independent_reconstruction_implemented_reviewed_and_reproduced",
+  "result": {
+    "variables_including_input": 1272,
+    "existential_witnesses": 1271,
+    "degree": 4,
+    "nonzero_monomials": 48001,
+    "quadratic_residuals": 1229,
+    "primitive_integer_coefficients": true,
+    "exact_coefficient_height": "64*3^(2^28)",
+    "polynomial_sha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586"
+  },
+  "certificate_checks": "All 1214 gate definitions, dependency order, 32 eliminations, row normalizations, compact coordinate map, exact SOS table, fixed-S support, integrality, primitive content and height",
+  "source_checks": "Independent static source and domain review, plus two independent sampled evaluators and exact symbolic anchor checks",
+  "reproduction": "Fresh isolated build reproduced the frozen polynomial table byte-for-byte",
+  "identity_with_missing_original": false,
+  "external_arithmetic": "The named source arithmetic results and Sun theorem remain inputs; not re-proved by these computational certificates",
+  "not_claimed": [
+    "Lean/kernel verification",
+    "Recovery of the original unpublished 1315-variable coefficient table",
+    "Independent reproof of all external arithmetic theorems"
+  ],
+  "publication": "Local artifacts only; no upstream push",
+  "evidence": [
+    {
+      "path": "builder/FROZEN.json",
+      "sha256": "8234753887b6589274ae078e0a04288b5a7652ed85caca7186414fb8e103df12"
+    },
+    {
+      "path": "builder/build_source.cjs",
+      "sha256": "ecbd266ca3728a6ea298475e059ce2541ae049d1ae4e1b75a4ea7a885d3e36fd"
+    },
+    {
+      "path": "builder/raw-ir.json",
+      "sha256": "d71ded4f434476cdc4bdd1ac309a19f57cb706ed3e714439c6ed32fd1f0b1731"
+    },
+    {
+      "path": "builder/raw-translated-ir.json",
+      "sha256": "301e3d110d5618ecd172ca0eca45f71058d9177348c379256819f69bd89b3425"
+    },
+    {
+      "path": "builder/SEMANTICS.md",
+      "sha256": "7e81a46e9d9f0bcf71d4305727524a97d7f53b397995f22954742708d5f88041"
+    },
+    {
+      "path": "source-review/SOURCE_REVIEW.md",
+      "sha256": "895e7fe051afdbb7393731680ecf9a1a1fb4b9b9773a8c46858a5462470609f7"
+    },
+    {
+      "path": "source-review/review_verdict.json",
+      "sha256": "5926b39d55cc8edfd755578a05906bc22e33bc32567771e8eea17079e2b5e72b"
+    },
+    {
+      "path": "source-review/builder_semantic_checks.json",
+      "sha256": "bac2dcc05f52e98ff6942f300847c0b512ad0f1d4a6462f5e9c220a392df2a36"
+    },
+    {
+      "path": "compiler/compile_ir.py",
+      "sha256": "adf72f0e20362373be6f050b19a6859c00d9535ec49e74272cf8e58df12f0435"
+    },
+    {
+      "path": "compiler/CHECKER_REVIEW.md",
+      "sha256": "0c6f75f6dbe7536082bab17e3570ad60ab4a85341cdfde9426ffb05fe585518d"
+    },
+    {
+      "path": "compiler/translated/compiled-ir.json",
+      "sha256": "95274fe84364b8b22d51c1d5ae31c19c156b4f0f7481762ad14ae4783f466c5a"
+    },
+    {
+      "path": "compiler/translated/reduction-certificate.json",
+      "sha256": "052a18af05997bb15634d5fcfc5d2bceb8882d539724fda8c4d1a3d5eed295aa"
+    },
+    {
+      "path": "compiler/translated/coordinate-map.json",
+      "sha256": "a14aaa0f44167f3f4191edb78e5f655dc6973269d20acf89e3f79a5bd0e36868"
+    },
+    {
+      "path": "compiler/translated/polynomial.json",
+      "sha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586"
+    },
+    {
+      "path": "checker/checker.cjs",
+      "sha256": "50f9924557f0594a0ddb2664260d2e382d80762a0d607d87203fb7ddfb4e1cb1"
+    },
+    {
+      "path": "checker/FINAL_CHECK.json",
+      "sha256": "fc0ce37df44650098922d3809a9de02ba81b3680fa082ba38a2746795416cdc0"
+    },
+    {
+      "path": "checker/translated-check.json",
+      "sha256": "c53f4f303c821f37caea4b0e4c4f0950e47fc4428a9c19180c4b7956b1aca179"
+    },
+    {
+      "path": "checker/MUTATION_TESTS.json",
+      "sha256": "20e4aeaeff79e4c6721c8b01329bb6e291091cddb3a78d0a582100e3f1da507b"
+    },
+    {
+      "path": "checker/ANCHOR_CHECK.json",
+      "sha256": "e5ba17e983d64543920e33647f80f999215ca718b90b54b723190860dfb21b42"
+    },
+    {
+      "path": "oracle/REPORT.md",
+      "sha256": "d20925ff05db8ad0dea538bd5a8d1f6a36cc5369e43604ceaccf6366d04f4db4"
+    },
+    {
+      "path": "oracle/results.json",
+      "sha256": "1838a4be5542aeebad8c8463fa77a050de1b0e2769777d98b10a34e43b6eca39"
+    },
+    {
+      "path": "identity/IDENTITY_REPORT.txt",
+      "sha256": "6ad560b4c8bba912f9143780073130dbfd7229da1399ee188ea1e3769bba067c"
+    },
+    {
+      "path": "identity/reconstructed_table_checks.json",
+      "sha256": "02dfeb3efbf07c0a2bdfebcea0bea15284eba4ad0396d0a5c446544ff6a1872a"
+    },
+    {
+      "path": "optimization/REPORT.md",
+      "sha256": "d00f908178e928bf0b5eafc192b91d51fa090fb98b78b0220a9d1bc26dad6d37"
+    },
+    {
+      "path": "ROOT_REPLAY.json",
+      "sha256": "0dd4bcbee0974ee3dab8f611a6f7b9050cdced49a84e7bc84e8f5fcb2218f53d"
+    },
+    {
+      "path": "replay-001/REPRODUCTION.json",
+      "sha256": "81cd897e68f7c5b7180209134830bd1ddcf018c0f5a4eeedf24297a54b512a98"
+    }
+  ]
+}

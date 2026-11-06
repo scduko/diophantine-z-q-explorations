@@ -1,0 +1,56 @@
+{
+  "H5_method": "Published quotient identification, degree-576 normal fiber field, integral-model and metric comparison, non-CM modular-level bound and height transfer, same-field CM estimate.",
+  "baseline": {
+    "sha256": "cb1148cd6c7769d2af3f1636b60ff0ada4b40431978d1e98d0c339274b3d792b",
+    "status": "Baseline arithmetic results and restricted-converse theorem retain their previously stated proof status; this update does not upgrade their independent audit status."
+  },
+  "component_packets": "Unchanged received packets retain their original local assumptions; accepted assembled H5 proof discharges the height input.",
+  "format": "original-degree8-current-proof/v1",
+  "historical_status": "history/pre-h5-v4/index.json",
+  "independent_acceptance": {
+    "file": "SMALLER_ONLY_ACCEPTANCE.md",
+    "sha256": "3de379463fb4a32702f5098fd08dfa3d62a5a116641803c0411c48d212026b27"
+  },
+  "labels": {
+    "CM_estimate": "eq:original-cm-bound",
+    "H5": "hyp:o8-height",
+    "arithmetic_interpretation": "thm:o8-conditional",
+    "finite_polynomial": "prop:o8-finite",
+    "nonCM_level": "sec:h5-level-repair"
+  },
+  "manuscript": {
+    "author_frozen_name": "candidate-layout.tex",
+    "repository_integration_target": "../../diophantine_zq.tex",
+    "sha256": "5907f81b41aa897b960c006abfcc0684aa7572d7d1fa3fa245b1dedc23cbe72e"
+  },
+  "nonCM_bounds": {
+    "finite_kernel_field_degree": "<=2304R",
+    "modular_level": "<=210^300 R^2",
+    "scalar_character_and_coefficient_field": "Allowed to vary; no uniform bounded same-field GL2-type descent is assumed."
+  },
+  "polynomial_changed": false,
+  "published_source_limits": {
+    "Pan": "Author v2 Theorem1.0.4 inspected; full p>=5 formulation inspected in Calegari, ICM2022 vol2, EMS2023, pp611-612,624, DOI10.4171/ICM2022/101. No comparison with inaccessible Pan AMS text claimed.",
+    "Yuan": "Author-attested English translation of published Chinese article inspected; no direct Chinese-typesetting comparison claimed."
+  },
+  "runtime_changed": false,
+  "status": "Smaller-only manuscript independently reviewed; full H5 proof and polynomial unchanged.",
+  "unchanged_data": {
+    "construction-certificate.json": "3be681fbccdf1643db31cf775fd34602974bf8501fe1e5ed16b729ce1141125f",
+    "counts.json": "25d288257198674d6862ce1927187542d5cdb5edb629b9c82ddcbcc2473991e0",
+    "polynomial.expanded.txt.gz": "1559c56df512b4e7111b5e96e303dee6edb0b6249e986a5cccb278ed518e4ddc",
+    "residuals.jsonl.gz": "6e68a9d39573279e894e29d8913b5ade932aa6526d28a2d40bc713c1cca934a2"
+  },
+  "historical_H5_proof": {
+    "manuscript": {
+      "author_frozen_name": "UNAPPLIED-candidate-v4.tex",
+      "note": "The hash pins the accepted author-frozen manuscript. Root integration and compilation are separate delivery steps.",
+      "repository_integration_target": "../../diophantine_zq.tex",
+      "sha256": "655c0b26cabc12211e3214a1fba7bcfca4440baf77febec303f2b0e6802a7833"
+    },
+    "independent_acceptance": {
+      "file": "H5_FINAL_ACCEPTANCE.md",
+      "sha256": "db62a7fa5fbcd2d4bc711436f2fb4f98c37de9122751ea7aeb097d96680905eb"
+    }
+  }
+}

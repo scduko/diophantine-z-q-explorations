@@ -1,0 +1,988 @@
+{
+  "format": "quartic-9625-theorem-inventory/v1",
+  "manuscript": "quartic_9625.tex",
+  "manuscript_sha256": "dc77c88b5cc0819201343dc85d0891d4dad81d97ac3267ec1df34eb38003b552",
+  "arithmetic_registry_sha256": "e06b377ecedd1bb42e0443606dd85cc54743e98a98188dfd2ddf9db4e06f29c1",
+  "reviewed_patch_sha256": "da4d0239d33a344152481958a5e09d6737691dec40f5e78d6d654a08fd89172b",
+  "reviewed_body": {
+    "lines": [
+      8726,
+      9547
+    ],
+    "excerpt_sha256": "99621365fb874fb6eb0af3aa0eb9804285c6db4bdb313c1e866a9fc75f654d7d"
+  },
+  "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+  "certificate_binding": {
+    "variables": 9625,
+    "witnesses": 9624,
+    "rows": 9161,
+    "monomials": 82476,
+    "degree": 4,
+    "max_abs_coefficient": 685783949153203534233601,
+    "total_operations": 1246,
+    "expanded_sha256": "6d67d45f3d615b7fd2242e3a9404dd9f5da570fc711a29ebe77f613e80ebbf99",
+    "certificate_sha256": "8aaa2249eda6972c441d58b212ec64a53e1202d5e9f74ea4cbc53e7e3f71a0bd",
+    "checker_sha256": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4",
+    "operations": {
+      "norm_inverse": 161,
+      "redundant_inverse": 37,
+      "gpoint_chart": 6,
+      "field_ordinate": 2,
+      "parity_conic": 38,
+      "batch_absorb": 1,
+      "linear": 312,
+      "eliminate": 685,
+      "shear": 4
+    }
+  },
+  "retained_algebraic_lemmas": [
+    {
+      "id": "quadratic_field_and_rational_inverse",
+      "latex_label": null,
+      "statement": "A nonzero rational pair in K has nonzero norm and rational inverse (a_0,-a_1)/(a_0^2-2a_1^2).",
+      "elementary_dependencies": [],
+      "standard_facts": [
+        "No rational number has square 2",
+        "Exact rational arithmetic"
+      ],
+      "conventions": "Nonzero means the field element is nonzero; either individual rational coordinate may vanish. This is an elementary fact, not a new external arithmetic theorem.",
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "quadratic_field_and_rational_inverse",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-source"
+    },
+    {
+      "id": "constant_definition_equivalence",
+      "latex_label": null,
+      "statement": "For c in Q nonzero and F independent of v, eliminating cv-F=0 by substituting v=F/c everywhere else preserves rational solutions on the retained coordinates. Its reverse gives the initial product lift.",
+      "elementary_dependencies": [],
+      "proof": "Restrict an old solution; reconstruct the deleted coordinate as F/c. For a product lift, evaluate each new target in order.",
+      "conventions": "The target is not X_0; substitution covers every outside occurrence; division is by a nonzero rational constant; final residual degree stays at most two.",
+      "certificate_rules": [
+        "initial",
+        "eliminate"
+      ],
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "constant_definition_equivalence",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "invertible_row_equivalence",
+      "latex_label": null,
+      "statement": "Replacing R_i by a R_i+b R_j while retaining R_j preserves simultaneous vanishing when i differs from j and a is nonzero.",
+      "elementary_dependencies": [],
+      "proof": "Recover R_i=(R_i'-b R_j)/a.",
+      "conventions": "The row coefficients are rational constants and no coordinate is changed.",
+      "certificate_rules": [
+        "linear"
+      ],
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "invertible_row_equivalence",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "acyclic_circuit_equivalence",
+      "latex_label": null,
+      "statement": "Two acyclic constant-pivot defining circuits are interchangeable when their retained outputs are identical polynomials in the same external coordinates.",
+      "elementary_dependencies": [
+        "constant_definition_equivalence"
+      ],
+      "proof": "Evaluate either circuit uniquely from the external coordinates. Equal boundary outputs preserve every outside equation.",
+      "conventions": "Internal deleted coordinates have no outside uses; output identities and order, complete definitions, and fresh targets are checked. This does not require any input field element to be nonzero.",
+      "certificate_rules": [],
+      "scope_in_this_release": "Used for exact source-circuit evaluation and fresh product lift; there are no circuit events in the final replay.",
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "acyclic_circuit_equivalence",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "scalar_norm_inverse_equivalence",
+      "latex_label": null,
+      "statement": "The constraint u(A^2-2B^2)=1 is equivalent on retained coordinates to As+2Bt=1 and At+Bs=0.",
+      "elementary_dependencies": [
+        "constant_definition_equivalence"
+      ],
+      "proof": "Forward set s=Au and t=-Bu; reverse set u=s^2-2t^2. Use (A^2-2B^2)(s^2-2t^2)=(As+2Bt)^2-2(At+Bs)^2 and reconstruct deleted lift definitions.",
+      "conventions": "A and B are rational affine expressions in retained coordinates. The removed inverse and lift targets are private. No variable denominator or additional nonvanishing premise occurs.",
+      "certificate_rules": [
+        "norm_inverse"
+      ],
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "scalar_norm_inverse_equivalence",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "root_error_and_contact_nonvanishing",
+      "latex_label": null,
+      "statement": "Retained epsilon=theta^2-2 and R(F-1)=epsilon^2 imply epsilon and R are nonzero.",
+      "elementary_dependencies": [],
+      "standard_facts": [
+        "No rational number has square 2",
+        "Q is a field"
+      ],
+      "conventions": "theta and all scalar coordinates are rational. The two displayed equations must remain available in the current residual system.",
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "root_error_and_contact_nonvanishing",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "private_contact_inverse_removal",
+      "latex_label": null,
+      "statement": "When u occurs only in uR=1 and the retained root-error equations prove R nonzero, delete u and that equation.",
+      "elementary_dependencies": [
+        "root_error_and_contact_nonvanishing"
+      ],
+      "proof": "Restrict forward and reverse by u=1/R.",
+      "conventions": "u is not input zero, its complete current occurrence set is the guard row, and no premise of nonvanishing contains u. This describes the 41 comparison contact guards, not the separate scalar height guard.",
+      "certificate_rules": [
+        "redundant_inverse"
+      ],
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "private_contact_inverse_removal",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "point_chart_equivalence",
+      "latex_label": null,
+      "statement": "Replace the private field coordinates w,h in the displayed seven-equation chart by p=yf and p^2=x-Df, retaining u,v,z,f,x,y and their other equations.",
+      "elementary_dependencies": [
+        "quadratic_field_and_rational_inverse"
+      ],
+      "proof": "Forward set p=yf and derive h=up and fp^2=1-Df^2. Reverse the retained equations give p nonzero and fp^2=v^2(1+df), hence v nonzero; set h=up and w=up/v.",
+      "conventions": "d=3-sqrt(2), D=d^2. All old scalar coordinate pairs are distinct, the four deleted scalar coordinates are private, and p is fresh. Division by v is used only after its nonvanishing is proved.",
+      "certificate_rules": [
+        "gpoint_chart"
+      ],
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "point_chart_equivalence",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "ordinate_elimination_equivalence",
+      "latex_label": null,
+      "statement": "Retain xf=1, replace p=yf and yz=-x by pz=-1, and substitute y=xp in every outside equation.",
+      "elementary_dependencies": [
+        "constant_definition_equivalence"
+      ],
+      "proof": "The old equations imply y=xp and pz=-1. Conversely, adjoining y=xp gives yf=p and yz=-x.",
+      "conventions": "Both rational components are substituted simultaneously in their entire occurrence set. Reject any substitution whose resulting residual degree exceeds two. No additional nonvanishing hypothesis is introduced.",
+      "certificate_rules": [
+        "field_ordinate"
+      ],
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "ordinate_elimination_equivalence",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "parity_block_existential_equivalence",
+      "latex_label": null,
+      "statement": "The displayed seven-witness source parity block and twelve-witness nine-quadratic block have the same existential projection on the unchanged rational input b.",
+      "elementary_dependencies": [
+        "constant_definition_equivalence"
+      ],
+      "proof": "The source equation forces delta=1+bt^2 nonzero. Set u=U, v=2bt/delta and the displayed products. Reverse with U=t=0 if b=0, U=u and t=v/(u+b) if b is nonzero and u+b is nonzero, or U=b and t=0 if u=-b. In every case U^2=z, and the remaining source equations follow by substitution.",
+      "conventions": "All old witnesses and deleted lift targets are private. The exceptional branch may change the sign of U. The conclusion is equality of existential projections, not inverse bijections of the full private witness tuples. No theorem about the arithmetic meaning of the parity predicate is used.",
+      "certificate_rules": [
+        "parity_conic"
+      ],
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "parity_block_existential_equivalence",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "bottom_norm_absorption_equivalence",
+      "latex_label": null,
+      "statement": "Replace the expanded row PN-epsilon^2 B^2-RT^2=0 by RO=P, Q=B^2 and ON-FQ+Q-T^2=0 while retaining N and the upper norm system.",
+      "elementary_dependencies": [
+        "root_error_and_contact_nonvanishing",
+        "constant_definition_equivalence"
+      ],
+      "proof": "Use PN-epsilon^2 B^2-RT^2=-N(RO-P)+Q(RF-R-epsilon^2)+epsilon^2(Q-B^2)+R(ON-FQ+Q-T^2). Forward set O=P/R and Q=B^2; reverse reconstruct deleted definitions in acyclic order and use R nonzero.",
+      "conventions": "B is affine. A retained P=R^2 permits O=R. A shared Q requires equality of the complete square polynomials. Retain every definition needed outside the replaced rows and its dependencies. A square target denotes B^2, not a chosen square root. Upper norm values and the parity input are unchanged; no leaf-order or square-class invariance theorem is assumed.",
+      "certificate_rules": [
+        "batch_absorb"
+      ],
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "bottom_norm_absorption_equivalence",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "normalization_and_sum_of_squares",
+      "latex_label": null,
+      "statement": "Input-fixing relabeling and nonzero rational row scaling preserve solvability; the sum of the 9161 unit-weight rational squares vanishes exactly when all residuals vanish.",
+      "elementary_dependencies": [],
+      "standard_facts": [
+        "Nonzero rational rescaling preserves a zero set",
+        "Squares in Q are nonnegative",
+        "A finite sum of nonnegative rational numbers is zero only when each summand is zero"
+      ],
+      "conventions": "All final weights are one; the final integer residuals have degree at most two; input zero is fixed. Exact degree four and the numerical bounds require the full collected expansion, not only these zero-set observations.",
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "normalization_and_sum_of_squares",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    },
+    {
+      "id": "rational_coordinate_shear",
+      "latex_label": null,
+      "statement": "Replacing an auxiliary coordinate v_old by v_new+c w everywhere, for rational c and w distinct from v, is an invertible rational change fixing the input.",
+      "elementary_dependencies": [],
+      "inherited_dependencies": [],
+      "proof": "The inverse is v_new=v_old-cw. Substitute simultaneously in every current incident row. The value of every other coordinate is unchanged.",
+      "conventions": "v is not input0; w may be input0. Full occurrence set must be covered and rows remain quadratic. Four actual shear events are used.",
+      "certificate_rules": [
+        "shear"
+      ],
+      "historical_provenance": {
+        "path": "docs/quartic-12504/theorem-applications.json",
+        "id": "rational_coordinate_shear",
+        "sha256": "ab8507d4efc538e48675857320def4ffb43c0d62fafe46c44589d2ac6f6db4e4"
+      },
+      "current_source_label": "subsec:quartic-reductions"
+    }
+  ],
+  "arithmetic_lemmas": [
+    {
+      "id": "V3_H19",
+      "label": "thm:quartic-height19",
+      "title": "Five-contact height with exponent 19",
+      "statement": "For every rational a outside D={0,1,2401,-343/32}, h(a)<=H19*M5(a)^19 with H19=2*(2^109*210^1800)*B_*^19+128 and log2(H19)<2093966.",
+      "depends_on": [
+        "I_H5",
+        "P_DETERMINANT",
+        "P_MODULAR_FACTOR",
+        "P_BELYI",
+        "P_TRANSFER"
+      ],
+      "proofs": [
+        {
+          "artifact": "h19_proof",
+          "section": "2"
+        },
+        {
+          "artifact": "h19_height_detail"
+        }
+      ],
+      "conventions": [
+        "Use the final primitive weight-two form after the finite twist, a normal L' of degree at most2304R, and det(r)=epsilon*chi_cyc in the arithmetic-Frobenius convention.",
+        "epsilon^2 factors through Gal(L'/Q), so ord(epsilon)<=2[L':Q]<=4608R. This does not bound the coefficient-field degree or replace L' with L.",
+        "Use the rational point-level model X_H=X1(N)/ker(epsilon), the entire conjugate differential space and the effective diamond group in push-pull.",
+        "A_f is a Q-isogeny factor of J_H; the inherited Hom theorem over L' then gives A times Z isogenous to J_H. Only the Jacobian needs its canonical principal polarization.",
+        "d_H<=9216*210^300*R^(19/6); retain the original stable Faltings metric and all transfer terms."
+      ],
+      "current_source": {
+        "label": "thm:quartic-height19",
+        "lines": [
+          8753,
+          8909
+        ],
+        "excerpt_sha256": "b096d5de9f3a518ddc4500582d22494c31cd55973e4129ff7ba27ebca1db5a05"
+      }
+    },
+    {
+      "id": "V3_ROOT37",
+      "label": "lem:quartic-rational37",
+      "title": "Thirty-seven rational-target contacts",
+      "statement": "The 37 raw positions v/V0, u-delta*v, u-(47027*a_i+3-delta)*v detect every normalized odd contact of the common slope and eight rational target slopes. Their complete prime construction and direct heights require no denominator variable in the source.",
+      "depends_on": [
+        "V3_H19",
+        "I_SIEVE",
+        "I_POLE",
+        "I_NORM",
+        "I_CRT"
+      ],
+      "proofs": [
+        {
+          "artifact": "h19_proof",
+          "section": "3"
+        },
+        {
+          "artifact": "rational37_proof"
+        }
+      ],
+      "conventions": [
+        "The a_i are exactly the two coefficients of x(A),x(S),x(T),x(Z); positions are retained even when slopes or primes coincide.",
+        "D0 is a fixed common denominator chosen after the eight coefficients. Put v=V0*D0^2*p0; keep D0 fixed before the sieve box grows.",
+        "At primes dividing D0 outside S_*, both slope depths are even. Raw infinity is D0^2*p0, with odd valuation one at its assigned prime.",
+        "Use the inherited fixed-system ordinary-prime, successor, pole and squareclass theorems with their original version qualifications.",
+        "For both slope radicals to exponent e dividing nonzero N, h(a_i)<2H19*|N|^(19/e)+14 and h(x(Q))<4H19*|N|^(19/e)+30<7H19*|N|^(19/e)."
+      ],
+      "current_source": {
+        "label": "lem:quartic-rational37",
+        "lines": [
+          8912,
+          9035
+        ],
+        "excerpt_sha256": "7733e41750a8337f6ebe98e76c1a85da3c21f5979d1695a166890b1b21979b12"
+      }
+    },
+    {
+      "id": "V3_RECIPROCAL",
+      "label": "lem:quartic-reciprocal-log",
+      "title": "Reciprocal identity and the complete infinite-tail estimate",
+      "statement": "For a0=1,a1=-2/5,aj=(4j-5)*a(j-1)/(4j+1), G=sum aj*w^j, the formal identity is log_E(z)=zG(Df^2). For integers10<=e<=64 and m=ceil(e/4), L_e=zG_(m-1)(Df^2) has L_e/log_E(z) in1+p^e Z_p at every nonidentity formal point above split p>76176.",
+      "depends_on": [
+        "I_RECIPROCAL",
+        "I_FORMAL"
+      ],
+      "proofs": [
+        {
+          "artifact": "h19_proof",
+          "section": "4"
+        },
+        {
+          "artifact": "baseline_manuscript",
+          "section": "lem:quartic-reciprocal-log"
+        }
+      ],
+      "conventions": [
+        "The second label lem:quartic-uniform-reciprocal labels this same lemma.",
+        "Require the identity formal branch; a small z without this hypothesis is insufficient.",
+        "The differential is4w(1-w)G'+(1+w)G=1-w. Denominator(aj) divides(4j+1)!, so the estimate includes the entire infinite tail, including j with p-divisible denominator.",
+        "At v(z)=r>=1, the absolute error has valuation at least(4m+1)r."
+      ],
+      "current_source": {
+        "label": "lem:quartic-reciprocal-log",
+        "lines": [
+          9038,
+          9102
+        ],
+        "excerpt_sha256": "379249e0781453e547eb0cfa149405c4544ebbcfc1eaeb924c73620358062172"
+      }
+    },
+    {
+      "id": "V3_NONZERO",
+      "label": "lem:quartic-reciprocal-nonzero",
+      "title": "Global reciprocal-polynomial nonvanishing",
+      "statement": "For every f in K and integer J>=2, G_J(Df^2) is nonzero.",
+      "depends_on": [
+        "I_RECIPROCAL"
+      ],
+      "proofs": [
+        {
+          "artifact": "h19_proof",
+          "section": "4"
+        },
+        {
+          "artifact": "baseline_manuscript",
+          "section": "lem:quartic-reciprocal-nonzero"
+        }
+      ],
+      "conventions": [
+        "Use v(a+b*sqrt2)=min(v2(a),v2(b)+1/2), v(D)=0 and v(aj)=1 for j>=1.",
+        "If v(f)>=0 the constant term is uniquely least. If v(f)<0 the last term is uniquely least, with valuation at most1-J<0. No good reduction at2 is assumed."
+      ],
+      "current_source": {
+        "label": "lem:quartic-reciprocal-nonzero",
+        "lines": [
+          9104,
+          9129
+        ],
+        "excerpt_sha256": "73b64f9429193540e402f8a3c7790606c627d6e6265c10d30a6f1574d3419d04"
+      }
+    },
+    {
+      "id": "V3_LOCAL",
+      "label": "lem:quartic-selective-local",
+      "title": "Local conclusions for full and beta-only comparators",
+      "statement": "At every odd raw-contact valuation above p>76176, the full comparator gives beta=n modp^12 and the three proxy congruences modp^40. The beta-only comparator gives beta=n modp^12.",
+      "depends_on": [
+        "V3_RECIPROCAL",
+        "V3_NONZERO",
+        "I_GEN",
+        "I_FORMAL",
+        "I_NORM",
+        "I_POLE",
+        "I_CRT"
+      ],
+      "proofs": [
+        {
+          "artifact": "h19_proof",
+          "section": "5"
+        },
+        {
+          "artifact": "betaonly_proof",
+          "section": "Exact source interface and Local conclusion"
+        }
+      ],
+      "conventions": [
+        "The constant-left norm path excludes negative odd raw valuations; no ordinary-prime assumption is used in soundness.",
+        "The paired tests epsilon*b and a+b*theta handle nonintegral coefficients. The root-error test selects one split embedding; already-conjugated common data are not conjugated again.",
+        "Full I={1,2,3,4}, e0=40, ei=(12,40,40,40). Beta-only I={1},e0=e1=12.",
+        "Retain all guarded affine differences and their alternate z(R)^sigma/z(J)^sigma tests. No identity-allowing chart is used."
+      ],
+      "current_source": {
+        "label": "lem:quartic-selective-local",
+        "lines": [
+          9218,
+          9264
+        ],
+        "excerpt_sha256": "d321d3aa0e438419ce6bdca90027336ee326b02352a256b1b4020032d3766c5e"
+      }
+    },
+    {
+      "id": "V3_ANCHOR",
+      "label": "lem:quartic-height19-anchor",
+      "title": "Scalar height and the 25-squaring anchor",
+      "statement": "The specified scalar batch and anchor imply s in2*3^(2^24-1)Z minus{0}, h(beta)<=H19*|s|^(19/32)<|s|/40, |s|>(24H19)^10, |s|>(40H19)^(32/13), |s|>40 and log(40H19)<|s|/40.",
+      "depends_on": [
+        "V3_H19",
+        "I_ANCHOR",
+        "I_FORMAL",
+        "I_NORM",
+        "I_POLE",
+        "I_GEN"
+      ],
+      "proofs": [
+        {
+          "artifact": "h19_proof",
+          "section": "5-6"
+        }
+      ],
+      "conventions": [
+        "The unchanged two-predicate anchor has C=3^(2^25), built by25 squarings. No norm-combined anchor is used.",
+        "The scalar rational orders are(1,1,1,1,32,32); use all places including inert primes and the unchanged scalar contact polynomial.",
+        "The binary lower bound is log2|s|>25165822.5; its comparisons are strict. The anchor subgroup permits arbitrary additional fixed divisibility."
+      ],
+      "current_source": {
+        "label": "lem:quartic-height19-anchor",
+        "lines": [
+          9266,
+          9323
+        ],
+        "excerpt_sha256": "af24f8d4b65ef68709045cdb0399d2e88bf030303420874b1f0ab09e191a83f7"
+      }
+    },
+    {
+      "id": "V3_LUCAS",
+      "label": "lem:quartic-selective-lucas-growth",
+      "title": "Twenty-nine positions force the Lucas equation",
+      "statement": "The full comparisons at the five common positions and the24 S,T,Z-specific positions force Delta=t^2-s(s-2)tz+(s-2)^2z^2-1=0 and |t|>exp(|s|-3).",
+      "depends_on": [
+        "V3_ROOT37",
+        "V3_LOCAL",
+        "V3_ANCHOR",
+        "I_GEN",
+        "I_LUCAS"
+      ],
+      "proofs": [
+        {
+          "artifact": "betaonly_proof",
+          "section": "First global step"
+        }
+      ],
+      "conventions": [
+        "Use B_L=max(|s|,|t|,|z|), not the maximum involving n.",
+        "If Delta is nonzero, the direct heights give B_L^(1/10)<22H19<24H19, contradicting |s|>(24H19)^10.",
+        "The inherited Lucas lemma supplies growth of |t| itself."
+      ],
+      "current_source": {
+        "label": "lem:quartic-selective-lucas-growth",
+        "lines": [
+          9326,
+          9360
+        ],
+        "excerpt_sha256": "ce51a73115205a92cb6a9b138a0bc012e4992e0cee86461ecc4ca53074c58959"
+      }
+    },
+    {
+      "id": "V3_BETA",
+      "label": "lem:quartic-beta-only",
+      "title": "The beta-only source is sound",
+      "statement": "The selected29-full/8-beta assignment implies beta=n and rational input X is an integer.",
+      "depends_on": [
+        "V3_ROOT37",
+        "V3_LOCAL",
+        "V3_ANCHOR",
+        "V3_LUCAS",
+        "I_GEN"
+      ],
+      "proofs": [
+        {
+          "artifact": "betaonly_proof",
+          "section": "Second global step"
+        }
+      ],
+      "conventions": [
+        "All37 positions retain beta congruences, so all eight height coefficients are controlled by N=abs(num(beta-n)).",
+        "Use B=max(|n|,|s|,|t|,|z|), N<=2exp(h(beta))*B and B^2<7H19*N^(19/12)+6.",
+        "The bound logB<(31/200)|s|<|s|-3 contradicts B>=|t|. No comparison of n with the smaller first maximum is assumed."
+      ],
+      "current_source": {
+        "label": "lem:quartic-beta-only",
+        "lines": [
+          9363,
+          9395
+        ],
+        "excerpt_sha256": "3cb81f69bbc79afac7d546b3bccb4534f67c5659ae428c36e14d5bd848ab7bd4"
+      }
+    },
+    {
+      "id": "V3_SOURCE",
+      "label": "thm:quartic-source-arithmetic",
+      "title": "The selected source has rational input projection Z",
+      "statement": "The H19/high40/beta12/anchor25/scalar32 guarded-affine37-contact source with full positions0..4 and13..36 and beta-only positions5..12 has rational witnesses exactly at integer inputs.",
+      "depends_on": [
+        "V3_BETA",
+        "V3_ROOT37",
+        "V3_LOCAL",
+        "V3_ANCHOR",
+        "V3_COMPRESSED",
+        "I_GEN",
+        "I_SIEVE",
+        "I_CRT",
+        "I_POLE",
+        "I_LUCAS"
+      ],
+      "proofs": [
+        {
+          "artifact": "h19_proof",
+          "section": "7"
+        },
+        {
+          "artifact": "betaonly_proof",
+          "section": "Completeness"
+        }
+      ],
+      "conventions": [
+        "Choose scalar data and all four root points before the eight rational height coefficients and D0.",
+        "Use j=lcm d_(p,2) over all selected primes and choose h_p=0 modd_(p,1), h_p=4 modd_(p,2), h_p=4 modp^(40+v_p(j)). No cross-prime coprimality is assumed.",
+        "Exclude h_p=0,4,-4, which supplies every retained affine subtraction guard.",
+        "Choose one theta last after all actual field coefficients. Repeated prime occurrences have the same orientation and independent private witnesses.",
+        "This is an arithmetic source reform, not coordinate forgetting from arbitrary released12504 witness tuples."
+      ],
+      "current_source": {
+        "label": "thm:quartic-source-arithmetic",
+        "lines": [
+          9398,
+          9466
+        ],
+        "excerpt_sha256": "f2f0ee9e5a7de5f540f84a3b6161f712bf55d33dc81833c6618dc9617aff4584"
+      }
+    },
+    {
+      "id": "V3_COMPRESSED",
+      "label": "lem:quartic-compressed-primary",
+      "title": "Rational equivalence of compressed primary charts",
+      "statement": "The rows f=u^2,v^2+df=1,p^2=x-Df,xf=1, Lambda*p0=G0, Bi=Ci*pi,Bi*Lambda=Gi are equivalent to the full retained primary charts and reciprocal ratios on every fixed external input.",
+      "depends_on": [
+        "V3_NONZERO",
+        "I_RECIPROCAL"
+      ],
+      "proofs": [
+        {
+          "artifact": "h19_proof",
+          "section": "4"
+        },
+        {
+          "artifact": "baseline_manuscript",
+          "section": "lem:quartic-compressed-primary"
+        }
+      ],
+      "conventions": [
+        "Global G nonvanishing forces Lambda and every pi nonzero; fp^2=v^2(1+df) then forces v nonzero.",
+        "Restore y=xp,z=-1/p,h=up,w=up/v,L=zG; Lambda=-L0. All affine difference guards and field values are retained.",
+        "No primary v or u deletion, Jacobi chart, or single-x kernel theorem is used."
+      ],
+      "current_source": {
+        "label": "lem:quartic-compressed-primary",
+        "lines": [
+          9469,
+          9507
+        ],
+        "excerpt_sha256": "78c71c328f1ded65653d093d626356b55999682d064120fcaae34d412ad139cd"
+      }
+    },
+    {
+      "id": "V3_CIRCUIT",
+      "label": "lem:quartic-compressed-primary",
+      "title": "Exact G9 and G2 circuit evaluation",
+      "statement": "Precision40 uses w=Df^2,w2=w^2,w3=w2*w and U6=(a3+a4*w+a5*w2+w3*(a6+a7*w+a8*w2+a9*w3))/a6, yielding G9=a0+a1*w+a2*w2+a6*w3*U6. Precision12 uses G2=1+a1*w+a2*w^2.",
+      "depends_on": [
+        "V3_RECIPROCAL",
+        "V3_COMPRESSED"
+      ],
+      "proofs": [
+        {
+          "artifact": "h19_proof",
+          "section": "4"
+        }
+      ],
+      "conventions": [
+        "This is the unnumbered exact-circuit paragraph immediately after the compressed-primary lemma.",
+        "a6=-418/16575 is a nonzero rational constant; the circuit has scale1. Every residual is quadratic in bound coordinates.",
+        "The complete source checker separately binds this exact block3/a6 evaluation and its consumers; approximation is not used to infer polynomial identity."
+      ],
+      "current_source": {
+        "label": "lem:quartic-compressed-primary",
+        "lines": [
+          9469,
+          9547
+        ],
+        "excerpt_sha256": "251de4086ea09fd20daa7ee0b8ab03dde070cd166771289496993fe58ed1931c"
+      }
+    }
+  ],
+  "inherited_applications": [
+    {
+      "id": "I_H5",
+      "inventory": "baseline_current_proof",
+      "also": [
+        "baseline_assumption_status"
+      ],
+      "labels": [
+        "hyp:o8-height",
+        "sec:h5-level-repair",
+        "LR2",
+        "LR3",
+        "LR5",
+        "LT1",
+        "LT3"
+      ],
+      "statement": "Released geometry supplies R=B_*M5(a), [L:Q]<=576, normal L'/Q with [L':Q]<=2304R, final primitive weight-two r, V_l(A)|G_L'=r+r, determinant-square=chi_cyc^2, N<=210^300R^2 and rad(N)|R; metric h(a)<=2max(0,h_F(A))+128 and CM h_F(A)<854R.",
+      "convention": "Use the final representation after finite-twist absorption; scalar-character and coefficient-field degrees may vary. The H19 argument uses only the displayed degree and conductor bounds. Preserve the Pan/Calegari and Yuan source-version qualifications."
+    },
+    {
+      "id": "I_GEN",
+      "inventory": "baseline_applications",
+      "application_ids": [
+        "A058",
+        "A059",
+        "A060"
+      ],
+      "labels": [
+        "prop:generator",
+        "lem:o8-chart",
+        "eq:o8-indexheight"
+      ],
+      "statement": "For the fixed normalized E/K, 2E(K)=Z P_* is torsion-free and h(x(nP_*))>=n^2-6 for n!=0. The retained membership charts characterize this group.",
+      "convention": "Retain the released two-isogeny, saturation and canonical-height conventions. The unit normalization scales x by a square. The selected source retains its u and v chart coordinates; no new single-x kernel deduction is used."
+    },
+    {
+      "id": "I_FORMAL",
+      "inventory": "baseline_applications",
+      "application_ids": [
+        "A071",
+        "A072"
+      ],
+      "statement": "Formal logarithm, isometry and reduction-kernel statements with z=-x/y; good-prime and same-prime conjugate order calculations.",
+      "convention": "Require actual formal-group membership, not merely positive valuation of z. Selected comparison primes split; scalar argument can use inert primes. Use actual order/cardinality annihilators; no cross-prime coprimality."
+    },
+    {
+      "id": "I_SIEVE",
+      "inventory": "baseline_sieve_applications",
+      "also": [
+        "baseline_sieve_sources"
+      ],
+      "application_ids": [
+        "OP01",
+        "OP02",
+        "OP03",
+        "OP04",
+        "OP05",
+        "OP06",
+        "OP07",
+        "OP08",
+        "OP09",
+        "OP10",
+        "OP11",
+        "OP12",
+        "OP13",
+        "OP14"
+      ],
+      "statement": "Existing fixed-affine-form prime pattern and order sieve with GT, MN, GI, Mertens and elliptic reduction applications.",
+      "convention": "Coefficients, denominator choices, exceptional cutoff and real box are fixed before the size limit. Preserve GI published theorem plus inherited corrected-author-v5/erratum convention. Repeated slopes are deduplicated analytically only."
+    },
+    {
+      "id": "I_ANCHOR",
+      "inventory": "baseline_anchor_sources",
+      "application_ids": [
+        "A23-1",
+        "A23-2",
+        "A23-3",
+        "A23-4"
+      ],
+      "labels": [
+        "subsec:o8-anchor-proof"
+      ],
+      "statement": "The literal seven-witness T is exactly Z_(2) intersection Z_(3). The inherited local formal-group calculation is applied with25 squarings in V3_ANCHOR, giving s in2*3^(2^24-1)Z.",
+      "convention": "T=S+S without offset, quaternion parameters2 and3, reduced trace2u0 and ramification{2,3}. Retain both T predicates. The old24-squaring numerical cutoff remains historical; the new25-squaring cutoff is calculated explicitly in V3_ANCHOR."
+    },
+    {
+      "id": "I_POLE",
+      "inventory": "baseline_parity",
+      "also": [
+        "baseline_assumption_status"
+      ],
+      "labels": [
+        "hyp:o8-pole",
+        "hyp:RC"
+      ],
+      "statement": "Seven-witness pole/parity predicate and its soundness/completeness at the released stated status.",
+      "convention": "Retain the baseline restricted-converse dependency. Positivity, square reduced denominator and local square classes at2,3,17 remain required for completeness. Finite checks do not reprove RC."
+    },
+    {
+      "id": "I_NORM",
+      "inventory": "baseline_quartic_inventory",
+      "statement": "Constant-left ramified norm-tree soundness and sufficiently deep leaf completeness for positive integer leaf orders.",
+      "convention": "Odd negative raw valuations are excluded before extracting positive orders. Keep the root-error constant-left branch and correction bits; zero nonconstant leaves are allowed."
+    },
+    {
+      "id": "I_CRT",
+      "inventory": "baseline_sieve_applications",
+      "also": [
+        "baseline_quartic_inventory"
+      ],
+      "labels": [
+        "subsec:o8-common-J-proof",
+        "subsec:o8-root-proof"
+      ],
+      "statement": "Common J, private h CRT choices and a common rational root approximation.",
+      "convention": "Use j equal to the least common multiple of second-place orders over all selected distinct primes and h=4 modulo p^(40+v_p(j)). Use the same-prime gcd4 condition, avoid0,+4,-4 for affine completeness, and choose theta after every actual field-test coefficient."
+    },
+    {
+      "id": "I_LUCAS",
+      "inventory": "baseline_manuscript",
+      "labels": [
+        "lem:o8-lucas"
+      ],
+      "statement": "If s,t,z are integers, a=|s|>=7, z!=0 and t^2-s(s-2)tz+(s-2)^2z^2=1, then |t|>exp(a-3); every eligible s has positive integer t,z solutions.",
+      "convention": "Use the stated lower bound for |t| after the first contradiction. Both B_L=max(|s|,|t|,|z|) and B=max(|n|,|s|,|t|,|z|) are at least |t|. No comparison between |z| and |t| is assumed."
+    },
+    {
+      "id": "I_RECIPROCAL",
+      "inventory": "baseline_quartic_inventory",
+      "labels": [
+        "lem:quartic-reciprocal-log",
+        "lem:quartic-reciprocal-nonzero",
+        "lem:quartic-compressed-primary"
+      ],
+      "statement": "Exact reciprocal differential identity, global G_J nonvanishing for J>=2, and compressed primary rational maps.",
+      "convention": "Released realized precisions16/64 do not by themselves accept a new circuit or source; general tail proof and each exact circuit output require binding."
+    }
+  ],
+  "additional_published_applications": [
+    {
+      "id": "P_DETERMINANT",
+      "relation_to_release": "additional explicit published application at the final modular form",
+      "sources": [
+        {
+          "title": "Diamond and Im, Modular forms and modular curves (1995)",
+          "url": "https://wstein.org/edu/Fall2003/252/references/diamond-im/Diamond-Im-Modular_forms_and_modular_curves.pdf",
+          "locator": "section12.5, equations12.5.1-12.5.2, Remark12.5.1, pp119-120",
+          "evidence_limit": "Indexed primary scan inspected; no new local full-PDF byte pin. A different OCR copy omits epsilon and must not be used for the determinant text."
+        }
+      ],
+      "statement": "det r=epsilon*chi_cyc for weight2 in arithmetic-Frobenius Tate convention.",
+      "conventions": [
+        "Use final primitive form after finite twist absorption.",
+        "Consistent dualization replaces finite character by inverse; order and kernel unchanged."
+      ],
+      "current_sites": [
+        {
+          "lines": [
+            8795,
+            8806
+          ],
+          "excerpt_sha256": "0da52263918636c67b28041116fee5da12032d9457c9c242405bc9bd7a6ffa85"
+        }
+      ],
+      "citation_keys": [
+        "diamond-im"
+      ]
+    },
+    {
+      "id": "P_MODULAR_FACTOR",
+      "relation_to_release": "published quotient/differential facts applied to the new intermediate modular curve",
+      "sources": [
+        {
+          "title": "Baker, Gonzalez-Jimenez, Gonzalez and Poonen, American Journal of Mathematics127(2005)",
+          "url": "https://math.mit.edu/~poonen/papers/finiteness.pdf",
+          "locator": "sections3.1 and3.2.1",
+          "evidence_limit": "Author copy identifies journal publication; section locators used, not unverified publisher pagination."
+        },
+        {
+          "title": "Mascot, Research in Number Theory8(2022),48",
+          "url": "https://link.springer.com/article/10.1007/s40993-022-00329-6",
+          "locator": "section2.1 equation2.1.8 and section2.2 equation2.2.1",
+          "evidence_limit": "Publisher HTML inspected. Printed reversed subgroup quotient2.1.4 is not used; neither is mod-l formula2.2.4."
+        },
+        {
+          "title": "Shimura, Journal of the Mathematical Society of Japan25(1973),523-544",
+          "url": "https://doi.org/10.2969/jmsj/02530523",
+          "locator": "Theorem1(i),(iv),p526",
+          "relation": "inherited newform quotient fact; corroborating citation"
+        }
+      ],
+      "statement": "Rational newform quotient has the all-conjugates differential span; rational diamonds act by nebentypus; X_H has the rational point-level quotient model.",
+      "conventions": [
+        "Kernel fixes entire conjugate orbit.",
+        "Effective diamond group used in push-pull; no spurious factor2 or cyclotomic field extension."
+      ],
+      "current_sites": [
+        {
+          "lines": [
+            8808,
+            8819
+          ],
+          "excerpt_sha256": "5c76bf57fc1f52b0ea595a9f3adaf86379374a077b126aa94997ea3fba6323a0"
+        },
+        {
+          "lines": [
+            8821,
+            8834
+          ],
+          "excerpt_sha256": "acf0c4f74f9796ff53b8e3a5bd185ab6138f3169827296f8ff51a420b88bbd69"
+        }
+      ],
+      "citation_keys": [
+        "baker-et-al-finiteness",
+        "mascot-moduli",
+        "shimura-factors"
+      ]
+    },
+    {
+      "id": "P_BELYI",
+      "relation_to_release": "inherited published height theorem applied to J_H instead of J1(N)",
+      "sources": [
+        {
+          "title": "Javanpeykar, Algebra & Number Theory8(2014),89-140",
+          "url": "https://doi.org/10.2140/ant.2014.8.89",
+          "locator": "Theorem1.1.1 and section2.3",
+          "local_sha256": "ec890fb41c58dee038ee2e06b530954f3aab85035238cd54a4c0ef081fcb8ea0"
+        },
+        {
+          "title": "von Kanel, Forum of Mathematics,Sigma9(2021),e39",
+          "url": "https://doi.org/10.1017/fms.2021.29",
+          "locator": "section4 equations4.1-4.2",
+          "local_sha256": "5749ce3a371c571655b44174e2a0d65c2e53dc179f518f0e52d585ff73da46f9"
+        }
+      ],
+      "statement": "h_F(Jac X)<=13000000*g*deg_B(X)^5, with modular degree/index conventions.",
+      "conventions": [
+        "Original stable Faltings normalization.",
+        "Generic congruence subgroup; no squarefree-level or trivial-nebentypus restriction."
+      ],
+      "inherited_application_ids": [
+        "A014"
+      ],
+      "current_sites": [
+        {
+          "lines": [
+            8856,
+            8878
+          ],
+          "excerpt_sha256": "365e46e47d5a9433d7e0088b277d2052614b7b272523573ac6cbd8027d904f14"
+        },
+        {
+          "lines": [
+            8880,
+            8909
+          ],
+          "excerpt_sha256": "fdec9388f6ae6fb408ed8453eb5b183d719fa1a1d7e2ea711b250daf952b4eb2"
+        }
+      ],
+      "citation_keys": [
+        "javanpeykar",
+        "vonKaenel2021"
+      ]
+    },
+    {
+      "id": "P_TRANSFER",
+      "relation_to_release": "reuse of inherited applications with source J_H",
+      "inherited_inventory": "baseline_applications",
+      "application_ids": [
+        "A063"
+      ],
+      "sources": [
+        {
+          "title": "Gaudron-Remond, Memoires SMF176(2023)",
+          "url": "https://doi.org/10.24033/msmf.484",
+          "locator": "section1.5,Theorem1.9(1),pp7-8",
+          "local_sha256": "b1e2e32bec626cf6d27fb7d6d8702b5c707e0c3dc002d979088e62d8cda514a4"
+        },
+        {
+          "title": "von Kanel2021",
+          "url": "https://doi.org/10.1017/fms.2021.29",
+          "locator": "equation2.2,p5"
+        }
+      ],
+      "statement": "Faltings Hom and Poincare over L' give A times Z isogenous to J_H; general isogeny-height variation and Bost bound control h_F(A).",
+      "conventions": [
+        "Apply Xi to source J_H over same L'.",
+        "No chosen polarization-degree bound on A or Z.",
+        "Include complement lower bound and zero complement case."
+      ],
+      "inventory_warning": "The frozen baseline A015 describes a 2014 isogeny application. The authoritative current source for the reused 2023 general estimate is released LT3/current-proof, not an assertion that A015 already contains the 2023 locator.",
+      "current_sites": [
+        {
+          "lines": [
+            8880,
+            8909
+          ],
+          "excerpt_sha256": "fdec9388f6ae6fb408ed8453eb5b183d719fa1a1d7e2ea711b250daf952b4eb2"
+        }
+      ],
+      "citation_keys": [
+        "GaudronRemond2023"
+      ]
+    }
+  ],
+  "source_version_requirements": [
+    {
+      "id": "V1",
+      "text": "Preserve current-proof and assumption-status qualifications. Restricted converse and baseline arithmetic retain their stated proof status; numerical or finite checks do not upgrade them."
+    },
+    {
+      "id": "V2",
+      "text": "Prime-pattern sources include published GT/MN/GI plus inherited arXiv1009.3998v5(23Apr2026) and author erratum conventions. They are inherited correction/version inputs, not newly introduced unpublished theorems. Do not claim a published-only proof with no such qualification."
+    },
+    {
+      "id": "V3",
+      "text": "Pan interface uses Calegari ICM2022 published2023 formulation pp611-612,624 and inspected Pan author theorem. No comparison with inaccessible Pan journal full text is claimed."
+    },
+    {
+      "id": "V4",
+      "text": "Yuan geometry/metric evidence includes the author-attested English translation of the published Chinese text; no direct Chinese-typesetting comparison is claimed."
+    },
+    {
+      "id": "V5",
+      "text": "Preserve exact original stable Faltings metric, Tate/arithmetic-Frobenius convention, effective diamond quotient, and final primitive-form twist."
+    }
+  ],
+  "scope": "Current Version3 source and finite artifact. Historical reviews retain original objects, versions and qualifications."
+}

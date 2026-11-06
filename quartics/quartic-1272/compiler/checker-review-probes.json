@@ -1,0 +1,52 @@
+{
+  "checkerSha256": "50f9924557f0594a0ddb2664260d2e382d80762a0d607d87203fb7ddfb4e1cb1",
+  "observations": [
+    {
+      "name": "degree-growing elimination is rejected",
+      "expectedReject": true,
+      "rejected": true,
+      "matchesExpectation": true,
+      "error": "elimination increases residual degree above two"
+    },
+    {
+      "name": "valid paired field quotient is accepted",
+      "expectedReject": false,
+      "rejected": false,
+      "matchesExpectation": true,
+      "error": null
+    },
+    {
+      "name": "missing field quotient mate is rejected",
+      "expectedReject": true,
+      "rejected": true,
+      "matchesExpectation": true,
+      "error": "field quotient missing unique mate"
+    },
+    {
+      "name": "wrong field quotient component is rejected",
+      "expectedReject": true,
+      "rejected": true,
+      "matchesExpectation": true,
+      "error": "field quotient missing unique mate"
+    },
+    {
+      "name": "field quotient omitted dependency is rejected",
+      "expectedReject": true,
+      "rejected": true,
+      "matchesExpectation": true,
+      "error": "gate dependency list is not exact"
+    },
+    {
+      "name": "renamed quartic coordinate metadata",
+      "rejected": true,
+      "algebraUnaffected": true
+    },
+    {
+      "name": "parameter exponent overflow is rejected",
+      "expectedReject": true,
+      "rejected": true,
+      "matchesExpectation": true,
+      "error": "S exponent arithmetic overflow"
+    }
+  ]
+}

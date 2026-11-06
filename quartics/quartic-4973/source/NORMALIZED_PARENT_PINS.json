@@ -1,0 +1,12 @@
+{
+  "audit_sha256": "386b3cb8a9b33ebeb8f7de0c3793d0e291da3f5192074257263450d1484fcc2a",
+  "construction_map_sha256": "b81a122bb0793c35dc53c333f3ae92914e024669f53f2fc03847bc7c93dd2ca8",
+  "entry_sha256": "6bab62478d9cb5d200ce21e3190235e24794baf0ed1e4dc972bd97810a9f1abc",
+  "files": {
+    "modules/q_compare4.json": "924daadfdb5fb9f13b9e06fc7e457f224115d2e34801c070810d3ab5eef310c4",
+    "modules/q_compare_lucas.json": "a9157980855175cc0072f63c193c43f31c1350d850fdaeb3569d75e738229feb"
+  },
+  "packet_manifest_sha256": "47c72e39f589523d92041c6f5af26935b9efb126d0daeb3513b142c985876892",
+  "source_id": "joint-chart-normalized-lucas-conic-anchor4-k40-q12-a25-h19-s32-306c44519001",
+  "source_sha256": "be7a7508e75a67d7570c6f974caca7af7f30004bd0a34c2dc4ac3bd17d75a2bb"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS: ACTUAL RELEASE GATE",
+  "frozen_certificate_sha256": "8aaa2249eda6972c441d58b212ec64a53e1202d5e9f74ea4cbc53e7e3f71a0bd",
+  "regenerated_certificate_sha256": "bdf4765cd001cf36e265ce964ace7cb045f1e74885e86d4425f78bbe89467ada",
+  "receipt_sha256": "a093c3eb8d62926ab86bf3afa5d4b73fde414d191142499369113f1cc54ad80a",
+  "scope": "Actual checkout proof and receipt bytes, with proposed release descriptor in memory. Only final.report.seconds ignored. No polynomial expansion, reproduction or Git-per-file preparation run."
+}

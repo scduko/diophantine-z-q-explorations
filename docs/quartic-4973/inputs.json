@@ -1,0 +1,122 @@
+{
+  "graph": {
+    "path": "work/quartic-sub10000-20261106/batching/sub5000/publication-readiness-v2/LEMMAS.json",
+    "sha256": "07e1644b68a64e382fb56b8e64a1854e027a9ea3c91d400cf72dcd72743b317a",
+    "bytes": 8508
+  },
+  "proof_pins": {
+    "path": "work/quartic-sub10000-20261106/batching/sub5000/publication-readiness-v2/PROOF_PINS.json",
+    "sha256": "d971fd00f0f8efe9f40d171361de4b2e5c5a681dbcf5beef9fb94d5f7bc17664",
+    "bytes": 21994
+  },
+  "consumption": {
+    "path": "work/quartic-sub10000-20261106/batching/sub5000/publication-readiness-v2/CURRENT_CONSUMPTION.json",
+    "sha256": "e6b8e022b779223502c7303d7693fbffb85b5aad2923216b0f137e34b6defe7c",
+    "bytes": 5934
+  },
+  "publications": {
+    "path": "work/quartic-sub10000-20261106/batching/sub5000/publication-readiness-v2/PUBLISHED_APPLICATIONS.json",
+    "sha256": "6060ed883daed4ba8c18fc39dcc94785a80ecce1e353558adbc2c90a903e1be7",
+    "bytes": 1613
+  },
+  "v2_manifest": {
+    "path": "work/quartic-sub10000-20261106/batching/sub5000/publication-readiness-v2/MANIFEST.json",
+    "sha256": "6d3f2dfd6bea4abe5db2c217a43aa3cdf1d7d8702db36dfa83e71f1d0eb9dc63",
+    "bytes": 1395
+  },
+  "v2_review": {
+    "path": "work/quartic-sub10000-20261106/parity/sub5000/publication-review/V2_CONSISTENCY.md",
+    "sha256": "f2bb89a5ded7c7f50b9f0cea17d7eeb3388e2b83198a5dce89f2ed36736b2d2c",
+    "bytes": 1471
+  },
+  "v3_inventory": {
+    "path": "work/quartic-sub10000-release/repository/docs/quartic-9625/theorem-applications.json",
+    "sha256": "249279512a7871e97ab216067ed82ea772676dbf722cd6933976f004ff1d0e99",
+    "bytes": 44774
+  },
+  "v3_bridge": {
+    "path": "work/quartic-sub10000-release/repository/docs/quartic-9625/baseline-bridge.json",
+    "sha256": "0f1949e8e91b95c7f8dfbb828d60881425b3d1b2ae0745fe37f4e5b776b8d6d3",
+    "bytes": 195753
+  },
+  "v3_manuscript": {
+    "path": "work/quartic-sub10000-release/repository/quartic_9625.tex",
+    "sha256": "dc77c88b5cc0819201343dc85d0891d4dad81d97ac3267ec1df34eb38003b552",
+    "bytes": 697804
+  },
+  "v3_closure": {
+    "path": "work/quartic-sub10000-release/repository/docs/quartic-9625/dependency-closure.json",
+    "sha256": "60ddf7f190cd2a2b1c49058e4c537753ac8647a75167460a82012a4679615af9",
+    "bytes": 12968
+  },
+  "draft": {
+    "path": "work/quartic-sub10000-20261106/precision/sub5000/publication-draft/revision-3/CONTENT.tex",
+    "sha256": "e67b256be73b41fca2e74958ebf0f9749e78f5d98f0c05c06118d3d156defc85",
+    "bytes": 39571
+  },
+  "draft_bindings": {
+    "path": "work/quartic-sub10000-20261106/precision/sub5000/publication-draft/revision-3/DRAFT_BINDINGS.json",
+    "sha256": "b404299941e2e92584c5a2badecd694d170bad8e1dfa0f27564e636074038e05",
+    "bytes": 8281
+  },
+  "draft_review": {
+    "path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/PUBLICATION_DRAFT_R3_REVIEW.md",
+    "sha256": "5e07d2c82212b384cf7b5c378cae081f80dfdc656a2663638751c5d5d681802f",
+    "bytes": 6375
+  },
+  "draft_review_first": {
+    "path": "work/quartic-sub10000-20261106/parity/sub5000/publication-review/DRAFT_R3_FIRST_HALF_PASS.md",
+    "sha256": "74f9394d74ef637aff48a24e9a39eefa0491c7c977945c4aefcaaa0875806d88",
+    "bytes": 2992
+  },
+  "draft_review_second": {
+    "path": "work/quartic-sub10000-20261106/charts/sub5000/publication-review/REVISION_3_REVIEW.md",
+    "sha256": "ac13a96a185b26c7384efa6b649b2943e15c1850eae35f0dcc156f7f9e7dd32b",
+    "bytes": 2302
+  },
+  "source_auditor_policy": {
+    "path": "work/quartic-sub10000-20261106/source-pipeline/sub5000/target2-tangent-first-norm/AUDITOR_PIN.json",
+    "sha256": "b7f33e4abc46a1250d993e519664db8d910c8f3491017807e8bc92303cd87c2c",
+    "bytes": 2196
+  },
+  "active_source_contract": {
+    "path": "work/quartic-sub10000-20261106/source-pipeline/sub5000/target2-tangent-first-norm/ROOT_SHARED_CONTRACT.json",
+    "sha256": "73e17ecc19a797ce442412549931ff11e43f42ebff9c48e1b2c636ff2d839a8c",
+    "bytes": 4206
+  },
+  "integrated_appendix": {
+    "path": "work/quartic-sub5000-release/INTEGRATED_APPENDIX.tex",
+    "sha256": "3d59f71d31c894b5641b8e806e421c9aee599ff50201fc598f725b12c49832ad",
+    "bytes": 38350
+  },
+  "integration_changes": {
+    "path": "work/quartic-sub5000-release/APPENDIX_INTEGRATION.diff",
+    "sha256": "494863e03209555ad624f0b5f6d5ffcf8a7bf8915a1c36599e459d7fe152ea1a",
+    "bytes": 10688
+  },
+  "integration_script": {
+    "path": "work/quartic-sub10000-20261106/precision/sub5000/manuscript-integration/integrate.py",
+    "sha256": "86f88bf9a6a0d24556681a109c658ef240fbaa682a4bde666292afa2bee92021",
+    "bytes": 29653
+  },
+  "integration_splice_plan": {
+    "path": "work/quartic-sub10000-20261106/charts/sub5000/publication-review/SPLICE_PLAN.md",
+    "sha256": "9c2d96907d294aa212d63d6e6fe8cb1993b64a1b2bce13bc4e37a60640907a9d",
+    "bytes": 14139
+  },
+  "integration_transplants": {
+    "path": "work/quartic-sub10000-20261106/precision/sub5000/manuscript-integration/TRANSPLANTS.tex",
+    "sha256": "76e7366155339fcc0e6287b6fb837166de5e29c15155b4eac0c851985afdb697",
+    "bytes": 1284
+  },
+  "integration_scalar": {
+    "path": "work/quartic-sub10000-20261106/precision/sub5000/manuscript-integration/SCALAR_BOUND.tex",
+    "sha256": "c50a22d7b18aeb10464ea94cfdcc039d75c42684b0fca2ac83ebf4678d0e83cb",
+    "bytes": 1146
+  },
+  "integration_review": {
+    "path": "work/quartic-sub5000-release/INTEGRATION_REVIEW.md",
+    "sha256": "3bbd751dbddbc7a1f9551edb4bfe6f4677b496234bc7af37a314f1c1b69bdfc7",
+    "bytes": 5149
+  }
+}

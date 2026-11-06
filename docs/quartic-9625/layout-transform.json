@@ -1,0 +1,14 @@
+{
+  "original_patch_sha256": "da4d0239d33a344152481958a5e09d6737691dec40f5e78d6d654a08fd89172b",
+  "original_body_sha256": "295fb7b4f0466e2cf39bb5f92b5e9fd2c4a535b5d8ebf10b22839ac99780609a",
+  "current_body_sha256": "99621365fb874fb6eb0af3aa0eb9804285c6db4bdb313c1e866a9fc75f654d7d",
+  "transformations": [
+    {
+      "id": "split-contact-constants-display",
+      "old": " \\qquad A_i=R_{\\rm c}a_i+3,\\quad w_i=A_iv-u.",
+      "new": "\\]\n\\[\n A_i=R_{\\rm c}a_i+3,\\quad w_i=A_iv-u.",
+      "reason": "Split one overflowing display; remove only its leading horizontal-space command. Mathematical tokens unchanged."
+    }
+  ],
+  "scope": "Explicit reviewed layout edit only; original proof/review hashes are preserved."
+}

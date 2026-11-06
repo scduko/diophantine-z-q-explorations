@@ -1,0 +1,35 @@
+# Target-two implementation and composition review
+
+2026-11-06. **PASS for the exact small-module implementation and typed composition.** Whole-source generation, full flattening, replay, and polynomial expansion remain separate gates.
+
+The reviewed author contract is `precision/sub5000/target-two/CONTRACT.md`, SHA `8e42299e4d281ecab724868d39eeb21589957c971516296500b942605ac0b711`. The producer is `target2_rewrite.py`, SHA `fa53e47698aaa11ddaf1383f74fb690fb69557c696064c8fd036893660c7c799`; the independent literal auditor is `charts/sub5000/root-target2/audit_target2.py`, SHA `b2737e3575ad8512dcc33c6c1d84f38178172e53b5d786193d8eed5c1df886c3`. The auditor's required base checker is the already reviewed `05fa04d6016212cdfde1613ce3c265f984cfa6f4adcc48737e714269dbbb01b2`. The outer caller must pin that dependency; accepting an arbitrary object as the base checker is outside the audited interface.
+
+The mathematical change was reviewed separately in `TARGET_TWO_REVIEW.md`, SHA `d5048cc8ac8944d26c8af6d9b8cfcdd672ddee1beed73efaf3d634a53b012155`, against proof `cfc62097ffdbf072fe77524f7e0448356812712689394ca22dfc4a0fd64b7feb`. This implementation review checks the actual row and call changes, rather than treating that mathematical PASS as evidence for an emitted source.
+
+The author's machine contract `precision/sub5000/target-two/SOURCE_CONTRACT.json`, SHA `510ee91c4777c4e8ae4343622817b90e30a20e7507ec83fa7a26bc8b50d581c7`, was also read. Its pins, counts, index conventions and pending whole-source qualifications agree with this review.
+
+## Field constants and maps
+
+I independently doubled `R=(1+sqrt(2),2sqrt(2))` on `y^2=x^3-(11-6sqrt(2))x`, obtaining the stated `Pstar` abscissa and ordinate. From these I recomputed `F=1/x`, `q=y/x`, `s=(x+D F)/q`, `t=1/q^2`, and the conjugated multipliers for `r=J/conj(q)` and `u=J*conj(s/q)`. All agree exactly with the ten constant bindings and four affine bindings. Here J in a field binding is the reciprocal of the conjugated formal parameter of the root point, not an integer group index. The coefficient denominators have support only at 2,3,7,17,41, below the unchanged ordinary-prime cutoff. The fixed constant record is `2a52cbd19d92fedcf75b94e0cc0bc11673fd40775fde83cec621ba23c7b93c62`.
+
+For each variable target the first retained doubling has square `q=x^2`, inverse of `2y`, slope `lambda=(3q-D)/(2y)`, square `L=lambda^2`, and product `M=lambda(3x-L)`. Its replacement target equations are precisely `x2=L-2x`, `y2=M-y`. The first doubling supplies the same square pair used by the smaller root curve chart. Thus deleting the second doubling does not remove the square or its nonzero tangent premise. The retained first inverse excludes all 2-torsion roots; the root carrier is the reviewed nontorsion E(K).
+
+The new target formulas preserve the original input coordinate and give both directions of the source assignment: a new root solution reconstructs points, their doubles and all fixed target data; points selected by the target-two completeness argument extend to the displayed equations. An arbitrary target-four witness is not claimed to map to a target-two witness.
+
+## Index and completeness checks
+
+The source still has integer doubled root indices `2Q_i=n_i Pstar`, beta comparison `C_A-2 beta`, unchanged scalar polynomial in `beta=X^2+2`, and effective height constant `5H19`. The target multiplier is now 2, so alternate tests compare `(h-2)/j_d` and `(m_i-2n_i)/j_d`, where the arbitrary soundness point satisfies `2J=j_d Pstar`. Since `j_d` is an integer and the consumed prime is odd, the resulting `h=2 mod p^40` is a unit and the primary ratio approximates `n_i` to its required order. The private half-integer coefficient convention has not been mistaken for the integer doubled root index.
+
+For completeness `N_i` remains the full order of E(F_p), not an image or cyclic-factor order. The full rational two-torsion has order four, giving the image subgroup order `M_i=N_i/4`. Inherited `gcd(N1,N2)=4` gives `gcd(M1,M2)=1`. The chosen points lie in these doubling images, which is all the proof needs; no global reduction surjectivity or cyclicity is asserted. The common point is `J=j_c Pstar`, with `j_c=lcm M_(p,2)`, hence `j_d=2j_c`. Private multipliers satisfy the three compatible congruences stated in the typed contract. There is no CRT across different primes' group-order moduli for a shared numerator point.
+
+The root abscissas used by the height argument, every raw contact, normalized-Lucas finite prime avoidance, and the order of choosing points before private conic parameters are unchanged. Soundness permits each occurrence's own conic-selected split orientation; completeness may choose a common orientation for a repeated prime. The exact shared-square layer preserves W and introduces no new orientation or nonvanishing requirement.
+
+## Implementation and independent checker
+
+The producer requires the four actual normalized-ten parent hashes. It rejects any retained row or call using a deleted coordinate, reindexes every live metadata field, and leaves historical proxy provenance historical. Relative to that root it removes 130 coordinates and 142 rows, adds four k coordinates and sixteen curve rows, and replaces thirty rows. The result has 218 local root coordinates, 203 root rows and 39 calls. The shared-square pass then gives 220 local coordinates and 205 rows. These are source-module counts, not a final polynomial count.
+
+The literal checker imports no producer. It derives the reviewed target-four root independently, applies a separately stated scalar thirty-row delta, removes the exact forty second-doubling coordinates and rows, and compares the entire result including calls, labels, metadata and provenance. Its explicit variable and equation coverage checks prevent undeclared or unverified residue. The three comparison checks preserve the exact beta changes and set the target-two metadata. Every other module must still be compared to the selected parent by the outer checker.
+
+I ran the small auditor fixture against the actual normalized-ten parent and the pinned producer: 112 semantic mutations and one resource-propagation case passed. I also independently computed all fixed constants, checked deletion incidence, and composed target2 plus the unchanged shared-square pass through the independent restore/check callbacks. Both tests passed. Their receipts are `TARGET2_LITERAL_CHECK.json` and `TARGET2_INTERFACE_CHECK.json`; the independent field/interface script is `check_target2_interface.py`. No source flattening or replay was run.
+
+`TARGET2_COMPOSITION_CONTRACT.json` records the exact typed override for the proposed target2 family. Target-four-only fixed constants, retained fixed equations, multiplier choices, counts, and isolated SOS estimates must be labeled superseded, rather than silently inherited as current obligations. The general-E charts, beta factor, height argument, and scalar/anchor obligations remain inherited. No defect was found in the reviewed implementation; acceptance of a complete new source remains pending.

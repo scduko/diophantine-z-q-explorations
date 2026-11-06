@@ -11,7 +11,7 @@ Archive of Formal Proofs, \emph{DPRM\_Theorem},
 \texttt{thys/DPRM\_Theorem/Diophantine/}, AFP development git mirror
 revision \texttt{b4f3b892d0ae25cea27412ba4007cdb63e44b0eb}
 (May 10, 2026). The three source files match this revision byte for byte.
-\url{https://isa-afp.org/entries/DPRM_Theorem.html}.
+<https://isa-afp.org/entries/DPRM_Theorem.html>.
 
 The three original local Isabelle files match AFP development mirror revision b4f3b892d0ae25cea27412ba4007cdb63e44b0eb, dated 2026-05-10T07:38:12Z. The additional modulo-definition dependency is pinned at the same revision. This authenticates the exact source revision; it does not infer the original retrieval date, an Isabelle release, a stable AFP release, or an Isabelle rebuild.
 
@@ -31,7 +31,7 @@ Pin status: **bytes_pinned**.
 S. Baba and H. Granath,
 \emph{Genus 2 curves with quaternionic multiplication}, 2005 preprint,
 Sections 2.1, 3 and Proposition 10.
-\url{https://webdoc.sub.gwdg.de/ebook/serien/e/mpi_mathematik/2005/18.pdf}.
+<https://webdoc.sub.gwdg.de/ebook/serien/e/mpi_mathematik/2005/18.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -45,7 +45,7 @@ Pin status: **bytes_pinned**.
 C. Breuil, B. Conrad, F. Diamond and R. Taylor,
 \emph{On the modularity of elliptic curves over $\Q$: wild 3-adic exercises},
 author manuscript, Theorem A and Introduction, conditions (1)--(6).
-\url{https://virtualmath1.stanford.edu/~conrad/papers/tswfinal.pdf}.
+<https://virtualmath1.stanford.edu/~conrad/papers/tswfinal.pdf>.
 Published in Journal of the American Mathematical Society 14 (2001), 843--939.
 
 Author manuscript of On the modularity of elliptic curves over Q: wild 3-adic exercises. Its date line contains placeholders (? 2000; ? January 2001). Exact bytes are pinned, but equivalence to the final 2001 JAMS article has not been independently checked. Author typeset manuscript; journal and received-date placeholders, not publisher final
@@ -62,7 +62,7 @@ Pin status: **bytes_pinned**.
 L. Berger, \emph{Repr\'esentations $p$-adiques et
 \'equations diff\'erentielles}, Inventiones Mathematicae 148 (2002),
 219--284, $p$-adic monodromy theorem.
-\url{https://doi.org/10.1007/s002220100202}.
+<https://doi.org/10.1007/s002220100202>.
 
 The author article has Theorem 0.7/Corollary 5.22; arXiv v3 has Theorems 0.6/5.19. Both files are separately pinned. Do not transfer numbering.
 
@@ -80,7 +80,7 @@ Pin status: **bytes_pinned**.
 D. Bump, S. Friedberg and J. Hoffstein,
 \emph{Nonvanishing theorems for $L$-functions of modular forms and their
 derivatives}, Inventiones Mathematicae 102 (1990), 543--618.
-\url{https://wstein.org/papers/bib/bump-friedberg-hoffstein-nonvanishing.pdf}.
+<https://wstein.org/papers/bib/bump-friedberg-hoffstein-nonvanishing.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -95,7 +95,7 @@ M. A. Bennett, G. Martin, K. O'Bryant and A. Rechnitzer,
 \emph{Explicit bounds for primes in arithmetic progressions},
 Illinois Journal of Mathematics 62 (2018), 427--532,
 arXiv:1802.00085v3, Theorem 1.2.
-\url{https://arxiv.org/abs/1802.00085v3}.
+<https://arxiv.org/abs/1802.00085v3>.
 
 arXiv1802.00085v3, 27 November2018, 103pp. Illinois J.Math.62 (2018),427-532,106pp. These statements/constants agree with v3; no claim of whole-document identity.
 
@@ -114,7 +114,7 @@ O. Brinon and B. Conrad,
 \emph{CMI summer school notes on $p$-adic Hodge theory},
 preliminary version, June 24, 2009,
 Theorem 5.2.1 and Propositions 6.3.3, 6.3.8.
-\url{https://math.stanford.edu/~conrad/papers/notes.pdf}.
+<https://math.stanford.edu/~conrad/papers/notes.pdf>.
 
 CMI Summer School Notes on p-adic Hodge Theory, preliminary version dated June 24, 2009. Supplementary exposition, not a published research article; do not classify all sources in this audit as published literature. CMI Summer School Notes on p-adic Hodge Theory, preliminary version dated June 24, 2009. Supplementary exposition, not a published research article; do not classify all sources in this audit as published literature.
 
@@ -131,7 +131,7 @@ Pin status: **bytes_pinned**.
 
 K. Buzzard, \emph{Integral models of certain Shimura
 curves}, 1996, corrected 2002, Theorem 2.1 and Corollary 2.3.
-\url{https://www.ma.imperial.ac.uk/~buzzard/maths/research/papers/shimura.pdf}.
+<https://www.ma.imperial.ac.uk/~buzzard/maths/research/papers/shimura.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -145,7 +145,7 @@ Pin status: **bytes_pinned**.
 H. Carayol, \emph{Sur les repr\'esentations
 $\ell$-adiques associ\'ees aux formes modulaires de Hilbert},
 Annales Scientifiques de l'\'Ecole Normale Sup\'erieure 19 (1986), 409--468,
-Theorem A. \url{https://www.numdam.org/item/ASENS_1986_4_19_3_409_0/}.
+Theorem A. <https://www.numdam.org/item/ASENS_1986_4_19_3_409_0/>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -171,7 +171,7 @@ Pin status: **bytes_pinned**.
 
 L. Cai, Y. Chen and Y. Liu, \emph{Heegner points on modular
 curves}, Transactions of the American Mathematical Society 370 (2018),
-3721--3743. \url{https://archive.ymsc.tsinghua.edu.cn/pacm_download/632/12220-Heegner_points_on_modular_curves.pdf}.
+3721--3743. <https://archive.ymsc.tsinghua.edu.cn/pacm_download/632/12220-Heegner_points_on_modular_curves.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -186,7 +186,7 @@ A. Barquero-Sanchez, L. Cadwallader, O. Cannon,
 T. Genao and R. Masri, \emph{Faltings heights of CM elliptic curves
 and special Gamma values}, Research in Number Theory 3 (2017),
 article 13, Section 6, equation (6.2).
-\url{https://doi.org/10.1007/s40993-017-0077-7}.
+<https://doi.org/10.1007/s40993-017-0077-7>.
 
 Published Research in Number Theory3 (2017),article13,16pages.
 
@@ -204,7 +204,7 @@ Pin status: **bytes_pinned**.
 B. Conrad,
 \emph{Lifting global representations with local properties},
 author preprint, December 11, 2011, Appendix B, pp.~32--33.
-\url{https://math.stanford.edu/~conrad/papers/locchar.pdf}.
+<https://math.stanford.edu/~conrad/papers/locchar.pdf>.
 
 Original downloaded bytes; exact retrieval recorded in downloads.json.
 
@@ -217,7 +217,7 @@ Pin status: **bytes_pinned**.
 
 C. Cornut and D. Jetchev,
 \emph{Liftings of reduction maps for quaternion algebras}, 2010 preprint.
-\url{https://webusers.imj-prg.fr/~christophe.cornut/papers/liftings.pdf}.
+<https://webusers.imj-prg.fr/~christophe.cornut/papers/liftings.pdf>.
 
 Two author versions are pinned. Prior comparison found the used statements equivalent; publisher PDF equivalence remains unverified. Bibliography explicitly cites 2010 preprint.
 
@@ -244,7 +244,7 @@ Pin status: **bytes_pinned**.
 
 L. Cai, J. Shu and Y. Tian, \emph{Explicit Gross--Zagier
 and Waldspurger formulae}, Algebra \& Number Theory 8 (2014).
-\url{https://arxiv.org/abs/1408.1733}.
+<https://arxiv.org/abs/1408.1733>.
 
 Prior audit records cached PDF equality with publisher PDF, SHA256 3eef3f34a03d21575bdb352acfaa0bef2fbe3701068a65798cb89a6ae84333e7.
 
@@ -258,7 +258,7 @@ Pin status: **bytes_pinned**.
 T. Dokchitser and V. Dokchitser, \emph{Root numbers and parity
 of ranks of elliptic curves}, Journal f\"ur die reine und angewandte
 Mathematik 658 (2011), 39--64, Theorem 1.8.
-\url{https://arxiv.org/abs/0906.1815v1}.
+<https://arxiv.org/abs/0906.1815v1>.
 
 Consulted arXiv:0906.1815v1; bibliography also names 2011 journal. Exact publisher equivalence is unverified. Use Theorem 1.8, not the finite-Sha statement 1.2.
 
@@ -271,7 +271,7 @@ Pin status: **bytes_pinned**.
 
 J. Desjardins, \emph{Root number of twists of an
 elliptic curve}, Journal de Th\'eorie des Nombres de Bordeaux
-32 (2020), 73--101. \url{https://jtnb.centre-mersenne.org/item/10.5802/jtnb.1112.pdf}.
+32 (2020), 73--101. <https://jtnb.centre-mersenne.org/item/10.5802/jtnb.1112.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -285,7 +285,7 @@ Pin status: **bytes_pinned**.
 B. Edixhoven, \emph{N\'eron models and tame ramification},
 Compositio Mathematica 81 (1992), 291--306,
 Theorem~5.3 and Remark~5.4.1.
-\url{https://www.numdam.org/item/CM_1992__81_3_291_0/}.
+<https://www.numdam.org/item/CM_1992__81_3_291_0/>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -298,7 +298,7 @@ Pin status: **bytes_pinned**.
 
 R. Elkik, \emph{Le th\'eor\`eme de Manin--Drinfeld},
 Ast\'erisque 183 (1990), 59--67, Theorem, p.~59.
-\url{https://www.numdam.org/item/AST_1990__183__59_0.pdf}.
+<https://www.numdam.org/item/AST_1990__183__59_0.pdf>.
 
 Published Asterisque 183 (1990) pp.59-67, Numdam scan
 
@@ -352,7 +352,7 @@ G. Fowler, \emph{Some uniform effective results on
 Andr\'e--Oort for sums of powers in $\mathbb C^n$}, Mathematical
 Proceedings of the Cambridge Philosophical Society 180 (2026),
 607--641, Proposition 2.7.
-\url{https://doi.org/10.1017/S0305004125101825}.
+<https://doi.org/10.1017/S0305004125101825>.
 
 Published Mathematical Proceedings of the Cambridge Philosophical Society 180 (2026), 607-641, first online January 13, 2026. The publisher PDF was retrieved on 2026-11-05. Section 2.1 is on printed pp.612-613, PDF pp.6-7; Proposition 2.7 is on printed pp.615-616, PDF pp.9-10. These page correspondences were checked.
 
@@ -370,7 +370,7 @@ Pin status: **bytes_pinned**.
 \'E. Gaudron and G. R\'emond,
 \emph{Polarisations et isog\'enies}, Duke Mathematical Journal
 163 (2014), 2057--2108, Theorem 1.4 and Section 9.
-\url{https://doi.org/10.1215/00127094-2782528}.
+<https://doi.org/10.1215/00127094-2782528>.
 
 Published Duke163 (2014),2057-2108,52pages.
 
@@ -383,7 +383,7 @@ Pin status: **bytes_pinned**.
 
 B. Green and T. Tao, \emph{Linear equations in primes},
 Annals of Mathematics 171 (2010), 1753--1850.
-\url{https://annals.math.princeton.edu/2010/171-3/p08}.
+<https://annals.math.princeton.edu/2010/171-3/p08>.
 
 Annals171 (2010), published PDF; main theorem is unnumbered.
 
@@ -398,8 +398,8 @@ Pin status: **bytes_pinned**.
 
 B. Green, T. Tao and T. Ziegler, \emph{An inverse theorem
 for the Gowers $U^{s+1}[N]$-norm}, arXiv:1009.3998v5, 2026 corrected version.
-\url{https://arxiv.org/abs/1009.3998v5}; author erratum:
-\url{https://people.maths.ox.ac.uk/greenbj/papers/GI(s)-erratum.pdf}.
+<https://arxiv.org/abs/1009.3998v5>; author erratum:
+<https://people.maths.ox.ac.uk/greenbj/papers/GI(s)-erratum.pdf>.
 
 The actual input is corrected arXiv:1009.3998v5 (23 April 2026), together with the separate author erratum. Do not describe the input as only the 2012 printed article. arXiv1009.3998v5, 23 April2026, 116pp. Repairs filtration in Lemma13.2 but retains original Proposition8.3; separate erratum still required. Not a claim that v5 alone contains every correction. Separate six-page author erratum, 2024; needed together with v5. Original Proposition8.3 is false as stated.
 
@@ -430,7 +430,7 @@ Pin status: **bytes_pinned**.
 
 J. Hoffstein and W. Luo, \emph{Nonvanishing of $L$-series and
 the combinatorial sieve}, Mathematical Research Letters 4 (1997), 435--444.
-\url{https://intlpress.com/site/pub/files/_fulltext/journals/mrl/1997/0004/0003/MRL-1997-0004-0003-a012.pdf}.
+<https://intlpress.com/site/pub/files/_fulltext/journals/mrl/1997/0004/0003/MRL-1997-0004-0003-a012.pdf>.
 
 The cached PDF contains the main article pp.435–442. It does not contain Rohrlich’s separate appendix pp.443–444; no application here is assigned to that appendix.
 
@@ -457,7 +457,7 @@ A. Javanpeykar, with an appendix by P. Bruin,
 \emph{Polynomial bounds for Arakelov invariants of Belyi curves},
 Algebra \& Number Theory 8 (2014), 89--140,
 Theorem 1.1.1 and Section 2.3.
-\url{https://doi.org/10.2140/ant.2014.8.89}.
+<https://doi.org/10.2140/ant.2014.8.89>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -472,7 +472,7 @@ Pin status: **bytes_pinned**.
 D. Jetchev and B. Kane,
 \emph{Equidistribution of Heegner Points and Ternary Quadratic Forms},
 arXiv:0908.3905 (2009), Sections 1.1--1.2 and 2.5.
-\url{https://arxiv.org/abs/0908.3905}.
+<https://arxiv.org/abs/0908.3905>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -485,7 +485,7 @@ Pin status: **bytes_pinned**.
 
 K. Kato, \emph{$p$-adic Hodge theory and values of zeta
 functions of modular forms}, Ast\'erisque 295 (2004), 117--290.
-\url{https://www.numdam.org/article/AST_2004__295__117_0.pdf}.
+<https://www.numdam.org/article/AST_2004__295__117_0.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -511,7 +511,7 @@ V. A. Kolyvagin,
 \emph{On the Mordell--Weil group and the Shafarevich--Tate group
 of modular elliptic curves}, MPIM preprint MPI/90-69 (1990),
 Theorems 1--5, pp.~4--5.
-\url{https://archive.mpim-bonn.mpg.de/id/eprint/325/1/preprint_1990_69.pdf}.
+<https://archive.mpim-bonn.mpg.de/id/eprint/325/1/preprint_1990_69.pdf>.
 
 Inspected MPI/90-69 (1990), On the Mordell-Weil group and the Shafarevich-Tate group of modular elliptic curves. Theorem 1 is printed p.4; its explanation and auxiliary-field chain continue pp.4-5. This pinned file is not the Grothendieck Festschrift chapter Euler systems; no equivalence to that different text is asserted.
 
@@ -559,7 +559,7 @@ Pin status: **bytes_pinned**.
 
 Y.-H. Lin and Y. Yang, \emph{Quaternionic loci in
 Siegel's modular threefold}, arXiv:1807.00466v1, 2018, equations (2), (14).
-\url{https://arxiv.org/abs/1807.00466v1}.
+<https://arxiv.org/abs/1807.00466v1>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -573,7 +573,7 @@ Pin status: **bytes_pinned**.
 K. Lauter, M. Naehrig and T. Yang, \emph{Hilbert theta
 series and invariants of genus 2 curves}, Journal of Number Theory,
 2015, Section 2.2, doi:10.1016/j.jnt.2015.02.020.
-\url{https://people.math.wisc.edu/~tonghaiyang/2015-LNYFinal-JNT.pdf}.
+<https://people.math.wisc.edu/~tonghaiyang/2015-LNYFinal-JNT.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -588,7 +588,7 @@ Yu. V. Matiyasevich,
 \emph{Diophantine representation of enumerable predicates},
 Mathematics of the USSR-Izvestiya 5 (1971), 1--28,
 Basic Theorem, p.~3; integer-witness conversion, p.~2.
-\url{https://doi.org/10.1070/IM1971v005n01ABEH001004}.
+<https://doi.org/10.1070/IM1971v005n01ABEH001004>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -602,7 +602,7 @@ Pin status: **bytes_pinned**.
 B. Mazur,
 \emph{Speculations about the topology of rational points: an up-date},
 Ast\'erisque 228 (1995), 165--181, Conjecture 3, p.~165.
-\url{https://www.numdam.org/article/AST_1995__228__165_0.pdf}.
+<https://www.numdam.org/article/AST_1995__228__165_0.pdf>.
 
 Published Asterisque228 (1995),165-181; Numdam cover retained.
 
@@ -615,7 +615,7 @@ Pin status: **bytes_pinned**.
 
 J. S. Milne, \emph{Arithmetic duality theorems},
 second edition, 2006, Chapter I.
-\url{https://www.jmilne.org/math/Books/ADTnot.pdf}.
+<https://www.jmilne.org/math/Books/ADTnot.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -640,7 +640,7 @@ Pin status: **bytes_pinned**.
 
 J. S. Milne, \emph{Abelian varieties},
 version 2.00 (2008), Part I, Theorem 12.1(a).
-\url{https://www.jmilne.org/math/CourseNotes/AV.pdf}.
+<https://www.jmilne.org/math/CourseNotes/AV.pdf>.
 
 Abelian Varieties v2.00. Title page says March 16, 2008; version history says March 17, 2008. Exact bytes disambiguate the file. Proposition numbers include the part/chapter.
 
@@ -668,7 +668,7 @@ Pin status: **bytes_pinned**.
 
 J. S. Milne, \emph{Modular functions and modular forms},
 v1.31, March 22, 2017, Remark 11.18 and Theorem 11.19.
-\url{https://www.jmilne.org/math/CourseNotes/MF.pdf}.
+<https://www.jmilne.org/math/CourseNotes/MF.pdf>.
 
 Author notes v1.31, March 22, 2017
 
@@ -681,7 +681,7 @@ Pin status: **bytes_pinned**.
 
 B. Green and T. Tao, \emph{The M\"obius function is
 strongly orthogonal to nilsequences}, Annals of Mathematics 175 (2012).
-\url{https://annals.math.princeton.edu/2012/175-2/p03}.
+<https://annals.math.princeton.edu/2012/175-2/p03>.
 
 Annals175 (2012), published PDF.
 
@@ -696,7 +696,7 @@ Pin status: **bytes_pinned**.
 
 J. Nekov\'a\v r, \emph{Selmer complexes},
 Ast\'erisque 310, 2006, Proposition 5.2.4, Theorems 6.3.4 and 7.8.8, and Sections 5.7 and 6.4.
-\url{https://www.numdam.org/item/AST_2006__310__1_0/}.
+<https://www.numdam.org/item/AST_2006__310__1_0/>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -710,7 +710,7 @@ Pin status: **bytes_pinned**.
 OpenAI,
 \emph{Hilbert's tenth problem over the rational numbers},
 OpenAI Math Release preprint, 6 October 2026.
-\url{https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/main.pdf}.
+<https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/main.pdf>.
 
 Provenance citation. No theorem from this preprint is granted as an external assumption by the present manuscript; reconstructed arguments need their own audit.
 
@@ -723,7 +723,7 @@ L. Pan, \emph{The Fontaine--Mazur conjecture in the
 residually reducible case}, arXiv:1901.07166v2,
 Theorem 1.0.4, the version used here. Published in Journal of the
 American Mathematical Society 35 (2022), 1031--1169.
-\url{https://arxiv.org/abs/1901.07166v2}.
+<https://arxiv.org/abs/1901.07166v2>.
 
 The application uses the pinned arXiv:1901.07166v2, Theorem 1.0.4, as explicitly identified in the revised bibliography. The bibliography also records the later JAMS publication. Publisher bytes were not retrieved, and no publisher/preprint statement equivalence is asserted.
 
@@ -741,7 +741,7 @@ Pin status: **bytes_pinned**.
 F. Pazuki, \emph{Theta height and Faltings height},
 Bulletin de la Soci\'et\'e Math\'ematique de France, 2012,
 Sections 2.2--2.3 and Corollary 1.3.
-\url{https://www.numdam.org/item/10.24033/bsmf.2623.pdf}.
+<https://www.numdam.org/item/10.24033/bsmf.2623.pdf>.
 
 The previously pinned24-page file is an author version dated4February2012, not the33-page Numdam published file. Both bounded interfaces compared. Published Bull.Soc.Math.France140(1) (2012),19-49,33PDFpages including cover; differs from author-version bytes. Applied constants, metrics and coordinates agree; no whole-document identity claim.
 
@@ -757,7 +757,7 @@ Pin status: **bytes_pinned**.
 
 B. Poonen and M. Stoll, \emph{The Cassels--Tate
 pairing on polarized abelian varieties}, Annals of Mathematics 150
-(1999), 1109--1149. \url{https://math.mit.edu/~poonen/papers/sha.pdf}.
+(1999), 1109--1149. <https://math.mit.edu/~poonen/papers/sha.pdf>.
 
 Author version dated November 6, 1998 with minor correction August 23, 2014; states publication in Annals of Mathematics 150 (1999), pp.1109–1149. Locator page numbers in this audit refer to the corrected author version, not journal pagination.
 
@@ -770,7 +770,7 @@ Pin status: **bytes_pinned**.
 
 N. Ramsey, \emph{Geometric and $p$-adic modular forms
 of half-integral weight}, Annales de l'Institut Fourier 56 (2006),
-599--624. \url{https://www.numdam.org/item/10.5802/aif.2195.pdf}.
+599--624. <https://www.numdam.org/item/10.5802/aif.2195.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -784,7 +784,7 @@ Pin status: **bytes_pinned**.
 P. Scholze,
 \emph{$p$-adic Hodge theory for rigid-analytic varieties---corrigendum},
 Forum of Mathematics, Pi 4 (2016), e6, 1--4.
-\url{https://doi.org/10.1017/fmp.2016.4}.
+<https://doi.org/10.1017/fmp.2016.4>.
 
 Published Forum of Mathematics Pi 4 (2016), e6, four pages, DOI 10.1017/fmp.2016.4. Read with the 2013 article; the author version is retained separately. Published Forum of Mathematics Pi 4 (2016), e6, four pages, DOI 10.1017/fmp.2016.4. Read with the 2013 article; the author version is retained separately.
 
@@ -803,7 +803,7 @@ P. Scholze,
 \emph{$p$-adic Hodge theory for rigid-analytic varieties},
 Forum of Mathematics, Pi 1 (2013), e1, 1--77,
 Corollary 1.8 and Theorems 9.1, 9.3.
-\url{https://doi.org/10.1017/fmp.2013.1}.
+<https://doi.org/10.1017/fmp.2013.1>.
 
 Published Forum of Mathematics Pi 1 (2013), e1, 77 pages. Corollary 1.8 is on pp.5-6; Theorems 9.1 and 9.3 are on pp.74-75. The author version is also retained separately. The applied repair uses the published article with its published corrigendum. Published Forum of Mathematics Pi 1 (2013), e1, 77 pages. Corollary 1.8 is on pp.5-6; Theorems 9.1 and 9.3 are on pp.74-75. The author version is also retained separately. The applied repair uses the published article with its published corrigendum.
 
@@ -848,7 +848,7 @@ G. Shimura,
 \emph{On the factors of the jacobian variety of a modular function field},
 Journal of the Mathematical Society of Japan 25 (1973), 523--544,
 Theorem 1.
-\url{https://doi.org/10.2969/jmsj/02530523}.
+<https://doi.org/10.2969/jmsj/02530523>.
 
 Original downloaded bytes; exact retrieval recorded in downloads.json.
 
@@ -862,7 +862,7 @@ Pin status: **bytes_pinned**.
 A. Silverberg and Yu. G. Zarhin,
 \emph{Semistable reduction and torsion subgroups of abelian varieties},
 Annales de l'Institut Fourier 45 (1995), 403--420, Theorem 3.5.
-\url{https://www.numdam.org/article/AIF_1995__45_2_403_0.pdf}.
+<https://www.numdam.org/article/AIF_1995__45_2_403_0.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -952,8 +952,8 @@ The Stacks Project,
 \emph{Stalks of higher direct images} and \emph{The Leray spectral sequence},
 Theorem 59.53.1, Tag 03Q9, and Proposition 59.54.2, Section Tag 03QA,
 HTML snapshots of November 5, 2026.
-\url{https://stacks.math.columbia.edu/tag/03Q9};
-\url{https://stacks.math.columbia.edu/tag/03QA}.
+<https://stacks.math.columbia.edu/tag/03Q9>;
+<https://stacks.math.columbia.edu/tag/03QA>.
 
 Exact Stacks snapshots retrieved 2026-11-05 for higher direct image stalks and Leray.
 
@@ -969,7 +969,7 @@ Pin status: **bytes_pinned**.
 A. V. Sutherland,
 \emph{Isogeny kernels and division polynomials}, MIT 18.783,
 Fall 2025, Lecture 5, September 18, 2025, \S\S5.5--5.6.
-\url{https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25_lec05.pdf}.
+<https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25_lec05.pdf>.
 
 MIT 18.783 Fall 2025 Lecture 5; September 18 2025; lecture notes, not peer-reviewed article
 
@@ -983,7 +983,7 @@ Pin status: **bytes_pinned**.
 J. Voight, \emph{Quaternion algebras}, corrected online edition
 v1.0.7u, August 5, 2026, Main Theorem 14.6.1 and Proposition 14.6.7,
 pp. 223--224.
-\url{https://jvoight.github.io/quat-book.pdf}.
+<https://jvoight.github.io/quat-book.pdf>.
 
 v1.0.7u, August 5, 2026, corrected online edition. Corrected online edition, not printed Springer pagination.
 
@@ -1011,7 +1011,7 @@ Pin status: **bytes_pinned**.
 J.-L. Waldspurger,
 \emph{Correspondances de Shimura}, Proceedings of the International
 Congress of Mathematicians, 1983, 525--531.
-\url{https://www.imj-prg.fr/wp-content/uploads/2020/prix/waldspurger1983.pdf}.
+<https://www.imj-prg.fr/wp-content/uploads/2020/prix/waldspurger1983.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -1024,7 +1024,7 @@ Pin status: **bytes_pinned**.
 
 A. Weil, \emph{Sur certains groupes d'op\'erateurs unitaires},
 Acta Mathematica 111 (1964), 143--211, I.13, II.25, II.28, III, Theorem 6.
-\url{https://webhomes.maths.ed.ac.uk/~v1ranick/papers/weil2.pdf}.
+<https://webhomes.maths.ed.ac.uk/~v1ranick/papers/weil2.pdf>.
 
 Exact bytes pinned below; publication/version equivalence is not inferred from the filename.
 
@@ -1037,7 +1037,7 @@ Pin status: **bytes_pinned**.
 
 K. S. Williams, \emph{Mertens' theorem for arithmetic progressions},
 J. Number Theory \textbf{6} (1974), 353--359, Theorem 1.
-\url{https://people.math.carleton.ca/~williams/papers/pdf/057.pdf}.
+<https://people.math.carleton.ca/~williams/papers/pdf/057.pdf>.
 
 Published JNT 6 (1974), 353-359. Published scan inspected, including image of Theorem1.
 

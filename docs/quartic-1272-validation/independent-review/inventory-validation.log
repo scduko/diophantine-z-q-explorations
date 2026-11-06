@@ -1,0 +1,129 @@
+{
+  "schema": "quartic-v5-inventory-coverage-v1",
+  "manuscript": {
+    "path": "quartic_1272.tex",
+    "bytes": 807070,
+    "sha256": "16033e0471df605093b28210a9f81718c2486b147016ec8afc75d166dff0b90f"
+  },
+  "external_application_families": 101,
+  "inherited_source_ledgers": 8,
+  "explicit_citations": 203,
+  "cited_keys": 83,
+  "bibliography_entries": 83,
+  "internal_results": 127,
+  "references": 408,
+  "unresolved_references": [],
+  "unresolved_application_bridges": [],
+  "unregistered_citations": [],
+  "new_results_without_review_record": [],
+  "new_applications_missing_labels": [],
+  "interfaces_missing_labels": [],
+  "pending_review_records": [],
+  "unresolved_declared_dependencies": [],
+  "unknown_citation_application_ids": [],
+  "reviewed_fragments": [
+    {
+      "id": "new1272",
+      "path": "docs/quartic-1272/evidence/reviewed-new1272.tex",
+      "review": "Exact fragment accepted by the independent bridge and oracle reviewers; acceptance and finite-statistic scope are recorded in author-integration-notes.md.",
+      "sha256": "506675ede05bb3d369d9882945958c86d2d39c8fbe4d6e1e393c6a4e17f00000",
+      "status": "independent_bridge_and_oracle_review_accepted",
+      "current": {
+        "path": "quartic_1272.tex",
+        "start_character": 499456,
+        "end_character": 536146,
+        "first_line": 10524,
+        "last_line": 11406,
+        "text_sha256": "38a5e29e4e8f8283cc0312e41b33364bc07479da43e30fe68d06a4d7374fbd71"
+      }
+    },
+    {
+      "id": "arithmetic-bridges",
+      "path": "docs/quartic-1272/evidence/reviewed-arithmetic-bridges.tex",
+      "review": "Arithmetic bridge author/reviewer supplied complete proofs and source-level dependencies. The full inherited source literature is not re-proved by this review.",
+      "sha256": "94696c3d3113c6ff23b8ff3039a17447424151d49f5ecbf1f178304aaf2d5544",
+      "status": "independent_bridge_review_accepted",
+      "current": {
+        "path": "quartic_1272.tex",
+        "start_character": 487679,
+        "end_character": 499454,
+        "first_line": 10253,
+        "last_line": 10522,
+        "text_sha256": "b81c7f9709f2188d26cddd6bca13c2e05f5a934739925d0b1f9062b7e0a830ea"
+      }
+    },
+    {
+      "id": "sun-appendix",
+      "path": "docs/quartic-1272/evidence/reviewed-sun-appendix.tex",
+      "review": "Independent oracle review of appendix derivation; external theorems retain their exact version and access qualifications. See sun-applications-review.json.",
+      "sha256": "620e2e5652048c827efd8a1d9dae78462679e65992beeb20c3f089b3115fb77b",
+      "status": "derivation_reviewed_relative_to_listed_inputs",
+      "current": {
+        "path": "quartic_1272.tex",
+        "start_character": 750792,
+        "end_character": 785689,
+        "first_line": 15828,
+        "last_line": 16577,
+        "text_sha256": "127d0e9b6712a97f537cb1bae318a110401f2f8d39054578d4d670e33a1aa248"
+      }
+    }
+  ],
+  "new_source_qualifications": [
+    {
+      "id": "V5-Q-VOIGHT",
+      "text": "The published 2021 Proposition 14.6.7 was inspected directly, but the local download did not yield a PDF. No byte hash of the published chapter is claimed; the old corrected-book hash is a distinct version."
+    },
+    {
+      "id": "V5-Q-FT",
+      "text": "The Frei\u2013Tinkov\u00e1 theorem is checked against arXiv:2408.17441v3, accepted/to appear in Mathematika as reported by the author. No final published text was verified. The proof is therefore not described as using exclusively final published theorem versions."
+    },
+    {
+      "id": "V5-Q-RECONSTRUCTION",
+      "text": "The present 1272-coordinate coefficient table is independently reconstructed. It is not identified with the unavailable Brox 1315-coordinate gate/table artifact."
+    },
+    {
+      "id": "V5-Q-BL-BHB",
+      "text": "Browning\u2013Loughran and Browning\u2013Heath-Brown are verified published works. Exact theorem checks used the pinned accepted manuscripts and compared preprints; inaccessible final typeset text was not compared."
+    },
+    {
+      "id": "V5-Q-DK",
+      "text": "Dodos\u2013Kanellopoulos is a verified published work. The exact Theorem 5.1 was inspected in arXiv:1610.00487v4, after publication; the final typeset statement was not compared. The appendix repairs the majorant norm exponent in the imported Frei\u2013Tinkov\u00e1 proof route. That local repair does not independently close all of the preprint\u2019s new analytic proof steps."
+    }
+  ],
+  "all_external_inputs_published": false,
+  "external_proofs_independently_closed": false,
+  "external_proof_subaudits": [
+    {
+      "id": "FT-PROOF-SCOPE",
+      "path": "docs/quartic-1272/evidence/FT_PROOF_DEPENDENCIES.json",
+      "proof_closed": false,
+      "nodes": 36,
+      "published_parent_records": 11
+    }
+  ],
+  "external_proof_scope": "This inventory checks applications to the stated exact source versions. It does not re-prove external papers. In particular the accepted Frei\u2013Tinkov\u00e1 preprint proof remains an external input.",
+  "source_qualifications": [
+    {
+      "id": "V1",
+      "text": "Preserve current-proof and assumption-status qualifications. Restricted converse and baseline arithmetic retain their stated proof status; numerical or finite checks do not upgrade them."
+    },
+    {
+      "id": "V2",
+      "text": "Prime-pattern sources include published GT/MN/GI plus inherited arXiv1009.3998v5(23Apr2026) and author erratum conventions. They are inherited correction/version inputs, not newly introduced unpublished theorems. Do not claim a published-only proof with no such qualification."
+    },
+    {
+      "id": "V3",
+      "text": "Pan interface uses Calegari ICM2022 published2023 formulation pp611-612,624 and inspected Pan author theorem. No comparison with inaccessible Pan journal full text is claimed."
+    },
+    {
+      "id": "V4",
+      "text": "Yuan geometry/metric evidence includes the author-attested English translation of the published Chinese text; no direct Chinese-typesetting comparison is claimed."
+    },
+    {
+      "id": "V5",
+      "text": "Preserve exact original stable Faltings metric, Tate/arithmetic-Frobenius convention, effective diamond quotient, and final primitive-form twist."
+    }
+  ],
+  "scope": "Mechanically exhaustive explicit citations and declared result environments; semantic theorem use and mathematical truth require the recorded reviews.",
+  "status": "PASS_DOCUMENT_BINDING"
+}

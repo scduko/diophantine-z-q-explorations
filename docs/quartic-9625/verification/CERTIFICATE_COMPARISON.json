@@ -1,0 +1,22 @@
+{
+  "status": "PASS: INDEPENDENT ACTUAL CERTIFICATE COMPARISON",
+  "scope": "Read-only gzip decoding and exact text comparison; no certificate replay or polynomial expansion",
+  "frozen_path": "work/quartic-sub10000-release/repository/quartics/quartic-9625/certificate.jsonl.gz",
+  "regenerated_path": "work/quartic-sub10000-release/repository/docs/quartic-9625/verification/regenerated-certificate.jsonl.gz",
+  "receipt_path": "work/quartic-sub10000-release/repository/docs/quartic-9625/verification/REPRODUCTION.json",
+  "frozen_sha256": "8aaa2249eda6972c441d58b212ec64a53e1202d5e9f74ea4cbc53e7e3f71a0bd",
+  "regenerated_sha256": "bdf4765cd001cf36e265ce964ace7cb045f1e74885e86d4425f78bbe89467ada",
+  "receipt_sha256": "a093c3eb8d62926ab86bf3afa5d4b73fde414d191142499369113f1cc54ad80a",
+  "frozen_records": 1249,
+  "regenerated_records": 1249,
+  "differing_zero_based_records": [
+    1248
+  ],
+  "last_record_kind_frozen": "final",
+  "last_record_kind_regenerated": "final",
+  "frozen_final_report_seconds": 0.673,
+  "regenerated_final_report_seconds": 0.605,
+  "entire_decoded_text_equal_after_replacing_exact_timing_token": true,
+  "regenerated_digest_matches_receipt": true,
+  "frozen_digest_matches_receipt_expectation": true
+}

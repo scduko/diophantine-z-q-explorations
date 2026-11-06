@@ -1,0 +1,67 @@
+[
+  {
+    "family": "toolchain",
+    "path": "verify_certificate.py",
+    "sha256": "74dba155b43b1e6f707b8b6e3d335302eb25c8be8052017c9b47bc188758eff9"
+  },
+  {
+    "family": "toolchain",
+    "path": "polynomial_ops.py",
+    "sha256": "fe325ee902ed3226da28277e4a70fd924a9628e40d5bea39451bba6c52a2b5c5"
+  },
+  {
+    "family": "toolchain",
+    "path": "export_artifact.py",
+    "sha256": "791c8e503407b2b58cbdb788785a952e2d6bc2720f34802ece2b0958cb07ccb4"
+  },
+  {
+    "family": "toolchain",
+    "path": "optimize.py",
+    "sha256": "6a0653e237f87a31808f64938761b42168691eb7773bee0a7ac5aca762a9de97"
+  },
+  {
+    "family": "toolchain",
+    "path": "merge_coordinates.py",
+    "sha256": "bdb81b3fa2e99fe373da4f1e4b527c12decfa463da47e44f7ac7ddc304961f5e"
+  },
+  {
+    "family": "toolchain",
+    "path": "merge_kernel.py",
+    "sha256": "47562044bb4caeedb49ab0e31e1ef138f4c32ed183c7914722e2d64e54768b63"
+  },
+  {
+    "family": "rules",
+    "path": "charts/check_chart_replacement.py",
+    "sha256": "e2a3e2f006b425bdd3a1baba5c9e47f0b498fc5858ed02dcb0886971a99b8fb6"
+  },
+  {
+    "family": "rules",
+    "path": "charts/replace_charts.py",
+    "sha256": "b34e218ebab191d66415d1a99f659318c71018f4a58c3bbb2e704cd1f9f16eb1"
+  },
+  {
+    "family": "rules",
+    "path": "charts/remove_chart_ordinates.py",
+    "sha256": "0654945ff462e8a158d2f89accb52cf19b34534eed9dba2cea62f393ba19b03b"
+  },
+  {
+    "family": "rules",
+    "path": "parity/parity_rule.py",
+    "sha256": "dd43bdbe277ec4de10e0e5ad472cc5f54ef7f2408f99b80e70ce1b852a8f020f"
+  },
+  {
+    "family": "rules",
+    "path": "parity/produce_parity.py",
+    "sha256": "b4125d339cd2fa56240584e4aa55af010c98734a5e56c6c8f112a43f0889210a"
+  },
+  {
+    "family": "rules",
+    "path": "batching/check_batch_absorb.py",
+    "sha256": "f3d14675eb656849c305f0437ca8b733bb3cb0512b92b68e5892f07af638509c"
+  },
+  {
+    "family": "rules",
+    "path": "batching/absorb_batch_error.py",
+    "sha256": "ba9f073a9b9628e9848ee54b7f6d4421785246ed711d9c117993de035d47c588"
+  }
+]

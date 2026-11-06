@@ -1,0 +1,4318 @@
+{
+  "archive_sha256": "dc493670c2b290ba1c9976a3624ce09bdef793b52458009c373fb5126fed6cee",
+  "note": "Central-directory metadata, not a content audit of unselected entries.",
+  "files": [
+    {
+      "path": "H10-research-handoff-2026-11-05/00_handoff/CHRONOLOGY.md",
+      "bytes": 10267,
+      "compressed_bytes": 4368,
+      "crc32": "98fccd52",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/00_handoff/COMPLEXITY.md",
+      "bytes": 8143,
+      "compressed_bytes": 3231,
+      "crc32": "858161b8",
+      "selected": true
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/00_handoff/DEPENDENCIES.md",
+      "bytes": 8656,
+      "compressed_bytes": 3752,
+      "crc32": "3c4cffb9",
+      "selected": true
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/00_handoff/OPEN_WORK.md",
+      "bytes": 7063,
+      "compressed_bytes": 3158,
+      "crc32": "40a50c07",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/00_handoff/REPRODUCTION.md",
+      "bytes": 5710,
+      "compressed_bytes": 2600,
+      "crc32": "2a18599f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/00_handoff/RESEARCH_HANDOFF.md",
+      "bytes": 16975,
+      "compressed_bytes": 6946,
+      "crc32": "e183ad81",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/00_handoff/RESTART_PROMPT.md",
+      "bytes": 4018,
+      "compressed_bytes": 1978,
+      "crc32": "c3a2bc48",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/00_handoff/SOURCES_AND_VERSIONS.md",
+      "bytes": 7739,
+      "compressed_bytes": 3604,
+      "crc32": "a221bbeb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/01_current_articles/contacts-explained.pdf",
+      "bytes": 273472,
+      "compressed_bytes": 244591,
+      "crc32": "f972dd64",
+      "selected": true
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/01_current_articles/contacts-explained.tex",
+      "bytes": 8614,
+      "compressed_bytes": 3661,
+      "crc32": "4ff2803f",
+      "selected": true
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/01_current_articles/lower-bounds-existential-integers.pdf",
+      "bytes": 421299,
+      "compressed_bytes": 376498,
+      "crc32": "290b9d9e",
+      "selected": true
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/01_current_articles/lower-bounds-existential-integers.tex",
+      "bytes": 40425,
+      "compressed_bytes": 14004,
+      "crc32": "6e49a4d8",
+      "selected": true
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/01_current_articles/shared-witness-definitions-ai-generated.pdf",
+      "bytes": 486519,
+      "compressed_bytes": 435863,
+      "crc32": "268b2bbd",
+      "selected": true
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/01_current_articles/two-proofs-reduced-inputs-v3.pdf",
+      "bytes": 481711,
+      "compressed_bytes": 423625,
+      "crc32": "2bc86b1c",
+      "selected": true
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/01_current_articles/two-proofs-reduced-inputs-v3.tex",
+      "bytes": 49967,
+      "compressed_bytes": 18499,
+      "crc32": "dd8c0000",
+      "selected": true
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/arithmetic-input-reductions.pdf",
+      "bytes": 374717,
+      "compressed_bytes": 336178,
+      "crc32": "21fed929",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/arithmetic-input-reductions.tex",
+      "bytes": 24021,
+      "compressed_bytes": 10098,
+      "crc32": "8fa6c577",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/diophantine_integers_from_elliptic_rigidity.pdf",
+      "bytes": 393730,
+      "compressed_bytes": 386711,
+      "crc32": "68cee992",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/existential-integers-AI-generated.pdf",
+      "bytes": 595432,
+      "compressed_bytes": 379074,
+      "crc32": "07903be2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/existential-integers-candidate.tex",
+      "bytes": 35501,
+      "compressed_bytes": 12880,
+      "crc32": "65f76750",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/finite-existential-integers.pdf",
+      "bytes": 512139,
+      "compressed_bytes": 455039,
+      "crc32": "30d37cfe",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/reduced-existential-arity.pdf",
+      "bytes": 407248,
+      "compressed_bytes": 364955,
+      "crc32": "ec9420d4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/reduced-existential-arity.tex",
+      "bytes": 23241,
+      "compressed_bytes": 9606,
+      "crc32": "5b8fb748",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/two-proofs-existential-integers-AI-generated.pdf",
+      "bytes": 562000,
+      "compressed_bytes": 494447,
+      "crc32": "590ff233",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/two-proofs-existential-integers.tex",
+      "bytes": 68576,
+      "compressed_bytes": 24625,
+      "crc32": "9b362442",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/two-proofs-finite-certificate-alternate-AI-generated.pdf",
+      "bytes": 512419,
+      "compressed_bytes": 449502,
+      "crc32": "c6de3be4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/02_proof_development/two-proofs-finite-certificate-alternate.tex",
+      "bytes": 59152,
+      "compressed_bytes": 21317,
+      "crc32": "37f07bb0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/compositional-synthesis.pdf",
+      "bytes": 360093,
+      "compressed_bytes": 322925,
+      "crc32": "f8de4af7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/focused_diophantine.pdf",
+      "bytes": 668737,
+      "compressed_bytes": 598049,
+      "crc32": "2ce51c3d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/pell-shared-contact-definition.pdf",
+      "bytes": 365363,
+      "compressed_bytes": 324781,
+      "crc32": "44ed23fb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/polynomial-1066-recipe.txt",
+      "bytes": 6467,
+      "compressed_bytes": 3168,
+      "crc32": "26410128",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/polynomial-82-recipe.txt",
+      "bytes": 5337,
+      "compressed_bytes": 2702,
+      "crc32": "2bef0477",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/polynomial-block-form.txt",
+      "bytes": 5719,
+      "compressed_bytes": 2986,
+      "crc32": "c195f4e0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/polynomial-compositional.txt",
+      "bytes": 28766,
+      "compressed_bytes": 9451,
+      "crc32": "47238950",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/polynomial-fully-expanded.txt",
+      "bytes": 3006848,
+      "compressed_bytes": 580376,
+      "crc32": "ac7e44ef",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/quartic-circuit-zip-improvements.pdf",
+      "bytes": 325955,
+      "compressed_bytes": 293835,
+      "crc32": "b0e98dc6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/quartic-definition-improvements.pdf",
+      "bytes": 368903,
+      "compressed_bytes": 329383,
+      "crc32": "13a7c6e9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/short-polynomial-recipe.pyz",
+      "bytes": 5381,
+      "compressed_bytes": 5381,
+      "crc32": "877f3772",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/03_polynomial_constructions/short-polynomial-synthesis.pdf",
+      "bytes": 410083,
+      "compressed_bytes": 367463,
+      "crc32": "d4b0dc7e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/04_external_reports/existential-definition (1).tex",
+      "bytes": 61844,
+      "compressed_bytes": 21173,
+      "crc32": "9ac87ed0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/04_external_reports/referee-report-existential-integers.tex",
+      "bytes": 15675,
+      "compressed_bytes": 6344,
+      "crc32": "0c24d2ae",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/04_external_reports/referee-report.tex",
+      "bytes": 33269,
+      "compressed_bytes": 13523,
+      "crc32": "f5da59d1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/04_external_reports/rigor-revision-list-existential-integers.tex",
+      "bytes": 12898,
+      "compressed_bytes": 5451,
+      "crc32": "fd44b534",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/balanced-natural-formula-source.zip",
+      "bytes": 6338971,
+      "compressed_bytes": 6338971,
+      "crc32": "55e01193",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/compositional-formula-source-and-audit.zip",
+      "bytes": 27699,
+      "compressed_bytes": 27699,
+      "crc32": "794191bb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/compositional-synthesis-source.zip",
+      "bytes": 4211360,
+      "compressed_bytes": 4211360,
+      "crc32": "22393efd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/finite-existential-integers-source.zip",
+      "bytes": 47709,
+      "compressed_bytes": 47709,
+      "crc32": "009dc371",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/focused_diophantine_review.zip",
+      "bytes": 58471245,
+      "compressed_bytes": 58471245,
+      "crc32": "57b66be3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/pell-contact-major-improvement.zip",
+      "bytes": 92504620,
+      "compressed_bytes": 92504620,
+      "crc32": "e6152a58",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/pell-shared-contact-source.zip",
+      "bytes": 3938733,
+      "compressed_bytes": 3938733,
+      "crc32": "a79b8446",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/quartic-circuit-improved-source.zip",
+      "bytes": 47030726,
+      "compressed_bytes": 47030726,
+      "crc32": "a2281491",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/quartic-definition-source-and-checks.zip",
+      "bytes": 48856,
+      "compressed_bytes": 48856,
+      "crc32": "06b851ee",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/shared-witness-polynomials-and-audits.zip",
+      "bytes": 1026787,
+      "compressed_bytes": 1026787,
+      "crc32": "6ed403ff",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/short-anchor-source-and-audit.zip",
+      "bytes": 388621,
+      "compressed_bytes": 388621,
+      "crc32": "b86675c0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/05_original_archives/short-polynomial-source.zip",
+      "bytes": 1748759,
+      "compressed_bytes": 1748759,
+      "crc32": "aaae8bc6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/README.txt",
+      "bytes": 3606,
+      "compressed_bytes": 1715,
+      "crc32": "ba904a46",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/article/compositional-synthesis.pdf",
+      "bytes": 315304,
+      "compressed_bytes": 309461,
+      "crc32": "b923be0e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/article/compositional-synthesis.tex",
+      "bytes": 19575,
+      "compressed_bytes": 8506,
+      "crc32": "3a7f4c87",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/audits/anchor-three-witness-audit.md",
+      "bytes": 5503,
+      "compressed_bytes": 2522,
+      "crc32": "93f7b64d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/audits/final-chain-dag-recount.json",
+      "bytes": 494,
+      "compressed_bytes": 283,
+      "crc32": "52bd5071",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/audits/final-coefficient-dag-recount.json",
+      "bytes": 516,
+      "compressed_bytes": 287,
+      "crc32": "7c8f1fd9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/audits/merged-mathematical-audit.md",
+      "bytes": 14393,
+      "compressed_bytes": 6120,
+      "crc32": "2de982ed",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/audits/packaged-rebuild.json",
+      "bytes": 162,
+      "compressed_bytes": 88,
+      "crc32": "92b61140",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/audits/recount_dag.py",
+      "bytes": 1929,
+      "compressed_bytes": 868,
+      "crc32": "93dfafd7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/audits/report.md",
+      "bytes": 8038,
+      "compressed_bytes": 3657,
+      "crc32": "92550e87",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/audits/reproduction.json",
+      "bytes": 132,
+      "compressed_bytes": 94,
+      "crc32": "2f80f49d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/caroline-input/README.txt",
+      "bytes": 2079,
+      "compressed_bytes": 1089,
+      "crc32": "b4c8f161",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/caroline-input/audit/depth-counts.json",
+      "bytes": 41622,
+      "compressed_bytes": 3614,
+      "crc32": "2a4adabd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/caroline-input/audit/depth_audit.py",
+      "bytes": 21062,
+      "compressed_bytes": 6409,
+      "crc32": "51310acf",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/caroline-input/audit/identity-verification.txt",
+      "bytes": 493,
+      "compressed_bytes": 181,
+      "crc32": "b956defe",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/caroline-input/audit/quartic_identities.py",
+      "bytes": 2944,
+      "compressed_bytes": 1270,
+      "crc32": "ecafae0f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/caroline-input/audit/selected-counts.json",
+      "bytes": 4120,
+      "compressed_bytes": 810,
+      "crc32": "50135345",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/caroline-input/audit/sha256.json",
+      "bytes": 683,
+      "compressed_bytes": 421,
+      "crc32": "b8fe4956",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/caroline-input/compositional-formula.tex",
+      "bytes": 31384,
+      "compressed_bytes": 12565,
+      "crc32": "4ffb4dd9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/audit_block_text.py",
+      "bytes": 10815,
+      "compressed_bytes": 4453,
+      "crc32": "b763a443",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/audit_templates.py",
+      "bytes": 11154,
+      "compressed_bytes": 4354,
+      "crc32": "04474a81",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/block-text-audit.json",
+      "bytes": 1632,
+      "compressed_bytes": 330,
+      "crc32": "afa45c98",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/block-text-review.md",
+      "bytes": 3326,
+      "compressed_bytes": 1675,
+      "crc32": "8c633bd5",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/modules/Z_definition.json",
+      "bytes": 40576,
+      "compressed_bytes": 6254,
+      "crc32": "0f225c38",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/modules/q_anchor.json",
+      "bytes": 1337,
+      "compressed_bytes": 415,
+      "crc32": "dde42e55",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/modules/q_batch41.json",
+      "bytes": 7057,
+      "compressed_bytes": 1404,
+      "crc32": "7b3da2ef",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/modules/q_compare4.json",
+      "bytes": 40242,
+      "compressed_bytes": 7687,
+      "crc32": "50a06a24",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/modules/q_height_batch.json",
+      "bytes": 3809,
+      "compressed_bytes": 1012,
+      "crc32": "c4a68825",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/modules/q_primeparity.json",
+      "bytes": 820,
+      "compressed_bytes": 351,
+      "crc32": "88cb0781",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/polynomial-block-form.txt",
+      "bytes": 5719,
+      "compressed_bytes": 2986,
+      "crc32": "c195f4e0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/polynomial-fully-expanded.txt",
+      "bytes": 3006848,
+      "compressed_bytes": 580376,
+      "crc32": "ac7e44ef",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/shared.json",
+      "bytes": 672,
+      "compressed_bytes": 221,
+      "crc32": "2fed50e7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8/template-audit.json",
+      "bytes": 925,
+      "compressed_bytes": 268,
+      "crc32": "ac9198dd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8-chart-experiments/build.py",
+      "bytes": 20239,
+      "compressed_bytes": 7334,
+      "crc32": "75302794",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8-chart-experiments/check_identities.py",
+      "bytes": 1286,
+      "compressed_bytes": 641,
+      "crc32": "90d536de",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8-chart-experiments/comparison.json",
+      "bytes": 3174,
+      "compressed_bytes": 895,
+      "crc32": "536ca165",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8-chart-experiments/decode_polynomial.py",
+      "bytes": 4283,
+      "compressed_bytes": 1847,
+      "crc32": "9d59e3db",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8-chart-experiments/expand.py",
+      "bytes": 4046,
+      "compressed_bytes": 1731,
+      "crc32": "3fbaf912",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8-chart-experiments/identity-audit.json",
+      "bytes": 112,
+      "compressed_bytes": 62,
+      "crc32": "4f126baa",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8-chart-experiments/pack_recipe.py",
+      "bytes": 3038,
+      "compressed_bytes": 1221,
+      "crc32": "d304dd5a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/degree8-chart-experiments/proof.md",
+      "bytes": 2429,
+      "compressed_bytes": 1241,
+      "crc32": "6720600a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/README.txt",
+      "bytes": 3159,
+      "compressed_bytes": 1452,
+      "crc32": "2d34e120",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/audit.py",
+      "bytes": 3503,
+      "compressed_bytes": 1387,
+      "crc32": "09a2beba",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/build.py",
+      "bytes": 17313,
+      "compressed_bytes": 5558,
+      "crc32": "49b9d02b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/final/chain-factored-5-selector-sphere/counts.json",
+      "bytes": 876,
+      "compressed_bytes": 359,
+      "crc32": "2e7cb58b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/final/chain-factored-5-selector-sphere/polynomial-dag.json",
+      "bytes": 2529288,
+      "compressed_bytes": 573582,
+      "crc32": "9a22dff6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/final/coefficient-factored-5-selector-sphere/counts.json",
+      "bytes": 925,
+      "compressed_bytes": 371,
+      "crc32": "be945665",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/final/coefficient-factored-5-selector-sphere/polynomial-dag.json",
+      "bytes": 2526255,
+      "compressed_bytes": 572304,
+      "crc32": "a9fc78b9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/final/compilation-audit.json",
+      "bytes": 3184,
+      "compressed_bytes": 642,
+      "crc32": "797c3593",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/final/option-counts.json",
+      "bytes": 3184,
+      "compressed_bytes": 642,
+      "crc32": "797c3593",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/final/sha256.json",
+      "bytes": 691,
+      "compressed_bytes": 325,
+      "crc32": "1abf79b7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/merged/polynomial-recipe.txt",
+      "bytes": 6467,
+      "compressed_bytes": 3168,
+      "crc32": "26410128",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/presentation-metrics.json",
+      "bytes": 399,
+      "compressed_bytes": 219,
+      "crc32": "39bc1666",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/previous-work/short-polynomial-source.zip",
+      "bytes": 1748759,
+      "compressed_bytes": 1748759,
+      "crc32": "aaae8bc6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/previous-work/short-polynomial-synthesis.pdf",
+      "bytes": 360362,
+      "compressed_bytes": 353502,
+      "crc32": "1aa352c4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/compositional-synthesis/compositional-synthesis/sha256.json",
+      "bytes": 5957,
+      "compressed_bytes": 2835,
+      "crc32": "f772f659",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/early-finite-certificate/README.txt",
+      "bytes": 903,
+      "compressed_bytes": 516,
+      "crc32": "d7523d6e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/early-finite-certificate/finite-existential-integers.tex",
+      "bytes": 47222,
+      "compressed_bytes": 18485,
+      "crc32": "da609266",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/early-finite-certificate/verify_five_branch_points.py",
+      "bytes": 1386,
+      "compressed_bytes": 673,
+      "crc32": "0c36500b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/early-finite-certificate/working-notes/direct-formula-compilation.md",
+      "bytes": 16819,
+      "compressed_bytes": 6771,
+      "crc32": "fb209438",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/early-finite-certificate/working-notes/effective-arithmetic.md",
+      "bytes": 23235,
+      "compressed_bytes": 9732,
+      "crc32": "fa2b842c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/early-finite-certificate/working-notes/explicit_five_branch_points.md",
+      "bytes": 3369,
+      "compressed_bytes": 1740,
+      "crc32": "ceef7c4b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/early-finite-certificate/working-notes/finite_multiplication_original_phi.md",
+      "bytes": 11284,
+      "compressed_bytes": 4784,
+      "crc32": "785a55df",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/early-finite-certificate/working-notes/geometric-certificate-audit.md",
+      "bytes": 9365,
+      "compressed_bytes": 3802,
+      "crc32": "0e71c372",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/PROVENANCE.json",
+      "bytes": 2490,
+      "compressed_bytes": 1205,
+      "crc32": "835c243d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/README.md",
+      "bytes": 6521,
+      "compressed_bytes": 2892,
+      "crc32": "b4f1da21",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/SHA256SUMS",
+      "bytes": 6993,
+      "compressed_bytes": 3583,
+      "crc32": "c17bcf29",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/Z_compressed.json",
+      "bytes": 1683258,
+      "compressed_bytes": 358866,
+      "crc32": "cb7fa1ac",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/Z_definition.expanded.polynomial.gz",
+      "bytes": 2266608,
+      "compressed_bytes": 2266608,
+      "crc32": "d0febf4b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/Z_definition.flat.jsonl.gz",
+      "bytes": 368864,
+      "compressed_bytes": 368864,
+      "crc32": "6a718136",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/Z_definition.polynomial.json",
+      "bytes": 545,
+      "compressed_bytes": 333,
+      "crc32": "481cb855",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/algebra_blocks_audit_report.json",
+      "bytes": 1683,
+      "compressed_bytes": 460,
+      "crc32": "20c075b1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/article/pell-final-counts.tex",
+      "bytes": 158,
+      "compressed_bytes": 97,
+      "crc32": "cbe68441",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/article/pell-shared-contact-definition.pdf",
+      "bytes": 316789,
+      "compressed_bytes": 311012,
+      "crc32": "13c1c4d1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/article/pell-shared-contact-definition.tex",
+      "bytes": 29876,
+      "compressed_bytes": 12420,
+      "crc32": "854606e8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audit_algebra_blocks.py",
+      "bytes": 4873,
+      "compressed_bytes": 2068,
+      "crc32": "70a50e6f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audit_compression.py",
+      "bytes": 4020,
+      "compressed_bytes": 1599,
+      "crc32": "c45ff651",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audit_final_files.py",
+      "bytes": 1819,
+      "compressed_bytes": 720,
+      "crc32": "08081420",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audit_source_semantics.py",
+      "bytes": 8361,
+      "compressed_bytes": 3121,
+      "crc32": "e8d875c3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/audit_parity57.py",
+      "bytes": 4358,
+      "compressed_bytes": 1942,
+      "crc32": "41cde2fd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/build_parity57.py",
+      "bytes": 1841,
+      "compressed_bytes": 989,
+      "crc32": "8903f173",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/contact-dimension-two-audit.md",
+      "bytes": 5383,
+      "compressed_bytes": 2580,
+      "crc32": "7e2c2da5",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/final-soundness-audit.tex",
+      "bytes": 5718,
+      "compressed_bytes": 2621,
+      "crc32": "82685f2c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/fixed_multipliers.json",
+      "bytes": 8646,
+      "compressed_bytes": 1514,
+      "crc32": "d0d091b9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/fixed_multipliers.py",
+      "bytes": 3186,
+      "compressed_bytes": 1358,
+      "crc32": "34351703",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/full_sharing_engine_audit.md",
+      "bytes": 3237,
+      "compressed_bytes": 1629,
+      "crc32": "84de1d99",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/independent_fixed_kappa_audit.json",
+      "bytes": 4200,
+      "compressed_bytes": 692,
+      "crc32": "f0dba22a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/independent_fixed_kappa_audit.py",
+      "bytes": 1989,
+      "compressed_bytes": 1012,
+      "crc32": "0cbfcb04",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/parity57_audit_report.json",
+      "bytes": 485,
+      "compressed_bytes": 294,
+      "crc32": "a8f9ea0d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/pell-squareclass-anchor-audit.md",
+      "bytes": 8773,
+      "compressed_bytes": 4295,
+      "crc32": "25864b54",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/q_parity57.json",
+      "bytes": 5701,
+      "compressed_bytes": 1409,
+      "crc32": "123ba0ea",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/shared-contact-proof.tex",
+      "bytes": 8617,
+      "compressed_bytes": 3802,
+      "crc32": "6b60ffe8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/shared_contact_audit.json",
+      "bytes": 50937,
+      "compressed_bytes": 6750,
+      "crc32": "a7484365",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/audits/shared_contact_audit.py",
+      "bytes": 2403,
+      "compressed_bytes": 1278,
+      "crc32": "e30be6a0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/coefficient_audit.json",
+      "bytes": 279,
+      "compressed_bytes": 191,
+      "crc32": "b93ec29c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/compression_audit_report.json",
+      "bytes": 536,
+      "compressed_bytes": 330,
+      "crc32": "074caffe",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/elimination_certificate.json",
+      "bytes": 294982,
+      "compressed_bytes": 114893,
+      "crc32": "80f51d65",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/expand.py",
+      "bytes": 3754,
+      "compressed_bytes": 1595,
+      "crc32": "9a915dda",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/expanded_fingerprint.json",
+      "bytes": 2466,
+      "compressed_bytes": 1356,
+      "crc32": "5ab9a28d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/final_files_audit_report.json",
+      "bytes": 414,
+      "compressed_bytes": 272,
+      "crc32": "ea52b602",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/flat_fingerprint.json",
+      "bytes": 279,
+      "compressed_bytes": 186,
+      "crc32": "f30a49ae",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/flatten_source.py",
+      "bytes": 2755,
+      "compressed_bytes": 1157,
+      "crc32": "c939e5dd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/optimize.py",
+      "bytes": 4607,
+      "compressed_bytes": 1941,
+      "crc32": "aa6d98dd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/prepare_expansion.py",
+      "bytes": 1571,
+      "compressed_bytes": 754,
+      "crc32": "1012c975",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/rebuild_and_check.py",
+      "bytes": 9354,
+      "compressed_bytes": 3145,
+      "crc32": "e7795536",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/reproducibility_report.json",
+      "bytes": 3386,
+      "compressed_bytes": 997,
+      "crc32": "799c51bc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/Z_definition.polynomial.json",
+      "bytes": 1136,
+      "compressed_bytes": 529,
+      "crc32": "e648ac2f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/build.py",
+      "bytes": 25805,
+      "compressed_bytes": 8331,
+      "crc32": "7c6b49ab",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/counts.json",
+      "bytes": 535,
+      "compressed_bytes": 312,
+      "crc32": "b726c067",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/imported/cyclic_catalogue.json",
+      "bytes": 57646,
+      "compressed_bytes": 4481,
+      "crc32": "6819b8a4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/imported/fixed_multipliers.json",
+      "bytes": 8646,
+      "compressed_bytes": 1514,
+      "crc32": "d0d091b9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/imported/generator_certificate.json",
+      "bytes": 27984,
+      "compressed_bytes": 2560,
+      "crc32": "a86c2cac",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/imported/paired_two_slope_parameters.json",
+      "bytes": 781,
+      "compressed_bytes": 425,
+      "crc32": "147853cf",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/imported/q_anchor.json",
+      "bytes": 552,
+      "compressed_bytes": 265,
+      "crc32": "4784c743",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/imported/q_parity.json",
+      "bytes": 5701,
+      "compressed_bytes": 1409,
+      "crc32": "123ba0ea",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/modules/Z_pell.json",
+      "bytes": 29474,
+      "compressed_bytes": 5160,
+      "crc32": "e83816ec",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/modules/q_anchor.json",
+      "bytes": 540,
+      "compressed_bytes": 261,
+      "crc32": "6da6b1cb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/modules/q_batch17.json",
+      "bytes": 10551,
+      "compressed_bytes": 1891,
+      "crc32": "1e150368",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/modules/q_batch6.json",
+      "bytes": 3284,
+      "compressed_bytes": 798,
+      "crc32": "9be2b55a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/modules/q_batch_multi.json",
+      "bytes": 23371,
+      "compressed_bytes": 3904,
+      "crc32": "a9a86016",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/modules/q_compare.json",
+      "bytes": 14387,
+      "compressed_bytes": 2958,
+      "crc32": "0ea08bbd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/modules/q_multi_compare.json",
+      "bytes": 39198,
+      "compressed_bytes": 7571,
+      "crc32": "73a04afc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/modules/q_parity.json",
+      "bytes": 5699,
+      "compressed_bytes": 1407,
+      "crc32": "0ee9a10b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/modules/q_pell_relation.json",
+      "bytes": 27588,
+      "compressed_bytes": 4049,
+      "crc32": "453e7a9a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source/shared_constants.json",
+      "bytes": 2072,
+      "compressed_bytes": 806,
+      "crc32": "bb3bf511",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source-inputs/focused_diophantine.tex",
+      "bytes": 85005,
+      "compressed_bytes": 32408,
+      "crc32": "91bc99c6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source-inputs/h10-06-primes.tex",
+      "bytes": 33540,
+      "compressed_bytes": 12084,
+      "crc32": "3219a7ab",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source-inputs/pell-arithmetic-audit.md",
+      "bytes": 3129,
+      "compressed_bytes": 1608,
+      "crc32": "8112cc24",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source-inputs/pell-circuit-review.md",
+      "bytes": 4230,
+      "compressed_bytes": 2104,
+      "crc32": "46cd6686",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source-inputs/terry-README.txt",
+      "bytes": 7142,
+      "compressed_bytes": 3223,
+      "crc32": "edf9f5cc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source-inputs/terry-audit_report.json",
+      "bytes": 795,
+      "compressed_bytes": 428,
+      "crc32": "365daefe",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source-inputs/terry-coefficient_audit.json",
+      "bytes": 281,
+      "compressed_bytes": 194,
+      "crc32": "50c4ad06",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source-inputs/terry-counts.json",
+      "bytes": 440,
+      "compressed_bytes": 278,
+      "crc32": "3f4ff8ed",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source-inputs/terry-pell-contact-proof.tex",
+      "bytes": 21982,
+      "compressed_bytes": 8899,
+      "crc32": "4f15b9cc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source.flat.jsonl",
+      "bytes": 1851149,
+      "compressed_bytes": 371381,
+      "crc32": "a0eb0f55",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source_flat_report.json",
+      "bytes": 709,
+      "compressed_bytes": 331,
+      "crc32": "19442b66",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/source_semantic_audit_report.json",
+      "bytes": 955,
+      "compressed_bytes": 512,
+      "crc32": "b136ef19",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/quartic-shared-contact/pell-shared-contact-source/verify_expansion.py",
+      "bytes": 3337,
+      "compressed_bytes": 1291,
+      "crc32": "5adfab45",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/README.txt",
+      "bytes": 3697,
+      "compressed_bytes": 1738,
+      "crc32": "2a10fb10",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/algebra-audit.md",
+      "bytes": 14070,
+      "compressed_bytes": 5948,
+      "crc32": "b58d0dea",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/article/compiled-results.tex",
+      "bytes": 2317,
+      "compressed_bytes": 1199,
+      "crc32": "902eb798",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/article/practical-definition.tex",
+      "bytes": 12984,
+      "compressed_bytes": 5673,
+      "crc32": "f983e0fb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/article/shared-definition.tex",
+      "bytes": 27023,
+      "compressed_bytes": 10602,
+      "crc32": "0ee6e484",
+      "selected": true
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/article/shared-witness-definitions-ai-generated.pdf",
+      "bytes": 431052,
+      "compressed_bytes": 421915,
+      "crc32": "77f25296",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/article/shared-witness-definitions.tex",
+      "bytes": 4866,
+      "compressed_bytes": 2318,
+      "crc32": "6510ba04",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/build.py",
+      "bytes": 22373,
+      "compressed_bytes": 6734,
+      "crc32": "d6d66792",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/inherited/previous-1066-recipe.txt",
+      "bytes": 6467,
+      "compressed_bytes": 3168,
+      "crc32": "26410128",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/inherited/previous-compositional-synthesis.pdf",
+      "bytes": 315304,
+      "compressed_bytes": 309461,
+      "crc32": "b923be0e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/inherited/previous-compositional-synthesis.tex",
+      "bytes": 19575,
+      "compressed_bytes": 8506,
+      "crc32": "3a7f4c87",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/inherited/previous-mathematical-audit.md",
+      "bytes": 14393,
+      "compressed_bytes": 6120,
+      "crc32": "2de982ed",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/pack_graph.py",
+      "bytes": 2527,
+      "compressed_bytes": 1259,
+      "crc32": "a6516dbb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-100/counts.json",
+      "bytes": 1190,
+      "compressed_bytes": 455,
+      "crc32": "8c8ba5a4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-100/encoding.json",
+      "bytes": 233,
+      "compressed_bytes": 163,
+      "crc32": "2efa9f21",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-100/independent-recount.json",
+      "bytes": 506,
+      "compressed_bytes": 283,
+      "crc32": "8bcd510b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-100/polynomial-dag.bin",
+      "bytes": 33971,
+      "compressed_bytes": 24650,
+      "crc32": "a7b1b1a8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-100/polynomial-dag.bin.xz",
+      "bytes": 18412,
+      "compressed_bytes": 18412,
+      "crc32": "96f8956b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-100/polynomial-dag.json",
+      "bytes": 126322,
+      "compressed_bytes": 31541,
+      "crc32": "c71c7d61",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-100-recipe.txt",
+      "bytes": 5410,
+      "compressed_bytes": 2720,
+      "crc32": "a0a68ed5",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-82/counts.json",
+      "bytes": 1184,
+      "compressed_bytes": 459,
+      "crc32": "60660309",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-82/encoding.json",
+      "bytes": 233,
+      "compressed_bytes": 161,
+      "crc32": "7068a08f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-82/independent-recount.json",
+      "bytes": 506,
+      "compressed_bytes": 284,
+      "crc32": "c473a0dc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-82/polynomial-dag.bin",
+      "bytes": 47554,
+      "compressed_bytes": 34945,
+      "crc32": "d11d0914",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-82/polynomial-dag.bin.xz",
+      "bytes": 26012,
+      "compressed_bytes": 26012,
+      "crc32": "278b3a02",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-82/polynomial-dag.json",
+      "bytes": 174896,
+      "compressed_bytes": 43831,
+      "crc32": "8c32c25e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/polynomial-82-recipe.txt",
+      "bytes": 5337,
+      "compressed_bytes": 2702,
+      "crc32": "2bef0477",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/proofs/analytic-audit.md",
+      "bytes": 12889,
+      "compressed_bytes": 5818,
+      "crc32": "3204bcf8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/proofs/practical-sharing-independent-audit.md",
+      "bytes": 14092,
+      "compressed_bytes": 6027,
+      "crc32": "1c0717bd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/proofs/practical-sharing-proof.md",
+      "bytes": 15594,
+      "compressed_bytes": 6480,
+      "crc32": "e0cd8855",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/proofs/practical82-independent-audit.md",
+      "bytes": 10191,
+      "compressed_bytes": 4279,
+      "crc32": "863172ad",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/proofs/practical93-proof.md",
+      "bytes": 10738,
+      "compressed_bytes": 4822,
+      "crc32": "c1bfb9b7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/proofs/scalar-audit.md",
+      "bytes": 17944,
+      "compressed_bytes": 6956,
+      "crc32": "42c27f77",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/proofs/shared-definition-arithmetic-audit.md",
+      "bytes": 9301,
+      "compressed_bytes": 4162,
+      "crc32": "7489653d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/proofs/shared-definition-notes.md",
+      "bytes": 3771,
+      "compressed_bytes": 1803,
+      "crc32": "3d2642c7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/proofs/sieve-audit.md",
+      "bytes": 9972,
+      "compressed_bytes": 4451,
+      "crc32": "72b3b0d4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/rebuild_selected.py",
+      "bytes": 1851,
+      "compressed_bytes": 862,
+      "crc32": "b6b6254a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/recount_dag.py",
+      "bytes": 1929,
+      "compressed_bytes": 868,
+      "crc32": "93dfafd7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/selected-comparison.json",
+      "bytes": 914,
+      "compressed_bytes": 341,
+      "crc32": "d4ab4104",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/sha256.json",
+      "bytes": 4060,
+      "compressed_bytes": 1977,
+      "crc32": "aae9b37a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/README.txt",
+      "bytes": 5650,
+      "compressed_bytes": 2541,
+      "crc32": "05a4e16b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/SHA256SUMS",
+      "bytes": 1563,
+      "compressed_bytes": 898,
+      "crc32": "124bd280",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/audit-report.json",
+      "bytes": 3775,
+      "compressed_bytes": 849,
+      "crc32": "ac228952",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/audit_balanced.py",
+      "bytes": 9753,
+      "compressed_bytes": 3594,
+      "crc32": "a00eeea6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/balanced-natural-formula.tex",
+      "bytes": 27763,
+      "compressed_bytes": 11228,
+      "crc32": "1e6a7838",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/build_balanced.py",
+      "bytes": 14539,
+      "compressed_bytes": 5278,
+      "crc32": "4c517fbb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/degree-25-counts.json",
+      "bytes": 1398,
+      "compressed_bytes": 504,
+      "crc32": "bed0dd3b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/degree-45-counts.json",
+      "bytes": 1398,
+      "compressed_bytes": 506,
+      "crc32": "c1e1ceb2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/degree-75-counts.json",
+      "bytes": 1392,
+      "compressed_bytes": 504,
+      "crc32": "51584194",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/output/pdf/balanced-natural-formula.pdf",
+      "bytes": 1144831,
+      "compressed_bytes": 834702,
+      "crc32": "6c7b95a3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/provenance.json",
+      "bytes": 596,
+      "compressed_bytes": 321,
+      "crc32": "4b999fb2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/reference-inputs/preceding-pell-contact-proof.tex",
+      "bytes": 28611,
+      "compressed_bytes": 11599,
+      "crc32": "8c19ff3c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/reference-inputs/supplied-focused-manuscript.tex",
+      "bytes": 85005,
+      "compressed_bytes": 32408,
+      "crc32": "91bc99c6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/render_pdf.py",
+      "bytes": 12530,
+      "compressed_bytes": 4598,
+      "crc32": "350909af",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/symbolic-identities.json",
+      "bytes": 629,
+      "compressed_bytes": 312,
+      "crc32": "7d7c05ff",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/compositional-formula-source-and-audit/compositional-formula/README.txt",
+      "bytes": 2079,
+      "compressed_bytes": 1089,
+      "crc32": "b4c8f161",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/compositional-formula-source-and-audit/compositional-formula/audit/depth-counts.json",
+      "bytes": 41622,
+      "compressed_bytes": 3614,
+      "crc32": "2a4adabd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/compositional-formula-source-and-audit/compositional-formula/audit/depth_audit.py",
+      "bytes": 21062,
+      "compressed_bytes": 6409,
+      "crc32": "51310acf",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/compositional-formula-source-and-audit/compositional-formula/audit/identity-verification.txt",
+      "bytes": 493,
+      "compressed_bytes": 181,
+      "crc32": "b956defe",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/compositional-formula-source-and-audit/compositional-formula/audit/quartic_identities.py",
+      "bytes": 2944,
+      "compressed_bytes": 1270,
+      "crc32": "ecafae0f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/compositional-formula-source-and-audit/compositional-formula/audit/selected-counts.json",
+      "bytes": 4120,
+      "compressed_bytes": 810,
+      "crc32": "50135345",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/compositional-formula-source-and-audit/compositional-formula/audit/sha256.json",
+      "bytes": 683,
+      "compressed_bytes": 421,
+      "crc32": "b8fe4956",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/compositional-formula-source-and-audit/compositional-formula/compositional-formula.tex",
+      "bytes": 31384,
+      "compressed_bytes": 12565,
+      "crc32": "4ffb4dd9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/PROVENANCE.json",
+      "bytes": 1195,
+      "compressed_bytes": 600,
+      "crc32": "e52616e3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/README.txt",
+      "bytes": 4878,
+      "compressed_bytes": 2156,
+      "crc32": "e01d682d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/SHA256SUMS",
+      "bytes": 11768,
+      "compressed_bytes": 5234,
+      "crc32": "70592be2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/README.txt",
+      "bytes": 9095,
+      "compressed_bytes": 4170,
+      "crc32": "899ea825",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/Z_definition.polynomial.json",
+      "bytes": 2059,
+      "compressed_bytes": 899,
+      "crc32": "2f996511",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/attribution_revision.json",
+      "bytes": 1123,
+      "compressed_bytes": 589,
+      "crc32": "69c77dcb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/audit_definition.py",
+      "bytes": 8296,
+      "compressed_bytes": 3362,
+      "crc32": "b93a791e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/audit_mathematics.py",
+      "bytes": 5989,
+      "compressed_bytes": 2405,
+      "crc32": "93c2eeb1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/build_definition.py",
+      "bytes": 16485,
+      "compressed_bytes": 6421,
+      "crc32": "0ea4bee7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/coefficient_examples.json",
+      "bytes": 230,
+      "compressed_bytes": 157,
+      "crc32": "439fb617",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/independent_audit.json",
+      "bytes": 704,
+      "compressed_bytes": 396,
+      "crc32": "abeeabfd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/inspect_polynomial.py",
+      "bytes": 2001,
+      "compressed_bytes": 962,
+      "crc32": "9e03c635",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/local_ring_parameters.json",
+      "bytes": 227826,
+      "compressed_bytes": 61418,
+      "crc32": "6948b6c6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/manuscript_condensation.json",
+      "bytes": 1961,
+      "compressed_bytes": 769,
+      "crc32": "00d1a6ba",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/mathematical_audit.json",
+      "bytes": 3774,
+      "compressed_bytes": 1364,
+      "crc32": "c0e39fa0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/mathematical_audit_checks.json",
+      "bytes": 882,
+      "compressed_bytes": 481,
+      "crc32": "49e2a31d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/modules/Z_definition.json",
+      "bytes": 1163907,
+      "compressed_bytes": 186748,
+      "crc32": "41ffbfac",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/modules/n_bounded.json",
+      "bytes": 7399,
+      "compressed_bytes": 1290,
+      "crc32": "9b3f7a5a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/modules/n_graph.json",
+      "bytes": 4278,
+      "compressed_bytes": 1026,
+      "crc32": "67b805db",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/modules/n_power4.json",
+      "bytes": 503139,
+      "compressed_bytes": 94746,
+      "crc32": "1c0a5cb8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/modules/q_T.json",
+      "bytes": 619,
+      "compressed_bytes": 213,
+      "crc32": "edef6eea",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/modules/q_add.json",
+      "bytes": 9455,
+      "compressed_bytes": 1912,
+      "crc32": "4377c081",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/modules/q_anchor.json",
+      "bytes": 1232817,
+      "compressed_bytes": 262967,
+      "crc32": "99f00037",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/modules/q_mult.json",
+      "bytes": 241,
+      "compressed_bytes": 176,
+      "crc32": "0f9677b5",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/modules/q_natural.json",
+      "bytes": 598,
+      "compressed_bytes": 229,
+      "crc32": "304f6141",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/modules/q_parity.json",
+      "bytes": 2841,
+      "compressed_bytes": 825,
+      "crc32": "2ce87385",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/ExtractTemplates.v",
+      "bytes": 1445,
+      "compressed_bytes": 538,
+      "crc32": "caa9d97b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/LICENSE-MPL-2.0.txt",
+      "bytes": 16726,
+      "compressed_bytes": 5310,
+      "crc32": "eaa2a441",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/body.json",
+      "bytes": 580,
+      "compressed_bytes": 274,
+      "crc32": "82189457",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/bounded.json",
+      "bytes": 2439,
+      "compressed_bytes": 564,
+      "crc32": "ca2061a7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/code.audit.json",
+      "bytes": 303,
+      "compressed_bytes": 183,
+      "crc32": "e189e78e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/code.reconstruction.json",
+      "bytes": 1189376,
+      "compressed_bytes": 388310,
+      "crc32": "a14f8c9e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/compact.py",
+      "bytes": 4523,
+      "compressed_bytes": 1847,
+      "crc32": "fb695fef",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/const.audit.json",
+      "bytes": 303,
+      "compressed_bytes": 182,
+      "crc32": "10d66fa0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/const.reconstruction.json",
+      "bytes": 1028914,
+      "compressed_bytes": 341563,
+      "crc32": "6783cb0a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/export.ml",
+      "bytes": 688,
+      "compressed_bytes": 357,
+      "crc32": "d2289637",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/graph.json",
+      "bytes": 370,
+      "compressed_bytes": 192,
+      "crc32": "88e65a4c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/mult.audit.json",
+      "bytes": 304,
+      "compressed_bytes": 184,
+      "crc32": "1a81b496",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/mult.reconstruction.json",
+      "bytes": 1995022,
+      "compressed_bytes": 621257,
+      "crc32": "5cfc8f5b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/nat.audit.json",
+      "bytes": 305,
+      "compressed_bytes": 184,
+      "crc32": "8ecbe8c9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/power4.audit.json",
+      "bytes": 295,
+      "compressed_bytes": 180,
+      "crc32": "47c83c38",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/power4.json",
+      "bytes": 75054,
+      "compressed_bytes": 22380,
+      "crc32": "99b30fee",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/power4.reconstruction.json",
+      "bytes": 35697,
+      "compressed_bytes": 15038,
+      "crc32": "d27b0bb0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/rebuild_templates.sh",
+      "bytes": 696,
+      "compressed_bytes": 425,
+      "crc32": "a89d1599",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/templates.ml",
+      "bytes": 313516,
+      "compressed_bytes": 11632,
+      "crc32": "c6e1a598",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/natural/templates.mli",
+      "bytes": 9969,
+      "compressed_bytes": 1091,
+      "crc32": "4d13b679",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/polynomial_fingerprint.json",
+      "bytes": 1593,
+      "compressed_bytes": 835,
+      "crc32": "f0d15d1f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/final_definition/verification.json",
+      "bytes": 3212,
+      "compressed_bytes": 718,
+      "crc32": "f4c39a64",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/full_multiplication/README.txt",
+      "bytes": 3672,
+      "compressed_bytes": 1805,
+      "crc32": "f1ee33d4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/full_multiplication/batched_local_33.circuit.json",
+      "bytes": 29941,
+      "compressed_bytes": 6721,
+      "crc32": "1d61c9cd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/full_multiplication/compile_multiplication.py",
+      "bytes": 24706,
+      "compressed_bytes": 7902,
+      "crc32": "e18979c9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/full_multiplication/cyclic_catalogue.json",
+      "bytes": 57646,
+      "compressed_bytes": 4481,
+      "crc32": "6819b8a4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/full_multiplication/explicit_arithmetic_checks.py",
+      "bytes": 19727,
+      "compressed_bytes": 7101,
+      "crc32": "c80172b2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/full_multiplication/generator_certificate.json",
+      "bytes": 27984,
+      "compressed_bytes": 2560,
+      "crc32": "a86c2cac",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/full_multiplication/results.json",
+      "bytes": 1599,
+      "compressed_bytes": 756,
+      "crc32": "2f56abe1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/full_multiplication/verify_coefficients.py",
+      "bytes": 4666,
+      "compressed_bytes": 1540,
+      "crc32": "034668e2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/README.txt",
+      "bytes": 3737,
+      "compressed_bytes": 1967,
+      "crc32": "17406630",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/compile_bound.py",
+      "bytes": 8392,
+      "compressed_bytes": 2880,
+      "crc32": "65435505",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/coq_source/ExtractCompiler.v",
+      "bytes": 1958,
+      "compressed_bytes": 669,
+      "crc32": "7838e03e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/coq_source/LICENSE-MPL-2.0.txt",
+      "bytes": 16726,
+      "compressed_bytes": 5310,
+      "crc32": "eaa2a441",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/coq_source/README.txt",
+      "bytes": 7175,
+      "compressed_bytes": 3554,
+      "crc32": "9f06afa7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/coq_source/benchmark.py",
+      "bytes": 1664,
+      "compressed_bytes": 857,
+      "crc32": "c3ffadcc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/coq_source/build.sh",
+      "bytes": 1113,
+      "compressed_bytes": 634,
+      "crc32": "2d508ffd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/coq_source/compiler.ml",
+      "bytes": 329873,
+      "compressed_bytes": 13797,
+      "crc32": "fbb932bd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/coq_source/compiler.mli",
+      "bytes": 13323,
+      "compressed_bytes": 1417,
+      "crc32": "6d69bfce",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/coq_source/driver.ml",
+      "bytes": 1152,
+      "compressed_bytes": 560,
+      "crc32": "eb2fb56b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/coq_source/polynomial.py",
+      "bytes": 2872,
+      "compressed_bytes": 1277,
+      "crc32": "f5f18f66",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/graph_bound.residuals.json",
+      "bytes": 268447,
+      "compressed_bytes": 45903,
+      "crc32": "79b82d68",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/graph_specification.py",
+      "bytes": 1941,
+      "compressed_bytes": 866,
+      "crc32": "8d32ccd6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/height_bound_checks.py",
+      "bytes": 1311,
+      "compressed_bytes": 688,
+      "crc32": "c4cd4daf",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/height_checks.json",
+      "bytes": 567,
+      "compressed_bytes": 302,
+      "crc32": "42955ba3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/power4_compact.residuals.json",
+      "bytes": 132304,
+      "compressed_bytes": 23005,
+      "crc32": "9203bdbd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/power4_simplification.json",
+      "bytes": 166362,
+      "compressed_bytes": 32628,
+      "crc32": "6e73b716",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/results.json",
+      "bytes": 1037,
+      "compressed_bytes": 512,
+      "crc32": "642e3d91",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/verification.json",
+      "bytes": 361,
+      "compressed_bytes": 222,
+      "crc32": "a73b317a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/graph_reduction/verify_reduction.py",
+      "bytes": 6066,
+      "compressed_bytes": 2217,
+      "crc32": "ffa8cace",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/manuscript/focused_diophantine.pdf",
+      "bytes": 584724,
+      "compressed_bytes": 573708,
+      "crc32": "4bc8710c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/manuscript/focused_diophantine.tex",
+      "bytes": 85005,
+      "compressed_bytes": 32408,
+      "crc32": "91bc99c6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/practical_modules/README.txt",
+      "bytes": 4206,
+      "compressed_bytes": 2109,
+      "crc32": "e25aa72d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/practical_modules/batched_local_33.circuit.json",
+      "bytes": 29941,
+      "compressed_bytes": 6721,
+      "crc32": "1d61c9cd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/practical_modules/build_modules.py",
+      "bytes": 13365,
+      "compressed_bytes": 4508,
+      "crc32": "e1902790",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/practical_modules/explicit_arithmetic_checks.py",
+      "bytes": 19727,
+      "compressed_bytes": 7101,
+      "crc32": "c80172b2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/practical_modules/parity_nonzero.circuit.json",
+      "bytes": 6383,
+      "compressed_bytes": 1691,
+      "crc32": "22b091a3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/focused_diophantine_review/practical_modules/results.json",
+      "bytes": 2567,
+      "compressed_bytes": 885,
+      "crc32": "de6dd450",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/README.txt",
+      "bytes": 7142,
+      "compressed_bytes": 3223,
+      "crc32": "edf9f5cc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/SHA256SUMS",
+      "bytes": 2870,
+      "compressed_bytes": 1470,
+      "crc32": "dfda58c7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/Z_definition.polynomial.json",
+      "bytes": 947,
+      "compressed_bytes": 477,
+      "crc32": "e6e16d2b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/audit.py",
+      "bytes": 8878,
+      "compressed_bytes": 3129,
+      "crc32": "141dc6c1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/audit_report.json",
+      "bytes": 795,
+      "compressed_bytes": 428,
+      "crc32": "365daefe",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/build.py",
+      "bytes": 18583,
+      "compressed_bytes": 6087,
+      "crc32": "0b575fc8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/coefficient_audit.json",
+      "bytes": 281,
+      "compressed_bytes": 194,
+      "crc32": "50c4ad06",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/counts.json",
+      "bytes": 440,
+      "compressed_bytes": 278,
+      "crc32": "3f4ff8ed",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/expand.py",
+      "bytes": 3701,
+      "compressed_bytes": 1577,
+      "crc32": "bea896f0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/expanded_fingerprint.json",
+      "bytes": 542,
+      "compressed_bytes": 331,
+      "crc32": "26d88feb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/flat_fingerprint.json",
+      "bytes": 267,
+      "compressed_bytes": 177,
+      "crc32": "7637928e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/flatten.py",
+      "bytes": 2879,
+      "compressed_bytes": 1110,
+      "crc32": "dd9dfff5",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/imported/cyclic_catalogue.json",
+      "bytes": 57646,
+      "compressed_bytes": 4481,
+      "crc32": "6819b8a4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/imported/q_add.json",
+      "bytes": 3036,
+      "compressed_bytes": 826,
+      "crc32": "915e73dd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/imported/q_anchor.json",
+      "bytes": 552,
+      "compressed_bytes": 265,
+      "crc32": "4784c743",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/imported/q_parity.json",
+      "bytes": 2841,
+      "compressed_bytes": 825,
+      "crc32": "2ce87385",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/modules/Z_pell.json",
+      "bytes": 1097609,
+      "compressed_bytes": 140422,
+      "crc32": "074e2810",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/modules/q_add.json",
+      "bytes": 3036,
+      "compressed_bytes": 826,
+      "crc32": "915e73dd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/modules/q_anchor.json",
+      "bytes": 552,
+      "compressed_bytes": 265,
+      "crc32": "4784c743",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/modules/q_batch17.json",
+      "bytes": 11697,
+      "compressed_bytes": 2073,
+      "crc32": "1bc51749",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/modules/q_batch7.json",
+      "bytes": 4036,
+      "compressed_bytes": 838,
+      "crc32": "80fba9aa",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/modules/q_compare.json",
+      "bytes": 14649,
+      "compressed_bytes": 2928,
+      "crc32": "933c23b4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/modules/q_parity.json",
+      "bytes": 2841,
+      "compressed_bytes": 825,
+      "crc32": "2ce87385",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/output/pdf/pell-contact-proof.pdf",
+      "bytes": 853263,
+      "compressed_bytes": 622955,
+      "crc32": "73e680a2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/pell-contact-proof.tex",
+      "bytes": 21982,
+      "compressed_bytes": 8899,
+      "crc32": "4f15b9cc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/provenance.json",
+      "bytes": 1484,
+      "compressed_bytes": 629,
+      "crc32": "804c75b8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/render_pdf.py",
+      "bytes": 12134,
+      "compressed_bytes": 4474,
+      "crc32": "cc25cbe3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/verify_expansion.py",
+      "bytes": 3284,
+      "compressed_bytes": 1267,
+      "crc32": "032e8761",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/PROVENANCE.json",
+      "bytes": 869,
+      "compressed_bytes": 487,
+      "crc32": "060f6270",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/README.txt",
+      "bytes": 7212,
+      "compressed_bytes": 3314,
+      "crc32": "27a4f1d0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/SHA256SUMS",
+      "bytes": 15997,
+      "compressed_bytes": 6718,
+      "crc32": "2fedb400",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/PROVENANCE.json",
+      "bytes": 1195,
+      "compressed_bytes": 600,
+      "crc32": "e52616e3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/README.txt",
+      "bytes": 4878,
+      "compressed_bytes": 2156,
+      "crc32": "e01d682d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/SOURCE_ARCHIVE_FULL_MANIFEST.txt",
+      "bytes": 11768,
+      "compressed_bytes": 5234,
+      "crc32": "70592be2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/Z_definition.polynomial.json",
+      "bytes": 2059,
+      "compressed_bytes": 899,
+      "crc32": "2f996511",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/independent_audit.json",
+      "bytes": 704,
+      "compressed_bytes": 396,
+      "crc32": "abeeabfd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/local_ring_parameters.json",
+      "bytes": 227826,
+      "compressed_bytes": 61418,
+      "crc32": "6948b6c6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/mathematical_audit.json",
+      "bytes": 3774,
+      "compressed_bytes": 1364,
+      "crc32": "c0e39fa0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/mathematical_audit_checks.json",
+      "bytes": 882,
+      "compressed_bytes": 481,
+      "crc32": "49e2a31d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/modules/n_bounded.json",
+      "bytes": 7399,
+      "compressed_bytes": 1290,
+      "crc32": "9b3f7a5a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/modules/n_graph.json",
+      "bytes": 4278,
+      "compressed_bytes": 1026,
+      "crc32": "67b805db",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/modules/q_parity.json",
+      "bytes": 2841,
+      "compressed_bytes": 825,
+      "crc32": "2ce87385",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/ExtractTemplates.v",
+      "bytes": 1445,
+      "compressed_bytes": 538,
+      "crc32": "caa9d97b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/LICENSE-MPL-2.0.txt",
+      "bytes": 16726,
+      "compressed_bytes": 5310,
+      "crc32": "eaa2a441",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/body.json",
+      "bytes": 580,
+      "compressed_bytes": 274,
+      "crc32": "82189457",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/bounded.json",
+      "bytes": 2439,
+      "compressed_bytes": 564,
+      "crc32": "ca2061a7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/code.audit.json",
+      "bytes": 303,
+      "compressed_bytes": 183,
+      "crc32": "e189e78e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/code.reconstruction.json",
+      "bytes": 1189376,
+      "compressed_bytes": 388310,
+      "crc32": "a14f8c9e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/compact.py",
+      "bytes": 4523,
+      "compressed_bytes": 1847,
+      "crc32": "fb695fef",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/const.audit.json",
+      "bytes": 303,
+      "compressed_bytes": 182,
+      "crc32": "10d66fa0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/const.reconstruction.json",
+      "bytes": 1028914,
+      "compressed_bytes": 341563,
+      "crc32": "6783cb0a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/export.ml",
+      "bytes": 688,
+      "compressed_bytes": 357,
+      "crc32": "d2289637",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/graph.json",
+      "bytes": 370,
+      "compressed_bytes": 192,
+      "crc32": "88e65a4c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/mult.audit.json",
+      "bytes": 304,
+      "compressed_bytes": 184,
+      "crc32": "1a81b496",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/mult.reconstruction.json",
+      "bytes": 1995022,
+      "compressed_bytes": 621257,
+      "crc32": "5cfc8f5b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/nat.audit.json",
+      "bytes": 305,
+      "compressed_bytes": 184,
+      "crc32": "8ecbe8c9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/power4.audit.json",
+      "bytes": 295,
+      "compressed_bytes": 180,
+      "crc32": "47c83c38",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/power4.json",
+      "bytes": 75054,
+      "compressed_bytes": 22380,
+      "crc32": "99b30fee",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/power4.reconstruction.json",
+      "bytes": 35697,
+      "compressed_bytes": 15038,
+      "crc32": "d27b0bb0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/rebuild_templates.sh",
+      "bytes": 696,
+      "compressed_bytes": 425,
+      "crc32": "a89d1599",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/templates.ml",
+      "bytes": 313516,
+      "compressed_bytes": 11632,
+      "crc32": "c6e1a598",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/natural/templates.mli",
+      "bytes": 9969,
+      "compressed_bytes": 1091,
+      "crc32": "4d13b679",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/final_definition/verification.json",
+      "bytes": 3212,
+      "compressed_bytes": 718,
+      "crc32": "f4c39a64",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/full_multiplication/compile_multiplication.py",
+      "bytes": 24706,
+      "compressed_bytes": 7902,
+      "crc32": "e18979c9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/full_multiplication/cyclic_catalogue.json",
+      "bytes": 57646,
+      "compressed_bytes": 4481,
+      "crc32": "6819b8a4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/full_multiplication/explicit_arithmetic_checks.py",
+      "bytes": 19727,
+      "compressed_bytes": 7101,
+      "crc32": "c80172b2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/full_multiplication/generator_certificate.json",
+      "bytes": 27984,
+      "compressed_bytes": 2560,
+      "crc32": "a86c2cac",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/full_multiplication/results.json",
+      "bytes": 1599,
+      "compressed_bytes": 756,
+      "crc32": "2f56abe1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/full_multiplication/verify_coefficients.py",
+      "bytes": 4666,
+      "compressed_bytes": 1540,
+      "crc32": "034668e2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/README.txt",
+      "bytes": 3737,
+      "compressed_bytes": 1967,
+      "crc32": "17406630",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/compile_bound.py",
+      "bytes": 8392,
+      "compressed_bytes": 2880,
+      "crc32": "65435505",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/coq_source/ExtractCompiler.v",
+      "bytes": 1958,
+      "compressed_bytes": 669,
+      "crc32": "7838e03e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/coq_source/LICENSE-MPL-2.0.txt",
+      "bytes": 16726,
+      "compressed_bytes": 5310,
+      "crc32": "eaa2a441",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/coq_source/README.txt",
+      "bytes": 7175,
+      "compressed_bytes": 3554,
+      "crc32": "9f06afa7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/coq_source/benchmark.py",
+      "bytes": 1664,
+      "compressed_bytes": 857,
+      "crc32": "c3ffadcc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/coq_source/build.sh",
+      "bytes": 1113,
+      "compressed_bytes": 634,
+      "crc32": "2d508ffd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/coq_source/compiler.ml",
+      "bytes": 329873,
+      "compressed_bytes": 13797,
+      "crc32": "fbb932bd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/coq_source/compiler.mli",
+      "bytes": 13323,
+      "compressed_bytes": 1417,
+      "crc32": "6d69bfce",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/coq_source/driver.ml",
+      "bytes": 1152,
+      "compressed_bytes": 560,
+      "crc32": "eb2fb56b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/coq_source/polynomial.py",
+      "bytes": 2872,
+      "compressed_bytes": 1277,
+      "crc32": "f5f18f66",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/graph_bound.residuals.json",
+      "bytes": 268447,
+      "compressed_bytes": 45903,
+      "crc32": "79b82d68",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/graph_specification.py",
+      "bytes": 1941,
+      "compressed_bytes": 866,
+      "crc32": "8d32ccd6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/height_bound_checks.py",
+      "bytes": 1311,
+      "compressed_bytes": 688,
+      "crc32": "c4cd4daf",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/height_checks.json",
+      "bytes": 567,
+      "compressed_bytes": 302,
+      "crc32": "42955ba3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/power4_compact.residuals.json",
+      "bytes": 132304,
+      "compressed_bytes": 23005,
+      "crc32": "9203bdbd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/power4_simplification.json",
+      "bytes": 166362,
+      "compressed_bytes": 32628,
+      "crc32": "6e73b716",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/results.json",
+      "bytes": 1037,
+      "compressed_bytes": 512,
+      "crc32": "642e3d91",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/verification.json",
+      "bytes": 361,
+      "compressed_bytes": 222,
+      "crc32": "a73b317a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/graph_reduction/verify_reduction.py",
+      "bytes": 6066,
+      "compressed_bytes": 2217,
+      "crc32": "ffa8cace",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/manuscript/focused_diophantine.pdf",
+      "bytes": 584724,
+      "compressed_bytes": 573708,
+      "crc32": "4bc8710c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/focused-review-original/manuscript/focused_diophantine.tex",
+      "bytes": 85005,
+      "compressed_bytes": 32408,
+      "crc32": "91bc99c6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/previous-universal/count_jones_sparse.py",
+      "bytes": 2566,
+      "compressed_bytes": 1167,
+      "crc32": "c40c00d0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/previous-universal/emit_jones_point_circuit.py",
+      "bytes": 5893,
+      "compressed_bytes": 1864,
+      "crc32": "e1187f7f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/previous-universal/jones_point_circuit.json",
+      "bytes": 153312,
+      "compressed_bytes": 13458,
+      "crc32": "d39bda73",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/previous-universal/previous-addendum.pdf",
+      "bytes": 321119,
+      "compressed_bytes": 315623,
+      "crc32": "6ab77adb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/previous-universal/sparse-quartic-compiler-audit.md",
+      "bytes": 9730,
+      "compressed_bytes": 4264,
+      "crc32": "929c3d71",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/quartic-circuit-zip-improvements.pdf",
+      "bytes": 286237,
+      "compressed_bytes": 280893,
+      "crc32": "88f44027",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/quartic-circuit-zip-improvements.tex",
+      "bytes": 17236,
+      "compressed_bytes": 7114,
+      "crc32": "c861fa9f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/audit_circuit.py",
+      "bytes": 9034,
+      "compressed_bytes": 3402,
+      "crc32": "c8a5e092",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/audit_formulas.py",
+      "bytes": 5922,
+      "compressed_bytes": 2116,
+      "crc32": "0f2988c4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/audit_leaf.py",
+      "bytes": 4463,
+      "compressed_bytes": 1615,
+      "crc32": "470ed920",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/build_improved.py",
+      "bytes": 13086,
+      "compressed_bytes": 4927,
+      "crc32": "6c8b3215",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/circuit_audit.json",
+      "bytes": 936,
+      "compressed_bytes": 332,
+      "crc32": "e491703a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/code.formula.json",
+      "bytes": 1171086,
+      "compressed_bytes": 302566,
+      "crc32": "53198e7f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/code.functional.json",
+      "bytes": 879984,
+      "compressed_bytes": 225954,
+      "crc32": "a8e3d319",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/code.simple.json",
+      "bytes": 1132373,
+      "compressed_bytes": 275617,
+      "crc32": "b217431f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/const.formula.json",
+      "bytes": 1024792,
+      "compressed_bytes": 265375,
+      "crc32": "8f927612",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/const.functional.json",
+      "bytes": 770544,
+      "compressed_bytes": 198768,
+      "crc32": "08ece9d9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/const.simple.json",
+      "bytes": 989759,
+      "compressed_bytes": 241830,
+      "crc32": "b4a002b4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/decode_formula.py",
+      "bytes": 2855,
+      "compressed_bytes": 1272,
+      "crc32": "771a9c9a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/formula_audit.json",
+      "bytes": 1502,
+      "compressed_bytes": 338,
+      "crc32": "d587af29",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/functional_formula.py",
+      "bytes": 5532,
+      "compressed_bytes": 1996,
+      "crc32": "b98becb4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/hoist_constants.py",
+      "bytes": 2086,
+      "compressed_bytes": 898,
+      "crc32": "4b7e9b44",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/Z_definition.polynomial.json",
+      "bytes": 2135,
+      "compressed_bytes": 907,
+      "crc32": "aacad0e2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/coefficient_examples.json",
+      "bytes": 316,
+      "compressed_bytes": 201,
+      "crc32": "1b4c03e7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/counts.json",
+      "bytes": 1065,
+      "compressed_bytes": 422,
+      "crc32": "9c89d239",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/modules/n_bounded.json",
+      "bytes": 7399,
+      "compressed_bytes": 1290,
+      "crc32": "9b3f7a5a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/modules/n_graph.json",
+      "bytes": 4278,
+      "compressed_bytes": 1026,
+      "crc32": "67b805db",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/modules/n_power4.json",
+      "bytes": 152638,
+      "compressed_bytes": 29192,
+      "crc32": "ddc78780",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/modules/q_add.json",
+      "bytes": 3036,
+      "compressed_bytes": 826,
+      "crc32": "915e73dd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/modules/q_anchor.json",
+      "bytes": 552,
+      "compressed_bytes": 265,
+      "crc32": "4784c743",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/modules/q_natural.json",
+      "bytes": 961,
+      "compressed_bytes": 399,
+      "crc32": "19d38017",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/modules/q_parity.json",
+      "bytes": 2841,
+      "compressed_bytes": 825,
+      "crc32": "2ce87385",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/polynomial_fingerprint.json",
+      "bytes": 1478,
+      "compressed_bytes": 770,
+      "crc32": "0e148de8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/improved/universal_bound.json",
+      "bytes": 349,
+      "compressed_bytes": 219,
+      "crc32": "9156e8d6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/inspect_improved.py",
+      "bytes": 1970,
+      "compressed_bytes": 890,
+      "crc32": "96e07a7c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/leaf_audit.json",
+      "bytes": 216,
+      "compressed_bytes": 141,
+      "crc32": "37fd15d7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/mult.formula.json",
+      "bytes": 1905320,
+      "compressed_bytes": 484075,
+      "crc32": "0c616ba5",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/mult.functional.json",
+      "bytes": 1441266,
+      "compressed_bytes": 360772,
+      "crc32": "57eb55ff",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/mult.simple.json",
+      "bytes": 1848628,
+      "compressed_bytes": 441453,
+      "crc32": "1bf8bf86",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/optimize_leaf.py",
+      "bytes": 4679,
+      "compressed_bytes": 1896,
+      "crc32": "33d30491",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/power4.formula.json",
+      "bytes": 38873,
+      "compressed_bytes": 11622,
+      "crc32": "0735fe74",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/power4.functional.json",
+      "bytes": 29676,
+      "compressed_bytes": 8609,
+      "crc32": "963c5e7c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/power4.simple.json",
+      "bytes": 36780,
+      "compressed_bytes": 10314,
+      "crc32": "1a26dec9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/rebuild_and_check.py",
+      "bytes": 767,
+      "compressed_bytes": 429,
+      "crc32": "6e77e0d4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/rebuild_report.json",
+      "bytes": 386,
+      "compressed_bytes": 215,
+      "crc32": "f54ff93b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-circuit-improved-source/quartic-circuit-improvements/work/simplify_formula.py",
+      "bytes": 3475,
+      "compressed_bytes": 1370,
+      "crc32": "d37d2d86",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-definition-source-and-checks/quartic-source-and-checks/README.txt",
+      "bytes": 1885,
+      "compressed_bytes": 1002,
+      "crc32": "b4faf23c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-definition-source-and-checks/quartic-source-and-checks/count_jones_sparse.py",
+      "bytes": 2566,
+      "compressed_bytes": 1167,
+      "crc32": "c40c00d0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-definition-source-and-checks/quartic-source-and-checks/emit_jones_point_circuit.py",
+      "bytes": 5893,
+      "compressed_bytes": 1864,
+      "crc32": "e1187f7f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-definition-source-and-checks/quartic-source-and-checks/freitag-catalogue-check.json",
+      "bytes": 107850,
+      "compressed_bytes": 5712,
+      "crc32": "1e4c6848",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-definition-source-and-checks/quartic-source-and-checks/freitag-catalogue-check.py",
+      "bytes": 8672,
+      "compressed_bytes": 3418,
+      "crc32": "13f6ab55",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-definition-source-and-checks/quartic-source-and-checks/freitag-elliptic-check.py",
+      "bytes": 2150,
+      "compressed_bytes": 1000,
+      "crc32": "3a9cef1d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-definition-source-and-checks/quartic-source-and-checks/jones_point_circuit.json",
+      "bytes": 153312,
+      "compressed_bytes": 13458,
+      "crc32": "d39bda73",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-definition-source-and-checks/quartic-source-and-checks/quartic-definition-improvements.tex",
+      "bytes": 23155,
+      "compressed_bytes": 10003,
+      "crc32": "3a660d7e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-definition-source-and-checks/quartic-source-and-checks/quartic-leaf-ledger.md",
+      "bytes": 11515,
+      "compressed_bytes": 5166,
+      "crc32": "715e1baf",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/quartic-definition-source-and-checks/quartic-source-and-checks/sparse-quartic-compiler-audit.md",
+      "bytes": 9730,
+      "compressed_bytes": 4264,
+      "crc32": "929c3d71",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/README.txt",
+      "bytes": 3291,
+      "compressed_bytes": 1571,
+      "crc32": "495a5421",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/audit/cutoff-certificate.json",
+      "bytes": 7039,
+      "compressed_bytes": 753,
+      "crc32": "72a05f80",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/audit/cutoff_certificate.py",
+      "bytes": 2746,
+      "compressed_bytes": 1138,
+      "crc32": "26789a58",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/audit/depth-counts.json",
+      "bytes": 9279,
+      "compressed_bytes": 1217,
+      "crc32": "4dc69587",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/audit/depth_audit.py",
+      "bytes": 21664,
+      "compressed_bytes": 6662,
+      "crc32": "5fec3ddf",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/audit/identity-verification.txt",
+      "bytes": 493,
+      "compressed_bytes": 181,
+      "crc32": "b956defe",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/audit/quartic_identities.py",
+      "bytes": 2944,
+      "compressed_bytes": 1270,
+      "crc32": "ecafae0f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/audit/selected-counts.json",
+      "bytes": 4566,
+      "compressed_bytes": 926,
+      "crc32": "d4790d66",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/audit/sha256.json",
+      "bytes": 1420,
+      "compressed_bytes": 796,
+      "crc32": "d8b4a88b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/build_complete_source.py",
+      "bytes": 7647,
+      "compressed_bytes": 3109,
+      "crc32": "7af92d70",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/complete-formula.tex",
+      "bytes": 32207,
+      "compressed_bytes": 12912,
+      "crc32": "9ede9030",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/output/pdf/short-anchor-proof.pdf",
+      "bytes": 310348,
+      "compressed_bytes": 304653,
+      "crc32": "54ad052c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/reference-inputs/compositional-formula-before.tex",
+      "bytes": 31384,
+      "compressed_bytes": 12565,
+      "crc32": "4ffb4dd9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/reference-inputs/focused_diophantine.tex",
+      "bytes": 85005,
+      "compressed_bytes": 32408,
+      "crc32": "91bc99c6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-anchor-source-and-audit/short-anchor-proof.tex",
+      "bytes": 14582,
+      "compressed_bytes": 6502,
+      "crc32": "53a9bbad",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/README.txt",
+      "bytes": 5402,
+      "compressed_bytes": 2500,
+      "crc32": "67a96677",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/SHA256SUMS.json",
+      "bytes": 8414,
+      "compressed_bytes": 3983,
+      "crc32": "e93970d7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/article/short-encoding-results.tex",
+      "bytes": 2679,
+      "compressed_bytes": 1316,
+      "crc32": "8e25a0ff",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/article/short-final-counts.tex",
+      "bytes": 108,
+      "compressed_bytes": 78,
+      "crc32": "f4a4bf02",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/article/short-polynomial-proof-sections.tex",
+      "bytes": 14666,
+      "compressed_bytes": 6194,
+      "crc32": "933ce343",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/article/short-polynomial-synthesis.pdf",
+      "bytes": 360362,
+      "compressed_bytes": 353502,
+      "crc32": "1aa352c4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/article/short-polynomial-synthesis.tex",
+      "bytes": 15595,
+      "compressed_bytes": 6813,
+      "crc32": "96f79e58",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/article/short-scalar-parity.tex",
+      "bytes": 4084,
+      "compressed_bytes": 1914,
+      "crc32": "1bf31307",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audit_recipe_comparison.py",
+      "bytes": 2903,
+      "compressed_bytes": 1363,
+      "crc32": "11e58f0b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/README.md",
+      "bytes": 1564,
+      "compressed_bytes": 771,
+      "crc32": "3d595583",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/audit_charts.py",
+      "bytes": 4218,
+      "compressed_bytes": 1979,
+      "crc32": "dc98c1f7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/audit_comparison.py",
+      "bytes": 2757,
+      "compressed_bytes": 1307,
+      "crc32": "ee88fbe7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/audit_main.py",
+      "bytes": 4740,
+      "compressed_bytes": 1954,
+      "crc32": "ee3ca4ed",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/audit_semantics.py",
+      "bytes": 8045,
+      "compressed_bytes": 3257,
+      "crc32": "bec287b8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/clean-rebuild.json",
+      "bytes": 900,
+      "compressed_bytes": 369,
+      "crc32": "62eb3e94",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/final-audit.json",
+      "bytes": 705,
+      "compressed_bytes": 423,
+      "crc32": "81aa4331",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/final-builder-norm-audit.json",
+      "bytes": 3572,
+      "compressed_bytes": 505,
+      "crc32": "3e6461bc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/final-chart-audit.json",
+      "bytes": 203,
+      "compressed_bytes": 136,
+      "crc32": "f9581aeb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/final-comparison-audit.json",
+      "bytes": 269,
+      "compressed_bytes": 178,
+      "crc32": "e53b86b9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/final-semantics-audit.json",
+      "bytes": 566,
+      "compressed_bytes": 266,
+      "crc32": "161376a0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/lucas-norm-joint-adversarial-audit.md",
+      "bytes": 7649,
+      "compressed_bytes": 3626,
+      "crc32": "7d12eef1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/new-anchor-audit.md",
+      "bytes": 4815,
+      "compressed_bytes": 2361,
+      "crc32": "324e36dc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/new-balanced-audit.md",
+      "bytes": 10970,
+      "compressed_bytes": 4931,
+      "crc32": "1a0e72b3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/polynomial-audit.json",
+      "bytes": 715,
+      "compressed_bytes": 423,
+      "crc32": "20e01baf",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/polynomial-chart-audit.json",
+      "bytes": 203,
+      "compressed_bytes": 136,
+      "crc32": "f9581aeb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/polynomial-comparison-audit.json",
+      "bytes": 269,
+      "compressed_bytes": 177,
+      "crc32": "1ec39a98",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/polynomial-semantics-audit.json",
+      "bytes": 566,
+      "compressed_bytes": 266,
+      "crc32": "161376a0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/rejected-elimination-degree8-audit.json",
+      "bytes": 174,
+      "compressed_bytes": 130,
+      "crc32": "7bde10a1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/rejected-elimination-degree8-encoding.json",
+      "bytes": 533,
+      "compressed_bytes": 278,
+      "crc32": "d4a932e2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/shared-lattice-audit.json",
+      "bytes": 1135,
+      "compressed_bytes": 550,
+      "crc32": "c4749fce",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/shared-lattice-audit.py",
+      "bytes": 2344,
+      "compressed_bytes": 1177,
+      "crc32": "ff1132ff",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/squareclass-audit.json",
+      "bytes": 1347,
+      "compressed_bytes": 483,
+      "crc32": "67b32bb5",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/squareclass-audit.py",
+      "bytes": 2074,
+      "compressed_bytes": 1077,
+      "crc32": "48f5ecae",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/audits/unit-scale-anchor-audit.md",
+      "bytes": 3894,
+      "compressed_bytes": 2005,
+      "crc32": "8b4ebd3b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/build.py",
+      "bytes": 20149,
+      "compressed_bytes": 7297,
+      "crc32": "01e30838",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/build_capsules.py",
+      "bytes": 2820,
+      "compressed_bytes": 1518,
+      "crc32": "7f700bd6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/capsules/README.md",
+      "bytes": 1861,
+      "compressed_bytes": 886,
+      "crc32": "a9f4e665",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/capsules/capsule-audit.json",
+      "bytes": 1628,
+      "compressed_bytes": 692,
+      "crc32": "259a9d17",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/comparison-audit.json",
+      "bytes": 1278,
+      "compressed_bytes": 522,
+      "crc32": "5d7a6610",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/decode_polynomial.py",
+      "bytes": 4283,
+      "compressed_bytes": 1847,
+      "crc32": "9d59e3db",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/expand.py",
+      "bytes": 4046,
+      "compressed_bytes": 1731,
+      "crc32": "3fbaf912",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/generator-comparison.json",
+      "bytes": 1453,
+      "compressed_bytes": 534,
+      "crc32": "d83b7feb",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/module-specification.md",
+      "bytes": 7851,
+      "compressed_bytes": 3517,
+      "crc32": "3a3b86ab",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/old-comparison.json",
+      "bytes": 657,
+      "compressed_bytes": 352,
+      "crc32": "5ee46775",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/pack_recipe.py",
+      "bytes": 3038,
+      "compressed_bytes": 1221,
+      "crc32": "d304dd5a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/counts.json",
+      "bytes": 389,
+      "compressed_bytes": 248,
+      "crc32": "0d870671",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/expansion-report.json",
+      "bytes": 738,
+      "compressed_bytes": 389,
+      "crc32": "dd2728c1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/modules/Z_definition.json",
+      "bytes": 40576,
+      "compressed_bytes": 6254,
+      "crc32": "0f225c38",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/modules/q_anchor.json",
+      "bytes": 1337,
+      "compressed_bytes": 415,
+      "crc32": "dde42e55",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/modules/q_batch41.json",
+      "bytes": 7057,
+      "compressed_bytes": 1404,
+      "crc32": "7b3da2ef",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/modules/q_compare4.json",
+      "bytes": 40242,
+      "compressed_bytes": 7687,
+      "crc32": "50a06a24",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/modules/q_height_batch.json",
+      "bytes": 3809,
+      "compressed_bytes": 1012,
+      "crc32": "c4a68825",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/modules/q_primeparity.json",
+      "bytes": 820,
+      "compressed_bytes": 351,
+      "crc32": "88cb0781",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/polynomial.json",
+      "bytes": 824,
+      "compressed_bytes": 399,
+      "crc32": "58d1c83b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/primitive-rows-audit.json",
+      "bytes": 332,
+      "compressed_bytes": 205,
+      "crc32": "81bd132a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/recipe-report.json",
+      "bytes": 397,
+      "compressed_bytes": 236,
+      "crc32": "8ea13e9b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/recipe.json",
+      "bytes": 42267,
+      "compressed_bytes": 9224,
+      "crc32": "d9d690f0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/polynomial/shared.json",
+      "bytes": 672,
+      "compressed_bytes": 221,
+      "crc32": "2fed50e7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/proof-notes/lucas-norm-joint-proof.md",
+      "bytes": 4943,
+      "compressed_bytes": 2415,
+      "crc32": "e1ae2d5d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/proof-notes/norm-proof.md",
+      "bytes": 3107,
+      "compressed_bytes": 1559,
+      "crc32": "987b68ac",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/proof-notes/proof-notes.md",
+      "bytes": 6994,
+      "compressed_bytes": 3153,
+      "crc32": "4572fc2b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/proof-notes/shared-lattice-review.md",
+      "bytes": 3519,
+      "compressed_bytes": 1854,
+      "crc32": "0af8a608",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/proof-notes/squareclass-correction.md",
+      "bytes": 4818,
+      "compressed_bytes": 2241,
+      "crc32": "aeac344d",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/recipe-comparison-audit.json",
+      "bytes": 1330,
+      "compressed_bytes": 531,
+      "crc32": "397c9ff9",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/source-inputs/focused_diophantine.tex",
+      "bytes": 85005,
+      "compressed_bytes": 32408,
+      "crc32": "91bc99c6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/source-inputs/h10-06-primes.tex",
+      "bytes": 33540,
+      "compressed_bytes": 12084,
+      "crc32": "3219a7ab",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/source-inputs/input-archives.json",
+      "bytes": 450,
+      "compressed_bytes": 251,
+      "crc32": "1fd9710f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/source-inputs/previous-quartic-article.pdf",
+      "bytes": 316789,
+      "compressed_bytes": 311012,
+      "crc32": "13c1c4d1",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/source-inputs/supplied-balanced-README.txt",
+      "bytes": 5650,
+      "compressed_bytes": 2541,
+      "crc32": "05a4e16b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/07_recovered_documents_and_code/short-polynomial-source/short-polynomial-source/source-inputs/supplied-short-anchor-proof.tex",
+      "bytes": 14582,
+      "compressed_bytes": 6502,
+      "crc32": "53a9bbad",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/ARCHIVE_INDEX.md",
+      "bytes": 5335,
+      "compressed_bytes": 1409,
+      "crc32": "9cca351c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/DOCUMENT_CATALOGUE.md",
+      "bytes": 7826,
+      "compressed_bytes": 1067,
+      "crc32": "df32a1cc",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/FILE_MANIFEST.json",
+      "bytes": 145397,
+      "compressed_bytes": 30748,
+      "crc32": "d83f723c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/PACKAGE_SUMMARY.json",
+      "bytes": 699,
+      "compressed_bytes": 408,
+      "crc32": "572a04d5",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/SHA256SUMS",
+      "bytes": 103202,
+      "compressed_bytes": 26970,
+      "crc32": "62a6a8f8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/archive_members.csv",
+      "bytes": 135810,
+      "compressed_bytes": 15101,
+      "crc32": "44ab2b63",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/archive_members.json",
+      "bytes": 207677,
+      "compressed_bytes": 16910,
+      "crc32": "e4025797",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/bibliography_entries.json",
+      "bytes": 59010,
+      "compressed_bytes": 9011,
+      "crc32": "21f7117e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/original_files_and_extractions.csv",
+      "bytes": 171369,
+      "compressed_bytes": 32086,
+      "crc32": "e8f1d44c",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/original_files_and_extractions.json",
+      "bytes": 245582,
+      "compressed_bytes": 34815,
+      "crc32": "4a14cce6",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/pdf_catalogue.csv",
+      "bytes": 7758,
+      "compressed_bytes": 1745,
+      "crc32": "87237d53",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/08_inventory/pdf_catalogue.json",
+      "bytes": 10415,
+      "compressed_bytes": 1825,
+      "crc32": "e40096bd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/01_current_articles/contacts-explained.pdf.txt",
+      "bytes": 6947,
+      "compressed_bytes": 3065,
+      "crc32": "0438c422",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/01_current_articles/lower-bounds-existential-integers.pdf.txt",
+      "bytes": 35870,
+      "compressed_bytes": 13140,
+      "crc32": "fd70e6b3",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/01_current_articles/shared-witness-definitions-ai-generated.pdf.txt",
+      "bytes": 40298,
+      "compressed_bytes": 16201,
+      "crc32": "2a70e1f2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/01_current_articles/two-proofs-reduced-inputs-v3.pdf.txt",
+      "bytes": 39442,
+      "compressed_bytes": 16129,
+      "crc32": "cfffdb22",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/02_proof_development/arithmetic-input-reductions.pdf.txt",
+      "bytes": 20722,
+      "compressed_bytes": 8932,
+      "crc32": "550214a0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/02_proof_development/diophantine_integers_from_elliptic_rigidity.pdf.txt",
+      "bytes": 50656,
+      "compressed_bytes": 18151,
+      "crc32": "6c2a103b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/02_proof_development/existential-integers-AI-generated.pdf.txt",
+      "bytes": 28184,
+      "compressed_bytes": 11127,
+      "crc32": "c7253c0a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/02_proof_development/finite-existential-integers.pdf.txt",
+      "bytes": 40540,
+      "compressed_bytes": 16587,
+      "crc32": "de9bef24",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/02_proof_development/reduced-existential-arity.pdf.txt",
+      "bytes": 19188,
+      "compressed_bytes": 8237,
+      "crc32": "a344cf78",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/02_proof_development/two-proofs-existential-integers-AI-generated.pdf.txt",
+      "bytes": 55021,
+      "compressed_bytes": 21660,
+      "crc32": "05224ab4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/02_proof_development/two-proofs-finite-certificate-alternate-AI-generated.pdf.txt",
+      "bytes": 47082,
+      "compressed_bytes": 18567,
+      "crc32": "0fcfac4a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/03_polynomial_constructions/compositional-synthesis.pdf.txt",
+      "bytes": 17499,
+      "compressed_bytes": 7661,
+      "crc32": "f911610f",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/03_polynomial_constructions/focused_diophantine.pdf.txt",
+      "bytes": 74080,
+      "compressed_bytes": 29814,
+      "crc32": "d173fee5",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/03_polynomial_constructions/pell-shared-contact-definition.pdf.txt",
+      "bytes": 25667,
+      "compressed_bytes": 10986,
+      "crc32": "7db6594b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/03_polynomial_constructions/quartic-circuit-zip-improvements.pdf.txt",
+      "bytes": 15163,
+      "compressed_bytes": 6275,
+      "crc32": "6b640e89",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/03_polynomial_constructions/quartic-definition-improvements.pdf.txt",
+      "bytes": 19516,
+      "compressed_bytes": 8706,
+      "crc32": "91e137e4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/03_polynomial_constructions/short-polynomial-synthesis.pdf.txt",
+      "bytes": 32549,
+      "compressed_bytes": 13418,
+      "crc32": "c2a62bd4",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/07_recovered_documents_and_code/balanced-natural-formula-source/balanced-natural-formula/output/pdf/balanced-natural-formula.pdf.txt",
+      "bytes": 21793,
+      "compressed_bytes": 7847,
+      "crc32": "859d92b2",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/07_recovered_documents_and_code/focused_diophantine_review/manuscript/focused_diophantine.pdf.txt",
+      "bytes": 69924,
+      "compressed_bytes": 28389,
+      "crc32": "1e59852e",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/07_recovered_documents_and_code/pell-contact-major-improvement/pell-contact-definition/output/pdf/pell-contact-proof.pdf.txt",
+      "bytes": 16444,
+      "compressed_bytes": 6208,
+      "crc32": "4e413fe7",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/09_searchable_pdf_text/07_recovered_documents_and_code/short-anchor-source-and-audit/output/pdf/short-anchor-proof.pdf.txt",
+      "bytes": 12355,
+      "compressed_bytes": 5706,
+      "crc32": "66b4baa8",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/10_handoff_validation/VALIDATION.md",
+      "bytes": 4358,
+      "compressed_bytes": 2010,
+      "crc32": "066f8c83",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/10_handoff_validation/core-checks.json",
+      "bytes": 5899,
+      "compressed_bytes": 1723,
+      "crc32": "b1625e22",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/10_handoff_validation/core-checks.log",
+      "bytes": 453,
+      "compressed_bytes": 255,
+      "crc32": "5226208b",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/10_handoff_validation/degree8-printed-recipe-audit.json",
+      "bytes": 1632,
+      "compressed_bytes": 330,
+      "crc32": "afa45c98",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/10_handoff_validation/degree8-template-audit.json",
+      "bytes": 925,
+      "compressed_bytes": 268,
+      "crc32": "ac9198dd",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/10_handoff_validation/original-archive-crc.json",
+      "bytes": 1465,
+      "compressed_bytes": 306,
+      "crc32": "df7c6ac0",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/10_handoff_validation/quartic-clean-rebuild.log",
+      "bytes": 1316,
+      "compressed_bytes": 421,
+      "crc32": "ee8b3757",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/10_handoff_validation/shared-witness-rebuild.jsonl",
+      "bytes": 380,
+      "compressed_bytes": 218,
+      "crc32": "5d781c5a",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/README.md",
+      "bytes": 4961,
+      "compressed_bytes": 2176,
+      "crc32": "999216ff",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/run_core_checks.py",
+      "bytes": 4556,
+      "compressed_bytes": 1857,
+      "crc32": "88b02577",
+      "selected": false
+    },
+    {
+      "path": "H10-research-handoff-2026-11-05/verify_handoff.py",
+      "bytes": 1556,
+      "compressed_bytes": 820,
+      "crc32": "a4919764",
+      "selected": false
+    }
+  ]
+}

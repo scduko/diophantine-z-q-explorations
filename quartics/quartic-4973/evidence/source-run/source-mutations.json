@@ -1,0 +1,523 @@
+{
+  "actual_source_positive": {
+    "parent": {
+      "parent": {
+        "anchor": {
+          "arithmetic_acceptance": false,
+          "free": 2,
+          "locals": 4,
+          "max_abs_residual_coefficient": 24,
+          "residual_degree": 2,
+          "residuals": 2,
+          "status": "PASS: SOURCE SPECIFICATION ONLY"
+        },
+        "arithmetic_acceptance": false,
+        "comparisons": {
+          "q_compare4": {
+            "core_rows": 52,
+            "differences": 5,
+            "free": 58,
+            "global_proxy_inputs": 1,
+            "locals": 97,
+            "normalized_lucas_evaluation": true,
+            "ordered_tests": 26,
+            "primary_points": 5
+          },
+          "q_compare_beta": {
+            "core_rows": 18,
+            "differences": 2,
+            "free": 28,
+            "global_proxy_inputs": 1,
+            "locals": 27,
+            "normalized_lucas_evaluation": false,
+            "ordered_tests": 12,
+            "primary_points": 2
+          },
+          "q_compare_lucas": {
+            "core_rows": 42,
+            "differences": 4,
+            "free": 47,
+            "global_proxy_inputs": 0,
+            "locals": 82,
+            "normalized_lucas_evaluation": true,
+            "ordered_tests": 20,
+            "primary_points": 4
+          }
+        },
+        "linear_pole": {
+          "degree": 2,
+          "max_coefficient": 867,
+          "rows": 8,
+          "status": "PASS: literal module only",
+          "variables": 10
+        },
+        "pole_specification_view_only": true,
+        "root": {
+          "field_tests": 377,
+          "lucas_evaluations": 29,
+          "mode_counts": {
+            "q_compare4": 13,
+            "q_compare_beta": 8,
+            "q_compare_lucas": 16
+          },
+          "primary_pairs": 145,
+          "removed_proxy_coordinates": [
+            66,
+            67,
+            68
+          ],
+          "removed_proxy_row": 57,
+          "shared_target_coordinates": 60,
+          "shared_target_rows": 60
+        },
+        "scope": "All module equations and calls; caller must separately verify pins, contract and flattening"
+      },
+      "root_shared": {
+        "added_shared_coordinates": 2,
+        "deleted_evaluations": 37,
+        "exact_net_source_coordinates": -35,
+        "inherited": {
+          "complete_source_acceptance": false,
+          "inverse_incidence": [
+            {
+              "call_consumers": [],
+              "removed_inverse": [
+                38,
+                39
+              ],
+              "residual_consumers": [
+                16,
+                17,
+                18,
+                19
+              ],
+              "role": "A"
+            },
+            {
+              "call_consumers": [],
+              "removed_inverse": [
+                48,
+                49
+              ],
+              "residual_consumers": [
+                26,
+                27,
+                28,
+                29
+              ],
+              "role": "S"
+            },
+            {
+              "call_consumers": [],
+              "removed_inverse": [
+                58,
+                59
+              ],
+              "residual_consumers": [
+                36,
+                37,
+                38,
+                39
+              ],
+              "role": "T"
+            },
+            {
+              "call_consumers": [],
+              "removed_inverse": [
+                68,
+                69
+              ],
+              "residual_consumers": [
+                46,
+                47,
+                48,
+                49
+              ],
+              "role": "Z"
+            }
+          ],
+          "removed_rows": 8,
+          "removed_variables": 8,
+          "status": "PASS: exact four-tangent root transition"
+        },
+        "measured_endpoint_delta": false,
+        "new_lift_gates": 0,
+        "status": "PASS: shared-square delta and delegated parent"
+      },
+      "source_pin_authorized": false
+    },
+    "source_pin_authorized": false,
+    "status": "PASS: exact delta and required parent check"
+  },
+  "cases": [
+    "root definition -2",
+    "root definition -1",
+    "root missing definition",
+    "root changed old row",
+    "root hidden square use",
+    "root false occurrence count",
+    "root swapped recorded square pair",
+    "root false equation record",
+    "root original-pair metadata only",
+    "root wrong log",
+    "root extra marker key",
+    "root noninteger original coordinate",
+    "root coherent false original field",
+    "q_compare4 one changed root call",
+    "q_compare4 repeated square call use",
+    "q_compare4 old layout",
+    "q_compare4 residual slot capture",
+    "q_compare4 marker field",
+    "q_compare4 marker field_index",
+    "q_compare4 marker order",
+    "q_compare4 marker input_type",
+    "q_compare4 marker input_slots",
+    "q_compare4 extra marker key",
+    "q_compare4 changed old core row",
+    "q_compare4 extra call",
+    "q_conic13 marker field",
+    "q_conic13 marker field_index",
+    "q_conic13 marker order",
+    "q_conic13 marker input_type",
+    "q_conic13 marker input_slots",
+    "q_conic13 marker removed_evaluation",
+    "q_conic13 marker removed_equation",
+    "q_conic13 noninteger deleted coordinate",
+    "q_conic13 changed square row",
+    "q_conic13 wrong theta",
+    "q_conic13 missing conic row",
+    "q_conic13 extra row",
+    "q_conic13 extra call",
+    "q_conic13 changed old field row",
+    "q_conic13 changed local count",
+    "q_conic13 restored-Y marker field_bindings",
+    "q_conic13 wrong type field_bindings",
+    "q_conic13 restored-Y marker norm_tree",
+    "q_conic13 wrong type norm_tree",
+    "q_conic13 coherent wrong power",
+    "q_compare_beta one changed root call",
+    "q_compare_beta repeated square call use",
+    "q_compare_beta old layout",
+    "q_compare_beta residual slot capture",
+    "q_compare_beta marker field",
+    "q_compare_beta marker field_index",
+    "q_compare_beta marker order",
+    "q_compare_beta marker input_type",
+    "q_compare_beta marker input_slots",
+    "q_compare_beta extra marker key",
+    "q_compare_beta changed old core row",
+    "q_compare_beta extra call",
+    "q_conic6 marker field",
+    "q_conic6 marker field_index",
+    "q_conic6 marker order",
+    "q_conic6 marker input_type",
+    "q_conic6 marker input_slots",
+    "q_conic6 marker removed_evaluation",
+    "q_conic6 marker removed_equation",
+    "q_conic6 noninteger deleted coordinate",
+    "q_conic6 changed square row",
+    "q_conic6 wrong theta",
+    "q_conic6 missing conic row",
+    "q_conic6 extra row",
+    "q_conic6 extra call",
+    "q_conic6 changed old field row",
+    "q_conic6 changed local count",
+    "q_conic6 restored-Y marker field_bindings",
+    "q_conic6 wrong type field_bindings",
+    "q_conic6 restored-Y marker norm_tree",
+    "q_conic6 wrong type norm_tree",
+    "q_conic6 coherent wrong power",
+    "q_compare_lucas one changed root call",
+    "q_compare_lucas repeated square call use",
+    "q_compare_lucas old layout",
+    "q_compare_lucas residual slot capture",
+    "q_compare_lucas marker field",
+    "q_compare_lucas marker field_index",
+    "q_compare_lucas marker order",
+    "q_compare_lucas marker input_type",
+    "q_compare_lucas marker input_slots",
+    "q_compare_lucas extra marker key",
+    "q_compare_lucas changed old core row",
+    "q_compare_lucas extra call",
+    "q_conic10 marker field",
+    "q_conic10 marker field_index",
+    "q_conic10 marker order",
+    "q_conic10 marker input_type",
+    "q_conic10 marker input_slots",
+    "q_conic10 marker removed_evaluation",
+    "q_conic10 marker removed_equation",
+    "q_conic10 noninteger deleted coordinate",
+    "q_conic10 changed square row",
+    "q_conic10 wrong theta",
+    "q_conic10 missing conic row",
+    "q_conic10 extra row",
+    "q_conic10 extra call",
+    "q_conic10 changed old field row",
+    "q_conic10 changed local count",
+    "q_conic10 restored-Y marker field_bindings",
+    "q_conic10 wrong type field_bindings",
+    "q_conic10 restored-Y marker norm_tree",
+    "q_conic10 wrong type norm_tree",
+    "q_conic10 coherent wrong power"
+  ],
+  "first_norm_boolean_callback_rejections": 2,
+  "first_norm_negative_cases": [
+    "q_conic13: numerator coefficient",
+    "q_conic13: numerator missing term",
+    "q_conic13: first node coefficient",
+    "q_conic13: first node missing term",
+    "q_conic13: metadata field 1",
+    "q_conic13: metadata role X0.f",
+    "q_conic13: metadata order 2",
+    "q_conic13: metadata numerator 32",
+    "q_conic13: metadata first_node 31",
+    "q_conic13: metadata original_power 0",
+    "q_conic13: metadata virtual_denominator 1",
+    "q_conic13: metadata virtual_denominator_exponent 2",
+    "q_conic13: metadata order True",
+    "q_conic13: coherent field type",
+    "q_conic13: coherent field norm",
+    "q_conic13: coherent field power",
+    "q_conic13: coherent field numerator",
+    "q_conic13: coherent field virtual_denominator_exponent",
+    "q_conic13: coherent field order",
+    "q_conic13: tree pair mismatch",
+    "q_conic13: literal anchor",
+    "q_conic13: retained conic changed",
+    "q_conic13: outside numerator use",
+    "q_conic13: outside numerator call",
+    "q_conic13: last node missing",
+    "q_conic13: last node changed",
+    "q_conic13: semantics omitted",
+    "q_conic13: new hidden variable",
+    "q_conic13: unknown metadata",
+    "q_conic6: numerator coefficient",
+    "q_conic6: numerator missing term",
+    "q_conic6: first node coefficient",
+    "q_conic6: first node missing term",
+    "q_conic6: metadata field 1",
+    "q_conic6: metadata role X0.f",
+    "q_conic6: metadata order 2",
+    "q_conic6: metadata numerator 18",
+    "q_conic6: metadata first_node 17",
+    "q_conic6: metadata original_power 0",
+    "q_conic6: metadata virtual_denominator 1",
+    "q_conic6: metadata virtual_denominator_exponent 2",
+    "q_conic6: metadata order True",
+    "q_conic6: coherent field type",
+    "q_conic6: coherent field norm",
+    "q_conic6: coherent field power",
+    "q_conic6: coherent field numerator",
+    "q_conic6: coherent field virtual_denominator_exponent",
+    "q_conic6: coherent field order",
+    "q_conic6: tree pair mismatch",
+    "q_conic6: literal anchor",
+    "q_conic6: retained conic changed",
+    "q_conic6: outside numerator use",
+    "q_conic6: outside numerator call",
+    "q_conic6: last node missing",
+    "q_conic6: last node changed",
+    "q_conic6: semantics omitted",
+    "q_conic6: new hidden variable",
+    "q_conic6: unknown metadata",
+    "q_conic10: numerator coefficient",
+    "q_conic10: numerator missing term",
+    "q_conic10: first node coefficient",
+    "q_conic10: first node missing term",
+    "q_conic10: metadata field 1",
+    "q_conic10: metadata role X0.f",
+    "q_conic10: metadata order 2",
+    "q_conic10: metadata numerator 26",
+    "q_conic10: metadata first_node 25",
+    "q_conic10: metadata original_power 0",
+    "q_conic10: metadata virtual_denominator 1",
+    "q_conic10: metadata virtual_denominator_exponent 2",
+    "q_conic10: metadata order True",
+    "q_conic10: coherent field type",
+    "q_conic10: coherent field norm",
+    "q_conic10: coherent field power",
+    "q_conic10: coherent field numerator",
+    "q_conic10: coherent field virtual_denominator_exponent",
+    "q_conic10: coherent field order",
+    "q_conic10: tree pair mismatch",
+    "q_conic10: literal anchor",
+    "q_conic10: retained conic changed",
+    "q_conic10: outside numerator use",
+    "q_conic10: outside numerator call",
+    "q_conic10: last node missing",
+    "q_conic10: last node changed",
+    "q_conic10: semantics omitted",
+    "q_conic10: new hidden variable",
+    "q_conic10: unknown metadata"
+  ],
+  "first_norm_resource_aborts": [
+    "wide list",
+    "long string",
+    "large integer",
+    "deep list"
+  ],
+  "negative_count": 109,
+  "resource_abort_regressions": 1,
+  "restored_specification_positive": {
+    "parent": {
+      "anchor": {
+        "arithmetic_acceptance": false,
+        "free": 2,
+        "locals": 4,
+        "max_abs_residual_coefficient": 24,
+        "residual_degree": 2,
+        "residuals": 2,
+        "status": "PASS: SOURCE SPECIFICATION ONLY"
+      },
+      "arithmetic_acceptance": false,
+      "comparisons": {
+        "q_compare4": {
+          "core_rows": 52,
+          "differences": 5,
+          "free": 58,
+          "global_proxy_inputs": 1,
+          "locals": 97,
+          "normalized_lucas_evaluation": true,
+          "ordered_tests": 26,
+          "primary_points": 5
+        },
+        "q_compare_beta": {
+          "core_rows": 18,
+          "differences": 2,
+          "free": 28,
+          "global_proxy_inputs": 1,
+          "locals": 27,
+          "normalized_lucas_evaluation": false,
+          "ordered_tests": 12,
+          "primary_points": 2
+        },
+        "q_compare_lucas": {
+          "core_rows": 42,
+          "differences": 4,
+          "free": 47,
+          "global_proxy_inputs": 0,
+          "locals": 82,
+          "normalized_lucas_evaluation": true,
+          "ordered_tests": 20,
+          "primary_points": 4
+        }
+      },
+      "linear_pole": {
+        "degree": 2,
+        "max_coefficient": 867,
+        "rows": 8,
+        "status": "PASS: literal module only",
+        "variables": 10
+      },
+      "pole_specification_view_only": true,
+      "root": {
+        "field_tests": 377,
+        "lucas_evaluations": 29,
+        "mode_counts": {
+          "q_compare4": 13,
+          "q_compare_beta": 8,
+          "q_compare_lucas": 16
+        },
+        "primary_pairs": 145,
+        "removed_proxy_coordinates": [
+          66,
+          67,
+          68
+        ],
+        "removed_proxy_row": 57,
+        "shared_target_coordinates": 60,
+        "shared_target_rows": 60
+      },
+      "scope": "All module equations and calls; caller must separately verify pins, contract and flattening"
+    },
+    "root_shared": {
+      "added_shared_coordinates": 2,
+      "deleted_evaluations": 37,
+      "exact_net_source_coordinates": -35,
+      "inherited": {
+        "complete_source_acceptance": false,
+        "inverse_incidence": [
+          {
+            "call_consumers": [],
+            "removed_inverse": [
+              38,
+              39
+            ],
+            "residual_consumers": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "role": "A"
+          },
+          {
+            "call_consumers": [],
+            "removed_inverse": [
+              48,
+              49
+            ],
+            "residual_consumers": [
+              26,
+              27,
+              28,
+              29
+            ],
+            "role": "S"
+          },
+          {
+            "call_consumers": [],
+            "removed_inverse": [
+              58,
+              59
+            ],
+            "residual_consumers": [
+              36,
+              37,
+              38,
+              39
+            ],
+            "role": "T"
+          },
+          {
+            "call_consumers": [],
+            "removed_inverse": [
+              68,
+              69
+            ],
+            "residual_consumers": [
+              46,
+              47,
+              48,
+              49
+            ],
+            "role": "Z"
+          }
+        ],
+        "removed_rows": 8,
+        "removed_variables": 8,
+        "status": "PASS: exact four-tangent root transition"
+      },
+      "measured_endpoint_delta": false,
+      "new_lift_gates": 0,
+      "status": "PASS: shared-square delta and delegated parent"
+    },
+    "source_pin_authorized": false
+  },
+  "scope": "Actual first-norm source checked first; inherited root/shared mutations use explicitly restored specification view",
+  "status": "PASS: full-source shared-square mutations",
+  "tangent_negative_cases": [
+    "tangent row 16",
+    "tangent row 17",
+    "tangent row 24",
+    "tangent row 25",
+    "tangent row 32",
+    "tangent row 33",
+    "tangent row 40",
+    "tangent row 41",
+    "doubling model",
+    "missing tangent site",
+    "inverse receipt",
+    "target binding"
+  ]
+}

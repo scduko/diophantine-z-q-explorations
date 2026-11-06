@@ -1,0 +1,188 @@
+{
+  "accepted": true,
+  "approval_scopes": {
+    "integrated_manuscript_review": "exact integrated manuscript and selected arithmetic exposition",
+    "reproduction": "clean source regeneration, fresh base pipeline and exact selected certificate replay",
+    "source_arithmetic_review": "exact emitted source and its integer rational-projection theorem",
+    "verification": "exact certificate replay, full quartic expansion and coefficient bound"
+  },
+  "expected": {
+    "degree": 4,
+    "max_abs_coefficient": 685783949153203534233890,
+    "monomials": 72925,
+    "rows": 4552,
+    "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+    "source_raw_sha256": "4a82d9a8dc1b5c92eb40a49751c0a6aae073c8f765ca5e276a74802fd56b84be",
+    "source_rows": 4513,
+    "source_sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+    "source_variables": 4935,
+    "variables": 4973,
+    "witnesses": 4972
+  },
+  "features": {
+    "FirstNorm": true,
+    "GeneralRoots": true,
+    "ScalarFusion": false,
+    "SharedSquare": true,
+    "TangentFusion": true,
+    "TargetTwo": true
+  },
+  "files": {
+    "algebra_proof": {
+      "bytes": 5831,
+      "path": "docs/quartic-4973-validation/ALGEBRA.md",
+      "sha256": "5ed46349c6fc96e3a1f5183b666ab8afee9c01837f7b340a60577a31541be029"
+    },
+    "certificate": {
+      "bytes": 247584,
+      "path": "quartics/quartic-4973/certificate.jsonl.gz",
+      "sha256": "81ca768459a13b76dbdf4bfe81e94fbab9ab99f14a5731f6b1a1b03e28c1df2b"
+    },
+    "certificate_checker": {
+      "bytes": 73987,
+      "path": "quartics/quartic-4973/verify_certificate.py",
+      "sha256": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe"
+    },
+    "compiled_rows": {
+      "bytes": 117471,
+      "path": "quartics/quartic-4973/candidate-rows.json.gz",
+      "sha256": "1399f9e16932863b4b46a8977061617ed2013ad0947f4b4b7742f07e8e30edd1"
+    },
+    "construction_map": {
+      "bytes": 27743,
+      "path": "quartics/quartic-4973/construction-map.json",
+      "sha256": "3d1e002eee34f4917605da1ddc7227e43bfaf4a5044d30d9a77f50fabc7380d2"
+    },
+    "expanded": {
+      "bytes": 1622053,
+      "path": "quartics/quartic-4973/polynomial.expanded.txt",
+      "sha256": "094f6a7ed17e7cc8d5d17a2f809127bbaffd0fe343cb2a32d18ac97e61279876"
+    },
+    "finite_review": {
+      "bytes": 3785,
+      "path": "docs/quartic-4973-validation/FINITE_REVIEW.md",
+      "sha256": "022a0ad3e29b682a9ab0c4cd04c0aaa901d1a779d36fb139e152dcb6fa2a0c9d"
+    },
+    "integrated_manuscript_review": {
+      "bytes": 2694,
+      "path": "docs/quartic-4973-validation/PHEIDAS_ATTRIBUTION_REVIEW.md",
+      "sha256": "6ce511a4215dc44fbe239f3ed18899ec88ddc0edc256b806d8598e284e3c1983"
+    },
+    "manuscript": {
+      "bytes": 720126,
+      "path": "quartic_4973.tex",
+      "sha256": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34"
+    },
+    "parity_proof": {
+      "bytes": 4187,
+      "path": "docs/quartic-4973-validation/PARITY_PROOF.md",
+      "sha256": "685f4aa474f2a6297415b60d1a91d2ad8c1f5c2e00671b504e88b4ad286b3f9f"
+    },
+    "power_proof": {
+      "bytes": 2837,
+      "path": "docs/quartic-4973-validation/POWER_PROOF.md",
+      "sha256": "3c54dac96c0875481f407d05436ee18efcc1e3dce1f505074e995a5c920da0ac"
+    },
+    "previous_integrated_manuscript_review": {
+      "bytes": 5149,
+      "path": "docs/quartic-4973-validation/INTEGRATION_REVIEW.md",
+      "sha256": "3bbd751dbddbc7a1f9551edb4bfe6f4677b496234bc7af37a314f1c1b69bdfc7"
+    },
+    "relation_proof": {
+      "bytes": 4859,
+      "path": "docs/quartic-4973-validation/RELATION_PROOF.md",
+      "sha256": "1e4f5cb9de4359dfec3271bbf466c5dc0510e7cf5c2da2330aa6577b3d762011"
+    },
+    "reproduction": {
+      "bytes": 14987,
+      "path": "docs/quartic-4973-validation/REPRODUCTION.json",
+      "sha256": "bff8ba8a35149f644d398a4fc4e2dbfbc1d4ef4a047f0b18effb1e410ec8c82a"
+    },
+    "residuals": {
+      "bytes": 118851,
+      "path": "quartics/quartic-4973/residuals.json.gz",
+      "sha256": "67fa6e2554045ba89dad1575dc31299d0cf34ea93611fac7710b7183ea29f7ab"
+    },
+    "source_arithmetic_review": {
+      "bytes": 7726,
+      "path": "quartics/quartic-4973/evidence/arithmetic-source-review.md",
+      "sha256": "3eaba41fee89ed2457292666821c65604124f0a2938fcf40cb7c5b1337b75965"
+    },
+    "source_audit": {
+      "bytes": 13295,
+      "path": "quartics/quartic-4973/source-audit.json",
+      "sha256": "e4b93b2da1babcdc3fcf4a63123fd813143d559358fdf4c76f3880733977333f"
+    },
+    "source_auditor": {
+      "bytes": 17975,
+      "path": "quartics/quartic-4973/reproducibility/pipeline/check_source.py",
+      "sha256": "58bf1da4007247bc4558eacce6bdbbc83d2394ac2a47f128390f20f26567d50a"
+    },
+    "source_entry": {
+      "bytes": 14068,
+      "path": "quartics/quartic-4973/source-entry.json",
+      "sha256": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857"
+    },
+    "source_layout": {
+      "bytes": 49430,
+      "path": "quartics/quartic-4973/source-layout.json",
+      "sha256": "50c518b1f7e5a69bda243c8b027c2ddd88193cd20d15b3f3ddcb4deffead1006"
+    },
+    "source_residuals": {
+      "bytes": 108491,
+      "path": "quartics/quartic-4973/source-residuals.jsonl.gz",
+      "sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d"
+    },
+    "variable_map": {
+      "bytes": 23939,
+      "path": "quartics/quartic-4973/variable-map.json",
+      "sha256": "2402920061d7db7084485d448c8f8c0c9688900d1946d73db390cdf6c21a2a3b"
+    },
+    "verification": {
+      "bytes": 1135,
+      "path": "quartics/quartic-4973/evidence/final-verification.json",
+      "sha256": "eaae6fc4bedc1205be68f7b77f39d9543b4e131b981dc298caffc59c25cfaccb"
+    },
+    "weights": {
+      "bytes": 9106,
+      "path": "quartics/quartic-4973/weights.json",
+      "sha256": "3dd137c9c1a8930b0f9d2de90cf49d6bd71b24de77b9a0317ac4ce97b9c10da8"
+    }
+  },
+  "finite_rules": {
+    "circuit": {
+      "proof_role": "power_proof",
+      "review_role": "finite_review"
+    },
+    "eliminate": {
+      "proof_role": "algebra_proof",
+      "review_role": "finite_review"
+    },
+    "linear": {
+      "proof_role": "algebra_proof",
+      "review_role": "finite_review"
+    },
+    "parity_conic": {
+      "proof_role": "parity_proof",
+      "review_role": "finite_review"
+    },
+    "relation_eliminate": {
+      "proof_role": "relation_proof",
+      "review_role": "finite_review"
+    },
+    "shear": {
+      "proof_role": "algebra_proof",
+      "review_role": "finite_review"
+    }
+  },
+  "layout_edits": [],
+  "main_label": "thm:quartic",
+  "package": {
+    "auditor_root": "quartics/quartic-4973/reproducibility/pipeline",
+    "root": "quartics/quartic-4973",
+    "source_root": "quartics/quartic-4973/source"
+  },
+  "schema": "quartic-v4-final-inventory-acceptance-v1",
+  "source_family": "H19-root37-target2-tangent-first-norm-normalized-linear-pole-v1",
+  "version": 4
+}

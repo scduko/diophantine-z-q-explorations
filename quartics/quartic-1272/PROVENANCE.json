@@ -1,0 +1,234 @@
+{
+  "schema": "quartic-1272-portability-v1",
+  "origin": "Independent reconstruction dated 2026-11-06",
+  "notOriginalBrox1315": true,
+  "originalPolynomialSha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586",
+  "changes": "Source-location, report-path, and explicit newline-serialization adaptations only. Mathematical builder operations, compiler arithmetic and verifier arithmetic are unchanged.",
+  "copiedSourceFiles": [
+    {
+      "path": "builder/build_source.cjs",
+      "originalSha256": "ecbd266ca3728a6ea298475e059ce2541ae049d1ae4e1b75a4ea7a885d3e36fd",
+      "packagedSha256": "68c553f987f88780d28fbd21d625278701ecc38d8cc92160215e5bf44a270c78",
+      "byteIdentical": false
+    },
+    {
+      "path": "compiler/compile_ir.py",
+      "originalSha256": "adf72f0e20362373be6f050b19a6859c00d9535ec49e74272cf8e58df12f0435",
+      "packagedSha256": "c50510a5bed8f59543b64a3a2cb251e9aff4b300d4bfc750e13642e7b00eb46f",
+      "byteIdentical": false
+    },
+    {
+      "path": "compiler/review_checker.cjs",
+      "originalSha256": "cebc27ef53ef27f131b58db06bd39a3008090c492598cb06fbda46f66e78007c",
+      "packagedSha256": "cebc27ef53ef27f131b58db06bd39a3008090c492598cb06fbda46f66e78007c",
+      "byteIdentical": true
+    },
+    {
+      "path": "checker/checker.cjs",
+      "originalSha256": "50f9924557f0594a0ddb2664260d2e382d80762a0d607d87203fb7ddfb4e1cb1",
+      "packagedSha256": "50f9924557f0594a0ddb2664260d2e382d80762a0d607d87203fb7ddfb4e1cb1",
+      "byteIdentical": true
+    },
+    {
+      "path": "checker/mutation_tests.cjs",
+      "originalSha256": "cac920522fb3a7e188b6bee64ed61d9e4003c0458a453374e22e8490be71f70c",
+      "packagedSha256": "cac920522fb3a7e188b6bee64ed61d9e4003c0458a453374e22e8490be71f70c",
+      "byteIdentical": true
+    },
+    {
+      "path": "checker/check_anchor.cjs",
+      "originalSha256": "148287db2e1336f9660bbbcdf160c5b2ca8de88eac913bf8598be2578b11a998",
+      "packagedSha256": "148287db2e1336f9660bbbcdf160c5b2ca8de88eac913bf8598be2578b11a998",
+      "byteIdentical": true
+    },
+    {
+      "path": "checker/run_all.cjs",
+      "originalSha256": "dc156fb32ce515eea3a543186fc5a6214617e2841f192a848a6a067f751198cd",
+      "packagedSha256": "dc156fb32ce515eea3a543186fc5a6214617e2841f192a848a6a067f751198cd",
+      "byteIdentical": true
+    },
+    {
+      "path": "source-review/build_inventory.py",
+      "originalSha256": "4342ddcb99828a3d0f23c3b1a2a66d5ab66f3aec631ece4c23747cbd1dcde74b",
+      "packagedSha256": "8ef9056c5610d01a928c1f5aec6bfb7b7077fea1d0e890e7819cfea39b98977f",
+      "byteIdentical": false
+    },
+    {
+      "path": "source-review/check_builder_semantics.py",
+      "originalSha256": "b1c3d6c4124ce4a39e76486522e46dd702d3b47b0b4ea751a7c39bf82ec0ab69",
+      "packagedSha256": "13f102f7801630d3c9dd280665da35bae03f51567255c8465f63f151844562a4",
+      "byteIdentical": false
+    },
+    {
+      "path": "oracle/check_oracle.py",
+      "originalSha256": "ea983541e147f3092e692332f9c8a989bd60119b533eff9495552d33c60d4497",
+      "packagedSha256": "8f2338bc03abe2e03a8e23fa743d27d615f10fb029a63139e6efc1924ef4c04d",
+      "byteIdentical": false
+    },
+    {
+      "path": "identity/check_identity.py",
+      "originalSha256": "03ccfbe5d3cfe943139dee00232c51e9aea0bc9c7726fffc3fcb1a820a8f387a",
+      "packagedSha256": "18a63c26c24b3a8c22ff660ce1bbba263d9144f0b8f4dabeb60e5d05b6153584",
+      "byteIdentical": false
+    },
+    {
+      "path": "identity/check_reconstructed_tables.py",
+      "originalSha256": "bca2820620e76098398018b0a3db62a4f05599b02602b240a91b7301a72f8eb3",
+      "packagedSha256": "50a15e266cbb6a3a18917dbb4b63b7035ed5eaed456798dc01f1b510509afec5",
+      "byteIdentical": false
+    },
+    {
+      "path": "optimization/verify_optimization.py",
+      "originalSha256": "98349dcedf10e14456d88d43c46b87eb26c721b104d8206ac353133401cce38a",
+      "packagedSha256": "7b344deef95cd9d6123e36af09168a511d4ff618a15fb57a6a07babbbd51b182",
+      "byteIdentical": false
+    },
+    {
+      "path": "optimization/find_affine_dependencies.py",
+      "originalSha256": "b31389c01f31c48510380ef3e8b4f8981058e01fff6673a074cbab47403d3fe2",
+      "packagedSha256": "972286adb71f3ce9faadeb3c2b68ab6f5415061a7a05ef805453552a169fdbd4",
+      "byteIdentical": false
+    }
+  ],
+  "originalRawHashes": {
+    "raw-ir.json": "d71ded4f434476cdc4bdd1ac309a19f57cb706ed3e714439c6ed32fd1f0b1731",
+    "raw-translated-ir.json": "301e3d110d5618ecd172ca0eca45f71058d9177348c379256819f69bd89b3425"
+  },
+  "sourceReviewNote": "Historical reviews pin original raw metadata; portability validation checks equality after removing only source.path. All regenerated tables must match original bytes.",
+  "externalArithmetic": "Named source arithmetic results and Sun Theorem 4.1 remain inputs. No Lean/kernel or complete external-theorem proof is claimed.",
+  "rawIRComparison": {
+    "allowedDifference": "source.path only",
+    "allOtherFieldsExactlyEqual": true,
+    "portableRawHashes": {
+      "raw-ir.json": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+      "raw-translated-ir.json": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e"
+    }
+  },
+  "polynomialByteIdentity": {
+    "direct": "5acd7ebf8c09c7d95f66c16f6c5594fdbbde062a0f3204068e8f88b7fd4b54ba",
+    "translated": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586"
+  },
+  "serialization": {
+    "encoding": "UTF-8",
+    "lfFiles": [
+      "MANIFEST.json",
+      "PROVENANCE.json",
+      "builder/FROZEN.json",
+      "builder/census.json",
+      "builder/raw-ir.json",
+      "builder/raw-translated-ir.json",
+      "checker/ANCHOR_CHECK.json",
+      "checker/FINAL_CHECK.json",
+      "checker/MUTATION_TESTS.json",
+      "checker/direct-check.json",
+      "checker/translated-check.json",
+      "compiler/checker-review-probes.json",
+      "compiler/direct/compiled-ir.json",
+      "compiler/direct/compiler-report.json",
+      "compiler/direct/coordinate-map.json",
+      "compiler/direct/reduction-certificate.json",
+      "compiler/direct/specialization-certificate.json",
+      "compiler/translated/compiled-ir.json",
+      "compiler/translated/compiler-report.json",
+      "compiler/translated/coordinate-map.json",
+      "compiler/translated/reduction-certificate.json",
+      "compiler/translated/specialization-certificate.json",
+      "identity/anchor_certificate.json",
+      "identity/checks.json",
+      "identity/reconstructed_table_checks.json",
+      "identity/source_receipts.json",
+      "optimization/optimization-check.json",
+      "oracle/results.json",
+      "source-review/builder_semantic_checks.json",
+      "source-review/review_verdict.json",
+      "source-review/source_inventory.json",
+      "sources/SOURCES.json"
+    ],
+    "publishedCrlfTables": [
+      "compiler/direct/polynomial.json",
+      "compiler/translated/polynomial.json",
+      "polynomial.json"
+    ],
+    "reason": "Preserve the published polynomial hashes while making regenerated JSON byte-identical on Windows and Linux.",
+    "exactByteComparisonsRetained": true,
+    "stableArtifactComparison": [
+      {
+        "path": "builder/raw-ir.json",
+        "previousSha256": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+        "currentSha256": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+        "parsedJsonIdentical": true,
+        "change": "none"
+      },
+      {
+        "path": "builder/raw-translated-ir.json",
+        "previousSha256": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e",
+        "currentSha256": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e",
+        "parsedJsonIdentical": true,
+        "change": "none"
+      },
+      {
+        "path": "source-review/source_inventory.json",
+        "previousSha256": "0bd4e47068ee174bad7a5a2da61617ce840cd14d68d980c9b29300b19fedb98c",
+        "currentSha256": "4e4e9b924f5d0d4705b2806f353b9e312d36389e041a86fa9abc60f36673b32b",
+        "parsedJsonIdentical": true,
+        "change": "CRLF to LF only"
+      },
+      {
+        "path": "compiler/direct/compiled-ir.json",
+        "previousSha256": "ee84bb197c4f3dbb680be3501f26c8e661be4b416c311542cc23fc9798f3e5b4",
+        "currentSha256": "b79fdb306c25d85aa41c308ad96a1076d2b84b98a6f51c66d0682b2ae9b15b98",
+        "parsedJsonIdentical": true,
+        "change": "CRLF to LF only"
+      },
+      {
+        "path": "compiler/direct/reduction-certificate.json",
+        "previousSha256": "0d30bcbf2999b45f4240acbc304d9064d51dcb417c5de3fccadeb8e6fbef520f",
+        "currentSha256": "130953b02693de8ce3da1996a3257a1e50a58cfdc03be73e6f05d105419cc06f",
+        "parsedJsonIdentical": true,
+        "change": "CRLF to LF only"
+      },
+      {
+        "path": "compiler/direct/coordinate-map.json",
+        "previousSha256": "68271e2dec96c091a0933fef71b25f6db397d0a177839b87f9e1d204e2a055d8",
+        "currentSha256": "a2f10e89a380c456937623f9fc6655e0c419881693fb6bea84f8e975ba413624",
+        "parsedJsonIdentical": true,
+        "change": "CRLF to LF only"
+      },
+      {
+        "path": "compiler/direct/polynomial.json",
+        "previousSha256": "5acd7ebf8c09c7d95f66c16f6c5594fdbbde062a0f3204068e8f88b7fd4b54ba",
+        "currentSha256": "5acd7ebf8c09c7d95f66c16f6c5594fdbbde062a0f3204068e8f88b7fd4b54ba",
+        "parsedJsonIdentical": true,
+        "change": "none"
+      },
+      {
+        "path": "compiler/translated/compiled-ir.json",
+        "previousSha256": "21fcc73e863409511bb9ba7eec532d752e66ecda79a98a39b4df9f798bf53cb4",
+        "currentSha256": "377cda57d18c320149f9cb47cbaeacf847ab0df1dd2a6cfd08a967f3c4af1433",
+        "parsedJsonIdentical": true,
+        "change": "CRLF to LF only"
+      },
+      {
+        "path": "compiler/translated/reduction-certificate.json",
+        "previousSha256": "85af0cc035d258c8cc19ae2e6f105a3b00f881d36861504c13a6fc01d9dd238f",
+        "currentSha256": "489287cdb314cd89f1319b6818528a90dfc444f962d20e3acfb931800a7412a3",
+        "parsedJsonIdentical": true,
+        "change": "CRLF to LF only"
+      },
+      {
+        "path": "compiler/translated/coordinate-map.json",
+        "previousSha256": "a14aaa0f44167f3f4191edb78e5f655dc6973269d20acf89e3f79a5bd0e36868",
+        "currentSha256": "02673ea95f96be7c77de80688fc57369a2e0c69fc94184c98f4d66983466fdb3",
+        "parsedJsonIdentical": true,
+        "change": "CRLF to LF only"
+      },
+      {
+        "path": "compiler/translated/polynomial.json",
+        "previousSha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586",
+        "currentSha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586",
+        "parsedJsonIdentical": true,
+        "change": "none"
+      }
+    ]
+  }
+}

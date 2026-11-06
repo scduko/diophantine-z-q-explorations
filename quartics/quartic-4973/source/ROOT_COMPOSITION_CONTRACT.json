@@ -1,0 +1,67 @@
+{
+  "format": "half-generator-root-composition-review-v1",
+  "status": "mathematical composition reviewed; concrete source unaccepted",
+  "source_id": null,
+  "parent_source_pin_required": true,
+  "proofs": {
+    "root_doubled_indices": "ecdbfc9acd575a8ab194f8e76c356e7898544a506c705a40f169c6686c70a80e",
+    "consumer_adapted_root_charts": "9a126a387cd376f988964e76193ac9ca712e363f501cd26f4f55c543c8e1011e",
+    "original_proposed_contract": "8be093a118346296ea4aa681617b0b47336d2e1aa7d3609ad1d546ada37621af",
+    "fixed_target_constants": "03d5ffae826a5183d1c1470594c113bc62c285ca12a09702c26f1fb0e69c1409"
+  },
+  "field": "Q(sqrt(2)); d=3-sqrt(2); D=d^2=11-6sqrt(2)",
+  "root_roles": ["A", "S", "T", "Z", "scalar_J0", "comparison_J"],
+  "root_domain": "nontorsion E(K), with unique integer n_Q satisfying 2Q=n_Q*Pstar",
+  "fixed_comparison_base": "R=(1+sqrt(2),2sqrt(2)); 2R=Pstar",
+  "fixed_target": "4R=2Pstar",
+  "variable_targets": ["4A", "4S", "4T", "4Z"],
+  "root_chart_policy": {
+    "A_T_Z": "retain x,y; reuse actual first-double q=x^2; impose y^2=x*q-D*x; retain inverse of 2y or exact tangent equation 2y*lambda=3q-D",
+    "S": "same chart plus x*f=1 and y*z+x=0",
+    "J0_J": "retain f,z,k; k=f*z; f=z^2-D*k^2; retain actual scalar/comparison z inverse",
+    "all_deleted_coordinates": "full residual, call, alias and live-metadata incidence audit required",
+    "historical_metadata": "retain historical meaning; do not reindex as live IDs"
+  },
+  "fixed_target_policy": {
+    "bind": ["x0", "x1", "q0", "q1"],
+    "binding_values": "exact reduced rational rows in fixed_target_constants",
+    "retain": ["x*F=1", "s*q=x+D*F", "t*q^2=1", "r*q=J", "u=r*s"],
+    "derived_identity": "q^2=x-D*F",
+    "conjugation": "all source slots and coefficients conjugated consistently",
+    "isolated_four_row_sos_constant": 123824835334257812600380,
+    "isolated_four_row_sos_maximum": 395918230471021175779344,
+    "global_coefficient_bound_accepted": false
+  },
+  "mandatory_coupled_changes": {
+    "beta": "retain beta=X^2+2, but both beta-bearing comparator fields become C_A-2*beta",
+    "scalar": "retain polynomial in beta, all equations and orders [1,1,1,1,32,32]",
+    "anchor": "retain both coefficient integrality conditions at 2 and 3; C=3^(2^25)",
+    "height": "same H19 theorem and eight original abscissa coefficients; use proof constant H_eff=5*H19",
+    "contacts": "same 37 contacts and 13 full / 8 beta-only / 16 Lucas-only partition",
+    "precisions": "high40 / beta12 / scalar32 / anchor25",
+    "normalized_lucas": "same E=F(C_s,C_t,C_z)/C_s^2 with original local/global division scope",
+    "pole": "inherit only the separately reviewed and pinned parent pole theorem and its caller premises"
+  },
+  "completeness_order": [
+    "input beta and A=beta*Pstar",
+    "old-carrier scalar J0 and S together; both indices double; impose extra divisibility",
+    "Lucas integers for new s and T=tR,Z=zR",
+    "all eight abscissa coefficients and denominator-clearing data",
+    "rational37 prime pattern with normalized-Lucas avoidance of primes dividing s",
+    "comparison J=jR and private X0=hR,Xi=hQi using same-prime CRT",
+    "joint-chart, G and normalized-ratio field coefficients",
+    "private conic approximation and norm/pole witnesses"
+  ],
+  "required_acceptance_evidence": [
+    "new source identity and pinned parent",
+    "independent exact module and root reconstruction",
+    "all current-ID aliases, metadata, calls and deleted-coordinate incidences",
+    "literal beta factor2 and all unchanged scalar/anchor consumers",
+    "fresh flattening and full source-to-proof binding",
+    "fresh quartic lifting, complete reduction replay and expansion",
+    "actual total-variable count including the input and final coefficient bound"
+  ],
+  "new_external_arithmetic_input": false,
+  "inherited_arithmetic_qualifications_retained": true,
+  "measured_saving": null
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "quartic-v5-independent-review-v1",
+  "date": "2026-11-06",
+  "reviewer": "astra_rebuild_oracle",
+  "status": "ACCEPTED_WITH_RECORDED_INPUTS",
+  "unresolvedReviewFindings": [],
+  "manuscript": {
+    "path": "quartic_1272.tex",
+    "sha256": "16033e0471df605093b28210a9f81718c2486b147016ec8afc75d166dff0b90f",
+    "bytes": 807070
+  },
+  "acceptedFragments": [
+    {
+      "id": "new1272",
+      "path": "manuscript/new1272.tex",
+      "sha256": "506675ede05bb3d369d9882945958c86d2d39c8fbe4d6e1e393c6a4e17f00000",
+      "firstLine": 10524,
+      "lastLine": 11406
+    },
+    {
+      "id": "arithmetic-bridges",
+      "path": "bridge-review/arithmetic_bridges.tex",
+      "sha256": "94696c3d3113c6ff23b8ff3039a17447424151d49f5ecbf1f178304aaf2d5544",
+      "firstLine": 10253,
+      "lastLine": 10522
+    },
+    {
+      "id": "sun-appendix",
+      "path": "sun-proof/sun_appendix.tex",
+      "sha256": "620e2e5652048c827efd8a1d9dae78462679e65992beeb20c3f089b3115fb77b",
+      "firstLine": 15828,
+      "lastLine": 16577
+    }
+  ],
+  "packageManifestSha256": "aa7f04c54e8b778a419a1be8d24e0b3a9a8540c50202d41815864a156d6985c6",
+  "polynomialSha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586",
+  "mathematicalReview": "Reviewed the three new fragments and exact consumption of identified inherited interfaces. No unresolved mathematical objection within those inputs.",
+  "independentFiniteCheck": {
+    "residuals": 1229,
+    "variables": 1272,
+    "monomials": 48001,
+    "degree": 4,
+    "primitiveContent": 1,
+    "height": "64*3^(2^28)",
+    "method": "Exact independent convolution of all actual final residuals; no package code imported."
+  },
+  "inventoryValidation": {
+    "status": "PASS",
+    "mode": "Read-only authored validator with independently selected input hash; files unchanged during validation."
+  },
+  "serializationPatch": {
+    "status": "PASS",
+    "baselineCommit": "81de7e45d60d458414ea0f96eb0f68ad8981a3a3",
+    "baselineManifestSha256": "37a5d9d0e4d1d9f51562a1ba4a004827ad5bc7c0fbdf3a7d74f031e9ddc933e3",
+    "mathematicalModulesCompared": 7,
+    "coreArtifactsCompared": 13,
+    "polynomialBytesUnchanged": true,
+    "exactByteComparisonsRetained": true,
+    "scope": "Only explicit UTF8 and line-ending settings change mathematical Python modules. Core data are identical. Metadata changes are timestamps, runtime measurements, hashes, and provenance."
+  },
+  "packageAuthorReplay": {
+    "path": "package/replay-crossplatform-final/REPRODUCTION.json",
+    "sha256": "bd5e9aaf1a9a9c464907935f59bbd9e994a3880e7c4862dca3bc20346bbc6f2c",
+    "bytes": 3258,
+    "elapsedSeconds": 22.312,
+    "checkCount": 14,
+    "attribution": "Separate package author replay, not the independent convolution."
+  },
+  "limitations": [
+    "Frei-Tinkova Theorem 1.4 is checked in arXiv 2408.17441v3, reported accepted by Mathematika. No final journal text is claimed verified.",
+    "The local transferred inverse-theorem exponent correction is checked. Dodos-Kanellopoulos is compared to arXiv v4, not the final typeset statement; the correction does not close the whole Frei-Tinkova proof.",
+    "Inherited source-version and arithmetic qualifications remain applicable; this review does not reprove every inherited or external theorem.",
+    "Source evaluator samples supplement static review and exact algebraic checks; they do not establish global arithmetic existence or implications.",
+    "The 1272-variable polynomial is an independent reconstruction, not a recovered unavailable 1315-variable artifact.",
+    "No Lean verification or PDF layout approval is asserted."
+  ],
+  "artifacts": [
+    {
+      "path": "independent-review/REVIEW.md",
+      "sha256": "18e8a2e1dfb65a2fc5711807ccfd06a5d690b16f964181b0c7cac7006034b920",
+      "bytes": 8670
+    },
+    {
+      "path": "independent-review/check_package.py",
+      "sha256": "f2c351fe26130c2fe1da0d7c40fd4c8b23237c569e3b7e48b4ffd47996fd05c3",
+      "bytes": 5093
+    },
+    {
+      "path": "independent-review/package-check.json",
+      "sha256": "44122835a860b82954f195ee7646ea4918b177b871dc1981b8cfc096254850fb",
+      "bytes": 1228
+    },
+    {
+      "path": "independent-review/check_release.py",
+      "sha256": "80e69959291c1fc1dc59c82dc4d6d569760c12f2a8ba97d351ed710d93e21e5f",
+      "bytes": 4109
+    },
+    {
+      "path": "independent-review/release-check.json",
+      "sha256": "cc10fe02fdffc00d2b5a74ffeb568c854083a627776c68a807f8f0e7930820bc",
+      "bytes": 1668
+    },
+    {
+      "path": "independent-review/check_inventory.py",
+      "sha256": "5bc28e005bffd8d325c61355bed3e237c5fc199e1bed796d7901a0e4560d6ce1",
+      "bytes": 1764
+    },
+    {
+      "path": "independent-review/inventory-validation.json",
+      "sha256": "4c53d0b5f7474e26d9de0f736e943e34d415aaa4b24cf2a27b827a06a6be86f2",
+      "bytes": 1410
+    },
+    {
+      "path": "independent-review/inventory-validation.log",
+      "sha256": "262ba3ca0c08173ced25239a9857436ecbf32677d5d513fad898c65d27aa3ad1",
+      "bytes": 6559
+    },
+    {
+      "path": "independent-review/FT-local-repair.md",
+      "sha256": "767348c720b10b73eef4ce5f37c32c625e635f79953a094bb007bf02d4586ff0",
+      "bytes": 2373
+    },
+    {
+      "path": "independent-review/check_serialization_patch.py",
+      "sha256": "afb805e3d2ab846def25e38f1e92311edb35900a80114a09ba3dcdf2e19a6be4",
+      "bytes": 7691
+    },
+    {
+      "path": "independent-review/serialization-patch-check.json",
+      "sha256": "779ea8f0cacbd0cdeffafe282b8a157a3ded6b565d2b43e1c4321d98f0e7462f",
+      "bytes": 10890
+    }
+  ]
+}

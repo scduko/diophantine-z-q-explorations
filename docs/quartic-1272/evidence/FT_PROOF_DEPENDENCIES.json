@@ -1,0 +1,808 @@
+{
+  "schema": "ft-proof-scope-v1",
+  "date": "2026-11-06",
+  "root": "FT-1.4",
+  "proofClosed": false,
+  "allPublishedClosure": false,
+  "source": {
+    "file": "sources/FT-v3.tex",
+    "sha256": "72ab8baf0743dd9fd597b27d8f75d656c8e606dc70530f10745bc58a3a9988a1",
+    "version": "arXiv:2408.17441v3"
+  },
+  "scope": "Inspected dependency map and local repair, not a certificate of all proof nodes.",
+  "excludedConditionalRoute": [
+    "FT-Theorem1.2",
+    "FT-Proposition2.2",
+    "FT-Theorem2.5",
+    "FT-Theorem2.6",
+    "FT-Sections7–8"
+  ],
+  "localRepair": {
+    "id": "FT-DK-NORM-EXPONENT",
+    "status": "independently_reviewed",
+    "old": "D=4^u; majorant U^(2u)",
+    "new": "D=4^(u+1); majorant U^(2u+2)",
+    "target": "s=u+1 in DKTheorem5.1",
+    "manuscriptLabel": "rem:v5-ft-norm-repair",
+    "changesConclusion": false,
+    "changesArithmeticHypotheses": false
+  },
+  "externalParents": [
+    {
+      "id": "GT-ORBITS",
+      "title": "Green–Tao: The quantitative behaviour of polynomial orbits on nilmanifolds",
+      "publication": "Annals of Mathematics 175 (2012), 465–540",
+      "url": "https://doi.org/10.4007/annals.2012.175.2.2",
+      "theorem": "Theorems 1.19 and 2.9",
+      "status": "published_statements_checked",
+      "translation": "Theorem2.9: polynomial sequence in a filtered nilmanifold with delta^-1-rational Malcev basis; failure of delta-equidistribution gives bounded nonzero horizontal character with bounded C-infinity norm. Theorem1.19: factorization at fixed degree/dimension/rationality into smooth, equidistributed and rational parts. FT must additionally verify all rescaled sequence, metric and progression hypotheses.",
+      "source": {
+        "file": "sources/GT-orbits-published.pdf",
+        "sha256": "8c7ea5eced84dc5da97508f4eda39fa84c958d3e659a797ab402645c1c207c8f"
+      },
+      "sourceTextLines": {
+        "GT-orbits-published.txt": [
+          [
+            534,
+            556
+          ],
+          [
+            747,
+            755
+          ]
+        ]
+      }
+    },
+    {
+      "id": "GT-MOBIUS",
+      "title": "Green–Tao: The Möbius function is strongly orthogonal to nilsequences",
+      "publication": "Annals of Mathematics 175 (2012), 541–566",
+      "url": "https://doi.org/10.4007/annals.2012.175.2.3",
+      "theorem": "Propositions2.1,3.1; proof pp.544–547,550–553",
+      "status": "published_statements_and_proof_locations_inspected",
+      "translation": "Published arithmetic weight is integer Mobius; FT substitutes its ideal-norm estimates and ideal Type I/II alternative. This adaptation is not certified by citing the published proposition.",
+      "source": {
+        "file": "sources/GT-mobius-published.pdf",
+        "sha256": "5259dbc9ee73df46edd765ca27c8b3c0ec466f6b78abafa5f54237b11d44a314"
+      },
+      "sourceTextLines": {
+        "GT-mobius-published.txt": [
+          [
+            157,
+            169
+          ],
+          [
+            319,
+            332
+          ]
+        ]
+      }
+    },
+    {
+      "id": "MATTHIESEN",
+      "title": "Matthiesen: Linear correlations amongst numbers represented by positive definite binary quadratic forms",
+      "publication": "Acta Arithmetica 154 (2012), 235–306",
+      "url": "https://doi.org/10.4064/aa154-3-2",
+      "theorem": "Propositions15.3,15.4, pp.295–296",
+      "status": "published_statements_checked",
+      "translation": "Polynomial-subsequence equidistribution is the model for FT4.4. FT uses a changed coefficient/scale range that requires its own proof.",
+      "source": {
+        "file": "sources/Matthiesen-published.pdf",
+        "sha256": "966ba1f0b2a24d6701ffbbb33eecb8ed0bc10b7846ebf30f24d9afea1900cd43"
+      },
+      "sourceTextLines": {
+        "Matthiesen-published.txt": [
+          [
+            4167,
+            4220
+          ]
+        ]
+      }
+    },
+    {
+      "id": "BIENVENU",
+      "title": "Bienvenu: A higher-dimensional Siegel–Walfisz theorem",
+      "publication": "Acta Arithmetica 179 (2017), 79–100",
+      "url": "https://doi.org/10.4064/aa8600-10-2016",
+      "theorem": "Theorem1.3, p.81",
+      "status": "published_statement_and_application_checked",
+      "translation": "Admissible affine system, polylogarithmic size, positive images, convex volume at least N^d/log^A(N). For ordinary-prime cube subfamilies with W polylogarithmic, apply the relative asymptotic and cancel by inclusion–exclusion. Non-admissible finite initial cases are excluded by sufficiently large W.",
+      "source": {
+        "file": "sources/Bienvenu-published.pdf",
+        "sha256": "9634fad788ff65298c361d0d0b596eb89fc097bda1eaa2031ee9ea13cd4c6130"
+      },
+      "sourceTextLines": {
+        "Bienvenu-published.txt": [
+          [
+            138,
+            154
+          ]
+        ]
+      }
+    },
+    {
+      "id": "DK",
+      "title": "Dodos–Kanellopoulos: Uniformity norms, their weaker versions, and applications",
+      "publication": "Acta Arithmetica 203 (2022), 251–270",
+      "url": "https://doi.org/10.4064/aa210728-27-2",
+      "theorem": "Theorem5.1, arXivv4 pp.12–13",
+      "status": "published_work_arxiv_statement_checked_application_repaired",
+      "translation": "Use s=u+1≥2, C≥20, prime Nprime in[CN,2CN], real f dominated by nonnegative nu, target norm at least delta, majorant U^(2s) norm within eta. Increase FT majorant parameter to D=4^(u+1). Final typeset statement not compared.",
+      "source": {
+        "file": "sources/DK-v4.pdf",
+        "sha256": "1d71ecfcb7a1970ce3d7a10ac426f8c94e9d1d6a88886cb378ca19a099963508"
+      },
+      "sourceTextLines": {
+        "DK-v4.txt": [
+          [
+            706,
+            726
+          ]
+        ]
+      }
+    },
+    {
+      "id": "GT-LINEAR",
+      "title": "Green–Tao: Linear equations in primes",
+      "publication": "Annals of Mathematics 171 (2010), 1753–1850",
+      "url": "https://doi.org/10.4007/annals.2010.171.1753",
+      "theorem": "Proposition6.4/AppendixD; Proposition7.1/AppendixC; Sections4–7",
+      "status": "publication_verified_exact_applications_not_all_rechecked_in_ft_subaudit",
+      "translation": "Ordinary-prime majorant, generalized von Neumann estimate and normal-form reduction. Fixed conductor multiplier in W requires the recorded adaptation. Original GI/MN assumptions are discharged by later published theorems."
+    },
+    {
+      "id": "GTZ-INVERSE",
+      "title": "Green–Tao–Ziegler: An inverse theorem for the Gowers U^(s+1)[N]-norm",
+      "publication": "Annals of Mathematics 176 (2012), 1231–1372",
+      "url": "https://doi.org/10.4007/annals.2012.176.2.11",
+      "theorem": "Main inverse theorem, used through DK Theorem5.1",
+      "status": "publication_verified_statement_not_separately_audited",
+      "translation": "Bounded-function inverse theorem underlying the published relative inverse theorem. It is not a replacement for the majorant norm hypothesis."
+    },
+    {
+      "id": "KANE",
+      "title": "Kane: An asymptotic for the number of solutions to linear equations in prime numbers from specified Chebotarev classes",
+      "publication": "International Journal of Number Theory 9 (2013), 1073–1111",
+      "url": "https://doi.org/10.1142/S1793042113500139",
+      "theorem": "Propositions6,14; Corollaries4,5; Theorem2",
+      "status": "locations_traced_from_ft_final_statements_not_rechecked",
+      "translation": "Passage to cyclic characters and Hecke Siegel–Walfisz. Theorem2 handles one linear relation and does not directly replace arbitrary cube correlations."
+    },
+    {
+      "id": "GT-QUADRATIC",
+      "title": "Green–Tao: Quadratic uniformity of the Möbius function",
+      "publication": "Annales de l’Institut Fourier 58 (2008), 1863–1935",
+      "url": null,
+      "theorem": "LemmasA.2,A.10,C.1, as cited by FT",
+      "status": "bibliographically_identified_not_rechecked",
+      "translation": "Divisor moments, removing variable interval constraints and Cauchy–Schwarz steps in the ideal Type I/II argument. Exact source statement not checked in this subaudit."
+    },
+    {
+      "id": "LANG",
+      "title": "Lang: Algebraic number theory",
+      "publication": "Springer, Graduate Texts in Mathematics110, second edition1994",
+      "url": null,
+      "theorem": "ChapterVI, Section3, Lemma1, as cited by FT",
+      "status": "bibliographically_identified_not_rechecked",
+      "translation": "Unit fundamental domain used when representing ideals by elements. Exact source statement not checked in this subaudit."
+    },
+    {
+      "id": "IK",
+      "title": "Iwaniec–Kowalski: Analytic number theory",
+      "publication": "AMS Colloquium Publications53, 2004",
+      "url": null,
+      "theorem": "Proposition13.4, as cited by FT",
+      "status": "bibliographically_identified_not_rechecked",
+      "translation": "Integer Vaughan identity model; the ideal convolution identity is separately derived by FT."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "FT-1.4",
+      "number": "1.4",
+      "kind": "theorem",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 378,
+        "label": "thm:main_cheb"
+      },
+      "parents": [
+        "FT-2.1",
+        "FT-3.3",
+        "FT-3.4",
+        "FT-3.5",
+        "FT-9.4",
+        "FT-9.5",
+        "FT-9.6",
+        "FT-9.7",
+        "FT-9.8",
+        "FT-9.9"
+      ],
+      "checked": "Fixed fields, finite-complexity forms, convex region, Artin density normalization and unconditional statement checked. Section10 reuses the transference route.",
+      "remaining": "Full inherited FT proof remains an external input. Application to appendix separately reviewed.",
+      "status": "external_theorem_application_checked"
+    },
+    {
+      "id": "FT-2.1",
+      "number": "2.1",
+      "kind": "proposition",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 769,
+        "label": "prop:gowers_estimate_cheb"
+      },
+      "parents": [
+        "FT-2.3",
+        "FT-9.1",
+        "FT-9.2",
+        "FT-9.3"
+      ],
+      "checked": "Section10 reuses relative inverse method for fixed Artin weights and fixes w(N)=logloglogN.",
+      "remaining": "Depends on the unclosed FT2.3/2.4 arithmetic estimates.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-2.3",
+      "number": "2.3",
+      "kind": "theorem",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 829,
+        "label": "thm:W_tricked_chebotarev_mangoldt_with_nilsequences_nonconst_avg"
+      },
+      "parents": [
+        "FT-6.5",
+        "FT-6.6",
+        "GT-ORBITS",
+        "GT-MOBIUS"
+      ],
+      "checked": "Nilsequence comparison to phi(W)eta(b,W) times ordinary primes; factorization proof route at lines2550–2575 inspected.",
+      "remaining": "All progression/rationality/metric estimates in the adapted factorization argument not independently completed.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-2.4",
+      "number": "2.4",
+      "kind": "theorem",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 862,
+        "label": "thm:ideal_von_mangoldt_equidist_nilsequences"
+      },
+      "parents": [
+        "FT-5.8"
+      ],
+      "checked": "Fixed number field, finite-order Hecke character, totally equidistributed polynomial nilsequence and mean-zero Lipschitz test function. Ideal von Mangoldt average over ideal norms.",
+      "remaining": "Full dyadic reduction and uniform error estimates not independently completed.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-3.1",
+      "number": "3.1",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 976,
+        "label": "lem:max_ab_subext_compositum"
+      },
+      "parents": [],
+      "checked": "Maximal abelian subextension of a compositum used in Artin local densities.",
+      "remaining": "Elementary Galois argument inspected, not independently certified.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-3.3",
+      "number": "3.3",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1055,
+        "label": "lem:almost_multiplicativity_cheb"
+      },
+      "parents": [
+        "FT-3.1"
+      ],
+      "checked": "Almost multiplicativity for fixed Artin local densities inspected.",
+      "remaining": "Full proof not independently certified.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-3.4",
+      "number": "3.4",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1095,
+        "label": "lem:euler_factor_bound_cheb"
+      },
+      "parents": [],
+      "checked": "Large-prime local factor bound for finite-complexity systems inspected.",
+      "remaining": "No complete independent proof certificate generated.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-3.5",
+      "number": "3.5",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1120,
+        "label": "lem:equidistribution_cheb"
+      },
+      "parents": [
+        "FT-3.1",
+        "FT-3.3"
+      ],
+      "checked": "Equidistribution of the Artin congruence density inspected.",
+      "remaining": "No complete independent proof certificate generated.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-4.1",
+      "number": "4.1",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1339,
+        "label": "lem:poly_subsequence_coefficients"
+      },
+      "parents": [],
+      "checked": "Binomial-coordinate substitution formula inspected.",
+      "remaining": "No independent proof certificate generated.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-4.2",
+      "number": "4.2",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1379,
+        "label": "lem:polynomial_extrapolation"
+      },
+      "parents": [
+        "FT-4.1"
+      ],
+      "checked": "Coefficient extrapolation role and scaling inspected.",
+      "remaining": "Full quantitative coefficient bookkeeping not independently completed.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-4.3",
+      "number": "4.3",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1426,
+        "label": "lem:characters_obstruct"
+      },
+      "parents": [
+        "GT-ORBITS"
+      ],
+      "checked": "Horizontal-character obstruction role inspected.",
+      "remaining": "Ancillary metric/rationality details not all checked.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-4.4",
+      "number": "4.4",
+      "kind": "proposition",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1493,
+        "label": "prop:equidist_poly_subseq"
+      },
+      "parents": [
+        "FT-4.2",
+        "FT-4.3",
+        "GT-ORBITS",
+        "MATTHIESEN"
+      ],
+      "checked": "Polynomial subsequence range compared with published model; FT permits coefficients bounded by delta^-c N^(1−i/D).",
+      "remaining": "New range is FT proof work, not a literal published theorem application.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-4.5",
+      "number": "4.5",
+      "kind": "proposition",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1551,
+        "label": "prop:spread_nilsequence"
+      },
+      "parents": [
+        "FT-4.1",
+        "FT-4.3",
+        "GT-ORBITS"
+      ],
+      "checked": "Spreading n↦g((n−b)/q) on residue classes and polynomial Malcev construction inspected.",
+      "remaining": "Full metric and quantitative bounds not independently completed.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-5.1",
+      "number": "5.1",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1648,
+        "label": "lem:norm_coefficients_divisible"
+      },
+      "parents": [],
+      "checked": "Norm-coefficient divisibility argument using product in a Galois closure checked.",
+      "remaining": "Only this elementary argument checked, not downstream norm-sum estimates.",
+      "status": "elementary_argument_checked"
+    },
+    {
+      "id": "FT-5.2",
+      "number": "5.2",
+      "kind": "proposition",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1689,
+        "label": "prop:norms_vs_equidist_nilsequences"
+      },
+      "parents": [
+        "FT-4.4",
+        "FT-5.1",
+        "LANG"
+      ],
+      "checked": "Ray class representatives, unit fundamental domain, decomposition along short lines, norm polynomial coefficients and boundary strategy inspected.",
+      "remaining": "Every boundary and character-class error bound not independently completed.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-5.3",
+      "number": "5.3",
+      "kind": "corollary",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1773,
+        "label": "cor:norms_vs_equidist_nilsequences_log"
+      },
+      "parents": [
+        "FT-5.2"
+      ],
+      "checked": "Partial summation of the preceding norm estimate inspected.",
+      "remaining": "Inherits FT5.2.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-5.4",
+      "number": "5.4",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1820,
+        "label": "lem:ideal_divisor_relations"
+      },
+      "parents": [],
+      "checked": "a_K(n)≤tau_D(n)≤tau(n)^(D−1) and ideal-divisor comparison inspected.",
+      "remaining": "No independent arithmetic test is claimed.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-5.5",
+      "number": "5.5",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1835,
+        "label": "lem:divisor_log_bound"
+      },
+      "parents": [
+        "FT-5.4",
+        "GT-QUADRATIC"
+      ],
+      "checked": "Use of divisor moments traced.",
+      "remaining": "Published auxiliary lemma not rechecked.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-5.6",
+      "number": "5.6",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1851,
+        "label": "lem:vaughan"
+      },
+      "parents": [
+        "IK"
+      ],
+      "checked": "Ideal convolution derivation from Lambda_K=mu_K*log inspected.",
+      "remaining": "No claim to complete analytic use of the identity.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-5.7",
+      "number": "5.7",
+      "kind": "proposition",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 1891,
+        "label": "prop:inverse_theorem_mu"
+      },
+      "parents": [
+        "FT-5.4",
+        "FT-5.5",
+        "FT-5.6",
+        "GT-QUADRATIC"
+      ],
+      "checked": "Vaughan splitting at U=V=N^(1/3), TypeI/II alternatives and real-valued application inspected.",
+      "remaining": "Every Cauchy–Schwarz, interval removal and multiplicity estimate not independently completed.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-5.8",
+      "number": "5.8",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2045,
+        "label": "lem:prop2.1analog"
+      },
+      "parents": [
+        "FT-5.2",
+        "FT-5.3",
+        "FT-5.7",
+        "FT-4.2",
+        "FT-4.3",
+        "GT-ORBITS",
+        "GT-MOBIUS"
+      ],
+      "checked": "TypeI rescaling and TypeII product-nilmanifold sequence inspected. Published final combinatorial locations pp550–553 identified.",
+      "remaining": "FT gives a sketch of TypeII adaptation; full proof with all quantitative losses remains unclosed.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-6.1",
+      "number": "6.1",
+      "kind": "proposition",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2249,
+        "label": "prop:equidist_nilsequences"
+      },
+      "parents": [
+        "FT-2.4",
+        "FT-4.5",
+        "FT-6.2"
+      ],
+      "checked": "Equidistributed Artin estimate via ideal sums inspected.",
+      "remaining": "Inherits FT2.4.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-6.2",
+      "number": "6.2",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2278,
+        "label": "lem:passing_to_ideals"
+      },
+      "parents": [
+        "KANE"
+      ],
+      "checked": "Cyclic subgroup fixed field, character orthogonality, degree-one prime ideals and negligible higher-degree/power terms inspected.",
+      "remaining": "No independent audit of every auxiliary effective estimate.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-6.3",
+      "number": "6.3",
+      "kind": "proposition",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2391,
+        "label": "prop:better_than_chebotarev"
+      },
+      "parents": [
+        "FT-6.2",
+        "FT-6.4",
+        "KANE"
+      ],
+      "checked": "Fixed-field Siegel–Walfisz route and large-modulus trivial range inspected.",
+      "remaining": "Kane Proposition14 final statement not checked.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-6.4",
+      "number": "6.4",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2404,
+        "label": "lem:kane_cors"
+      },
+      "parents": [
+        "KANE"
+      ],
+      "checked": "Dirichlet/Hecke character compatibility and cyclotomic restriction inspected.",
+      "remaining": "Published character lemma not separately rechecked.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-6.5",
+      "number": "6.5",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2498,
+        "label": "lem:proxy_in_progressions"
+      },
+      "parents": [
+        "FT-6.3",
+        "FT-3.5"
+      ],
+      "checked": "Arithmetic progression comparison with ordinary-prime density model inspected.",
+      "remaining": "Inherits FT6.3 and local density lemmas.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-6.6",
+      "number": "6.6",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2534,
+        "label": "lem:non_constant_proxy_equidist_nilsequences"
+      },
+      "parents": [
+        "FT-6.1"
+      ],
+      "checked": "Subtract Artin and ordinary equidistributed estimates.",
+      "remaining": "Inherits FT6.1.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-9.1",
+      "number": "9.1",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2833,
+        "label": "lem:pseudorandom_majorant"
+      },
+      "parents": [
+        "GT-LINEAR"
+      ],
+      "checked": "Domination by ordinary primes and arbitrary fixed complexity parameter checked in the statement.",
+      "remaining": "Published AppendixD adaptation for fixed extra W factor not independently completed as part of FT proof audit.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-9.2",
+      "number": "9.2",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2883,
+        "label": "lem:gowers_estimate_classical"
+      },
+      "parents": [
+        "BIENVENU"
+      ],
+      "checked": "Cube-subfamily inclusion–exclusion with ordinary-prime correlations checked.",
+      "remaining": "Elementary prime-power removal and local factors are used.",
+      "status": "application_checked"
+    },
+    {
+      "id": "FT-9.3",
+      "number": "9.3",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2909,
+        "label": "lem:gowers_estimate_artin_nonconst_avg"
+      },
+      "parents": [
+        "FT-9.1",
+        "DK",
+        "FT-2.3"
+      ],
+      "checked": "Replace printed D=4^u and U^(2u) by D=4^(u+1) and U^(2u+2); matches DK target s=u+1. Independent reviewer confirmed.",
+      "remaining": "In its printed primitive-root setting uses FT2.6; Section10 uses FT2.3 instead. Only the latter is a parent here.",
+      "status": "local_exponent_repaired_relative_to_other_inputs"
+    },
+    {
+      "id": "FT-9.4",
+      "number": "9.4",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 2989,
+        "label": "lem:neumann"
+      },
+      "parents": [
+        "GT-LINEAR"
+      ],
+      "checked": "Generalized von Neumann argument traced.",
+      "remaining": "Full published proposition hypotheses not separately checked in this FT subaudit.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-9.5",
+      "number": "9.5",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 3030,
+        "label": "lem:neumann_application"
+      },
+      "parents": [
+        "FT-9.4",
+        "FT-2.1"
+      ],
+      "checked": "Telescoping products and Gowers error control traced.",
+      "remaining": "Inherited estimates remain external.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-9.6",
+      "number": "9.6",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 3103,
+        "label": "lem:telescoping"
+      },
+      "parents": [
+        "FT-9.5"
+      ],
+      "checked": "W-trick residue decomposition traced.",
+      "remaining": "All accumulated endpoint errors not independently closed.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-9.7",
+      "number": "9.7",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 3138,
+        "label": "lem:prime_residues"
+      },
+      "parents": [],
+      "checked": "Prime residue count and bad classes identified.",
+      "remaining": "Full combinatorial estimate not independently closed.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-9.8",
+      "number": "9.8",
+      "kind": "corollary",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 3189,
+        "label": "cor:local_density_bound"
+      },
+      "parents": [
+        "FT-9.7"
+      ],
+      "checked": "Local-density estimate identified.",
+      "remaining": "Inherits preceding residue estimate.",
+      "status": "inspected_not_independently_closed"
+    },
+    {
+      "id": "FT-9.9",
+      "number": "9.9",
+      "kind": "lemma",
+      "source": {
+        "file": "sources/FT-v3.tex",
+        "line": 3209,
+        "label": "lem:artin_primes_normal_form"
+      },
+      "parents": [
+        "FT-9.6",
+        "FT-9.8",
+        "GT-LINEAR"
+      ],
+      "checked": "Normal-form reduction and completion of linear pattern count traced.",
+      "remaining": "Full proof not independently closed.",
+      "status": "inspected_not_independently_closed"
+    }
+  ]
+}

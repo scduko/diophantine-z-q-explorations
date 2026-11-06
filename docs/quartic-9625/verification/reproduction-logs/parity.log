@@ -1,0 +1,17 @@
+{
+  "instances": 38,
+  "raw_total_saving": 228,
+  "all_unchanged": true,
+  "all_private": true,
+  "export": {
+    "witnesses": 10923,
+    "variables": 10924,
+    "rows": 10460,
+    "degree": 4,
+    "monomials": 68090,
+    "max_abs_coefficient": 685783949153203534233601,
+    "status": "CANDIDATE: independent verification pending",
+    "parity_replacements": 38,
+    "parity_raw_saving": 228
+  }
+}

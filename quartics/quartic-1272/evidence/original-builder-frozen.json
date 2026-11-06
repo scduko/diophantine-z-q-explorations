@@ -1,0 +1,25 @@
+{
+  "description": "Frozen first complete independent reconstruction, metadata clarified after semantic review",
+  "files": {
+    "build_source.cjs": {
+      "sha256": "ecbd266ca3728a6ea298475e059ce2541ae049d1ae4e1b75a4ea7a885d3e36fd",
+      "bytes": 17697
+    },
+    "raw-ir.json": {
+      "sha256": "d71ded4f434476cdc4bdd1ac309a19f57cb706ed3e714439c6ed32fd1f0b1731",
+      "bytes": 3968984
+    },
+    "raw-translated-ir.json": {
+      "sha256": "301e3d110d5618ecd172ca0eca45f71058d9177348c379256819f69bd89b3425",
+      "bytes": 3969643
+    },
+    "census.json": {
+      "sha256": "ee0e454189bf965fe643548472532e75c533fdf822f60b0420ede6d4120e57dd",
+      "bytes": 2877
+    },
+    "README.md": {
+      "sha256": "0c08b38d0af27357ffbc90b582f11fc823fcbcd72cc9c359580aa5a323e51370",
+      "bytes": 4916
+    }
+  }
+}

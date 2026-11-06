@@ -1,79 +1,52 @@
-# Research state at the Version 2 handoff
+# Reading the Version 5 research handoff
 
-The current result is the exact quartic in
-`current/quartics/quartic-12504/`. It has 12,504 total variables, including
-input 0, and 12,503 rational witnesses. Its 11,939 quadratic residuals have
-weight one. The expanded polynomial has 135,721 nonzero monomials, degree
-four, and maximum absolute coefficient 685783949153203534233601, below 2^80.
-The coefficient-table digest is
-`7f5aa3117af82a0b323f0a4e74a18599204f5540408106d3ce99612b5ed830ca`.
+Start with `current/quartic_1272.pdf`, its TeX source, the package README at `current/quartics/quartic-1272/README.md`, and the dependency inventory at `current/docs/quartic-1272/README.md`. The selected translated quartic has 1,272 total coordinates, 1,229 quadratic residuals and 48,001 coordinate monomials.
 
-The named source is
-`reciprocal64-beta16-compressed-s1-b5e836d77643`. Its reciprocal logarithms
-use precision 64 except for the designated beta tests, which use 16.
-It retains 24 anchor squarings, scalar orders 1, 1, 1, 1, 48, 48, and 41
-root comparison calls. Compressed primary charts are part of the audited
-source. These parameters distinguish it from the unadopted experiments
-preserved below.
+Run `python -E -B quartics/quartic-1272/reproduce.py --out NEW_DIRECTORY` from the extracted `current/` directory. Python 3.10 or later and Node.js 18 or later are required. Keep the output outside the extracted snapshot. The runner rebuilds the source and both tables, replays the certificates, checks the source with independent implementations, runs the exact identity and mutation checks, and compares the rebuilt table with the frozen table.
 
-The final certificate records 205 norm-inverse replacements, 41 redundant
-inverse removals, six chart replacements, two ordinate removals, 42 parity
-replacements, one batch-absorption operation, 366 linear operations, 800
-eliminations, and four shears. The independent checker verifies every
-operation against the current equations and variable occurrences and then
-expands the full sum of squares. It preserves the rational input projection
-in both directions. The source audit and arithmetic proof reviews address
-different parts of the result and retain their own scopes.
+The source arithmetic claim retains the dependencies listed in the current inventory. The reconstruction is a new exact implementation of the displayed formulas; it does not recover Brox's missing original program. Earlier manuscripts and packages remain available for comparison. The previous target of 2,486 total coordinates is exceeded by the new 1,272-coordinate construction.
 
-The current snapshot includes the fresh full-reproduction receipt referenced
-by `CURRENT_STATE.json`. Reproduction reruns the original finite arithmetic
-checks, reciprocal checks, complete source audit, 38 malformed-source tests,
-five resource-error regressions, and 30 malformed-certificate tests. It
-regenerates the source and final quartic, with independent replay after each
-reduction stage. Read the actual receipt for the environment and timing.
+## Historical Version 4 guide
 
-## Earlier work
+The following guide is retained as historical context for the Version 4 package. Its counts, runtime requirements and then-future targets do not describe the selected Version 5 package.
 
-The nested public November 4 revision-2 archive preserves the original large
-construction, earlier manuscripts, reviews, and incomplete formalization.
-Its `current/` tree is historical. The separately selected
-`history/earlier-quartic/ALGEBRA.md` describes the later conversion from the
-old 15,671-witness source and the original sparsity search. Its source hash,
-targets, test suite and resource policy belong to that older work. It does
-not describe the current source or replace the current checks.
+Start with `current/quartic_4973.pdf` or its TeX source. The main file contains
+the original huge polynomial and the selected quartic. Earlier polynomials in
+separate historical packages are not additional current constructions.
 
-The selected reciprocal, chart, parity and batch notes explain intermediate
-ideas used by Version 2. They are preserved unchanged. Statements that an
-audit or run was pending describe the date of that note. Current receipts
-and source identities settle the present computational status. No older
-review is silently extended to a different source hash.
+The selected quartic is formed from the sum of squares of 4,552 quadratic
+integer residuals. A complete replay checks its 551 transformations and every
+coefficient in its expansion. This finite verification is separate from the
+arithmetic proof that the source projection is the integers.
 
-## Unadopted circuit experiments
+The arithmetic path uses 37 contacts, divided into 13 full, eight beta-only
+and 16 Lucas-only comparisons. General roots use integer doubled indices.
+The common denominator comparison has order 12 in beta-only mode and order
+40 otherwise. The source also uses the reviewed linear ordinary pole,
+normalized Lucas equations, direct tangents, shared field squares and
+first-norm denominator change. The scalar pole is retained. H19, precisions
+40 and 12, anchor exponent 25 and scalar order 32 remain unchanged.
 
-`history/unadopted-lowprecision/` preserves exact finite circuits for
-precisions 12, 40, 44 and 48, their independent polynomial checker and review,
-and the recorded 44-profile check summary. These circuits are not used by
-Version 2. Their isolated target counts and coefficient bounds are not a
-measurement of a new full quartic and do not justify changing its arithmetic
-parameters.
+Read the final inventory before treating an older proof note as applicable.
+It pins the selected statements, source files and independent review records,
+and retains the five inherited source-version qualifications. Hash agreement
+establishes artifact identity, not the truth of a mathematical premise.
 
-To repeat that isolated experiment, use the original builder already
-preserved in the current package:
+For computation, use the package's self-contained Linux reproduction runner.
+It requires at least 8 GiB available memory, stops below 4 GiB, caps each child
+at 2 GiB and does heavy work remotely in this campaign. Mandatory reproduction
+rebuilds the source and replays the fixed certificate. Optional heuristic
+rediscovery can choose a different search path and is reported separately.
 
-```sh
-python -E -B history/unadopted-lowprecision/probe_lowprecision.py \
-  --builder current/quartics/quartic-12504/source/compiler/archive_build.py \
-  --out NEW_PROBE_DIRECTORY
-python -E -B history/unadopted-lowprecision/check_lowprecision.py NEW_PROBE_DIRECTORY
-```
+Version 5 requires at most 2,486 total variables, including input zero. That
+number is a future search target, not an established construction.
 
-Run substantive computations under an external time and memory budget.
-Proposals involving height exponent 19, scalar order 32, 37 root comparisons,
-or different anchor and logarithm parameters remain outside the released
-source. Their appearance in research discussions is not acceptance of a
-different integer-defining system. This handoff does not contain a verified
-quartic below 12,504 variables.
+## November 6 revision 2
 
-The main Lean theorem remains unproved. The current accepted helper snapshot
-and the historical formalization record are useful inputs to further work;
-neither is a complete formal proof of the manuscript.
+Read `current/research/2026-11-06-collaborator-notes/README.md` for the new collaborator collection and `height-replacement.md` for the exact substitution removing the von Känel–Kret input. Exponent 24 and five contacts are retained. The supplied originals, comparison, existing H5 proof extract, source hashes and small-check script are included. This does not change the selected polynomial or resolve the collaborator's remaining parity assertion.
+
+The same collection includes the reported Fable repository audit, with its exact stated exclusions, and explains the frozen source label and the original-only Lean target.
+
+## November 6 revision 3 credits
+
+The project uses the collective agentic notes from Stefan Baranczuk, Gabe Conant, Sohail Farhangi, James Freitag, Elliot Glazer, Jennifer Park, and Caroline Terry. The manuscript, polynomial and mathematical scope are unchanged from the November 6 revision-2 research update.

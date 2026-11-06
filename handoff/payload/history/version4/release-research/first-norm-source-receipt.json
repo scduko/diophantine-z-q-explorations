@@ -1,0 +1,1076 @@
+{
+  "artifact": 13517231821,
+  "commit": "97e1af55578d1caf6a1decc44c050aea5b4bb315",
+  "endpoint": {
+    "certificate_sha256": "110209d9b52a81bad47389406658c8ded498345bedbfdb589cb2121e0ea8000f",
+    "checker_sha256": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90",
+    "compressed_bytes": 436372,
+    "degree": 4,
+    "distinct_circuit_identities_checked": 0,
+    "expanded_bytes": 1646451,
+    "expanded_sha256": "3ac4fd30d3846ef8d7f011659eeb803b70f0e35c5a3c3b0584eb8d8d2a8ab82d",
+    "max_abs_coefficient": 685783949153203534233890,
+    "monomials": 74782,
+    "operations": {
+      "eliminate": 121,
+      "linear": 296,
+      "parity_conic": 1,
+      "shear": 2
+    },
+    "rows": 4752,
+    "scope": "Exact projection-preserving algebraic equivalence to the pinned source system; exact full integer expansion. The source arithmetic theorem is not checked here.",
+    "seconds": 1.89,
+    "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+    "source_sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+    "status": "PASS",
+    "total_operations": 420,
+    "variables": 5173,
+    "weights_greater_than_one": 0,
+    "witnesses": 5172
+  },
+  "first_fields": [
+    {
+      "evaluation": 376,
+      "first_node": 412,
+      "numerator": 377,
+      "original_power": 378,
+      "path": "Z_definition/2/0",
+      "raw": 137
+    },
+    {
+      "evaluation": 535,
+      "first_node": 571,
+      "numerator": 536,
+      "original_power": 537,
+      "path": "Z_definition/3/0",
+      "raw": 119
+    },
+    {
+      "evaluation": 694,
+      "first_node": 730,
+      "numerator": 695,
+      "original_power": 696,
+      "path": "Z_definition/4/0",
+      "raw": 138
+    },
+    {
+      "evaluation": 853,
+      "first_node": 889,
+      "numerator": 854,
+      "original_power": 855,
+      "path": "Z_definition/5/0",
+      "raw": 139
+    },
+    {
+      "evaluation": 1012,
+      "first_node": 1048,
+      "numerator": 1013,
+      "original_power": 1014,
+      "path": "Z_definition/6/0",
+      "raw": 140
+    },
+    {
+      "evaluation": 1101,
+      "first_node": 1117,
+      "numerator": 1102,
+      "original_power": 1103,
+      "path": "Z_definition/7/0",
+      "raw": 141
+    },
+    {
+      "evaluation": 1163,
+      "first_node": 1179,
+      "numerator": 1164,
+      "original_power": 1165,
+      "path": "Z_definition/8/0",
+      "raw": 142
+    },
+    {
+      "evaluation": 1225,
+      "first_node": 1241,
+      "numerator": 1226,
+      "original_power": 1227,
+      "path": "Z_definition/9/0",
+      "raw": 143
+    },
+    {
+      "evaluation": 1287,
+      "first_node": 1303,
+      "numerator": 1288,
+      "original_power": 1289,
+      "path": "Z_definition/10/0",
+      "raw": 144
+    },
+    {
+      "evaluation": 1349,
+      "first_node": 1365,
+      "numerator": 1350,
+      "original_power": 1351,
+      "path": "Z_definition/11/0",
+      "raw": 145
+    },
+    {
+      "evaluation": 1411,
+      "first_node": 1427,
+      "numerator": 1412,
+      "original_power": 1413,
+      "path": "Z_definition/12/0",
+      "raw": 146
+    },
+    {
+      "evaluation": 1473,
+      "first_node": 1489,
+      "numerator": 1474,
+      "original_power": 1475,
+      "path": "Z_definition/13/0",
+      "raw": 147
+    },
+    {
+      "evaluation": 1535,
+      "first_node": 1551,
+      "numerator": 1536,
+      "original_power": 1537,
+      "path": "Z_definition/14/0",
+      "raw": 148
+    },
+    {
+      "evaluation": 1652,
+      "first_node": 1678,
+      "numerator": 1653,
+      "original_power": 1654,
+      "path": "Z_definition/15/0",
+      "raw": 149
+    },
+    {
+      "evaluation": 1783,
+      "first_node": 1809,
+      "numerator": 1784,
+      "original_power": 1785,
+      "path": "Z_definition/16/0",
+      "raw": 150
+    },
+    {
+      "evaluation": 1914,
+      "first_node": 1940,
+      "numerator": 1915,
+      "original_power": 1916,
+      "path": "Z_definition/17/0",
+      "raw": 151
+    },
+    {
+      "evaluation": 2045,
+      "first_node": 2071,
+      "numerator": 2046,
+      "original_power": 2047,
+      "path": "Z_definition/18/0",
+      "raw": 152
+    },
+    {
+      "evaluation": 2176,
+      "first_node": 2202,
+      "numerator": 2177,
+      "original_power": 2178,
+      "path": "Z_definition/19/0",
+      "raw": 153
+    },
+    {
+      "evaluation": 2307,
+      "first_node": 2333,
+      "numerator": 2308,
+      "original_power": 2309,
+      "path": "Z_definition/20/0",
+      "raw": 154
+    },
+    {
+      "evaluation": 2438,
+      "first_node": 2464,
+      "numerator": 2439,
+      "original_power": 2440,
+      "path": "Z_definition/21/0",
+      "raw": 155
+    },
+    {
+      "evaluation": 2569,
+      "first_node": 2595,
+      "numerator": 2570,
+      "original_power": 2571,
+      "path": "Z_definition/22/0",
+      "raw": 156
+    },
+    {
+      "evaluation": 2715,
+      "first_node": 2751,
+      "numerator": 2716,
+      "original_power": 2717,
+      "path": "Z_definition/23/0",
+      "raw": 157
+    },
+    {
+      "evaluation": 2874,
+      "first_node": 2910,
+      "numerator": 2875,
+      "original_power": 2876,
+      "path": "Z_definition/24/0",
+      "raw": 158
+    },
+    {
+      "evaluation": 3033,
+      "first_node": 3069,
+      "numerator": 3034,
+      "original_power": 3035,
+      "path": "Z_definition/25/0",
+      "raw": 159
+    },
+    {
+      "evaluation": 3192,
+      "first_node": 3228,
+      "numerator": 3193,
+      "original_power": 3194,
+      "path": "Z_definition/26/0",
+      "raw": 160
+    },
+    {
+      "evaluation": 3351,
+      "first_node": 3387,
+      "numerator": 3352,
+      "original_power": 3353,
+      "path": "Z_definition/27/0",
+      "raw": 161
+    },
+    {
+      "evaluation": 3510,
+      "first_node": 3546,
+      "numerator": 3511,
+      "original_power": 3512,
+      "path": "Z_definition/28/0",
+      "raw": 162
+    },
+    {
+      "evaluation": 3669,
+      "first_node": 3705,
+      "numerator": 3670,
+      "original_power": 3671,
+      "path": "Z_definition/29/0",
+      "raw": 163
+    },
+    {
+      "evaluation": 3828,
+      "first_node": 3864,
+      "numerator": 3829,
+      "original_power": 3830,
+      "path": "Z_definition/30/0",
+      "raw": 164
+    },
+    {
+      "evaluation": 3972,
+      "first_node": 3998,
+      "numerator": 3973,
+      "original_power": 3974,
+      "path": "Z_definition/31/0",
+      "raw": 165
+    },
+    {
+      "evaluation": 4103,
+      "first_node": 4129,
+      "numerator": 4104,
+      "original_power": 4105,
+      "path": "Z_definition/32/0",
+      "raw": 166
+    },
+    {
+      "evaluation": 4234,
+      "first_node": 4260,
+      "numerator": 4235,
+      "original_power": 4236,
+      "path": "Z_definition/33/0",
+      "raw": 167
+    },
+    {
+      "evaluation": 4365,
+      "first_node": 4391,
+      "numerator": 4366,
+      "original_power": 4367,
+      "path": "Z_definition/34/0",
+      "raw": 168
+    },
+    {
+      "evaluation": 4496,
+      "first_node": 4522,
+      "numerator": 4497,
+      "original_power": 4498,
+      "path": "Z_definition/35/0",
+      "raw": 169
+    },
+    {
+      "evaluation": 4627,
+      "first_node": 4653,
+      "numerator": 4628,
+      "original_power": 4629,
+      "path": "Z_definition/36/0",
+      "raw": 170
+    },
+    {
+      "evaluation": 4758,
+      "first_node": 4784,
+      "numerator": 4759,
+      "original_power": 4760,
+      "path": "Z_definition/37/0",
+      "raw": 171
+    },
+    {
+      "evaluation": 4889,
+      "first_node": 4915,
+      "numerator": 4890,
+      "original_power": 4891,
+      "path": "Z_definition/38/0",
+      "raw": 172
+    }
+  ],
+  "inspected_source_hashes": {
+    "CONIC_POLE_CONTRACT_ADDON.json": "44bcef6a37f57a847f963313b146614b56ecf3fdb101e5443c2c65321494e4a4",
+    "CONIC_SOURCE.json": "0a0df805b2e0b2d7102278c4b20a8d584249c7f8b203fe9acd745bf76d4dcabc",
+    "FIRST_NORM_CONTRACT.json": "b327fcc99625f09c36509c6b22cb12edc4fdeb40c2f8a7b70f65f2509c75570c",
+    "FIRST_NORM_PROOF.md": "b18b32854d4ef6e8c49495ce404f7c96566a0a1926baca6f4ee1ed4cbedcba05",
+    "JOINT_CHART_CONTRACT_ADDON.json": "1793c7bdf798365247f04100d22c30490fa8e7e0df4f80534aaec8e2e775ffb3",
+    "JOINT_SOURCE_CONTRACT.json": "e658843c6ba95dc797f10e7c25c086189f9694a0689a88c203979c38f05ed79e",
+    "LOCAL_LUCAS_CONTRACT_ADDON.json": "13ebcdd31363e8d482a8daac988da75ac314d66a1d989926e39bdf01d4418048",
+    "LOCAL_LUCAS_POLE_CONTRACT.json": "cd7e4039c533eed79afd75fea9ba6abb53f10b7a26ea990b195b9f2c15badd8b",
+    "LOCAL_LUCAS_SOURCE_CONTRACT.json": "233ea7424864fb0d828346cfbfe29459cbc09e801d3d5cd327675b5ea3d95ad8",
+    "MIXED_MODE_DENOMINATOR_CLARIFICATION.md": "2a1eb8ed9a7175995afa665a08035728c1714b5fa30e1ba52030b6adf7b8ba34",
+    "NORMALIZED10_CONTRACT.json": "19c3f7d65aae9f38aeaea9cc9c079d0ec7ca9918123d96d1744813ae81e61869",
+    "NORMALIZED_LUCAS_CONTRACT_ADDON.json": "af365079cce1bd502dc2d683fc1f76fa2a2ca85c396c22be888dbd9fb3237cb0",
+    "NORMALIZED_PARENT_PINS.json": "d94bf88c98b5c3e5110ed9ab58c587ba83a7cda17b736f1a0d9d226e0b415e59",
+    "NORMALIZED_POLE_CONTRACT.json": "0ad8288dd3a44daa524e753dfba04b0b788de46d84bfa63d3f34a71d3272dd10",
+    "NORMALIZED_SOURCE_CONTRACT.json": "b038a32f4b22de7a43680857dc693d5614d25c6d0f432841bbafd2a8577898d6",
+    "PARENT_SOURCE_PINS.json": "003211cbd8995b9b251596d56411a2c51ca7121176ada686c22591f333f56bac",
+    "ROOT_COMPOSITION_CONTRACT.json": "4e41f830938c3bdf8b5361b410a2fb639bd74299f0461fb356afe2efb012f2b7",
+    "ROOT_SHARED_CONTRACT.json": "73e17ecc19a797ce442412549931ff11e43f42ebff9c48e1b2c636ff2d839a8c",
+    "ROOT_SOURCE_CONTRACT.json": "505b3a743585187ebde58642bb02237dbb45bc55b328b5b88bd84a0724cf1d5c",
+    "SELECTED_PARENT.json": "248778bdda2810db04368a692bd39ff5e17edcf954585e19613493ec9b6f58d0",
+    "SHARED_SQUARE_CONTRACT.json": "13f97f687a15f1d0bf283b608c8c00b425c2c4797eb9b4dc0df14fa2a93c3750",
+    "TANGENT_PROOF.md": "3591709058c666a1dd2786d46039b408a04f1908b644c16c6f722a72788a50c8",
+    "TANGENT_SOURCE_CONTRACT.json": "d9ef1fedd0703377747353f44619d73eca47c160634757de7c477fc02c887e70",
+    "TARGET2_COMPOSITION_CONTRACT.json": "77e26c27804a00701306c115984df84129e26431ff285468a8e8f14cd8b217dd",
+    "TARGET_TWO_CONTRACT.md": "8e42299e4d281ecab724868d39eeb21589957c971516296500b942605ac0b711",
+    "TARGET_TWO_PROOF.md": "cfc62097ffdbf072fe77524f7e0448356812712689394ca22dfc4a0fd64b7feb",
+    "TARGET_TWO_SOURCE_CONTRACT.json": "510ee91c4777c4e8ae4343622817b90e30a20e7507ec83fa7a26bc8b50d581c7",
+    "compiler/anchor_four_kernel.py": "4f5944cfe3dd16f5a38ab7113e54a5ecba1faccfecac0d23b7c2f36b76a00dcb",
+    "compiler/archive_build.py": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912",
+    "compiler/beta_kernel.py": "38f5524c9e87a9a7baea0e83b78a77c0f7e32230f52cbe1e3270806094d8c1e5",
+    "compiler/build_source.py": "2f973408d8f022fdf178606bc42a6ce41ec68aa0272b0e7186df2e5fff00bd61",
+    "compiler/combined_kernel.py": "f41dc82a5dd451b3196bd20f46c14bb5a2ace4a29d6d22bc898725f1eba6e9f5",
+    "compiler/compress_doublings.py": "a136e6cce43277ed63351fd1989c428c48b811b9a8682d213f6609d6a95f5cb2",
+    "compiler/conic_lucas.py": "42fcb55ec95be9ee34e98c5d0b0e672062b7cce6c5f9f9d0e676edff72e5ed86",
+    "compiler/emit_linear.py": "19e7dc5b5516674dc972aa4b1e15c6b10725192d3f5e8bf48419dbdb93446878",
+    "compiler/first_norm.py": "badaa92471df68d9250f77d8584fee0eecafd8641d3873ab0f8babbf0d1d7438",
+    "compiler/joint_chart.py": "f6868d7fc6f6898388288d4f088966220158e888aa47def53cd21c599ef7ff85",
+    "compiler/linear_pole_kernel.py": "01622f4c3f126d2c6bb190c0a4f87e7a22d45546baee99a33837c6ba60e96f1d",
+    "compiler/local_lucas.py": "fc85b3c3a8a307bfa7113dc163790092b13738baef7e7431e071f31730f2b280",
+    "compiler/lowprecision_kernel.py": "66854ff3ee24d8dd6f4b3b54fa5ca627d87b5d0da09cafa35e3d05d47d0d5c31",
+    "compiler/normalized_lucas.py": "3e1e420306de2fbe51c17aeb8f24169e23a9d74f47601262d3333360e7c7d921",
+    "compiler/rational_difference.py": "be766e35b06d8f334c326dedfddc7c200d226a4c70af6a73fe66242aa4ccc898",
+    "compiler/shared_square.py": "5a4b325c86255beb9f6271b0638822656c31ce46b8fa67997629ecd3e8887c73",
+    "compiler/target2_rewrite.py": "fa53e47698aaa11ddaf1383f74fb690fb69557c696064c8fd036893660c7c799",
+    "counts.json": "8125c7db12e018fcff85ff849d13f5b24a7323e25c94a11d905ec7be42c9ca72",
+    "modules/Z_definition.json": "221e5ee5b95d18081941dd4ecd6977990bb170e583b182b2fbe329726ab35d59",
+    "modules/q_anchor.json": "3edef11d7871866f6224bf9a6e4a6f2d99d5c8f535eef2d3c2c57f98a33f0f6f",
+    "modules/q_compare4.json": "32b774216d8404d4a046d64bff9d51280e83c6b63699012d20f852f90a3c1301",
+    "modules/q_compare_beta.json": "c3f5f3895d805ae4027d53c437440bb9666ebc74e48e2c656dd8e27618b7781c",
+    "modules/q_compare_lucas.json": "418277c6d6f4187ed10cb721a219dd561d3580150fd3320384e9f1f1cac69cdb",
+    "modules/q_conic10.json": "1a72243de8cc0de56d9a1b90922bbb8637ba447f033999821ac5c4a74afefaf0",
+    "modules/q_conic13.json": "6c8ae40d31ac835612fc2ae980e27e6bc6338190e4f4282b14637d08782a52a5",
+    "modules/q_conic6.json": "aff175c604c523f88741cf6a2024cfd1d06edbb8984f5edf591ed06cbc7deaed",
+    "modules/q_height_batch.json": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761",
+    "modules/q_linearnormalpole.json": "b3f86d819e831eb6970ab4249cea9337a874a0adcdbc4bd13efef9678fba547d",
+    "modules/q_primeparity.json": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a",
+    "polynomial.json": "1d644b27d173b2467576e404eba009345cc5f98cc43bba4a9936193c489190c1",
+    "residuals.jsonl": "4a82d9a8dc1b5c92eb40a49751c0a6aae073c8f765ca5e276a74802fd56b84be",
+    "shared.json": "f879f79eb7e8072176c8204df4c07a0097a219b7c2452c7c09bd52ca04abe83e"
+  },
+  "manifest_sha256": "7654b06f450db87a3181dd5e16fe23949cb4e57d22751aef3681fed80a1fcf26",
+  "mixed_mode_clarification_sha256": "2a1eb8ed9a7175995afa665a08035728c1714b5fa30e1ba52030b6adf7b8ba34",
+  "module_report": {
+    "parent": {
+      "parent": {
+        "anchor": {
+          "arithmetic_acceptance": false,
+          "free": 2,
+          "locals": 4,
+          "max_abs_residual_coefficient": 24,
+          "residual_degree": 2,
+          "residuals": 2,
+          "status": "PASS: SOURCE SPECIFICATION ONLY"
+        },
+        "arithmetic_acceptance": false,
+        "comparisons": {
+          "q_compare4": {
+            "core_rows": 52,
+            "differences": 5,
+            "free": 58,
+            "global_proxy_inputs": 1,
+            "locals": 97,
+            "normalized_lucas_evaluation": true,
+            "ordered_tests": 26,
+            "primary_points": 5
+          },
+          "q_compare_beta": {
+            "core_rows": 18,
+            "differences": 2,
+            "free": 28,
+            "global_proxy_inputs": 1,
+            "locals": 27,
+            "normalized_lucas_evaluation": false,
+            "ordered_tests": 12,
+            "primary_points": 2
+          },
+          "q_compare_lucas": {
+            "core_rows": 42,
+            "differences": 4,
+            "free": 47,
+            "global_proxy_inputs": 0,
+            "locals": 82,
+            "normalized_lucas_evaluation": true,
+            "ordered_tests": 20,
+            "primary_points": 4
+          }
+        },
+        "linear_pole": {
+          "degree": 2,
+          "max_coefficient": 867,
+          "rows": 8,
+          "status": "PASS: literal module only",
+          "variables": 10
+        },
+        "pole_specification_view_only": true,
+        "root": {
+          "field_tests": 377,
+          "lucas_evaluations": 29,
+          "mode_counts": {
+            "q_compare4": 13,
+            "q_compare_beta": 8,
+            "q_compare_lucas": 16
+          },
+          "primary_pairs": 145,
+          "removed_proxy_coordinates": [
+            66,
+            67,
+            68
+          ],
+          "removed_proxy_row": 57,
+          "shared_target_coordinates": 60,
+          "shared_target_rows": 60
+        },
+        "scope": "All module equations and calls; caller must separately verify pins, contract and flattening"
+      },
+      "root_shared": {
+        "added_shared_coordinates": 2,
+        "deleted_evaluations": 37,
+        "exact_net_source_coordinates": -35,
+        "inherited": {
+          "complete_source_acceptance": false,
+          "inverse_incidence": [
+            {
+              "call_consumers": [],
+              "removed_inverse": [
+                38,
+                39
+              ],
+              "residual_consumers": [
+                16,
+                17,
+                18,
+                19
+              ],
+              "role": "A"
+            },
+            {
+              "call_consumers": [],
+              "removed_inverse": [
+                48,
+                49
+              ],
+              "residual_consumers": [
+                26,
+                27,
+                28,
+                29
+              ],
+              "role": "S"
+            },
+            {
+              "call_consumers": [],
+              "removed_inverse": [
+                58,
+                59
+              ],
+              "residual_consumers": [
+                36,
+                37,
+                38,
+                39
+              ],
+              "role": "T"
+            },
+            {
+              "call_consumers": [],
+              "removed_inverse": [
+                68,
+                69
+              ],
+              "residual_consumers": [
+                46,
+                47,
+                48,
+                49
+              ],
+              "role": "Z"
+            }
+          ],
+          "removed_rows": 8,
+          "removed_variables": 8,
+          "status": "PASS: exact four-tangent root transition"
+        },
+        "measured_endpoint_delta": false,
+        "new_lift_gates": 0,
+        "status": "PASS: shared-square delta and delegated parent"
+      },
+      "source_pin_authorized": false
+    },
+    "source_pin_authorized": false,
+    "status": "PASS: exact delta and required parent check"
+  },
+  "private_conics": [
+    {
+      "path": "Z_definition/2/0",
+      "pole_inputs": [
+        137,
+        373,
+        424
+      ],
+      "private": [
+        373,
+        374,
+        375
+      ]
+    },
+    {
+      "path": "Z_definition/3/0",
+      "pole_inputs": [
+        119,
+        532,
+        583
+      ],
+      "private": [
+        532,
+        533,
+        534
+      ]
+    },
+    {
+      "path": "Z_definition/4/0",
+      "pole_inputs": [
+        138,
+        691,
+        742
+      ],
+      "private": [
+        691,
+        692,
+        693
+      ]
+    },
+    {
+      "path": "Z_definition/5/0",
+      "pole_inputs": [
+        139,
+        850,
+        901
+      ],
+      "private": [
+        850,
+        851,
+        852
+      ]
+    },
+    {
+      "path": "Z_definition/6/0",
+      "pole_inputs": [
+        140,
+        1009,
+        1060
+      ],
+      "private": [
+        1009,
+        1010,
+        1011
+      ]
+    },
+    {
+      "path": "Z_definition/7/0",
+      "pole_inputs": [
+        141,
+        1098,
+        1122
+      ],
+      "private": [
+        1098,
+        1099,
+        1100
+      ]
+    },
+    {
+      "path": "Z_definition/8/0",
+      "pole_inputs": [
+        142,
+        1160,
+        1184
+      ],
+      "private": [
+        1160,
+        1161,
+        1162
+      ]
+    },
+    {
+      "path": "Z_definition/9/0",
+      "pole_inputs": [
+        143,
+        1222,
+        1246
+      ],
+      "private": [
+        1222,
+        1223,
+        1224
+      ]
+    },
+    {
+      "path": "Z_definition/10/0",
+      "pole_inputs": [
+        144,
+        1284,
+        1308
+      ],
+      "private": [
+        1284,
+        1285,
+        1286
+      ]
+    },
+    {
+      "path": "Z_definition/11/0",
+      "pole_inputs": [
+        145,
+        1346,
+        1370
+      ],
+      "private": [
+        1346,
+        1347,
+        1348
+      ]
+    },
+    {
+      "path": "Z_definition/12/0",
+      "pole_inputs": [
+        146,
+        1408,
+        1432
+      ],
+      "private": [
+        1408,
+        1409,
+        1410
+      ]
+    },
+    {
+      "path": "Z_definition/13/0",
+      "pole_inputs": [
+        147,
+        1470,
+        1494
+      ],
+      "private": [
+        1470,
+        1471,
+        1472
+      ]
+    },
+    {
+      "path": "Z_definition/14/0",
+      "pole_inputs": [
+        148,
+        1532,
+        1556
+      ],
+      "private": [
+        1532,
+        1533,
+        1534
+      ]
+    },
+    {
+      "path": "Z_definition/15/0",
+      "pole_inputs": [
+        149,
+        1649,
+        1687
+      ],
+      "private": [
+        1649,
+        1650,
+        1651
+      ]
+    },
+    {
+      "path": "Z_definition/16/0",
+      "pole_inputs": [
+        150,
+        1780,
+        1818
+      ],
+      "private": [
+        1780,
+        1781,
+        1782
+      ]
+    },
+    {
+      "path": "Z_definition/17/0",
+      "pole_inputs": [
+        151,
+        1911,
+        1949
+      ],
+      "private": [
+        1911,
+        1912,
+        1913
+      ]
+    },
+    {
+      "path": "Z_definition/18/0",
+      "pole_inputs": [
+        152,
+        2042,
+        2080
+      ],
+      "private": [
+        2042,
+        2043,
+        2044
+      ]
+    },
+    {
+      "path": "Z_definition/19/0",
+      "pole_inputs": [
+        153,
+        2173,
+        2211
+      ],
+      "private": [
+        2173,
+        2174,
+        2175
+      ]
+    },
+    {
+      "path": "Z_definition/20/0",
+      "pole_inputs": [
+        154,
+        2304,
+        2342
+      ],
+      "private": [
+        2304,
+        2305,
+        2306
+      ]
+    },
+    {
+      "path": "Z_definition/21/0",
+      "pole_inputs": [
+        155,
+        2435,
+        2473
+      ],
+      "private": [
+        2435,
+        2436,
+        2437
+      ]
+    },
+    {
+      "path": "Z_definition/22/0",
+      "pole_inputs": [
+        156,
+        2566,
+        2604
+      ],
+      "private": [
+        2566,
+        2567,
+        2568
+      ]
+    },
+    {
+      "path": "Z_definition/23/0",
+      "pole_inputs": [
+        157,
+        2712,
+        2763
+      ],
+      "private": [
+        2712,
+        2713,
+        2714
+      ]
+    },
+    {
+      "path": "Z_definition/24/0",
+      "pole_inputs": [
+        158,
+        2871,
+        2922
+      ],
+      "private": [
+        2871,
+        2872,
+        2873
+      ]
+    },
+    {
+      "path": "Z_definition/25/0",
+      "pole_inputs": [
+        159,
+        3030,
+        3081
+      ],
+      "private": [
+        3030,
+        3031,
+        3032
+      ]
+    },
+    {
+      "path": "Z_definition/26/0",
+      "pole_inputs": [
+        160,
+        3189,
+        3240
+      ],
+      "private": [
+        3189,
+        3190,
+        3191
+      ]
+    },
+    {
+      "path": "Z_definition/27/0",
+      "pole_inputs": [
+        161,
+        3348,
+        3399
+      ],
+      "private": [
+        3348,
+        3349,
+        3350
+      ]
+    },
+    {
+      "path": "Z_definition/28/0",
+      "pole_inputs": [
+        162,
+        3507,
+        3558
+      ],
+      "private": [
+        3507,
+        3508,
+        3509
+      ]
+    },
+    {
+      "path": "Z_definition/29/0",
+      "pole_inputs": [
+        163,
+        3666,
+        3717
+      ],
+      "private": [
+        3666,
+        3667,
+        3668
+      ]
+    },
+    {
+      "path": "Z_definition/30/0",
+      "pole_inputs": [
+        164,
+        3825,
+        3876
+      ],
+      "private": [
+        3825,
+        3826,
+        3827
+      ]
+    },
+    {
+      "path": "Z_definition/31/0",
+      "pole_inputs": [
+        165,
+        3969,
+        4007
+      ],
+      "private": [
+        3969,
+        3970,
+        3971
+      ]
+    },
+    {
+      "path": "Z_definition/32/0",
+      "pole_inputs": [
+        166,
+        4100,
+        4138
+      ],
+      "private": [
+        4100,
+        4101,
+        4102
+      ]
+    },
+    {
+      "path": "Z_definition/33/0",
+      "pole_inputs": [
+        167,
+        4231,
+        4269
+      ],
+      "private": [
+        4231,
+        4232,
+        4233
+      ]
+    },
+    {
+      "path": "Z_definition/34/0",
+      "pole_inputs": [
+        168,
+        4362,
+        4400
+      ],
+      "private": [
+        4362,
+        4363,
+        4364
+      ]
+    },
+    {
+      "path": "Z_definition/35/0",
+      "pole_inputs": [
+        169,
+        4493,
+        4531
+      ],
+      "private": [
+        4493,
+        4494,
+        4495
+      ]
+    },
+    {
+      "path": "Z_definition/36/0",
+      "pole_inputs": [
+        170,
+        4624,
+        4662
+      ],
+      "private": [
+        4624,
+        4625,
+        4626
+      ]
+    },
+    {
+      "path": "Z_definition/37/0",
+      "pole_inputs": [
+        171,
+        4755,
+        4793
+      ],
+      "private": [
+        4755,
+        4756,
+        4757
+      ]
+    },
+    {
+      "path": "Z_definition/38/0",
+      "pole_inputs": [
+        172,
+        4886,
+        4924
+      ],
+      "private": [
+        4886,
+        4887,
+        4888
+      ]
+    }
+  ],
+  "receipt_hashes": {
+    "RUN_INPUTS.json": "d8cf1c53c3b24e27b52cae7ff7a70108d124c9c1acdf52d4713a1699d284e02e",
+    "SUMMARY.json": "d1e83880366d5e1bd721daf84457dd76e6f54f202df70d1a4b2d7df14e9683d5",
+    "construction-map.json": "3d1e002eee34f4917605da1ddc7227e43bfaf4a5044d30d9a77f50fabc7380d2",
+    "inherited-source-mutations.json": "24565b5a03b5931fd2af7aea3b901a2184cfe2bddc9c3b2dd0418c09f755fac5",
+    "linear-pole-identities.json": "273f1c4f9a10529a6adee6476231f8ce44e432dc3f7844b94816cef8022ed3fe",
+    "named-source-mutations.json": "99a7c8a40595ca289e630183f594fd9bec26e9563c6606fea8fcdf7d8e130ee6",
+    "pole-integration.json": "f4fde7cb51b4c7d671ca3e7c249adc476b49aef9ec060da36ce843b6679a017f",
+    "progress.json": "11ad0c8dd2aa74b9f49ed2710cd527bfd80e4d626a14bd640b018625153fb5d8",
+    "proxy-removal-guards.json": "d0b4156e50ac3b27cfcd60f8a0920093c5d09782eb92f954ac6d1aadb5bcdba6",
+    "proxy-root.json": "8149d3f213ef9482f6bb8f3257cf112efb8e6a150e60003c94f7f607493ee9bd",
+    "source-audit.json": "e4b93b2da1babcdc3fcf4a63123fd813143d559358fdf4c76f3880733977333f",
+    "source-determinism.json": "349e7becfdc015170dbc7dd9f5d88b88a89de5d3db90e29566f78a5e7015e38a",
+    "source-mutations.json": "bd888692f5d05287053d6cd42d728453e476af7e7c201ffb30b387ac5572fa7f",
+    "tangent-identities.json": "f81407780925f8dea2a396f034bf69b9490f9bf776b199c64585c69ef8e45ca9",
+    "tangent-mutations.json": "69a60332c241cf0f46858110047832beaccf8d4b6c922ad06757140f31e2ce4f"
+  },
+  "run": 42242278973,
+  "shared_square_global_pair": [
+    237,
+    238
+  ],
+  "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+  "source_rows": 4513,
+  "source_sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+  "source_variables": 4935,
+  "stages": {
+    "coordinates": {
+      "rows": 4752,
+      "sha256": "3479b547c270f3f017e2db1feea0d070abb05e8e02c35e04c8c306bdf12c4257",
+      "variables": 5173
+    },
+    "fresh-lift": {
+      "rows": 4879,
+      "sha256": "a16714e0b0087d69cb5170ade08d4b9d844c27fc062cad6ca530f1dc49fd3294",
+      "variables": 5301
+    },
+    "optimized": {
+      "rows": 4754,
+      "sha256": "cc1683ab6c6e494e8ac5bc45fe63a6340e5e669224d8c082cb0a661343454815",
+      "variables": 5175
+    },
+    "parity": {
+      "rows": 4873,
+      "sha256": "a936cba03545c24633e7830f124f5733c8a6810b0f064c79c3b1871be787241c",
+      "variables": 5295
+    }
+  },
+  "status": "PASS: actual source binding and artifact identities; no local full replay",
+  "uncompressed_sha256": "4a82d9a8dc1b5c92eb40a49751c0a6aae073c8f765ca5e276a74802fd56b84be",
+  "zip_sha256": "c2ccf97370ecc32d6f202f68b92cf61601acb960711c3ec6e2d52992f6a13e3b"
+}

@@ -1,0 +1,194 @@
+{
+  "schema": "brox-checker-mutation-tests-v1",
+  "testedAtUTC": "2026-11-06T17:13:23.684Z",
+  "baseline": "passed",
+  "adversarialMutations": 36,
+  "allRejected": true,
+  "tests": [
+    {
+      "name": "residual degree three",
+      "status": "rejected",
+      "error": "residual degree exceeds two: p"
+    },
+    {
+      "name": "unknown coordinate",
+      "status": "rejected",
+      "error": "unknown coordinate 99"
+    },
+    {
+      "name": "unsorted monomial",
+      "status": "rejected",
+      "error": "unsorted monomial"
+    },
+    {
+      "name": "zero denominator",
+      "status": "rejected",
+      "error": "zero denominator"
+    },
+    {
+      "name": "duplicate coordinate",
+      "status": "rejected",
+      "error": "duplicate coordinate"
+    },
+    {
+      "name": "missing input coordinate",
+      "status": "rejected",
+      "error": "input coordinate 0 missing"
+    },
+    {
+      "name": "wrong fixed parameter",
+      "status": "rejected",
+      "error": "fixed parameter S declaration differs"
+    },
+    {
+      "name": "wrong input kind",
+      "status": "rejected",
+      "error": "input kind/id mismatch"
+    },
+    {
+      "name": "missing gate definition",
+      "status": "rejected",
+      "error": "gate coordinate lacks a recognized definition 3"
+    },
+    {
+      "name": "unknown gate operation",
+      "status": "rejected",
+      "error": "unrecognized gate operation/expression trust_me"
+    },
+    {
+      "name": "forward gate dependency",
+      "status": "rejected",
+      "error": "gate dependency violates extension order"
+    },
+    {
+      "name": "gate sign corruption",
+      "status": "rejected",
+      "error": "polynomial identity failed: gate 2"
+    },
+    {
+      "name": "gate dependency omission",
+      "status": "rejected",
+      "error": "gate dependency list is not exact"
+    },
+    {
+      "name": "wrong input hash",
+      "status": "rejected",
+      "error": "certificate input hash mismatch"
+    },
+    {
+      "name": "self row addition",
+      "status": "rejected",
+      "error": "self row_add not allowed"
+    },
+    {
+      "name": "wrong pivot coefficient",
+      "status": "rejected",
+      "error": "pivot is not constant-linear in eliminated coordinate"
+    },
+    {
+      "name": "wrong replacement",
+      "status": "rejected",
+      "error": "polynomial identity failed: operation 2 eliminate replacement"
+    },
+    {
+      "name": "omitted affected residual",
+      "status": "rejected",
+      "error": "affected list is not exact"
+    },
+    {
+      "name": "zero normalization",
+      "status": "rejected",
+      "error": "zero normalization"
+    },
+    {
+      "name": "self-dependent replacement",
+      "status": "rejected",
+      "error": "self-dependent replacement"
+    },
+    {
+      "name": "compiled residual corruption",
+      "status": "rejected",
+      "error": "polynomial identity failed: compiled residual r"
+    },
+    {
+      "name": "quartic missing monomial",
+      "status": "rejected",
+      "error": "polynomial identity failed: supplied quartic equals explicit SOS"
+    },
+    {
+      "name": "quartic changed coefficient",
+      "status": "rejected",
+      "error": "polynomial identity failed: supplied quartic equals explicit SOS"
+    },
+    {
+      "name": "quartic coordinate name change",
+      "status": "rejected",
+      "error": "quartic coordinate name differs"
+    },
+    {
+      "name": "zero quartic scalar",
+      "status": "rejected",
+      "error": "zero SOS multiplier"
+    },
+    {
+      "name": "bad compact coordinate map",
+      "status": "rejected",
+      "error": "invalid/duplicate compact id"
+    },
+    {
+      "name": "omit used coordinate",
+      "status": "rejected",
+      "error": "cannot omit a used coordinate"
+    },
+    {
+      "name": "false height bound",
+      "status": "rejected",
+      "error": "claimed coefficient height bound fails"
+    },
+    {
+      "name": "nonintegral specialized coefficient",
+      "status": "rejected",
+      "error": "coefficient is not an integer after fixed-S specialization"
+    },
+    {
+      "name": "negative final S power",
+      "status": "rejected",
+      "error": "final coefficient has negative S exponent; integrality not certified"
+    },
+    {
+      "name": "S exponent arithmetic overflow",
+      "status": "rejected",
+      "error": "S exponent arithmetic overflow"
+    },
+    {
+      "name": "field quotient missing mate",
+      "status": "rejected",
+      "error": "field quotient missing unique mate"
+    },
+    {
+      "name": "field quotient wrong component",
+      "status": "rejected",
+      "error": "polynomial identity failed: field quotient output"
+    },
+    {
+      "name": "field quotient omitted dependency",
+      "status": "rejected",
+      "error": "gate dependency list is not exact"
+    },
+    {
+      "name": "field quotient wrong sqrt2 norm",
+      "status": "rejected",
+      "error": "polynomial identity failed: gate 2"
+    },
+    {
+      "name": "elimination raises degree to three",
+      "status": "rejected",
+      "error": "elimination increases residual degree above two"
+    }
+  ],
+  "positiveSpecializationTests": [
+    "gcd(S+1,S+3,2)=2",
+    "(S+1)/2 integral for odd S"
+  ],
+  "scope": "Tests exercise the independent checker; they are not inherited arithmetic proofs."
+}

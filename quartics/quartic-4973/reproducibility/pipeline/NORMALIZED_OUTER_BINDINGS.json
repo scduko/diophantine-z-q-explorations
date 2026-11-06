@@ -1,0 +1,55 @@
+{
+  "auditor_interfaces_and_test_hooks": {
+    "audit_normalized_lucas.py": "105f4cc79a85649041e95be4a9059ed93e1d296fb77e0937e612f54aa801bb33",
+    "test_normalized_lucas.py": "b862d6d0959eb4b357d4a999228f6fb70f4ded5562e39542b8c65c593314c54c"
+  },
+  "full_source_generated_locally": false,
+  "parent_manifest_sha256": "12d818714b70680eff617295008d685ebec8c81984d0402eb6ea79840ef330ed",
+  "parent_nine_files_verified": {
+    "modules/Z_definition.json": "5e96bf1b0de4e1694dcc7ff21a9a7b69b5e2cc61295c2fc2816696092c5dacde",
+    "modules/q_anchor.json": "3edef11d7871866f6224bf9a6e4a6f2d99d5c8f535eef2d3c2c57f98a33f0f6f",
+    "modules/q_compare_beta.json": "75189120b018c23bbf1573de56687103160872aca41d3d1d35138abb7b05203e",
+    "modules/q_conic10.json": "52295a3dc1c694ea879adf0a041f5c94db4fe4482e89bcfe4c2314efe18813c6",
+    "modules/q_conic13.json": "dc243128e59f9ef166e2b08d289a115ada1f8bd06685f0730040e8ef2a3a3f78",
+    "modules/q_conic6.json": "94cef3226b565d3b1d42dc719dd6114310cb6b306e337c911b4861156e0683f9",
+    "modules/q_height_batch.json": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761",
+    "modules/q_primeparity.json": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a",
+    "shared.json": "f879f79eb7e8072176c8204df4c07a0097a219b7c2452c7c09bd52ca04abe83e"
+  },
+  "research_expansion_run_locally": false,
+  "reviewed_files": {
+    "NORMALIZED_LUCAS_CONTRACT_ADDON.json": "af365079cce1bd502dc2d683fc1f76fa2a2ca85c396c22be888dbd9fb3237cb0",
+    "NORMALIZED_SOURCE_CONTRACT.json": "b038a32f4b22de7a43680857dc693d5614d25c6d0f432841bbafd2a8577898d6",
+    "PARENT_SOURCE_PINS.json": "34f06c9d06698fba1fa9549be5470a10535641fa05aabc370d6b33e67316f695",
+    "build_source.py": "9021cac6c2096732d592179edbb5bb7018d4a7285477d7a37284f83fcd9fbdb3",
+    "check_source.py": "7fcf0a8a3ea22b01eb8b39cd7bede33d6506b2d9a86350ec62ec3c09acad8152",
+    "freeze_packet.py": "428bafe232d26dee5aeca84a41681891fb2742b73eeb36d6515cc5da67d8d10b",
+    "normalized_lucas.py": "3e1e420306de2fbe51c17aeb8f24169e23a9d74f47601262d3333360e7c7d921",
+    "prepare_adapter.py": "575bd9a4a246b4560da3122d4565c5df5dc15924f334a0df307b65b9481ccb3f",
+    "run_candidate.py": "1efb57f0164d5c3925998374246e2c2d2d3c96cecfa78399675e1f4977823fee",
+    "source_layout.py": "536f576ccedb1842c6ca95a7954760d1df2549632b0e28ca8f1e416793a4c03f",
+    "test_conic_locators.py": "a276228593cbcb869ce88470085e1eb6d42a3545a88989b117d18c6aec57c1c6",
+    "test_normalization_identity.py": "75cc462431a1f61367398581a99f64e662f93fd697e52701718b139006242db3"
+  },
+  "scope": "No independent re-review of the full normalized arithmetic theorem or incoming semantic auditor; those have separate reviewers. Freeze must regenerate audit policy and manifest before dispatch.",
+  "status": "PASS: outer integration and metadata review",
+  "tiny_checks": {
+    "locator_negatives": 65,
+    "normalization_exact_cases": 54,
+    "template_and_registry": "PASS"
+  },
+  "unchanged_dependencies": {
+    "BASELINE.json": "2a1c41a19f0813e8676c4cbe57eb49a3faa0926f095389d8a4a2b390ea91035d",
+    "PINNED_INPUTS.json": "568a430b4fc223164b9ad19ba2e0e408afca5888b71e25ed715a4ae14b5839d6",
+    "base_adapter.py": "cabb72d21f1308925513003a7375d8b87f766328485d0dd554597dad32e77ed5",
+    "check_anchor_four.py": "0e5f93f61114f9bd6589dc950271938b5d630820a920565043f63ab749081e30",
+    "check_lucas_batch.py": "446ff0fb520d3922d1a3c96455dd4fade07206dbed5357dcc38700ce6eb2e0ce",
+    "check_packet_syntax.py": "1d3e85d05684d66d823634410beabd4ee82462aa75c90d32e18d8f6e8071f755",
+    "conic_lucas.py": "42fcb55ec95be9ee34e98c5d0b0e672062b7cce6c5f9f9d0e676edff72e5ed86",
+    "fresh_lift.py": "3687079f107467cfa1b6205cc297878f4ccd1d61684f0efd25a47cc1cabd2bc0",
+    "joint_chart.py": "f6868d7fc6f6898388288d4f088966220158e888aa47def53cd21c599ef7ff85",
+    "local_lucas.py": "fc85b3c3a8a307bfa7113dc163790092b13738baef7e7431e071f31730f2b280",
+    "run_pipeline.py": "e817a75903d267b6569709df5be8ff31915bb5e2132a6ff6a05a820e76083717",
+    "test_proxy_removal.py": "9160b88088f7777083dc89e69cd1231344bf2a8d2cc325b5bff230d0669a287c"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "pairs": 644,
+  "batches": 37,
+  "old_definitions": 1288,
+  "aliases": 644,
+  "aliases_removed": 644,
+  "lift_gates_removed": 644,
+  "new_odd_powers": 66,
+  "new_squares": 608,
+  "net_raw_variables_removed": 614,
+  "retained_aliases": [],
+  "witnesses": 10309,
+  "variables": 10310,
+  "rows": 9846,
+  "degree": 4,
+  "monomials": 67791,
+  "max_abs_coefficient": 685783949153203534233601,
+  "status": "CANDIDATE: independent verification pending",
+  "batch_absorb": {
+    "pairs": 644,
+    "batches": 37,
+    "old_definitions": 1288,
+    "aliases": 644,
+    "aliases_removed": 644,
+    "lift_gates_removed": 644,
+    "new_odd_powers": 66,
+    "new_squares": 608,
+    "net_raw_variables_removed": 614,
+    "retained_aliases": []
+  }
+}

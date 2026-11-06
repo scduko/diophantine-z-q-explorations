@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "local identity and fixed-S proof criteria only",
+  "full_1315_polynomial_verified": false,
+  "source_hash_verified": true,
+  "source_digest_occurrences": 8,
+  "anchor_identity": true,
+  "both_affine_compositions": true,
+  "square_identity": true,
+  "local_support_and_bounds": true,
+  "fixed_S_domination_checks": true,
+  "modular_integrality_checks": true,
+  "primitive_specialization_caveat_checked": true
+}

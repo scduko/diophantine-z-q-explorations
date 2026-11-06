@@ -1,0 +1,450 @@
+{
+  "expected": {
+    "certificate_sha256": "81ca768459a13b76dbdf4bfe81e94fbab9ab99f14a5731f6b1a1b03e28c1df2b",
+    "checker_sha256": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe",
+    "compressed_bytes": 422245,
+    "degree": 4,
+    "expanded_bytes": 1622053,
+    "expanded_sha256": "094f6a7ed17e7cc8d5d17a2f809127bbaffd0fe343cb2a32d18ac97e61279876",
+    "max_abs_coefficient": 685783949153203534233890,
+    "monomials": 72925,
+    "rows": 4552,
+    "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+    "source_sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+    "variables": 4973,
+    "witnesses": 4972
+  },
+  "final_verification": {
+    "certificate_sha256": "81ca768459a13b76dbdf4bfe81e94fbab9ab99f14a5731f6b1a1b03e28c1df2b",
+    "checker_sha256": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe",
+    "compressed_bytes": 422245,
+    "degree": 4,
+    "distinct_circuit_identities_checked": 1,
+    "expanded_bytes": 1622053,
+    "expanded_sha256": "094f6a7ed17e7cc8d5d17a2f809127bbaffd0fe343cb2a32d18ac97e61279876",
+    "max_abs_coefficient": 685783949153203534233890,
+    "monomials": 72925,
+    "operations": {
+      "circuit": 13,
+      "eliminate": 121,
+      "linear": 266,
+      "parity_conic": 1,
+      "relation_eliminate": 148,
+      "shear": 2
+    },
+    "rows": 4552,
+    "scope": "Exact projection-preserving algebraic equivalence to the pinned source system; exact full integer expansion. The source arithmetic theorem is not checked here.",
+    "seconds": 1.115,
+    "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+    "source_sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+    "status": "PASS",
+    "total_operations": 551,
+    "variables": 4973,
+    "weights_greater_than_one": 0,
+    "witnesses": 4972
+  },
+  "mandatory_status": "PASS: FRESH SOURCE AND EXACT FROZEN CERTIFICATE REPLAY",
+  "package_manifest_sha256": "ff5611923fa9a15fcd8ee8d0a21397fd7271cfe3fa6c6b2e1857d1ca1ad14ba9",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "rediscovery_status": "NOT REQUESTED",
+  "seconds": 107.961,
+  "selection": {
+    "arithmetic_review_sha256": "3eaba41fee89ed2457292666821c65604124f0a2938fcf40cb7c5b1337b75965",
+    "base_checker_sha256": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90",
+    "cleanup_manifest_sha256": "a2ccbce5a09e7e0660b1fbd5506f28f5417f7ddb74c701e9eb399f3cfe8fe381",
+    "final_certificate_sha256": "81ca768459a13b76dbdf4bfe81e94fbab9ab99f14a5731f6b1a1b03e28c1df2b",
+    "final_checker_sha256": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe",
+    "final_expansion_sha256": "094f6a7ed17e7cc8d5d17a2f809127bbaffd0fe343cb2a32d18ac97e61279876",
+    "format": "quartic-release-selection/v1",
+    "source_archive_sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+    "source_entry_sha256": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857",
+    "source_pipeline_manifest_sha256": "7654b06f450db87a3181dd5e16fe23949cb4e57d22751aef3681fed80a1fcf26"
+  },
+  "source_arithmetic_acceptance": false,
+  "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+  "status": "PASS",
+  "steps": [
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "syntax.log",
+      "log_sha256": "d74177cc0622452799e8364bf8993f76c478e79f66ce3cf404455430d040ba4d",
+      "memory_abort": false,
+      "seconds": 0.166,
+      "step": "syntax",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "locators.log",
+      "log_sha256": "12aae6ee934a042902529134caf35ff756c7bfe3fee22b95cc08e2901947eab9",
+      "memory_abort": false,
+      "seconds": 0.116,
+      "step": "locators",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "linear-pole.log",
+      "log_sha256": "1f8352276e4fc7f49139fcdd1462897894cdc72b8ffdc66ea360ec7257da0377",
+      "memory_abort": false,
+      "seconds": 0.066,
+      "step": "linear-pole",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "pole-integration.log",
+      "log_sha256": "8128d7676952d0bbfacb2b9606142b7471e372f0d9d1d3a5bafe859ea77b6d5f",
+      "memory_abort": false,
+      "seconds": 0.317,
+      "step": "pole-integration",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "joint-chart.log",
+      "log_sha256": "a7fed21d13f745a4bea4d5267b3985b1ed7e5daa941609b1e8cf10b7089e5c1a",
+      "memory_abort": false,
+      "seconds": 0.066,
+      "step": "joint-chart",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "first-norm.log",
+      "log_sha256": "d8377c0d0c92035bf85b837a5aec36e56d8bd7527bf96f3f61efd82bf7aefffe",
+      "memory_abort": false,
+      "seconds": 0.116,
+      "step": "first-norm",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "shared-square.log",
+      "log_sha256": "cf8e596d8c136f339dd738b751518a8d1afc4b041e3d75265ab86d70a281bcdb",
+      "memory_abort": false,
+      "seconds": 0.034,
+      "step": "shared-square",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "shared-resources.log",
+      "log_sha256": "fd938639d489471041da298f95d3e6f859970be8e3d9b36d7be77c35f854c678",
+      "memory_abort": false,
+      "seconds": 0.034,
+      "step": "shared-resources",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "normalized-lucas.log",
+      "log_sha256": "f16137a0f1253e03d7cbecc541fde3e26ba0ccd6e0b1790118366a49b8706de3",
+      "memory_abort": false,
+      "seconds": 0.034,
+      "step": "normalized-lucas",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "target-two.log",
+      "log_sha256": "83d9399df2db521557c45a6f2c040247cf0996e115082086bd4d21ca2ebe2e5c",
+      "memory_abort": false,
+      "seconds": 1.718,
+      "step": "target-two",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "tangent-identities.log",
+      "log_sha256": "f81407780925f8dea2a396f034bf69b9490f9bf776b199c64585c69ef8e45ca9",
+      "memory_abort": false,
+      "seconds": 0.116,
+      "step": "tangent-identities",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "tangent-mutations.log",
+      "log_sha256": "710681281e63f6a8cb99d4a0b4554a1bd88475990842f606242c673919ca7bd5",
+      "memory_abort": false,
+      "seconds": 0.417,
+      "step": "tangent-mutations",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "anchor.log",
+      "log_sha256": "61c8379e1009a71ce473a977414017687b928162d692ce322c2b2c5d239a9709",
+      "memory_abort": false,
+      "seconds": 0.066,
+      "step": "anchor",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "build-source.log",
+      "log_sha256": "608b52f863942a9e8c6545122f82d442e9cb162d49e90117137243322f50903d",
+      "memory_abort": false,
+      "seconds": 0.253,
+      "step": "build-source",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "fresh-source-audit.log",
+      "log_sha256": "ad8cb7a28ae24f94a50fe9d38c65ae8c5057bcb53656fdc7ed679ea11a31016e",
+      "memory_abort": false,
+      "seconds": 0.667,
+      "step": "fresh-source-audit",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "source-mutations.log",
+      "log_sha256": "b4ebd8aad7bb6a10490be311021a277dcb740ea5cf3a36018f41d28525e3fda0",
+      "memory_abort": false,
+      "seconds": 74.951,
+      "step": "source-mutations",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "parent-mutations.log",
+      "log_sha256": "0aeb292780dc2d61a787fba35f998b7cc6e1b3528ce47abb0f5c68be93bc13ad",
+      "memory_abort": false,
+      "seconds": 17.055,
+      "step": "parent-mutations",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "proxy-guards.log",
+      "log_sha256": "d0b4156e50ac3b27cfcd60f8a0920093c5d09782eb92f954ac6d1aadb5bcdba6",
+      "memory_abort": false,
+      "seconds": 0.116,
+      "step": "proxy-guards",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "repeat-source.log",
+      "log_sha256": "608b52f863942a9e8c6545122f82d442e9cb162d49e90117137243322f50903d",
+      "memory_abort": false,
+      "seconds": 0.253,
+      "step": "repeat-source",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "prepare-adapter.log",
+      "log_sha256": "b23809de1d786895977ad48b3cffd27fd99bbede1fc10d70f48e5c90282fe29c",
+      "memory_abort": false,
+      "seconds": 0.066,
+      "step": "prepare-adapter",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "fresh-lift.log",
+      "log_sha256": "459fad324e053c3962a380f8934bd087a0b57848ddbc1d15055c2554ee84a5ba",
+      "memory_abort": false,
+      "seconds": 0.467,
+      "step": "fresh-lift",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "verify-lift.log",
+      "log_sha256": "2b06637639510a078b882fb109dab625defd5ea018eea137923a090a894e96d1",
+      "memory_abort": false,
+      "seconds": 0.717,
+      "step": "verify-lift",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "parity.log",
+      "log_sha256": "f493b251d360b0be06053dc5f7df0f8e6710aa5f0d174d40fa8038b1b1702214",
+      "memory_abort": false,
+      "seconds": 0.467,
+      "step": "parity",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "verify-parity.log",
+      "log_sha256": "d3a30e0ea9e35527ee20438f0859e6487d642a0634af0412ab4b6c5a58749078",
+      "memory_abort": false,
+      "seconds": 0.717,
+      "step": "verify-parity",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "optimized.log",
+      "log_sha256": "5da653c480b756fd2f1361fa1eabee88facfe74b85964c372935b262ec91eb90",
+      "memory_abort": false,
+      "seconds": 2.037,
+      "step": "optimized",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "verify-optimized.log",
+      "log_sha256": "7097f88b9d8baa8ffbc04c91fd419dd871d8d8777c9159d81430800654445e72",
+      "memory_abort": false,
+      "seconds": 1.27,
+      "step": "verify-optimized",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "coordinates.log",
+      "log_sha256": "d232a1bf4d9a787e4bbf598c032165a7bca8046b825cce4202afdb0e938f9587",
+      "memory_abort": false,
+      "seconds": 0.667,
+      "step": "coordinates",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "verify-coordinates.log",
+      "log_sha256": "2dc65c9fcb7a0acec38ced3522d9df3d886d3349ea6894381637b3811b83be9d",
+      "memory_abort": false,
+      "seconds": 1.168,
+      "step": "verify-coordinates",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "base-named-mutations.log",
+      "log_sha256": "84818862a10679e3269a85344668786b7e7d615386425c53367152df0390af50",
+      "memory_abort": false,
+      "seconds": 0.717,
+      "step": "base-named-mutations",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "cleanup-test_unit_relations.log",
+      "log_sha256": "1815ff4501a323172ce07c443dbfc5751d2abbe59750f2aad8b0ee46efb31d67",
+      "memory_abort": false,
+      "seconds": 0.066,
+      "step": "cleanup-test_unit_relations",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "cleanup-test_relation_eliminate.log",
+      "log_sha256": "d366d91484157db239915edc53b2ae20e16df5aa0594c81e67ad7d12d32392ce",
+      "memory_abort": false,
+      "seconds": 0.066,
+      "step": "cleanup-test_relation_eliminate",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "cleanup-test_affine_units.log",
+      "log_sha256": "e934a511e43b1181f5da98bd7655d46d8d61a46da86bd86034bb54ee9ad76f7f",
+      "memory_abort": false,
+      "seconds": 0.066,
+      "step": "cleanup-test_affine_units",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "cleanup-supplemental.log",
+      "log_sha256": "fd63c36b61fd8b2c616e9d7537943695ad09a10532d920d0d971adb6a4b54a08",
+      "memory_abort": false,
+      "seconds": 0.034,
+      "step": "cleanup-supplemental",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "regenerate-final-checker.log",
+      "log_sha256": "e543b129e0110fdcdeb249422f2e4e60e7319b1a1e979744a48b03db0c15f8df",
+      "memory_abort": false,
+      "seconds": 0.034,
+      "step": "regenerate-final-checker",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log": "verify-selected-final.log",
+      "log_sha256": "fb1a6d16947f06600e55e520d4025a8d45204957e64a381e0ffab733db1793eb",
+      "memory_abort": false,
+      "seconds": 1.218,
+      "step": "verify-selected-final",
+      "timeout": false
+    },
+    {
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log": "reject-wrong-source.log",
+      "log_sha256": "9174aab8fa17aeed6eeaad561eb3794035c11cb80920637c1e5042d254dc0a14",
+      "memory_abort": false,
+      "seconds": 0.066,
+      "step": "reject-wrong-source",
+      "timeout": false
+    },
+    {
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log": "reject-wrong-entry.log",
+      "log_sha256": "d0d03c587a3468d88a2a3796ad3e67b4cb9c4d9608c776bef0838c01a34dc9c7",
+      "memory_abort": false,
+      "seconds": 0.067,
+      "step": "reject-wrong-entry",
+      "timeout": false
+    },
+    {
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log": "reject-wrong-expansion.log",
+      "log_sha256": "baa40cf9821a1b1e2a29987945b06c4c881f66c9e4073cc435569dc81e82b291",
+      "memory_abort": false,
+      "seconds": 1.169,
+      "step": "reject-wrong-expansion",
+      "timeout": false
+    }
+  ],
+  "zlib_runtime": "1.3"
+}

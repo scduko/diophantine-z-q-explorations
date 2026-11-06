@@ -1,47 +1,39 @@
-# Building the handoffs
+# Building the Version 5 handoffs
 
-Run the build on a remote worker with sufficient disk space and an external
-time and memory limit. The scripts use Python's standard library and Git.
-They do not download the baseline or publish releases.
+Use Python 3.10 or later and Node.js 18 or later. Build outputs and reproduction directories must stay outside the repository. The commands below do not publish or upload anything.
 
-First commit the complete public snapshot, including `quartic_12504.tex`,
-`quartic_12504.pdf`, the exact quartic package, the evidence inventory, and
-the successful full-reproduction `SUMMARY.json`. Record that immutable
-commit ID and the receipt's repository-relative path. Then run:
+The historical pins are frozen in `handoff/releases/version4/PRESERVED_FILES.json`. They bind 607 original construction and earlier quartic files to public commit `5cb2c1997dde6e358f3c2fe9bbdb4b8f4c23bac6`. Do not regenerate these pins from the Version 5 tree.
 
-```sh
-python -E -B handoff/test_handoff.py
-python -E -B handoff/prepare_handoff.py \
-  --repo . --commit SNAPSHOT_SHA \
-  --verification-receipt REPO_RELATIVE_REPRODUCTION_SUMMARY.json \
-  --output /tmp/handoff-plan.json
-python -E -B handoff/build_handoff.py \
-  --repo . --plan /tmp/handoff-plan.json \
-  --baseline /tmp/baseline-r2.zip --output /tmp/version2-handoff
+The requested expansion to Jennifer Park in project credits is recorded separately. The descriptor preparer permits that exact textual replacement in the historical October 11 README and records its original and new hashes. All mathematical files retain their original pins.
+
+First finish the Version 5 manuscript, PDF, package manifest, source reviews, and `docs/quartic-1272/` inventory. Run the package reproduction into a new directory outside the repository:
+
+```
+python -E -B quartics/quartic-1272/reproduce.py --out /tmp/version5-fresh-replay
 ```
 
-The baseline input is the public
-[November 4 revision-2 archive](https://github.com/elliotglazer/diophantine-z-q/releases/download/research-handoff-2026-11-04-r2/z-in-q-research-handoff-2026-11-04-r2.zip).
-Its required SHA-256 is
-`827765f17087e1794c15770221a3a2d0fefed25839566a4a9bfb3b5aaa1ed42b`,
-and its size is 339,860,770 bytes. The builder verifies these before packaging
-and stores the ZIP unchanged, without recompressing it.
+Copy its successful `REPRODUCTION.json` to `handoff/releases/version5/REPRODUCTION.json`. Keep the generated work tree outside Git. Then prepare the descriptor and run the small packaging tests:
 
-Plan preparation reads the exact Git tree, checks all new payload files for
-credential or conversation markers, verifies the current quartic package
-manifest, and requires a successful fresh reproduction receipt. Nothing is
-silently omitted from the current commit. The builder independently compares
-the plan with the complete commit tree before writing either archive.
+```
+python -E -B handoff/prepare_release_v5.py --repo . descriptor --receipt handoff/releases/version5/REPRODUCTION.json
+python -E -B handoff/test_handoff.py
+```
 
-The output directory contains both ZIPs, `SHA256SUMS`, and
-`BUILD_RECEIPT.json`. Both ZIPs are checked entry by entry before a successful
-receipt is written. Preserve `/tmp/handoff-plan.json` as well. The large full
-ZIP is intended as a release asset, not a Git-tracked file. Determine the
-current-only ZIP's suitability for any other transport from its measured
-size after the build.
+The descriptor preparer fails if any current package file, manifest entry, required replay stage, count, source pin, or preserved historical file disagrees. Commit the complete reviewed snapshot, including the descriptor and replay receipt. Only then freeze and build the archives:
 
-The release target is the same snapshot commit used by the builder. A
-manually dispatched workflow can upload these outputs to a draft release
-for review. Keep publication separate from construction and integrity
-verification. If later repository metadata records the completed archive's
-checksum, retain the earlier snapshot ID in the archive and receipt.
+```
+python -E -B handoff/prepare_handoff.py --repo . --commit SNAPSHOT_SHA --release handoff/release.json --verification-receipt handoff/releases/version5/REPRODUCTION.json --output /tmp/version5-handoff-plan.json
+python -E -B handoff/build_handoff.py --repo . --plan /tmp/version5-handoff-plan.json --baseline /tmp/baseline-r2.zip --output /tmp/version5-handoff
+```
+
+The unchanged baseline is the [November 4 revision-2 archive](https://github.com/elliotglazer/diophantine-z-q/releases/download/research-handoff-2026-11-04-r2/z-in-q-research-handoff-2026-11-04-r2.zip). It must have 339,860,770 bytes and SHA-256 `827765f17087e1794c15770221a3a2d0fefed25839566a4a9bfb3b5aaa1ed42b`. The builder streams it with ZIP_STORED and never downloads it.
+
+The output directory must be new. It receives both Version 5 ZIPs, `SHA256SUMS`, and `BUILD_RECEIPT.json`. Archive members have fixed timestamps, permissions and platform metadata; the same plan, source bytes, Python and compression library produce the same archives. The manifest records every member's size and SHA-256. Both archives undergo member and package verification before the successful build receipt is written.
+
+Finally authenticate, extract, and replay the current-only archive:
+
+```
+python -E -B handoff/replay_extracted_current.py /tmp/version5-handoff/z-in-q-version5-current-handoff.zip --expected-archive-sha256 CURRENT_SHA --expected-plan-sha256 PLAN_SHA --extract /tmp/version5-extracted --replay-output /tmp/version5-extracted-replay --report /tmp/version5-extracted-check.json
+```
+
+Take `CURRENT_SHA` and `PLAN_SHA` from the build's checksum and receipt, then preserve the plan, build receipt, extraction report, and checksums as release records. Archive extraction and replay need new, separate directories. Publish only after the release review accepts these exact files. Preserve all existing release tags and assets.

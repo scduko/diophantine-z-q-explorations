@@ -1,0 +1,61 @@
+{
+  "witnesses": 11151,
+  "variables": 11152,
+  "rows": 10688,
+  "degree": 4,
+  "monomials": 68926,
+  "max_abs_coefficient": 685783949153203534233601,
+  "status": "CANDIDATE: independent verification pending",
+  "removed_field_ordinates": 2,
+  "raw_rational_variables_saved": 4,
+  "skipped": [
+    {
+      "y": [
+        42,
+        43
+      ],
+      "higher_degree_rows": [
+        129,
+        130,
+        139,
+        140
+      ]
+    },
+    {
+      "y": [
+        58,
+        59
+      ],
+      "higher_degree_rows": [
+        160,
+        149,
+        150,
+        159
+      ]
+    },
+    {
+      "y": [
+        74,
+        75
+      ],
+      "higher_degree_rows": [
+        169,
+        170,
+        179,
+        180
+      ]
+    },
+    {
+      "y": [
+        90,
+        91
+      ],
+      "higher_degree_rows": [
+        199,
+        200,
+        189,
+        190
+      ]
+    }
+  ]
+}

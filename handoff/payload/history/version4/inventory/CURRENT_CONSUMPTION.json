@@ -1,0 +1,135 @@
+{
+  "schema": "quartic-current-external-consumption-v2",
+  "baseline_artifact": "v3_inventory",
+  "preserve_all_five_source_version_requirements": true,
+  "rule": "Inherit the mathematical statement only in the stated scope, not all older source construction conventions",
+  "groups": [
+    {
+      "id": "I_H5",
+      "retained": "The qualified height/geometry inputs and explicit H19 bound remain",
+      "current_consumers": [
+        "N1",
+        "N9"
+      ],
+      "replacement": "General-root doubled-index estimates use effective 5H19; no H18 or new arithmetic assumption"
+    },
+    {
+      "id": "I_GEN",
+      "retained": "2E(K)=Z Pstar, full rational two-torsion, nontorsion/index facts and lower height bound for multiples",
+      "current_consumers": [
+        "N2",
+        "N9",
+        "N13"
+      ],
+      "replacement": "Old u/v square-membership source charts are not current premises. Root points are general nontorsion E(K) with integer doubled indices; private points retain half-integer Pstar coefficients"
+    },
+    {
+      "id": "I_FORMAL",
+      "retained": "Formal logarithm, isometry and good-reduction facts in their proved domains",
+      "current_consumers": [
+        "N2",
+        "C1"
+      ],
+      "replacement": "Small z may indicate the identity or translated two-torsion neighborhood; actual doubled group identities are used before logs. Denominator order is mode dependent"
+    },
+    {
+      "id": "I_SIEVE",
+      "retained": "The qualified fixed-system prime-pattern theorem, finite exclusions and 37-contact construction",
+      "current_consumers": [
+        "N1",
+        "N4c",
+        "N7"
+      ],
+      "replacement": "Fix the nonzero Lucas s before avoiding its prime divisors; no cross-prime group-order coprimality or common arbitrary-witness orientation is added"
+    },
+    {
+      "id": "I_ANCHOR",
+      "retained": "The mathematical membership set Z_(2) intersect Z_(3) and resulting anchor bounds",
+      "current_consumers": [
+        "N5"
+      ],
+      "replacement": "The two old literal T-predicate calls are replaced by the four-witness trace criterion; both 2 and 3 remain in the predicate"
+    },
+    {
+      "id": "I_POLE",
+      "retained": "Restricted-converse, rank, simultaneous realization and fixed-U inputs with unchanged proof-status qualifications",
+      "current_consumers": [
+        "N8"
+      ],
+      "replacement": "Ordinary contacts use a one-sided negative-odd exclusion plus completeness, not full Psi equivalence. The original scalar-height Psi call is unchanged"
+    },
+    {
+      "id": "I_NORM",
+      "retained": "Elementary odd-valuation descent for the abstract constant-first binary norm tree",
+      "current_consumers": [
+        "N4a"
+      ],
+      "replacement": "No old shared root-error leaf, inverse or paired-test convention is inherited. Each contact has its own rational conic. First-norm fusion uses a virtual T/r leaf"
+    },
+    {
+      "id": "I_CRT",
+      "retained": "Finite group-order facts at each selected prime and the required same-prime compatibility",
+      "current_consumers": [
+        "N4c",
+        "N9",
+        "N13"
+      ],
+      "replacement": "Target-four h=4/full-group construction is superseded in target-two by doubling-image orders M_i=N_i/4 and private k=0/1 congruences. Full orders and image orders are distinguished"
+    },
+    {
+      "id": "I_LUCAS",
+      "retained": "The Lucas/Pell zero-set, existence, nonzero-z and exponential growth conclusions",
+      "current_consumers": [
+        "N1",
+        "N6"
+      ],
+      "replacement": "Global Lucas proxy coordinates are removed; local normalized field residuals give congruences before the two height contradictions"
+    },
+    {
+      "id": "I_RECIPROCAL",
+      "retained": "G2/G9 nonvanishing and approximation on the exact field/formal domains proved in the baseline",
+      "current_consumers": [
+        "N2",
+        "N7",
+        "C1"
+      ],
+      "replacement": "The H/primary point is actually formal at its consumed place. No formal logarithm is applied merely because a rational z value is small"
+    }
+  ],
+  "not_new_external_applications": [
+    "finite-group doubling-image cardinality",
+    "valuation parity and odd-threshold extraction",
+    "rational conic norm-Euclidean existence and approximation in the author proof",
+    "curve/tangent identities",
+    "shared-square identity",
+    "scalar inverse restoration"
+  ],
+  "source_version_requirements": [
+    {
+      "id": "V1",
+      "text": "Preserve current-proof and assumption-status qualifications. Restricted converse and baseline arithmetic retain their stated proof status; numerical or finite checks do not upgrade them."
+    },
+    {
+      "id": "V2",
+      "text": "Prime-pattern sources include published GT/MN/GI plus inherited arXiv1009.3998v5(23Apr2026) and author erratum conventions. They are inherited correction/version inputs, not newly introduced unpublished theorems. Do not claim a published-only proof with no such qualification."
+    },
+    {
+      "id": "V3",
+      "text": "Pan interface uses Calegari ICM2022 published2023 formulation pp611-612,624 and inspected Pan author theorem. No comparison with inaccessible Pan journal full text is claimed."
+    },
+    {
+      "id": "V4",
+      "text": "Yuan geometry/metric evidence includes the author-attested English translation of the published Chinese text; no direct Chinese-typesetting comparison is claimed."
+    },
+    {
+      "id": "V5",
+      "text": "Preserve exact original stable Faltings metric, Tate/arithmetic-Frobenius convention, effective diamond quotient, and final primitive-form twist."
+    }
+  ],
+  "inherited_additional_height_applications": [
+    "P_DETERMINANT",
+    "P_MODULAR_FACTOR",
+    "P_BELYI",
+    "P_TRANSFER"
+  ]
+}

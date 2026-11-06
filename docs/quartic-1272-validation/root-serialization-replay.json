@@ -1,0 +1,126 @@
+{
+  "schema": "quartic-1272-reproduction-v1",
+  "status": "PASS",
+  "packageManifestSha256": "6f20657cee9309013eb135dae0e600460d33ea870f0f24055b8ff637a921710f",
+  "frozenPolynomialSha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586",
+  "rebuiltPolynomialSha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586",
+  "byteIdentical": true,
+  "result": {
+    "variablesIncludingInput": 1272,
+    "existentialWitnesses": 1271,
+    "degree": 4,
+    "monomials": 48001,
+    "quadraticResiduals": 1229,
+    "primitiveContent": "1",
+    "height": "64*3^(2^28)"
+  },
+  "checks": [
+    {
+      "name": "package_integrity",
+      "status": "PASS",
+      "seconds": 0,
+      "log": null
+    },
+    {
+      "name": "build",
+      "status": "PASS",
+      "seconds": 0.36,
+      "log": "logs/build.log"
+    },
+    {
+      "name": "source_inventory",
+      "status": "PASS",
+      "seconds": 0.203,
+      "log": "logs/source_inventory.log"
+    },
+    {
+      "name": "source_semantics",
+      "status": "PASS",
+      "seconds": 0.906,
+      "log": "logs/source_semantics.log"
+    },
+    {
+      "name": "source_oracle",
+      "status": "PASS",
+      "seconds": 1.547,
+      "log": "logs/source_oracle.log"
+    },
+    {
+      "name": "compiler_selftest",
+      "status": "PASS",
+      "seconds": 0.125,
+      "log": "logs/compiler_selftest.log"
+    },
+    {
+      "name": "compile_direct",
+      "status": "PASS",
+      "seconds": 3.625,
+      "log": "logs/compile_direct.log"
+    },
+    {
+      "name": "compile_translated",
+      "status": "PASS",
+      "seconds": 3.344,
+      "log": "logs/compile_translated.log"
+    },
+    {
+      "name": "independent_certificate_checks",
+      "status": "PASS",
+      "seconds": 3.359,
+      "log": "logs/independent_certificate_checks.log"
+    },
+    {
+      "name": "independent_identity_checks",
+      "status": "PASS",
+      "seconds": 0.172,
+      "log": "logs/independent_identity_checks.log"
+    },
+    {
+      "name": "independent_table_checks",
+      "status": "PASS",
+      "seconds": 6.266,
+      "log": "logs/independent_table_checks.log"
+    },
+    {
+      "name": "optimization_checks",
+      "status": "PASS",
+      "seconds": 0.328,
+      "log": "logs/optimization_checks.log"
+    },
+    {
+      "name": "checker_review_probes",
+      "status": "PASS",
+      "seconds": 0.094,
+      "log": "logs/checker_review_probes.log"
+    },
+    {
+      "name": "frozen_table_identity",
+      "status": "PASS",
+      "seconds": 0,
+      "log": null,
+      "sha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586"
+    }
+  ],
+  "requiredChecks": [
+    "package_integrity",
+    "build",
+    "source_inventory",
+    "source_semantics",
+    "source_oracle",
+    "compiler_selftest",
+    "compile_direct",
+    "compile_translated",
+    "independent_certificate_checks",
+    "independent_identity_checks",
+    "independent_table_checks",
+    "optimization_checks",
+    "checker_review_probes",
+    "frozen_table_identity"
+  ],
+  "runtimes": {
+    "python": "3.12.14",
+    "node": "v24.22.1"
+  },
+  "elapsedSeconds": 21.39,
+  "scope": "Complete finite reconstruction and coefficient verification. Source arithmetic theorems remain stated inputs; no Lean proof is asserted."
+}

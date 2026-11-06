@@ -1,0 +1,122 @@
+{
+  "generated_utc": "2026-11-06T17:13:24.030888+00:00",
+  "source_path": "sources/diophantine_optimization_20261106_v3.tex",
+  "source_sha256": "fc8bc7b8fae727e24f934ddd7de0a7cff8a005e89c3d0cac1ea14e5191b910ca",
+  "source_commit": "f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6",
+  "source_url": "https://github.com/JoseBrox/diophantine-z-q_improvements/blob/f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6/paper/diophantine_optimization_20261106_v3.tex",
+  "printed_64_hex_digests": [
+    {
+      "line": 7623,
+      "sha256": "7f5aa3117af82a0b323f0a4e74a18599204f5540408106d3ce99612b5ed830ca"
+    },
+    {
+      "line": 9107,
+      "sha256": "38d458ba4178083766c5ae56a894da595fe27170c1ef07f6b49750fc5edf7c37"
+    },
+    {
+      "line": 9451,
+      "sha256": "7f5aa3117af82a0b323f0a4e74a18599204f5540408106d3ce99612b5ed830ca"
+    },
+    {
+      "line": 9453,
+      "sha256": "06c2eeb37871341588f232d72eee72a49b8a76a2c904dc8465518d280f3378a9"
+    },
+    {
+      "line": 9455,
+      "sha256": "de8e8080587ef83e19653e3545a1c15805526ac847547c66dc6cc21dd1bc466c"
+    },
+    {
+      "line": 9457,
+      "sha256": "f8813916debae6bd20559e1130ae9786eebf48503582e37da32f1c4b018985d0"
+    },
+    {
+      "line": 9459,
+      "sha256": "67992338a1d904d623d9b1b076f28b9da6b84e44736d34e90784f75f305e5d63"
+    },
+    {
+      "line": 9461,
+      "sha256": "aef6888809817e37e372471fd780f83d0241e58f04ddeafd03fd6b46cfa39d62"
+    }
+  ],
+  "digest_objects_by_first_line": {
+    "7623": "released 12504-variable coefficient table, repeated at 9451",
+    "9107": "upstream quartic_12504.tex at 28e87b1b62af0effd954605af7f70b2699dd5672",
+    "9453": "12493-variable coefficient table",
+    "9455": "12465-variable coefficient table",
+    "9457": "12449-variable uncompressed JSON coefficient table",
+    "9459": "853-variable circuit",
+    "9461": "854-variable circuit"
+  },
+  "printed_digest_for_1315_direct": null,
+  "printed_digest_for_1315_translated": null,
+  "direct_reported_statistics": {
+    "variables": 1315,
+    "residuals": 1272,
+    "arithmetic_gates": 1285,
+    "row_additions": 11,
+    "eliminations": 60,
+    "encoded_entries": 28991,
+    "specialized_monomials": 28987,
+    "degree": 4,
+    "source_lines": [
+      4607,
+      4641
+    ],
+    "coefficient_overlaps": "constant c0+1024*kappa^2 and three coefficients 1-192*kappa"
+  },
+  "translated_reported_statistics": {
+    "variables": 1315,
+    "witnesses": 1314,
+    "residuals": 1272,
+    "specialized_monomials": 29021,
+    "degree": 4,
+    "primitive_height": "64*3^(2^28)",
+    "source_lines": [
+      4710,
+      4757
+    ],
+    "compressed_bytes_from_benchmark": 277288,
+    "benchmark_bytes_are_not_an_identity_check": true
+  },
+  "missing_identity_receipts": [
+    "research/phase3/quartic/quartic-direct/polynomial.json.gz",
+    "research/phase3/quartic/quartic-direct-translated/polynomial.json.gz",
+    "quartic-base-change-verification_20261106_v1.json",
+    "full archive MANIFEST.json and verification index"
+  ],
+  "where_absent_receipts_are_described": [
+    [
+      4865,
+      4881
+    ],
+    [
+      7938,
+      7942
+    ],
+    [
+      9594,
+      9620
+    ],
+    [
+      9671,
+      9680
+    ]
+  ],
+  "public_api_observation": {
+    "main": "f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6",
+    "head_commit_utc": "2026-11-06T16:20:44Z",
+    "tree_truncated": false,
+    "release_count": 0,
+    "paths": [
+      "README.md",
+      "data",
+      "data/polynomial_benchmarks.csv",
+      "data/polynomial_benchmarks.json",
+      "docs",
+      "docs/IMPORT_ARCHIVE.md",
+      "paper",
+      "paper/diophantine_optimization_20261106_v3.tex"
+    ],
+    "observation_method": "Read-only GitHub API calls in this audit; no public artifact recovered"
+  }
+}

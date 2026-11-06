@@ -1,0 +1,61 @@
+note: Running TeX ...
+warning: quartic_4973.tex:1110: Overfull \hbox (1.08102pt too wide) in paragraph at lines 1107--1110
+warning: quartic_4973.tex:5883: Overfull \hbox (0.66798pt too wide) in paragraph at lines 5876--5883
+warning: quartic_4973.tex:6472: Underfull \hbox (badness 10000) in paragraph at lines 6471--6472
+warning: quartic_4973.tex:6472: Underfull \hbox (badness 5878) in paragraph at lines 6471--6472
+note: downloading ec-lmr9.tfm
+note: downloading ec-lmtt9.tfm
+warning: quartic_4973.tex:10280: Underfull \hbox (badness 10000) in paragraph at lines 10280--10280
+warning: quartic_4973.tex:10297: Underfull \hbox (badness 1721) in paragraph at lines 10296--10297
+warning: quartic_4973.tex:10298: Underfull \hbox (badness 10000) in paragraph at lines 10297--10298
+warning: quartic_4973.tex:10299: Underfull \hbox (badness 10000) in paragraph at lines 10298--10299
+note: downloading ts1-lmr10.tfm
+warning: quartic_4973.tex:13993: Overfull \hbox (14.9669pt too wide) detected at line 13993
+warning: quartic_4973.tex:14796: Underfull \hbox (badness 6658) in paragraph at lines 14792--14796
+warning: quartic_4973.tex:14796: Underfull \hbox (badness 5652) in paragraph at lines 14792--14796
+warning: quartic_4973.tex:14884: Underfull \hbox (badness 2726) in paragraph at lines 14880--14884
+warning: quartic_4973.tex:14884: Underfull \hbox (badness 5667) in paragraph at lines 14880--14884
+warning: quartic_4973.tex:14906: Underfull \hbox (badness 4913) in paragraph at lines 14902--14906
+note: Rerunning TeX because "quartic_4973.out" changed ...
+warning: quartic_4973.tex:1110: Overfull \hbox (1.08102pt too wide) in paragraph at lines 1107--1110
+warning: quartic_4973.tex:5883: Overfull \hbox (0.66798pt too wide) in paragraph at lines 5876--5883
+warning: quartic_4973.tex:6472: Underfull \hbox (badness 10000) in paragraph at lines 6471--6472
+warning: quartic_4973.tex:6472: Underfull \hbox (badness 5878) in paragraph at lines 6471--6472
+warning: quartic_4973.tex:10280: Underfull \hbox (badness 10000) in paragraph at lines 10280--10280
+warning: quartic_4973.tex:10297: Underfull \hbox (badness 1721) in paragraph at lines 10296--10297
+warning: quartic_4973.tex:10298: Underfull \hbox (badness 10000) in paragraph at lines 10297--10298
+warning: quartic_4973.tex:10299: Underfull \hbox (badness 10000) in paragraph at lines 10298--10299
+warning: quartic_4973.tex:10449: Underfull \hbox (badness 1184) in paragraph at lines 10449--10449
+warning: quartic_4973.tex:13993: Overfull \hbox (14.9669pt too wide) detected at line 13993
+warning: quartic_4973.tex:14796: Underfull \hbox (badness 6658) in paragraph at lines 14792--14796
+warning: quartic_4973.tex:14796: Underfull \hbox (badness 5652) in paragraph at lines 14792--14796
+warning: quartic_4973.tex:14884: Underfull \hbox (badness 2726) in paragraph at lines 14880--14884
+warning: quartic_4973.tex:14884: Underfull \hbox (badness 5667) in paragraph at lines 14880--14884
+warning: quartic_4973.tex:14906: Underfull \hbox (badness 4913) in paragraph at lines 14902--14906
+note: Rerunning TeX because "quartic_4973.aux" changed ...
+warning: quartic_4973.tex:1110: Overfull \hbox (1.08102pt too wide) in paragraph at lines 1107--1110
+warning: quartic_4973.tex:5883: Overfull \hbox (0.66798pt too wide) in paragraph at lines 5876--5883
+warning: quartic_4973.tex:6472: Underfull \hbox (badness 10000) in paragraph at lines 6471--6472
+warning: quartic_4973.tex:6472: Underfull \hbox (badness 5878) in paragraph at lines 6471--6472
+warning: quartic_4973.tex:10280: Underfull \hbox (badness 10000) in paragraph at lines 10280--10280
+warning: quartic_4973.tex:10297: Underfull \hbox (badness 1721) in paragraph at lines 10296--10297
+warning: quartic_4973.tex:10298: Underfull \hbox (badness 10000) in paragraph at lines 10297--10298
+warning: quartic_4973.tex:10299: Underfull \hbox (badness 10000) in paragraph at lines 10298--10299
+warning: quartic_4973.tex:10449: Underfull \hbox (badness 1184) in paragraph at lines 10449--10449
+warning: quartic_4973.tex:13993: Overfull \hbox (14.9669pt too wide) detected at line 13993
+warning: quartic_4973.tex:14796: Underfull \hbox (badness 6658) in paragraph at lines 14792--14796
+warning: quartic_4973.tex:14796: Underfull \hbox (badness 5652) in paragraph at lines 14792--14796
+warning: quartic_4973.tex:14884: Underfull \hbox (badness 2726) in paragraph at lines 14880--14884
+warning: quartic_4973.tex:14884: Underfull \hbox (badness 5667) in paragraph at lines 14880--14884
+warning: quartic_4973.tex:14906: Underfull \hbox (badness 4913) in paragraph at lines 14902--14906
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: downloading lmr7.pfb
+note: downloading msbm7.pfb
+note: downloading lmtt9.pfb
+note: downloading lmbx6.pfb
+note: downloading eufm7.pfb
+note: downloading lm-ts1.enc
+note: Writing `quartic_4973.pdf` (1.1108789443969727 MiB)
+note: Writing `quartic_4973.log` (24.6259765625 KiB)
+note: Skipped writing 3 intermediate files (use --keep-intermediates to keep them)

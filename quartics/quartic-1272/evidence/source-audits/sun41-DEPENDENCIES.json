@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "root": "sun41",
+  "statuses": {"checked": "Proof application replayed relative to listed external inputs", "checked_with_local_repair": "Proof application replayed with the explicit odd-good-prime repair in LOCAL_REPAIR.tex", "external_statement_checked": "Exact theorem statement and hypotheses checked; full external proof accepted as input"},
+  "nodes": [
+    {"id": "sun41", "title": "Sun Theorem 4.1", "source": "P103q.tex", "lines": [514, 532], "proof_lines": [1020, 1042], "status": "checked_with_local_repair"},
+    {"id": "local_counts", "title": "Quadric and collision residue counts", "source": "P103q.tex", "lines": [536, 555], "status": "checked"},
+    {"id": "primitive_count", "title": "Primitive-vector congruence estimate 4.9", "source": "P103q.tex", "lines": [557, 582], "status": "checked"},
+    {"id": "medium_sieve", "title": "Selberg denominator and intermediate obstruction primes", "source": "P103q.tex", "lines": [584, 661], "status": "checked"},
+    {"id": "tail", "title": "Proposition 4.3 weighted obstruction tail", "source": "P103q.tex", "lines": [663, 680], "status": "checked"},
+    {"id": "large_sieve", "title": "Theorem A.1 and Corollary A.2", "source": "P103q.tex", "lines": [1437, 1552], "status": "checked_with_local_repair", "repair": "LOCAL_REPAIR.tex", "repair_note": "Explicitly exclude prime 2 from good primes in q; fixed exceptional set contains divisors of 2*kappa."},
+    {"id": "linear_uniformity", "title": "Lemma 5.2 Artin progression Gowers norms", "source": "P103q.tex", "lines": [721, 786], "status": "checked"},
+    {"id": "polynomial_transfer", "title": "Proposition 5.1 fixed-field polynomial counting", "source": "P103q.tex", "lines": [682, 907], "status": "checked"},
+    {"id": "ray_fibres", "title": "Lemma 6.1 normalized ray fibres", "source": "P103q.tex", "lines": [909, 997], "status": "checked"},
+    {"id": "lower_bound", "title": "Proposition 6.2 finite-cutoff lower bound", "source": "P103q.tex", "lines": [999, 1016], "status": "checked"},
+    {"id": "BL41", "title": "Browning-Loughran Theorem 4.1", "version": "1705.01999v2", "source": "browning-loughran-1705.01999v2/source.tex", "lines": [1278, 1326], "status": "external_statement_checked"},
+    {"id": "BHB21", "title": "Browning-Heath-Brown Lemma 2.1", "version": "2003.09593v1", "source": "browning-heath-brown-2003.09593v1/source.tex", "lines": [559, 599], "status": "external_statement_checked"},
+    {"id": "BHB41", "title": "Browning-Heath-Brown Lemma 4.1", "version": "2003.09593v1", "source": "browning-heath-brown-2003.09593v1/source.tex", "lines": [949, 983], "status": "external_statement_checked"},
+    {"id": "FT14", "title": "Frei-Tinkova unconditional Artin-symbol Theorem 1.4", "version": "2408.17441v3", "source": "frei-tinkova-2408.17441v3/linear_equations_in_artin_primes.tex", "lines": [330, 408], "status": "external_statement_checked", "requires_HRH_or_GRH": false},
+    {"id": "TZ25", "title": "Tao-Ziegler global-to-local concatenation", "version": "1603.07817v1", "source": "tao-ziegler-1603.07817v1.tex", "lines": [462, 475], "preprint_number": "Theorem 2.5", "published_number": "Theorem 9", "status": "external_statement_checked"},
+    {"id": "TZ31", "title": "Tao-Ziegler arbitrary-function dense model", "version": "1603.07817v1", "source": "tao-ziegler-1603.07817v1.tex", "lines": [627, 676], "preprint_number": "Theorem 3.1", "published_number": "Theorem 11", "status": "external_statement_checked"},
+    {"id": "TZ39", "title": "Tao-Ziegler common model in global and local norms", "version": "1603.07817v1", "source": "tao-ziegler-1603.07817v1.tex", "lines": [965, 973], "preprint_number": "Corollary 3.9", "published_number": "Corollary 3", "status": "external_statement_checked"},
+    {"id": "TZ41", "title": "Tao-Ziegler generalized von Neumann theorem", "version": "1603.07817v1", "source": "tao-ziegler-1603.07817v1.tex", "lines": [1022, 1031], "preprint_number": "Theorem 4.1", "published_number": "Theorem 13", "status": "external_statement_checked"},
+    {"id": "TZmajorant", "title": "Tao-Ziegler polynomial-forms majorant estimates", "version": "1603.07817v1 and 2018 publication", "source": "tao-ziegler-1603.07817v1.tex", "lines": [1383, 1454], "status": "external_statement_checked", "application_note": "Fixed non-squarefree conductor multiplier checked in Sun's divisor-sum adaptation"},
+    {"id": "CFT", "title": "Gaussian ray-class exact sequence and reciprocity", "source": "milne-CFT-v4.03.pdf", "version": "4.03", "location": "Chapter V, Theorem 1.7 and Section 3", "status": "external_statement_checked"},
+    {"id": "classical", "title": "Mertens estimates, PNT in fixed mod-4 progressions, divisor bound, geometry of numbers", "status": "external_statement_checked", "application_note": "Standard fixed-data forms; no varying-modulus or effective rate assumed"}
+  ],
+  "edges": [
+    ["sun41", "tail"], ["sun41", "lower_bound"], ["sun41", "ray_fibres"],
+    ["tail", "medium_sieve"], ["tail", "large_sieve"],
+    ["medium_sieve", "primitive_count"], ["medium_sieve", "local_counts"], ["medium_sieve", "classical"],
+    ["primitive_count", "BL41"], ["primitive_count", "local_counts"],
+    ["large_sieve", "BHB21"], ["large_sieve", "BHB41"], ["large_sieve", "classical"],
+    ["lower_bound", "polynomial_transfer"], ["lower_bound", "ray_fibres"],
+    ["ray_fibres", "CFT"], ["ray_fibres", "classical"],
+    ["polynomial_transfer", "linear_uniformity"], ["polynomial_transfer", "TZ25"],
+    ["polynomial_transfer", "TZ31"], ["polynomial_transfer", "TZ39"],
+    ["polynomial_transfer", "TZ41"], ["polynomial_transfer", "TZmajorant"],
+    ["linear_uniformity", "FT14"], ["linear_uniformity", "classical"]
+  ]
+}

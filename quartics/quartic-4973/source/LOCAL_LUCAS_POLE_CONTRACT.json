@@ -1,0 +1,77 @@
+{
+  "format": "local-lucas-conic-pole-contract-addon-v1",
+  "status": "Arithmetic composition and typed interface; final emitted source and replay pending",
+  "source_family": "H19-root37-joint-chart-local-lucas-conic-pole-anchor4-v1",
+  "source_id_prefix": "joint-chart-local-lucas-conic-pole-anchor4-k40-q12-a25-h19-s32-",
+  "base_contracts": {
+    "LOCAL_LUCAS_CONTRACT_ADDON.json": "13ebcdd31363e8d482a8daac988da75ac314d66a1d989926e39bdf01d4418048",
+    "LOCAL_LUCAS_SOURCE_CONTRACT.json": "233ea7424864fb0d828346cfbfe29459cbc09e801d3d5cd327675b5ea3d95ad8",
+    "CONIC_POLE_CONTRACT_ADDON.json": "44bcef6a37f57a847f963313b146614b56ecf3fdb101e5443c2c65321494e4a4"
+  },
+  "inheritance": "Use the exact reviewed local-Lucas source as parent. Apply only the pole tail and caller substitution specified in the conic-pole addition, with its batch name/count registry replaced below. Its old exclusions of local-Lucas and root-proxy removal are superseded by this exact parent; all other source and proof requirements remain.",
+  "parent_manifest_sha256": "12d818714b70680eff617295008d685ebec8c81984d0402eb6ea79840ef330ed",
+  "parent_source_id": "joint-chart-local-lucas-conic-anchor4-k40-q12-a25-h19-s32-36652fcddbde",
+  "parent_source_sha256": "a4426378c793dda3e06c73d44da28cb3dba4207bf5a2325c2ba16c09e68163e6",
+  "proof_bindings": {
+    "precision/sub5000/LOCAL_LUCAS_RESIDUAL.md": "2c4b1a1f24a485b021ff11561043a412a61186e243194ba244b6090124b83570",
+    "parity/sub5000/PARITY_CONIC_REUSE_PROOF.md": "a7d2712ce511aca30f5c8e94e0e2ce93c6ee64e21074e2bff91f412fe5a1cb5c",
+    "arithmetic-audit/sub5000/PARITY_CONIC_REUSE_REVIEW.md": "84970af65abda253545e12cc7ac476183df321972316ed88e71a0e37a25b952f",
+    "arithmetic-audit/sub5000/LOCAL_LUCAS_5570_SOURCE_REVIEW.md": "f01202c5d3af35f35a07a6c21fc94368860c51dcc88ce19cf30fd57d517b8648"
+  },
+  "frozen_parent_auditors": {
+    "audit_local_lucas.py": "c08ee3db7b7711ccc32d942a615a893d4cb14b03a58a4eb0a3965430f5b89543",
+    "check_lucas_batch.py": "446ff0fb520d3922d1a3c96455dd4fade07206dbed5357dcc38700ce6eb2e0ce"
+  },
+  "unchanged": {
+    "height_exponent": 19,
+    "high_precision": 40,
+    "beta_precision": 12,
+    "anchor_squarings": 25,
+    "scalar_orders": [1,1,1,1,32,32],
+    "comparison_free_counts": {"q_compare4":58,"q_compare_beta":28,"q_compare_lucas":47},
+    "comparison_legacy_counts": {"q_compare4":28,"q_compare_beta":16,"q_compare_lucas":23},
+    "conic_field_nodes": 377,
+    "point_difference_sites": 145,
+    "private_conics": 37,
+    "root": "Byte-identical parent root, including removed global proxies and retained integer points, raw contacts and height targets",
+    "comparison_modules": "Byte-identical parent comparison modules, including E=F(Cs,Ct,Cz), every G/ratio equation and all field orders",
+    "anchor_and_scalar_height": "Byte-identical parent modules and root calls",
+    "shared_constants": "Byte-identical parent shared constants",
+    "q_primeparity": "Byte-identical parent; called only once by scalar height"
+  },
+  "batch_registry": {
+    "q_compare4": {"batch":"q_conic13","field_count":13,"instances":13,"orders":[1,1,1,1,1,1,12,40,40,12,40,40,40]},
+    "q_compare_beta": {"batch":"q_conic6","field_count":6,"instances":8,"orders":[1,1,1,12,12,12]},
+    "q_compare_lucas": {"batch":"q_conic10","field_count":10,"instances":16,"orders":[1,1,1,1,1,40,40,40,40,40]}
+  },
+  "pole": {
+    "module":"q_conicpole",
+    "free":3,
+    "input_order":["raw r","same batch private theta","same batch upper norm root W"],
+    "batch_call_slots":"[0, conic_private.theta, norm_root]",
+    "locals":12,
+    "rows":10,
+    "equations":"Exactly the replacement_pole equations and local order in CONIC_POLE_CONTRACT_ADDON.json; no changes",
+    "calls":[],
+    "instances":37
+  },
+  "integration_gate": [
+    "Require exact parent root, comparison, anchor, scalar-height and shared bytes",
+    "In each new batch restore only W2=W^2, argument=r*W2 and the old q_primeparity(argument) call, then run the unchanged full check_lucas_batch specification",
+    "Compare the entire proposed batch against the specified two-final-coordinate/two-row deletion and exact q_conicpole call",
+    "Permit only the batch-name registry change in the pole kernel/specification; independently bind their new hashes",
+    "Check all 37 pole triples and ensure all field coefficient sources are independent of their private conic variables",
+    "Keep the old scalar-height parity occurrence eligible for its old algebraic rule, and exclude every q_conicpole occurrence from that rule",
+    "Complete full source flattening, fresh allocation, source digest binding and full named-source replay"
+  ],
+  "composition_argument": "The local-Lucas field E is a polynomial in already fixed elliptic/G/ratio data. Therefore both rational coefficients of every tested field are fixed before the private conic choice. For each occurrence W(theta) remains polynomial/continuous with exactly the same constant-left norm construction, now with 13,6 or10 fields. The fixed-U completeness proof can simultaneously approximate the selected split-prime root and theta=3/2 at real/2/3/17 places. It does not depend on the old field count. Its soundness maps the pole witnesses to the unchanged old parity premise for r*W^2, including W=0, after which conic field recovery and the exact local-Lucas contradictions apply. No common orientation or extra global point congruence is introduced.",
+  "completeness_order": [
+    "Fix integer root indices, scalar and anchor data; choose contacts and common J",
+    "Choose each private elliptic point and all joint-chart and G/ratio values",
+    "Evaluate local V,D_eval,E_eval and fix every field coefficient",
+    "Choose each private conic point with selected-prime depth and real/2/3/17 smallness conditions",
+    "Evaluate packed fields and the upper norm root, then choose remaining fixed-U pole witnesses"
+  ],
+  "excluded_changes": ["normalized Lucas residual F/Cs^2","other ratio fusion","contact power changes","H18","global point sharing","root error deletion"],
+  "final_source_binding": "Pending. This addition proves arithmetic compatibility and specifies the only integration delta; it is not acceptance of uninspected new source bytes."
+}

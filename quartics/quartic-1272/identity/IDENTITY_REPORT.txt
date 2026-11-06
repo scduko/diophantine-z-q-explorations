@@ -1,0 +1,279 @@
+Identity and fixed-constant audit of the Brox1315 construction
+2026-11-06
+
+Result
+
+The public text determines several exact local formulas and a class of valid
+quadratic compilations. It does not determine the author's complete labeled
+1272-row residual list or either 1315-variable coefficient table. A new valid
+compilation can establish a new polynomial and its statistics. It cannot, by
+matching the prose or aggregate counts alone, establish identity with the
+unavailable Brox1315 artifact.
+
+A fresh read-only GitHub API query found main still at
+f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6. The recursive tree was untruncated and
+contained only the README, benchmark CSV and JSON, archive-import instructions,
+and paper. There were zero releases. The public archive-import instructions
+explicitly say the research and certificate directories have not been imported.
+No new public artifact was recovered.
+
+Source
+
+All line references below are to
+sources/diophantine_optimization_20261106_v3.tex,
+SHA-256 fc8bc7b8fae727e24f934ddd7de0a7cff8a005e89c3d0cac1ea14e5191b910ca.
+The independent script check_identity.py verifies that digest before testing.
+The source URL is
+https://github.com/JoseBrox/diophantine-z-q_improvements/blob/f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6/paper/diophantine_optimization_20261106_v3.tex
+
+Specified choices
+
+* The coefficient field is Q(sqrt(2)), represented by two rational components.
+  Rational affine arithmetic costs no new coordinate. A product or arbitrary
+  quadratic expression can be assigned to one new rational coordinate. Field
+  products, inverses, and guarded quotients use the two displayed component
+  equations. These are exact rules at lines 4367-4405.
+* The quartic retains the scalar preparation coordinate. It uses comparison
+  precision 52, beta precision 16, scalar order 32, and kappa=3^(2^28).
+  Lines 4138-4147 and 4567-4573 fix these choices.
+* The original semilocal anchor constant is C=3^(2^26), and the displayed
+  precompiled anchor is u^2+6v^2-2w^2-3(f0^2+f0*f1-f1^2)^2+2*C^4.
+  See lines 4170-4175. The fixed height scales are x0^2 and (1+x1^2)^2,
+  at lines 3352-3364. The weight powers are explicit at lines 4272-4279.
+* The direct Lucas test is F(U,V,W)=V^2-U*(U-2)*V*W+(U-2)^2*W^2-1.
+  The text fixes the intermediary expressions A=U*(U-2), B=V*W,
+  C=(U-2)*W, and F=V^2-A*B+C^2-1 at lines 4575-4599.
+* The polynomial block sizes are b=3 for G12 and b=4 for G3, with powers
+  and Horner evaluation as described at lines 4407-4421. Sharing the
+  symmetric-product coefficient lists across detectors is explicit at
+  lines 4423-4437 and 4598-4602.
+* Eight Boolean coordinates encode sign and seven listed prime factors.
+  Their defining equations and correction product are at lines 4458-4468.
+* The final direct anchor is R=-3*A^2+16*u^2+96*v^2-32*w^2+32*kappa,
+  where A=X52+X53-X54 and (u,v,w)=(X55,X56,X57). The text claims the
+  three private coordinates occur nowhere else, at lines 4680-4688.
+* The final affine translation, its inverse, determinant 1/64, and translated
+  anchor are completely explicit at lines 4690-4708. These identities pass
+  the new exact check. They require no unavailable artifact locally.
+* Input index 0 and sparse encoding [coordinate multiset, constant power,
+  integer coefficient] are explicit at lines 4543-4551 and 4878-4881.
+
+Choices not specified sufficiently to reproduce identity
+
+* The complete ordered source-equation list and its exact compiler input are
+  absent. The text describes how to derive a mathematical system, but does
+  not print the compiler's source syntax tree or every lowered residual.
+* The ordering and names of all 1315 coordinates are absent. A few indices
+  are fixed by the anchor and the Gaussian restriction, the latter at
+  lines 7920-7942. These do not determine the remaining indices.
+* Common expressions are to be reused, but no canonicalization, rewrite
+  order, expression hashing, multiplication association, or complete cache
+  trace is given. Polynomial block sizes alone do not fix gate identity.
+* Lines 4473-4486 permit rational row addition and quadratic-preserving
+  elimination. They do not list the 11 row-index pairs and multipliers, or
+  the 60 defining rows, removed coordinates, substitutions, and remappings.
+  The counts at lines 4626-4628 cannot recover these missing operations.
+* The mathematical row normalization rule is clear: clear rational
+  denominators and divide the specialized integer coefficient gcd, at
+  lines 4488-4490. The actual factors are absent. A row sign is immaterial
+  to the sum of its square, but still matters to byte identity of residual
+  lists. A formal coefficient gcd in Z[S] need not be the specialized gcd.
+* The final full coefficient table, full incidence table, and verification
+  receipts are absent. The stated facts that only three coordinates occur
+  in the anchor and that the rest of the coefficients meet a bound remain
+  full-table assertions, not consequences of the local anchor identity.
+
+The loss of identity is mathematical, not just a compression-format issue.
+For example, both {x,y} and {x+y,y} have the same common zero set and are
+connected by an allowed row addition, but their sums of squares differ.
+Variable reordering and different gate sharing can likewise change a labeled
+table without changing its existential projection. A reconstructed artifact
+therefore needs its own hash and a new statement of what has been verified.
+
+Published receipts and reported statistics
+
+source_receipts.json records every printed 64-hex digest and its exact line.
+The source has eight digest occurrences for seven distinct objects. They
+identify the original 12504 table, its upstream manuscript, three earlier
+large quartics, and the 853/854 circuits. None identifies the direct or
+translated Brox1315 table. Lines 7938-7942 say the four later table hashes
+are in quartic-base-change-verification_20261106_v1.json, which is absent.
+Lines 4865-4881 promise parent hashes and transformation certificates;
+lines 9671-9680 promise an archive manifest and verification index.
+
+The direct table's reported statistics are 1315 total coordinates, 1272
+primitive residuals, 1285 arithmetic gates, 11 row additions, 60 eliminations,
+28991 encoded entries, and 28987 specialized coordinate monomials, at
+lines 4607-4641. Four pairs of entries merge: the constant c0+1024*kappa^2
+and three coefficients 1-192*kappa.
+
+The translated table's reported statistics are 1315 total coordinates,
+1314 witnesses, 1272 residuals, degree 4, 29021 monomials, primitive height
+64*3^(2^28), and bound 2^429496736, at lines 4710-4757. The benchmark JSON
+reports a 277288-byte compressed artifact. A file size does not identify a
+coefficient table, and gzip byte hashes also depend on serialization and
+compression details. No reported statistic is treated here as a checked
+statistic of the absent full object.
+
+Why a symbolic fixed-S table is an exact integer polynomial
+
+Let S0=3^(2^27). A finite table of triples (m,k,c), with m a finite
+multiset of coordinate indices, k a nonnegative integer, and c an integer,
+defines the element
+
+  P(X)=sum_(m,k,c) c*S0^k*product_(i in m) Xi
+
+of Z[X0,...,Xn]. Finiteness and integrality follow directly. S0 is an
+explicit fixed integer, so it contributes neither a quantified coordinate
+nor polynomial degree. No decimal expansion is needed to define P exactly.
+Replace each kappa^j by S^(2j) to compare the two coefficient encodings.
+
+Evaluation S -> S0 is a ring homomorphism. Thus exact convolution and
+substitution identities in Q[S][X] prove the corresponding integer or
+rational polynomial identities after specialization. Equality in Q[S][X]
+is sufficient for equality at S0. It is not necessary in general because
+specialization has a kernel. To conclude that a nonzero formal coefficient
+survives specialization, use a separate nonvanishing certificate.
+
+For p(S)=a_d*S^d+...+a_0 with a_d nonzero, S0>=1 gives
+
+  |sum_(j<d) a_j*S0^j| <= S0^(d-1)*sum_(j<d)|a_j|.
+
+If |a_d|*S0 > sum_(j<d)|a_j|, p(S0) has the sign of a_d. Since
+S0 > 2^(2^27), one can prove this using only the bit length of the tiny
+rational ratio sum|a_j|/|a_d|. check_identity.py deliberately uses this
+sufficient test and rejects coefficients for which it cannot certify the
+inequality. No 134-million-bit power of two is constructed either.
+Multiplying by a positive power of S preserves signs for Laurent polynomials.
+
+Support is then computed by grouping entries by coordinate monomial and
+certifying nonzero specialization of every remaining coefficient. Counting
+formal triples alone is wrong when a monomial has more than one S power.
+The degree is the largest coordinate-multiset length among surviving
+coefficients. An exact coefficient comparison applies the sign test to
+candidate(S)-p(S) and candidate(S)+p(S), proving candidate(S)>=|p(S)|.
+Equality at one coefficient proves the maximum is attained.
+
+For rational coefficient polynomials with nonnegative exponents, choose a
+positive common denominator D. Integrality is equivalent to divisibility
+of the integer numerator polynomial N(S0) by D. Compute S0 modulo D as
+pow(3,2^27,D), then N(S0) modulo D. This uses an exponent with 28 bits,
+not an expanded S0. Negative powers require extra divisibility evidence
+and should be rejected by a verifier that only implements this criterion.
+
+Primitive content needs its own proof after specialization. The two
+polynomials S+1 and S+3 have no common formal polynomial factor, but both
+are even at S0. A literal coefficient 1 proves integer content 1 immediately.
+More generally, a gcd of 1 among S-free integer coefficients suffices.
+If a nonzero S-free coefficient bounds the possible gcd, modular checks
+against its prime divisors can finish the proof. One must not silently
+replace any of these tests by formal content 1 in Z[S].
+
+Local anchor results, independently checked
+
+check_identity.py verifies the two affine-map compositions, determinant,
+anchor substitution, and square substitution exactly over Q[S]. It writes
+all local rows and expanded local coefficients in anchor_certificate.json.
+The original and translated anchor squares have respectively 49 and 79
+coordinate monomials. Their private-coordinate supports have sizes 27 and
+64. In the translated square there is only one S^2 coefficient, 64*S^2
+at X55^2; the largest coefficient multiplier of S has absolute value 288,
+and the largest S-free local coefficient has absolute value 540. No local
+coordinate monomial receives more than one S power.
+
+These local facts do not prove a global support count. Shared-coordinate
+terms can overlap with other residual squares. The source reports the
+necessary overlaps, but the full table must verify them. Similarly the
+global height 64*S^2 follows only after checking the rest of the coefficients
+are smaller and the final polynomial is primitive. The source's bound
+2^1020 for the rest, plus input coefficient 1, would suffice. The local
+checker verifies 64*S0^2>288*S0 and 64*S0^2>2^1020 symbolically, as well as
+64*S0^2<2^429496736 using 3^5<2^8.
+
+Concrete checks for a complete reconstructed certificate
+
+1. Pin the precise source bytes, reconstruction source code, schema, and
+   ordered source rows. Assign fresh immutable hashes. State that the
+   result is independently reconstructed unless original hashes match.
+2. Validate every coordinate reference, introduced coordinate, rational
+   coefficient, and fixed-constant power. Keep input index 0 immutable.
+3. Match every structural source equation to its explicit lowered row.
+   Replay gates from their earlier inputs. Check the nonzero denominator
+   premises or retained inverse equations separately from polynomial
+   identities. A correct algebraic trace alone cannot prove those premises.
+4. Replay each row addition with distinct retained source row, then every
+   elimination with a nonzero constant coefficient for the removed
+   coordinate. Check the defining remainder is independent of that
+   coordinate, substitute in every row, and verify degree at most two.
+5. Check each primitive normalization by a nonzero rational scaling
+   identity, exact specialized integrality, and specialized gcd 1.
+6. Reconstruct all final residuals and independently convolve their squares.
+   Compare every coefficient and every active-coordinate incidence. Do
+   not accept a count or a table hash as a substitute for this comparison.
+7. Verify the three private anchor coordinates occur only in the anchor
+   before applying the displayed translation. Check both affine-map
+   compositions and the full literal-polynomial identity.
+8. Collect equal coordinate monomials, certify coefficient nonvanishing,
+   degree, total support, active variable count, primitive content, and
+   maximum coefficient at S0 with the methods above.
+9. Record separately the compiler/certificate result, agreement with the
+   manuscript's reported statistics, identity with an original artifact,
+   and the external arithmetic hypotheses. These are different claims.
+
+Run the local audit with
+
+  python identity/check_identity.py
+
+The result is checks.json. Its PASS is scoped to the local identities and
+fixed-S proof criteria, and explicitly does not verify the full Brox1315.
+
+Independent check of the newly reconstructed tables
+
+The team subsequently produced a new 1272-coordinate compilation. The
+separate script check_reconstructed_tables.py imports only the polynomial
+arithmetic in this auditor's check_identity.py. It does not import the
+producer or compiler. It checks both tables directly and writes
+reconstructed_table_checks.json.
+
+The direct table with SHA-256
+5acd7ebf8c09c7d95f66c16f6c5594fdbbde062a0f3204068e8f88b7fd4b54ba
+has 47986 encoded entries, 47984 coordinate monomials, 1272 active
+coordinates, degree 4, and primitive integer content 1. Its maximum
+coefficient is the constant coefficient, recorded exactly in the JSON.
+
+The translated table with SHA-256
+02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586
+has 48001 encoded entries and coordinate monomials, 1272 active
+coordinates, degree 4, primitive integer content 1, and exact maximum
+coefficient 64*S^2 at X79^2. Both input fourth-power coefficients are 1.
+The checker proves every specialized coefficient is nonzero and compares
+every coefficient with the computed maximum. The largest sufficient
+domination bound needs 5337 bits, far below the available 134217728 bits.
+The reconstructed tables need not obey the manuscript's 2^1020 bound for
+all other coefficients; the direct dominance checks establish the maximum
+without assuming that bound.
+
+The new raw anchor starts with a different scaling from the author's final
+anchor. Direct inspection and exact substitution show
+
+  q_new = 16 * (q_old composed with T),
+
+where T is the displayed affine map and q_old is the new builder's raw
+anchor. The checker verifies both inverse compositions, that the private
+coordinates occur in no other row, and that all 1260 other rows are equal.
+Consequently the residual zero sets are affinely bijective over every
+characteristic-zero field, and their sums of squares have equal rational
+input projection. The literal raw sums of squares instead satisfy
+
+  P_new - (P_old composed with T) = 255*(q_old composed with T)^2.
+
+This nonzero difference must not be reported as a literal polynomial
+substitution identity. It does not obstruct rational zero-set equivalence.
+Later independent compiler-certificate replay is responsible for connecting
+the raw rows to these reduced tables. A separate source audit is responsible
+for connecting the builder's arithmetic equations to the conditional
+mathematical definition. Neither follows from the coefficient check alone.
+
+These hashes and statistics are those of the newly reconstructed objects.
+They differ from the reported Brox1315 coordinate and monomial counts and
+do not recover the missing original artifact.

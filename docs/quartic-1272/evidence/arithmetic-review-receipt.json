@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "verdict": "accepted_relative_to_explicit_inherited_and_external_inputs",
+  "reviewer": "astra_brox41_audit",
+  "sources": {
+    "current_v4": {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+      "sha256": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34"
+    },
+    "bridges": {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+      "sha256": "94696c3d3113c6ff23b8ff3039a17447424151d49f5ecbf1f178304aaf2d5544"
+    },
+    "new1272": {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+      "sha256": "506675ede05bb3d369d9882945958c86d2d39c8fbe4d6e1e393c6a4e17f00000"
+    },
+    "sun_application_statement": {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\sun-proof\\sun_appendix.tex",
+      "sha256": "620e2e5652048c827efd8a1d9dae78462679e65992beeb20c3f089b3115fb77b",
+      "review_scope": "Exact theorem statement consumption only; surrounding proof is not reviewed by this receipt.",
+      "statement": {
+        "label": "thm:v5-simultaneous-primes",
+        "lines": [
+          24,
+          48
+        ],
+        "encoding": "UTF-8 with LF newlines and one terminal newline",
+        "sha256": "348c98050f778bb326b1811565deb2b37471a3104eeaf3be847bd6584c9f779e",
+        "snapshot_path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\sun_consumed_statement.tex"
+      },
+      "prior_container_sha256": "5acc5891dd791c56bb7b68342caf3d9ed3b3d3908e3af618773b9bea3791c594",
+      "revision_note": "After the FT norm-exponent proof repair, the theorem statement was reread and its unchanged application scope reaffirmed. The new proof is separately reviewed."
+    }
+  },
+  "arithmetic_interface_entries": 19,
+  "exact_inherited_blocks": 8,
+  "manually_reviewed_changed_blocks": [
+    "reciprocal_logarithm",
+    "global_reciprocal_nonvanishing"
+  ],
+  "added_proofs": [
+    "v5:scalar32-bridge",
+    "v5:preparation-zero-bridge",
+    "v5:real-progression-bridge"
+  ],
+  "requested_and_checked_source_closures": [
+    "lem:v5-two-reductions",
+    "contact primes do not divide v"
+  ],
+  "independently_reviewed_new_section_parts": [
+    "normalized points and exceptional quotient domains",
+    "all sixteen test expressions and exact scalar tree",
+    "unramified reciprocal-log statement and proof",
+    "three-witness semilocal anchor and changed exponent",
+    "two-anchor comparison and five-contact height transfer",
+    "both soundness height contradictions",
+    "successive scalar choices, uniform real bounds, prime application, CRT",
+    "all nine preparation-zero completions and final scalar completion",
+    "semantic compiler description and row-normalized anchor translation"
+  ],
+  "new_sun_statement_consumption_checked": true,
+  "whole_new_sun_proof_reaudited_by_this_reviewer": false,
+  "whole_inherited_restricted_converse_reproved_by_this_review": false,
+  "final_polynomial_table_replayed_by_this_review": false,
+  "finite_arithmetic_checks": "bridge_arithmetic_checks.json",
+  "reference_check": {
+    "number_of_distinct_refs": 39,
+    "missing_labels": []
+  },
+  "unresolved_interface_obligations": [],
+  "qualifications": [
+    "Restricted-converse, rank, and original arithmetic assertions retain their stated proof status; this interface audit and finite replay do not strengthen them.",
+    "Prime-pattern inputs retain corrected author-version and erratum conventions, including the stated arXiv:1009.3998v5 version.",
+    "Pan interface uses the inspected author theorem and cited Calegari formulation; no comparison with inaccessible journal text is claimed.",
+    "Yuan input retains its author-attested translation qualification.",
+    "Stable Faltings metric, arithmetic Frobenius, diamond quotient, and final-twist conventions remain fixed.",
+    "The new prime theorem retains the explicitly disclosed Frei-Tinkova arXiv-v3 input; a final published version was not verified.",
+    "Separate finite-verification receipts establish the complete coefficient table and numerical polynomial statistics.",
+    "Acceptance applies to the exact hashes above and is not a formal proof certification."
+  ]
+}

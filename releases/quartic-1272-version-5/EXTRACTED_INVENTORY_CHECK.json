@@ -1,0 +1,18 @@
+{
+  "schema": "quartic-v5-extracted-inventory-check-v1",
+  "status": "PASS",
+  "basis": "Observed successful process results from the authenticated extracted current snapshot",
+  "validation": {
+    "command": "python -E -B docs/quartic-1272/inventory.py validate --repo . --manuscript quartic_1272.tex --expected-input-sha256 695769c38917efa35b6256132cd8b77807d6384ab6d27c38f250ff8947ae6c10",
+    "exitCode": 0,
+    "reportedStatus": "PASS_DOCUMENT_BINDING"
+  },
+  "adversarialTests": {
+    "command": "python -E -B docs/quartic-1272/test_inventory.py",
+    "exitCode": 0,
+    "testsPassed": 8
+  },
+  "manuscriptSha256": "16033e0471df605093b28210a9f81718c2486b147016ec8afc75d166dff0b90f",
+  "inventoryInputSha256": "695769c38917efa35b6256132cd8b77807d6384ab6d27c38f250ff8947ae6c10",
+  "scope": "Document binding and registered review coverage, not an independent proof of all external inputs."
+}

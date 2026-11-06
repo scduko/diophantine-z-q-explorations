@@ -1,0 +1,92 @@
+{
+  "version": "literal-15671-anchor/v1",
+  "scope": "The original seven-witness predicate and unchanged 24-squaring anchor only; no approval of the full polynomial or five-contact geometry.",
+  "sources": [
+    {
+      "id": "Koenigsmann",
+      "author": "Jochen Koenigsmann",
+      "title": "Defining Z in Q",
+      "publication": "Annals of Mathematics 183 (2016), 73-93",
+      "publisher_record": "https://annals.math.princeton.edu/2016/183-1/p02",
+      "doi": "10.4007/annals.2016.183.1.2",
+      "publisher_pdf": "https://annals.math.princeton.edu/wp-content/uploads/annals-v183-n1-p02-p.pdf",
+      "local_inspected_file": "primary/koenigsmann-annals-2016.pdf",
+      "sha256": "f26c2e155d025978045a0c68073505631677624ef4d6f9b461640c6fbe1d3c93",
+      "locators": [
+        {"item": "Definition 4", "printed_page": 75, "pdf_page_one_based": 3},
+        {"item": "Observation 5", "printed_page": 76, "pdf_page_one_based": 4},
+        {"item": "Proposition 6", "printed_page": 76, "pdf_page_one_based": 4}
+      ]
+    },
+    {
+      "id": "SilvermanAEC2009",
+      "author": "Joseph H. Silverman",
+      "title": "The Arithmetic of Elliptic Curves",
+      "publication": "Second edition, Graduate Texts in Mathematics 106, Springer, 2009",
+      "publisher_doi": "10.1007/978-0-387-09494-6",
+      "inspected_workspace_file": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+      "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+      "inspected_text_file": "work/theorem-application-audit-20261105/primary/silverman.txt",
+      "text_sha256": "74a460def32a1e67d8b000d0ef32d2710c8c7faa20058e17b6e70a70f19769ee",
+      "locators": [
+        {"item": "IV section 1, formal group construction", "printed_pages": [115,116,117,118,119,120]},
+        {"item": "Example IV.2.2.3", "printed_page": 121, "pdf_page_one_based": 139},
+        {"item": "Proposition IV.2.3(a)", "printed_page": 122, "pdf_page_one_based": 140}
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "A23-1",
+      "source_ids": ["Koenigsmann"],
+      "conclusion": "The literal seven-witness formula defines Z_(2) intersect Z_(3).",
+      "hypotheses_and_conventions": [
+        "a=2 and b=3 are nonzero rationals.",
+        "i^2=a, j^2=b, ij=-ji; norm is x0^2-a*x1^2-b*x2^2+a*b*x3^2 and trace is 2*x0.",
+        "The paper's T is S+S without Poonen's finite offset.",
+        "Hilbert symbols computed at 2,3,all other odd primes and infinity give exactly ramification set {2,3}.",
+        "The real interval convention in Proposition 6 is irrelevant because infinity is split.",
+        "Recover v0=(t-2*u0)/2; clearing the fixed denominator 2 gives exactly the archive's second equation."
+      ],
+      "status": "MATCHED_PUBLISHED_APPLICATION",
+      "proof_site": "anchor-proof.tex, first subsection"
+    },
+    {
+      "id": "A23-2",
+      "source_ids": ["SilvermanAEC2009"],
+      "conclusion": "Integral multiplication series on the formal branch have linear term n*z; oddness for this Weierstrass model gives [3]z=3z+O(z^3).",
+      "hypotheses_and_conventions": [
+        "The coefficients 11-6*sqrt(2) belong to the local integer ring at both 2 and 3.",
+        "Use z=-x/y and w=-1/y, with w=z^3-(11-6*sqrt(2))*z*w^2.",
+        "The formal construction requires integral Weierstrass coefficients, not a minimal model assertion at 2.",
+        "Negation is (x,y)->(x,-y), hence z->-z, so multiplication series are odd in characteristic zero.",
+        "At 3 the initial point 2P is in the formal kernel at depth 1; higher odd terms have strictly greater valuation than 3z.",
+        "At 2 the displayed x and y valuations put P on the formal branch; small z alone would not suffice."
+      ],
+      "status": "MATCHED_PUBLISHED_CONSTRUCTION_WITH_EXPLICIT_LOCAL_ARGUMENT",
+      "proof_site": "anchor-proof.tex, second subsection"
+    },
+    {
+      "id": "A23-3",
+      "source_ids": [],
+      "conclusion": "For nonzero S=nP, the literal anchor holds exactly when n lies in 2*3^(2^23-1)Z.",
+      "status": "NEW_ELEMENTARY_DEDUCTION_RELATIVE_TO_GENERATOR_INPUT",
+      "dependencies": ["2E(K)=ZP for the stated curve and generator", "A23-1", "A23-2", "exact local point calculations in reference-anchor-check.json"],
+      "proof_site": "anchor-proof.tex, second subsection"
+    },
+    {
+      "id": "A23-4",
+      "source_ids": [],
+      "conclusion": "Every nonzero anchor index satisfies |n|>(20H)^2 if log_2(H)<4783227.",
+      "status": "PROVED_CONDITIONAL_ON_SEPARATE_EXACT_H5_BOUND",
+      "dependencies": ["A23-3", "Original H5 bound with its exact exceptional set and constant; audited separately by the height worker"],
+      "proof_site": "anchor-proof.tex, final subsection",
+      "numerical_check": "25165821 > 19132928"
+    }
+  ],
+  "excluded_claims": [
+    "This ledger does not prove the original five-contact height theorem.",
+    "This ledger does not approve the entire 15671-witness polynomial or its global coefficient bound.",
+    "No six-contact replacement, nine-witness offset repair, different constant chain or polynomial edit is used."
+  ]
+}

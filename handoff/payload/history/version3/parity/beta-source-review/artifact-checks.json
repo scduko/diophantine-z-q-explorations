@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+  "source_sha256": "97b7bc300084afaefe9980f1feea760be8b4dedaf6eb788fcc4c3af440262579",
+  "source_entry_sha256": "8b45e266b0b4692320bb4f4924a2d3216d5f17fdc47a5c7fb9cdf6010a9a36f7",
+  "checker_sha256": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4",
+  "stages": [
+    {
+      "stage": "fresh-lift",
+      "variables": 11688,
+      "receipt_sha256": "521951fa45534a8d82874c4c5ad372f06c114a2fea1eb9b2ffef6a688813d972"
+    },
+    {
+      "stage": "norms",
+      "variables": 11168,
+      "receipt_sha256": "a9d2733725eff113dd61a57fa7610297039704c302b710e9d2755f7f4a521cbd"
+    },
+    {
+      "stage": "charts",
+      "variables": 11156,
+      "receipt_sha256": "e54316954595b5fcafa5a3b92e3ae8657c7b3502ec8e5a0c9a807ac70e1f7e42"
+    },
+    {
+      "stage": "ordinates",
+      "variables": 11152,
+      "receipt_sha256": "fcdf38d75a8c1d52dd6e89fb7eb67aa83031367620e12e633ee446d46d2ab155"
+    },
+    {
+      "stage": "parity",
+      "variables": 10924,
+      "receipt_sha256": "fae1567725cff4e64c4bbb614358da35748504b3ece8a86b31e0693e853ba25a"
+    },
+    {
+      "stage": "batch",
+      "variables": 10310,
+      "receipt_sha256": "d3eb9c7790dbc3ffc64948f362277eec885204eb9c379c922df19605559c7768"
+    },
+    {
+      "stage": "optimized",
+      "variables": 9629,
+      "receipt_sha256": "63cecfc178a005230cbf7bf5e911e26d07b5c4e8bf770377351d6e8771387abf"
+    },
+    {
+      "stage": "coordinates",
+      "variables": 9625,
+      "receipt_sha256": "43ef58641d36e58d3d1422150e48f1858d0b0844b78be41cd939b1eb53e80053"
+    }
+  ],
+  "final": {
+    "certificate_sha256": "8aaa2249eda6972c441d58b212ec64a53e1202d5e9f74ea4cbc53e7e3f71a0bd",
+    "checker_sha256": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4",
+    "degree": 4,
+    "expanded_sha256": "6d67d45f3d615b7fd2242e3a9404dd9f5da570fc711a29ebe77f613e80ebbf99",
+    "max_abs_coefficient": 685783949153203534233601,
+    "monomials": 82476,
+    "rows": 9161,
+    "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+    "variables": 9625,
+    "witnesses": 9624
+  },
+  "scope": "Source audit repeated with identical fields and identical map bytes; generated verifier reconstructed exactly; all remote stage receipts bound to artifact files; final table statistics read directly. Full SOS expansion remains the checked remote run."
+}

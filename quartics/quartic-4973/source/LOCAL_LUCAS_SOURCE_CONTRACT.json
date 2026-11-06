@@ -1,0 +1,42 @@
+{
+  "schema": "joint-conic-local-lucas-source-v1",
+  "source_pin_authorized": false,
+  "arithmetic_proof_sha256": "2c4b1a1f24a485b021ff11561043a412a61186e243194ba244b6090124b83570",
+  "arithmetic_review_sha256": "818c51743e55536c0b10da8c4153d82f45ee5ab64d6f2cb68abb6d5482c9f715",
+  "conic_proof_sha256": "ef4de3f02fa3d17c18dc7c2af490960a62f35cc541eac8e4b80958d320fa8ab9",
+  "high": 40,
+  "label": 12,
+  "height_exponent": 19,
+  "anchor_squarings": 25,
+  "scalar_orders": [1, 1, 1, 1, 32, 32],
+  "contacts": 37,
+  "mode_counts": {"q_compare4": 13, "q_compare_beta": 8, "q_compare_lucas": 16},
+  "comparison_free": {"q_compare4": 58, "q_compare_beta": 28, "q_compare_lucas": 47},
+  "legacy_prefix": {"q_compare4": 28, "q_compare_beta": 16, "q_compare_lucas": 23},
+  "theta_error_raw_slots": {"q_compare4": [25, 26, 27], "q_compare_beta": [13, 14, 15], "q_compare_lucas": [20, 21, 22]},
+  "removed_old_input_slots": {"q_compare4": [1, 2, 3], "q_compare_beta": [], "q_compare_lucas": [0, 1, 2]},
+  "batches": {"q_compare4": "q_conic13", "q_compare_beta": "q_conic6", "q_compare_lucas": "q_conic10"},
+  "field_orders": {
+    "q_compare4": [1, 1, 1, 1, 1, 1, 12, 40, 40, 12, 40, 40, 40],
+    "q_compare_beta": [1, 1, 1, 12, 12, 12],
+    "q_compare_lucas": [1, 1, 1, 1, 1, 40, 40, 40, 40, 40]
+  },
+  "field_count": 377,
+  "private_primary_points": 145,
+  "local_lucas_evaluation_occurrences": 29,
+  "local_lucas_pairs_per_occurrence": 3,
+  "local_lucas_field_residuals": ["V-(C_s-2)*C_z", "D-C_s*C_t+V", "E-C_t^2+V*D+1"],
+  "root_deletion": {
+    "variable_labels": ["index proxy s", "index proxy t", "index proxy z"],
+    "equation_label": "Lucas norm proxy certificate",
+    "allowed_uses": "only that exact equation and removed comparison input slots",
+    "metadata_reindexed": ["proxy_indices", "point_coordinates", "jacobi_targets", "joint_chart_targets"],
+    "metadata_removed": ["pell_equation"],
+    "metadata_added": ["local_lucas_residual", "local_lucas_polynomial", "retained_proxy_roles", "lucas_proxy_removal"],
+    "old_theta_error_retained": true
+  },
+  "targeted_independent_module_mutations": 30,
+  "producer_incidence_guard_mutations": 12,
+  "measured_total_variables": null,
+  "required_final_checks": ["independent complete source audit", "exact source regeneration", "mutation coverage", "fresh lift", "independent reduction replay", "full polynomial expansion"]
+}

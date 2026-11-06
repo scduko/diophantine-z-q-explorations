@@ -1,0 +1,42 @@
+{
+  "run": 42240974001,
+  "commit": "b3992d3eedd07287f1356ae7555695ca8b0e23ee",
+  "artifact": 13516000145,
+  "artifact_sha256": "612c9e36c255baa5db2475713a83b27213b46de4ce219a4f0705865876252474",
+  "manifest_sha256": "d3845c973f5446ca5864b165978287c2d5bbfcec88758a1c7468c2377f8dc06e",
+  "verified": {
+    "status": "PASS",
+    "scope": "Exact projection-preserving algebraic equivalence to the pinned source system; exact full integer expansion. The source arithmetic theorem is not checked here.",
+    "witnesses": 5069,
+    "variables": 5070,
+    "rows": 4649,
+    "monomials": 77572,
+    "degree": 4,
+    "max_abs_coefficient": 685783949153203534233889,
+    "source_id": "general-root-shared-square-normalized-linear-pole-k40-q12-a25-h19-s32-1644d0b9193b",
+    "source_sha256": "f0f97257af1dd59678ec3a355e9c582f2534f2fb6f02d26f488be9f080566d9b",
+    "operations": {
+      "parity_conic": 1,
+      "circuit": 13,
+      "linear": 230,
+      "eliminate": 109,
+      "shear": 2,
+      "relation_eliminate": 148
+    },
+    "total_operations": 503,
+    "weights_greater_than_one": 0,
+    "expanded_bytes": 1552319,
+    "compressed_bytes": 432140,
+    "expanded_sha256": "fb4b6c12a67b3e1f1bb90ed24d6efee6c3868fe8f9bb187ae83d41c3de693b0d",
+    "certificate_sha256": "1f078e2458b153c6dff9d1c5a8357fa5af245805e4d99e32b5d1fef00c6431fc",
+    "distinct_circuit_identities_checked": 1,
+    "checker_sha256": "b5df04bbcc07581e9efa1a17d749c67a17bbb29b72aae096c2767fd21f7921dc",
+    "seconds": 1.334
+  },
+  "version4_threshold_met": false,
+  "scope": "Remote algebraic replay with independent source-arithmetic review under inherited theorem inputs",
+  "arithmetic_review": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/ROOT_SHARED_5270_SOURCE_REVIEW.md",
+  "arithmetic_review_sha256": "97652e4425cd96a885443b7581c6620a53603a9f938f8c6d3bfb615507add04e",
+  "arithmetic_clarification": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/MIXED_MODE_DENOMINATOR_CLARIFICATION.md",
+  "arithmetic_clarification_sha256": "2a1eb8ed9a7175995afa665a08035728c1714b5fa30e1ba52030b6adf7b8ba34"
+}

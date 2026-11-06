@@ -1,0 +1,1179 @@
+\documentclass[11pt]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,mathrsfs,amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,urlcolor=MidnightBlue,citecolor=MidnightBlue]{hyperref}
+\usepackage{enumitem,needspace,eso-pic,graphicx}
+\setlist{topsep=3pt,itemsep=2pt}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{inputthm}[theorem]{Hypothesis}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}\newcommand{\F}{\mathbb F}
+\newcommand{\C}{\mathcal C}\newcommand{\Supp}{\operatorname{Supp}}
+\newcommand{\rad}{\operatorname{rad}}\newcommand{\End}{\operatorname{End}}
+\newcommand{\Nm}{\operatorname{N}}\newcommand{\hhat}{\widehat h}
+\newcommand{\Htilde}{\widetilde{\mathsf H}}
+\AddToShipoutPictureBG{\AtPageCenter{\makebox(0,0){\rotatebox{45}{\textcolor[gray]{0.84}{\normalfont\fontsize{66}{79}\selectfont AI generated}}}}}
+\hypersetup{pdftitle={An existential definition of the integers in the rationals: third version},pdfauthor={AI generated},pdfsubject={Two proofs with reduced arithmetic inputs}}
+\begin{document}
+\begin{center}
+{\Large An existential definition of the integers\\[2pt]
+in the rationals from reduced arithmetic inputs}\par
+\vspace{5pt}Third version: a model-first proof and a direct proof\par
+14 October 2026
+\end{center}
+\begin{abstract}
+We give two existential definitions of $\Z$ in $\Q$, conditional on
+three specified inputs from the OpenAI H10 manuscript: a geometric
+family, restricted simultaneous point existence, and prime-contact
+representations. An earlier height theorem of von K\"anel--Kret replaces
+the manuscript's arithmetic height engine. Classical descent and formal
+groups supply the other arithmetic ingredients. A finite certificate
+first yields a Diophantine model of $\Z$, which already refutes Mazur's
+finite-component conjecture; DPRM then identifies the actual integers.
+A separate proof replaces this last use of the model by Lucas growth.
+All certificates are constructed explicitly as finite existential formulas.
+\end{abstract}
+
+\section{Statement and conventions}
+
+\begin{theorem}\label{thm:main}
+Assume Hypotheses~\ref{in:geometry}, \ref{in:prime-pattern}, and
+\ref{in:restricted-realization}, extracted below from~\cite{H10}.
+Then $\Z$ is existentially definable in $\Q$. Moreover, the first
+stage of the proof constructs a Diophantine model of $\Z$ in $\Q$;
+this alone contradicts Mazur's conjecture that the closure of the
+rational points of every variety over $\Q$ has finitely many connected
+components in its real locus.
+\end{theorem}
+
+The result uses von K\"anel--Kret~\cite{vKK}, an earlier preprint,
+in addition to the stated H10 inputs and the published results cited
+below. We treat those inputs as black boxes; no claim of independent
+verification of them is made. Neither proof uses the conclusion of H10
+or its recursive-theoretic argument.
+
+All variables in existential formulas range over $\Q$; a point variable
+abbreviates finitely many rational coordinates. Rational constants are
+allowed and may be cleared to integral coefficients. Nonvanishing is
+existential, by $a\ne0\iff\exists t\;at=1$. Finite conjunctions and
+disjunctions of polynomial equations are Diophantine over $\Q$, using
+sums of squares and products. Thus an existential definition below is
+equivalent to one polynomial equation with existentially quantified
+rational variables.
+
+Write $v_p(p)=1$, $v_p(0)=+\infty$, and
+$\Supp(a)=\{p:v_p(a)\ne0\}$ for $a\in\Q^\times$.
+For places of $F=\Q(\sqrt2)$ above $p$ use the normalization $v(p)=1$.
+Let $h$ denote absolute logarithmic height. For primitive integers $u,v$,
+$h((u:v))=\log\max(|u|,|v|)$.
+Fix five distinct rational contacts $\C\subset\mathbf P^1$ containing
+$\infty$, and primitive integral forms $L_b(U,V)$ vanishing at $b$,
+with $L_\infty(U,V)=V$. For a finite prime set $S$ and
+$s=(u:v)\notin\C$, put
+\begin{equation}\label{eq:radical}
+ M_S(s)=\prod_{\substack{q\notin S\text{ prime}\\
+ v_q(L_b(u,v))-\min(v_q(u),v_q(v))\text{ odd for some }b\in\C}}q.
+\end{equation}
+These normalized contact depths do not depend on the chosen coordinates.
+
+\section{Arithmetic inputs and their reductions}\label{sec:inputs}
+
+This section states all the information imported from H10. The three
+hypotheses are sufficient packages, not assertions of logical necessity.
+In particular, the prime representation hypothesis retains the convenient
+thirteen-contact formulation of its source. Subsequent lemmas replace
+the rank, height, and local-witness inputs used in earlier versions.
+
+\subsection{The geometric input and the height bound}
+
+\begin{inputthm}[Geometric family]\label{in:geometry}
+There are contacts $\C$ as above, a finite prime set $S_0$ containing $3$, a quaternion
+division algebra $B/\Q$, and constants $d_0,C_0$ such that, for every
+$s\in\mathbf P^1(\Q)\setminus\C$, there are a number field $K_0$ and
+an abelian surface $A/K_0$ with:
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item $[K_0:\Q]\le d_0$, and $K_0/\Q$ is unramified outside
+$S_0\cup\Supp(M_{S_0}(s))$;
+\item $A$ has good reduction at every finite place not over $S_0$;
+\item $B\hookrightarrow\End^0_{\overline\Q}(A)$, and $A_{\overline\Q}$
+is isogenous to each of its $\operatorname{Gal}(\overline\Q/\Q)$-conjugates;
+\item $h(s)\le C_0(1+\max(0,h_F(A)))$, where $h_F$ is stable
+Faltings height.
+\end{enumerate}
+\end{inputthm}
+
+This is the early geometric part of \cite[\S4]{H10}: its fixed
+quaternionic family, fiber-field lemma, common-base isogenies, and
+base-height comparison (source labels \texttt{hei:fiber-field} and
+\texttt{hei:base-height}). In particular, (iii) only assumes a
+\emph{geometric} quaternion action. The homomorphism-field lemma,
+endomorphism dichotomy, and later arithmetic height argument are not
+part of this input.
+
+\begin{proposition}\label{prop:height}
+Hypothesis~\ref{in:geometry} implies, for a fixed $H\ge1$,
+\begin{equation}\label{eq:height}
+                  h(s)\le H M_{S_0}(s)^{24}\qquad(s\notin\C).
+\end{equation}
+\end{proposition}
+\begin{proof}
+Put $K=K_0(A[3])$.
+Silverberg's field-of-definition theorem, in the form
+\cite[Lemma~7.2(b)]{MasserWustholz},
+makes every geometric endomorphism rational over $K$, and
+$[K:K_0]<3^{16}$. By the N\'eron--Ogg--Shafarevich criterion
+\cite[Theorem~1]{SerreTate}, this
+extension introduces no ramification outside $S_0$.
+For $U=\operatorname{Spec}\mathcal O_K[S_0^{-1}]$, let $N_U$ be the
+product of the norms of its omitted prime ideals and $D_K$ the absolute
+discriminant. Good reduction extends $A$ to an abelian scheme over $U$,
+and
+\begin{equation}\label{eq:height-radical}
+ \rad(D_KN_U)\mid\left(\prod_{p\in S_0}p\right)M_{S_0}(s).
+\end{equation}
+
+Suppose first that $A_{\overline\Q}$ is not of CM type. Choose a
+quadratic field $F_0\subset B$, giving $A$ its $\mathrm{GL}_2$-type structure.
+Wu~\cite[Propositions~1.5(1) and~1.7]{Wu} implies
+$\End^0_{\overline\Q}(A)=B$: the nonsimple non-CM alternative would
+have endomorphism algebra $M_2(\Q)$, which cannot contain the
+division algebra $B$; in the simple surface case the noncommutative
+alternative is a quaternion algebra over $\Q$, hence equals $B$.
+Each conjugacy isogeny transports $B$ by an algebra automorphism;
+Skolem--Noether corrects this by a quasi-endomorphism to make the
+isogeny $B$-compatible. Clearing denominators gives an actual isogeny.
+Thus $A/U$ is of $\mathrm{GL}_2$-type with $G_\Q$-isogenies in the
+precise sense of \cite[(7.1)]{vKK}. Equation~(7.19) there gives
+\[
+ h_F(A)\le4(6\ell)^{288\ell}\rad(D_KN_U)^{24},
+ \qquad \ell=([K:\Q]3^{16})!.
+\]
+The prefactor is uniformly bounded. If $A_{\overline\Q}$ is of CM
+type, \cite[Theorem~7.1(ii)]{vKK} instead gives
+$h_F(A)\le6^{100}\rad(D_KN_U)^{10}$.
+Combine these estimates with~\eqref{eq:height-radical} and (iv).
+\end{proof}
+
+This deduction replaces H10's cocycle splitting, corrected Galois
+representations, Fontaine--Mazur input, conductor estimates, and
+modular-Jacobian comparison. The earlier theorem~\cite{vKK} is a
+preprint result; the published rational-base height theorem does not
+by itself supply the varying-number-field statement used here.
+
+\subsection{The elliptic curve}
+
+Fix
+\begin{equation}\label{eq:curve}
+ F=\Q(\sqrt2),\qquad c=3-\sqrt2,\qquad
+ E:\ y^2=x^3-c^2x,\qquad z=-x/y.
+\end{equation}
+Write $\sigma$ for the nontrivial automorphism of $F/\Q$.
+\begin{lemma}\label{lem:rank-one}
+For the curve~\eqref{eq:curve}, $E(F)$ has rank one, and
+$Q_0=(1+\sqrt2,2\sqrt2)$ is nontorsion.
+\end{lemma}
+\begin{proof}
+In this proof, finite-place valuations have value group $\Z$.
+The Minkowski bound $\sqrt8/2<2$ shows that
+$\mathcal O_F=\Z[\sqrt2]$ is principal. Its units modulo squares
+have order four, and $-1,1+\sqrt2$ realize all real sign patterns;
+hence every totally positive unit is a square. Also $c$ is totally
+positive and has norm $7$, so $(c)$ is a prime with residue field
+$\mathbf F_7$.
+
+For the two-isogenous curve $E':y^2=x^3+4c^2x$, let
+$\alpha:E(F)\to F^\times/F^{\times2}$ and
+$\alpha':E'(F)\to F^\times/F^{\times2}$ be the usual descent maps,
+given by the $x$-coordinate away from $O,(0,0)$. Their exceptional
+values are $1,-c^2$ and $1,4c^2$, respectively
+\cite[Example~X.4.8 and Proposition~X.4.9]{Silverman}.
+A nonzero $x$ on $E$ has even valuation away from $(c)$:
+if its valuation is nonzero, precisely one of $x^3,-c^2x$
+has smaller valuation, which would be odd if $v(x)$ were odd.
+Consequently $|\operatorname{im}\alpha|\le8$.
+The two-torsion points give the distinct classes $1,-1,c,-c$.
+Since
+\[
+ (1+\sqrt2)^3-c^2(1+\sqrt2)=8,
+\]
+the point $Q_0$ supplies a class with opposite real signs, so
+$|\operatorname{im}\alpha|=8$.
+
+Every nonzero $x$ on $E'$ is totally positive. Its finite valuations
+are even away from $2,(c)$ by the same argument. At the prime above
+$2$, in the integer-valued normalization, $v(4c^2)=4$; for odd
+$v(x)$ the numbers $3v(x)$ and $4+v(x)$ are unequal and have odd
+minimum. At $(c)$ the same comparison leaves only $v(x)=1$;
+writing $x=cu$ would then require $u^2\equiv-4\pmod{(c)}$,
+impossible in $\mathbf F_7$. Thus all finite valuations are even,
+and principality and total positivity make $x$ a square. Hence
+$\operatorname{im}\alpha'=\{1\}$.
+The two-isogeny exact sequence
+\cite[Remark~X.4.7]{Silverman} now gives
+\[
+ 2^{\operatorname{rank}E(F)+2}
+ =|\operatorname{im}\alpha|\,|\operatorname{im}\alpha'|=8;
+\]
+here the two-isogeny maps $E[2]$ onto the kernel of its dual.
+For the finite torsion subgroup $T$, one has
+$|\alpha(T)|\le|T/2T|=|T[2]|=4$. Its image is therefore exactly
+the four classes already supplied by $E[2]$, and $Q_0$ is nontorsion.
+\end{proof}
+
+This curve is isomorphic to the original H10 curve: with
+$u=3-2\sqrt2$ one has $75-53\sqrt2=cu^2$, and the isomorphism is
+$(x,y)\mapsto(u^2x,u^3y)$. Since $u$ is a global unit, it preserves
+all reduction orders and formal-parameter valuations.
+By Mordell--Weil \cite[Theorem~VIII.6.7]{Silverman}, choose an even
+positive integer $m_0$ annihilating the torsion and a generator
+$P_0$ of the infinite cyclic group $m_0E(F)$. In particular $P_0\in2E(F)$.
+\subsection{Prime-contact representations}
+
+Let $\mathscr P$ be the split rational primes $q>25$ of good reduction
+for $E,E^\sigma$ for which, at either place over $q$,
+\[
+ d_1=\#\widetilde E(\F_q),\qquad
+ d_2=\#\widetilde{E^\sigma}(\F_q),\qquad \gcd(d_1,d_2)=4.
+\]
+Changing the chosen place interchanges $d_1,d_2$.
+
+\begin{inputthm}[Prime representations]\label{in:prime-pattern}
+There is a finite set $\mathcal K\subset\Z_{>0}$ such that, for every
+$A\in\Z$ and every prime lower bound, there are integers $u_1,u_2,u_3,v$,
+with $v\ne0$ and $u_1+u_2+u_3=Av$, for which each of
+\begin{equation}\label{eq:thirteen}
+ v,\qquad L_b(u_i,v)\quad
+       (1\le i\le3,\ b\in\C\setminus\{\infty\})
+\end{equation}
+is $\varepsilon\kappa q$, with $\varepsilon\in\{\pm1\}$,
+$\kappa\in\mathcal K$, and $q\in\mathscr P$ exceeding that bound.
+\end{inputthm}
+
+This is \cite[Lemma~6.1]{H10}, transported across the unit isomorphism
+above. It is independent of the chosen multiple of $P_0$. Its proof
+uses prime patterns and an additional sieve imposing the group-order
+condition; the combined conclusion is retained as a black box.
+Formal-group witnesses are not part of this hypothesis: they will
+follow by the Chinese remainder theorem in Lemma~\ref{lem:prime-crt}.
+
+\subsection{The point-existence input}
+
+For $a>0$ rational, let $\operatorname{sf}(a)$ be the positive squarefree
+integer representing $a\Q^{\times2}$, and put
+\[
+ E_l:\quad y^2=x(x-l)(x+3l)\qquad(l\in\Q^\times).
+\]
+Fix finite sets $\mathcal M\subset\Q_{>0}$ and
+$\mathcal D_m\subset\Q_{>0}$, for $m\in\mathcal M$, with these properties:
+for every $b>0$, some $m\in\mathcal M$ makes $mb$ a square in
+$\Q_2$ and a unit nonsquare in $\Q_3$; for every $m$ and $b>0$,
+some $m_d\in\mathcal D_m$ makes $m_db$ a square in every $\Q_p$
+with $p\in S(m):=\{2,3\}\cup\Supp(m)$.
+Here ``unit nonsquare'' specifies a squareclass, so its valuation is
+allowed to be any even integer. These finite lists exist by weak
+approximation and the finiteness and openness of the local squareclasses
+\cite[Theorems~7.20 and~7.32]{MilneANT}.
+Indeed, $1+p\Z_p$ consists of squares for odd $p$, as does
+$1+8\Z_2$; valuation parity and finitely many unit residues therefore
+determine the squareclasses. Include the real place when selecting
+positive rational representatives. Let $S_1$ contain $2,3$ and the
+supports of all members of these lists.
+
+\begin{inputthm}[Restricted simultaneous point existence]
+\label{in:restricted-realization}
+Let $q\in\mathscr P\setminus S_1$, $m\in\mathcal M$, and
+$\beta=\operatorname{sf}(mq)$. Suppose $\beta$ is a square in
+$\Q_2$ and a unit nonsquare in $\Q_3$. For every positive squarefree
+integer $\theta$ satisfying
+\[
+ \theta\in\Q_p^{\times2}\quad(p=2,3\text{ or }p\mid\beta),
+ \qquad
+ \beta\in\Q_p^{\times2}\quad(p\mid\theta),
+\]
+there is $e\in\Q^\times$ such that both $E_e$ and $E_{e\theta}$
+have a rational point with nonzero $x$-coordinate in
+$\beta\Q^{\times2}$.
+\end{inputthm}
+
+This is the restricted case of the simultaneous matrix and point
+realization assertions in \cite[Lemmas~3.2, 3.4, 3.6]{H10}.
+Those assertions produce a positive squarefree $e$; no such restriction
+on $e$ is used here. The displayed conditions imply that the supports
+of $\beta,\theta$ are disjoint and avoid $2,3$, and that
+$\beta\ne1$. The first squareclass has only one variable prime.
+
+
+
+\subsection{Fixed constants and classical local facts}
+
+Put $K=24$. Choose a finite prime set $S$ containing $S_0,S_1$,
+all primes at most $K+1$, all ramified and bad-reduction primes,
+the supports of $\mathcal K$, and the prime divisors of the leading
+coefficients of the finite contact forms. With
+\[
+ H_d=\max\left\{1,H\left(\prod_{q\in S\setminus S_0}q\right)^{24}\right\},
+ \qquad h(s)\le H_dM_S(s)^{24}\quad(s\notin\C).
+\]
+The canonical height satisfies
+$|h(x(R))-2\hhat(R)|\le C_E$ for all $R\ne O$ on this fixed curve,
+with $C_E\ge0$, and $\hhat(nR)=n^2\hhat(R)$
+\cite[Theorem~VIII.9.3(b),(d),(e)]{Silverman}.
+Choose a positive integer $N$ so large that, with
+\begin{equation}\label{eq:small-C}
+ P=NP_0,\quad m=m_0N,\quad G=mE(F)=\Z P,\qquad
+ C=\frac{C_E+9H_d+3\log3+\tfrac32\log2}{2\hhat(P)},
+ \qquad 0<C<\tfrac14.
+\end{equation}
+Such a choice is possible by quadraticity and positivity of canonical
+height. No exceptional primes are added when $P_0$ is rescaled;
+in particular $H_d$ is independent of $N$. Notice that $P\in2E(F)$.
+All constants from now on are fixed, independently of every quantified
+variable.
+
+We use unique point codes
+\[
+ \mathscr E=\{(0,0,0,0,0)\}\cup
+ \{(1,x_0,x_1,y_0,y_1):
+ (y_0+y_1\sqrt2)^2=(x_0+x_1\sqrt2)^3-c^2(x_0+x_1\sqrt2)\}.
+\]
+The first code is $O$. Equalities in $F$ mean equality of both rational
+coefficients. Algebraicity of the group law
+\cite[Theorem~III.3.6]{Silverman}, on finitely many affine charts,
+gives existential graphs for addition and each fixed multiplication map.
+Thus $G(Q)\iff\exists R\in\mathscr E\;[m]R=Q$ is existential.
+On $G$ put
+\[
+ f(Q)=1/x(Q),\quad z(Q)=-x(Q)/y(Q)\quad(Q\ne O),
+ \qquad f(O)=z(O)=0.
+\]
+Every nonzero point of $G$ is nontorsion, so $xy\ne0$. All rational
+expressions below mean their existential graphs, with denominators
+nonzero: $Y=A/B$ in $F$ abbreviates $BY=A$ and
+$t\Nm(B)=1$ for some $t\in\Q$. This also applies to intermediate
+denominators in nested expressions.
+
+We shall use two standard local consequences. First, a nonzero point
+is formal at a good place exactly when $v(f(Q))>0$. Second, given
+finitely many finite places and prescribed depths, a positive multiple
+$LP$ lies at those depths in every formal group, as does every nonzero
+integer multiple of $LP$. Indeed the formal subgroups form a basis
+of open subgroups of $E(F_v)$, compact by projectivity, and hence have finite
+index \cite[Proposition~VII.2.2 and Theorem~IV.6.4]{Silverman}; take
+$L$ divisible by those indices. The functions $f,z$ vanish at $O$,
+of orders two and one, respectively. Finally, for odd $q$, if
+$D=A+B\sqrt2$ has valuation at least $T$ at every place over $q$,
+then $v_q(A),v_q(B)\ge T$: use
+$A=(D+D^\sigma)/2$ and $B=(D-D^\sigma)/(2\sqrt2)$.
+
+\section{Two common existential certificates}\label{sec:certificates}
+
+\subsection{A restricted valuation test}
+
+Appendix~\ref{app:parity} constructs an existential predicate $\Phi$
+with the following two properties:
+\begin{equation}\label{eq:parity-properties}
+ \begin{aligned}
+ &\Phi(b),\ p\notin S_1,\ v_p(b)<0
+           &&\Longrightarrow v_p(b)\in2\Z,\\
+ &q\in\mathscr P\setminus S_1,\ v_q(z)\ge0
+           &&\Longrightarrow\Phi(qz^2).
+ \end{aligned}
+\end{equation}
+Also $\Phi(0)$ holds. Only the second implication uses
+Hypothesis~\ref{in:restricted-realization}; the first is elementary.
+In particular no completeness assertion on all square-denominator
+rationals is needed.
+For a fixed positive integer $L$, define
+\[
+ \mathsf G_L(r,w):\quad r\ne0\ \land\ \Phi(r)
+                      \ \land\ \Phi(w^2/r^{2L-1}).
+\]
+\begin{lemma}\label{dir:G-test}
+If $\mathsf G_L(r,w)$ holds, $q\notin S$, and $v_q(r)$ is odd,
+then $v_q(r)>0$ and $v_q(w)\ge L$. Conversely, for
+$q\in\mathscr P\setminus S$ and $v_q(w)\ge L$, one has
+$\mathsf G_L(q,w)$.
+\end{lemma}
+\begin{proof}
+The first test excludes negative odd $v_q(r)$. If $w\ne0$, the odd
+valuation $2v_q(w)-(2L-1)v_q(r)$ cannot be negative, forcing
+$v_q(w)\ge L$; $w=0$ is immediate. Conversely, apply
+\eqref{eq:parity-properties} to $q$ and $q(w/q^L)^2$.
+\end{proof}
+
+\subsection{Comparing rational proxies with elliptic indices}
+
+\begin{proposition}\label{prop:certificate}
+For every fixed positive integer $k$ there is a positive existential
+predicate $\mathsf T_K^{(k)}(\mathbf Q;\mathbf a)$ on
+$(G\setminus\{O\})^k\times\Q^k$ with these properties.
+Write $Q_i=n_iP$ and $B=\max_i|n_i|$.
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item It holds whenever $a_i=n_i$ for all $i$.
+\item If it holds and $F\in\Z[T_1,\ldots,T_k]$ satisfies
+$F(\mathbf a)=0\ne F(\mathbf n)$, then $B^2\le C|F(\mathbf n)|$.
+\item If it holds and $a_i\ne n_i$, then
+$B^2\le C|\operatorname{num}(a_i-n_i)|$, where
+$\operatorname{num}$ is the reduced numerator.
+\end{enumerate}
+\end{proposition}
+
+The full construction is in Appendix~\ref{app:certificate}.
+Each rational coordinate of the points is represented by three slopes.
+At primes with odd contact depth, finite local tests force every proxy
+to agree with its index modulo $q^{24}$. A nonzero error is therefore
+divisible by the $24$th power of every relevant contact radical.
+The height bound and quadratic canonical height give (ii) and (iii).
+The constant $C$ is independent of $k$; only arities $3$ and $6$ are used.
+
+\subsection{A scalar height certificate}
+
+For $\beta\in\Q$ and $Q_s\in G\setminus\{O\}$ define
+$\Htilde_K(\beta,Q_s)$ as follows. Quantify rational
+$u_1,u_2,u_3,v_0$, with $v_0\ne0$ and
+$u_1+u_2+u_3=\beta v_0$. For each of its thirteen contacts
+\eqref{eq:thirteen}, require
+\[
+ c_\gamma=\varepsilon\kappa r_\gamma\ne0,
+ \qquad\varepsilon\in\{\pm1\},\quad\kappa\in\mathcal K,
+\]
+as a finite disjunction, and choose a fresh
+$J_\gamma\in G\setminus\{O\}$. Apply $\mathsf G_1(r_\gamma,\cdot)$
+to both rational coefficients of $f(Q_s)$ and of $f(J_\gamma)$,
+and apply $\mathsf G_K(r_\gamma,\cdot)$ to both coefficients of
+$z(Q_s)/z(J_\gamma)$. All witnesses are rational point codes or
+rational numbers; this defines a finite existential formula.
+
+\begin{lemma}\label{lem:scalar}
+Writing $Q_s=sP$, this certificate implies
+\begin{equation}\label{eq:scalar-height}
+                   h(\beta)\le3H_d|s|+\log3.
+\end{equation}
+For every integer $\beta$ it holds for arbitrarily large positive $s$.
+\end{lemma}
+\begin{proof}
+At any $q\notin S$ of odd raw-contact valuation, $r_\gamma$ also
+has odd valuation, because $\kappa$ is a $q$-unit. The coefficient
+tests force $Q_s,J_\gamma$ to be formal at every place over $q$,
+and their parameter ratio to have valuation at least $K$.
+Formal comparison (Lemma~\ref{dir:formal-lemma}) gives
+$v_q(s/j_\gamma)\ge K$, where $J_\gamma=j_\gamma P$;
+since $j_\gamma$ is an integer, $q^K\mid s$.
+Every prime in a normalized contact radical occurs in some raw contact
+(Lemma~\ref{dir:raw-contact}). Each slope therefore has height at most
+$H_d|s|^{24/K}=H_d|s|$. The height inequality for the sum of three
+numbers proves~\eqref{eq:scalar-height}.
+
+For integer $\beta$, Hypothesis~\ref{in:prime-pattern} supplies the
+contacts with $r_\gamma=q\in\mathscr P\setminus S$.
+Choose each $J_\gamma$ sufficiently deep at both places over its prime,
+and a common positive multiple $Q_s=sP$ sufficiently deep at all
+these places that its ratios have depth at least $K$. The local facts
+in Section~\ref{sec:inputs} give such multiples with unbounded positive
+indices. They also give the asserted depths for both rational
+coefficients. Lemma~\ref{dir:G-test} supplies all required tests.
+\end{proof}
+
+\section{First proof: a model, Mazur's conjecture, and the actual integers}
+\label{sec:model}
+
+\begin{proposition}\label{prop:model}
+The map $n\mapsto nP$ is a Diophantine model of the ring $\Z$ in $\Q$.
+\end{proposition}
+\begin{proof}
+The domain $G$ and its addition are existential. For nonzero
+$U,V,W\in G$, put
+\[
+ \mathsf M(U,V,W)\iff\exists a,b,c\in\Q\;
+ [\mathsf T_K^{(3)}((U,V,W);(a,b,c))\land ab=c].
+\]
+Write $(U,V,W)=(nP,mP,kP)$ and $B=\max(|n|,|m|,|k|)$.
+True multiplication satisfies this formula by completeness.
+If it holds but $nm\ne k$, Proposition~\ref{prop:certificate}(ii)
+gives
+\[
+ B^2\le C|nm-k|\le2CB^2<B^2,
+\]
+a contradiction. Add the branch $(U=O\lor V=O)\land W=O$,
+and explicitly restrict all three points to $G$. This defines
+multiplication everywhere; the ring constants are $O,P$.
+\end{proof}
+
+\begin{corollary}[Model-only consequence]\label{cor:mazur}
+Under the stated arithmetic inputs, Mazur's finite-component conjecture
+is false.
+\end{corollary}
+\begin{proof}
+Cornelissen--Zahidi~\cite[Theorem~3.6]{CZ} proves that this conjecture
+excludes a Diophantine model of $\Z$ in $\Q$. Their definition permits
+a domain in $\Q^k$, so it applies to our point codes.
+\end{proof}
+
+Thus the contradiction to Mazur requires only
+Proposition~\ref{prop:model}. Neither the scalar certificate nor either
+subsequent definition of the actual copy of $\Z$ is needed for it.
+
+To pass from the model to the actual integers, choose a positive integer
+$L$ with $L\log2>3H_d+1$. By DPRM~\cite{DPR,Matiyasevich}, the
+recursive relation
+\[
+ \Xi(sP,tP)\quad\Longleftrightarrow\quad s\ge1,\quad t=2^{Ls}
+\]
+is existential on the model. Explicitly, translate a Diophantine
+definition over $\Z$ by replacing every variable by a point constrained
+to $G$, every operation by its model graph, and every integer constant
+by its fixed point. This uses only finitely many existential variables.
+
+For $X\in\Q$ put $\beta=X^2+2$ and require
+\begin{equation}\label{eq:first-definition}
+ \begin{split}
+ \exists A,Q_s,Q_t\in G\setminus\{O\}\ \exists\xi,\tau\in\Q:
+ \quad&\mathsf T_K^{(3)}((A,Q_s,Q_t);(\beta,\xi,\tau))\\
+ &\land\Htilde_K(\beta,Q_s)\land\Xi(Q_s,Q_t).
+ \end{split}
+\end{equation}
+If this holds, write $(A,Q_s,Q_t)=(nP,sP,tP)$ and
+$B=\max(|n|,s,t)$. If $\beta\ne n$, its reduced numerator satisfies
+$|\operatorname{num}(\beta-n)|\le2B\exp h(\beta)$.
+Proposition~\ref{prop:certificate}(iii) and Lemma~\ref{lem:scalar} give
+\[
+ \log B\le\log(2C)+h(\beta)
+       <3H_ds+\log(3/2).
+\]
+But $B\ge t=2^{Ls}$ gives $\log B>(3H_d+1)s$, impossible for
+$s\ge1$. Thus $\beta=n\in\Z$. A rational number whose square is
+an integer is an integer, so $X\in\Z$.
+Conversely, for $X\in\Z$ take $n=X^2+2$, any positive scalar-certificate
+index $s$, and $t=2^{Ls}$; true indices as proxies satisfy
+\eqref{eq:first-definition}. This proves the first definition.
+\section{Second proof: a scalar height bound and Lucas growth}
+\label{sec:v3-direct}
+
+This proof uses the finite certificate directly, without constructing
+integer multiplication or invoking DPRM. Throughout, $K=24$, $C<1/4$,
+and $H_d\ge1$ have the fixed values chosen above. Recall that
+$\widetilde{\mathsf H}_K(\beta,sP)$ implies
+\[
+                      h(\beta)\le3H_d|s|+\log3,
+\]
+and that, for every integer $\beta$, this predicate holds for
+arbitrarily large positive integers $s$.
+
+\begin{lemma}[Lucas growth]\label{lem:v3-lucas}
+Let $s,t,w\in\Z$, with $a=|s|\ge7$ and $w\ne0$. If
+\begin{equation}\label{eq:v3-lucas}
+                 t^2-s(s-2)tw+(s-2)^2w^2=1,
+\end{equation}
+then $|t|\ge(a-1)^{a-4}$. For every integer $s$ with $|s|\ge7$,
+there are positive integers $t,w$ satisfying \eqref{eq:v3-lucas}.
+\end{lemma}
+\begin{proof}
+Put $y=\operatorname{sgn}(s)(s-2)w$. Equation
+\eqref{eq:v3-lucas} becomes $t^2-aty+y^2=1$, or
+\[
+                       (2t-ay)^2-(a^2-4)y^2=4.
+\]
+Define $U_0=0$, $U_1=1$, and $U_{j+1}=aU_j-U_{j-1}$.
+Jones's classification of nonnegative solutions of this Pell equation
+\cite[Corollary~2.7]{JonesLucas2003}, applied to
+$(|2t-ay|,|y|)$, gives an integer $k\ge1$ with
+$|y|=U_k$ and $|2t-ay|=V_k$. Here $V_k$ is the companion Lucas
+sequence. The identities
+\[
+                   2U_{k+1}=aU_k+V_k,\qquad
+                   2U_{k-1}=aU_k-V_k
+\]
+\cite[(5)--(6)]{JonesLucas2003} therefore give
+$|t|\in\{U_{k-1},U_{k+1}\}$, for either sign of $y$ or $2t-ay$.
+Induction in the recurrence gives
+\[
+ \begin{gathered}
+ U_j\equiv j\pmod{a-2},\qquad
+ U_j\equiv(-1)^{j-1}j\pmod{a+2},\qquad(j\ge1),\\
+ U_{j+1}\ge(a-1)U_j,\qquad
+ U_j\ge(a-1)^{j-1}\qquad(j\ge1).
+ \end{gathered}
+\]
+If $s>0$, then $a-2$ divides $U_k=|y|$, so $a-2$ divides $k$.
+If $s<0$, then $a+2$ divides $U_k$, so $a+2$ divides $k$.
+In either case $k\ge a-2$, whence
+\[
+                  |t|\ge U_{k-1}\ge(a-1)^{k-2}
+                       \ge(a-1)^{a-4}.
+\]
+For existence, take $k=a-2$ when $s>0$ and $k=a+2$ when $s<0$,
+and set $t=U_{k+1}$ and $w=U_k/k$. The congruences make $w$ a
+positive integer; in both cases $y=U_k$. The recurrence identity
+$U_{k+1}^2-aU_{k+1}U_k+U_k^2=1$ verifies
+\eqref{eq:v3-lucas}.
+\end{proof}
+
+Fix an integer
+\[
+                    N_*>\max\{8,1+\exp(8H_d)\}.
+\]
+For $X\in\Q$, put $\beta=X^2+2$. Define
+$\mathsf Z_{\mathrm{dir}}(X)$ by the existence of six points
+\[
+              (Q_n,Q_s,Q_t,Q_w,Q_v,Q_p)\in(G\setminus\{O\})^6
+\]
+and rational numbers $\xi,\tau,\omega,\nu,\pi$ satisfying
+\begin{equation}\label{eq:v3-direct-certificate}
+ \begin{gathered}
+ \mathsf T_K^{(6)}\bigl((Q_n,Q_s,Q_t,Q_w,Q_v,Q_p);
+                         (\beta,\xi,\tau,\omega,\nu,\pi)\bigr),\\
+ \widetilde{\mathsf H}_K(\beta,Q_s),\qquad
+                         \bigwedge_{j=-N_*}^{N_*}Q_s\ne jP,\\
+ \nu=(\xi-2)\omega,\qquad \pi=\xi\nu,\qquad
+                         \tau^2-\pi\tau+\nu^2=1.
+ \end{gathered}
+\end{equation}
+All the conditions are positive existential over $\Q$: $G=\Z P$
+is already existentially defined, and the point inequalities form a
+fixed finite conjunction.
+
+\begin{theorem}\label{thm:v3-direct}
+For every $X\in\Q$, one has $\mathsf Z_{\mathrm{dir}}(X)$ if and only
+if $X\in\Z$.
+\end{theorem}
+\begin{proof}
+Suppose the formula holds. Write the six points as
+$(nP,sP,tP,wP,vP,pP)$, and put
+\[
+               B=\max\{|n|,|s|,|t|,|w|,|v|,|p|\},
+               \qquad a=|s|>N_*.
+\]
+The residuals of the three quadratic equations in
+\eqref{eq:v3-direct-certificate}, evaluated at the integer indices,
+have absolute values at most
+\[
+                         B^2+3B,\qquad B^2+B,\qquad3B^2+1,
+\]
+respectively, hence at most $4B^2$. If any residual were nonzero,
+the polynomial-error clause of Proposition~\ref{prop:certificate}
+would give $B^2\le4CB^2<B^2$. Consequently
+\[
+                  v=(s-2)w,\qquad p=sv,\qquad t^2-pt+v^2=1,
+\]
+so \eqref{eq:v3-lucas} holds. Since $w\ne0$, Lemma~\ref{lem:v3-lucas}
+gives
+\begin{equation}\label{eq:v3-direct-growth}
+              \log B\ge(a-4)\log(a-1)>4H_da.
+\end{equation}
+The strict inequality uses $a>8$ and $\log(a-1)>8H_d$.
+
+If $\beta\ne n$, let $D\ne0$ be the reduced numerator of
+$\beta-n$. Then $|D|\le2B\exp(h(\beta))$, so the numerator-error
+clause of Proposition~\ref{prop:certificate} gives
+\[
+ B^2\le C|D|\le2CB\exp(h(\beta)),\qquad
+ \log B\le\log(2C)+h(\beta)<3H_da+\log(3/2).
+\]
+This contradicts \eqref{eq:v3-direct-growth}, since $H_d\ge1$ and
+$a>8$. Thus $\beta=n\in\Z$. Now $X^2=\beta-2\in\Z$, and a rational
+number whose square is an integer is itself an integer.
+
+Conversely, suppose $X\in\Z$. Then $\beta=X^2+2>0$ is integral.
+Choose a positive $s>N_*$ with
+$\widetilde{\mathsf H}_K(\beta,sP)$, and choose positive $t,w$ from
+Lemma~\ref{lem:v3-lucas}. Set
+\[
+                   n=\beta,\qquad v=(s-2)w,\qquad p=sv.
+\]
+All six indices are nonzero. Taking the proxies to be the actual
+indices makes the three quadratic equations true, and completeness
+of $\mathsf T_K^{(6)}$ supplies its witnesses. Hence
+$\mathsf Z_{\mathrm{dir}}(X)$ holds.
+\end{proof}
+
+\appendix
+\section{Construction of the parity predicate}\label{app:parity}
+Define $\Phi(b)$ to hold if $b=0$, or if $b\ne0$ and, for some
+$m\in\mathcal M$, $m_d\in\mathcal D_m$, and $t,e\in\Q$, put
+\begin{equation}\label{eq:restricted-phi}
+ b'=mb,\qquad d_b=m_db,\qquad
+ U=b\frac{1-d_bt^2}{1+d_bt^2},\qquad H'=b'(b'-U^2),
+\end{equation}
+and require $1+d_bt^2\ne0$, $eH'\ne0$, and a rational point with
+nonzero $x$-coordinate in $b'\Q^{\times2}$ on each of
+$E_e,E_{eH'}$. This is an existential ring formula: the lists give
+finite disjunctions, the point conditions use $x=b'u^2$ with $u\ne0$,
+and nonvanishing and rational-function graphs are encoded in Section~\ref{sec:inputs}.
+The local normalizations used to choose the lists are not additional
+conjuncts of $\Phi$.
+
+\begin{proposition}\label{prop:restricted-parity}
+The predicate $\Phi$ has the following properties.
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item If $\Phi(b)$ holds and $p\notin S_1$, then $v_p(b)<0$
+implies $v_p(b)\in2\Z$.
+\item Assuming Hypothesis~\ref{in:restricted-realization}, one has
+$\Phi(qz^2)$ whenever $q\in\mathscr P\setminus S_1$ and
+$z\in\Q$ satisfies $v_q(z)\ge0$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+For (i), suppose $k=v_p(b)<0$ is odd. All multipliers are $p$-units.
+If $t\ne0$, the odd valuation of $d_bt^2$ is nonzero, so
+$(1-d_bt^2)/(1+d_bt^2)$ is a unit; for $t=0$ it is $1$.
+Hence
+\[
+ v_p(U)=k,\qquad v_p(H')=3k.
+\]
+One of $e,eH'$ has even valuation, say $l=p^{2a}L$ with $L$ a
+$p$-unit. Scaling its point gives
+$Y^2=X(X-L)(X+3L)$ and preserves the $x$-squareclass.
+If $v_p(X)<0$, the right side has valuation $3v_p(X)$; if
+$v_p(X)>0$, it has valuation $v_p(X)$, since $p\ne3$.
+Thus every nonzero $X$ has even valuation, contradicting its
+squareclass $b'\Q_p^{\times2}$.
+
+For (ii), the case $z=0$ is immediate. Put $b=qz^2>0$ and choose
+$m,m_d$ with the stated normalization properties. At the real place
+and at every $p\in S(m)$, approximate a solution of $d_bt^2=1$.
+Weak approximation and openness of nonzero local squares give a
+rational $t$ for which $1+d_bt^2\ne0$ and
+\[
+ H'>0,\qquad
+ H'=b'^2(1-U^2/b')\in\Q_p^{\times2}\quad(p\in S(m)).
+\]
+Write $\beta=\operatorname{sf}(b')=\operatorname{sf}(mq)$,
+$\theta=\operatorname{sf}(H')$, and $B=\Supp(\beta)$,
+$J=\Supp(\theta)$. Then $B\subseteq S(m)\cup\{q\}$.
+At $q$, the integer $v_q(b)=1+2v_q(z)$ is positive and odd;
+since $q\notin S_1$, the same unit-quotient calculation gives
+\[
+ v_q(U)=v_q(b),\qquad v_q(U^2/b')=v_q(b)>0.
+\]
+Thus $H'$ is a square in $\Q_q$, and hence at every prime in $B$.
+It follows that $B\cap J=\varnothing$.
+
+If $U=0$, then $H'=b'^2$ and $J=\varnothing$. Otherwise, for
+$p\in J$, both $v_p(b')$ and $2v_p(U)$ are even, while
+$v_p(H')$ is odd. Consequently they are equal, with strict
+cancellation in $b'-U^2$. Since $p\notin S(m)$, it is odd, and
+\[
+                       b'/U^2\in1+p\Z_p\subseteq\Q_p^{\times2}.
+\]
+Therefore $\beta$ is a square in $\Q_p$ for every $p\in J$.
+The required conditions at $2,3$ hold by construction.
+Hypothesis~\ref{in:restricted-realization} supplies the two points.
+Writing $H'=\theta c^2$ with $c\in\Q^\times$, the map
+$(x,y)\mapsto(c^2x,c^3y)$ sends $E_{e\theta}$ to $E_{eH'}$
+and preserves the $x$-squareclass. These are witnesses for $\Phi(b)$.
+\end{proof}
+
+\section{Construction of the finite certificate}\label{app:certificate}
+
+We use the fixed data of Proposition~\ref{prop:certificate} and the
+point codes of Section~\ref{sec:inputs}. All rational-function expressions
+below use their existential graphs, with nonzero denominators.
+
+\begin{lemma}[Uniform formal comparison]\label{dir:formal-lemma}
+Let $q\notin S$ and let $v=v_{\mathfrak q}$ at a place above
+$q$, normalized by $v(q)=1$. Suppose $U=uP,V=v_0P$ reduce to $O$
+on the displayed integral model, where $u,v_0\in\Z$ and $v_0\ne0$.
+Then
+\begin{equation}\label{dir:formal}
+ v\bigl(z(U)/z(V)\bigr)=v_q(u/v_0).
+\end{equation}
+If $v_q(u/v_0)\ge0$, the truncation $\ell_K$ of the formal
+logarithm $\ell(Z)=Z+\sum_{j\ge2}c_jZ^j\in F[[Z]]$ through
+degree $K$ satisfies
+\begin{equation}\label{dir:log}
+ \ell_K(z(V))\ne0,\qquad
+ v\left(\frac{\ell_K(z(U))}{\ell_K(z(V))}-\frac{u}{v_0}\right)\ge K.
+\end{equation}
+Both conclusions hold for the conjugate curve and point. The case
+$u=0$ is included, with $z(O)=\ell_K(0)=0$.
+\end{lemma}
+\begin{proof}
+The formal logarithm and its valuation-preserving homomorphism property
+are classical \cite[Proposition~IV.5.5, Lemma~IV.6.3, and
+Theorem~IV.6.4]{Silverman}. At our odd unramified good places, its
+coefficient of $Z^j$ has valuation at least $-v_q(j)$, and formal
+parameters have integral valuation at least one. Its homomorphism property
+gives $v_0\ell(z(U))=u\ell(z(V))$, proving \eqref{dir:formal}.
+
+For $j>K$ and $q>K+1$, one has $j-1-v_q(j)\ge K$.
+Consequently $E_K(Z)=\ell(Z)-\ell_K(Z)$ satisfies
+$v(E_K(Z))\ge v(Z)+K$ when $v(Z)\ge1$, while
+$v(\ell_K(Z))=v(Z)$. Put $a=u/v_0$. The exact identity
+\[
+ \ell_K(z(U))-a\ell_K(z(V))
+       =aE_K(z(V))-E_K(z(U))
+\]
+has right side of valuation at least $v(z(V))+K$: the first
+term has this bound because $v_q(a)\ge0$, and the second because
+\eqref{dir:formal} gives $v(z(U))\ge v(z(V))$.
+Division by $\ell_K(z(V))$, of valuation exactly $v(z(V))$,
+proves \eqref{dir:log}. If $U=O$, the assertions follow directly.
+\end{proof}
+
+\begin{lemma}[Local witnesses from the Chinese remainder theorem]
+\label{lem:prime-crt}
+Suppose $P\in2E(F)$ has infinite order, and let $q\notin S$ be a prime
+supplied by Hypothesis~\ref{in:prime-pattern}. At either chosen
+place $\mathfrak q\mid q$, there are nonzero integers $h,j$, with
+$h\equiv1\pmod{q^K}$, such that $hP$, $jP^\sigma$, and
+$(h-1)P^\sigma$ lie in their formal kernels and
+\[
+ v_{\mathfrak q}\!\left(
+       \frac{z((h-1)P^\sigma)}{z(jP^\sigma)}\right)\ge K.
+\]
+The same $h,j$ give, for every $a\in\Z$,
+\[
+ v_{\mathfrak q}\!\left(
+       \frac{z((h-1)aP^\sigma)}{z(jP^\sigma)}\right)\ge K,
+ \qquad
+ v_{\mathfrak q}\!\left(
+       \frac{\ell_K(z(haP))}{\ell_K(z(hP))}-a\right)\ge K,
+\]
+and the two displayed denominators are nonzero. Here
+$z(O)=\ell_K(0)=0$ and $v_{\mathfrak q}(0)=+\infty$.
+\end{lemma}
+\begin{proof}
+Let $e_1,e_2$ be the orders of the reductions of $P,P^\sigma$.
+Both reduced curves have all four $2$-torsion points rational over
+$\F_q$. Thus the image of doubling in either reduction group has
+cardinality $d_i/4$. Since $P$ and $P^\sigma$ are doubles,
+\[
+                         e_i\mid d_i/4,
+             \qquad\gcd(e_1,e_2)=1.
+\]
+The Hasse bound \cite[Theorem~V.1.1]{Silverman} and $q>K+1$ imply $d_i<4q$.
+Because $4\mid d_i$ and $q$ is odd, this gives $q\nmid d_i$,
+and hence $q\nmid e_1e_2$. The Chinese remainder theorem therefore
+provides a positive $h$ satisfying
+\[
+                h\equiv0\pmod{e_1},\qquad
+                h\equiv1\pmod{e_2q^K}.
+\]
+Take $j=e_2$. These congruences give all three formal-kernel
+conditions and
+\[
+                           v_q((h-1)/j)\ge K.
+\]
+The formal logarithm preserves valuation on these formal kernels
+and is a homomorphism. Consequently its valuation identity for
+index ratios gives the first two asserted inequalities, including
+$a=0$ or $h-1=0$ under the stated conventions. Alternatively,
+adding a sufficiently large multiple of $e_1e_2q^K$ makes $h>1$.
+Lemma~\ref{dir:formal-lemma}, since $q>K+1$, gives the last
+inequality. Its denominator is nonzero because
+$v_{\mathfrak q}(\ell_K(z(hP)))=v_{\mathfrak q}(z(hP))<\infty$;
+the other denominator is nonzero because $jP^\sigma$ is
+nontorsion. The construction is independent of $a$.
+\end{proof}
+
+
+\subsection{Finite local predicates}
+
+For $D=A+B\sqrt2\in F$ put
+\[
+ \mathsf L_L(r,\theta;D):\quad
+ \mathsf G_L(r,(\theta^2-2)B)\land
+ \mathsf G_L(r,A+B\theta).
+\]
+\begin{lemma}[One common place]\label{dir:common-place}
+Fix a finite list $D_i=A_i+B_i\sqrt2\in F$ and positive integers
+$L_i$. If
+\[
+ \mathsf G_1(r,\theta^2-2)\land
+ \bigwedge_i\mathsf L_{L_i}(r,\theta;D_i)
+\]
+holds, then for every $q\notin S$ with odd $v_q(r)$ there is
+one place $\mathfrak q\mid q$ such that
+$v_{\mathfrak q}(D_i)\ge L_i$ for every $i$.
+Conversely, if $q\in\mathscr P\setminus S$ and these inequalities hold
+at one place above $q$, then the displayed condition holds with
+$r=q$ and a suitable rational $\theta$.
+\end{lemma}
+\begin{proof}
+Lemma~\ref{dir:G-test} gives $v_q(\theta^2-2)\ge1$. As $q$ is
+odd, this forces $\theta$ to be a unit. Hensel's lemma supplies
+a root $\eta\in\Q_q$ of $2$ with
+$v_q(\eta-\theta)=v_q(\theta^2-2)$, since $\eta+\theta$ is a
+unit. At the place $\sqrt2\mapsto\eta$, both summands of
+\[
+ A_i+B_i\eta=(A_i+B_i\theta)+B_i(\eta-\theta)
+\]
+have valuation at least $L_i$, for every $i$.
+
+Conversely choose $\theta\in\Q$ satisfying
+\[
+ v_q(\theta-\eta)\ge
+ \max\bigl(\{1\}\cup\{L_i-v_q(B_i):B_i\ne0\}\bigr).
+\]
+This makes the root expression have valuation at least one, and
+each of the two expressions tested for $D_i$ have valuation at
+least $L_i$. The completeness assertion of Lemma~\ref{dir:G-test},
+with $r=q$, now proves every required test.
+\end{proof}
+
+Fix the arity $k$. Here are full finite definitions of the certificates. Given
+$\mathbf Q=(Q_1,\ldots,Q_k)$ and $\mathbf a=(a_1,\ldots,a_k)$,
+let a local witness tuple be
+$\mathcal V=(U_0,J,X_1,\ldots,X_k,\theta)$. Set
+$Q_0=P$, $X_0=U_0$, and $Y_i=X_i-Q_i$ for $0\le i\le k$.
+Define
+\begin{equation}\label{dir:C-wit}
+\begin{split}
+ \mathsf C_K^{\rm wit}(r;\mathbf Q;\mathbf a,\mathcal V)
+ \quad:\Longleftrightarrow\quad&
+ r\ne0\ \land\ U_0,J\in G\setminus\{O\}
+ \ \land\ \bigwedge_{i=1}^kX_i\in G\\
+ &\land\ \ell_K(z(U_0))\ne0
+ \ \land\ \mathsf G_1(r,\theta^2-2)\\
+ &\land\ \bigwedge_{i=0}^k\mathsf L_1(r,\theta;f(X_i))
+ \ \land\ \mathsf L_1(r,\theta;f(J)^\sigma)\\
+ &\land\ \bigwedge_{i=0}^k\mathsf L_1(r,\theta;f(Y_i)^\sigma)\\
+ &\land\ \bigwedge_{i=1}^k
+ \mathsf L_K\left(r,\theta;
+ \frac{\ell_K(z(X_i))}{\ell_K(z(U_0))}-a_i\right)\\
+ &\land\ \bigwedge_{i=0}^k
+ \mathsf L_K\left(r,\theta;
+ \frac{z(Y_i)^\sigma}{z(J)^\sigma}\right).
+\end{split}
+\end{equation}
+Set $\mathsf C_K(r;\mathbf Q;\mathbf a)\iff
+\exists\mathcal V\,\mathsf C_K^{\rm wit}(r;\mathbf Q;\mathbf a,\mathcal V)$.
+The $k$ free point arguments are restricted to $G\setminus\{O\}$.
+All entries of point tuples are rational coordinates. All tests in one
+occurrence share its single pair $(r,\theta)$.
+
+\begin{lemma}\label{dir:comparison}
+Suppose $Q_i=n_iP\ne O$ and $\mathsf C_K(r;\mathbf Q;\mathbf a)$
+holds. If $q\notin S$ and $v_q(r)$ is odd, then every $a_i$ is
+$q$-integral and $v_q(a_i-n_i)\ge K$.
+If $a_i=n_i$ are nonzero integers and $r=q$ is a contact prime
+supplied by Hypothesis~\ref{in:prime-pattern}, with $q\notin S$, the
+certificate has rational witnesses.
+\end{lemma}
+\begin{proof}
+Fix witnesses. Lemma~\ref{dir:common-place} supplies one place where
+all listed inequalities hold. At a good place, $v(f(V))>0$ for
+$V\ne O$ means $v(x(V))<0$, hence $V$ reduces to $O$;
+the zero convention also includes $V=O$. Write
+$U_0=hP$, $J=jP$, and $X_i=x_iP$, with $x_0=h$, $n_0=1$.
+The alternate quotients and \eqref{dir:formal} give
+\[
+ v_q((h-1)/j)\ge K,\qquad
+ v_q((x_i-n_i)/j)\ge K.
+\]
+Since $j$ is a nonzero integer, the numerators are divisible by
+$q^K$. Thus $h\equiv1\pmod{q^K}$ is a unit, and
+\[
+ \frac{x_i}{h}-n_i
+ =\frac{(x_i-n_i)-n_i(h-1)}h\in q^K\Z_q.
+\]
+In particular $x_i/h$ is integral. Apply \eqref{dir:log} to
+$X_i,U_0$ and combine it with the primary test to obtain the
+claimed congruence and integrality of $a_i$. If $X_i=O$ or
+$Y_i=O$, the corresponding numerator is zero and the same
+equations hold.
+
+For completeness, use Lemma~\ref{lem:prime-crt} to choose $h,j$ at either place and put
+$U_0=hP$, $J=jP$, $X_i=hn_iP$. Then
+$Y_i=n_i(h-1)P$ for $i\ge1$ and $Y_0=(h-1)P$.
+Multiples of formal points are formal. Lemma~\ref{lem:prime-crt} and
+\eqref{dir:formal} give $v_q((h-1)/j)\ge K$, and multiplication
+by each integer $n_i$ preserves this bound. Equation~\eqref{dir:log}
+gives the primary inequalities with $a_i=n_i$. Finally
+Lemma~\ref{dir:common-place}, applied to this whole finite list,
+provides the common rational $\theta$ and all parity witnesses.
+\end{proof}
+
+\subsection{The height certificate}
+
+Let
+\[
+ I=\{0\}\cup\bigl(\{1,2,3\}\times(\C\setminus\{\infty\})\bigr),
+ \quad
+ c_0(\mathbf u,v)=v,
+ \quad c_{(j,b)}(\mathbf u,v)=L_b(u_j,v).
+\]
+Thus $|I|=13$. Define $\mathsf T_{K,k}^{\rm wit}(\mathbf Q;\mathbf a,\mathcal W)$
+as follows. Its tuple $\mathcal W$ consists of
+\[
+ e,\ (b_i,c_i)_{i=1}^k,
+ \ (u_{\nu1},u_{\nu2},u_{\nu3},v_\nu)_{\nu=0}^{2k},
+ \ (r_{\nu\gamma},\mathcal V_{\nu\gamma})_{
+          0\le\nu\le2k,\ \gamma\in I}.
+\]
+The tuples $\mathcal V_{\nu\gamma}$ are fresh local witnesses for
+each occurrence. Put $A_0=e$, $A_i=b_i$, $A_{k+i}=c_i$ for
+$1\le i\le k$. The predicate is the following conjunction:
+\begin{equation}\label{dir:T-wit}
+\begin{gathered}
+ e\ne0,\qquad
+ \bigwedge_{i=1}^k[Q_i\in G\setminus\{O\}\ \land\
+             e\,x(Q_i)=b_i+c_i\sqrt2],\\
+ \bigwedge_{\nu=0}^{2k}
+ [v_\nu\ne0\ \land\ u_{\nu1}+u_{\nu2}+u_{\nu3}=A_\nu v_\nu],\\
+ \bigwedge_{\substack{0\le\nu\le2k\\\gamma\in I}}
+ \left[
+ r_{\nu\gamma}\ne0\ \land\
+ \left(\bigvee_{\substack{\varepsilon\in\{\pm1\}\\\kappa\in\mathcal K}}
+       c_\gamma(\mathbf u_\nu,v_\nu)=\varepsilon\kappa r_{\nu\gamma}
+ \right)\ \land\
+ \mathsf C_K^{\rm wit}(r_{\nu\gamma};\mathbf Q;\mathbf a,
+                         \mathcal V_{\nu\gamma})
+ \right].
+\end{gathered}
+\end{equation}
+Define $\mathsf T_K^{(k)}(\mathbf Q;\mathbf a)\iff
+\exists\mathcal W\,\mathsf T_{K,k}^{\rm wit}(\mathbf Q;\mathbf a,\mathcal W)$.
+In these definitions every occurrence of $\Phi$ and every rational
+graph receives fresh auxiliary witnesses; these are appended to
+$\mathcal W$. Thus the definitions specify finite existential
+formulas, not requirements to quantify over primes. For fixed
+$\mathcal W$, its detected prime set is
+\[
+ \mathcal P(\mathcal W)=
+ \{q\notin S:\ v_q(c_\gamma(\mathbf u_\nu,v_\nu))
+                 \text{ is odd for some }\nu,\gamma\}.
+\]
+
+\begin{lemma}[Normalized and raw contacts]\label{dir:raw-contact}
+Let $u,v\in\Q$, $v\ne0$, and $(u:v)\notin\C$.
+If $q\notin S$ divides $M_{S}((u:v))$, then
+$v_q(L_b(u,v))$ is odd for some $b\in\C$.
+\end{lemma}
+\begin{proof}
+Put $t=\min(v_q(u),v_q(v))$. Every contact has valuation at least
+$t$. If $v_q(v)=t$, the infinity contact has valuation $t$.
+Otherwise $v_q(u)=t<v_q(v)$, and every finite contact has valuation
+$t$ because its leading coefficient is a $q$-unit. Thus some
+contact has valuation exactly $t$. If $t$ is odd, that contact
+suffices; if $t$ is even, any contact of odd normalized depth has
+odd raw valuation. Primitive or integral coordinates are not required.
+\end{proof}
+
+\begin{lemma}\label{dir:height-certificate}
+For every tuple $\mathcal W$ satisfying
+$\mathsf T_{K,k}^{\rm wit}(\mathbf Q;\mathbf a,\mathcal W)$, write
+$Q_i=n_iP$ and $B=\max_i|n_i|$. If a nonzero integer $D$ is
+divisible by $q^K$ for every $q\in\mathcal P(\mathcal W)$, then
+\begin{equation}\label{dir:height-transfer}
+                         B^2\le C|D|.
+\end{equation}
+In particular, this applies to $D=F(\mathbf n)\ne0$ if
+$F\in\Z[T_1,\ldots,T_k]$ and $F(\mathbf a)=0$, and to the
+nonzero reduced numerator of $a_i-n_i$.
+If $a_i=n_i\in\Z\setminus\{0\}$ for every $i$, then
+$\mathsf T_K^{(k)}(\mathbf Q;\mathbf a)$ holds.
+\end{lemma}
+\begin{proof}
+Fix $\mathcal W$. All its contacts are nonzero, so its slopes
+avoid $\C$. Lemma~\ref{dir:raw-contact} shows that every prime
+in any $M_{S}((u_{\nu j}:v_\nu))$ belongs to
+$\mathcal P(\mathcal W)$. These radicals are squarefree, so
+their $K$th powers divide $D$. Each slope has height at most
+$H_d|D|$. Therefore
+\[
+ h(A_\nu)\le3H_d|D|+\log3.
+\]
+Since $h(\sqrt2)=\tfrac12\log2$, the standard sum and product
+inequalities, applied to $x(Q_i)=(b_i+c_i\sqrt2)/e$, give
+\[
+ h(x(Q_i))\le h(b_i)+h(c_i)+h(e)+\tfrac32\log2
+ \le9H_d|D|+3\log3+\tfrac32\log2.
+\]
+The canonical-height lower bound and $|D|\ge1$ give
+\eqref{dir:height-transfer} with the specified $C$.
+
+For every detected prime, dividing its raw contact by
+$\varepsilon\kappa$ preserves valuation because $\kappa$ is a
+unit. Lemma~\ref{dir:comparison} therefore makes all $a_i$
+integral and congruent to $n_i$ modulo $q^K$.
+Consequently $F(\mathbf n)\equiv F(\mathbf a)=0\pmod{q^K}$.
+The same congruence implies divisibility of the reduced numerator
+of $a_i-n_i$, since its reduced denominator is a $q$-unit.
+
+For completeness, choose a nonzero integer $e$ clearing the
+rational coefficients of all $x(Q_i)$. The $2k+1$ numbers $A_\nu$ are
+then integers. Apply Hypothesis~\ref{in:prime-pattern} independently to them,
+with the prime lower bound larger than every element of $S$.
+For each of the $13(2k+1)$ contacts take its positive prime as
+$r_{\nu\gamma}$ and use the completeness assertion of
+Lemma~\ref{dir:comparison} with fresh local witnesses.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:certificate}]
+The definitions \eqref{dir:C-wit} and \eqref{dir:T-wit}, together with
+the point codes and the definition of $\mathsf G_L$, give a
+fixed positive existential formula $\mathsf T_K^{(k)}$. Fix any tuple
+$\mathcal W$ witnessing this formula. Lemma~\ref{dir:height-certificate}
+gives the asserted bounds for every nonzero polynomial error and every
+nonzero reduced numerator. Its completeness assertion supplies witnesses
+when the $k$ rational arguments are the actual nonzero integer indices.
+\end{proof}
+
+\begin{thebibliography}{99}\small\raggedright
+\bibitem{CZ}
+G. Cornelissen and K. Zahidi, \emph{Topology of Diophantine sets:
+remarks on Mazur's conjectures}, in \emph{Hilbert's Tenth Problem:
+Relations with Arithmetic and Algebraic Geometry}, Contemp. Math.
+\textbf{270}, Amer. Math. Soc., 2000, 253--260.
+\href{https://arxiv.org/abs/math/0006140}{Author preprint}.
+
+\bibitem{DPR}
+M. Davis, H. Putnam, and J. Robinson, \emph{The decision problem for
+exponential Diophantine equations}, Ann. of Math. (2) \textbf{74}
+(1961), 425--436.
+
+\bibitem{JonesLucas2003}
+J. P. Jones, \emph{Representation of solutions of Pell equations using
+Lucas sequences}, Acta Acad. Paedagog. Agriensis Sect. Math.
+\textbf{30} (2003), 75--86.
+\href{https://real.mtak.hu/142342/1/AAPASM_30_from75to86.pdf}{Journal article}.
+
+\bibitem{vKK}
+R. von K\"anel and A. Kret, \emph{Integral points on coarse Hilbert
+moduli schemes}, preprint (2023),
+\href{https://arxiv.org/abs/2307.06944}{arXiv:2307.06944v1},
+especially (7.1), (7.19), and Theorem~7.1(ii).
+
+\bibitem{MasserWustholz}
+D. W. Masser and G. W\"ustholz, \emph{Factorization estimates for
+abelian varieties}, Publ. Math. IH\'ES \textbf{81} (1995), 5--24.
+\href{https://www.numdam.org/item/PMIHES_1995__81__5_0/}{Journal article}.
+
+\bibitem{Matiyasevich}
+Yu. V. Matiyasevich, \emph{Enumerable sets are Diophantine},
+Dokl. Akad. Nauk SSSR \textbf{191} (1970), 279--282;
+English translation, Soviet Math. Dokl. \textbf{11} (1970), 354--357.
+\href{https://www.mathnet.ru/eng/dan35274}{Journal record}.
+
+\bibitem{MilneANT}
+J. S. Milne, \emph{Algebraic Number Theory}, course notes,
+version 3.08 (2020), Theorems~7.20 and~7.32.
+\url{https://www.jmilne.org/math/CourseNotes/ANTc.pdf}.
+
+\bibitem{H10}
+OpenAI, \emph{Hilbert's tenth problem over the rational numbers},
+preprint, 24 September 2026. Source revision
+\texttt{adc7f1241b42e322a6451854ab7e4b4c146bf78a}.
+\href{https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026}{Pinned manuscript and source}.
+
+\bibitem{SerreTate}
+J.-P. Serre and J. Tate, \emph{Good reduction of abelian varieties},
+Ann. of Math. (2) \textbf{88} (1968), 492--517, Theorem~1.
+
+\bibitem{Silverman}
+J. H. Silverman, \emph{The Arithmetic of Elliptic Curves}, second
+edition, Graduate Texts in Mathematics \textbf{106}, Springer, 2009.
+
+\bibitem{Wu}
+C. Wu, \emph{Virtual Abelian varieties of GL2-type}, Math. Res. Lett.
+\textbf{27} (2020), no.~3, 903--944.
+\href{https://doi.org/10.4310/MRL.2020.v27.n3.a14}{doi:10.4310/MRL.2020.v27.n3.a14}.
+\end{thebibliography}
+\end{document}

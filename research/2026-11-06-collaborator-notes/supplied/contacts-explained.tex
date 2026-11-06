@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,microtype,xcolor,graphicx,eso-pic}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\abovedisplayskip}{7pt}
+\setlength{\belowdisplayskip}{7pt}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\F}{\mathbb F}
+\newcommand{\vqq}{v_q}
+\newcommand{\heading}[1]{\vspace{4pt}\textbf{#1}\par\vspace{-3pt}}
+\AddToShipoutPictureBG{\AtPageCenter{\makebox(0,0){\rotatebox{48}{\textcolor[gray]{0.87}{\sffamily\upshape\fontsize{66}{72}\selectfont AI generated}}}}}
+\hypersetup{pdftitle={Contacts: an elementary explanation and precise definitions},pdfauthor={AI generated}}
+\begin{document}
+\begin{center}
+{\Large\bfseries Contacts: explanation and precise definitions}\\[4pt]
+{\small A companion to \texttt{two-proofs-reduced-inputs-v3.pdf}}
+\end{center}
+\vspace{-6pt}
+
+\heading{Elementary meaning}
+The article fixes four distinct rational numbers and the symbol $\infty$. It calls these five values \emph{contacts}. For a rational number $s=u/v$ in lowest terms, contact with $1$ is measured by the prime factors of $u-v$: for example, $126$ has contact depth $3$ with $1$ at $5$, because $126-1=5^3$. For a fixed value $b=a/d$ in lowest terms, replace $u-v$ by $du-av$. For $\infty$, use the denominator $v$. The article also calls these expressions ``contacts''; we distinguish the fixed values from the evaluated expressions below.
+
+\heading{1. Definitions in terms of prime divisibility}
+For a prime $q$ and a nonzero integer $n$, let $v_q(n)$ be the largest integer $e\ge0$ such that $q^e\mid n$. For a nonzero rational $r=n/m$, put $v_q(r)=v_q(n)-v_q(m)$; this is independent of the representation. We call $v_q(r)$ the \emph{valuation at $q$}. Set $v_q(0)=+\infty$. We use $v_q(rs)=v_q(r)+v_q(s)$ and, when $v_q(r)\ne v_q(s)$, $v_q(r+s)=\min\{v_q(r),v_q(s)\}$. Both identities follow by factoring out powers of $q$.
+
+Write $\PP^1(\Q)=\Q\cup\{\infty\}$. A pair $(u,v)\in\Q^2\setminus\{(0,0)\}$ represents $u/v$ if $v\ne0$, and represents $\infty$ if $v=0$; the notation $(u:v)$ identifies pairs differing by a nonzero rational factor. A pair of integers is \emph{primitive} if its coordinates have greatest common divisor $1$. Each finite point has a unique primitive representation $(u,v)$ with $v>0$; for $\infty$ use $(1,0)$.
+
+Fix $C=\{\infty,b_1,b_2,b_3,b_4\}$ with distinct $b_i\in\Q$. Write $b_i=a_i/d_i$ with $\gcd(a_i,d_i)=1$ and $d_i>0$, and define integer linear polynomials
+\[
+L_{b_i}(U,V)=d_iU-a_iV,\qquad L_\infty(U,V)=V.
+\]
+For $s\in\PP^1(\Q)\setminus C$, take its primitive pair $(u,v)$. Its \emph{contact depth at $b\in C$ and the prime $q$} is
+\begin{equation}\label{depth}
+\delta_q(s,b)=v_q(L_b(u,v)).
+\end{equation}
+All these expressions are nonzero because $s\ne b$. Thus every depth is a finite nonnegative integer. We say there is \emph{contact at $q$} when this depth is positive. In particular,
+\[
+\delta_q(u/v,a_i/d_i)=v_q(d_i u-a_i v),\qquad
+\delta_q(u/v,\infty)=v_q(v).
+\]
+
+\heading{2. What congruence means here}
+For primitive pairs $(u,v)$ and $(a,d)$, depth at least $k\ge1$ means exactly $q^k\mid du-av$ (also for $(a,d)=(1,0)$, which represents $\infty$). Equivalently, there is an integer $\lambda$ with $q\nmid\lambda$ such that
+\begin{equation}\label{congruence}
+u\equiv\lambda a\pmod{q^k},\qquad v\equiv\lambda d\pmod{q^k}.
+\end{equation}
+To prove this, if $q\nmid a$, choose $\lambda\equiv ua^{-1}\pmod{q^k}$. Divisibility of $du-av$ gives the second congruence. If $q\mid\lambda$, both $u,v$ would be divisible by $q$, a contradiction. If $q\mid a$, then $q\nmid d$, and use $\lambda\equiv vd^{-1}$ instead. Conversely, \eqref{congruence} immediately gives $q^k\mid du-av$. The inverses exist because the inverted integers are coprime to $q^k$.
+
+If $q\nmid vd$, this is ordinary congruence of fractions, computed by inverting their denominators modulo $q^k$; here $\delta_q(s,b)=v_q(s-b)$. Definition (1) also covers denominators divisible by $q$. At $\infty$ it says simply $q^k\mid v$.
+
+\heading{3. Arbitrary rational coordinates}
+If $(u,v)$ is any rational pair representing $s$, its relation to the primitive pair $(u_0,v_0)$ is $(u,v)=\lambda(u_0,v_0)$ for $\lambda\in\Q\setminus\{0\}$. Hence
+\begin{equation}\label{normalized}
+\delta_q(s,b)=v_q(L_b(u,v))-\min\{v_q(u),v_q(v)\}.
+\end{equation}
+Indeed, $L_b(u,v)=\lambda L_b(u_0,v_0)$ and the displayed minimum equals $v_q(\lambda)$. This proves the coordinate independence asserted in the article.
+
+\newpage
+\heading{4. The product of primes used in the article}
+For a finite set of primes $S$ and $s\notin C$, define
+\begin{equation}\label{radical}
+M_S(s)=\prod_{\substack{q\notin S\text{ prime}\\
+                     \delta_q(s,b)\text{ odd for some }b\in C}}q.
+\end{equation}
+This is a finite positive integer with no repeated prime factor: each contributing prime divides one of the five nonzero integers $L_b(u,v)$ in primitive coordinates. An empty product is $1$. ``Odd'' means a positive odd depth: depth $2$ contributes nothing and depth $3$ contributes one factor $q$. The article calls this the \emph{contact radical}; equation \eqref{radical} is its full definition.
+
+One must test the five depths separately. They can be combined into the single exponent $v_q(\prod_{b\in C}L_b(u,v))$ if $q$ divides none of the integers $d_i$ or $a_i d_j-a_j d_i$ ($i\ne j$). Indeed, if $q\mid v$, then $q\nmid u$ and none of the $d_i u-a_i v$ is divisible by $q$. If $q\nmid v$ and two finite expressions were divisible by $q$, then so would their combination $d_jL_{b_i}(u,v)-d_iL_{b_j}(u,v)=(a_jd_i-a_id_j)v$, a contradiction. Thus at most one depth is positive. The listed integers are nonzero, so only finitely many primes are excluded. Without it, the parity of a sum can conceal two odd depths.
+
+\heading{5. Raw contact expressions and the needed lemma}
+For arbitrary rational $(u,v)$, a \emph{raw contact expression} is the number $L_b(u,v)$. Its valuation can be negative and its parity can change when $(u,v)$ is rescaled. Equation \eqref{normalized} removes precisely this dependence on the choice of coordinates.
+
+\textbf{Lemma (the article's Lemma B.5).} Suppose $s=(u:v)\notin C$ and $q\nmid d_i$ for every $i$. If some $\delta_q(s,b)$ is odd, then $v_q(L_{b'}(u,v))$ is odd for some $b'\in C$.
+
+\emph{Proof.} Put $t=\min\{v_q(u),v_q(v)\}\in\Z$. Some raw expression has valuation exactly $t$. If $v_q(v)=t$, use $L_\infty=v$. Otherwise $v_q(u)=t<v_q(v)$, so $v_q(d_i u)=t$ and $v_q(a_i v)>t$; hence $v_q(L_{b_i}(u,v))=t$. If $t$ is odd, this proves the claim. If $t$ is even, use \eqref{normalized} for a contact of odd depth.\hfill$\square$
+
+Here an odd raw valuation may be negative. The lemma asserts only this parity implication; it does not assert its converse. For example, let $C=\{\infty,0,1,2,3\}$, $s=4$, and $q=5$. All five depths are zero, whereas the coordinates $(u,v)=(20,5)$ give raw values $5,20,15,10,5$, all of valuation $1$ at $5$. For the remainder, assume $S$ contains every prime dividing some $d_i$, as in the article. The lemma then applies to every prime counted in $M_S(s)$.
+
+\heading{6. Why there are also ``thirteen contacts''}
+For three slopes $s_i=u_i/v\notin C$ with the same nonzero denominator $v$, the raw expressions are
+\[
+v,\qquad L_b(u_i,v)\quad(1\le i\le3,\ b\in C\setminus\{\infty\}).
+\]
+These are $1+3\cdot4=13$ indexed expressions, even if some values happen to coincide. The five distinguished points remain unchanged. By the lemma, each prime dividing any $M_S(s_i)$ gives an odd valuation of at least one of these thirteen expressions.
+
+\heading{7. The elementary inference used in the height argument}
+Let $\mathcal D$ be the set of primes outside $S$ at which at least one of these thirteen expressions has odd valuation. Suppose $D\ne0$ is an integer and $q^K\mid D$ for every $q\in\mathcal D$, where $K\ge1$ is an integer. The lemma and unique prime factorization give $M_S(s_i)^K\mid D$ for each $i$.
+
+For primitive $(u,v)$, define the logarithmic height by $h((u:v))=\log\max\{|u|,|v|\}$, with the natural logarithm. The main article supplies, under its arithmetic assumptions, a constant $H_d\ge1$ such that $h(s)\le H_d M_S(s)^{24}$. Consequently, with $K=24$,
+\[
+h(s_i)\le H_d M_S(s_i)^{24}\le H_d|D|.
+\]
+These definitions and elementary lemmas require no unproved arithmetic input. The height bound and the construction enforcing $q^{24}\mid D$ are separate parts of the main article (\S\S1--3 and Appendix B).
+\end{document}

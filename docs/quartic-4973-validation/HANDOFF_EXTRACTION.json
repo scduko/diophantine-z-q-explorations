@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "archive_files": 1385,
+  "current_files": 1233,
+  "snapshot_commit": "2ba2e731eba9a9886bd10a0c3535ad0a8d368a7c",
+  "baseline_included": false,
+  "baseline_sha256": "827765f17087e1794c15770221a3a2d0fefed25839566a4a9bfb3b5aaa1ed42b",
+  "all_member_hashes_and_crc_verified": true,
+  "plan_sha256": "1eeafb3f7eb413ee882091792a19384ca557cd82c3ddf251b55b38504b81ed42",
+  "externally_bound_plan": false,
+  "scope": "Payload integrity and exact current proof-package closure. Authenticate the snapshot using the published archive or plan SHA256."
+}

@@ -1,0 +1,103 @@
+{
+  "format": "conic-pole-contract-addon-v1",
+  "status": "Arithmetic and typed-interface contract; emitted-source audit and replay pending",
+  "source_family": "H19-root37-joint-chart-conic-pole-anchor4-v1",
+  "source_id_prefix": "joint-chart-conic-pole-anchor4-k40-q12-a25-h19-s32-",
+  "base_contracts": {
+    "JOINT_SOURCE_CONTRACT.json": "e658843c6ba95dc797f10e7c25c086189f9694a0689a88c203979c38f05ed79e",
+    "JOINT_CHART_CONTRACT_ADDON.json": "1793c7bdf798365247f04100d22c30490fa8e7e0df4f80534aaec8e2e775ffb3"
+  },
+  "inheritance": "All base and joint-chart requirements remain except source identity and the ordinary conic batches' final two argument gates and pole call, explicitly replaced here",
+  "proofs": {
+    "parity/sub5000/PARITY_CONIC_REUSE_PROOF.md": "a7d2712ce511aca30f5c8e94e0e2ce93c6ee64e21074e2bff91f412fe5a1cb5c",
+    "arithmetic-audit/sub5000/PARITY_CONIC_REUSE_REVIEW.md": "84970af65abda253545e12cc7ac476183df321972316ed88e71a0e37a25b952f",
+    "parity/sub5000/PARITY_SCALE_PROOF.md": "5d36002ff1b144135c5c27735c909553e1b469774cb227ae5cf36f55ebde63c4"
+  },
+  "helpers_read": {
+    "parity/sub5000/conic_pole_kernel.py": "fa5349d565057968ca436e573c1bff903897c7c0e08000e9b9972beeebe3bf55",
+    "parity/sub5000/check_conic_pole.py": "ffba90f4d8fdef55effde387770012ff5cba6fe4ae17a0c94eee1eb18b4371af"
+  },
+  "unchanged": {
+    "height_exponent": 19,
+    "high_precision": 40,
+    "beta_precision": 12,
+    "anchor_squarings": 25,
+    "scalar_orders": [1,1,1,1,32,32],
+    "point_difference_sites": 145,
+    "private_conics": 37,
+    "conic_field_nodes": 435,
+    "comparison_free_counts": {"q_compare4": 61, "q_compare_beta": 28, "q_compare_lucas": 50},
+    "comparison_legacy_counts": {"q_compare4": 31, "q_compare_beta": 16, "q_compare_lucas": 26},
+    "root_and_height_targets": "Exactly the joint-chart source with no coordinate or row change",
+    "comparison_bodies": "Exactly the joint-chart comparison modules, including all field coefficient definitions, G circuits and ordered field tests",
+    "conic_body": "Same private conic, field powers, evaluations, packed rows and entire constant-left upper norm tree",
+    "scalar_height": "Original module and original call unchanged; no conic pole in this path",
+    "anchor": "Existing four-witness homogeneous trace module",
+    "global_root_error_retained_but_unused": true
+  },
+  "replacement_pole": {
+    "module": "q_conicpole",
+    "free": 3,
+    "free_input_order": ["r", "theta", "W"],
+    "free_slots": {"raw_contact": 0, "private_conic_theta": 1, "upper_norm_root": 2},
+    "locals": 12,
+    "local_order": ["D", "U", "L", "z", "e", "p", "c", "w", "s_p", "q", "j", "k"],
+    "local_slots": {"D": 3, "U": 4, "L": 5, "z": 6, "e": 7, "p": 8, "c": 9, "w": 10, "s_p": 11, "q": 12, "j": 13, "k": 14},
+    "rows": 10,
+    "equations": ["D-4*theta^2+7=0", "D*(U+r)-2*r=0", "L-W*U=0", "z-L^2=0", "c-r*e=0", "p^2-17*r-34*c+51*e*c=0", "w-17*r*c+c*z=0", "j-s_p^2=0", "k-r*q=0", "j^2+34*j*w-867*w^2-17*q*k=0"],
+    "calls": [],
+    "pole_model": "private conic Cayley parameter 2*s_c",
+    "required_caller_premise": "same theta^2-r*s_c^2=2",
+    "arithmetic_source_restriction": true,
+    "zero_norm_root_allowed": true,
+    "denominator_nonzero_reason": "D=0 would make (2*theta)^2=7 over Q"
+  },
+  "batch_tail_replacement": {
+    "batch_modules": ["q_conic15", "q_conic6", "q_conic12"],
+    "old_tail_equations": ["W2-W^2=0", "argument-r*W2=0"],
+    "removed_local_coordinates": 2,
+    "removed_rows": 2,
+    "old_tail_coordinates_must_be_last_two": true,
+    "no_outside_uses_of_removed_coordinates": true,
+    "old_call": "q_primeparity(argument)",
+    "new_call": "q_conicpole(raw_contact, own_private_theta, own_upper_norm_root)",
+    "new_call_local_slots": "[0, conic_private.theta, norm_root] in the same batch module",
+    "deleted_metadata": ["norm_root_square", "parity_argument"],
+    "retained_metadata": "Every private conic coordinate, power, field binding, order, sorted field index, norm level, and norm_root",
+    "updated_metadata": {"parity_module": "q_conicpole", "pole_model": "private conic Cayley parameter 2*s_c", "pole_inputs": "[0, conic_private.theta, norm_root]"}
+  },
+  "expected_instances": {
+    "Z_definition": 1,
+    "q_anchor": 1,
+    "q_height_batch": 1,
+    "q_primeparity": 1,
+    "q_conicpole": 37,
+    "q_compare4": 13,
+    "q_compare_beta": 8,
+    "q_compare_lucas": 16,
+    "q_conic15": 13,
+    "q_conic6": 8,
+    "q_conic12": 16
+  },
+  "source_requirements": [
+    "Use the exact same batch raw r, private theta and upper norm root in its pole call; a different occurrence's coordinate is forbidden",
+    "Check complete conic equations and all packed powers/rows before using the caller premise",
+    "No field coefficient may depend on this occurrence's theta,s_c,S_c, directly or through an alias/call",
+    "Reconstruct each old conic batch independently, then allow only the specified tail deletion and exact pole call replacement",
+    "Compare q_conicpole to its literal entire module specification, including no hidden calls or rows",
+    "Require all 37 ordinary callers and only those callers to use q_conicpole",
+    "Preserve the scalar-height q_primeparity module bytes and its one call",
+    "Restrict the old parity-conic algebraic producer to that one old parity occurrence; never apply it to q_conicpole",
+    "Keep zero comparison inverse locators, zero old paired-norm locators and only the six root affine-chart locators",
+    "Perform full flattening, nonoverlapping private allocation checks and fresh named-source replay"
+  ],
+  "completeness_order": [
+    "Fix root/scalar/anchor data, raw prime contacts and common J",
+    "Fix all private elliptic points, joint charts, G/ratio values and all field coefficients",
+    "For each occurrence choose one rational conic point meeting selected-prime depth plus real/2/3/17 neighborhoods of theta=3/2",
+    "Evaluate that occurrence's packed fields and upper norm tree at its chosen theta",
+    "Use the fixed-U pole-completeness lemma and exact scaling to choose remaining pole witnesses"
+  ],
+  "additional_excluded_changes": ["direct local Lucas residual", "root proxy deletion", "ratio fusion", "field-square fusion", "contact power changes", "H18", "global private-point sharing"],
+  "final_source_binding": "Pending; this is a new arithmetic source restriction, not an algebraic certificate rewrite of arbitrary old fixed-conic witnesses"
+}

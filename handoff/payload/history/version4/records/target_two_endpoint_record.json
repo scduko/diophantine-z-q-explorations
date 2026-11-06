@@ -1,0 +1,40 @@
+{
+  "run": 42241303658,
+  "commit": "baa5cc5b6c59c0bbd6ed7dae97140404356e3d38",
+  "artifact": 13516775692,
+  "artifact_sha256": "0e86a33765748033d0eb9dfb4ed7b819c17531c4fabb36b17fecf413496be16a",
+  "manifest_sha256": "ebb184022a1fc039d01e4b02f8fb2b277e05cf9a61a02b282cdaa85566865ceb",
+  "verified": {
+    "status": "PASS",
+    "scope": "Exact projection-preserving algebraic equivalence to the pinned source system; exact full integer expansion. The source arithmetic theorem is not checked here.",
+    "witnesses": 5217,
+    "variables": 5218,
+    "rows": 4797,
+    "monomials": 75043,
+    "degree": 4,
+    "max_abs_coefficient": 685783949153203534233889,
+    "source_id": "target2-general-root-shared-square-normalized-linear-pole-k40-q12-a25-h19-s32-e318d3a9d26b",
+    "source_sha256": "f75a11809194e65a642b8036afea57725a37f3df09178d2cb3b822242a1e0ce8",
+    "operations": {
+      "parity_conic": 1,
+      "linear": 296,
+      "eliminate": 121,
+      "shear": 2
+    },
+    "total_operations": 420,
+    "weights_greater_than_one": 0,
+    "expanded_bytes": 1653276,
+    "compressed_bytes": 438413,
+    "expanded_sha256": "8defa587ed2a3cb3e5da3e2020e553aa4f6154381fe95ff0ead4957f43422aae",
+    "certificate_sha256": "64add485e1bb682d8ed0b09e5d153a605d3bc0159fe73a308cb91eac9c44b436",
+    "distinct_circuit_identities_checked": 0,
+    "checker_sha256": "05d740d1d12ed1bd905c5c90e189cd44c95b228c0302ead04da267588e8fd67e",
+    "seconds": 1.267
+  },
+  "version4_threshold_met": false,
+  "scope": "Remote algebraic replay with independent source-arithmetic review under inherited theorem inputs",
+  "arithmetic_review": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/TARGET2_5218_SOURCE_REVIEW.md",
+  "arithmetic_review_sha256": "918861e4dd7a7e5d052e17550020278fb0173cd116cacffd0af1b9c28f4581f8",
+  "arithmetic_clarification": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/MIXED_MODE_DENOMINATOR_CLARIFICATION.md",
+  "arithmetic_clarification_sha256": "2a1eb8ed9a7175995afa665a08035728c1714b5fa30e1ba52030b6adf7b8ba34"
+}

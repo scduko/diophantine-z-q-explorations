@@ -1,0 +1,15 @@
+{
+  "checker_sha256": "41a3d780636c1f28852762ee0ce7a252e207ec74e7367da275676200a6068ffa",
+  "compiler_files": [
+    "archive_build.py",
+    "combined_kernel.py",
+    "lowprecision_kernel.py",
+    "beta_kernel.py",
+    "build_source.py"
+  ],
+  "helper_files": {
+    "BASELINE.json": "2a1c41a19f0813e8676c4cbe57eb49a3faa0926f095389d8a4a2b390ea91035d",
+    "core_audit.py": "0da0dfef661211fd4ada262050895ef24ca54dfdc1aca4aa4bec4e69c1dcbce8"
+  },
+  "status": "EXPLORATORY FINITE CHECKER PIN; NO ARITHMETIC ACCEPTANCE"
+}

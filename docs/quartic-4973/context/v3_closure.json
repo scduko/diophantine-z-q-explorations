@@ -1,0 +1,493 @@
+{
+  "format": "quartic-9625-dependency-closure/v1",
+  "root": "thm:quartic",
+  "edges": [
+    {
+      "source": "thm:quartic",
+      "target": "V3_SOURCE",
+      "kind": "arithmetic"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "certificate_binding",
+      "kind": "finite"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "quadratic_field_and_rational_inverse",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "constant_definition_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "invertible_row_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "acyclic_circuit_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "scalar_norm_inverse_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "root_error_and_contact_nonvanishing",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "private_contact_inverse_removal",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "point_chart_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "ordinate_elimination_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "parity_block_existential_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "bottom_norm_absorption_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "normalization_and_sum_of_squares",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "rational_coordinate_shear",
+      "kind": "local"
+    },
+    {
+      "source": "thm:quartic",
+      "target": "V3_CIRCUIT",
+      "kind": "local"
+    },
+    {
+      "source": "V3_H19",
+      "target": "I_H5",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_H19",
+      "target": "P_DETERMINANT",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_H19",
+      "target": "P_MODULAR_FACTOR",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_H19",
+      "target": "P_BELYI",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_H19",
+      "target": "P_TRANSFER",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ROOT37",
+      "target": "V3_H19",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ROOT37",
+      "target": "I_SIEVE",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ROOT37",
+      "target": "I_POLE",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ROOT37",
+      "target": "I_NORM",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ROOT37",
+      "target": "I_CRT",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_RECIPROCAL",
+      "target": "I_RECIPROCAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_RECIPROCAL",
+      "target": "I_FORMAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_NONZERO",
+      "target": "I_RECIPROCAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LOCAL",
+      "target": "V3_RECIPROCAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LOCAL",
+      "target": "V3_NONZERO",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LOCAL",
+      "target": "I_GEN",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LOCAL",
+      "target": "I_FORMAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LOCAL",
+      "target": "I_NORM",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LOCAL",
+      "target": "I_POLE",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LOCAL",
+      "target": "I_CRT",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ANCHOR",
+      "target": "V3_H19",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ANCHOR",
+      "target": "I_ANCHOR",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ANCHOR",
+      "target": "I_FORMAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ANCHOR",
+      "target": "I_NORM",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ANCHOR",
+      "target": "I_POLE",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_ANCHOR",
+      "target": "I_GEN",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LUCAS",
+      "target": "V3_ROOT37",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LUCAS",
+      "target": "V3_LOCAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LUCAS",
+      "target": "V3_ANCHOR",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LUCAS",
+      "target": "I_GEN",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_LUCAS",
+      "target": "I_LUCAS",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_BETA",
+      "target": "V3_ROOT37",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_BETA",
+      "target": "V3_LOCAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_BETA",
+      "target": "V3_ANCHOR",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_BETA",
+      "target": "V3_LUCAS",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_BETA",
+      "target": "I_GEN",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_SOURCE",
+      "target": "V3_BETA",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_SOURCE",
+      "target": "V3_ROOT37",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_SOURCE",
+      "target": "V3_LOCAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_SOURCE",
+      "target": "V3_ANCHOR",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_SOURCE",
+      "target": "V3_COMPRESSED",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_SOURCE",
+      "target": "I_GEN",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_SOURCE",
+      "target": "I_SIEVE",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_SOURCE",
+      "target": "I_CRT",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_SOURCE",
+      "target": "I_POLE",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_SOURCE",
+      "target": "I_LUCAS",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_COMPRESSED",
+      "target": "V3_NONZERO",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_COMPRESSED",
+      "target": "I_RECIPROCAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_CIRCUIT",
+      "target": "V3_RECIPROCAL",
+      "kind": "dependency"
+    },
+    {
+      "source": "V3_CIRCUIT",
+      "target": "V3_COMPRESSED",
+      "kind": "dependency"
+    },
+    {
+      "source": "acyclic_circuit_equivalence",
+      "target": "constant_definition_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "scalar_norm_inverse_equivalence",
+      "target": "constant_definition_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "private_contact_inverse_removal",
+      "target": "root_error_and_contact_nonvanishing",
+      "kind": "local"
+    },
+    {
+      "source": "point_chart_equivalence",
+      "target": "quadratic_field_and_rational_inverse",
+      "kind": "local"
+    },
+    {
+      "source": "ordinate_elimination_equivalence",
+      "target": "constant_definition_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "parity_block_existential_equivalence",
+      "target": "constant_definition_equivalence",
+      "kind": "local"
+    },
+    {
+      "source": "bottom_norm_absorption_equivalence",
+      "target": "root_error_and_contact_nonvanishing",
+      "kind": "local"
+    },
+    {
+      "source": "bottom_norm_absorption_equivalence",
+      "target": "constant_definition_equivalence",
+      "kind": "local"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "degree8-original/arithmetic/H5_FINAL_ACCEPTANCE.md",
+      "sha256": "db62a7fa5fbcd2d4bc711436f2fb4f98c37de9122751ea7aeb097d96680905eb",
+      "bytes": 5906
+    },
+    {
+      "path": "degree8-original/arithmetic/SMALLER_ONLY_ACCEPTANCE.md",
+      "sha256": "3de379463fb4a32702f5098fd08dfa3d62a5a116641803c0411c48d212026b27",
+      "bytes": 3740
+    },
+    {
+      "path": "degree8-original/arithmetic/anchor/reference-anchor-check.json",
+      "sha256": "60c236722fb2f53f95829c48e007c31828c60c8e7c8e21332e4d1b74ab1623b3",
+      "bytes": 2970
+    },
+    {
+      "path": "degree8-original/arithmetic/anchor/source-application-ledger.json",
+      "sha256": "2f81ceea6b525913b1790c2695da9fb3cc3c9c8b63bfbe7e16bc26d0a227e5ef",
+      "bytes": 5111
+    },
+    {
+      "path": "degree8-original/arithmetic/current-proof.json",
+      "sha256": "af4570f0f20c0e1895b3567f2c18a13d0cc40d939ac051047a757a3c145d753e",
+      "bytes": 3151
+    },
+    {
+      "path": "degree8-original/arithmetic/parity/AUDIT.md",
+      "sha256": "be1b8d92771b59005a63acdd527b67a8cdd55b1f31e105733f70ab444d462aa7",
+      "bytes": 8709
+    },
+    {
+      "path": "degree8-original/arithmetic/parity/reference-parity-checks.json",
+      "sha256": "a810dbeacccabb6fddec943b403a1a1767e2ed335c1657ab377a6777fe4cc5d4",
+      "bytes": 2544
+    },
+    {
+      "path": "degree8-original/arithmetic/sieve/applications.json",
+      "sha256": "28b8f85d33be96b7148de22214dbe7fd39d221a99ab56c75534ad47edc18b062",
+      "bytes": 4736
+    },
+    {
+      "path": "degree8-original/arithmetic/sieve/audit.md",
+      "sha256": "2e03f01cbe555c2d6f4edcafd5b08c6f2b16b8e3f2e4ce0a55dfbcabbc015c7e",
+      "bytes": 10076
+    },
+    {
+      "path": "degree8-original/arithmetic/sieve/source-ledger.json",
+      "sha256": "e98599849e678182edac7c825a58ec9d86604198fbdd277e64faa128eae2b125",
+      "bytes": 6692
+    },
+    {
+      "path": "degree8-original/source/module-specification.md",
+      "sha256": "8d48b84bb189f04d6d8970a53b272df1df7d8fb575dd8059f35ba93c504f566b",
+      "bytes": 7851
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/height-alternative/conductor-source-ledger.json",
+      "sha256": "d4f8201815c62b06aa17f1079d8512b8f93d4bf004c0072cec2f7d0bf2206627",
+      "bytes": 2960
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/height-alternative/level-source-ledger.json",
+      "sha256": "a688ffadbdea896a60fefa89001e26b23ce5cf454350dcc121847ec7824da58f",
+      "bytes": 3084
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/height-cm/source-application-ledger.json",
+      "sha256": "2e5d985886fa467b60fbed0dc780bedd59717f062c151fd6eb7cdc0dbe6ef68b",
+      "bytes": 4681
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/height-cocycle/source-application-ledger.json",
+      "sha256": "593bb0857eb8801fa6c7da320f05e3e6085fe507983a42c0eecab513a4ca3e44",
+      "bytes": 4672
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/height-geometry/source-application-ledger.json",
+      "sha256": "ccc5a1f092021e34fe833982221530e2bea41703384e87701956b2e4728f4cee",
+      "bytes": 2930
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/height-level-repair/source-application-ledger.json",
+      "sha256": "d7f365bc056fc49a31ca07a6cb1a33fa1a27141616076b632539e9c4ad7cac2c",
+      "bytes": 34453
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/pan-published/source-application-ledger.json",
+      "sha256": "8a6cb4f7a188aa48d3a56f17d2ee0ad488df516d494da784109d9408ec6dd3ea",
+      "bytes": 3502
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/yuan-published/source-application-ledger.json",
+      "sha256": "1251c3510cf14b184897d37a1236f7abc4a752e913e3ea00afd2db6b1236a2d3",
+      "bytes": 3693
+    },
+    {
+      "path": "docs/theorem-application-audit/DEPENDENCIES.md",
+      "sha256": "55c7350cfc1002457519dff926a0b388c179936802118b9b39aa2317ba400f90",
+      "bytes": 4011
+    },
+    {
+      "path": "docs/theorem-application-audit/applications.json",
+      "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb",
+      "bytes": 604109
+    },
+    {
+      "path": "docs/theorem-application-audit/computations/generator-arithmetic.json",
+      "sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f",
+      "bytes": 4083
+    },
+    {
+      "path": "docs/theorem-application-audit/sources.json",
+      "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+      "bytes": 67747
+    }
+  ]
+}

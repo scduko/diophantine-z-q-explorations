@@ -1,0 +1,832 @@
+\subsection{Conventions and inherited hypotheses}
+\label{sec:v4-inherited}
+
+Retain the field and curve of Section~\ref{sec:degree8-original}:
+\[
+ K=\Q(\sqrt2),\qquad d=3-\sqrt2,\qquad D=d^2,
+ \qquad E:\ y^2=x^3-Dx.
+\]
+For an affine point with nonzero abscissa write $f(P)=1/x(P)$ and
+$p(P)=y(P)/x(P)$. The rational function $z=-x/y$ extends with value zero
+at $O$ and $T_0=(0,0)$; its other poles are $(d,0)$ and $(-d,0)$.
+The letter $J$ denotes a common comparison point. We write $\jmath$ for
+$1/z(J)$, to distinguish that field element from a point or an integer index.
+The implementation conjugates the complete alternate-comparison identity:
+its boundary value is $1/\overline{z(J)}$, and its primary and target
+coefficients in that identity are conjugated as well.
+
+The following arguments retain all inherited qualifications of
+Section~\ref{sec:degree8-original} and Appendix~\ref{app:sources}. In particular, the restricted converse, rank and original
+arithmetic assertions retain their stated proof status. The prime-pattern
+input retains its corrected author-version and erratum conventions,
+including the stated version of arXiv:1009.3998v5. The Pan interface retains
+the inspected author theorem and the cited Calegari formulation, without
+claiming comparison with inaccessible journal text. The Yuan input retains
+its author-attested translation qualification. The stable Faltings metric,
+arithmetic-Frobenius, diamond-quotient and final-twist conventions are
+unchanged. None of the finite source or polynomial checks strengthens these
+assumptions.
+
+In particular we use, in exactly their previous scopes, the generator and
+torsion statements $2E(K)=\Z P_*$ and $E(K)_{\mathrm{tors}}=E[2](K)$;
+the formal-group logarithm and valuation statements; the fixed-system
+prime-pattern theorem with arbitrary prescribed finite exclusions; the
+height, scalar, anchor and Lucas lemmas; and the restricted-converse and
+simultaneous-realization inputs used for the pole predicate. The one
+additional explicit trace application below is identified in
+Lemma~\ref{lem:quartic-anchor-four}.
+
+Put
+\[
+ B_* =\prod_{p\le76176}p,\qquad
+ H=2(2^{109}210^{1800})B_*^{19}+128,
+ \qquad \log_2 H<2093966.
+\]
+This is $H_{19}$ of Theorem~\ref{thm:quartic-height19}. The
+source parameters remain high order $40$, beta order $12$, scalar orders
+$(1,1,1,1,32,32)$ and anchor constant $C=3^{2^{25}}$.
+
+We also retain Lemma~\ref{lem:quartic-reciprocal-log}. Explicitly,
+write
+\[
+ \sqrt{1-w}\sum_{j\ge0}\frac{\binom{2j}{j}}{4^j(4j+1)}w^j
+       =\sum_{j\ge0}a_jw^j,\qquad
+ G_m(w)=\sum_{j=0}^m a_jw^j.
+\]
+The polynomials used here are $G_9$ and $G_2$. They are nonzero at every
+argument $Df^2$ with $f\in K$, by the previously proved dyadic argument.
+For a nonidentity formal-group point at either place above a split prime
+$p>76176$, the approximation $-G_9(Df^2)/p(P)$ has relative order at least
+$40$, and $-G_2(Df^2)/p(P)$ has relative order at least $12$. Actual formal
+membership is required: small $z$ alone is not the premise of this lemma.
+
+\subsubsection{The retained scalar, anchor and beta interfaces}
+The scalar input is still $\beta=X^2+2$. The scalar batch tests the two
+rational coefficients each of $f(J_0),f(S),z(S)/z(J_0)$, with orders
+$(1,1,1,1,32,32)$ in that order. Its original pole predicate is retained.
+The anchor constant is computed by
+\[
+ c_0=3,\qquad c_{i+1}=c_i^2\quad(0\le i<25),\qquad C=c_{25}.
+\]
+Thus the integer $C=3^{2^{25}}$ is a witness value, not a polynomial
+coefficient. The four-witness anchor below consumes this same terminal
+value. The height targets are the eight rational abscissa coefficients
+of Lemma~\ref{lem:quartic-rational37}.
+
+For every beta-bearing comparison, the common and beta quotient equations
+are explicitly
+\[
+ \Lambda p_H=G_H,\qquad B_A=C_Ap_A,\qquad B_A\Lambda=G_A.
+\]
+The global nonvanishing in Lemma~\ref{lem:quartic-reciprocal-nonzero}
+forces $\Lambda,p_H,B_A,p_A\ne0$. Hence $C_A$ is the ratio of the beta
+and common approximate logarithms, with their two minus signs cancelled.
+The beta residual is $C_A-2\beta$. In full comparisons $G_H$ has order
+$40$ and $G_A$ order $12$; in beta-only comparisons both have order $12$.
+The Lucas numerators use the normalized equations below, whose permitted
+zero-ordinate branches must not be excluded by this beta argument.
+
+\subsection{Selective comparisons and the local elliptic chart}
+
+\begin{lemma}[Three-mode coverage]\label{lem:quartic-three-mode-coverage}
+Number the unchanged raw contacts from $0$ to $36$. Retain full comparisons
+at $0,\ldots,4$ and $21,\ldots,28$, beta-only comparisons at
+$5,\ldots,12$, and Lucas-only comparisons at $13,\ldots,20$ and
+$29,\ldots,36$. The contacts carrying Lucas information cover the three
+points $S,T,Z$, and those carrying beta information cover $A,T$.
+\end{lemma}
+\begin{proof}
+The first five positions are shared. Each of $A,S,T,Z$ has its original
+block of eight finite positions, in that order. Thus the Lucas set contains
+the five shared positions and all three finite blocks of $S,T,Z$; the beta
+set contains the five shared positions and the two finite blocks of $A,T$.
+The unchanged two-slope rational-height argument applies separately to
+these sets. No position is deleted when two slopes, raw values, or assigned
+primes coincide. The two maxima used below are consequently
+$B_L=\max(|s|,|t|,|z|)$ and $B_{AT}=\max(|n|,|t|)$.
+\end{proof}
+
+\begin{lemma}[Doubled formal comparisons]
+\label{lem:quartic-doubled-private-comparison}
+At a split good prime above the cutoff, if $v(z(R))>0$, then either $R$ or
+$R+T_0$ is in the formal group. Whenever the relevant rational function is
+defined,
+\[
+ v(\LogE([2]R))=v(z(R)),
+\]
+with infinite valuation for $R=O$ or $T_0$.
+\end{lemma}
+\begin{proof}
+For an affine nontorsion point,
+$z(R)^2=x(R)/(x(R)^2-D)$. If $v(x)=0$, the right side has nonpositive
+valuation. If $v(x)<0$, the point is formal. If $v(x)>0$, translation by
+$T_0$ gives $x'=-D/x$ and $z'=-z$, so the translated point is formal with
+the same parameter valuation. Doubling kills $T_0$ and is an isometry on
+the formal group at an odd good prime. The asserted equality follows from
+the retained logarithm isometry. The two other nonzero two-torsion points
+are poles of $z$ and are not in the domain.
+\end{proof}
+
+Private primary points may therefore lie in $E(K)$ rather than $2E(K)$.
+If $[2]P=[2\alpha(P)]P_*$, their coefficients $\alpha(P)$ may be
+half-integral. They are integral at each consumed odd prime. One compares
+logarithms only after writing an actual integer-multiple identity between
+formal points; torsion is not discarded by equating these half-indices.
+The primary $f$ tests still put the primary points themselves in the
+formal group. An alternate test of
+$z(P-Q)/z(J)$, together with the opposite-place $f(J)$ test, implies
+$v(z(P-Q))>0$, and the lemma supplies the needed doubled logarithm.
+
+\begin{lemma}[Joint primary and difference graph]
+\label{lem:quartic-joint-chart}
+Let $Q=(a,aq)$ be nontorsion and $\jmath\ne0$. Set
+\[
+ F_Q=1/a,\quad c=a+DF_Q,\quad
+ r=\jmath/q,\quad s_Q=c/q,\quad t_Q=1/q^2,\quad u=rs_Q.
+\]
+The three field equations
+\begin{align}
+ k&=(A-r)p,\\
+ kp+up-2Drf-4Dt_QA&=0,\\
+ 2D(A+r)f+s_Qk+4Dt_QA+\jmath q&=0
+\end{align}
+give the exact graph $f=1/x(P)$, $p=y(P)/x(P)$,
+$A=\jmath z(P-Q)$ for affine primary points $P$ with $x(P)\ne0$
+and finite $z(P-Q)$. In particular this primary chart excludes $O$ and
+$T_0$. The equations permit $A=0$ and do not
+require inverses of $A,k$ or of a difference parameter.
+\end{lemma}
+\begin{proof}
+Set $x=p^2+Df$. The target identity is $c^2-q^4=4D$.
+Reversible linear combinations of the displayed equations give
+\[
+ A U=\jmath H_2,\qquad A V=\jmath H_1,
+\]
+where
+\[
+ U=q(x+Df)+cp,\quad V=q^2(x-Df)-4D,\quad
+ H_1=q(x+Df)-cp,\quad H_2=x-Df-q^2.
+\]
+Direct expansion yields
+\[
+ H_2V-H_1U=-4Dq^2(fp^2+Df^2-1).
+\]
+Thus $xf=1$ and $P=(x,xp)$ is on $E$. If $U=V=0$, then for
+$v\in\{d,-d\}$ one has
+$p=-2v/q$ and $x=v(a+v)/(a-v)$, precisely $P=Q+(v,0)$.
+At either point $H_2=(4D-q^4)/q^2\ne0$: equality $q^4=4D$ would imply
+$N_{K/\Q}(q)^2=28$, impossible for a rational norm. These genuine poles
+cannot satisfy the graph equations. Else $U$ or $V$ is nonzero and
+$A/\jmath$ is uniquely determined. The chord identities
+\[
+ H U=N H_2,\qquad H V=N H_1,
+\quad H=(p-q)(1+DfF_Q),\quad
+ N=pq(1-DfF_Q)+2D(f+F_Q)
+\]
+identify it with $z(P-Q)$ on the chord domain and hence at every regular
+point. At $P=Q$ and $Q+T_0$ the value is zero. Opposition is covered by
+$V\ne0$. At $p=0$, the curve has $x=\pm d$, $U=2qx\ne0$, and the graph
+still gives its unique regular value. Conversely substituting any point
+and its regular difference value reverses these identities and recovers
+all three equations with $k=(A-r)p$.
+\end{proof}
+
+The last $p=0$ cases are needed below. They are excluded at consumed places
+by the positive primary-$f$ valuation, but need not be excluded globally
+for every normalized numerator.
+
+\subsection{Private conics, packed field tests and the ordinary pole}
+
+Each contact $r$ has its own rational variables $\theta,s_c,S_c$ with
+\[
+ S_c=s_c^2,\qquad \theta^2-rS_c=2.
+\]
+In particular $r,s_c\ne0$. For a field value $F_i=a_i+b_i\sqrt2$ of
+required order $e_i$, define
+\[
+ Y_i=a_i+\theta b_i,\qquad
+ T_i=2a_iY_i-a_i^2+2b_i^2
+     =Y_i^2-(\theta^2-2)b_i^2,\qquad
+ r^{2e_i}W_i=T_i.
+\]
+The upper tree uses successive pairs $N_r(u,v)=u^2+rv^2$, starting with
+the literal leaf $1$ followed by the $W_i$ in stable order, carrying an
+unpaired final child unchanged. Denote its root by $W$.
+
+\begin{lemma}[Local conic and tree deductions]
+\label{lem:quartic-private-conic-packing}
+Assume the ordinary pole gives no negative odd valuation to nonzero
+$rW^2$ outside its fixed exceptional primes. At any $p>76176$ with odd
+$R=v_p(r)$, the equations above imply $R>0$ and choose one root
+$\rho\in\Q_p$ of $2$ such that
+$v_p(a_i+\rho b_i)\ge e_i$ for every retained field.
+\end{lemma}
+\begin{proof}
+The conic makes $\delta=v_p(\theta^2-2)=R+2v_p(s_c)$ odd.
+It cannot be negative, since then $v_p(\theta^2)$ would be odd; it cannot
+be zero. Thus $\delta>0$, $\theta$ is a unit, and one root $\rho$ satisfies
+$v_p(\theta-\rho)=\delta$ while the other factor is a unit.
+The summands in $N_r(u,v)$ have opposite valuation parity and cannot
+cancel. The literal leaf proves $W\ne0$. If $R<0$, ascent along that
+leaf gives $v_p(W)\le0$, contradicting the pole conclusion. Hence $R>0$.
+The pole conclusion gives $v_p(W)>-R/2$. Descent through the tree uses
+\[
+ v_p(N_r(u,v))>-cR\ \Longrightarrow
+ v_p(u)>-cR/2,\quad v_p(v)>-(c+1)R/2,
+\]
+with $0\le c<1$, and gives $v_p(W_i)>-R$. Consequently
+$v_p(T_i)>(2e_i-1)R\ge2e_i-1$, so $v_p(T_i)\ge2e_i$.
+The two summands of $T_i$ also have opposite parity, yielding
+$v_p(Y_i)\ge e_i$ and $\delta+2v_p(b_i)\ge2e_i$.
+It follows that $v_p((\theta-\rho)b_i)\ge e_i$ and hence the claimed
+field order. Zero summands are treated with infinite valuation. No
+integrality of $a_i,b_i$ and no global squareclass of $F_i$ was assumed.
+\end{proof}
+
+The proof uses $v_p(T_i)\ge2e_i$, not the generally unjustified stronger
+bound $2e_iR$. It is independent of the elliptic meaning of the fields.
+
+\begin{lemma}[Conic completeness]\label{lem:quartic-conic-completeness}
+In the retained integral-input construction, each contact
+$r=d_0^2p_0>0$ admits the needed private conic and arbitrarily deep
+approximation to its chosen split branch, independently of the other
+contact occurrences.
+\end{lemma}
+\begin{proof}
+Here $p_0\equiv1\pmod8$ and $d_0\ne0$ is a $p_0$-unit. The ring
+$\Z[\sqrt2]$ is norm Euclidean: subtracting nearest integers from two
+coefficients leaves $|a|,|b|\le1/2$ and $|a^2-2b^2|\le1/2<1$.
+The split prime ideal therefore gives integers $a,b$ with $a^2-2b^2=p_0$,
+after multiplying by the norm-minus-one unit if needed. Since $b\ne0$,
+$(\theta_0,s_0)=(a/b,1/(d_0b))$ is a rational conic point. The parametrization
+\[
+ \Delta=\frac{2(rs_0-\theta_0 t)}{t^2-r},\qquad
+ s_c=s_0+\Delta,\quad \theta=\theta_0+t\Delta
+\]
+and rational approximation give simultaneous approximation at the finite
+set of required places. There is no rational pole $t^2=r$.
+Near the selected root, $\delta=1+2v_{p_0}(s_c)$ can be made arbitrarily
+large. After all field coefficients are fixed, choose it so that
+$\delta+2v_{p_0}(b_i)\ge2e_i$ for every $i$. The original field orders
+then make all $W_i$ integral; the constant path makes $W$ a $p_0$-unit.
+At the real place the tree is positive, even if some $W_i$ are negative.
+The extra approximations used for the following pole may be imposed at
+the same time. No conic variable is shared between occurrences.
+\end{proof}
+
+\begin{proposition}[Linear-unit ordinary pole]
+\label{lem:quartic-linear-pole}
+Set $g=3-2\theta$. Replace only the ordinary pole module by
+\begin{gather*}
+ \ell=gW,\quad z_\ell=\ell^2,\quad c_r=re,\qquad
+ p_r^2-17r-34c_r+51ec_r=0,\\
+ w=17e-c_rz_\ell,\quad j_s=s_r^2,\quad k_r=rq_r,\\
+ j_s^2+34j_sw-867w^2-17q_rk_r=0.
+\end{gather*}
+It has the one-sided pole conclusion used in
+Lemma~\ref{lem:quartic-private-conic-packing}. It has integral-input
+completeness under the same inherited realization and rank hypotheses.
+The scalar-height pole module is unchanged.
+\end{proposition}
+\begin{proof}
+At an odd prime with odd $v_p(r)$, the conic argument makes $\theta$
+integral, and
+$(3-2\theta)(3+2\theta)=1-4rs_c^2$ is a unit. Thus $g$ is a unit.
+Suppose $b=rW^2\ne0$ has negative odd valuation outside $2,3,17$.
+The first conic $p_r^2=17r(1-e)(1+3e)$ forces $e$ to be a unit: positive,
+negative or infinite valuation of $e$ would make the right side have odd
+valuation. Since $v_p(\ell)=v_p(W)$, one has
+$v_p(w)=v_p(b)<0$, an odd integer. In
+\[
+ (s_r^2-17w)(s_r^2+51w)=17rq_r^2
+\]
+the left side is nonzero with even valuation, since the valuations of
+$s_r^2$ and $w$ differ in parity. The right side is zero or has odd
+valuation. This contradiction proves the asserted exclusion, including
+zero ordinate branches of the first conic. If $W=0$, the conclusion has
+no nonzero pole input; explicit witnesses are
+$\ell=z_\ell=p_r=q_r=k_r=0$, $e=1$, $c_r=r$, $w=17$, $s_r=17$, $j_s=289$.
+
+For completeness retain the generalized fixed-$U$ realization argument
+under its original hypotheses. For $b>0$ with square reduced denominator
+and square in $\Q_2,\Q_3,\Q_{17}$, it applies to a prescribed $U_0$ when
+\[
+ U_0^2/(17b)<1\text{ at infinity},\quad
+ v_2(U_0^2/(17b))\ge3,\quad
+ v_3(U_0^2/(17b)),v_{17}(U_0^2/(17b))\ge1,
+\]
+and $v_p(U_0)=v_p(b)$ at every other odd-support prime of $b$.
+Indeed, put $B=17b$ and $V=B(B-U_0^2)$, and let
+$\beta_{\rm sf},\eta_{\rm sf}$ be their positive squarefree representatives.
+The displayed conditions make $V$ positive and a square in
+$\Q_2,\Q_3,\Q_{17}$. Consequently
+\[
+ \beta_{\rm sf}>1,\quad \beta_{\rm sf}\equiv17\pmod{24},\quad
+ \eta_{\rm sf}\equiv1\pmod{24},\quad 17\nmid\eta_{\rm sf}.
+\]
+At an odd-support prime of $B$ outside $2,3,17$, the square reduced
+denominator makes $v_p(b)$ positive, and the hypothesis on $U_0$ gives
+$v_p(U_0^2/B)>0$. Thus $1-U_0^2/B$ is a square unit, so
+$\eta_{\rm sf}$ is a square in $\Q_p$ and $p\nmid\eta_{\rm sf}$.
+The same conclusion at $17$ follows from the displayed smallness condition.
+Conversely, at a prime dividing $\eta_{\rm sf}$ the necessary strict
+cancellation in $B-U_0^2$ gives $v_p(B)=2v_p(U_0)$ and makes
+$B/U_0^2$ a square unit. Thus $\beta_{\rm sf}$ is a square in $\Q_p$.
+In particular $\gcd(\beta_{\rm sf},\eta_{\rm sf})=1$, and both
+mutual-square conditions hold. If $U_0=0$, then $V=B^2$ and
+$\eta_{\rm sf}=1$, so the converse condition is empty. These are precisely
+the hypotheses consumed by the inherited simultaneous-realization proof;
+no new rank or converse statement is substituted.
+
+Now set $b=rW^2$ and $U_0=rW^2g$. In the complete construction
+$r=d_0^2p_0$ and $W$ is a $p_0$-unit, so $v_{p_0}(b)=1$ and all
+other valuations of $b$ are even. Hence its reduced denominator is a
+square. The retained local squares of $r$ at $2,3,17$ also make $b$ a
+square at those places. After the fields are fixed, approximate
+the private conic also near $(\theta,s_c)=(3/2,1/(2\sqrt r))$ at infinity,
+$2,3,17$. These local points exist by the original contact construction.
+The continuous function $(r/17)W(\theta)^2g(\theta)^2$ vanishes there,
+so it satisfies the displayed smallness conditions while the selected
+prime still makes $W$ a unit. The local-unit argument gives the required
+odd-support valuations of $U_0$. The resulting old three-conic witnesses satisfy
+\[
+ p_o^2=17b(1-e)(1+3e),\quad h_o=e(17b-U_0^2),\quad
+ (s_o^2-17bh_o)(s_o^2+51bh_o)=17bq_o^2.
+\]
+Here $r,W,b$ are nonzero. Set
+\[
+ p_r=p_o/W,\quad w=h_o/b,\quad
+ s_r=s_o/b,\quad q_r=q_o/(r^2W^3).
+\]
+These substitutions give $w=e(17-r\ell^2)$ and the final conic in the
+displayed normalized system; the other coordinates are its definitions.
+Thus the witness conversion uses only stated nonzero quantities.
+Equivalently the unnormalized form
+has $L=r\ell$, $z_L=r^2z_\ell$, $w_L=r^2w$, $s_L=rs_r$,
+$q_L=r^2q_r$, $j_L=r^2j_s$, $k_L=r^2k_r$, with $e,p_r,c_r$ unchanged.
+All divisions in the reverse scaling are powers of the conic-proved
+nonzero $r$. This also proves that normalization loses no zero branch.
+\end{proof}
+
+\begin{lemma}[Four-witness anchor]\label{lem:quartic-anchor-four}
+For rational $a,b$, both belong to $\Z_{(2)}\cap\Z_{(3)}$ if and only if
+$9+3(a^2+b^2)$ is a norm-one trace for the quaternion algebra $(2,3)$.
+Consequently the original two-coefficient anchor is equivalent to
+\[
+ CH-9C^2-3f_0^2-3f_1^2=0,\qquad
+ H^2-8U^2-12V^2+24W_a^2-4C^2=0.
+\]
+\end{lemma}
+\begin{proof}
+By Definition 4, Observation 5 and Facts (a), (b), (c), (e) in the proof of
+Proposition 6 of \cite{koenigsmann-defining}, the algebra is ramified
+exactly at $2,3$, the trace set is unrestricted at the other places, and it
+is integral at its two ramified places
+$2,3$, contains integral traces with residues $1$ at $2$ and $0$ at $3$,
+and is determined by these local trace conditions. These are the explicit
+trace facts used here, in addition to the older sum-of-traces criterion.
+If $m=\min(v_p(a),v_p(b))<0$, then at $3$ the sum of squares has valuation
+$2m$, while at $2$ it has valuation $2m$ for unequal valuations and
+$2m+1$ for equal finite valuations. Thus $9+3(a^2+b^2)$ would be
+nonintegral, proving one implication, with zeros covered by infinite
+valuation. Conversely integral $a,b$ give a trace congruent to zero at
+$3$. At $2$ it is odd or belongs to $4\Z_2$. For the latter case put
+$x_0=h/2\in2\Z_2$, where $h$ is this trace. If $x_0\equiv2\pmod4$, then
+$(x_0^2-1)/3\equiv1\pmod8$ is a square, giving
+$x_0^2-3v^2=1$. If $x_0\equiv0\pmod4$, then $1-x_0^2/6$ is a square,
+and $u=v=1$, $w^2=1-x_0^2/6$ gives
+$x_0^2-2u^2-3v^2+6w^2=1$. The local trace criterion supplies rational
+witnesses. Finally divide the two homogeneous equations by $C^2$,
+which is allowed because the retained constant $C$ is nonzero. This is
+an equality of existential projections, not a rational formula choosing
+quaternion witnesses.
+\end{proof}
+
+\subsection{Local and normalized Lucas tests}
+
+Write
+\[
+ \mathcal F(s,t,z)=t^2-s(s-2)tz+(s-2)^2z^2-1.
+\]
+\begin{lemma}[Local Lucas residual]\label{lem:quartic-local-lucas}
+The primary and alternate logarithm comparisons, before any proxy equality
+is used, give local integral quotients $C_s,C_t,C_z$ congruent to the
+integer root indices modulo $p^{40}$. An order-$40$ test of
+$\mathcal F(C_s,C_t,C_z)$ implies $p^{40}\mid\mathcal F(s,t,z)$.
+\end{lemma}
+\begin{proof}
+The implication follows by substitution into the polynomial with integer
+coefficients. One may evaluate the field residual using
+\[
+ V=(C_s-2)C_z,\quad D_L=C_sC_t-V,\quad
+ E_L=C_t^2-VD_L-1.
+\]
+These are quadratic equations, and $E_L=\mathcal F(C_s,C_t,C_z)$.
+They replace the three proxy comparisons and the global proxy equation.
+They do not impose $E_L=0$ as a field equality. Removal of the proxy
+coordinates requires their exclusive incidence in that equation and those
+comparison arguments. Integer completeness and the reverse input
+implication use the two height contradictions below; no conversion of
+arbitrary old proxy witnesses is asserted.
+\end{proof}
+
+\begin{lemma}[Normalized local Lucas evaluation]
+\label{lem:quartic-normalized-lucas}
+Let $\Lambda p_H=G_H$ be the common negative-logarithm equation. For the
+three Lucas numerators replace their quotient blocks and the preceding
+evaluation by
+\begin{gather*}
+ B_i\Lambda=G_i\quad(i=s,t,z),\qquad P B_s=p_s,\\
+ (U+V)p_t=P B_t,\qquad K_Lp_t=(1-2P)B_t,\\
+ Vp_z=(1-2P)B_z,\qquad E_L=U^2-K_LV-P^2.
+\end{gather*}
+An order-$40$ test of $E_L$ has the same required integer consequence.
+Every integer input still admits the changed witnesses.
+\end{lemma}
+\begin{proof}
+The global nonvanishing of the retained $G_i$ implies
+$\Lambda,p_H,B_s,B_t,B_z\ne0$. Also $p_t\ne0$: otherwise the two
+equations with left factor $p_t$ would force both $P=0$ and $1-2P=0$.
+At a consumed place all primary points are formal, so their $p_i$ are
+nonzero. Put $C_i=B_i/p_i$. Then $P=1/C_s$ and direct substitution gives
+\[
+ E_L=P^2\mathcal F(C_s,C_t,C_z).
+\]
+Since $C_s$ is locally integral, the implication
+$v(E_L)\ge40\Rightarrow v(\mathcal F(C_s,C_t,C_z))\ge40$ is valid even
+when $C_s$ is not a unit. No local denominator has been discarded.
+
+For completeness the integer $s\ne0$ and all root points are fixed before
+the prime-pattern theorem is used. Its prescribed finite-exclusion version
+allows every chosen prime to avoid the divisors of $s$. Then $C_s$ is a
+unit at the consumed place. The old order-$40$ residual implies the new
+one, and the displayed equations assign the new witnesses. This imposes
+no compatibility between group orders at different primes.
+
+Globally $p_s$ or $p_z$ may vanish at an occurrence not being consumed in
+the local argument. Such points have $x=\pm d$ and are covered by the
+regular extension in Lemma~\ref{lem:quartic-joint-chart}; they must not be
+excluded by reusing an earlier blanket nonzero assertion. At a consumed
+place $C_s=2$ gives $P=1/2$ and $V=K_L=0$, since both $p_t$ and $p_z$
+are nonzero there. No division by $1-2P$ is needed. Globally the branch
+$P=1/2$, $p_z=0$ forces $K_L=0$ but need not force $V=0$; the latter
+value may be chosen in the completeness construction.
+\end{proof}
+
+The retained field lists can now be stated without proxy coordinates.
+In a full occurrence there are the five primary $f$ values, the common
+$\overline{f(J)}$, the beta residual, $E_L$, and five alternates.
+In a beta-only occurrence there are two primary $f$ values, the common
+field, the beta residual and two alternates. In a Lucas-only occurrence
+there are four primary $f$ values, the common field, $E_L$ and four
+alternates. These lists have lengths $13,6,10$. The formal fields all have
+order one. The beta residual and beta alternate have order $12$; the
+Lucas residual and Lucas alternates have order $40$. The denominator
+alternate has order $e_0=40$ in full and Lucas-only occurrences, and
+$e_0=12$ in beta-only occurrences. Its $G$ precision is the same $e_0$.
+
+\begin{theorem}[The two height contradictions]
+\label{thm:quartic-selective-arithmetic}
+Retain the inherited scalar and contact-height conclusions, and the integer
+root indices $n,s,t,z$ of the chosen carrier, with $s,z\ne0$. Let
+$\beta=X^2+2$ and $\beta'=2\beta$. Suppose the
+local tests above give $C_i\equiv n_i\pmod{p^{e_i}}$ at all consumed
+contacts, with beta residual $C_A-\beta'$. Put $H_*=5H$. Suppose
+\[
+ n_Q^2-6<7H_*N^{19/e},\qquad
+ h(\beta')<a/40,\qquad \log(40H_*)<a/40,
+ \qquad a=|s|>(24H_*)^{10},
+\]
+where the first inequality is the contact-height bound whenever the
+appropriate radical powers divide $N$. Then the changed arithmetic source
+has the same integer-input conclusion as Version 3.
+\end{theorem}
+\begin{proof}
+If $\Delta=\mathcal F(s,t,z)\ne0$, every relevant order-$40$ radical
+power divides $|\Delta|$. By three-mode coverage, all three heights in
+$B_L=\max(|s|,|t|,|z|)$ satisfy the assumed inequality. Since
+$|\Delta|<5B_L^4$, the same elementary estimate as in Version 3 gives
+\[
+ B_L^{2-76/40}<24H_*.
+\]
+This contradicts $B_L\ge a>(24H_*)^{10}$. Therefore $\Delta=0$.
+The displayed lower bound on $a$ gives $|s|\ge7$, and $z\ne0$ was
+retained. The Lucas lemma therefore gives the stronger individual conclusion
+$|t|>\exp(a-3)$, not merely a bound on $\max(|t|,|z|)$.
+
+If $\beta'\ne n$, put $N=|\operatorname{num}(\beta'-n)|$.
+The beta contacts cover $A,T$, so with $B=\max(|n|,|t|)$ one has
+\[
+ B^2<7H_*N^{19/12}+6,\qquad
+ N\le2e^{h(\beta')}B.
+\]
+Thus $B^{2-19/12}<40H_*e^{(19/12)h(\beta')}$ and
+\[
+ \log B<\frac{12+19}{40(24-19)}a=\frac{31}{200}a<a-3,
+\]
+contrary to $B\ge|t|$. Hence $\beta'=n$ is an integer. $\beta'=2\beta=2(X^2+2)$;
+writing $X=u/v$ in lowest terms gives $v^2\mid2$, hence again $v=1$.
+\end{proof}
+
+
+\subsection{General root carrier}
+\label{sec:quartic-general-root-variant}
+
+\begin{lemma}[Integer doubled root indices]
+\label{lem:quartic-doubled-indices}
+Let $R=(1+\sqrt2,2\sqrt2)$, so direct duplication gives $2R=P_*$.
+Every $Q\in E(K)$ has a unique integer $n_Q$ with $2Q=n_QP_*$.
+It is nonzero exactly when $Q$ is nontorsion. For such a point,
+\[
+ h(x(Q))>n_Q^2/4-4.
+\]
+\end{lemma}
+\begin{proof}
+The inherited generator assertion gives $2Q=n_QP_*$. The torsion
+assertion makes its kernel exactly $E[2](K)$, so equivalently
+$Q=n_QR+\tau$, $\tau\in E[2](K)$. Uniqueness follows from the infinite
+order of $P_*$. The unchanged height bounds give
+\[
+ n_Q^2-6\le h(x(2Q))\le4h(x(Q))+\log676.
+\]
+Since $(6+\log676)/4<4$, the stated inequality follows.
+\end{proof}
+
+The root points $A,S,T,Z,J_0,J$ may now be any nontorsion points of $E(K)$.
+Their indices always mean the integer doubled indices of the lemma. They
+are distinct from the half-integer coefficients used for private points
+in the earlier carrier convention.
+
+\begin{lemma}[Small general-root charts]
+\label{lem:quartic-general-root-charts}
+For $A,S,T,Z$ retain $x,y$ and the actual first-doubling square $q=x^2$,
+and impose $y^2=xq-Dx$. For $S$ also retain $xf=1$, $yz+x=0$.
+Keep the nonzero tangent denominator, or the direct tangent
+equation of Lemma~\ref{lem:quartic-tangent-fusion}. For each of $J_0,J$
+use $f,z,k$ with
+\[
+ k=fz,\qquad f=z^2-Dk^2,
+\]
+with $z\ne0$ enforced by its retained inverse. These charts reconstruct exactly
+the required nontorsion root points.
+\end{lemma}
+\begin{proof}
+The first equations are the curve equation with a reused square. The
+nonzero tangent denominator excludes all points with $y=0$, hence all
+torsion. The two extra S equations preserve its reciprocal and parameter.
+In the other chart, $z\ne0$ implies $f\ne0$: $f=0$ would force $k=0$
+and then $z=0$. Set $x=1/f$, $p=-1/z$, $y=xp$. Dividing the second
+equation by $z^2$ gives $fp^2=1-Df^2$, so $P=(x,y)$ lies on the curve
+and $xy\ne0$. Conversely every nontorsion point gives these witnesses.
+These are rational maps on the stated nonzero domains. The new equations
+cannot justify deleting an unrelated guard without its incidence proof.
+\end{proof}
+
+For clarity, the inherited scalar argument still applies to the new
+indices. At each odd contact prime of $\beta$ outside $S_*$, the
+constant-left scalar norm tree excludes negative odd raw valuation and
+gives all six assigned coefficient orders. The first four put $S,J_0$
+in the formal group at every place above that prime. Writing
+$2S=sP_*$ and $2J_0=j_0P_*$, with nonzero integer $j_0$, the last two
+give $v_p(s/j_0)\ge32$, hence $v_p(s)\ge32$. The logarithm comparison
+uses the exact identity $[2j_0]S=[2s]J_0$. It is valid also at inert
+primes: both rational coefficients are tested and the extension is
+unramified outside two. The unchanged scalar raw polynomial and its
+small-prime correction detect every prime of $M_5(\beta)$, including
+an odd infinite contact. Consequently
+\[
+ M_5(\beta)^{32}\mid s,\qquad
+ h(\beta)\le H M_5(\beta)^{19}\le H|s|^{19/32}.
+\]
+The height theorem's domain condition holds. The value $\beta=X^2+2$
+is none of $0,1,-343/32$, and $\beta=2401$ would require the nonsquare
+integer $2399$ to be a rational square. Doubling both indices therefore
+changes neither the scalar ratio nor its divisibility argument.
+
+Take $H_*=5H$ and $\beta'=2\beta$. The unchanged contact-height bound
+$h(x(Q))<7HN^{19/e}$ and the preceding lemma give
+\[
+ n_Q^2-6<28HN^{19/e}+7<35HN^{19/e}=7H_*N^{19/e}.
+\]
+The scalar ratio is still $s/j_0$, since doubling both indices cancels
+the factor two. Its order-$32$ tests give
+$h(\beta)\le H|s|^{19/32}$. The full anchor at both $2$ and $3$ is
+retained. Its $3$-adic consequence, using $2S=sP_*$, is
+\[
+ s\in2\cdot3^{2^{24}-1}\Z\setminus\{0\},\qquad
+ \log_2|s|>25165822.5.
+\]
+Here formal doubling at $3$ is an isometry and the retained calculation
+is $v_3(f(sP_*))=2+2v_3(s)$. The $2$-adic part of the anchor is not
+replaced by this consequence. Since $\log_2H_*<2093969$, one has
+\[
+ |s|>(24H_*)^{10},\qquad |s|>(40H_*)^{32/13},\qquad
+ h(2\beta)<|s|/40,\quad\log(40H_*)<|s|/40.
+\]
+For example the first two required binary cutoffs are respectively
+$10\cdot2093974$ and $(32/13)\cdot2093975$, both below the displayed
+anchor lower bound. Thus Theorem~\ref{thm:quartic-selective-arithmetic}
+applies with unchanged orders. Both beta-bearing comparators must now
+test $C_A-2\beta$; the scalar definition $\beta=X^2+2$ and its raw scalar
+polynomial remain unchanged.
+
+
+\subsubsection{Doubled targets}
+\label{sec:quartic-target-two-variant}
+
+\begin{lemma}[Targets $2Q_i$ and $P_*$]
+\label{lem:quartic-target-two}
+The general-root construction may use targets $2Q_i=n_iP_*$ and fixed
+denominator target $P_*=2R$, requiring only one doubling of each variable
+root. It preserves the local integer congruences and integer completeness.
+\end{lemma}
+\begin{proof}
+For soundness write $2X_0=hP_*$, $2X_i=m_iP_*$ and $2J=j_dP_*$.
+The root $J$ is nontorsion, so $j_d\in\Z\setminus\{0\}$.
+The doubled differences have indices $h-2$ and $m_i-2n_i$.
+Lemma~\ref{lem:quartic-doubled-private-comparison} and the alternate
+tests give
+\[
+ v_p((h-2)/j_d)\ge e_0,\qquad
+ v_p((m_i-2n_i)/j_d)\ge e_i,
+\]
+where $e_0=40$ in full/Lucas mode and $e_0=12$ in beta-only mode.
+Since $j_d$ is integral, $h\equiv2$ and $m_i\equiv2n_i$ at those orders.
+In particular $h$ is a unit at the odd prime. The exact identity
+$[2h]X_i=[2m_i]X_0$ permits logarithm comparison on the primary formal
+group, giving ratio $m_i/h$. The retained relative errors, with
+$e_i\le e_0$, give $C_i\equiv n_i\pmod{p^{e_i}}$.
+
+For completeness let $N_{p,1},N_{p,2}$ be the two full finite group
+cardinalities supplied by the inherited ordinary-prime pattern. It gives
+$\gcd(N_{p,1},N_{p,2})=4$ and $p\nmid N_{p,1}N_{p,2}$. Each reduction
+has exactly four rational two-torsion points, so its doubling image has
+order $M_{p,i}=N_{p,i}/4$. Consequently $M_{p,1}$ and $M_{p,2}$ are
+coprime and prime to $p$. Every reduction of a doubled global point is
+killed by the corresponding $M_{p,i}$; no global reduction-surjectivity
+or cyclicity claim is needed.
+Put $j_c=\operatorname{lcm}_p M_{p,2}$ and $J=j_cP_*$, whose doubled
+index is $j_d=2j_c$. Separately for each contact choose
+\[
+ k\equiv0\pmod{M_{p,1}},\quad
+ k\equiv1\pmod{M_{p,2}},\quad
+ k\equiv1\pmod{p^{40+v_p(j_c)}},\qquad k\notin\{0,1,-1\}.
+\]
+The three moduli are compatible. Set $X_0=kP_*$ and $X_i=kn_iP_*$.
+The primary points are formal at the first place. Their differences from
+the chosen targets, and $J$, are formal at the second. The alternate
+logarithm ratios are $(k-1)/j_c$ and $(k-1)n_i/j_c$, while the primary
+ratios are $n_i$. This supplies every required order. The finite exclusions
+avoid zero points and the old open-chart exceptional cases. There is no
+simultaneous CRT condition on different contact occurrences.
+\end{proof}
+
+The fixed target can be specified directly by
+\[
+ \begin{array}{c|cc}
+ &1&\sqrt2\\\hline
+ x(P_*)&57/8&-7/2\\
+ q=y(P_*)/x(P_*)&-87/41&129/164\\
+ F_Q=1/x(P_*)&456/1681&224/1681\\
+ s_Q=(x(P_*)+DF_Q)/q&-55123/14637&19301/58548\\
+ t_Q=1/q^2&7624/14161&39904/127449
+ \end{array}
+\]
+Direct substitution verifies the curve and target identities. The source
+stores $x,q,F_Q$ and the conjugates of $s_Q,t_Q$. Its remaining coefficients
+are affine in $\jmath$:
+\[
+ r=\jmath\left(-\frac{232}{357}+\frac{86}{357}\sqrt2\right),\qquad
+ u=\jmath\left(\frac{291673}{127449}-\frac{29440}{42483}\sqrt2\right),
+\]
+when $\jmath=1/\overline{z(J)}$. The ten constant bindings and four
+affine bindings replace the fixed derivation, subject to full incidence
+checks. Their isolated coefficient calculation does not bound the complete
+sum of squares.
+
+
+
+\subsection{Exact implementation refinements}
+
+
+\begin{lemma}[Direct tangent equation]\label{lem:quartic-tangent-fusion}
+For a curve point with $q=x^2$, replace the inverse and slope equations
+$(2y)h=1$, $\lambda=(3q-D)h$ by
+$2y\lambda=3q-D$. This preserves all retained rational coordinates.
+\end{lemma}
+\begin{proof}
+The new equation and the curve force $y\ne0$. If $y=0$, then $x=0$ or
+$x^2=D$, and $3q-D$ is respectively $-D$ or $2D$, a contradiction.
+The unique inverse is restored by $h=(2y)^{-1}$. There is also the
+polynomial restoration
+\[
+ h=\frac{2\lambda(3q-2D)-9xy}{4D^2},
+\]
+because $(3q-D)(3q-2D)-9x(x^3-Dx)=2D^2$.
+For a retained second doubling its input is on the curve: with
+$t=X-x$, $Y_0=-y-\lambda t$, the identity
+\begin{align*}
+ Y^2-X^3+DX={}&y^2-x^3+Dx+t(2y\lambda-3x^2+D)\\
+ &+t^2(\lambda^2-X-2x)+(Y-Y_0)(Y+Y_0)
+\end{align*}
+proves curve preservation from the first doubling equations. Target-two
+sources have only the first four variable-root doublings; no second set
+of savings or equations is present in that branch.
+\end{proof}
+
+
+
+
+
+\begin{lemma}[Shared field-square evaluation]
+\label{lem:quartic-shared-field-square}
+For the common field $F=a+b\sqrt2=\overline{f(J)}$, bind once
+$c=a^2+2b^2$, $d_s=2ab$. In each designated order-one packed field replace
+\[
+ Y=a+\theta b,\qquad PW=2aY-a^2+2b^2
+\]
+by $PW=c+\theta d_s$, with the same $P=r^2$. This is an exact projection
+preserving $W$, every higher norm node and the pole witnesses.
+\end{lemma}
+\begin{proof}
+Substitution gives $2a(a+\theta b)-a^2+2b^2=c+\theta d_s$.
+The inverse map restores $Y=a+\theta b$, without division. All zero
+cases are included. The two coefficients describe $F^2$, but their
+packed use still enforces the original order-one condition on $F$;
+they must not be relabelled as a new order-one test of $F^2$. The same
+identity permits reuse of an already available primary-$f$ square in
+its own packed numerator, after checking that square's defining rows.
+\end{proof}
+
+
+
+\begin{lemma}[First packed denominator and norm fusion]
+\label{lem:quartic-first-norm-fusion}
+For the first order-one primary field only, replace its virtual denominator
+$W_0=T_0/r^2$ by $W_0=T_0/r$, and its first norm $N=1+rW_0^2$ by
+\[
+ T_0=2a_0Y_0-a_0^2+2b_0^2,\qquad rN-r-T_0^2=0.
+\]
+Keep every other denominator, the conic, all higher tree nodes and the
+ordinary pole. The arithmetic input projection is unchanged.
+\end{lemma}
+\begin{proof}
+The earlier tree proof still gives $v_p(W_0)>-R$, so $v_p(T_0)>0$.
+More generally $v_p(T)\ge2e-1$ suffices for an order-$e$ field test:
+opposite parity gives $v_p(Y)\ge e$ and
+$\delta+2v_p(b)\ge2e-1$, hence
+$\delta+v_p(b)\ge e+(\delta-1)/2\ge e$.
+Thus the first field still has order one, and every other deduction is
+unchanged. For completeness the old depth-two choice has $v_{p_0}(T_0)\ge2$
+and $R=1$, so the new virtual leaf is integral and the root remains a unit.
+For fixed nonzero $r$, all new tree values remain rational polynomials in
+$\theta$, allowing the same exceptional-place pole approximation.
+
+After that arithmetic change, the displayed fusion is exact: set
+$T_0=rW_0$ forward and $W_0=T_0/r$ backward. The retained conic proves
+$r\ne0$. These maps preserve $N$ and all later nodes, including $N=0$
+or $T_0=0$ and negative rational $r$. The unguarded case $r=0$ would be
+invalid and is not admitted. The old $r^2$ coordinate remains for other
+leaves. The changed field is primary $f(H)$, not the separately shared
+common field $\overline{f(J)}$.
+\end{proof}
+
+
+\subsection{Composition, completeness and finite realization}
+\label{sec:quartic-composition}
+
+For integral input first set $\beta=X^2+2$ and
+take $A=\beta P_*$, whose doubled index is $2\beta$. Choose $J_0,S$ together in the old subgroup with the
+required scalar and full anchor divisibilities. Their doubled-index ratio is unchanged. The Lucas existence lemma
+then gives $t,z$ for the now fixed $s$, and take $T=tR$,
+$Z=zR$. Fix the eight abscissa coefficients and denominator data before
+using the prime-pattern theorem. Exclude the divisors of the fixed nonzero
+$s$ as well as every earlier finite exceptional set.
+
+Next choose one common comparison point $J$ using the stated least common
+multiple, then choose the private points separately for each occurrence,
+using precisely the target-two CRT rule.
+Construct all joint-graph, reciprocal-$G$, normalized-ratio and
+shared-square fields. Only then choose each private conic point and its
+norm/pole witnesses by simultaneous approximation. Repeated primes retain
+their common orientation but separate conic and private-point witnesses.
+The constructions above give every required equation. In the reverse
+direction the conic and pole decode field orders at every odd-contact
+prime, without an ordinariness assumption. The graph and doubled logarithm
+arguments give integer-index congruences, and the two height contradictions
+give the integer input. The exact fusions preserve the specified
+retained coordinates; arithmetic source replacements use the full
+soundness and completeness argument rather than a claim about arbitrary
+old private witness tuples.
+
+Finally each selected source must be compiled afresh into rational
+quadratic residual equations with the original input coordinate retained.
+For real, hence rational, values the all-weights-one sum of their squares
+vanishes exactly when every residual vanishes. Clearing nonzero rational
+row denominators preserves those zero sets and gives an integral polynomial
+of degree at most four.
+This elementary last step does not prove the inherited arithmetic inputs.
+The exact source, complete flattening map, allowed algebraic transformations,
+and full coefficient collection must be checked for the single selected
+endpoint. None of the local identities, allocation counts or isolated
+coefficient bounds in this appendix is an assertion of that final check.

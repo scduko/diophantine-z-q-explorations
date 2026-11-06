@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Exact projection-preserving algebraic equivalence to the pinned source system; exact full integer expansion. The source arithmetic theorem is not checked here.",
+  "witnesses": 5294,
+  "variables": 5295,
+  "rows": 4873,
+  "monomials": 74046,
+  "degree": 4,
+  "max_abs_coefficient": 685783949153203534233890,
+  "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+  "source_sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+  "operations": {
+    "parity_conic": 1
+  },
+  "total_operations": 1,
+  "weights_greater_than_one": 0,
+  "expanded_bytes": 1453900,
+  "compressed_bytes": 407747,
+  "expanded_sha256": "058e438b3112a8d463661663a7d6581e86760f5a9bc2cf5d5d0e3e2a5bba1bad",
+  "certificate_sha256": "232d536ee6e884cdc283e1ddd9528c2a7123e6c6ef1504019677b992874cf177",
+  "distinct_circuit_identities_checked": 0,
+  "checker_sha256": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90",
+  "seconds": 1.025
+}

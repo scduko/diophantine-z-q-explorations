@@ -1,67 +1,28 @@
-# Version 2 research handoffs
+# Version 5 research handoffs
 
-The [Version 2 release](https://github.com/elliotglazer/diophantine-z-q/releases/tag/quartic-12504-version-2)
-offers two handoff formats.
+The Version 5 handoff contains the 1,272-variable quartic manuscript, the complete independently reconstructed program and coefficient tables, exact certificates, source reviews, and dependency inventory. The Version 4 manuscript and package, earlier quartics, and original construction remain at their existing repository paths.
 
-The full download is 359 MB; the current-only download is 19 MB.
-[Release evidence](releases/version2/README.md) records their exact sizes,
-snapshot commit, checksums, and verification results.
+The release tag is `quartic-1272-version-5`. Its two archive names are:
 
-| Asset | Contents |
+| Archive | Contents |
 | --- | --- |
-| [Full handoff](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-12504-version-2/z-in-q-version2-full-handoff.zip) | Exact current public snapshot, selected mathematical notes, and the unchanged public November 4 revision-2 baseline ZIP |
-| [Current-only handoff](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-12504-version-2/z-in-q-version2-current-handoff.zip) | The same current snapshot and selected notes, with a URL and checksum for the baseline instead of embedding it |
+| `z-in-q-version5-current-handoff.zip` | The complete recorded public Git snapshot and the selected mathematical research history |
+| `z-in-q-version5-full-handoff.zip` | The same collection plus the unchanged November 4 revision-2 baseline ZIP |
 
-Use the full ZIP for a handoff self-contained for these included collections.
-It is not a copy of every private research file or every historical primary
-source. The current-only ZIP is useful when the historical baseline is
-already available separately.
+The archives are built only after the complete Version 5 snapshot is committed. The release's `SHA256SUMS`, `BUILD_RECEIPT.json`, and frozen `handoff-plan.json` identify the actual archive bytes and included commit. A later commit recording these receipts cannot be included in the archive it describes.
 
-Before opening or running archive contents, compare the ZIP's SHA-256 with
-the release's [SHA256SUMS](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-12504-version-2/SHA256SUMS).
-The [build receipt](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-12504-version-2/BUILD_RECEIPT.json)
-records the snapshot commit, archive identities and frozen-plan digest.
-An embedded manifest alone does not authenticate its own claimed source.
+Compare the archive checksum with the independently obtained release checksum, then run:
 
-After extraction, start with `START_HERE.md` and `CURRENT_STATE.json`.
-The layout is:
-
-- `current/`: every regular tracked file of the exact public snapshot commit,
-  including the Version 2 manuscript, exact quartic, source, checks, evidence,
-  dependency inventories and accepted Lean helpers.
-- `history/`: 18 selected mathematical proof, review and circuit records.
-  The low-precision experiments are explicitly marked unadopted.
-- `baseline/`: the unchanged historical ZIP, present only in the full handoff.
-- `RESEARCH_NOTES.md` and `COVERAGE.md`: current status and the precise limits
-  of the selection.
-- `PLAN.json`, `MANIFEST.json` and `verify_handoff.py`: exact identities and
-  an integrity checker with optional safe extraction.
-
-To verify an archive using this checkout's verifier:
-
-```sh
-python -E -B handoff/verify_handoff.py PATH_TO_HANDOFF.zip
+```
+python -E -B handoff/verify_handoff.py ARCHIVE.zip --expected-archive-sha256 ARCHIVE_SHA --expected-plan-sha256 PLAN_SHA
 ```
 
-Add `--expected-plan-sha256 DIGEST` using the digest obtained from the release
-receipt. Add `--extract NEW_DIRECTORY` to verify and extract into a new
-directory. The verifier rejects unsafe paths, duplicate or case-colliding
-members, symlinks, modified entries and missing current proof-package files.
-It also checks every entry's CRC and SHA-256.
+Add `--extract NEW_DIRECTORY` to extract only after verification. The verifier checks every member, exact planned file coverage, all Version 5 package pins, the package manifest, the complete fresh-reproduction receipt, and the preserved historical file hashes. It rejects unsafe paths, duplicate or case-colliding names, symlinks, missing files, and unexpected package files.
 
-Run the manuscript and quartic build commands from the extracted `current/`
-directory. The exact quartic reproduction instructions are in
-`current/quartics/quartic-12504/reproducibility/README.md`. Archive integrity
-checks and mathematical proof reviews have distinct scopes.
+The archived snapshot is under `current/`. Start with `current/quartic_1272.pdf`, `current/quartics/quartic-1272/README.md`, and `current/docs/quartic-1272/README.md`. To rerun all Version 5 checks from an authenticated current-only archive, use [replay_extracted_current.py](replay_extracted_current.py). It keeps replay outputs outside the extracted snapshot.
 
-The historical baseline has 339,860,770 bytes and SHA-256
-`827765f17087e1794c15770221a3a2d0fefed25839566a4a9bfb3b5aaa1ed42b`.
-Its own `current/` directory means current at that archive's date. Extract
-the nested ZIP separately and use its own index and restoration tool for
-older research paths. Its recorded filtering and third-party notices remain
-in force; it is not a new copy of Version 2.
+The historical baseline has 339,860,770 bytes and SHA-256 `827765f17087e1794c15770221a3a2d0fefed25839566a4a9bfb3b5aaa1ed42b`. The full handoff stores those bytes without recompression. The current-only handoff gives the baseline URL and checksum. No old release asset is replaced by a Version 5 archive. The active repository's project credits use Jennifer Park's full given name; the descriptor records the one corresponding editorial exception to its historical file pins.
 
-A later commit may add the ZIP's receipt or checksum to the repository.
-The archive names the earlier exact snapshot it actually contains. See
-[BUILDING.md](BUILDING.md) for the remote build sequence and
-[SCOPE.md](SCOPE.md) for selection rationale.
+Version 4 release records remain in [research-2026-11-06-r3](research-2026-11-06-r3/), [research-2026-11-06-r2](research-2026-11-06-r2/), and the [original Version 4 validation directory](../docs/quartic-4973-validation/). Copies of the previous handoff descriptor and documentation are in [releases/version4](releases/version4/); their relative links retain their original `handoff/` interpretation. The historical Version 3 and Version 2 records are unchanged.
+
+Archive integrity and exact replay are separate from the source arithmetic assumptions. The reconstructed program does not recover Brox's absent original program or table. Neither the package nor its checks complete the Lean formalization. See [BUILDING.md](BUILDING.md) for the build sequence and [SCOPE.md](SCOPE.md) for the selection policy.

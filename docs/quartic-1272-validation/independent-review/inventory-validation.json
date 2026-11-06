@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Execution of the authored read-only inventory validator, with an externally selected input-register hash and before/after file pins.",
+  "exitCode": 0,
+  "inputsUnchangedDuringValidation": true,
+  "inputPins": {
+    "quartic_1272.tex": "16033e0471df605093b28210a9f81718c2486b147016ec8afc75d166dff0b90f",
+    "docs/quartic-1272/bibliography.json": "b4567c380a2e9c7c99a016fea272125e671671d5455ef51729a88dd5d0c45f6f",
+    "docs/quartic-1272/citations.json": "7cc61c72de7e871f786b1f703cc95db2852cdb5d7a5b241d1ec0ad1941b02a38",
+    "docs/quartic-1272/coverage.json": "55e7e898c36b7e7e5095eb1055e2bc1ed0132513ff63b7db8957423d7b8534d1",
+    "docs/quartic-1272/dependency-graph.json": "97bab18d9d6988e233e7e5364eaa160dd8d37f12752a3d11d8b40f35ebbd1541",
+    "docs/quartic-1272/inherited-bridge.json": "645efff1efbc8b093687ca7c892c45603524eed03e3bc28d0398daa3d1b335a5",
+    "docs/quartic-1272/internal-results.json": "80491456dae002f429608c4371cc10565ef30fa98791ef19abc10a2f248b3b48",
+    "docs/quartic-1272/new-applications.json": "695769c38917efa35b6256132cd8b77807d6384ab6d27c38f250ff8947ae6c10",
+    "docs/quartic-1272/theorem-applications.json": "62525206bb8a5af3538219a30c5004ef0b43d8236f9e19284758fee81eaaf8bd",
+    "docs/quartic-1272/inventory.py": "3fb098377dcccdcf72623ea77fc1459e5179b4d5d26f8a16b5778d181468fb96"
+  },
+  "log": "inventory-validation.log"
+}

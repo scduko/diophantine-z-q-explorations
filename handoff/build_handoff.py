@@ -11,8 +11,10 @@ from pathlib import Path
 import re
 import subprocess
 import zipfile
+from datetime import date
 
 from verify_handoff import BASELINE_SHA, BASELINE_BYTES, safe_name, stream_hash, verify
+from release_config import validate_release, generated_state, generated_start
 
 
 def encoded(value):
@@ -41,8 +43,9 @@ def main():
     p.add_argument('--output',type=Path,required=True)
     a=p.parse_args()
     plan=json.loads(a.plan.read_bytes())
-    if plan['format']!='quartic-12504-handoff-plan/v1':
+    if plan['format']!='quartic-handoff-plan/v2':
         raise ValueError('Wrong plan format')
+    release=validate_release(plan['release'])
     if not re.fullmatch(r'[0-9a-f]{40}',plan['snapshot_commit']):
         raise ValueError('Expected a full immutable Git commit ID')
     if plan['baseline']['sha256']!=BASELINE_SHA or plan['baseline']['bytes']!=BASELINE_BYTES:
@@ -65,16 +68,19 @@ def main():
     names=[safe_name(f['archive_path']) for f in plan['files']]
     if len(names)!=len(set(names)) or len(names)!=len({n.casefold() for n in names}):
         raise ValueError('Duplicate or case-colliding plan names')
-    reserved={'MANIFEST.json','START_HERE.md','CURRENT_STATE.json','verify_handoff.py','PLAN.json'}
+    reserved={'MANIFEST.json','START_HERE.md','CURRENT_STATE.json','verify_handoff.py','PLAN.json',
+              'release_config.py','legacy_verify_handoff_v2.py'}
     if {n.casefold() for n in reserved}&{n.casefold() for n in names}:
         raise ValueError('Plan overwrites generated handoff metadata')
     a.output.mkdir(parents=True)
-    full_path=a.output/'z-in-q-version2-full-handoff.zip'
-    current_path=a.output/'z-in-q-version2-current-handoff.zip'
+    full_path=a.output/release['assets']['full']
+    current_path=a.output/release['assets']['current']
     inventories=[{},{}]
     def write(archive,index,name,stream,wanted=None,stored=False):
         safe_name(name)
-        info=zipfile.ZipInfo(name,date_time=(2026,11,5,0,0,0))
+        stamp=date.fromisoformat(release['date'])
+        info=zipfile.ZipInfo(name,date_time=(stamp.year,stamp.month,stamp.day,0,0,0))
+        info.create_system=3
         info.compress_type=zipfile.ZIP_STORED if stored else zipfile.ZIP_DEFLATED
         info._compresslevel=1; info.external_attr=0o100644<<16
         digest=hashlib.sha256(); size=0
@@ -106,56 +112,24 @@ def main():
         current_files=sorted(wanted)
         for i,archive in enumerate(archives):
             included=i==0
-            state=dict(manuscript='Version 2',manuscript_path='current/quartic_12504.tex',
-                       pdf_path='current/quartic_12504.pdf',snapshot_commit=plan['snapshot_commit'],
-                       current_snapshot='Complete exact file tree of the recorded public commit',
-                       verification_receipt='current/'+plan['verification_receipt'],
-                       variables=12504,witnesses=12503,monomials=135721,degree=4,
-                       max_abs_coefficient=685783949153203534233601,
-                       baseline_included=included,baseline=plan['baseline'],
-                       selected_history='Incomplete curated mathematical notes; private v5 is not included',
-                       historical_filtering='Baseline retains its previously recorded filtering policy; no new baseline content audit is claimed')
-            start=f'''# Version 2 public research handoff
-
-Start with [the manuscript](current/quartic_12504.pdf), its [TeX](current/quartic_12504.tex),
-the [quartic package](current/quartics/quartic-12504/README.md), and
-[research notes](RESEARCH_NOTES.md). [COVERAGE.md](COVERAGE.md) explains included and omitted material.
-
-The complete current snapshot is public commit `{plan['snapshot_commit']}`.
-A later publication commit may add this archive's checksum or receipt; those
-metadata additions cannot appear inside the archive they identify.
-
-The historical public baseline is {'included unchanged at `'+baseline_path+'`' if included else 'NOT included in this current-only ZIP'}.
-Its size is {BASELINE_BYTES:,} bytes and SHA-256 is `{BASELINE_SHA}`.
-Download: {plan['baseline']['url']}
-The baseline's own `current/` directory means current at its historical date.
-This archive does not include the private v5 handoff or all later private work.
-
-Run `python verify_handoff.py PATH_TO_THIS_ZIP` to check every entry and the
-complete payload inventory. Add `--extract NEW_DIRECTORY` to verify and extract
-into a new directory. For the full handoff, extract the nested baseline separately
-and use its own index and restoration script for historical paths.
-
-First compare this ZIP's SHA-256 with the checksum obtained from the public
-release. An embedded manifest alone does not authenticate its claimed Git origin.
-Alternatively bind the plan with `--expected-plan-sha256 DIGEST`, using the
-plan digest from the independently obtained release build receipt.
-
-Archive integrity is separate from the mathematical and computational reviews.
-The exact quartic replay and fresh reproduction instructions are in
-`current/quartics/quartic-12504/reproducibility/README.md`.
-The main Lean theorem remains unproved; the retained helper sources do not change that status.
-'''.encode('utf-8')
+            state=generated_state(plan,included)
+            start=generated_start(plan,included)
             for name,raw in [('START_HERE.md',start),('CURRENT_STATE.json',encoded(state)),
-                             ('PLAN.json',a.plan.read_bytes()),('verify_handoff.py',Path(__file__).with_name('verify_handoff.py').read_bytes())]:
+                             ('PLAN.json',a.plan.read_bytes()),('verify_handoff.py',Path(__file__).with_name('verify_handoff.py').read_bytes()),
+                             ('release_config.py',Path(__file__).with_name('release_config.py').read_bytes()),
+                             ('legacy_verify_handoff_v2.py',Path(__file__).with_name('legacy_verify_handoff_v2.py').read_bytes())]:
                 write(archive,i,name,io.BytesIO(raw))
-            manifest=dict(format='quartic-12504-public-handoff/v1',snapshot_commit=plan['snapshot_commit'],
+            manifest=dict(format='quartic-public-handoff/v2',snapshot_commit=plan['snapshot_commit'],
                           current_files=current_files,files=inventories[i],
                           baseline=dict(**plan['baseline'],included=included,archive_path=baseline_path),
                           history_scope=state['selected_history'])
             # The manifest covers every other entry. Its whole-file identity is
             # subsequently bound by the external ZIP checksum and receipt.
-            archive.writestr('MANIFEST.json',encoded(manifest))
+            stamp=date.fromisoformat(release['date'])
+            info=zipfile.ZipInfo('MANIFEST.json',date_time=(stamp.year,stamp.month,stamp.day,0,0,0))
+            info.create_system=3
+            info.external_attr=0o100644<<16
+            archive.writestr(info,encoded(manifest),compress_type=zipfile.ZIP_DEFLATED,compresslevel=1)
     reports=[]
     for path in (full_path,current_path):
         report=verify(path,hashlib.sha256(a.plan.read_bytes()).hexdigest())
@@ -163,7 +137,7 @@ The main Lean theorem remains unproved; the retained helper sources do not chang
             report.update(stream_hash(source))
         report['filename']=path.name; reports.append(report)
     (a.output/'SHA256SUMS').write_text(''.join(r['sha256']+'  '+r['filename']+'\n' for r in reports),encoding='ascii')
-    (a.output/'BUILD_RECEIPT.json').write_bytes(encoded(dict(status='PASS',archives=reports,
+    (a.output/'BUILD_RECEIPT.json').write_bytes(encoded(dict(status='PASS',version=release['version'],date=release['date'],archives=reports,
         plan_sha256=hashlib.sha256(a.plan.read_bytes()).hexdigest(),
         builder_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         verifier_sha256=hashlib.sha256(Path(__file__).with_name('verify_handoff.py').read_bytes()).hexdigest())))

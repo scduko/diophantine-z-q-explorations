@@ -1,0 +1,750 @@
+% Original exposition of the prime-pattern argument, prepared for Version 5.
+% Requires amsmath, amssymb, amsthm, hyperref and the manuscript theorem environments.
+% Publication-status qualifications in this file are intentional.
+\section{Simultaneous primes with coprime adjacent norms}
+\label{sec:v5-sun-proof}
+
+This appendix gives the prime-pattern argument needed for the construction.
+Its strategy is due to Sun~\cite{v5sun}. We supply the local calculations,
+the two ranges of the sieve, the normalization of the ray-class densities,
+and the order in which the parameters are chosen. One input has a different
+publication status from the others. The Artin-symbol linear-forms theorem
+of Frei and Tinkov\'a~\cite{v5ft}, Theorem~1.4 of arXiv version~3, is
+unconditional and is listed by an author as accepted by \emph{Mathematika}.
+We have not verified a final published version. We use that exact theorem
+as an external input, and do not claim that the following proof has only
+published external inputs. In particular, the proof below does not replace
+their ideal-norm nilsequence argument.
+
+Write $\mathrm N(z)=z\bar z$ for $z\in\mathbb Z[i]$, and put
+$d_-(z)=\mathrm N(z-1)$ and $d_+(z)=\mathrm N(z+1)$.
+An Artin or Frobenius element in this appendix is arithmetic Frobenius:
+on residue fields it sends $x$ to $x^{\mathrm N\mathfrak p}$.
+
+\begin{theorem}[The simultaneous prime input]\label{thm:v5-simultaneous-primes}
+Let $c_1,\ldots,c_k$ be distinct integers, where $k\geq2$.
+Let $q\geq1$, let $M$ be an odd squarefree positive integer with $7\nmid M$,
+and let $H,Y>0$. There are positive integers $u,w$ such that
+\[
+ q\mid w,\qquad u/w^2>H,\qquad p_j=u+c_jw^2>Y
+ \quad(1\leq j\leq k),
+\]
+where every $p_j$ is prime. Each $p_j$ has a Gaussian prime generator
+$\pi_j$ of norm $p_j$ such that
+\[
+ \pi_j\equiv9\pmod {16},\qquad
+ \pi_j\equiv1+3i\pmod7,\qquad
+ \pi_j\equiv i\pmod M.
+\]
+No odd prime divides both $d_-(\pi_j)$ and $d_+(\pi_j)$.
+For $j\ne h$, no odd prime divides both $d_\epsilon(\pi_j)$ and
+$d_\eta(\pi_h)$, for any $\epsilon,\eta\in\{-,+\}$.
+Moreover,
+\[
+ v_2(d_-(\pi_j))=6,\quad v_2(d_+(\pi_j))=2,\quad
+ \gcd(d_-(\pi_j),d_+(\pi_h))=4\quad\hbox{for all }j,h,
+\]
+and all these norms are coprime to $7M$.
+\end{theorem}
+
+The quantifiers concern fixed data. No estimate uniform in $q,M,k$ or the
+$c_j$ is asserted. We first prove the result for $q=1$. Replacing the
+coefficients by $q^2c_j$ and then replacing the parameter $v$ by $w=qv$
+proves the general case, since the ratio before this substitution can be
+made greater than $q^2H$.
+
+\subsection{Local counts and the medium primes}\label{subsec:v5-local-sieve}
+
+Fix a nonzero integer $\kappa$ and write
+\[
+ Q_\kappa=a^2+b^2-c^2-d^2-\kappa w^2,\quad
+ G_\epsilon=(a+\epsilon)^2+b^2,\quad
+ H_\eta=(c+\eta)^2+d^2,
+ \qquad \epsilon,\eta\in\{1,-1\}.
+\]
+We use $\chi(\ell)=(-1/\ell)$ for odd primes $\ell$.
+
+\begin{lemma}[Finite-field counts]\label{lem:v5-local-counts}
+If $\ell\nmid2\kappa$, then $Q_\kappa=0$ has $\ell^4-1$ nonzero
+solutions over $\mathbb F_\ell$. At most $4\ell^2$ of its solutions satisfy
+$G_\epsilon=H_\eta=0$. If $\chi(\ell)=-1$, the latter set has exactly one
+element.
+
+Let $\gamma_1,\ldots,\gamma_k$ be distinct integers, including $0$ and
+$-\kappa$, and put $L_j=a^2+b^2+\gamma_jw^2$. Outside a fixed set of primes
+containing the divisors of $2\kappa\prod_{j<h}(\gamma_j-\gamma_h)$, the
+proportion $g(\ell)$ of nonzero zeros of $Q_\kappa$ on which some $L_j$
+vanishes is
+\begin{equation}\label{eq:v5-local-g}
+ g(\ell)=
+ \frac{(\ell-1)(\ell-\chi(\ell))
+ [2\nu_0+(k-2)(\ell-\chi(\ell))]+\nu_0^2-1}{\ell^4-1},
+ \qquad \nu_0=\ell+(\ell-1)\chi(\ell).
+\end{equation}
+Consequently $g(\ell)=(k+2\chi(\ell))/\ell+O_k(\ell^{-2})$.
+\end{lemma}
+\begin{proof}
+The norm $x^2+y^2$ has $\nu_0$ representations of zero and
+$\ell-\chi(\ell)$ representations of every nonzero element. This follows
+either by factoring over $\mathbb F_\ell$ when $\chi=1$, or by the norm map
+from $\mathbb F_{\ell^2}$ when $\chi=-1$. Summing these fibres for
+$Q_\kappa$ gives $\ell^4$ solutions including the origin.
+In the split case, each of the equations $G_\epsilon=0$ and $H_\eta=0$
+is a union of two lines. On each of the four pairs of lines the remaining
+equation is
+$-2\epsilon a+2\eta c-\kappa w^2=0$, leaving at most $\ell^2$ choices.
+In the inert case these equations force
+$(a,b,c,d)=(-\epsilon,0,-\eta,0)$, and then $w=0$.
+
+For $w\ne0$, the conditions $L_j=0$ are disjoint. For the two distinguished
+coefficients one norm is zero and the other is nonzero, giving
+$2\nu_0(\ell-\chi)$ choices. Each other coefficient gives
+$(\ell-\chi)^2$ choices. There are $\ell-1$ possible nonzero $w$.
+For $w=0$, both norms are zero, giving $\nu_0^2-1$ nonzero vectors.
+This proves \eqref{eq:v5-local-g}. In particular, when $k=2$ and
+$\chi=-1$, its value is $2/(\ell^2+1)$, not zero.
+\end{proof}
+
+\begin{lemma}[Primitive congruence count]\label{lem:v5-primitive-count}
+Let $\psi$ be a smooth nonnegative compactly supported function away from
+the origin, and let $m$ be squarefree and prime to $2\kappa$.
+For each $\ell\mid m$ prescribe an arbitrary subset $\Omega_\ell$ of the
+nonzero zeros of $Q_\kappa$ over $\mathbb F_\ell$. The weighted number of
+primitive integral vectors on $Q_\kappa=0$ with these reductions equals
+\begin{equation}\label{eq:v5-primitive-count}
+ C_\kappa\sigma_\infty(\psi)B^3
+ \prod_{\ell\mid m}\frac{|\Omega_\ell|}{\ell^4-1}
+ +O_{\kappa,\psi,\varepsilon}
+       (B^{5/2+\varepsilon}m^{5/2+\varepsilon}).
+\end{equation}
+The constant $C_\kappa$ is positive and independent of $m$ and the subsets.
+\end{lemma}
+\begin{proof}
+Apply Browning--Loughran~\cite{v5bl}, Theorem~4.1, to $Q_\kappa$ in five
+variables. It is isotropic, since $(1,0,1,0,0)$ is a zero, and nonsingular,
+since $\kappa\ne0$. Its discriminant has no prime divisor outside
+$2\kappa$. The theorem permits $n=5$ and arbitrary nonzero residue subsets;
+its error is uniform in the modulus and in these subsets.
+Impose primitivity by $\sum_{h\mid(a,b,c,d,w)}\mu(h)$.
+If $(h,m)>1$ there are no permitted vectors. Otherwise the subsets become
+$h^{-1}\Omega_\ell$, of the same cardinalities, and the scale becomes $B/h$.
+The sum of the error terms is convergent. Extending the main-term sum to
+infinity costs $O(B)$.
+At a good prime the unrestricted local density is
+\[
+ \sigma_\ell=\frac{1-\ell^{-4}}{1-\ell^{-3}}.
+\]
+Indeed, nonsingular primitive zeros lift with four free coordinates, and
+the vectors divisible by $\ell$ contribute the geometric factor
+$\ell^{-3}$. The primitive density is therefore $1-\ell^{-4}$.
+This turns the factor $|\Omega_\ell|/\ell^4$ of the unprimitive count into
+$|\Omega_\ell|/(\ell^4-1)$ in \eqref{eq:v5-primitive-count}.
+The remaining finitely many local factors are positive because the form
+has a nonsingular rational zero. Empty subsets give the assertion directly.
+\end{proof}
+
+In using this count, the two norms lie between fixed positive multiples of
+$B^2$, and $|w|\leq\tau B$, where $0<\tau\leq\tau_0$.
+A smooth majorant can be chosen with
+$\sigma_\infty(\psi)\ll\tau$ uniformly in $\tau$: integrate first in the
+two radial norm variables, on which the derivative of their difference is
+bounded away from zero. The constants in error terms may depend on
+derivatives of this majorant, and hence on $\tau$.
+
+\begin{lemma}[Medium-prime bound]\label{lem:v5-medium-sieve}
+For fixed coefficients and sufficiently large fixed $L$, the contribution
+of prime patterns with a common adjacent-norm divisor
+$L<\ell\leq B^{1/100}$ is at most
+\begin{equation}\label{eq:v5-medium-sieve}
+ \frac{C\tau B^3}{(\log B)^k L\log L}+O_\tau(B^{27/10}).
+\end{equation}
+The count is unweighted by logarithms, and $C$ is independent of $L,\tau$.
+The bound covers both distinct positions and the two signs at one position.
+\end{lemma}
+\begin{proof}
+For two positions, use $Q_\kappa$ with their fixed nonzero coefficient
+difference and impose $G_\epsilon=H_\eta=0\pmod\ell$.
+For squarefree $d$ supported on good primes other than $\ell$, impose also
+that some $L_j$ vanishes at every prime dividing $d$. The preceding lemmas
+give a sieve sequence
+\[
+ A_{\ell,d}=X_\ell g(d)+r_{\ell,d},\qquad
+ X_\ell\ll\tau B^3/\ell^2,\qquad
+ |r_{\ell,d}|\ll_{\tau,\varepsilon}
+ B^{5/2+\varepsilon}(\ell d)^{5/2+\varepsilon}.
+\]
+Enlarge the fixed exceptional set so that $0<g(p)<1$ outside it.
+Set $h(p)=g(p)/(1-g(p))$ and extend $h$ multiplicatively to squarefree
+integers. The elementary Selberg upper sieve has denominator
+\[
+ \mathcal G_\ell(z)=\sum_{\substack{d<z\ \text{squarefree}\\
+                         (d,\ell\prod_{p\in S}p)=1}}h(d)
+ \gg (\log z)^k.
+\]
+Here is the dimension calculation. Williams~\cite{v5williams}, Theorem~1
+with fixed modulus $4$ and residues $1,3$, gives Mertens' estimates in the
+two reduced classes. Taking logarithms gives
+$\sum_{p\leq y}g(p)=k\log\log y+O(1)$ and
+$\sum_{p\leq y}g(p)\log p\ll\log y$.
+For the latter bound only the elementary Chebyshev estimate is needed:
+$\prod_{n<p\leq2n}p\mid\binom{2n}{n}<4^n$ gives
+$\vartheta(x)\ll x$ by dyadic summation, and partial summation gives
+$\sum_{p\leq y}(\log p)/p\ll\log y$.
+In the Euler product $\prod_{p\leq y}(1+h(p))$, normalize the weights
+$h(d)$ to a probability distribution. Its expected value of $\log d$ is
+$\sum_{p\leq y}g(p)\log p$. Taking $y$ to be a sufficiently small fixed
+power of $z$ leaves at least half of the mass on $d<z$, by Markov's
+inequality. Removing one prime $\ell$ changes the estimate by a bounded
+factor.
+
+For completeness the sieve weights may be taken as
+\[
+ \lambda_d=\frac{\mu(d)}{\mathcal G_\ell(z)}
+ \prod_{p\mid d}(1-g(p))^{-1}
+ \sum_{\substack{r<z/d\ (r,d)=1\ r\ \text{squarefree}\\
+                      (r,\ell\prod_{p\in S}p)=1}}h(r).
+\]
+They have $\lambda_1=1$, $|\lambda_d|\ll_\varepsilon d^\varepsilon$,
+and direct expansion gives
+$\sum_{d,e}\lambda_d\lambda_e g([d,e])=1/\mathcal G_\ell(z)$.
+Thus the number with no prime divisor below $z$ in any $L_j$ is at most
+\[
+ \frac{C\tau B^3}{\ell^2(\log z)^k}
+ +O_{\tau,\varepsilon}
+  (B^{5/2+\varepsilon}\ell^{5/2+\varepsilon}z^{7+4\varepsilon}).
+\]
+All the prime values under consideration exceed $z$. Put $z=B^{1/100}$
+and sum over $L<\ell\leq B^{1/100}$. The main term uses
+$\sum_{\ell>L}\ell^{-2}\ll1/(L\log L)$, another consequence of the
+same Chebyshev bound; for example
+$\varepsilon=1/1000$ makes the error smaller than $B^{27/10}$.
+
+At one position, an odd common divisor of $(a-1)^2+b^2$ and
+$(a+1)^2+b^2$ forces $a=0$ and $b^2=-1\pmod\ell$.
+There are at most $2\ell$ such triples $(a,b,w)$ over $\mathbb F_\ell$.
+For $w\ne0$ the zero sets of the $k$ prime forms are disjoint, and the
+ordinary three-dimensional local sieve density is
+$(k+\chi(\ell))/\ell+O_k(\ell^{-2})$.
+Counting residue classes in a smooth box gives the corresponding
+three-dimensional congruence estimate. The same Selberg weights and the
+same, weaker error in \eqref{eq:v5-medium-sieve} apply.
+\end{proof}
+
+\subsection{The large-prime tail}\label{subsec:v5-large-sieve}
+
+We use two exact inputs from Browning--Heath-Brown~\cite{v5bhb}.
+Their Lemma~2.1 says that coprime polynomials in $\mathbb Z[X_1,\ldots,X_m]$
+of bounded degree and coefficient height at most $H$ have at most
+\begin{equation}\label{eq:v5-box-sieve}
+ O\left(\frac{V\log(VH)}{L\log L}
+           +\frac{V\log(VH)}{B_{\min}}\right)
+\end{equation}
+integer points in a box of side parameters $B_i\geq2$ at which a prime
+greater than $L\geq2$ divides every polynomial; $V=\prod B_i$.
+``Coprime'' here excludes a common constant prime factor as well as a
+common nonconstant factor. Their Lemma~4.1 covers the zeros modulo a
+squarefree $q$ of a rank-$m$ quadratic form by at most
+$(3m)^{\omega(q)}q^{m-2}$ lattices of determinant $q^{m-1}$.
+The number with largest Euclidean successive minimum exceeding $T$ is
+\begin{equation}\label{eq:v5-lattice-tail}
+ O_m((3m)^{\omega(q)}q^{2m-3}T^{-m}).
+\end{equation}
+In this statement every prime dividing $q$ must be odd and preserve the
+rank of the form. We include the word ``odd'' explicitly. Rank preservation
+alone is not the good-prime convention of the cited lemma.
+
+\begin{lemma}[Large common divisors on the quadric]\label{lem:v5-large-sieve}
+For fixed $\kappa\ne0$ and $\epsilon,\eta\in\{1,-1\}$, the number of
+integral vectors of size $O(B)$ satisfying $Q_\kappa=0$ and
+$\ell\mid G_\epsilon,H_\eta$ for some prime $\ell>L$ is
+\begin{equation}\label{eq:v5-large-sieve}
+ O_{\kappa,\alpha}\left(
+    \frac{B^{3+\alpha}}{L\log L}+B^{11/4+\alpha}\right)
+ \qquad(\alpha>0).
+\end{equation}
+\end{lemma}
+\begin{proof}
+Sign changes of $a,c$ reduce to $\epsilon=\eta=1$.
+Put $x_0=a+c$, $x_1=a-c$, $x=b-d$, $z=b+d$, and
+$R=\kappa w^2-xz$. Then $x_0x_1=R$.
+Parity restrictions can be discarded in an upper bound.
+
+First suppose that $\ell\mid x_0,x_1$. Then $\ell^2\mid R$.
+For each fixed integer $v=O(B^2)$, the equation $R=v$ has
+$O_{\kappa,\alpha}(B^{1+\alpha})$ triples: for each $w$, count the
+factorizations $xz=\kappa w^2-v$ by the divisor bound; the zero right-hand
+side occurs for at most two $w$ and contributes $O(B)$ each.
+If $R\ne0$, it has $O_\alpha(B^\alpha)$ factorizations $x_0x_1=R$.
+Summing over $R=h\ell^2\ne0$ gives
+$O(B^{3+2\alpha}/(L\log L))$.
+The case $R=0$, including $x_0x_1=0$, contributes $O(B^{2+\alpha})$.
+
+In the remaining cases choose $t=x_1$ or $t=x_0$ such that $\ell\nmid2t$.
+Take $t=x_1$ first. Multiplication by the invertible denominator $4t^2$
+turns the two norm congruences into divisibility of
+\[
+ P=\kappa w^2+2t,\qquad
+ K=(\kappa w^2-xz+t^2+2t)^2+t^2(x+z)^2.
+\]
+The identity
+\[
+ K-(t^2+x^2)(t^2+z^2)=P(P+2t^2-2xz)
+\]
+shows that it suffices to sieve the coprime pair
+$P,(t^2+x^2)(t^2+z^2)$. They have no common nonconstant factor over
+$\mathbb Q$, because the first depends nontrivially only on $w$, whereas
+the second is independent of $w$. Their contents have no common prime,
+since the second has coefficient $1$ on $x^2z^2$.
+For $t=x_0$ the pair is
+\[
+ P'=\kappa(t+2)w^2-2xz,\qquad K.
+\]
+If $t\ne-2$, $P'$ is an irreducible ternary quadratic form of rank three
+and $K$ has nonzero constant term $t^2(t+2)^2$; homogeneity rules out
+divisibility. If $t=-2$, neither $x$ nor $z$ divides $K$.
+The coefficient $-2$ of $xz$ excludes a common odd content prime.
+
+In either chart, $t\mid R$. Put
+\[
+ S_R=\{p:p\mid2\kappa\},\qquad
+ q=\prod_{\substack{p\mid t\ p\notin S_R}}p.
+\]
+The form $R$ has rank three at every prime in this product, and those primes
+are odd. For a fixed $q$, the number of eligible $t=O(B)$ is
+$O_{\kappa,\alpha}(B^\alpha)$ after an arbitrarily small adjustment of
+$\alpha$. One way to see this is to majorize the count of integers
+supported on $S_R\cup\{p:p\mid q\}$ by
+$B^\alpha\prod_{p\in S_R\ \text{or}\ p\mid q}(1-p^{-\alpha})^{-1}$,
+and absorb its $q^{o(1)}$ factor.
+
+Apply \eqref{eq:v5-lattice-tail} with $m=3$ to $q\mid R$.
+Each covering lattice contains $q\mathbb Z^3$, so all its successive minima
+are $O(q)=O(B)$. It therefore has $O(B^3/q^2)$ points in the box.
+The lattices with largest minimum greater than $T$ contribute, after the
+sums over $q$ and $t$,
+\[
+ O_{\kappa,\alpha}(B^{5+2\alpha}T^{-3}).
+\]
+For the other lattices choose a basis with lengths comparable to the
+successive minima. The resulting rectangular box has volume $O(B^3/q^2)$
+and minimum side parameter $\gg B/T$.
+The substitution into the polynomial pair is invertible over $\mathbb Q$.
+For $\ell\nmid2t$ its determinant, of absolute value $q^2$, is invertible
+modulo $\ell$ too. Thus no new common content prime outside $2t$ appears.
+Remove common content supported on $2t$, which cannot affect the primes
+being counted. Coefficient heights are powers of $B$ with fixed exponents.
+Formula \eqref{eq:v5-box-sieve} bounds this lattice's contribution by
+\[
+ O\left(\frac{B^3\log B}{q^2L\log L}
+                 +\frac{B^2T\log B}{q^2}\right).
+\]
+There are at most $9^{\omega(q)}q$ lattices. Summation gives
+$O(B^{3+3\alpha}/(L\log L)+B^{2+3\alpha}T)$.
+Choose $T=B^{3/4}$ and rename the small exponent to obtain
+\eqref{eq:v5-large-sieve}.
+\end{proof}
+
+\begin{proposition}[Weighted obstruction tail]\label{prop:v5-obstruction-tail}
+For fixed distinct $c_j$ there are $\tau_0,C>0$ such that, for every fixed
+$0<\tau\leq\tau_0$, the logarithmically weighted number of pairs
+\[
+ N/2\leq u\leq N,\qquad 1\leq w\leq\tau\sqrt N,
+ \qquad p_j=u+c_jw^2\text{ all prime},
+\]
+having any of the odd common divisors forbidden in
+Theorem~\ref{thm:v5-simultaneous-primes} greater than $L$, is at most
+\begin{equation}\label{eq:v5-obstruction-tail}
+ \frac{C\tau N^{3/2}}{L\log L}
+       +O_\tau(N^{3/2-1/800}).
+\end{equation}
+The weight is $\prod_j\log p_j$, and the bound allows every Gaussian
+generator, so it also holds for any prescribed choice of generators.
+\end{proposition}
+\begin{proof}
+Take $B=\sqrt N$ and combine the preceding bounds at $L_0=B^{1/100}$.
+The medium bound loses at most $(\log B)^k$ on inserting the weight.
+The large bound with sufficiently small $\alpha$ is
+$O(B^{3-1/200})$ after the logarithmic weight is inserted.
+At one position use the polynomial pair $a,b^2+1$ in three variables
+in \eqref{eq:v5-box-sieve}.
+There are only finitely many pairs of positions and signs, and a split
+rational prime has eight Gaussian generators. These factors are absorbed
+in $C$. Every vector arising from prime norm is primitive, since a common
+integer divisor greater than one would have its square divide that prime.
+Weakening the power saving to $B^{3-1/400}$ gives the displayed estimate.
+\end{proof}
+
+\subsection{Fixed Artin conditions in quadratic patterns}
+\label{subsec:v5-artin-transfer}
+
+\begin{remark}[A norm exponent in the imported proof]
+\label{rem:v5-ft-norm-repair}
+The proof of Frei--Tinkov\'a's Lemma~9.3, reused in their Section~10,
+chooses a majorant with the $D$-linear-forms condition for $D=4^u$ and
+records $\|\nu-1\|_{U^{2u}}=o(1)$. Its next step applies the relative
+inverse theorem to the $U^{u+1}[N]$ norm. Theorem~5.1 of
+Dodos--Kanellopoulos~\cite{v5dk} requires
+$\|\nu-1\|_{U^{2s}(\mathbb Z/N'\mathbb Z)}\leq\eta$ for the target
+$U^s[N]$ norm. Thus the displayed choice does not supply that hypothesis.
+Request instead $D=4^{u+1}$ in Frei--Tinkov\'a's Lemma~9.1. Expanding the
+centered $(2u+2)$-cube uses at most $2^{2u+2}=4^{u+1}$ pairwise
+nonproportional forms, in $2u+3\leq4^{u+1}$ variables for $u\geq1$,
+with coefficients in $\{0,1\}$. The stronger linear-forms condition gives
+$\|\nu-1\|_{U^{2u+2}}=o(1)$ and supplies the missing hypothesis.
+All complexities remain fixed before $N$ tends to infinity.
+
+For clarity, the inverse theorem takes a prime $N'\in[CN,2CN]$ with
+$C\geq20$, a nonnegative majorant on $\mathbb Z/N'\mathbb Z$, and a real
+function $f$ on $[N]$ with $|f|\leq\nu$ and $\|f\|_{U^s[N]}\geq\delta$.
+Its constants depend on $s,C,\delta$ and its conclusion is correlation
+with a bounded Lipschitz nilsequence on an $(s-1)$-step nilmanifold.
+The truncation and positive rescaling already present in Lemma~9.3
+put its real centered prime weight in this form, with $s=u+1$.
+This change repairs that theorem application. It does not replace or
+independently verify the ideal-norm estimates in their Theorem~2.4.
+The exact inverse-theorem statement was checked in arXiv:1610.00487v4;
+the work is published, but its final typeset statement was not compared.
+\end{remark}
+
+Here the field is fixed throughout the limiting argument. Let $K/\mathbb Q$
+be finite Galois, put $G=\operatorname{Gal}(K/\mathbb Q)$, and let
+$C_1,\ldots,C_k$ be conjugacy-invariant subsets of $G$.
+Let $D$ be divisible by the conductor of $K^{\rm ab}$.
+For a unit $b\pmod D$, define
+\begin{equation}\label{eq:v5-mu}
+ \mu_j(b)=\frac{\#\{g\in C_j:g|_{K^{\rm ab}}=\sigma_b|_{K^{\rm ab}}\}}
+                  {[K:K^{\rm ab}]},
+ \qquad \sigma_b(\zeta_D)=\zeta_D^b,
+\end{equation}
+and set $\mu_j(b)=0$ for nonunits. Define $\Lambda'_j(p)=\log p$ for
+unramified primes with arithmetic Frobenius in $C_j$, and zero otherwise.
+
+\begin{proposition}[Fixed-field polynomial count]\label{prop:v5-artin-patterns}
+There is a function $\omega(N)\to0$, depending on the fixed data, such that
+whenever $\omega(N)\sqrt N\leq T=o(\sqrt N)$,
+\begin{equation}\label{eq:v5-artin-patterns}
+ \sum_{u\leq N}\sum_{1\leq w\leq T}
+       \prod_{j=1}^k\Lambda'_j(u+c_jw^2)
+       =\mathfrak S\,NT+o(NT),
+\end{equation}
+where
+\begin{equation}\label{eq:v5-artin-series}
+ \mathfrak S=
+ \left(\frac D{\varphi(D)}\right)^k
+ \mathbb E_{u,w\bmod D}\prod_j\mu_j(u+c_jw^2)
+ \prod_{p\nmid D}\beta_p,
+ \quad
+ \beta_p=\mathbb E_{u,w\bmod p}
+       \prod_j\frac p{p-1}1_{p\nmid u+c_jw^2}.
+\end{equation}
+The same statement on $N/2\leq u\leq N$ has main term
+$\mathfrak SNT/2$.
+\end{proposition}
+\begin{proof}
+We specify how the linear Artin theorem and the published polynomial
+transference results combine. Frei--Tinkov\'a~\cite{v5ft}, Theorem~1.4,
+applies to any fixed finite-complexity system of affine-linear forms,
+with bounded linear coefficients and bounded constant coefficients divided
+by the ambient scale, uniformly over convex regions in a fixed box.
+Its conductor factor is precisely \eqref{eq:v5-mu}; a finite union of
+conjugacy classes follows by addition. This is their unconditional theorem,
+not their primitive-root theorem, Theorem~1.2.
+
+Choose a small positive $\rho$ and first keep $v$ fixed. Put
+\[
+ W=D\prod_{\substack{p\leq v\\p\nmid D}}p,\quad
+ A=W^{1/\rho},\quad n=\lfloor N/W\rfloor,\quad R=n^\rho,
+\]
+and, for unit $b\pmod W$, put
+\[
+ f_{j,b}(x)=\frac{\varphi(W)}W\Lambda'_j(Wx+b)1_{R\leq x\leq n},
+ \qquad g_{j,b}=f_{j,b}-\mu_j(b).
+\]
+View these functions on $\mathbb Z/n\mathbb Z$, with representatives
+$1,\ldots,n$. If $a\geq2$ and $C_1<C_2<C_3$ are fixed, the linear Artin
+theorem gives
+\begin{equation}\label{eq:v5-global-gowers}
+ \|g_{j,b}\|_{U^a_{q[J]}}^{2^a}
+       \ll_a(\log v)^{-1}+o_v(1),
+ \quad q\leq A^{C_1},\quad
+ nA^{-C_3}\leq J\leq nA^{-C_2}.
+\end{equation}
+The steps in this norm are the difference multiset $q(h-h')$, with
+$h,h'\in[J]$, as in Tao--Ziegler. On partitioning by the wrap-around
+integers, its cube expansion consists of the affine forms
+\[
+ W\left(x+q\sum_{r=1}^a\nu_r(h_r-h'_r)-m_\nu n\right)+b,
+ \qquad \nu\in\{0,1\}^a.
+\]
+They are pairwise nonproportional: the $x$ coefficient forces the ratio to
+be one, and the $h_r$ coefficients then distinguish their vertices.
+The wrap-around and interval conditions define finitely many convex
+regions. For fixed $v$ every scale ratio is fixed, so the theorem's
+absolute error is $o_v(nJ^{2a})$.
+At $p\nmid Wq$ the local factor is $1+O_a(p^{-2})$; at $p\mid q$ it is
+$1+O_a(p^{-1})$. Since $\log q=O(v)$, there are $O(v/\log v)$ prime
+divisors of $q$ greater than $v$. The product of these factors is
+$1+O_a(1/\log v)$. Centering cancels the common main term. Removing
+$x<R$ costs $o_v(1)$, as do prime powers if the linear theorem is stated
+with their von Mangoldt weights. This proves \eqref{eq:v5-global-gowers}.
+
+We now use the arbitrary-function dense-model theorem of
+Tao--Ziegler~\cite{v5tz}. Their published Theorem~11 and Corollary~3
+give a single bounded model accurate in both global Gowers norms and the
+local polynomial box norms. Their Theorem~9 is the bounded-function
+concatenation statement, and their Theorem~13 bounds the polynomial
+average by one of those local norms. All majorants here are the ordinary
+prime majorants, since $0\leq\Lambda'_j\leq\Lambda'$.
+The fixed factor $D$ in $W$ is allowed in their divisor-sum construction:
+for sufficiently large $v$, $W=E\prod_{p\leq v}p$ with a fixed $E$ whose
+prime factors are at most $v$. A unit residue makes every small-prime
+divisibility condition identically false, including at the extra prime
+powers. At the remaining primes the divisor-sum local factors are
+unchanged. Polynomial coefficient bounds absorb the fixed factor $E$.
+Thus the polynomial-forms estimates for the majorant have the same
+$1+o(1)$ conclusion.
+
+The following choice records the size hypotheses of these results.
+First choose their local box order $d'$ and a coefficient exponent $C$;
+choose an integer $B_0>C+2$, then a sufficiently large global order $a$,
+and finally a sufficiently small $\rho$. Set $\rho_* =\rho/B_0$ and
+$\mathcal A=A^{B_0}$. Put
+$M_0=\lfloor T/W\rfloor$, $M_1=\lfloor M_0/A\rfloor$.
+For $T/\sqrt N\geq4\sqrt W/A$ one has
+\[
+ A^{-1}\sqrt n\leq M_0\leq\sqrt n,
+ \qquad A^{-3}\sqrt n\leq M_1\leq\sqrt n.
+\]
+The model at cutoff $n^{\rho_*}$ dominates the function already truncated
+at $n^\rho$. Corollary~3 supplies approximation for the degree-one local
+step polynomials, whose coefficients are $O(A^C)$, and simultaneously for
+$q\leq A^{B_0a}$ with
+$J=\lfloor A^{-2B_0a}M_1^2\rfloor$.
+In particular
+\[
+ nA^{-2B_0a-7}\leq J\leq nA^{-2B_0a}.
+\]
+This is within \eqref{eq:v5-global-gowers}. The bounded model minus
+$\mu_j(b)$ therefore has small global norms. Theorem~9 makes its local
+norm small; its smallness threshold is independent of $\mathcal A$.
+The model approximation transfers this conclusion to $g_{j,b}$, and
+Theorem~13 makes every polynomial average containing a centered factor
+$o(1)$. These are the reasons for choosing the complexities before $v$.
+
+For the final $W$-trick write $u=Wx+b$ and $w=Wm+c$.
+If $b_j$ is the residue of $b+c_jc^2$ modulo $W$, the resulting integer
+polynomial is
+\[
+ c_jWm^2+2c_jcm+(b+c_jc^2-b_j)/W.
+\]
+Its leading coefficient differences are nonzero, and its coefficients
+are $O(W)$. Expand the product into its means and centered factors and
+apply the preceding conclusion. End intervals of length $O(T^2)=o(N)$
+are harmless by the ordinary majorant. Summing residue classes does not
+amplify the error: their normalized admissible mass is
+$\prod_{p\mid W}\beta_p=O(1)$.
+Indeed, outside the fixed coefficient-difference primes,
+\[
+ \beta_p=\left(\frac p{p-1}\right)^k
+                \frac{(p-1)(p-k+1)}{p^2}=1+O_k(p^{-2}).
+\]
+This also proves convergence of the product in
+\eqref{eq:v5-artin-series}.
+Let $N$ tend to infinity for each fixed $v$ and then let $v$ tend to
+infinity sufficiently slowly. A diagonal choice supplies $\omega(N)$
+and yields \eqref{eq:v5-artin-patterns}. Subtract the corresponding
+formula with upper limit $N/2$, enlarging $\omega$ if necessary, to
+obtain the last assertion.
+\end{proof}
+
+\begin{remark}[Published numbering]\label{rem:v5-tz-numbering}
+The labels in the published 2018 paper differ from those in arXiv
+1603.07817v1. The relevant dictionary is
+\[
+\begin{array}{c|ccccc}
+ \text{arXiv} &\text{Theorem 1.4}&\text{Theorem 2.5}&\text{Theorem 3.1}
+               &\text{Corollary 3.9}&\text{Theorem 4.1}\\
+ \text{published}&\text{Theorem 4}&\text{Theorem 9}&\text{Theorem 11}
+               &\text{Corollary 3}&\text{Theorem 13}
+\end{array}
+\]
+The published locations are respectively pages $4,21,28,38,41$.
+The preprint's equations (3.5) and (4.1) are published equations (36)
+and (57). The dense model used above is the theorem's assertion for an
+arbitrary function bounded by the prime weight. The special model $1$
+for the ordinary prime weight is not an assertion about Artin weights.
+\end{remark}
+
+\subsection{The ray-class lower bound}\label{subsec:v5-ray-density}
+
+For ray class fields we use the published existence and reciprocity
+statements in Kopp--Lagarias~\cite{v5kl}, Theorems~1.1, 1.3 and 7.2,
+and the modulus exact sequence of Theorem~6.5, specialized to the maximal
+order $\mathbb Z[i]$. There are no real places. This replaces an appeal
+to unpublished course notes. In this principal ideal domain the ray group
+for the finite modulus $H\mathbb Z[i]$ is
+\begin{equation}\label{eq:v5-ray-group}
+ (\mathbb Z[i]/H\mathbb Z[i])^\times/\{1,-1,i,-i\}.
+\end{equation}
+It also follows directly by sending a residue $r$ to the ideal class of
+$(r)$: surjectivity is principality, and the kernel consists exactly of
+unit residues. The Artin map sends this ideal class to arithmetic
+Frobenius. Conjugation acts by $r\mapsto\bar r$.
+
+Choose a fixed $L_1$ larger than all coefficient-difference primes and
+larger than $11$. Let $H_0$ be divisible by $16\cdot7M$ and by all odd
+primes at most $L_1$. Prescribe a unit residue $r\pmod{H_0}$ which is
+$9$ modulo $16$, $1+3i$ modulo $7$, and $i$ modulo every other odd
+prime dividing $H_0$. Compatible higher powers can be chosen arbitrarily.
+The associated rational-prime Frobenius condition is the two-element
+conjugacy class $C_0=\{h_r,h_{\bar r}\}$ in the Galois group $G_0$ of
+the ray field $K_0$ over $\mathbb Q$.
+The two elements are distinct: an equality of their ray classes would
+require $r=\epsilon\bar r\pmod{H_0}$ for a Gaussian unit $\epsilon$;
+modulo $16$ this forces $\epsilon=1$, contradicted modulo $7$.
+The field is Galois over $\mathbb Q$, because conjugation preserves the
+modulus and the defining ray subgroup.
+
+Let $D_0$ be the conductor of $K_0^{\rm ab}$ and choose a unit
+$b_0\pmod{D_0}$ inducing the restriction of $h_r$.
+The value in \eqref{eq:v5-mu} is then
+$\mu_0=|C_0|/|G_0'|>0$.
+For $L\geq L_1$ let
+$T_L=\prod_{L_1<\ell\leq L,\,\ell\nmid H_0}\ell$ and let $K_L$ be the
+ray field for $H_0T_L\mathbb Z[i]$. For each new prime write
+\[
+ B_\ell=(\mathbb Z[i]/\ell\mathbb Z[i])^\times,
+ \qquad N_\ell=\ker(B_\ell\xrightarrow{\mathrm N}\mathbb F_\ell^\times).
+\]
+The norm map is onto and $|N_\ell|=\ell-\chi(\ell)$.
+
+\begin{lemma}[Abelian fibres and their surviving proportion]
+\label{lem:v5-ray-fibres}
+Put $N_L=\prod_{\ell\mid T_L}N_\ell$ and
+$G_L=\operatorname{Gal}(K_L/\mathbb Q)$.
+Then
+\[
+ N_L\subseteq G_L',\qquad
+ G_L'/N_L\simeq G_0',\qquad
+ K_L^{\rm ab}=K_0^{\rm ab}\mathbb Q(\zeta_{T_L}).
+\]
+Let $C_L$ consist of those elements above $C_0$ whose normalized Gaussian
+residue $z$ satisfies $\mathrm N(z-1)\mathrm N(z+1)\not\equiv0\pmod\ell$
+at every $\ell\mid T_L$. For the density $\mu_L$ of this set,
+\begin{equation}\label{eq:v5-ray-density}
+ \mu_L(b)\geq\mu_0
+       \prod_{\ell\mid T_L}\left(1-\frac4{\ell-1}\right)
+ \qquad (b\equiv b_0\pmod{D_0},\ (b,D_0T_L)=1).
+\end{equation}
+\end{lemma}
+\begin{proof}
+In the CRT presentation of \eqref{eq:v5-ray-group}, the unit group
+embeds in the $H_0$ factor, because it already embeds modulo $16$.
+Once the representative above $r$ or $\bar r$ is normalized, the kernel
+of reduction to the base ray group is exactly $\prod B_\ell$.
+There is no further quotient by the four units.
+
+The map $z\mapsto z/\bar z$ from $B_\ell$ onto $N_\ell$ is surjective.
+For split primes this is $(x,y)\mapsto(x/y,y/x)$.
+For inert primes it is $z\mapsto z^{1-\ell}$ in the cyclic group
+$\mathbb F_{\ell^2}^\times$.
+These maps are commutators with complex conjugation, so $N_L\subseteq G_L'$.
+The norm on each new residue factor gives the cyclotomic action
+$\zeta_\ell\mapsto\zeta_\ell^{\mathrm N(z)}$.
+This is also seen by applying arithmetic Frobenius to $\zeta_\ell$;
+it is compatible with the ray map by reciprocity.
+After quotienting by $N_L$, conjugation acts trivially on the new norm
+factors, so
+\[
+ G_L/N_L\simeq G_0\times\prod_{\ell\mid T_L}\mathbb F_\ell^\times.
+\]
+Equivalently, the fixed field is $K_0\mathbb Q(\zeta_{T_L})$.
+The two factors are disjoint: $K_0$ is unramified outside $2H_0$, while
+a nontrivial subextension of the cyclotomic product has nontrivial inertia
+at some prime dividing $T_L$. Taking commutators proves both claims about
+$G_L'$ and the maximal abelian subfield.
+
+Fix a nonzero norm $s\in\mathbb F_\ell^\times$.
+For $z=a+bi$ in that norm fibre,
+$\mathrm N(z\pm1)=s+1\pm2a$.
+For each sign, vanishing fixes $a$ and leaves at most two values of $b$.
+Thus at most four of the $\ell-\chi(\ell)$ elements are excluded.
+The conditions are invariant under conjugation, so $C_L$ is a union of
+rational conjugacy classes.
+In every compatible abelian fibre its numerator in \eqref{eq:v5-mu} is
+at least $|C_0|\prod(\ell-\chi(\ell)-4)$, and its denominator is
+$|G_0'|\prod(\ell-\chi(\ell))$.
+Their quotient proves \eqref{eq:v5-ray-density}.
+\end{proof}
+
+\begin{proposition}[Finite-cutoff lower bound]\label{prop:v5-cutoff-lower}
+There is a constant $c>0$ independent of $L$ such that the singular series
+in Proposition~\ref{prop:v5-artin-patterns} for the fixed field $K_L$ and
+the set $C_L$ at every position satisfies
+\[
+ \mathfrak S_L\geq c(\log L)^{-4k}.
+\]
+\end{proposition}
+\begin{proof}
+At the base modulus retain just $u=b_0$, $w=0\pmod{D_0}$.
+At each new prime retain all pairs on which the $k$ norm values are units.
+Apply \eqref{eq:v5-ray-density} separately to each position.
+The norm-fibre denominators cancel as shown in the previous lemma; a
+factor inverse to the degree of $K_L$ is not left in the bound.
+The normalized proportion of the retained pairs at each new prime is
+$\beta_\ell=1+O_k(\ell^{-2})$. Each is positive, since $w=0$, $u\ne0$
+is allowed. Their product, together with the tail Euler product, is
+bounded below by a fixed positive number. Williams' theorem with modulus
+$1$, or its product for the two reduced classes modulo $4$, gives
+\[
+ \prod_{\ell\mid T_L}(1-4/(\ell-1))^k
+       \gg(\log L)^{-4k}.
+\]
+The base modulus contributes another fixed positive factor.
+\end{proof}
+
+\subsection{The final order of limits}\label{subsec:v5-diagonal}
+
+\begin{proof}[Proof of Theorem~\ref{thm:v5-simultaneous-primes}]
+Fix the coefficients, $M$, and the base modulus first. Choose one fixed
+$L$ so large that
+\[
+ \frac C{L\log L}<\frac c{32(\log L)^{4k}},
+\]
+where $C,c$ are from the obstruction and lower-bound propositions.
+Now fix $K_L,C_L$. Only after this choice do we use the asymptotic
+polynomial theorem or let its small-prime cutoff tend to infinity.
+
+Choose numbers $\tau_j\downarrow0$, all at most $\tau_0$.
+Choose successively $N_j$ so large that for $N\geq N_j$
+$\omega(N)\leq\tau_j/2$,
+that $\tau_j\sqrt N\geq2$, and that the error term in
+\eqref{eq:v5-obstruction-tail} is less than
+$c\tau_jN^{3/2}/(32(\log L)^{4k})$.
+This is possible for each fixed $\tau_j$.
+For $N_j\leq N<N_{j+1}$ use $\tau(N)=\tau_j$ and define
+$T=\lfloor\tau(N)\sqrt N\rfloor$.
+Then $T=o(\sqrt N)$ and $T\geq\tau\sqrt N/2$.
+Apply Proposition~\ref{prop:v5-artin-patterns} to this piecewise choice
+of $T$. For all sufficiently large $N$ its lower count is at least
+$cNT/(4(\log L)^{4k})$ and exceeds the full obstruction tail.
+Hence a pattern remains with no forbidden odd
+common divisor greater than $L$.
+The ray conditions exclude every odd divisor at most $L$ from each
+individual adjacent norm. At $7$ the adjacent norms of $1+3i$ are $2$
+and $6$; at every other odd base prime the adjacent norms of $i$ are $2$.
+Thus no forbidden odd common divisor remains at all.
+
+The residue modulo $16$ gives, on writing $a=9+16A$ and $b=16B$,
+\[
+ (a+1)^2+b^2\equiv4\pmod8,\qquad
+ (a-1)^2+b^2\equiv64\pmod{128}.
+\]
+These yield the exact two-adic valuations and hence the cross-sign gcd
+$4$. The residue modulo $M$ gives coprimality with $M$.
+Finally $u\geq N/2$ and $w\leq\tau\sqrt N$ imply
+$u/w^2\geq1/(2\tau^2)\to\infty$.
+For sufficiently small $\tau_0$, all $u+c_jw^2$ are between fixed positive
+multiples of $N$, so they exceed $Y$ when $N$ is large.
+The dilation at the start imposes $q\mid w$.
+\end{proof}

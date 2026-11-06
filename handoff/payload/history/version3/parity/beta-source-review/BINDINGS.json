@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "Selective-beta source implementation and returned artifact under separately reviewed arithmetic inputs",
+  "files": {
+    "source-pipeline/beta-only/manifest.json": "eaaec2449711c625fc4afcf16dd33286c2c5d91ea568c6542317d2b1ba6623cb",
+    "source-pipeline/beta-only/check_source.py": "41a3d780636c1f28852762ee0ce7a252e207ec74e7367da275676200a6068ffa",
+    "source-pipeline/beta-only/core_audit.py": "0da0dfef661211fd4ada262050895ef24ca54dfdc1aca4aa4bec4e69c1dcbce8",
+    "source-pipeline/beta-only/AUDITOR_PIN.json": "5ee35204becc724c004942feed160bc45299e5d88985fbfdcac5793a0519f0ad",
+    "source-pipeline/beta-only/BASELINE.json": "2a1c41a19f0813e8676c4cbe57eb49a3faa0926f095389d8a4a2b390ea91035d",
+    "precision/ASYMMETRIC-CONTRACT.json": "6a45f8ccb18e4dca100f87851bf40d21f92b684dfdd347a0588f0f88aac0a1e7",
+    "precision/ASYMMETRIC_CONTACTS.md": "ec0146e593abc7a79eaf28fb3c09ddbbcfc01d2c3da7411de0a4b81361fabc98",
+    "arithmetic-audit/ASYMMETRIC_REVIEW.md": "4c67d9b076d37a36d40b2099a608cd948d1727a3081bdaea0cd6616156e75541",
+    "beta-only/SUMMARY.json": "3e04f5e1abae5cec8ddb17aedf57795e5a2e678f0727a1db24a2451a4dfef41d",
+    "beta-only/source-audit.json": "9020dcfdcfab0b05a1b26d9f73713369bde40dae3fe5f179fab77bafcc5f0b40",
+    "beta-only/construction-map.json": "bcefd99b40537c59c422e9e44ebc6e444469ddb873909239e8a21d3e9d82f7f9",
+    "beta-only/adapter/source-entry.json": "8b45e266b0b4692320bb4f4924a2d3216d5f17fdc47a5c7fb9cdf6010a9a36f7",
+    "beta-only/adapter/verify_named_source.py": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4",
+    "beta-only/stages/coordinates/verification.json": "43ef58641d36e58d3d1422150e48f1858d0b0844b78be41cd939b1eb53e80053",
+    "beta-only/stages/coordinates/certificate.jsonl.gz": "8aaa2249eda6972c441d58b212ec64a53e1202d5e9f74ea4cbc53e7e3f71a0bd",
+    "beta-only/stages/coordinates/polynomial.expanded.txt": "6d67d45f3d615b7fd2242e3a9404dd9f5da570fc711a29ebe77f613e80ebbf99",
+    "parity/beta-source-review/REVIEW.md": "adbb86598b6db09ebe7acd4474a2df0e405993c21a4dd2ca6c3c24c00daed1e5",
+    "parity/beta-source-review/small_checks.py": "ab14723d066d437b5f161aca80ad0588cc92fc8bb1701943b24cf791a03be9e8",
+    "parity/beta-source-review/small-checks.json": "6af6bf487681e7b76906a5def44e32eb97a9c6c87a82a810cccec1c71b3fc34c",
+    "parity/beta-source-review/check_artifact.py": "c51a336c22c872722edf35a398538ed9fae73834be7db4a391a0856ed005b82a",
+    "parity/beta-source-review/artifact-checks.json": "25b80747b3bab2f60a8f64d0d2acdaf4af15360b8fca92c79d457b9ca6f66e07",
+    "parity/beta-source-review/repeated-source-audit.json": "42c3dcdba4b0263193da66e63186729f7154768f4cfa4484a712f6e0d044518c",
+    "parity/beta-source-review/repeated-construction-map.json": "bcefd99b40537c59c422e9e44ebc6e444469ddb873909239e8a21d3e9d82f7f9"
+  }
+}

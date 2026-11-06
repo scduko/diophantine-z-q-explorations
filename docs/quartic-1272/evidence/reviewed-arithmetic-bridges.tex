@@ -1,0 +1,270 @@
+% Additive interfaces for the 1272-coordinate source.
+% These use the original exponent-24 constant H_*, not H_19.
+% They do not alter any existing source equation or polynomial artifact.
+
+\begin{lemma}[The original scalar certificate at order thirty-two]
+\label{v5:scalar32-bridge}
+Let $K=\Q(\sqrt2)$, $d=3-\sqrt2$, $D=d^2$, and
+$E:y^2=x^3-Dx$, with the point $P_*$ of
+Section~\ref{sec:degree8-original}. Put
+\[
+ \beta=X^2+2,\qquad
+ r=\beta(\beta-1)(\beta-2401)(32\beta+343)(2\beta-1),
+ \qquad X\in\Q.
+\]
+For $h_0,a\in\Z\setminus\{0\}$ and points $J_0=h_0P_*$ and $S=aP_*$,
+take the
+two rational coefficients, in the basis $1,\sqrt2$, of
+$f(J_0),f(S),z(S)/z(J_0)$ in that order. Denote them by
+$X_1,\ldots,X_6$, and put
+\[
+ (m_1,\ldots,m_6)=(1,1,1,1,32,32),\qquad l_i=X_i/r^{m_i}.
+\]
+Use the same ordered norm tree as the original scalar construction:
+\[
+ \begin{split}
+ N_r(u,v)&=u^2+rv^2,\\
+ n_0&=N_r(1,l_1),\quad n_1=N_r(l_2,l_3),\quad
+ n_3=N_r(l_5,l_6),\\
+ W&=N_r\bigl(N_r(n_0,n_1),N_r(l_4,n_3)\bigr).
+ \end{split}
+\]
+Let
+\[
+ c\in\left\{\pm\prod_{p\in I}p:
+                   I\subseteq\{2,3,5,7,11,13,17\}\right\}.
+\]
+If $b=crW^2\ne0$ satisfies the original pole predicate $\Psi(b)$,
+then
+\[
+ M_5(\beta)^{32}\mid a,\qquad
+ h(\beta)\le H_*|a|^{3/4}.
+\]
+Here $M_5$ and the exact constant $H_*$ are those of
+Theorem~\ref{hyp:o8-height}; in particular
+$1\le H_*<2^{4783227}$.
+
+For every integral $X$, the scalar certificate is complete with
+successively chosen positive indices $h_0,a$. One may require $h_0$
+to be divisible by any prescribed positive integer and $a$ to be
+arbitrarily divisible and arbitrarily large. After $S$ has been chosen,
+the normalized-leaf conditions and the nonvanishing of $W$ persist when
+$h_0$ is replaced by every integer in one suitable congruence class
+$h\equiv h_0\pmod L$. The modulus $L$ may also be required to be
+divisible by any prescribed positive integer.
+\end{lemma}
+
+\begin{proof}
+The value $r$ is nonzero: $\beta\ge2$, and $\beta=2401$ would
+give $X^2=2399$, which has no rational solution. At a prime
+$p>76176$, the multiplier $c$ is a unit. Every prime in $M_5(\beta)$
+has odd valuation in $r$, by the contact computation in the proof of
+Theorem~\ref{hyp:o8-height}. One can also observe that a negative
+valuation of $\beta=X^2+2$ is even, so only its finite contacts
+contribute here.
+
+Write $R=v_p(r)$. The pole obstruction in Lemma~\ref{hyp:o8-pole}
+and $b\ne0$ make the odd valuation $R+2v_p(W)$ positive. In a
+norm node $u^2+rv^2$ the two nonzero summands have opposite valuation
+parity, so there is no cancellation. The constant leaf on the
+all-left path first excludes $R<0$. Then $v_p(W)>-R/2$.
+Descending the tree, the implication
+\[
+ v_p(N_r(u,v))>-tR,\quad t<1
+ \quad\Longrightarrow\quad
+ v_p(u)>-tR/2,\quad v_p(v)>-(t+1)R/2
+\]
+shows that every leaf $l_i$ has valuation greater than $-R$.
+Thus $v_p(X_i)>(m_i-1)R\ge m_i-1$, and integrality of the
+valuation gives $v_p(X_i)\ge m_i$. This is the original norm
+argument with the two assigned orders changed to thirty-two.
+
+The order-one tests put $J_0$ and $S$ in the formal group at each
+place above $p$. Such a completion is unramified, and the formal
+logarithm is an isometry on that group. Since
+$[h_0]S=[a]J_0$, it follows that
+\[
+ v_{\mathfrak p}\!\left(\frac{z(S)}{z(J_0)}\right)
+       =v_p(a/h_0).
+\]
+Both rational coefficients of this ratio have valuation at least
+thirty-two, so $v_p(a/h_0)\ge32$. As $h_0$ is a nonzero integer,
+$v_p(a)\ge32$. This proves $M_5(\beta)^{32}\mid a$.
+Theorem~\ref{hyp:o8-height} now gives
+$h(\beta)\le H_*M_5(\beta)^{24}\le H_*|a|^{3/4}$.
+No exponent-nineteen height estimate is used.
+
+For completeness, let $X\in\Z$. The integer $r$ is nonzero and
+$|r|>1$. The original seven-prime squareclass basis, proved in the
+finite-correction argument following
+Lemma~\ref{lem:original-seven-parity-completeness}, permits a choice
+of $c$ such that $cr>0$ and $cr$ is square in
+$\Q_2,\Q_3,\Q_{17}$. Let $\mathcal S$ be the finite prime support
+of the integer $cr$.
+
+At the places above $\mathcal S$, choose $h_0$ sufficiently
+divisible that $J_0$ is in arbitrarily deep formal subgroups.
+This remains possible after requiring any fixed divisibility of
+$h_0$, because these subgroups have finite index in the local
+elliptic groups. Having fixed this nonzero $J_0$, choose $a$
+sufficiently divisible that $S=aP_*$ is still deeper. The
+coefficients of $f(J_0),f(S)$ and $z(S)/z(J_0)$ then attain every
+finite lower valuation bound needed here. This includes ramified
+and bad primes, by working in sufficiently deep formal subgroups.
+We arrange that all normalized leaves are integral when $p\mid r$
+and divisible by $p$ when $p\mid c$ but $p\nmid r$.
+The index $a$ may simultaneously exceed any fixed bound.
+
+At $p\mid r$, the root of the displayed tree is congruent to one
+modulo $p$, because $r\equiv0$ and the all-left leaf is one.
+At $p\mid c$, $p\nmid r$, all other leaves vanish modulo $p$,
+so the root is again congruent to one. Thus $W$ is a unit on
+$\mathcal S$, and in particular is nonzero. At these primes
+$v_p(crW^2)=v_p(cr)\ge0$; outside $\mathcal S$ its valuation is
+even. Hence $b$ has square reduced denominator, is positive, and
+has the same local squareclasses as $cr$ at two, three, and
+seventeen. Lemma~\ref{lem:original-seven-parity-completeness}
+supplies the scalar pole witnesses.
+
+Finally, with $S$ fixed, these scalar tests are rational functions
+of $J_0$ defined at the chosen point. Their coefficient maps are
+continuous in the product of the completions above each prime in
+$\mathcal S$. The finite lower valuation bounds persist in
+sufficiently small neighborhoods. A common finite-index subgroup
+of the integer orbit gives a congruence $h\equiv h_0\pmod L$
+contained in all those neighborhoods. Enlarging $L$ preserves
+that property. The same unit calculation proves the asserted
+stability for the final shared point.
+\end{proof}
+
+\begin{lemma}[The fixed multiplier seventeen with preparation zero]
+\label{v5:preparation-zero-bridge}
+Let $b\in\Q^\times$, put $B=17b$, and define $\Psi_0(b)$ by
+the existence of $e,p,q,s\in\Q$ satisfying
+\[
+ p^2=B(1-e)(1+3e),\qquad h=e(B-b^2),\qquad
+ Bq^2=(s^2-Bh)(s^2+3Bh),
+\]
+where $h$ is the displayed expression, not a further free choice.
+Then $\Psi_0(b)$ excludes negative odd valuations of $b$ at every
+prime outside $\{2,3,17\}$. Conversely, it holds whenever $b$ has
+square reduced denominator, is positive and square in
+$\Q_2,\Q_3,\Q_{17}$, and
+\[
+ b<17,\qquad v_2(b)\ge3,\qquad v_3(b)\ge1,
+ \qquad v_{17}(b)\ge2.
+\]
+No additional nonzero condition on $e,p,q,s,h$ is imposed.
+\end{lemma}
+
+\begin{proof}
+Taking the preparation witnesses $t=0$ and $U=b$ in
+\eqref{eq:o8-pole} gives exactly the displayed equations.
+The obstruction therefore follows from
+Lemma~\ref{lem:original-seven-parity-soundness}, including its
+degenerate witness cases.
+
+For completeness put
+\[
+ V=B(B-b^2)=B^2(1-b/17).
+\]
+The real inequality makes $V$ positive. The valuation bounds make
+$1-b/17$ a square at two, three, and seventeen: its difference
+from one has valuation at least three at two and at least one
+at the two odd primes. Thus $V$ is square at these three places.
+
+Let $\mu$ and $\theta$ be the positive squarefree representatives
+of $B$ and $V$. The prescribed squareclasses of $b$ give
+$\mu\equiv17\pmod{24}$; in particular $\mu>1$ and its support
+contains seventeen but neither two nor three. Also
+$\theta\equiv1\pmod{24}$, and seventeen is absent from its
+support. At a prime $\ell\mid\mu$ outside the three exceptions,
+$v_\ell(b)$ is positive and odd, since the reduced denominator
+of $b$ is square. Hence $1-b/17$ is a square unit there, so $V$
+and $\theta$ are local squares. The same assertion at seventeen
+was already arranged. These facts make the supports disjoint.
+
+Conversely, if $\ell\mid\theta$, then
+$\ell\notin\{2,3,17\}$. If $v_\ell(b)>0$, the valuation
+of $V$ is $2v_\ell(b)$; if $v_\ell(b)<0$, it is
+$3v_\ell(b)$, again even because the denominator is square.
+Thus an odd valuation of $V$ forces $v_\ell(b)=0$ and
+$1-b/17\equiv0\pmod\ell$. It follows that
+$B=17b\equiv17^2\pmod\ell$ is a nonzero square unit.
+This proves the other mutual-squareness condition.
+
+Lemma~\ref{lem:original-seven-simultaneous-realization} now gives
+the two rational points in the squareclass of $B$. To make the
+conversion explicit, write $V=\theta c^2$ and scale the second
+point to the curve with parameter $nV$. If the first abscissa is
+$Ba^2$, scale both points and parameters by $a$ so that their
+abscissas are $B$ and $Bs^2$, with $s\ne0$, and their curve
+parameters are $e_0$ and $e_0V$. For their ordinates $y_1,y_2$, set
+\[
+ e=e_0/B,\qquad p=y_1/B,\qquad q=y_2/(B^2s),\qquad
+ h=e(B-b^2).
+\]
+The first curve equation gives $p^2=B(1-e)(1+3e)$.
+Since $e_0V=B^2h$, the second gives
+$Bq^2=(s^2-Bh)(s^2+3Bh)$. These are the required witnesses.
+The only arithmetic existence theorem used in this specialization
+is the existing simultaneous-realization lemma, with its stated
+restricted-converse and descent dependencies.
+\end{proof}
+
+\begin{lemma}[Real bounds independent of later progression moduli]
+\label{v5:real-progression-bridge}
+Let $G$ be the closure of the integer orbit
+\[
+ \{([n]P_*,[n]P_*^\sigma):n\in\Z\}
+       \subset E(\mathbb R)\times E^\sigma(\mathbb R),
+\]
+and let $G^0$ be its identity component. Fix a finite collection of
+rational functions formed from nonzero integral multiples and fixed
+translates of either elliptic coordinate, with all denominators
+nonzero as rational functions on the relevant curve. Suppose their
+pole set is contained in a finite union of inverse images of finite
+sets under these nonzero multiplication-and-translation maps on
+either factor. There is a bound $C$ such that every nonconstant
+integer progression contains arbitrarily large positive indices at
+which all these functions are defined and their real absolute values
+are at most $C$. The bound is chosen from the functions before the
+progression modulus is specified.
+
+If $m=|G/G^0|$, $m\mid L$, and $m\mid h_0$, the progression
+$h\equiv h_0\pmod L$ is dense in $G^0$, and its positive tail
+meets every nonempty open subset of $G^0$ infinitely often.
+\end{lemma}
+
+\begin{proof}
+The real elliptic groups are compact Lie groups. Their closed
+subgroup $G$ is a compact abelian Lie group with finitely many
+components, and $G^0$ is a torus. The projection of $G^0$ onto
+each elliptic identity circle is surjective. Indeed the projected
+integer orbit is infinite, since $P_*$ has infinite order and each
+real embedding is injective on the group of algebraic points.
+If the connected projection were trivial, the projected $G$ would
+be finite; a nontrivial connected closed subgroup of a circle is
+the whole circle.
+
+Each nonzero multiplication map on a circle has finite fibers.
+Consequently each of the prescribed inverse images of a finite
+set has Haar measure zero in every component of $G$. The finite
+union of pole sets cannot cover a component. Choose in each
+component a nonempty open neighborhood whose compact closure
+avoids the poles. Continuity bounds all the fixed rational
+functions on these finitely many compact sets by one constant $C$.
+
+For a progression $h=r+kn$, its closure is
+$[r]P_*+[k]G$. Multiplication by the positive integer $k$ maps
+$G^0$ onto itself, so this closure contains an entire component
+of $G$. The positive tail of the progression is dense in its
+closure: compactness gives unbounded positive multiples tending
+to the identity, so each negative multiple is also a limit of
+positive multiples. It therefore meets the chosen neighborhood
+in that component at arbitrarily large positive indices.
+
+If $m\mid k$, then $[k]G=G^0$. If also $m\mid r$, the coset
+is $G^0$ itself. Apply this with $k=L$ and $r=h_0$ for the final
+assertion.
+\end{proof}

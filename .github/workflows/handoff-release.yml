@@ -1,4 +1,4 @@
-name: Build Version 2 research handoff
+name: Build Version 5 research handoff
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: quartic-12504-handoff
+  group: quartic-1272-handoff
   cancel-in-progress: false
 
 jobs:
@@ -20,13 +20,17 @@ jobs:
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12.14'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.22.1'
       - name: Check packaging and freeze exact snapshot
         shell: bash
         run: |
           ulimit -v 2097152
           mkdir -p build
+          python -E -B scripts/check_quartic1272.py --out "$RUNNER_TEMP/quartic-1272-replay"
           python -E -B handoff/test_handoff.py > build/handoff-tests.json
-          python -E -B handoff/prepare_handoff.py --repo . --commit "$GITHUB_SHA" --verification-receipt docs/quartic-12504/verification/REPRODUCTION.json --output build/handoff-plan.json
+          python -E -B handoff/prepare_handoff.py --repo . --commit "$GITHUB_SHA" --verification-receipt handoff/releases/version5/REPRODUCTION.json --output build/handoff-plan.json
       - name: Fetch unchanged historical baseline
         shell: bash
         run: |
@@ -37,22 +41,30 @@ jobs:
         run: |
           ulimit -v 2097152
           python -E -B handoff/build_handoff.py --repo . --payload handoff/payload --plan build/handoff-plan.json --baseline "$RUNNER_TEMP/baseline.zip" --output build/handoff-output
-          python -E -B handoff/verify_handoff.py build/handoff-output/z-in-q-version2-current-handoff.zip --extract "$RUNNER_TEMP/current-handoff-extracted" > build/handoff-extraction.json
-          sha256sum quartic_12504.tex quartic_12504.pdf >> build/handoff-output/SHA256SUMS
+          python -c "import hashlib,json,os,subprocess,sys; from pathlib import Path; a=Path('build/handoff-output/z-in-q-version5-current-handoff.zip'); p=Path('build/handoff-plan.json'); subprocess.run([sys.executable,'-E','-B','handoff/replay_extracted_current.py',str(a),'--expected-archive-sha256',hashlib.sha256(a.read_bytes()).hexdigest(),'--expected-plan-sha256',hashlib.sha256(p.read_bytes()).hexdigest(),'--extract',os.environ['RUNNER_TEMP']+'/current-handoff-extracted','--replay-output',os.environ['RUNNER_TEMP']+'/extracted-replay','--report','build/handoff-extraction.json'],check=True)"
+          sha256sum quartic_1272.tex quartic_1272.pdf >> build/handoff-output/SHA256SUMS
       - name: Upload a draft release for final inspection
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
-          if gh release view quartic-12504-version-2 >/dev/null 2>&1; then
+          if ! tag_record=$(git ls-remote --refs origin refs/tags/quartic-1272-version-5); then
+            printf '%s\n' 'Could not check the remote tag; refusing to publish.' >&2
+            exit 1
+          fi
+          if [ -n "$tag_record" ]; then
+            printf '%s\n' 'Git tag already exists; refusing to overwrite it.' >&2
+            exit 1
+          fi
+          if gh release view quartic-1272-version-5 >/dev/null 2>&1; then
             printf '%s\n' 'Release tag already exists; refusing to overwrite it.' >&2
             exit 1
           fi
-          gh release create quartic-12504-version-2 --target "$GITHUB_SHA" --draft --title 'Version 2: the 12,504-variable quartic' --notes-file handoff/RELEASE_NOTES.md quartic_12504.tex quartic_12504.pdf build/handoff-output/z-in-q-version2-full-handoff.zip build/handoff-output/z-in-q-version2-current-handoff.zip build/handoff-output/SHA256SUMS build/handoff-output/BUILD_RECEIPT.json build/handoff-plan.json
+          gh release create quartic-1272-version-5 --target "$GITHUB_SHA" --draft --title 'Version 5: the 1,272-variable quartic' --notes-file handoff/RELEASE_NOTES.md quartic_1272.tex quartic_1272.pdf build/handoff-output/z-in-q-version5-full-handoff.zip build/handoff-output/z-in-q-version5-current-handoff.zip build/handoff-output/SHA256SUMS build/handoff-output/BUILD_RECEIPT.json build/handoff-plan.json
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
-          name: version2-handoff-evidence
+          name: version5-handoff-evidence
           path: |
             build/handoff-plan.json
             build/handoff-tests.json

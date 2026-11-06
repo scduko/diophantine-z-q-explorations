@@ -1,0 +1,65 @@
+{
+  "schema": "local-lucas-residual-v1",
+  "status": "independently reviewed arithmetic proposal; no generated source accepted",
+  "source_pin_authorized": false,
+  "proof": {
+    "file": "LOCAL_LUCAS_RESIDUAL.md",
+    "sha256": "2c4b1a1f24a485b021ff11561043a412a61186e243194ba244b6090124b83570"
+  },
+  "arithmetic_review": {
+    "file": "../../arithmetic-audit/sub5000/LOCAL_LUCAS_REVIEW.md",
+    "sha256": "818c51743e55536c0b10da8c4153d82f45ee5ab64d6f2cb68abb6d5482c9f715"
+  },
+  "parameters": {
+    "high_precision": 40,
+    "beta_precision": 12,
+    "height_exponent": 19,
+    "anchor_squarings": 25,
+    "scalar_orders": [1, 1, 1, 1, 32, 32],
+    "raw_contacts": 37,
+    "full_positions": [0, 1, 2, 3, 4, 21, 22, 23, 24, 25, 26, 27, 28],
+    "beta_positions": [5, 6, 7, 8, 9, 10, 11, 12],
+    "lucas_positions": [13, 14, 15, 16, 17, 18, 19, 20, 29, 30, 31, 32, 33, 34, 35, 36]
+  },
+  "evaluation": {
+    "coordinates": ["V", "D_eval", "E"],
+    "field_residuals": [
+      "V-(C_s-2)*C_z",
+      "D_eval-C_s*C_t+V",
+      "E-C_t^2+V*D_eval+1"
+    ],
+    "tested_value": "E=F(C_s,C_t,C_z)",
+    "test_order": 40,
+    "forbidden_substitute": "exact field equality E=0"
+  },
+  "full": {
+    "field_tests": [
+      "f(H)", "f(Q_beta)", "f(Q_s)", "f(Q_t)", "f(Q_z)", "conj(f(J))",
+      "C_beta-beta", "E", "A_H", "A_beta", "A_s", "A_t", "A_z"
+    ],
+    "orders": [1, 1, 1, 1, 1, 1, 12, 40, 40, 12, 40, 40, 40]
+  },
+  "beta": {
+    "field_tests": ["f(H)", "f(Q_beta)", "conj(f(J))", "C_beta-beta", "A_H", "A_beta"],
+    "orders": [1, 1, 1, 12, 12, 12]
+  },
+  "lucas": {
+    "field_tests": ["f(H)", "f(Q_s)", "f(Q_t)", "f(Q_z)", "conj(f(J))", "E", "A_H", "A_s", "A_t", "A_z"],
+    "orders": [1, 1, 1, 1, 1, 40, 40, 40, 40, 40]
+  },
+  "totals": {"field_tests": 377, "primary_points": 145, "lucas_evaluations": 29},
+  "root_proxy_policy": {
+    "preferred": "remove xi,tau,zeta and their proxy Lucas equation, then reindex all residuals/calls/metadata",
+    "allowed_initial_variant": "retain the old root and ignore the three proxy inputs; xi=0,tau=1,zeta=0 supplies the irrelevant equation",
+    "required_incidence_check": "old proxies occur only in their source-level Lucas equation and the removed comparison proxy slots",
+    "unchanged": "all root points, anchor, scalar-height batch, beta and original input"
+  },
+  "chart_and_norm": {
+    "required": "separately reviewed chart supplying the same formal and alternate local implications",
+    "compatible": ["four-field rational difference", "separately reviewed three-field difference"],
+    "norm": "separately reviewed paired norm or private-conic norm, with exact new field lists",
+    "no_precision_change": true,
+    "no_denominator_clearing": "E keeps its exact normalized value; Lambda powers are not dropped"
+  },
+  "measured_variable_saving": null
+}

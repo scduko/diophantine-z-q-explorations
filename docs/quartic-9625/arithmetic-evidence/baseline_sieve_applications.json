@@ -1,0 +1,110 @@
+{
+  "schema": "original41-applications/v1",
+  "applications": [
+    {
+      "id": "OP01",
+      "topic": "exact constants",
+      "verified_contract": "R=31*37*41; W=4*primorial(29); c residues; V0=32W",
+      "evidence": "check_constants.py and reference-constant-check.json",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP02",
+      "topic": "nonproportionality",
+      "verified_contract": "Integral contact differences and sums modulo31 exclude all collisions after repeated targets removed",
+      "evidence": "original41-proof.tex first proof",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP03",
+      "topic": "local admissibility",
+      "verified_contract": "Primes31,37,41 have at most8 slopes; primes>=43 at most40; two missing residues avoid all value/successor zeros",
+      "evidence": "original41-proof.tex and fixed modular examples",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP04",
+      "topic": "Green-Tao application",
+      "verified_contract": "m<=41, complexity<=39, integer affine forms, convexbox, fixed coefficients/modulus after choosingL",
+      "evidence": "GT/MN/GI published interfaces",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP05",
+      "topic": "cutoff dependence",
+      "verified_contract": "Residue density >=C(logL)^(-2m); singularproduct uniformlypositive; GTerror need notbeuniforminL",
+      "evidence": "Original proof expanded in original41-proof.tex",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP06",
+      "topic": "Selberg upper bounds",
+      "verified_contract": "CRT error Nd+d^2; explicit weights; truncation z=Z^(1/512); fixed modulus2/4 Mertens",
+      "evidence": "Published Williams plus elementary complete derivation",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP07",
+      "topic": "CM order restrictions",
+      "verified_contract": "Original curve has d*dconj=7; p1mod8,3mod7 yields opposite traces, gcd2part4, p doesnotdivideorders",
+      "evidence": "Published Silverman interfaces and elementary twist character sum",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP08",
+      "topic": "bad values and fibers",
+      "verified_contract": "No varying modulus omitted; explicitintegerfiber parametrizations; sameprime badtail beatslowercount after LthenX",
+      "evidence": "original41-proof.tex",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP09",
+      "topic": "sharedJ completeness",
+      "verified_contract": "j=lcm locald2; h_p private satisfies0modd1,4modd2,4modp^(64+vpj); allcompatible by ownprimeconditions",
+      "evidence": "New direct proof replaces appeal to source localwitnesses without modifying formula",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP10",
+      "topic": "formal index ratios",
+      "verified_contract": "Both multiples formal; log(kP)/log(jP)=k/j follows by multiplying to kjP; no log(P) assumed",
+      "evidence": "Silverman IV.6.4,VII.2.1-2.2",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP11",
+      "topic": "truncation and soundness",
+      "verified_contract": "Invariant differential gives fullseries; omittedterms >=65v(z); h4modp^64 isunit; ratio m_i/h integral",
+      "evidence": "Elementary series proof plus published formal-group homomorphism",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP12",
+      "topic": "common theta",
+      "verified_contract": "One orientation per distinctprime; choosepoints first; finiteCRT precision absorbs every coefficientvaluation",
+      "evidence": "original41-proof.tex",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP13",
+      "topic": "parity contract consumption",
+      "verified_contract": "All rawcontacts positiveprime cmodW, locallysquare at2,3,17; normrootunit atcontact; rW^2 positive withsquaredenominator",
+      "evidence": "Specializedparity theorem itself reviewed elsewhere; only itshypotheses checked here",
+      "status": "pass in stated scope"
+    },
+    {
+      "id": "OP14",
+      "topic": "actual circuit match",
+      "verified_contract": "contacts() usesexact41positions; commonJ,conjugatefJ,conjugatezJinverse,commonroot passedinsharedprefix; fiveX points privatepercall",
+      "evidence": "Read-onlyinspection of originalbuild.py lines364-437",
+      "status": "pass in stated scope"
+    }
+  ],
+  "unresolved_in_scope": [],
+  "external_boundaries": [
+    "2E(Q(sqrt2))=ZP_* and nontorsion generator assertion",
+    "five-contact height theorem and its explicit constant",
+    "seven-witness parity soundness/completeness theorem",
+    "all other circuit, count and coefficient claims"
+  ]
+}

@@ -1,0 +1,35 @@
+{"sweep": 0, "eliminated": 642, "linear_combinations": 197, "variables": 9668, "monomials": 76083, "seconds": 0.79}
+{"sweep": 1, "eliminated": 27, "linear_combinations": 27, "variables": 9641, "monomials": 81923, "seconds": 2.25}
+{"sweep": 2, "eliminated": 11, "linear_combinations": 81, "variables": 9630, "monomials": 82569, "seconds": 2.65}
+{"sweep": 3, "eliminated": 1, "linear_combinations": 7, "variables": 9629, "monomials": 82525, "seconds": 2.98}
+{"sweep": 4, "eliminated": 0, "linear_combinations": 0, "variables": 9629, "monomials": 82525, "seconds": 3.36}
+{
+  "witnesses": 9628,
+  "variables": 9629,
+  "rows": 9165,
+  "monomials": 82525,
+  "degree": 4,
+  "max_abs_coefficient": 685783949153203534233601,
+  "allocated_variables": 13152,
+  "initial_variables": 10310,
+  "new_operations": 993,
+  "new_eliminations": 681,
+  "parent": "/home/runner/work/private-diophantine/private-diophantine/build/quartic-reproduction/batch",
+  "max_row_terms": 96,
+  "rational_eliminations_enabled": true,
+  "started_from_initial_lift": false,
+  "combined_proportional_quadratic_parts": true,
+  "sparse_quadratic_elimination": true,
+  "seed": 0,
+  "row_order": "reverse",
+  "pivot_score": "terms",
+  "gaussian_order": "rare",
+  "sweeps_run": 5,
+  "stopped_at_fixed_point": true,
+  "rejection_counts": {
+    "degree_obstruction": 51716,
+    "coefficient_bound": 219
+  },
+  "seconds": 3.555,
+  "status": "CANDIDATE: independent certificate verification pending"
+}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "modules/Z_definition.json": "5e96bf1b0de4e1694dcc7ff21a9a7b69b5e2cc61295c2fc2816696092c5dacde",
+    "modules/q_anchor.json": "3edef11d7871866f6224bf9a6e4a6f2d99d5c8f535eef2d3c2c57f98a33f0f6f",
+    "modules/q_compare_beta.json": "75189120b018c23bbf1573de56687103160872aca41d3d1d35138abb7b05203e",
+    "modules/q_height_batch.json": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761",
+    "modules/q_primeparity.json": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a",
+    "shared.json": "f879f79eb7e8072176c8204df4c07a0097a219b7c2452c7c09bd52ca04abe83e"
+  },
+  "inherited_pins_sha256": "34f06c9d06698fba1fa9549be5470a10535641fa05aabc370d6b33e67316f695",
+  "parent_entry_sha256": "d9d8e76dd18be570c96c0a6df0913baf7027c12c4e4f470d3806bb27aec49374",
+  "parent_packet_manifest_sha256": "12d818714b70680eff617295008d685ebec8c81984d0402eb6ea79840ef330ed",
+  "parent_source_audit_sha256": "f560a3b942796d24a95a5631935b985fe9fe5fb0f46cea1be2014e51d4d2168b",
+  "parent_source_id": "joint-chart-local-lucas-conic-anchor4-k40-q12-a25-h19-s32-36652fcddbde",
+  "parent_source_sha256": "a4426378c793dda3e06c73d44da28cb3dba4207bf5a2325c2ba16c09e68163e6",
+  "superseded_files_sha256": {
+    "modules/q_conic10.json": "52295a3dc1c694ea879adf0a041f5c94db4fe4482e89bcfe4c2314efe18813c6",
+    "modules/q_conic13.json": "dc243128e59f9ef166e2b08d289a115ada1f8bd06685f0730040e8ef2a3a3f78",
+    "modules/q_conic6.json": "94cef3226b565d3b1d42dc719dd6114310cb6b306e337c911b4861156e0683f9"
+  },
+  "supersession": "Only the three conic batch tails are replaced by the composed pole contract"
+}

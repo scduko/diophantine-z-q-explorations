@@ -1,0 +1,50 @@
+{
+  "arithmetic_proof_sha256": "0b52a6ac4840636be12f455bf0e8b07ba02bb2308493d937afd840ea19bdb510",
+  "arithmetic_review_sha256": "885fa0233d3e739999ba0132a9bbae33f9eac53491945250fd08100751c685a3",
+  "batch_call_change": "q_conicpole(r,theta,W) to q_linearnormalpole(r,theta,W), exact same argument indices",
+  "consumed_soundness_assertion": "If b=r*W^2 is nonzero then v_p(b) is not negative odd for every p outside {2,3,17}",
+  "final_source_gate": "New source family and identity; exact literal module, exact caller map, whole source/flattening/locator audit and full quartic replay required",
+  "format": "linear-unit-normalized-ten-pole-v1",
+  "free_inputs": [
+    "r",
+    "theta",
+    "W"
+  ],
+  "helper_sha256": {
+    "emit_linear.py": "19e7dc5b5516674dc972aa4b1e15c6b10725192d3f5e8bf48419dbdb93446878",
+    "spec_linear.py": "86789c5fd288d2c739659b1f15779d9c81599f84d54c14d7d26f17efe083603b",
+    "test_linear.py": "1f64ffa57b0ebc5e200e8d28bc7079c4d543abfbb75cba5486cf6ee7b410e1c4"
+  },
+  "instances": 37,
+  "integer_completeness": "Same conic weak approximation: selected-prime root and theta=3/2 at real,2,3,17; generalized fixed-U simultaneous realization",
+  "max_residual_coefficient": 867,
+  "new_module": "q_linearnormalpole",
+  "old_full_Psi_projection_claim": false,
+  "private_variables": [
+    "l",
+    "z",
+    "e",
+    "p",
+    "c",
+    "w",
+    "s_p",
+    "q",
+    "j",
+    "k"
+  ],
+  "proposed_parent_manifest": "07ded5a9a1fb0dcdd2e0f1e0930268841fcdc79bf4b1335189a952fef024963b",
+  "required_conic": "theta^2-r*s_c^2=2 with the same r and theta",
+  "required_field_ordering": "All tested field coefficients fixed before, and independent of, this private conic",
+  "residual_count": 8,
+  "residual_degree": 2,
+  "scope": "Ordinary private-conic pole replacement only; no scalar-height or norm-tree changes",
+  "unchanged": [
+    "all root/height/anchor modules",
+    "all comparison field definitions and orders",
+    "all private conic equations",
+    "all contact power and upper norm-tree equations",
+    "all W roots and their uses except pole module selection"
+  ],
+  "unchanged_legacy_parity_instances": 1,
+  "zero_branches": "W=0 and zero first/last parity ordinates allowed; no extra guards"
+}

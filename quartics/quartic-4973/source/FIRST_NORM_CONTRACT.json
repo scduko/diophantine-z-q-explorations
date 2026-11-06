@@ -1,0 +1,31 @@
+{
+  "schema": "first-conic-norm-fusion-proposal-v1",
+  "status": "Proposed arithmetic denominator change plus exact fusion; emitted source pending",
+  "source_pin_authorized": false,
+  "modes": {
+    "q_conic13": {"comparator":"q_compare4", "occurrences":13, "field_count":13},
+    "q_conic6": {"comparator":"q_compare_beta", "occurrences":8, "field_count":6},
+    "q_conic10": {"comparator":"q_compare_lucas", "occurrences":16, "field_count":10}
+  },
+  "field_index": 0,
+  "field_role": "H.f",
+  "field_order": 1,
+  "tree_position": "literal 1 immediately followed by original field index 0",
+  "virtual_leaf": "T/r, where T=eval_theta(F^2)",
+  "virtual_denominator_exponent": 1,
+  "retained_conic": ["S=s^2", "theta^2-r*S=2"],
+  "retained_evaluation": "Y=A+theta*B",
+  "new_rows": ["T-2*A*Y+A^2-2*B^2=0", "r*N-r-T^2=0"],
+  "unchanged": ["all other fields and orders", "all power variables including r^2", "all higher norm nodes and their consumers", "all pole rows/calls", "all conic rows", "all root and comparator modules", "shared-square field and its explicit type"],
+  "exact_map_scope": "Virtual mixed-denominator source to fused source, assuming retained rational conic",
+  "forward_map": "T=r*W; preserve N and all outside coordinates",
+  "reverse_map": "W=T/r; preserve N and all outside coordinates",
+  "division_premise": "r!=0 follows from theta^2-r*s^2=2 over Q",
+  "outside_use_requirement": "Retyped first leaf coordinate occurs only in its definition and first norm-node row; first node ID and all consumers are retained",
+  "zero_cases": "T=0,W=0,N=0 allowed; r=0 excluded only by the retained conic, never silently discarded",
+  "arithmetic_map_scope": "Old denominator-r^2 source and new denominator-r source have the same input projection by separate soundness and integer completeness, not fixed private-witness equivalence",
+  "estimate": {"source_coordinate_delta":0,"source_row_delta":0,"straightforward_lift_auxiliary_delta":-37,"measured_endpoint_delta":false},
+  "maximum_new_row_degree":2,
+  "maximum_new_row_abs_coefficient":2,
+  "full_coefficient_bound": "pending fresh exact SOS check"
+}

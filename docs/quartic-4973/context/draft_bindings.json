@@ -1,0 +1,241 @@
+{
+  "draft_files": {
+    "APPENDIX.tex": {
+      "bytes": 1938,
+      "path": "work/quartic-sub10000-20261106/precision/sub5000/publication-draft/revision-3/APPENDIX.tex",
+      "sha256": "8a28a4fa6631db1b49a68478eca9746dc12882295d111febd26c6a083d8c75be"
+    },
+    "CONTENT.tex": {
+      "bytes": 39571,
+      "path": "work/quartic-sub10000-20261106/precision/sub5000/publication-draft/revision-3/CONTENT.tex",
+      "sha256": "e67b256be73b41fca2e74958ebf0f9749e78f5d98f0c05c06118d3d156defc85"
+    },
+    "INTEGRATION.md": {
+      "bytes": 4095,
+      "path": "work/quartic-sub10000-20261106/precision/sub5000/publication-draft/revision-3/INTEGRATION.md",
+      "sha256": "d3583b9a89c8d4161587e6513faacbae40682d42928ad39cc742b1a9aadc897e"
+    },
+    "REVIEW_CHANGES.md": {
+      "bytes": 2157,
+      "path": "work/quartic-sub10000-20261106/precision/sub5000/publication-draft/revision-3/REVIEW_CHANGES.md",
+      "sha256": "c27570e6addb3756b729a8066555d360b593450c495549aa13c6c9f9f4cb9246"
+    },
+    "STATIC_CHECK.json": {
+      "bytes": 205,
+      "path": "work/quartic-sub10000-20261106/precision/sub5000/publication-draft/revision-3/STATIC_CHECK.json",
+      "sha256": "a9c032ab07aa8141d58a9ce850a1288b4dfc7cc9aea0a3e8427ed9e632f26a38"
+    },
+    "check_draft.py": {
+      "bytes": 2882,
+      "path": "work/quartic-sub10000-20261106/precision/sub5000/publication-draft/revision-3/check_draft.py",
+      "sha256": "0a9f5547e8bb267d2c94d7596f56e67a955cff07bfc76c66a80804d6a90aa7ef"
+    }
+  },
+  "draft_not_source_acceptance": true,
+  "extras": {
+    "first_norm_helper_review": {
+      "bytes": 3666,
+      "path": "work/quartic-sub10000-20261106/charts/sub5000/first-norm-review/HELPER_REVIEW.md",
+      "sha256": "3948533b6734c159e2b0c71e79dbc7d7c0ef546ebfb3b79b5c0e0a1e50133750"
+    },
+    "first_norm_proof": {
+      "bytes": 5744,
+      "path": "work/quartic-sub10000-20261106/batching/sub5000/first-norm-fusion/PROOF.md",
+      "sha256": "b18b32854d4ef6e8c49495ce404f7c96566a0a1926baca6f4ee1ed4cbedcba05"
+    },
+    "first_norm_review": {
+      "bytes": 6495,
+      "path": "work/quartic-sub10000-20261106/parity/sub5000/first-norm-fusion-review/REVIEW.md",
+      "sha256": "0208bf985c72d24e83863bb8b305b552b56c5fb9c5b6e9953c0df8b32ac0ef72"
+    },
+    "mixed_mode_clarification": {
+      "bytes": 3183,
+      "path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/MIXED_MODE_DENOMINATOR_CLARIFICATION.md",
+      "sha256": "2a1eb8ed9a7175995afa665a08035728c1714b5fa30e1ba52030b6adf7b8ba34"
+    },
+    "scalar_inverse_proof": {
+      "bytes": 2519,
+      "path": "work/quartic-sub10000-20261106/precision/sub5000/scalar-ratio/PROOF.md",
+      "sha256": "6814cb5338f5a42bf0c9863b2f0b67b5a0bc9d312b2df03745f1691632ea32e7"
+    },
+    "scalar_inverse_review": {
+      "bytes": 4637,
+      "path": "work/quartic-sub10000-20261106/elimination/sub5000/scalar-ratio-review/REVIEW.md",
+      "sha256": "64ce4f7d83001ca1f589846eff61cf6e297a531bbd90cdafbb48a8217ee38f96"
+    },
+    "tangent_generic_proof": {
+      "bytes": 4120,
+      "path": "work/quartic-sub10000-20261106/elimination/sub5000/doubling/PROOF.md",
+      "sha256": "5d9e18de430c481c03b482752309c10c3e454be06124e65e333f6cb988de25aa"
+    },
+    "tangent_generic_review": {
+      "bytes": 3207,
+      "path": "work/quartic-sub10000-20261106/charts/sub5000/doubling-review/REVIEW.md",
+      "sha256": "318381f09259142979235e53f7604b8c016340d9af5fe4af0b1644f8cdba180d"
+    },
+    "tangent_target2_proof": {
+      "bytes": 3339,
+      "path": "work/quartic-sub10000-20261106/elimination/sub5000/doubling-target-two/PROOF.md",
+      "sha256": "3591709058c666a1dd2786d46039b408a04f1908b644c16c6f722a72788a50c8"
+    },
+    "tangent_target2_review": {
+      "bytes": 4211,
+      "path": "work/quartic-sub10000-20261106/charts/sub5000/doubling-target2-review/REVIEW.md",
+      "sha256": "7753f3c9dbdac926bdb568fafc8e1a0df0fd9b51af1beb97dae04842f80cfc5a"
+    }
+  },
+  "inherited_pins": {
+    "bytes": 15079,
+    "path": "work/quartic-sub10000-20261106/batching/sub5000/publication-readiness/PROOF_PINS.json",
+    "sha256": "6c5008380a1ab3781db9cf8a97a42eca24214fa3ac426d1261e0734487da765e"
+  },
+  "inherited_readiness": {
+    "bytes": 21350,
+    "path": "work/quartic-sub10000-20261106/batching/sub5000/publication-readiness/READINESS.md",
+    "sha256": "2f270cef1d849a9550b8c715af007e859cba485da05553b4a27ff3c44759dee4"
+  },
+  "labels": {
+    "lem:quartic-anchor-four": {
+      "include": "always",
+      "proof_ids": [
+        "anchor_proof",
+        "anchor_review"
+      ]
+    },
+    "lem:quartic-conic-completeness": {
+      "include": "always",
+      "proof_ids": [
+        "conic_proof",
+        "conic_review",
+        "joint_arithmetic_proof"
+      ]
+    },
+    "lem:quartic-doubled-indices": {
+      "include": "GeneralRoots",
+      "proof_ids": [
+        "general_root_proof",
+        "general_root_review"
+      ]
+    },
+    "lem:quartic-doubled-private-comparison": {
+      "include": "always",
+      "proof_ids": [
+        "private_comparison_proof",
+        "private_comparison_review"
+      ]
+    },
+    "lem:quartic-first-norm-fusion": {
+      "include": "FirstNorm",
+      "proof_ids": [
+        "first_norm_proof",
+        "first_norm_review",
+        "first_norm_helper_review"
+      ]
+    },
+    "lem:quartic-general-root-charts": {
+      "include": "GeneralRoots",
+      "proof_ids": [
+        "root_chart_proof",
+        "root_chart_review"
+      ]
+    },
+    "lem:quartic-joint-chart": {
+      "include": "always",
+      "proof_ids": [
+        "joint_chart_proof",
+        "two_denominator_proof",
+        "joint_chart_review"
+      ]
+    },
+    "lem:quartic-linear-pole": {
+      "include": "always",
+      "proof_ids": [
+        "linear_pole_proof",
+        "linear_pole_review",
+        "parity_scale_proof"
+      ]
+    },
+    "lem:quartic-local-lucas": {
+      "include": "always",
+      "proof_ids": [
+        "local_lucas_proof",
+        "local_lucas_review"
+      ]
+    },
+    "lem:quartic-normalized-lucas": {
+      "include": "always",
+      "proof_ids": [
+        "normalized_proof",
+        "normalized_review"
+      ]
+    },
+    "lem:quartic-private-conic-packing": {
+      "include": "always",
+      "proof_ids": [
+        "conic_proof",
+        "conic_review"
+      ]
+    },
+    "lem:quartic-scalar-inverse-fusion": {
+      "include": "ScalarFusion",
+      "proof_ids": [
+        "scalar_inverse_proof",
+        "scalar_inverse_review"
+      ]
+    },
+    "lem:quartic-shared-field-square": {
+      "include": "SharedSquare",
+      "proof_ids": [
+        "shared_square_proof",
+        "shared_square_review"
+      ]
+    },
+    "lem:quartic-tangent-fusion": {
+      "include": "TangentFusion",
+      "proof_ids": [
+        "tangent_target2_proof",
+        "tangent_target2_review",
+        "tangent_generic_proof",
+        "tangent_generic_review"
+      ]
+    },
+    "lem:quartic-target-two": {
+      "include": "GeneralRoots and TargetTwo",
+      "proof_ids": [
+        "target_two_proof",
+        "target_two_review",
+        "mixed_mode_clarification"
+      ]
+    },
+    "lem:quartic-three-mode-coverage": {
+      "include": "always",
+      "proof_ids": [
+        "three_mode_proof",
+        "three_mode_review"
+      ]
+    },
+    "thm:quartic-selective-arithmetic": {
+      "include": "always",
+      "proof_ids": [
+        "three_mode_proof",
+        "normalized_proof",
+        "general_root_proof"
+      ]
+    }
+  },
+  "pdf_created": false,
+  "previous_revision": {
+    "CONTENT.tex": {
+      "bytes": 38023,
+      "path": "work/quartic-sub10000-20261106/precision/sub5000/publication-draft/revision-2/CONTENT.tex",
+      "sha256": "515e2b1f071211f8ade8f180dc0d55a3b21a298a8cc5132a954405287c5e0aee"
+    },
+    "DRAFT_BINDINGS.json": {
+      "bytes": 7471,
+      "path": "work/quartic-sub10000-20261106/precision/sub5000/publication-draft/revision-2/DRAFT_BINDINGS.json",
+      "sha256": "385eeba3cacf75db1cfb91b6c727bda50731b0b85248bf592416fedfcc10e884"
+    }
+  },
+  "revision": 3,
+  "schema": "quartic-editorial-draft-bindings-v1"
+}

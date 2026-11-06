@@ -1,0 +1,11 @@
+{
+  "witnesses": 11155,
+  "variables": 11156,
+  "rows": 10692,
+  "degree": 4,
+  "monomials": 68952,
+  "max_abs_coefficient": 685783949153203534233601,
+  "status": "CANDIDATE: independent verification pending",
+  "gpoint_chart_replacements": 6,
+  "raw_rational_variables_saved": 12
+}

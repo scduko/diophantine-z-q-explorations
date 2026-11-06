@@ -1,0 +1,416 @@
+{
+  "arithmetic_acceptance": false,
+  "below5000": false,
+  "endpoint": "stages/coordinates",
+  "manifest_sha256": "7654b06f450db87a3181dd5e16fe23949cb4e57d22751aef3681fed80a1fcf26",
+  "mode": "exploratory",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "seconds": 192.648,
+  "status": "ALGEBRAIC CANDIDATE VERIFIED",
+  "steps": [
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/check_packet_syntax.py",
+        "--toolchain",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables",
+        "--rules",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/astra-wave11"
+      ],
+      "exit": 0,
+      "log": "syntax.log",
+      "log_sha256": "d74177cc0622452799e8364bf8993f76c478e79f66ce3cf404455430d040ba4d",
+      "seconds": 0.265,
+      "stage": "syntax"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_conic_locators.py"
+      ],
+      "exit": 0,
+      "log": "conic-locator-fixtures.log",
+      "log_sha256": "12aae6ee934a042902529134caf35ff756c7bfe3fee22b95cc08e2901947eab9",
+      "seconds": 0.367,
+      "stage": "conic-locator-fixtures"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_linear.py",
+        "--builder",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/baseline/compiler/archive_build.py",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/linear-pole-identities.json"
+      ],
+      "exit": 0,
+      "log": "linear-pole-identities.log",
+      "log_sha256": "1f8352276e4fc7f49139fcdd1462897894cdc72b8ffdc66ea360ec7257da0377",
+      "seconds": 0.116,
+      "stage": "linear-pole-identities"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_linear_integration.py",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/pole-integration.json"
+      ],
+      "exit": 0,
+      "log": "pole-integration.log",
+      "log_sha256": "8128d7676952d0bbfacb2b9606142b7471e372f0d9d1d3a5bafe859ea77b6d5f",
+      "seconds": 0.617,
+      "stage": "pole-integration"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_joint_chart.py"
+      ],
+      "exit": 0,
+      "log": "joint-chart-identities.log",
+      "log_sha256": "a7fed21d13f745a4bea4d5267b3985b1ed7e5daa941609b1e8cf10b7089e5c1a",
+      "seconds": 0.115,
+      "stage": "joint-chart-identities"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_first_norm_identities.py"
+      ],
+      "exit": 0,
+      "log": "first-norm-identities.log",
+      "log_sha256": "d8377c0d0c92035bf85b837a5aec36e56d8bd7527bf96f3f61efd82bf7aefffe",
+      "seconds": 0.215,
+      "stage": "first-norm-identities"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_shared_square.py"
+      ],
+      "exit": 0,
+      "log": "shared-square-identities.log",
+      "log_sha256": "cf8e596d8c136f339dd738b751518a8d1afc4b041e3d75265ab86d70a281bcdb",
+      "seconds": 0.065,
+      "stage": "shared-square-identities"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_shared_square_resources.py"
+      ],
+      "exit": 0,
+      "log": "shared-square-resources.log",
+      "log_sha256": "fd938639d489471041da298f95d3e6f859970be8e3d9b36d7be77c35f854c678",
+      "seconds": 0.032,
+      "stage": "shared-square-resources"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_target2_audit.py",
+        "--parents",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/parent/modules",
+        "--base-audit",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/audit_root_rewrite.py",
+        "--producer",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/target2_rewrite.py"
+      ],
+      "exit": 0,
+      "log": "root-delta-mutations.log",
+      "log_sha256": "83d9399df2db521557c45a6f2c040247cf0996e115082086bd4d21ca2ebe2e5c",
+      "seconds": 3.322,
+      "stage": "root-delta-mutations"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_doublings.py",
+        "--parent-root",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/parent/modules/Z_definition.json",
+        "--root-helper",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/target2_rewrite.py",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/tangent-identities.json"
+      ],
+      "exit": 0,
+      "log": "tangent-identities.log",
+      "log_sha256": "f81407780925f8dea2a396f034bf69b9490f9bf776b199c64585c69ef8e45ca9",
+      "seconds": 0.164,
+      "stage": "tangent-identities"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_tangent_portable.py",
+        "--parents",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/parent/modules",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/tangent-mutations.json"
+      ],
+      "exit": 0,
+      "log": "tangent-mutations.log",
+      "log_sha256": "710681281e63f6a8cb99d4a0b4554a1bd88475990842f606242c673919ca7bd5",
+      "seconds": 0.816,
+      "stage": "tangent-mutations"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_normalization_identity.py"
+      ],
+      "exit": 0,
+      "log": "normalized-lucas-identities.log",
+      "log_sha256": "f16137a0f1253e03d7cbecc541fde3e26ba0ccd6e0b1790118366a49b8706de3",
+      "seconds": 0.065,
+      "stage": "normalized-lucas-identities"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_anchor_four.py",
+        "--builder",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/baseline/compiler/archive_build.py"
+      ],
+      "exit": 0,
+      "log": "anchor4-identities.log",
+      "log_sha256": "61c8379e1009a71ce473a977414017687b928162d692ce322c2b2c5d239a9709",
+      "seconds": 0.065,
+      "stage": "anchor4-identities"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/build_source.py",
+        "--baseline",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/baseline",
+        "--out",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/source",
+        "--proxy-fixture",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/proxy-root.json"
+      ],
+      "exit": 0,
+      "log": "build-source.log",
+      "log_sha256": "608b52f863942a9e8c6545122f82d442e9cb162d49e90117137243322f50903d",
+      "seconds": 0.468,
+      "stage": "build-source"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/check_source.py",
+        "--source",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/source",
+        "--baseline",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/baseline",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/source-audit.json",
+        "--map",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/construction-map.json",
+        "--seconds",
+        "180"
+      ],
+      "exit": 0,
+      "log": "audit-source.log",
+      "log_sha256": "ad8cb7a28ae24f94a50fe9d38c65ae8c5057bcb53656fdc7ed679ea11a31016e",
+      "seconds": 1.267,
+      "stage": "audit-source"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_root_shared_source.py",
+        "--source",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/source",
+        "--baseline",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/baseline",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/source-mutations.json",
+        "--seconds",
+        "180"
+      ],
+      "exit": 0,
+      "log": "source-mutations.log",
+      "log_sha256": "b4ebd8aad7bb6a10490be311021a277dcb740ea5cf3a36018f41d28525e3fda0",
+      "seconds": 138.714,
+      "stage": "source-mutations"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_normalized_pole_source.py",
+        "--source",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/parent",
+        "--baseline",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/baseline",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/inherited-source-mutations.json",
+        "--core",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/core_audit.py",
+        "--anchor-checker",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/check_anchor_four.py",
+        "--seconds",
+        "180"
+      ],
+      "exit": 0,
+      "log": "inherited-source-mutations.log",
+      "log_sha256": "0aeb292780dc2d61a787fba35f998b7cc6e1b3528ce47abb0f5c68be93bc13ad",
+      "seconds": 31.988,
+      "stage": "inherited-source-mutations"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_proxy_removal.py",
+        "--builder",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/baseline/compiler/archive_build.py",
+        "--joint-root",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/proxy-root.json",
+        "--out",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/proxy-removal-guards.json"
+      ],
+      "exit": 0,
+      "log": "proxy-removal-guards.log",
+      "log_sha256": "d0b4156e50ac3b27cfcd60f8a0920093c5d09782eb92f954ac6d1aadb5bcdba6",
+      "seconds": 0.166,
+      "stage": "proxy-removal-guards"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/build_source.py",
+        "--baseline",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/baseline",
+        "--out",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/source-repeat"
+      ],
+      "exit": 0,
+      "log": "repeat-source.log",
+      "log_sha256": "608b52f863942a9e8c6545122f82d442e9cb162d49e90117137243322f50903d",
+      "seconds": 0.416,
+      "stage": "repeat-source"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/prepare_adapter.py",
+        "--source",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/source",
+        "--audit",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/source-audit.json",
+        "--construction-map",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/construction-map.json",
+        "--audit-checker",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/check_source.py",
+        "--toolchain",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables",
+        "--rules",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/astra-wave11",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/adapter"
+      ],
+      "exit": 0,
+      "log": "prepare-adapter.log",
+      "log_sha256": "b23809de1d786895977ad48b3cffd27fd99bbede1fc10d70f48e5c90282fe29c",
+      "seconds": 0.116,
+      "stage": "prepare-adapter"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/adapter/tools/run_pipeline.py",
+        "--adapter",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/adapter",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/stages",
+        "--stage-seconds",
+        "180",
+        "--optimize"
+      ],
+      "exit": 0,
+      "log": "algebraic-pipeline.log",
+      "log_sha256": "03797cd9634433ba5cf9119ae787f839b3e4149199c44dd522d0710e892a63bf",
+      "seconds": 12.192,
+      "stage": "algebraic-pipeline"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/target2-tangent-first-norm-pipeline/test_named_source.py",
+        "--adapter",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/adapter",
+        "--candidate",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/stages/coordinates",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42242278973/named-source-mutations.json",
+        "--seconds",
+        "180"
+      ],
+      "exit": 0,
+      "log": "named-source-mutations.log",
+      "log_sha256": "84818862a10679e3269a85344668786b7e7d615386425c53367152df0390af50",
+      "seconds": 1.067,
+      "stage": "named-source-mutations"
+    }
+  ],
+  "verification_sha256": "3479b547c270f3f017e2db1feea0d070abb05e8e02c35e04c8c306bdf12c4257",
+  "verified": {
+    "certificate_sha256": "110209d9b52a81bad47389406658c8ded498345bedbfdb589cb2121e0ea8000f",
+    "checker_sha256": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90",
+    "degree": 4,
+    "expanded_sha256": "3ac4fd30d3846ef8d7f011659eeb803b70f0e35c5a3c3b0584eb8d8d2a8ab82d",
+    "max_abs_coefficient": 685783949153203534233890,
+    "monomials": 74782,
+    "rows": 4752,
+    "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+    "variables": 5173,
+    "witnesses": 5172
+  },
+  "zlib": "1.3"
+}

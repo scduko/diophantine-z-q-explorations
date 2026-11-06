@@ -4,7 +4,7 @@ This directory contains the 48 modules accepted in integration 31. The Lean sour
 
 **This is not a formal proof of the 11/5 manuscript's main theorem.** The snapshot contains 463 explicit public declarations and 69 private declarations, including definitions and helper results. The whole-model, height, restricted-converse, pole-completeness, multiplication, compiler, construction/bounds, and final composition obligations are not closed by this snapshot.
 
-`Frozen/BoundedIntegerPolynomial.lean` is the exact unproved main target and contains one `sorry`. It is excluded from `ZInQ.lean`, the default library, and the axiom audit. Its hash is checked so that the intended statement cannot silently change.
+`Frozen/BoundedIntegerPolynomial.lean` is the exact approved, unproved target for the original polynomial in 292,890,231,905 total variables and contains one `sorry`. It is not a formal statement of the Version 4 quartic in 4,973 variables. No quartic-specific frozen target or completed quartic proof is included in this snapshot. It is excluded from `ZInQ.lean`, the default library, and the axiom audit. Its hash is checked so that the intended statement cannot silently change.
 
 ## Source provenance
 

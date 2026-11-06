@@ -1,0 +1,48 @@
+{
+  "status": "PASS_RELEASE_BINDING",
+  "scope": "Exact reviewed-fragment integration, foundational text retention, simple TeX reference closure, and inventory binding. Not a proof of the external arithmetic inputs.",
+  "manuscript": {
+    "path": "quartic_1272.tex",
+    "sha256": "16033e0471df605093b28210a9f81718c2486b147016ec8afc75d166dff0b90f",
+    "bytes": 807070
+  },
+  "reviewedFragments": [
+    {
+      "id": "new1272",
+      "path": "manuscript/new1272.tex",
+      "sha256": "506675ede05bb3d369d9882945958c86d2d39c8fbe4d6e1e393c6a4e17f00000",
+      "firstLine": 10524,
+      "lastLine": 11406
+    },
+    {
+      "id": "arithmetic-bridges",
+      "path": "bridge-review/arithmetic_bridges.tex",
+      "sha256": "94696c3d3113c6ff23b8ff3039a17447424151d49f5ecbf1f178304aaf2d5544",
+      "firstLine": 10253,
+      "lastLine": 10522
+    },
+    {
+      "id": "sun-appendix",
+      "path": "sun-proof/sun_appendix.tex",
+      "sha256": "620e2e5652048c827efd8a1d9dae78462679e65992beeb20c3f089b3115fb77b",
+      "firstLine": 15828,
+      "lastLine": 16577
+    }
+  ],
+  "retainedFoundationBlocks": [
+    "cyclic_generator",
+    "restricted_converse_statement",
+    "five_contact_height_full",
+    "seven_witness_pole_and_completeness",
+    "finite_correction_and_scalar_units",
+    "normalized_chart_indexheight_and_anchor",
+    "exact_norm_tests",
+    "scalar_height_and_lucas"
+  ],
+  "labelCount": 239,
+  "referenceCount": 408,
+  "coverageSha256": "55e7e898c36b7e7e5095eb1055e2bc1ed0132513ff63b7db8957423d7b8534d1",
+  "coverageStatus": "PASS_DOCUMENT_BINDING",
+  "allExternalInputsPublished": false,
+  "pending": {}
+}

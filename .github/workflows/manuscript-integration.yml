@@ -1,30 +1,61 @@
-name: Version 2 manuscript and quartic verification
+name: Version 5 manuscript and quartic verification
 
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Run all verification, rebuild paper, or render committed PDF'
+        description: 'Validate the selected source and manuscript'
         type: choice
-        options: [all, paper, visual]
+        options: [all, reproduction, paper, metadata]
         default: all
-  push:
-    paths:
-      - 'quartic_12504.tex'
-      - 'quartics/quartic-12504/**'
-      - 'docs/quartic-12504/**'
-      - 'scripts/build_paper.py'
-      - '.github/workflows/manuscript-integration.yml'
 
 permissions:
   contents: read
 
 concurrency:
-  group: quartic-12504-release-${{ github.ref }}
+  group: quartic-1272-release-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  verify:
+  reconstruction:
+    if: inputs.mode == 'all' || inputs.mode == 'reproduction'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.14'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.22.1'
+      - run: python scripts/check_quartic1272.py --out build/quartic-1272-reproduction
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: quartic-1272-reproduction
+          path: build/quartic-1272-reproduction/
+  reproduction:
+    if: inputs.mode == 'all' || inputs.mode == 'reproduction'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.14'
+      - name: Rebuild source and replay the complete selected certificate
+        shell: bash
+        run: |
+          ulimit -v 2097152
+          python -E -B quartics/quartic-4973/reproducibility/run.py --output build/quartic-reproduction --stage-seconds 180
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: quartic-4973-reproduction
+          path: build/quartic-reproduction/
+  paper:
+    if: inputs.mode == 'all' || inputs.mode == 'paper'
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
@@ -36,47 +67,35 @@ jobs:
         with:
           path: .cache/tectonic
           key: tectonic-${{ runner.os }}-0.17.0-6ffe055852f8faf66
-      - name: Reproduce source, certificate, and full integer expansion
-        if: inputs.mode != 'visual' && inputs.mode != 'paper'
-        shell: bash
-        run: |
-          ulimit -v 2097152
-          python -E -B quartics/quartic-12504/reproducibility/run.py --output build/quartic-reproduction --stage-seconds 180
-      - name: Check historical audit and current manuscript bindings
-        if: inputs.mode != 'visual'
-        run: |
-          python docs/theorem-application-audit/validate.py
-          python docs/quartic-12504/validate.py
-      - name: Compile the exact Version 2 manuscript
-        if: inputs.mode != 'visual'
+      - name: Compile the exact Version 5 manuscript
         run: python scripts/build_paper.py
-      - name: Render the manuscript for visual review
-        if: inputs.mode == 'visual' || inputs.mode == 'paper'
-        shell: bash
+      - name: Render changed pages for visual review
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y poppler-utils
           ulimit -v 2097152
-          if [ "${{ inputs.mode }}" = paper ]; then
-            python scripts/render_quartic_review.py --pdf build/paper/quartic_12504.pdf
-          else
-            python scripts/render_quartic_review.py
-          fi
-      - name: Validate the handoff snapshot before publication
-        if: inputs.mode == 'visual'
-        shell: bash
-        run: |
-          ulimit -v 2097152
-          python -E -B handoff/test_handoff.py > build/handoff-tests.json
-          python -E -B handoff/prepare_handoff.py --repo . --commit "$GITHUB_SHA" --verification-receipt docs/quartic-12504/verification/REPRODUCTION.json --output build/prepublication-handoff-plan.json
+          python scripts/render_quartic_review.py --pdf build/paper/quartic_1272.pdf
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
-          name: quartic-12504-release-checks
+          name: quartic-1272-paper
           path: |
-            build/quartic-reproduction/
-            build/quartic-inventory.json
             build/paper/
             build/pdf-review/
-            build/handoff-tests.json
-            build/prepublication-handoff-plan.json
+  metadata:
+    if: inputs.mode == 'all' || inputs.mode == 'metadata'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.14'
+      - name: Check manuscript bindings, historical inventory and archive rejection tests
+        shell: bash
+        run: |
+          ulimit -v 2097152
+          python -E -B docs/theorem-application-audit/validate.py
+          python -E -B docs/quartic-4973/inventory.py validate --repo . --docs docs/quartic-4973 --acceptance-sha256 06dd04ceb4bdcb40875e70293bf68abba61fd17052a5e90a70ade61af649d88b
+          python -E -B docs/quartic-1272/inventory.py validate --repo . --manuscript quartic_1272.tex --expected-input-sha256 695769c38917efa35b6256132cd8b77807d6384ab6d27c38f250ff8947ae6c10
+          python -E -B handoff/test_handoff.py

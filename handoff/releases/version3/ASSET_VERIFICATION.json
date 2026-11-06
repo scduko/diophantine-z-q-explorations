@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "snapshot_commit": "c1654a9e9653cf2e0c9a0495ea60dc9b81727226",
+  "release_id": 436584279,
+  "release_tag": "quartic-9625-version-3",
+  "workflow_run": 42232288409,
+  "artifact_id": 13510751164,
+  "artifact_sha256": "93e5ba0e7f027210df09a7b49fd71c4baabd4bbf2dc5d8aa3491ffc0b1d1f3fc",
+  "seven_asset_digests_match": true,
+  "assets": [
+    {
+      "name": "BUILD_RECEIPT.json",
+      "size": 1896,
+      "digest": "sha256:ac7659485038e626095f2b09db97b072fbf1adfce58c9aefe461c5c05c422ce7"
+    },
+    {
+      "name": "handoff-plan.json",
+      "size": 275031,
+      "digest": "sha256:320062d2990381336a0918cf5fe5fe98d871d6c824ddf4ee05ac5ad636a25b48"
+    },
+    {
+      "name": "quartic_9625.pdf",
+      "size": 1127656,
+      "digest": "sha256:8bd816a8432e8f6f16ae1484916489d02834be657c01dd3925edf6a0fee5b3e5"
+    },
+    {
+      "name": "quartic_9625.tex",
+      "size": 697804,
+      "digest": "sha256:dc77c88b5cc0819201343dc85d0891d4dad81d97ac3267ec1df34eb38003b552"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 367,
+      "digest": "sha256:077c17ec290f26a64f07055a03d5e30a7c0e2772c299a56fefd29cc587202120"
+    },
+    {
+      "name": "z-in-q-version3-current-handoff.zip",
+      "size": 24082228,
+      "digest": "sha256:3e758516b8e0b0d7c6739e8f432d1156f081b92b221b8ff6a65c736503a35486"
+    },
+    {
+      "name": "z-in-q-version3-full-handoff.zip",
+      "size": 363943274,
+      "digest": "sha256:1cdf754d84ce8cc906f6f5a4952381a5d4708bf4fa8d68136a3234a37dcda70a"
+    }
+  ]
+}

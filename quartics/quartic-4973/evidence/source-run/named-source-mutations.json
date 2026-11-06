@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+  "checker_sha256": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90",
+  "cases": [
+    {
+      "case": "unknown_source_id",
+      "status": "EXPECTED SEMANTIC REJECTION",
+      "line": 139,
+      "assertion": "assert source_id in SOURCE_ENTRIES"
+    },
+    {
+      "case": "wrong_source_entry_digest",
+      "status": "EXPECTED SEMANTIC REJECTION",
+      "line": 143,
+      "assertion": "assert first['source_entry_sha256']==hashlib.sha256(canonical(entry)+b'\\n').hexdigest()"
+    },
+    {
+      "case": "changed_source_header",
+      "status": "EXPECTED SEMANTIC REJECTION",
+      "line": 144,
+      "assertion": "assert json.loads(gzip.decompress(source_bytes).splitlines()[0])==entry['source_header']"
+    },
+    {
+      "case": "changed_source_body",
+      "status": "EXPECTED SEMANTIC REJECTION",
+      "line": 145,
+      "assertion": "assert hashlib.sha256(gzip.decompress(source_bytes)).hexdigest()==entry['uncompressed_sha256']"
+    },
+    {
+      "case": "changed_source_gzip_bytes",
+      "status": "EXPECTED SEMANTIC REJECTION",
+      "line": 146,
+      "assertion": "assert hashlib.sha256(source_bytes).hexdigest()==SOURCE_SHA"
+    }
+  ],
+  "scope": "Five source-name/byte binding mutations; full rule mutation coverage remains inherited from the exact pinned rule tests."
+}

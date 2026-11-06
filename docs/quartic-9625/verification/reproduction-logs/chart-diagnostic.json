@@ -1,0 +1,260 @@
+{
+  "chart_count": 6,
+  "all_exact": true,
+  "all_private": true,
+  "raw_rational_variables_saved": 12,
+  "charts": [
+    {
+      "instance": "Z_definition",
+      "chart": "A",
+      "exact_old_rows": true,
+      "outside_uses": {},
+      "removed": [
+        32,
+        33,
+        38,
+        39
+      ],
+      "old_rows": {
+        "f=u^2": [
+          27,
+          28
+        ],
+        "v2+df=1": [
+          29,
+          30
+        ],
+        "w2+v2=2": [
+          31,
+          32
+        ],
+        "h=vw": [
+          33,
+          34
+        ],
+        "zh+u=0": [
+          35,
+          36
+        ],
+        "xf=1": [
+          37,
+          38
+        ],
+        "yz+x=0": [
+          39,
+          40
+        ]
+      }
+    },
+    {
+      "instance": "Z_definition",
+      "chart": "S",
+      "exact_old_rows": true,
+      "outside_uses": {},
+      "removed": [
+        48,
+        49,
+        54,
+        55
+      ],
+      "old_rows": {
+        "f=u^2": [
+          41,
+          42
+        ],
+        "v2+df=1": [
+          43,
+          44
+        ],
+        "w2+v2=2": [
+          45,
+          46
+        ],
+        "h=vw": [
+          47,
+          48
+        ],
+        "zh+u=0": [
+          49,
+          50
+        ],
+        "xf=1": [
+          51,
+          52
+        ],
+        "yz+x=0": [
+          53,
+          54
+        ]
+      }
+    },
+    {
+      "instance": "Z_definition",
+      "chart": "T",
+      "exact_old_rows": true,
+      "outside_uses": {},
+      "removed": [
+        64,
+        65,
+        70,
+        71
+      ],
+      "old_rows": {
+        "f=u^2": [
+          55,
+          56
+        ],
+        "v2+df=1": [
+          57,
+          58
+        ],
+        "w2+v2=2": [
+          59,
+          60
+        ],
+        "h=vw": [
+          61,
+          62
+        ],
+        "zh+u=0": [
+          63,
+          64
+        ],
+        "xf=1": [
+          65,
+          66
+        ],
+        "yz+x=0": [
+          67,
+          68
+        ]
+      }
+    },
+    {
+      "instance": "Z_definition",
+      "chart": "Z",
+      "exact_old_rows": true,
+      "outside_uses": {},
+      "removed": [
+        80,
+        81,
+        86,
+        87
+      ],
+      "old_rows": {
+        "f=u^2": [
+          69,
+          70
+        ],
+        "v2+df=1": [
+          71,
+          72
+        ],
+        "w2+v2=2": [
+          73,
+          74
+        ],
+        "h=vw": [
+          75,
+          76
+        ],
+        "zh+u=0": [
+          77,
+          78
+        ],
+        "xf=1": [
+          79,
+          80
+        ],
+        "yz+x=0": [
+          81,
+          82
+        ]
+      }
+    },
+    {
+      "instance": "Z_definition",
+      "chart": "height J",
+      "exact_old_rows": true,
+      "outside_uses": {},
+      "removed": [
+        101,
+        102,
+        107,
+        108
+      ],
+      "old_rows": {
+        "f=u^2": [
+          85,
+          86
+        ],
+        "v2+df=1": [
+          87,
+          88
+        ],
+        "w2+v2=2": [
+          89,
+          90
+        ],
+        "h=vw": [
+          91,
+          92
+        ],
+        "zh+u=0": [
+          93,
+          94
+        ],
+        "xf=1": [
+          95,
+          96
+        ],
+        "yz+x=0": [
+          97,
+          98
+        ]
+      }
+    },
+    {
+      "instance": "Z_definition",
+      "chart": "common comparison J",
+      "exact_old_rows": true,
+      "outside_uses": {},
+      "removed": [
+        225,
+        226,
+        231,
+        232
+      ],
+      "old_rows": {
+        "f=u^2": [
+          207,
+          208
+        ],
+        "v2+df=1": [
+          209,
+          210
+        ],
+        "w2+v2=2": [
+          211,
+          212
+        ],
+        "h=vw": [
+          213,
+          214
+        ],
+        "zh+u=0": [
+          215,
+          216
+        ],
+        "xf=1": [
+          217,
+          218
+        ],
+        "yz+x=0": [
+          219,
+          220
+        ]
+      }
+    }
+  ]
+}

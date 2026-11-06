@@ -1,0 +1,22 @@
+{
+  "version": 4,
+  "date": "2026-11-06",
+  "acceptance_sha256": "1c804517a5d8f8ad5965f80cf22832611d1fcb409da8aded412a657ce009442d",
+  "package_manifest_sha256": "ff5611923fa9a15fcd8ee8d0a21397fd7271cfe3fa6c6b2e1857d1ca1ad14ba9",
+  "source_sha256": "2cb539bdd7039eef9a8fe489ee3b153bfa2d0e74c26006b8da3c617aa815c32b",
+  "pdf_sha256": "d56fd71b300136e1576af8d6dfd74b82fa47e825e6f2bade978d303a9ed8a6f6",
+  "reproduction": {
+    "run": "https://github.com/elliotglazer/diophantine-z-q/actions/runs/42245264751",
+    "commit": "d7a29f55bc974d7e833f568da1c542ca2c9fb3c4",
+    "artifact_id": 13518690111,
+    "artifact_sha256": "e626d20a7527491ef607d59b80214404af15a679aa6ccbac3f4b8d229a274d16",
+    "scope": "Fresh source, base pipeline, exact selected certificate, complete expansion and negative tests. The subsequent commit changes only TeX contents spacing."
+  },
+  "paper": {
+    "run": "https://github.com/elliotglazer/diophantine-z-q/actions/runs/42245585048",
+    "commit": "575d1bf3bdb53876129ce1e763b59dbd75ac89ad",
+    "artifact_id": 13518000512,
+    "artifact_sha256": "38f792372bf719271a1a569dee9c0222c66906d2efc8cddbbae3c87f9b7bb683"
+  },
+  "scope_limit": "Finite computation and source bindings do not by themselves prove the arithmetic characterization. The manuscript and inventory retain their separate arithmetic arguments and inherited source-version qualifications."
+}

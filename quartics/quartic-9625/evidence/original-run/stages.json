@@ -1,0 +1,200 @@
+{
+  "status": "ALL REQUESTED ALGEBRAIC STAGES VERIFIED; ARITHMETIC ACCEPTANCE REMAINS SEPARATE",
+  "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+  "last_verified_candidate": "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/coordinates",
+  "verified_variables": 9625,
+  "verified_max_abs_coefficient": 685783949153203534233601,
+  "verification_sha256": "43ef58641d36e58d3d1422150e48f1858d0b0844b78be41cd939b1eb53e80053",
+  "seconds": 27.105,
+  "steps": [
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/tools/fresh_lift.py",
+        "--adapter",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/fresh-lift"
+      ],
+      "exit": 0,
+      "seconds": 1.067
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/verify_named_source.py",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/fresh-lift"
+      ],
+      "exit": 0,
+      "seconds": 1.467
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/tools/reduce_norms.py",
+        "--adapter",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter",
+        "--parent",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/fresh-lift",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/norms"
+      ],
+      "exit": 0,
+      "seconds": 1.016
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/verify_named_source.py",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/norms"
+      ],
+      "exit": 0,
+      "seconds": 1.568
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/tools/replace_charts.py",
+        "--repo",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter",
+        "--parent",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/norms",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/charts",
+        "--diagnostic",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/chart-diagnostic.json"
+      ],
+      "exit": 0,
+      "seconds": 1.016
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/verify_named_source.py",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/charts"
+      ],
+      "exit": 0,
+      "seconds": 1.618
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/tools/remove_chart_ordinates.py",
+        "--repo",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter",
+        "--parent",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/charts",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/ordinates"
+      ],
+      "exit": 0,
+      "seconds": 1.016
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/verify_named_source.py",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/ordinates"
+      ],
+      "exit": 0,
+      "seconds": 1.618
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/tools/produce_parity.py",
+        "--repo",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter",
+        "--parent",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/ordinates",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/parity"
+      ],
+      "exit": 0,
+      "seconds": 1.017
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/verify_named_source.py",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/parity"
+      ],
+      "exit": 0,
+      "seconds": 1.669
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/tools/absorb_batch_error.py",
+        "--repo",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter",
+        "--parent",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/parity",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/batch"
+      ],
+      "exit": 0,
+      "seconds": 1.317
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/verify_named_source.py",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/batch"
+      ],
+      "exit": 0,
+      "seconds": 1.869
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/tools/optimize.py",
+        "--parent",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/batch",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/optimized",
+        "--max-terms",
+        "96",
+        "--rounds",
+        "8",
+        "--rational",
+        "--gaussian",
+        "--row-combine",
+        "--row-order",
+        "reverse"
+      ],
+      "exit": 0,
+      "seconds": 4.225
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/verify_named_source.py",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/optimized"
+      ],
+      "exit": 0,
+      "seconds": 2.42
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/tools/merge_coordinates.py",
+        "--parent",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/optimized",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/coordinates"
+      ],
+      "exit": 0,
+      "seconds": 1.669
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/verify_named_source.py",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/coordinates"
+      ],
+      "exit": 0,
+      "seconds": 2.525
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+  "source_sha256": "97b7bc300084afaefe9980f1feea760be8b4dedaf6eb788fcc4c3af440262579",
+  "uncompressed_sha256": "d68d86cdf995a0e80c38953f1ad03262733f81145b949a0501b143eca6ac0a9c",
+  "source_variables": 9318,
+  "source_rows": 8854,
+  "source_header": {
+    "witnesses": 9317,
+    "residuals": 8854,
+    "degree": 8,
+    "modules": {
+      "q_anchor": [
+        16,
+        6
+      ],
+      "q_primeparity": [
+        7,
+        4
+      ],
+      "q_height_batch": [
+        33,
+        30
+      ],
+      "q_batch41": [
+        62,
+        59
+      ],
+      "q_compare4": [
+        279,
+        266
+      ],
+      "q_batch17": [
+        32,
+        29
+      ],
+      "q_compare_beta": [
+        108,
+        101
+      ],
+      "Z_definition": [
+        9291,
+        8828
+      ]
+    },
+    "stored_residuals": 691,
+    "stored_calls": 44,
+    "anchor_squarings": 25,
+    "chart": 10,
+    "prime_parity_witnesses": 7,
+    "unit_scale": true,
+    "base_gates": true,
+    "curve_droot": [
+      3,
+      -1
+    ],
+    "curve_d2": [
+      11,
+      -6
+    ],
+    "log_block": 2
+  },
+  "source_audit_sha256": "9020dcfdcfab0b05a1b26d9f73713369bde40dae3fe5f179fab77bafcc5f0b40",
+  "source_audit_checker_sha256": "41a3d780636c1f28852762ee0ce7a252e207ec74e7367da275676200a6068ffa",
+  "construction_map_sha256": "bcefd99b40537c59c422e9e44ebc6e444469ddb873909239e8a21d3e9d82f7f9",
+  "inspected_files_sha256": {
+    "BETA_SOURCE.json": "f263dafbe24f85b74ff5059df9973422217effc115941f267399bf3671a6d9fa",
+    "compiler/archive_build.py": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912",
+    "compiler/beta_kernel.py": "ed2ffbd0e1533fe071b81f9cbd3cacfd7cf2897dba7084c220b3eac23c56516d",
+    "compiler/build_source.py": "7cce6989be939c0422db3cbe3bb0735e3e31b2528beb0ff7f66be749ad2ae2b6",
+    "compiler/combined_kernel.py": "f41dc82a5dd451b3196bd20f46c14bb5a2ace4a29d6d22bc898725f1eba6e9f5",
+    "compiler/lowprecision_kernel.py": "66854ff3ee24d8dd6f4b3b54fa5ca627d87b5d0da09cafa35e3d05d47d0d5c31",
+    "counts.json": "551c3d2dc10f812261b4af7ad732ea2618c6cd5046bda0c5cfff4bcd159570bd",
+    "modules/Z_definition.json": "c79a28fdfdd42d16d37e083ba76c30a3c225be5662cc41ddaf00ebe32147b77d",
+    "modules/q_anchor.json": "e5b74df60328d739e94224f199efb16dd817c994658c95d5dd781704bcf94fb1",
+    "modules/q_batch17.json": "a1e5b8b88e69b85cb165521eeb9791f130ed342d30424d591f1dac585e5840a5",
+    "modules/q_batch41.json": "a45569adc62e09ce254b01cb38a3b31eb891842a73f515f21732eeeb24799985",
+    "modules/q_compare4.json": "ef3aba59c082b9dc312993cc5ea8d0298cc1c81b21e58d4762186bb9a53d4eb2",
+    "modules/q_compare_beta.json": "8af636d55884340de851952144e1243bb7d89c35708178055083ccf5f92659a8",
+    "modules/q_height_batch.json": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761",
+    "modules/q_primeparity.json": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a",
+    "polynomial.json": "6ab9f2e74cb75089e6ff18feb2bc3569bdb5d4543f78d306e6510093f6ef3bd4",
+    "residuals.jsonl": "d68d86cdf995a0e80c38953f1ad03262733f81145b949a0501b143eca6ac0a9c",
+    "shared.json": "f879f79eb7e8072176c8204df4c07a0097a219b7c2452c7c09bd52ca04abe83e"
+  },
+  "high": 40,
+  "label": 12,
+  "compressed": true,
+  "source_layout_sha256": "c9ea9cd505cdb42f94d67d46fa0dca896860df8bf518d717e115c50c5e154634",
+  "layout_counts": {
+    "comparisons": 37,
+    "norm_guards": 161,
+    "uncompressed_charts": 6,
+    "parity": 38,
+    "batches": 37,
+    "batch_pairs": 644
+  },
+  "proposal": {
+    "anchor_squarings": 25,
+    "arithmetic_acceptance": false,
+    "baseline_module_sha256": {
+      "Z_definition": "26b6b8674056bb3e7b4ba8ca75bd5b2b47cba7a58c1d84db78ba108a2f264117",
+      "q_anchor": "e5b74df60328d739e94224f199efb16dd817c994658c95d5dd781704bcf94fb1",
+      "q_batch41": "a45569adc62e09ce254b01cb38a3b31eb891842a73f515f21732eeeb24799985",
+      "q_compare4": "ef3aba59c082b9dc312993cc5ea8d0298cc1c81b21e58d4762186bb9a53d4eb2",
+      "q_height_batch": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761",
+      "q_primeparity": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a"
+    },
+    "baseline_source_id": "combined-k40-beta12-a25-h19-s32-502e3ed250f7",
+    "baseline_source_sha256": "3bad8b614f1593ab84f068bb42e0b5e0bd6877fa6d315cc6f72f48d57b22df43",
+    "beta_input_selection": [
+      0,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "beta_only_positions": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "beta_rational_orders": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "compiler_sha256": {
+      "archive_build.py": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912",
+      "beta_kernel.py": "ed2ffbd0e1533fe071b81f9cbd3cacfd7cf2897dba7084c220b3eac23c56516d",
+      "build_source.py": "7cce6989be939c0422db3cbe3bb0735e3e31b2528beb0ff7f66be749ad2ae2b6",
+      "combined_kernel.py": "f41dc82a5dd451b3196bd20f46c14bb5a2ace4a29d6d22bc898725f1eba6e9f5",
+      "lowprecision_kernel.py": "66854ff3ee24d8dd6f4b3b54fa5ca627d87b5d0da09cafa35e3d05d47d0d5c31"
+    },
+    "full_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "height_exponent": 19,
+    "high": 40,
+    "label": 12,
+    "scalar_orders": [
+      1,
+      1,
+      1,
+      1,
+      32,
+      32
+    ],
+    "scope": "New arithmetic source requiring selective-contact proof; no old-source projection equivalence asserted",
+    "source_family": "H19-root37-selective-beta12-high40-v1",
+    "source_pin_authorized": false
+  },
+  "arithmetic_status": "EXPLORATORY SOURCE; arithmetic acceptance is outside this algebraic checker"
+}

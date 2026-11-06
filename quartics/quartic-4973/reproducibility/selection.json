@@ -1,0 +1,12 @@
+{
+  "format": "quartic-release-selection/v1",
+  "source_pipeline_manifest_sha256": "7654b06f450db87a3181dd5e16fe23949cb4e57d22751aef3681fed80a1fcf26",
+  "source_entry_sha256": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857",
+  "source_archive_sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+  "base_checker_sha256": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90",
+  "final_checker_sha256": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe",
+  "final_certificate_sha256": "81ca768459a13b76dbdf4bfe81e94fbab9ab99f14a5731f6b1a1b03e28c1df2b",
+  "final_expansion_sha256": "094f6a7ed17e7cc8d5d17a2f809127bbaffd0fe343cb2a32d18ac97e61279876",
+  "arithmetic_review_sha256": "3eaba41fee89ed2457292666821c65604124f0a2938fcf40cb7c5b1337b75965",
+  "cleanup_manifest_sha256": "a2ccbce5a09e7e0660b1fbd5506f28f5417f7ddb74c701e9eb399f3cfe8fe381"
+}

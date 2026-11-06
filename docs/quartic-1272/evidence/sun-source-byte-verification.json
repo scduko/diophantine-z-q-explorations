@@ -1,0 +1,216 @@
+{
+  "date": "2026-11-06",
+  "files": [
+    {
+      "bytes": 405739,
+      "file": "BHB-accepted.pdf",
+      "release_copy": false,
+      "sha256": "1e2a4d3d3f731c0ee67599cfa50f899fe499e51d4a452455a04f2d0a35e7191c",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 61805,
+      "file": "BHB-accepted.txt",
+      "release_copy": false,
+      "sha256": "f2dc9444a4aaba553d7d73ad64cb6e103d736e83aa07921240737e5e40d4c169",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 8878,
+      "file": "BHB-crossref.json",
+      "release_copy": false,
+      "sha256": "3feac17bc4e73bd9d65dbe28a127159a205cfa2ffbbc976d5598788352e3b3e7",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 77203,
+      "file": "BHB-v1.tex",
+      "release_copy": false,
+      "sha256": "6bd855b28115708539121552527347d77c703b37cef7ee361144ef29e0cbc53f",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 387687,
+      "file": "Bienvenu-published.pdf",
+      "release_copy": false,
+      "sha256": "9634fad788ff65298c361d0d0b596eb89fc097bda1eaa2031ee9ea13cd4c6130",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 46440,
+      "file": "Bienvenu-published.txt",
+      "release_copy": false,
+      "sha256": "269cce8a5d1ec74513947159e5b03467c9f0eea9f4f29ba82acf78ffe0bfb77d",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 717345,
+      "file": "BL-accepted.pdf",
+      "release_copy": false,
+      "sha256": "94411c88a12ad369896d58b43a9f943b88ff11d816f6c97a9f0d308936d2c4cb",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 73691,
+      "file": "BL-accepted.txt",
+      "release_copy": false,
+      "sha256": "249535d02bdfa82e9695d613cbfbfe70ccfc13392661dc3e39d61b57be3d0726",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 15539,
+      "file": "BL-crossref.json",
+      "release_copy": false,
+      "sha256": "d02949799336a01f3295b03af904632255cd111bb479efe78e76aa64443aadcf",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 101347,
+      "file": "BL-v2.tex",
+      "release_copy": false,
+      "sha256": "d4ba9343c25b33e83639fa61b880e9782d500e4475f02a1f998ec63e85685225",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 307223,
+      "file": "DK-v4.pdf",
+      "release_copy": false,
+      "sha256": "1d71ecfcb7a1970ce3d7a10ac426f8c94e9d1d6a88886cb378ca19a099963508",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 51221,
+      "file": "DK-v4.txt",
+      "release_copy": false,
+      "sha256": "18400a2acf05ff6aee4fd8b329f3406aca1f4d34eaf97db4f3a8ec2a8196970a",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 9778,
+      "file": "Frei-author-page.html",
+      "release_copy": false,
+      "sha256": "37072c8ab79317819367d2d6cae108a5793b718044f3340df7d718a84e45e43a",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 14965,
+      "file": "FT-crossref-search.json",
+      "release_copy": false,
+      "sha256": "6f9d0d18281ac6ba2388bdaae3476f646ebbd9a3c7a9cf4573b5c6a397eb3ee7",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 8028,
+      "file": "FT-v3.bbl",
+      "release_copy": false,
+      "sha256": "6117165c4b2a7e007deff2a5a11fbd3a11e9d49c8671200aa7fec324af1df53a",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 244251,
+      "file": "FT-v3.tex",
+      "release_copy": false,
+      "sha256": "72ab8baf0743dd9fd597b27d8f75d656c8e606dc70530f10745bc58a3a9988a1",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 502447,
+      "file": "GT-mobius-published.pdf",
+      "release_copy": false,
+      "sha256": "5259dbc9ee73df46edd765ca27c8b3c0ec466f6b78abafa5f54237b11d44a314",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 60332,
+      "file": "GT-mobius-published.txt",
+      "release_copy": false,
+      "sha256": "d270ff367bf3383bb786ce0aadc5278d472e4867bcadfb790cd54df651422633",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 861456,
+      "file": "GT-orbits-published.pdf",
+      "release_copy": false,
+      "sha256": "8c7ea5eced84dc5da97508f4eda39fa84c958d3e659a797ab402645c1c207c8f",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 185275,
+      "file": "GT-orbits-published.txt",
+      "release_copy": false,
+      "sha256": "d731a09815743b34ef0dfd69856dcdd4a9d06edde923343a06b148889f3f559c",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 3627997,
+      "file": "Kopp-Lagarias-published.pdf",
+      "release_copy": false,
+      "sha256": "258738fef78b451390e78c019ea33adbea9a6d45af7625136bbc84897b224667",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 163307,
+      "file": "Kopp-Lagarias-published.txt",
+      "release_copy": false,
+      "sha256": "fd3353148c96d8774b928d056643b384f86c2300f81b3015294a47172116c2e7",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 657578,
+      "file": "Matthiesen-published.pdf",
+      "release_copy": false,
+      "sha256": "966ba1f0b2a24d6701ffbbb33eecb8ed0bc10b7846ebf30f24d9afea1900cd43",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 155429,
+      "file": "Matthiesen-published.txt",
+      "release_copy": false,
+      "sha256": "0ddbf7ac52a5077122c62c961f0b6921489727544c6e9ba30ab1d4f9e1c8b212",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 129910,
+      "file": "Sun-v2.tex",
+      "release_copy": false,
+      "sha256": "b561d39ffc0e46798bd6ad5d3cfb8b543b75871780758876a8af67fb6daf15ba",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 559406,
+      "file": "TZ-published.pdf",
+      "release_copy": false,
+      "sha256": "ba1645db9857dd621e8ea6a280927c1e4b7cef5f6df04a4f19e7ac7782220f43",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 123826,
+      "file": "TZ-published.txt",
+      "release_copy": false,
+      "sha256": "f411f0850233e5e5f83ba329733f10fbc9e7a1353d09b32d04d3d716e2791f9e",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 144027,
+      "file": "TZ-v1.tex",
+      "release_copy": false,
+      "sha256": "22a9a7308ea723dbe5e302b6d46eb5692fe3f32c1a0fa4b7eaa46d9c030290ae",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 218607,
+      "file": "Williams-published.pdf",
+      "release_copy": false,
+      "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    },
+    {
+      "bytes": 6290,
+      "file": "Williams-published.txt",
+      "release_copy": false,
+      "sha256": "6c6ec291020e6b0ce5819da86929af52a9c343f74b7b5f8b8d301a1fb63570e1",
+      "verified": "exact_bytes_match_in_local_audit_workspace"
+    }
+  ],
+  "scope": "Files were re-hashed from the audit workspace. This release retains receipts; it does not redistribute the external full texts. Validator checks this receipt identity, not remotely changing sources."
+}

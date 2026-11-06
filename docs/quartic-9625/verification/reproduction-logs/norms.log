@@ -1,0 +1,12 @@
+{
+  "witnesses": 11167,
+  "variables": 11168,
+  "rows": 10704,
+  "degree": 4,
+  "monomials": 68964,
+  "max_abs_coefficient": 685783949153203534233601,
+  "status": "CANDIDATE: independent verification pending",
+  "norm_inverse_replacements": 161,
+  "skipped_norms": [],
+  "redundant_inverse_removals": 37
+}

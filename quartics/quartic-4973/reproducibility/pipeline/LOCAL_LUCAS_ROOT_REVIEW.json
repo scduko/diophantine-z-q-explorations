@@ -1,0 +1,26 @@
+{
+  "status": "ROOT STATIC REVIEW PASS; full generated-source checks pending remote",
+  "files": {
+    "audit_local_lucas.py": "c08ee3db7b7711ccc32d942a615a893d4cb14b03a58a4eb0a3965430f5b89543",
+    "check_lucas_batch.py": "446ff0fb520d3922d1a3c96455dd4fade07206dbed5357dcc38700ce6eb2e0ce",
+    "test_local_lucas.py": "5d0c1df50330a39176ade07b124245c5f284d2bd5ef5e9270f0eb48c8c94096e",
+    "build_source.py": "03c9ab624d6f6ef022c2acd3736260fb5f1c5d5e1e24cfb61216405e4251f688",
+    "source_layout.py": "b6bb82b9ea3a0ca2a1a8174e5e980319ad2109ff08c3ee6d553ee15fc666b227",
+    "test_conic_locators.py": "d5134e05435bb6076c6f1a3d00622629b348bb1b4b7481fa5b37b004caaf49ed",
+    "run_candidate.py": "2726d61e74129a5273df82c3a3a6cd7f49b1631f11794cd2d7d0ab0d6e8d7289",
+    "prepare_adapter.py": "dfa4007c345433c40d15f7fb8c85439a8a22f3ccb2147cfb59e5e9c263d35c9a",
+    "test_producer_mutations.py": "e705443d9d83b4154aee85e714b386353fe68bf492406ef5c94cf1a21fd82ec6",
+    "check_source.py": "9d29eb7436becd28f6101f11c6041ba12c152efdd15590420bebb9867fd46e98",
+    "freeze_packet.py": "e9ce164d3a0a46b628d5cdb3131c915b2a4b8c3609c20ec2689dc2db5f9e229c"
+  },
+  "reviewed": [
+    "Independent comparator equations, local F identity and retained formal/alternate/G inputs",
+    "Independent root reconstruction deletes proxies first then creates target layer; bounds and reference reindexing checked",
+    "13/6/10 field lists and58/28/47 interfaces match typed contract",
+    "Old scalar/parity and anchor behavior constrained",
+    "Conic batch body differs only finite permitted-name registry",
+    "Producer mutation errors propagate resource failure; independent tests use exact failure checkpoint",
+    "Fresh deterministic build, fixture outside source tree, full flatten and named-source replay required"
+  ],
+  "scope": "No endpoint count or emitted-source arithmetic acceptance"
+}

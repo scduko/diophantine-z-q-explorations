@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "Exact projection-preserving algebraic equivalence to the pinned source system; exact full integer expansion. The source arithmetic theorem is not checked here.",
+  "witnesses": 10309,
+  "variables": 10310,
+  "rows": 9846,
+  "monomials": 67791,
+  "degree": 4,
+  "max_abs_coefficient": 685783949153203534233601,
+  "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+  "source_sha256": "97b7bc300084afaefe9980f1feea760be8b4dedaf6eb788fcc4c3af440262579",
+  "operations": {
+    "norm_inverse": 161,
+    "redundant_inverse": 37,
+    "gpoint_chart": 6,
+    "field_ordinate": 2,
+    "parity_conic": 38,
+    "batch_absorb": 1
+  },
+  "total_operations": 245,
+  "weights_greater_than_one": 0,
+  "expanded_bytes": 1281796,
+  "compressed_bytes": 388775,
+  "expanded_sha256": "39a81d0500c1a607325e40ea82a0293e7b5ac385bb06b42d7e91d1d6511fd479",
+  "certificate_sha256": "c22ffdc28ba6c998dbf2b9b838854adde6b5087edad4f6f22ac73ebb77d3f7c8",
+  "distinct_circuit_identities_checked": 0,
+  "checker_sha256": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4",
+  "seconds": 1.73
+}

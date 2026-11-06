@@ -1,0 +1,208 @@
+{
+  "arithmetic_acceptance": false,
+  "checker_dependencies_sha256": {
+    "BASELINE.json": "2a1c41a19f0813e8676c4cbe57eb49a3faa0926f095389d8a4a2b390ea91035d",
+    "audit_conic_pole.py": "35b774437705759c2309aa905cf8f2d1fd91c19669dc35b1489b8a466db36bff",
+    "audit_linear_pole.py": "956d1f3f5d6e38248fde0edbedbf3c2ef5a175f89ac8770bb711a1490742ff9a",
+    "audit_normalized_lucas.py": "105f4cc79a85649041e95be4a9059ed93e1d296fb77e0937e612f54aa801bb33",
+    "check_anchor_four.py": "0e5f93f61114f9bd6589dc950271938b5d630820a920565043f63ab749081e30",
+    "check_conic_pole.py": "d0e11d3fa4405eff7012bee7e112f74a6eda528382ebb14ca5433982fa4e4933",
+    "check_lucas_batch.py": "446ff0fb520d3922d1a3c96455dd4fade07206dbed5357dcc38700ce6eb2e0ce",
+    "core_audit.py": "0da0dfef661211fd4ada262050895ef24ca54dfdc1aca4aa4bec4e69c1dcbce8",
+    "spec_linear.py": "86789c5fd288d2c739659b1f15779d9c81599f84d54c14d7d26f17efe083603b"
+  },
+  "checker_sha256": "526b1696a233f7e04de158d59d924a821a107e5ecb5f102d0d28f6c6255d31b3",
+  "compressed": true,
+  "construction_map_sha256": "85c62b411c112a639e5d1906259c7d57ee107eecca9baac3286ba5ec3834476a",
+  "counts": {
+    "anchor_squarings": 25,
+    "base_gates": true,
+    "chart": 10,
+    "curve_d2": [
+      11,
+      -6
+    ],
+    "curve_droot": [
+      3,
+      -1
+    ],
+    "degree": 8,
+    "log_block": 2,
+    "modules": {
+      "Z_definition": [
+        5077,
+        4656
+      ],
+      "q_anchor": [
+        4,
+        2
+      ],
+      "q_compare4": [
+        160,
+        147
+      ],
+      "q_compare_beta": [
+        63,
+        56
+      ],
+      "q_compare_lucas": [
+        132,
+        121
+      ],
+      "q_conic10": [
+        50,
+        47
+      ],
+      "q_conic13": [
+        63,
+        60
+      ],
+      "q_conic6": [
+        36,
+        33
+      ],
+      "q_height_batch": [
+        33,
+        30
+      ],
+      "q_linearnormalpole": [
+        10,
+        8
+      ],
+      "q_primeparity": [
+        7,
+        4
+      ]
+    },
+    "prime_parity_witnesses": 7,
+    "residuals": 4682,
+    "stored_calls": 46,
+    "stored_residuals": 695,
+    "unit_scale": true,
+    "witnesses": 5103
+  },
+  "high": 40,
+  "inspected_files_sha256": {
+    "CONIC_POLE_CONTRACT_ADDON.json": "44bcef6a37f57a847f963313b146614b56ecf3fdb101e5443c2c65321494e4a4",
+    "CONIC_SOURCE.json": "e58fb1a69e8213af7f0ebcb03b7592b0c641946dcb824cd545e61ba79752cf2f",
+    "JOINT_CHART_CONTRACT_ADDON.json": "1793c7bdf798365247f04100d22c30490fa8e7e0df4f80534aaec8e2e775ffb3",
+    "JOINT_SOURCE_CONTRACT.json": "e658843c6ba95dc797f10e7c25c086189f9694a0689a88c203979c38f05ed79e",
+    "LOCAL_LUCAS_CONTRACT_ADDON.json": "13ebcdd31363e8d482a8daac988da75ac314d66a1d989926e39bdf01d4418048",
+    "LOCAL_LUCAS_POLE_CONTRACT.json": "cd7e4039c533eed79afd75fea9ba6abb53f10b7a26ea990b195b9f2c15badd8b",
+    "LOCAL_LUCAS_SOURCE_CONTRACT.json": "233ea7424864fb0d828346cfbfe29459cbc09e801d3d5cd327675b5ea3d95ad8",
+    "NORMALIZED10_CONTRACT.json": "19c3f7d65aae9f38aeaea9cc9c079d0ec7ca9918123d96d1744813ae81e61869",
+    "NORMALIZED_LUCAS_CONTRACT_ADDON.json": "af365079cce1bd502dc2d683fc1f76fa2a2ca85c396c22be888dbd9fb3237cb0",
+    "NORMALIZED_PARENT_PINS.json": "d94bf88c98b5c3e5110ed9ab58c587ba83a7cda17b736f1a0d9d226e0b415e59",
+    "NORMALIZED_POLE_CONTRACT.json": "0ad8288dd3a44daa524e753dfba04b0b788de46d84bfa63d3f34a71d3272dd10",
+    "NORMALIZED_SOURCE_CONTRACT.json": "b038a32f4b22de7a43680857dc693d5614d25c6d0f432841bbafd2a8577898d6",
+    "PARENT_SOURCE_PINS.json": "003211cbd8995b9b251596d56411a2c51ca7121176ada686c22591f333f56bac",
+    "compiler/anchor_four_kernel.py": "4f5944cfe3dd16f5a38ab7113e54a5ecba1faccfecac0d23b7c2f36b76a00dcb",
+    "compiler/archive_build.py": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912",
+    "compiler/beta_kernel.py": "38f5524c9e87a9a7baea0e83b78a77c0f7e32230f52cbe1e3270806094d8c1e5",
+    "compiler/build_source.py": "399d42214dd961d4facf5251851224d6cff59173a39756c47f283c60eaf61bfc",
+    "compiler/combined_kernel.py": "f41dc82a5dd451b3196bd20f46c14bb5a2ace4a29d6d22bc898725f1eba6e9f5",
+    "compiler/conic_lucas.py": "42fcb55ec95be9ee34e98c5d0b0e672062b7cce6c5f9f9d0e676edff72e5ed86",
+    "compiler/emit_linear.py": "19e7dc5b5516674dc972aa4b1e15c6b10725192d3f5e8bf48419dbdb93446878",
+    "compiler/joint_chart.py": "f6868d7fc6f6898388288d4f088966220158e888aa47def53cd21c599ef7ff85",
+    "compiler/linear_pole_kernel.py": "01622f4c3f126d2c6bb190c0a4f87e7a22d45546baee99a33837c6ba60e96f1d",
+    "compiler/local_lucas.py": "fc85b3c3a8a307bfa7113dc163790092b13738baef7e7431e071f31730f2b280",
+    "compiler/lowprecision_kernel.py": "66854ff3ee24d8dd6f4b3b54fa5ca627d87b5d0da09cafa35e3d05d47d0d5c31",
+    "compiler/normalized_lucas.py": "3e1e420306de2fbe51c17aeb8f24169e23a9d74f47601262d3333360e7c7d921",
+    "compiler/rational_difference.py": "be766e35b06d8f334c326dedfddc7c200d226a4c70af6a73fe66242aa4ccc898",
+    "counts.json": "7518e02d326e1db2c65deedadcaaced44d6bdda9a9df835aff47fc65f5a6c84b",
+    "modules/Z_definition.json": "5e96bf1b0de4e1694dcc7ff21a9a7b69b5e2cc61295c2fc2816696092c5dacde",
+    "modules/q_anchor.json": "3edef11d7871866f6224bf9a6e4a6f2d99d5c8f535eef2d3c2c57f98a33f0f6f",
+    "modules/q_compare4.json": "924daadfdb5fb9f13b9e06fc7e457f224115d2e34801c070810d3ab5eef310c4",
+    "modules/q_compare_beta.json": "75189120b018c23bbf1573de56687103160872aca41d3d1d35138abb7b05203e",
+    "modules/q_compare_lucas.json": "a9157980855175cc0072f63c193c43f31c1350d850fdaeb3569d75e738229feb",
+    "modules/q_conic10.json": "6eaba063e47fa2210528829077c88a0873d68e111ff9bea39efa4c91456e245a",
+    "modules/q_conic13.json": "e228d0556e6b2c3376d07e30ed9093f9cd456503689720de9535b11aabdab2dc",
+    "modules/q_conic6.json": "01b8559bfb5e7e03447225b50afe562f4d3428bfcd4ea8f8add4b6c7d5215f51",
+    "modules/q_height_batch.json": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761",
+    "modules/q_linearnormalpole.json": "b3f86d819e831eb6970ab4249cea9337a874a0adcdbc4bd13efef9678fba547d",
+    "modules/q_primeparity.json": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a",
+    "polynomial.json": "eb8eb729d3aedde526b587004c3df6cc236c0bd5c472d58487e89fbe01a0dac4",
+    "residuals.jsonl": "0f54051d0d1400c9944688f9aaf1db4a65177b548609da424c98fe5172f8595a",
+    "shared.json": "f879f79eb7e8072176c8204df4c07a0097a219b7c2452c7c09bd52ca04abe83e"
+  },
+  "jacobi_modules": {
+    "anchor": {
+      "arithmetic_acceptance": false,
+      "free": 2,
+      "locals": 4,
+      "max_abs_residual_coefficient": 24,
+      "residual_degree": 2,
+      "residuals": 2,
+      "status": "PASS: SOURCE SPECIFICATION ONLY"
+    },
+    "arithmetic_acceptance": false,
+    "comparisons": {
+      "q_compare4": {
+        "core_rows": 52,
+        "differences": 5,
+        "free": 58,
+        "global_proxy_inputs": 1,
+        "locals": 97,
+        "normalized_lucas_evaluation": true,
+        "ordered_tests": 26,
+        "primary_points": 5
+      },
+      "q_compare_beta": {
+        "core_rows": 18,
+        "differences": 2,
+        "free": 28,
+        "global_proxy_inputs": 1,
+        "locals": 27,
+        "normalized_lucas_evaluation": false,
+        "ordered_tests": 12,
+        "primary_points": 2
+      },
+      "q_compare_lucas": {
+        "core_rows": 42,
+        "differences": 4,
+        "free": 47,
+        "global_proxy_inputs": 0,
+        "locals": 82,
+        "normalized_lucas_evaluation": true,
+        "ordered_tests": 20,
+        "primary_points": 4
+      }
+    },
+    "linear_pole": {
+      "degree": 2,
+      "max_coefficient": 867,
+      "rows": 8,
+      "status": "PASS: literal module only",
+      "variables": 10
+    },
+    "pole_specification_view_only": true,
+    "root": {
+      "field_tests": 377,
+      "lucas_evaluations": 29,
+      "mode_counts": {
+        "q_compare4": 13,
+        "q_compare_beta": 8,
+        "q_compare_lucas": 16
+      },
+      "primary_pairs": 145,
+      "removed_proxy_coordinates": [
+        66,
+        67,
+        68
+      ],
+      "removed_proxy_row": 57,
+      "shared_target_coordinates": 60,
+      "shared_target_rows": 60
+    },
+    "scope": "All module equations and calls; caller must separately verify pins, contract and flattening"
+  },
+  "label": 12,
+  "not_established": [
+    "joint-chart, normalized-Lucas, private-conic, linear-unit pole and anchor4 arithmetic theorem",
+    "source defines the integers",
+    "final quartic bound"
+  ],
+  "source_pin_authorized": false,
+  "source_residual_file": "residuals.jsonl",
+  "status": "PASS: SOURCE CONSTRUCTION ONLY"
+}

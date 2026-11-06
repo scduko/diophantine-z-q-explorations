@@ -1,0 +1,22 @@
+{
+  "schema": "quartic-new-published-applications-v2",
+  "additional_applications": [
+    {
+      "id":"K_TRACE_23",
+      "author":"Jochen Koenigsmann",
+      "title":"Defining Z in Q",
+      "publication":"Annals of Mathematics 183 (2016), 73-93",
+      "publisher_pdf":"https://annals.math.princeton.edu/wp-content/uploads/annals-v183-n1-p02-p.pdf",
+      "archived_pdf_sha256":"f26c2e155d025978045a0c68073505631677624ef4d6f9b461640c6fbe1d3c93",
+      "locations":["Definition 4, printed page 75","Observation 5 and Hilbert-symbol ramification calculation","Proof of Proposition 6, Facts (a),(b),(c),(e), printed page 77"],
+      "application":"The norm-one reduced trace set of quaternion algebra (2,3), ramification exactly at 2 and 3, local residue criteria U_2={1}, U_3={0}, no extra split-finite or real restriction, and local-to-global trace membership",
+      "consumer":"N5",
+      "author_proof":"anchor_proof",
+      "independent_review":"anchor_review",
+      "separate_elementary_step":"For a,b rational, h=9+3(a^2+b^2) lies in that trace set exactly when both a,b are integral at 2 and 3; the h in 4Z_2 branch is proved in the author note",
+      "not_sufficient_alone":"The older equality T=S+S=Z_(2) intersect Z_(3) does not by itself prove the new one-trace criterion"
+    }
+  ],
+  "unchanged_external_inputs":"See CURRENT_CONSUMPTION.json and all five version-qualified source requirements in v3_inventory",
+  "no_additional_external_theorem_claim":"Target-two, tangent, first-norm and optional J0 changes introduce no further published or unpublished theorem application in this inventory"
+}

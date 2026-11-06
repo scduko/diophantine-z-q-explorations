@@ -1,0 +1,451 @@
+{
+  "schema": "brox-checker-final-v1",
+  "status": "passed_exact_algebra_checks",
+  "checkedAtUTC": "2026-11-06T17:13:23.852Z",
+  "sourceSemanticStatus": "See separate source review and oracle; this checker does not turn numerical tests into arithmetic proofs.",
+  "results": [
+    {
+      "stage": "direct",
+      "status": "passed_exact_algebra_checks",
+      "rawHash": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+      "coordinates": 1272,
+      "residuals": 1229,
+      "gates": 1214,
+      "degree": 4,
+      "monomials": 47984,
+      "activeCoordinateCount": 1272,
+      "primitiveContent": "1",
+      "maximum": {
+        "monomial": [],
+        "coefficient": [
+          {
+            "sPower": 0,
+            "coefficient": "113075223583936053838490651466826933637775210216313916697070631946494587068549977095892150968125007908645879870205943613897412140196159129391006706383285829803005739941003936867391419229883823914016536746970816817429071783910512096590420364535801721291166707454802793158843226623092427901293313184/1"
+          },
+          {
+            "sPower": 4,
+            "coefficient": "4/1"
+          }
+        ],
+        "encoding": "Evaluate this rational polynomial at S=3^(2^27); exact maximum certified by leading-term dominance"
+      },
+      "artifactHashes": {
+        "input": {
+          "file": "builder/raw-ir.json",
+          "sha256": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3"
+        },
+        "compiled": {
+          "file": "compiler/direct/compiled-ir.json",
+          "sha256": "b79fdb306c25d85aa41c308ad96a1076d2b84b98a6f51c66d0682b2ae9b15b98"
+        },
+        "certificate": {
+          "file": "compiler/direct/reduction-certificate.json",
+          "sha256": "130953b02693de8ce3da1996a3257a1e50a58cfdc03be73e6f05d105419cc06f"
+        },
+        "coordinateMap": {
+          "file": "compiler/direct/coordinate-map.json",
+          "sha256": "a2f10e89a380c456937623f9fc6655e0c419881693fb6bea84f8e975ba413624"
+        },
+        "quartic": {
+          "file": "compiler/direct/polynomial.json",
+          "sha256": "5acd7ebf8c09c7d95f66c16f6c5594fdbbde062a0f3204068e8f88b7fd4b54ba"
+        }
+      }
+    },
+    {
+      "stage": "translated",
+      "status": "passed_exact_algebra_checks",
+      "rawHash": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e",
+      "coordinates": 1272,
+      "residuals": 1229,
+      "gates": 1214,
+      "degree": 4,
+      "monomials": 48001,
+      "activeCoordinateCount": 1272,
+      "primitiveContent": "1",
+      "maximum": {
+        "monomial": [
+          79,
+          79
+        ],
+        "coefficient": [
+          {
+            "sPower": 2,
+            "coefficient": "64/1"
+          }
+        ],
+        "encoding": "Evaluate this rational polynomial at S=3^(2^27); exact maximum certified by leading-term dominance"
+      },
+      "artifactHashes": {
+        "input": {
+          "file": "builder/raw-translated-ir.json",
+          "sha256": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e"
+        },
+        "compiled": {
+          "file": "compiler/translated/compiled-ir.json",
+          "sha256": "377cda57d18c320149f9cb47cbaeacf847ab0df1dd2a6cfd08a967f3c4af1433"
+        },
+        "certificate": {
+          "file": "compiler/translated/reduction-certificate.json",
+          "sha256": "489287cdb314cd89f1319b6818528a90dfc444f962d20e3acfb931800a7412a3"
+        },
+        "coordinateMap": {
+          "file": "compiler/translated/coordinate-map.json",
+          "sha256": "02673ea95f96be7c77de80688fc57369a2e0c69fc94184c98f4d66983466fdb3"
+        },
+        "quartic": {
+          "file": "compiler/translated/polynomial.json",
+          "sha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586"
+        }
+      }
+    }
+  ],
+  "mutations": {
+    "schema": "brox-checker-mutation-tests-v1",
+    "testedAtUTC": "2026-11-06T17:13:23.684Z",
+    "baseline": "passed",
+    "adversarialMutations": 36,
+    "allRejected": true,
+    "tests": [
+      {
+        "name": "residual degree three",
+        "status": "rejected",
+        "error": "residual degree exceeds two: p"
+      },
+      {
+        "name": "unknown coordinate",
+        "status": "rejected",
+        "error": "unknown coordinate 99"
+      },
+      {
+        "name": "unsorted monomial",
+        "status": "rejected",
+        "error": "unsorted monomial"
+      },
+      {
+        "name": "zero denominator",
+        "status": "rejected",
+        "error": "zero denominator"
+      },
+      {
+        "name": "duplicate coordinate",
+        "status": "rejected",
+        "error": "duplicate coordinate"
+      },
+      {
+        "name": "missing input coordinate",
+        "status": "rejected",
+        "error": "input coordinate 0 missing"
+      },
+      {
+        "name": "wrong fixed parameter",
+        "status": "rejected",
+        "error": "fixed parameter S declaration differs"
+      },
+      {
+        "name": "wrong input kind",
+        "status": "rejected",
+        "error": "input kind/id mismatch"
+      },
+      {
+        "name": "missing gate definition",
+        "status": "rejected",
+        "error": "gate coordinate lacks a recognized definition 3"
+      },
+      {
+        "name": "unknown gate operation",
+        "status": "rejected",
+        "error": "unrecognized gate operation/expression trust_me"
+      },
+      {
+        "name": "forward gate dependency",
+        "status": "rejected",
+        "error": "gate dependency violates extension order"
+      },
+      {
+        "name": "gate sign corruption",
+        "status": "rejected",
+        "error": "polynomial identity failed: gate 2"
+      },
+      {
+        "name": "gate dependency omission",
+        "status": "rejected",
+        "error": "gate dependency list is not exact"
+      },
+      {
+        "name": "wrong input hash",
+        "status": "rejected",
+        "error": "certificate input hash mismatch"
+      },
+      {
+        "name": "self row addition",
+        "status": "rejected",
+        "error": "self row_add not allowed"
+      },
+      {
+        "name": "wrong pivot coefficient",
+        "status": "rejected",
+        "error": "pivot is not constant-linear in eliminated coordinate"
+      },
+      {
+        "name": "wrong replacement",
+        "status": "rejected",
+        "error": "polynomial identity failed: operation 2 eliminate replacement"
+      },
+      {
+        "name": "omitted affected residual",
+        "status": "rejected",
+        "error": "affected list is not exact"
+      },
+      {
+        "name": "zero normalization",
+        "status": "rejected",
+        "error": "zero normalization"
+      },
+      {
+        "name": "self-dependent replacement",
+        "status": "rejected",
+        "error": "self-dependent replacement"
+      },
+      {
+        "name": "compiled residual corruption",
+        "status": "rejected",
+        "error": "polynomial identity failed: compiled residual r"
+      },
+      {
+        "name": "quartic missing monomial",
+        "status": "rejected",
+        "error": "polynomial identity failed: supplied quartic equals explicit SOS"
+      },
+      {
+        "name": "quartic changed coefficient",
+        "status": "rejected",
+        "error": "polynomial identity failed: supplied quartic equals explicit SOS"
+      },
+      {
+        "name": "quartic coordinate name change",
+        "status": "rejected",
+        "error": "quartic coordinate name differs"
+      },
+      {
+        "name": "zero quartic scalar",
+        "status": "rejected",
+        "error": "zero SOS multiplier"
+      },
+      {
+        "name": "bad compact coordinate map",
+        "status": "rejected",
+        "error": "invalid/duplicate compact id"
+      },
+      {
+        "name": "omit used coordinate",
+        "status": "rejected",
+        "error": "cannot omit a used coordinate"
+      },
+      {
+        "name": "false height bound",
+        "status": "rejected",
+        "error": "claimed coefficient height bound fails"
+      },
+      {
+        "name": "nonintegral specialized coefficient",
+        "status": "rejected",
+        "error": "coefficient is not an integer after fixed-S specialization"
+      },
+      {
+        "name": "negative final S power",
+        "status": "rejected",
+        "error": "final coefficient has negative S exponent; integrality not certified"
+      },
+      {
+        "name": "S exponent arithmetic overflow",
+        "status": "rejected",
+        "error": "S exponent arithmetic overflow"
+      },
+      {
+        "name": "field quotient missing mate",
+        "status": "rejected",
+        "error": "field quotient missing unique mate"
+      },
+      {
+        "name": "field quotient wrong component",
+        "status": "rejected",
+        "error": "polynomial identity failed: field quotient output"
+      },
+      {
+        "name": "field quotient omitted dependency",
+        "status": "rejected",
+        "error": "gate dependency list is not exact"
+      },
+      {
+        "name": "field quotient wrong sqrt2 norm",
+        "status": "rejected",
+        "error": "polynomial identity failed: gate 2"
+      },
+      {
+        "name": "elimination raises degree to three",
+        "status": "rejected",
+        "error": "elimination increases residual degree above two"
+      }
+    ],
+    "positiveSpecializationTests": [
+      "gcd(S+1,S+3,2)=2",
+      "(S+1)/2 integral for odd S"
+    ],
+    "scope": "Tests exercise the independent checker; they are not inherited arithmetic proofs."
+  },
+  "anchor": {
+    "schema": "brox-independent-anchor-check-v1",
+    "status": "passed",
+    "inputHashes": {
+      "raw": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+      "translated": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e"
+    },
+    "anchorResidualId": 1260,
+    "privateCoordinateIds": [
+      79,
+      80,
+      81
+    ],
+    "unchangedResiduals": 1260,
+    "forward": {
+      "79": [
+        {
+          "monomial": [],
+          "sPower": 1,
+          "coefficient": "1/1"
+        },
+        {
+          "monomial": [
+            79
+          ],
+          "sPower": 0,
+          "coefficient": "1/4"
+        },
+        {
+          "monomial": [
+            80
+          ],
+          "sPower": 0,
+          "coefficient": "-3/4"
+        },
+        {
+          "monomial": [
+            81
+          ],
+          "sPower": 0,
+          "coefficient": "3/4"
+        }
+      ],
+      "80": [
+        {
+          "monomial": [],
+          "sPower": 1,
+          "coefficient": "1/2"
+        },
+        {
+          "monomial": [
+            80
+          ],
+          "sPower": 0,
+          "coefficient": "1/4"
+        }
+      ],
+      "81": [
+        {
+          "monomial": [],
+          "sPower": 1,
+          "coefficient": "3/2"
+        },
+        {
+          "monomial": [
+            81
+          ],
+          "sPower": 0,
+          "coefficient": "1/4"
+        }
+      ]
+    },
+    "inverse": {
+      "79": [
+        {
+          "monomial": [],
+          "sPower": 1,
+          "coefficient": "8/1"
+        },
+        {
+          "monomial": [
+            79
+          ],
+          "sPower": 0,
+          "coefficient": "4/1"
+        },
+        {
+          "monomial": [
+            80
+          ],
+          "sPower": 0,
+          "coefficient": "12/1"
+        },
+        {
+          "monomial": [
+            81
+          ],
+          "sPower": 0,
+          "coefficient": "-12/1"
+        }
+      ],
+      "80": [
+        {
+          "monomial": [],
+          "sPower": 1,
+          "coefficient": "-2/1"
+        },
+        {
+          "monomial": [
+            80
+          ],
+          "sPower": 0,
+          "coefficient": "4/1"
+        }
+      ],
+      "81": [
+        {
+          "monomial": [],
+          "sPower": 1,
+          "coefficient": "-6/1"
+        },
+        {
+          "monomial": [
+            81
+          ],
+          "sPower": 0,
+          "coefficient": "4/1"
+        }
+      ]
+    },
+    "determinant": "1/64",
+    "inverseCompositionChecked": true,
+    "rowScale": "16/1",
+    "conclusion": "The rational common-zero sets are in bijection. The translated SOS is not asserted to equal the literal affine substitution into the old SOS, since the anchor residual is multiplied by 16.",
+    "scope": "Exact polynomial identities only; inherited arithmetic remains external."
+  },
+  "checkerSources": [
+    {
+      "file": "checker.cjs",
+      "sha256": "50f9924557f0594a0ddb2664260d2e382d80762a0d607d87203fb7ddfb4e1cb1"
+    },
+    {
+      "file": "mutation_tests.cjs",
+      "sha256": "cac920522fb3a7e188b6bee64ed61d9e4003c0458a453374e22e8490be71f70c"
+    },
+    {
+      "file": "check_anchor.cjs",
+      "sha256": "148287db2e1336f9660bbbcdf160c5b2ca8de88eac913bf8598be2578b11a998"
+    },
+    {
+      "file": "run_all.cjs",
+      "sha256": "dc156fb32ce515eea3a543186fc5a6214617e2841f192a848a6a067f751198cd"
+    }
+  ]
+}

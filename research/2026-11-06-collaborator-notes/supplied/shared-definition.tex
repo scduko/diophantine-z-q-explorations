@@ -1,0 +1,597 @@
+% Standalone article fragment. Requires amsmath, amssymb, amsthm, enumitem.
+% Conditional on the stated arithmetic inputs, especially Sun, Theorem 4.1.
+\section{A definition with forty existential variables}
+
+\newtheorem{sdtheorem}{Theorem}
+\newtheorem{sdlemma}[sdtheorem]{Lemma}
+\newtheorem{sdproposition}[sdtheorem]{Proposition}
+\newcommand{\sdQ}{\mathbb Q}
+\newcommand{\sdZ}{\mathbb Z}
+\newcommand{\sdTr}{\operatorname{Tr}_{F/\sdQ}}
+\newcommand{\sdord}{\operatorname{ord}}
+\newcommand{\sdnum}{\operatorname{num}}
+\newcommand{\sdSq}{\operatorname{Sq}(\sdQ)}
+
+The following construction uses the height and pole-predicate inputs of
+Sun's preprint, together with its simultaneous prime-pattern theorem
+\cite[Theorem~4.1]{Sun2026}. The latter is an additional arithmetic input;
+it is not a consequence of the statement that $\operatorname{HTP}_{86}(\sdQ)$
+is undecidable. The construction defines the actual subset $\sdZ\subseteq\sdQ$.
+
+\subsection{The arithmetic inputs and fixed constants}
+
+Put $F=\sdQ(\sqrt2)$, let $\sigma$ be its nontrivial automorphism, and take
+\[
+ E:y^2=x^3-d^2x,\qquad d=75-53\sqrt2.
+\]
+Fix an even positive integer $m_0$ and a nontorsion point $P_0$ such that
+$m_0E(F)=\sdZ P_0$. We use the following data.
+
+\begin{enumerate}[label=(\roman*)]
+\item Five distinct rational numbers $\theta_0=0,\theta_1,\ldots,\theta_4$,
+an integer $c\ge1$, and a fixed exceptional set of rational primes.
+For every fixed enlargement $S$ of that set, there is $H\ge1$ such that
+\begin{equation}\label{sd:height}
+ h(t)\le H M_S(t)^c \qquad
+ (t\in\sdQ\setminus\{\theta_0,\ldots,\theta_4\}).
+\end{equation}
+Here $M_S(t)$ is the product of primes outside $S$ at which one of the
+five finite contacts has positive odd normalized depth. More precisely,
+for primitive integral coordinates $t=(u:v)$, use primitive integral
+forms proportional to $u-\theta_jv$ and subtract
+$\min\{v_p(u),v_p(v)\}$. There is \emph{no contact at infinity}.
+This is the coordinate change and height bound of
+\cite[Section~2.3]{Sun2026}.
+
+\item A finite multiplier list $\mathcal M\subset\sdQ^\times$, a fixed set
+$S_0$ containing $2,3$ and the supports of its elements, a number
+$\epsilon>0$, and integers $b_p\ge1$ for $p\in S_0$ with the following
+property. For $B\ne0$, define $\Phi_0(B)$ by a finite choice
+$\mu\in\mathcal M$, two rational structural witnesses $e,z$, and
+\begin{align}
+ B'&=\mu B,& J_B&=B'(B'-B^2),\\
+ BeJ_Bz&\ne0,&
+ B'(B'-e)(B'+3e)&\in\sdSq,\\
+ &&B'(B'z^2-eJ_B)(B'z^2+3eJ_B)&\in\sdSq.
+ \label{sd:phi}
+\end{align}
+Then $\Phi_0(B)$ excludes negative odd valuations outside $S_0$.
+Conversely it holds whenever $B$ has no negative odd valuation at any
+prime, $0<B<\epsilon$, and $v_p(B)\ge b_p$ for every $p\in S_0$.
+This is \cite[Proposition~2.3]{Sun2026}. It uses the full square-class
+realization input of the H10 manuscript; the weaker prime-squareclass
+input isolated in our third version is not sufficient for this application.
+
+\item Given distinct integers $a_1,\ldots,a_k$, an odd squarefree integer
+$M$ with $7\nmid M$, a denominator dilation, and arbitrary lower bounds,
+there are positive integers $u,w$ for which every $u+a_jw^2$ is prime,
+the quotient $u/w^2$ is arbitrarily large, and the prescribed dilation
+divides $w$. The selected primes split in $F$ and have two reduction orders
+$d_+(q),d_-(q)$ satisfying
+\begin{equation}\label{sd:orders}
+ v_2(d_+(q))=2,\quad v_2(d_-(q))=6,\quad
+ \gcd(d_+(q),d_-(q'))=4
+\end{equation}
+for every pair of selected primes, including an equal pair. Both orders
+are coprime to $M$ and to $7$. These are consequences explicitly included
+in \cite[Theorem~4.1]{Sun2026}; the last assertion at $7$ follows from
+the prescribed Gaussian residue $1+3i\pmod7$, giving orders $6,2\pmod7$.
+\end{enumerate}
+
+We also use the usual formal group and canonical height of $E$.
+Write
+\[
+ z(Q)=-x(Q)/y(Q),\quad \rho(Q)=1/x(Q)\quad(Q\ne O),
+ \qquad z(O)=\rho(O)=0.
+\]
+These functions are defined on every cyclic point: a nonzero cyclic point
+is not torsion, so $x(Q)y(Q)\ne0$. Write $\ell_K$ for the formal logarithm
+truncated at degree $K$. At a good unramified prime $p>K+1$, two cyclic
+points $aP,bP$ in the formal kernel, with $b\ne0$, satisfy
+\begin{equation}\label{sd:formal}
+ v\!\left(\frac{z(aP)}{z(bP)}\right)=v_p(a/b),\qquad
+ \frac{\ell_K(z(aP))}{\ell_K(z(bP))}\equiv a/b\pmod{p^K}
+ \quad\text{if }v_p(a/b)\ge0.
+\end{equation}
+The valuation of the truncated ratio is always $v_p(a/b)$.
+At arbitrary fixed places the first identity holds on a sufficiently deep
+formal subgroup. These are \cite[Lemma~2.1 and Section~8.1]{Sun2026}.
+
+Choose $c_*>0$, divisible by $64$, so that $c_*P_0$ belongs to a deep
+formal subgroup at all places over $S_0$, with $v(z(c_*P_0))\ge2$.
+Set $K=2c$, choose $\xi\in\sdQ\setminus\{\theta_j\}$, and fix an integer
+$d_1>0$ such that
+\[
+ r(T)=d_1^2\prod_{j=0}^4(T-\theta_j)\in\sdZ[T].
+\]
+Fix an integer $b_*>\max\{1,\theta_0,\ldots,\theta_4\}$.
+Choose $S$ to contain $S_0$, all bad and ramified primes, the primes at most
+$K+1$, and the supports of $c_*,d_1$, all contact coefficients and differences,
+and all $\theta_j-\xi$. Fix $H$ in \eqref{sd:height} for this $S$.
+
+Let $C_E\ge0$ satisfy
+$|h(x(Q))-2\widehat h(Q)|\le C_E$ on $E(\overline{\sdQ})\setminus\{O\}$.
+Fix an integer $L\ge\lceil H\rceil+9$ and put
+\[
+ C_L=2L^2+6L+6,\qquad
+ g_L(S,T,W)=T^2-LS(LS-2)TW+(LS-2)^2W^2-1.
+\]
+Replace $P_0$ by $P=2^aP_0$ for a fixed nonnegative integer $a$, and put
+$m=2^am_0$, so that $G=mE(F)=\sdZ P$ and
+\begin{equation}\label{sd:C}
+ C:=\frac{2H+C_E+\tfrac32\log2}{2\widehat h(P)}
+       <\frac1{2\sqrt{C_L}}.
+\end{equation}
+No exceptional primes need to be added. In particular $c_*P$ remains in
+the chosen formal subgroups.
+
+We require one more pair of fixed positive integers $A,T_0$.
+Choose $A$ supported on $S_0$ so that
+\begin{equation}\label{sd:A}
+ 2v_p(A)\ge b_p+2v_p(2)+2\qquad(p\in S_0).
+\end{equation}
+To choose $T_0$, let $\mathcal G$ be the closure of
+$\sdZ(P,P^\sigma)$ in $E(\mathbb R)\times E^\sigma(\mathbb R)$.
+Its identity component is a torus and projects onto the identity circle
+in each factor. Indeed each projection of $\mathcal G$ is an infinite
+compact subgroup of a real elliptic curve, and $\mathcal G$ has finitely
+many components. In every component choose a nonempty relatively open set
+on which, at both embeddings,
+\begin{equation}\label{sd:goodsets}
+                 |\rho(Q)|,\ |z(Q)|,\ |1/z(Q)|\le C_0
+\end{equation}
+for one fixed $C_0\ge1$. Such sets exist because the forbidden poles and
+zeros lie over finite subsets of either elliptic factor. Put $C_1=C_0^2$,
+and choose $T_0$ divisible by every prime of $S_0$ with
+\begin{equation}\label{sd:T0}
+ T_0^4>A^2(1+C_1^2)^6/\epsilon.
+\end{equation}
+All quantities fixed so far are coefficients or fixed rational functions,
+not quantified variables. Numerical values have not been emitted here.
+
+\subsection{The aggregation and the finite formula}
+
+For $R\in\sdQ^\times$, field expressions $D_j\in F$, and positive integers
+$k_j$, let $\mathcal A(R;(D_j,k_j)_j)$ denote
+\begin{equation}\label{sd:agg}
+ W=\prod_j\bigl(1+R(D_j/R^{k_j})^2\bigr),\qquad
+ \Theta=\sdTr(W^{-1}),\qquad W\Theta\ne0,\qquad
+ \Phi_0(R/\Theta^2).
+\end{equation}
+The displayed quantities are computed expressions. Each occurrence has
+only the two structural witnesses of $\Phi_0$ and its two finite square-root
+choices. If $p\notin S$ and $v_p(R)$ is odd, this condition implies that
+$v_p(R)>0$ and, at some place $v\mid p$,
+\begin{equation}\label{sd:agg-sound}
+                       v(D_j)\ge k_j\quad\text{for every }j.
+\end{equation}
+For completeness we will verify the relevant valuations directly.
+For soundness, put $\alpha=v_p(R)$ and
+$\lambda_v=v(W)=\sum_j\min\{0,\alpha+2(v(D_j)-k_j\alpha)\}\le0$.
+If $\lambda=\max_{v\mid p}\lambda_v$, then
+$v_p(\Theta)\ge-\lambda$. The odd valuation of $R/\Theta^2$ is nonnegative,
+so $\alpha>0$ and $\lambda\ge-\alpha/2$. At a place realizing $\lambda$,
+each summand is at least $-\alpha/2$. Hence
+$v(D_j)\ge(k_j-3/4)\alpha>k_j-1$; integral valuations give
+\eqref{sd:agg-sound}. Zero expressions cause no exception.
+
+For an input $X\in\sdQ$, put
+\[
+ \beta=X^2+b_*,\qquad r=r(\beta),\qquad N=1+T_0^2r^2,
+ \qquad R_0=A^2r.
+\]
+In particular $r,N,R_0$ are positive. Quantify four nonzero points
+$Q_n,Q_s,Q_t,Q_w\in G$, a point $H_0\in G\setminus\{O,c_*P\}$,
+four points $U_n,U_s,U_t,U_w\in G$, and one rational slope $\eta\ne0$.
+The same point $H_0$ is used in both parts below.
+
+\paragraph{The scalar condition.}
+Set
+\begin{equation}\label{sd:scalar}
+ \begin{split}
+ W_\beta={}&\left(1+\frac{\rho(Q_s)^2}{R_0}\right)
+             \left(1+\frac{\rho(H_0)^2}{R_0}\right)
+             \left(1+\frac{(z(Q_s)/z(H_0))^2}{R_0^{2c-1}}\right),\\
+ \Theta_\beta={}&\sdTr(W_\beta^{-1}),\qquad
+ W_\beta\Theta_\beta\ne0,\qquad
+ \Phi_0\left(\frac{R_0}{(N\Theta_\beta)^2}\right).
+ \end{split}
+\end{equation}
+This is the aggregation \eqref{sd:agg} for $R=R_0/N^2$ and the three
+expressions $D_j/N^{2k_j-1}$, where
+$(D_j,k_j)=(\rho(Q_s),1),(\rho(H_0),1),(z(Q_s)/z(H_0),c)$.
+The normalizing powers cancel from the product, leaving the shorter
+displayed formula.
+
+\paragraph{The main conditions.}
+For $i\in\{n,s,t,w\}$ set
+\[
+ V_0=H_0-c_*P,\quad V_i=U_i-[c_*]Q_i,\qquad
+ L_i=\frac{\ell_K(z(U_i))}{\ell_K(z(H_0))},\quad
+ L_i'=\frac{\ell_K^\sigma(z(V_i^\sigma))}
+                    {\ell_K^\sigma(z(V_0^\sigma))}.
+\]
+Both logarithm denominators are required to be nonzero. Form the following
+sixteen expressions with their precisions:
+\begin{equation}\label{sd:list}
+ \begin{array}{c|c|c}
+ \text{expressions}&\text{number}&\text{precision}\\\hline
+ \rho(H_0),\ \rho(U_i)&5&1\\
+ \rho(V_0^\sigma),\ \rho(V_i^\sigma)&5&1\\
+ L_i-L_i'&4&K\\
+ g_L(L_s,L_t,L_w),\ \beta-L_n&2&K.
+ \end{array}
+\end{equation}
+Denote this list by $(D_j,k_j)_{j=1}^{16}$.
+Write the eight rational components of the four $x(Q_i)$ as $X_1,\ldots,X_8$.
+Set $a_0=1$, and $a_r=X_r^2$ when $X_r\ne0$, $a_r=1$ otherwise.
+For $0\le r\le8$ put
+\[
+ t_r=a_r\eta,\qquad
+ R_r=a_r^{-5}\frac{\prod_{j=0}^4(t_r-\theta_j)}{(t_r-\xi)^6}.
+\]
+Require $t_r\notin\{\theta_0,\ldots,\theta_4,\xi\}$ and
+\begin{equation}\label{sd:main}
+ \mathcal A\left(R_r;
+       \left(\frac{D_j}{(t_r-\xi)^{k_j+1}},k_j\right)_{j=1}^{16}\right)
+ \qquad(0\le r\le8).
+\end{equation}
+All equalities over $F$, rational-function evaluations, finite branches and
+nonzero guards are interpreted on their usual finite rational charts.
+Equations \eqref{sd:phi}, \eqref{sd:agg}, \eqref{sd:scalar}, and
+\eqref{sd:main}, together with the point and denominator conditions, are a
+finite existential formula over $\sdQ$. No point index is quantified as a
+rational number.
+
+\subsection{Soundness}
+
+\begin{sdlemma}\label{sd:scalar-height}
+If \eqref{sd:scalar} holds and $Q_s=sP$, then $h(\beta)\le H|s|$.
+\end{sdlemma}
+\begin{proof}
+Let $q\mid M_S(\beta)$. At a finite normalized contact of positive depth,
+$\beta$ is $q$-integral and exactly one $\beta-\theta_j$ has positive odd
+valuation. Thus $v_q(r)>0$ is odd, $N$ is a $q$-unit, and
+$v_q(R_0/N^2)=v_q(r)$ is odd. By \eqref{sd:agg-sound}, at some place over
+$q$ both points are formal and $v(z(Q_s)/z(H_0))\ge c$.
+Writing $H_0=hP$, \eqref{sd:formal} gives $v_q(s/h)\ge c$ and hence $q^c\mid s$.
+Therefore $M_S(\beta)^c\mid s$, and \eqref{sd:height} proves the result.
+If $v_q(\beta)<0$, all five normalized finite-contact depths are zero:
+the numerator of each primitive form is a unit. Such a prime does not
+occur in $M_S(\beta)$. Thus no inference involving the normalization $N$
+at a negative valuation is used.
+\end{proof}
+
+\begin{sdlemma}\label{sd:main-errors}
+Write $Q_i=n_iP$ and $B=\max_i|n_i|$. If the main conditions hold, then
+\[
+ B^2\le C|D|^{1/2}
+\]
+whenever either $D=g_L(n_s,n_t,n_w)\ne0$, or
+$D=\sdnum(\beta-n_n)\ne0$.
+\end{sdlemma}
+\begin{proof}
+Fix $q\mid M_S(t_r)$. Then $t_r$ is integral, exactly one finite contact
+has positive odd depth, and $t_r-\xi$ is a unit. Since $a_r^{-5}$ is a
+rational square, $v_q(R_r)$ is odd. Aggregation supplies one place at which
+the original sixteen expressions in \eqref{sd:list} have their specified
+precisions.
+
+Write $H_0=hP$, $U_i=z_iP$. The first ten tests make the relevant points
+formal, and the next four give $L_i-L_i'\in q^K\mathcal O_v$.
+The integers $h,h-c_*$ are nonzero and at least one is a $q$-unit.
+Consequently at least one of $z_i/h,(z_i-c_*n_i)/(h-c_*)$ is integral.
+The valuation identity for truncated logarithms and $L_i-L_i'$ then make
+both ratios integral. The congruence in \eqref{sd:formal} applies to both.
+Multiplying by $h,h-c_*$ and subtracting yields
+\[
+ c_*n_i\equiv hL_i-(h-c_*)L_i'\equiv c_*L_i\pmod{q^K\mathcal O_v}.
+\]
+Thus $L_i\equiv n_i\pmod{q^K\mathcal O_v}$. The final two tests show
+that $q^K$ divides either nonzero integer $D$ under consideration. For the
+second test, $\beta-L_n$ first makes $\beta$ integral at $q$, so the reduced
+denominator of $\beta-n_n$ is a $q$-unit.
+
+Hence $M_S(t_r)^K\mid D$ for every $r$, and $K=2c$ gives
+$h(t_r)\le H|D|^{1/2}$. Since
+$2h(X_r)=h(a_r)\le h(\eta)+h(a_r\eta)$ for nonzero $X_r$,
+every component satisfies $h(X_r)\le H|D|^{1/2}$; a zero component has
+height zero. For a point whose index has absolute value $B$,
+\[
+ 2B^2\widehat h(P)
+ \le h(x(Q_i))+C_E
+ \le 2H|D|^{1/2}+\tfrac32\log2+C_E.
+\]
+Use $|D|\ge1$ and \eqref{sd:C}.
+\end{proof}
+
+\begin{sdproposition}\label{sd:soundness}
+The displayed formula implies $X\in\sdZ$.
+\end{sdproposition}
+\begin{proof}
+Write the four indices as $n,s,t,w$, and put $B=\max\{|n|,|s|,|t|,|w|\}$.
+They are all nonzero. The integer residual satisfies
+$|g_L(s,t,w)|\le C_LB^4$. If nonzero, Lemma~\ref{sd:main-errors} and
+\eqref{sd:C} give $B^2<B^2/2$. Hence $g_L(s,t,w)=0$.
+
+Jones's Lucas classification \cite[Corollary~2.7]{JonesLucas2003} gives
+\[
+ |t|\ge(|Ls|-1)^{|Ls|-4}.
+\]
+For completeness, write $a=|Ls|\ge9$ and
+$y=\operatorname{sgn}(Ls)(Ls-2)w$. The equation becomes
+$(2t-ay)^2-(a^2-4)y^2=4$. Jones's classification and the recurrence
+$U_0=0,U_1=1,U_{j+1}=aU_j-U_{j-1}$ give
+$|y|=U_k$, $|t|\in\{U_{k-1},U_{k+1}\}$.
+The congruences $U_k\equiv k\pmod{a-2}$ and
+$U_k\equiv(-1)^{k-1}k\pmod{a+2}$ imply $k\ge a-2$;
+$U_j\ge(a-1)^{j-1}$ gives the assertion. Since $L>H$ and $L\ge9$,
+\begin{equation}\label{sd:growth}
+ \log B\ge(L|s|-4)\log(L|s|-1)>H|s|.
+\end{equation}
+
+If $\beta\ne n$, let $D=\sdnum(\beta-n)$. Then
+$|D|\le2B\exp h(\beta)$. Lemmas~\ref{sd:scalar-height} and
+\ref{sd:main-errors} imply
+\[
+ 3\log B\le 2\log C+\log2+h(\beta)<H|s|,
+\]
+contrary to \eqref{sd:growth}. Thus $\beta=n\in\sdZ$, so
+$X^2=\beta-b_*\in\sdZ$ and $X\in\sdZ$.
+\end{proof}
+
+\subsection{Completeness and sharing the local anchor}
+
+We give the order of choices explicitly. Fix $X\in\sdZ$.
+Then $\beta\in\sdZ$, and $r=r(\beta)$ is a positive integer.
+Let $\mathcal P$ be the set of primes dividing $Ar$. For $p\in\mathcal P$
+put $\alpha_p=2v_p(A)+v_p(r)>0$. The integer $N=1+T_0^2r^2$ is a unit
+at every such prime: this is immediate at divisors of $r$, and at divisors
+of $A$ it follows from the divisibility imposed on $T_0$.
+
+Choose a positive integer $\lambda$ such that
+\[
+ v_p(\lambda)\ge c\alpha_p+v_p(2)+1\qquad(p\in\mathcal P).
+\]
+Choose a positive integer $D_0$, divisible by $c_*$, so that every point
+in $D_0G$ belongs, at all places over $\mathcal P$, to a sufficiently deep
+formal subgroup and satisfies
+$v(\rho(Q))\ge\alpha_p+v_p(2)+1$ unless $Q=O$.
+Such a $D_0$ exists by the finite index of deep local formal subgroups.
+Choose a positive multiple $j_0$ of $D_0$ for which
+$Q_s=[\lambda j_0]P$ belongs to one of the open sets
+\eqref{sd:goodsets} at the real places. This is possible with arbitrarily
+large $j_0$: the closure of any nonconstant arithmetic progression in
+$\mathcal G$ contains an entire component, because multiplication by a
+nonzero integer is surjective on its identity torus. The positive tail of
+the progression has the same closure.
+
+Put $s=\lambda j_0$, $n=\beta$, and choose positive $t,w$ satisfying
+$g_L(s,t,w)=0$. Explicitly take the Lucas sequence with parameter $Ls$,
+put $k=Ls-2$, and take $t=U_{k+1}$ and $w=U_k/k$.
+The congruence $U_k\equiv k\pmod{Ls-2}$ and the identity
+$U_{k+1}^2-LsU_{k+1}U_k+U_k^2=1$ verify these choices.
+All four root points are now fixed.
+
+Set
+\begin{equation}\label{sd:fixedmodulus}
+ D_1=\operatorname{lcm}\left(D_0,
+               \prod_{p\in\mathcal P}p^{v_p(j_0)+1}\right).
+\end{equation}
+We will require the shared index $h$ to satisfy $h\equiv j_0\pmod{D_1}$.
+Then $H_0=hP$ has the same formal depths as $j_0P$ at the places in
+$\mathcal P$, and
+\begin{equation}\label{sd:scalar-depths}
+ v(\rho(H_0)),v(\rho(Q_s))\ge\alpha_p+v_p(2)+1,
+ \quad v(z(Q_s)/z(H_0))=v_p(\lambda)\ge c\alpha_p+v_p(2)+1.
+\end{equation}
+Indeed both $hP,j_0P$ lie in the chosen deep formal subgroup and
+$v_p(h)=v_p(j_0)$, so the formal logarithm compares their parameter
+valuations. Also $c_*\mid h$.
+
+We additionally choose $H_0$ in an open set from \eqref{sd:goodsets}.
+Then the three unnormalized scalar expressions have absolute values at
+most $C_1$ at both embeddings. At these embeddings the three nonconstant
+terms in the scalar product \eqref{sd:agg} have the exact form
+\[
+ D_j^2 A^{2-4k_j}r^{1-2k_j},
+ \qquad (D_j,k_j)=(\rho(Q_s),1),(\rho(H_0),1),(z(Q_s)/z(H_0),c).
+\]
+They are nonnegative and at most $C_1^2$.
+Consequently $1\le W_\beta\le(1+C_1^2)^3$,
+$\Theta_\beta\ge2/(1+C_1^2)^3$, and
+\[
+ 0<\frac{R_0}{(N\Theta_\beta)^2}
+ \le\frac{A^2(1+C_1^2)^6}{4T_0^4}<\epsilon.
+\]
+At $p\in\mathcal P$, \eqref{sd:scalar-depths} gives valuation at least
+$\alpha_p+2v_p(2)+2$ for each nonconstant term. Thus
+$\Theta_\beta=2+\text{an element of valuation }>v_p(2)$ and
+\[
+ v_p\left(R_0/(N\Theta_\beta)^2\right)=\alpha_p-2v_p(2).
+\]
+This is at least $b_p$ on $S_0$ by \eqref{sd:A}, and is nonnegative at
+every other prime of $\mathcal P$. Outside $\mathcal P$ the valuation of
+$R_0/N^2$ is even, so that of $R_0/(N\Theta_\beta)^2$ is even.
+The input therefore has no negative odd valuation at any prime.
+The completeness assertion for $\Phi_0$ proves the scalar condition,
+for every later $h$ having the stipulated congruence and real bounds.
+
+It remains to construct such an $h$ together with the main slope.
+Set $U_i=[n_i]H_0$ for $i=n,s,t,w$ in the completeness construction.
+Then $V_i=[n_i]V_0$. The basic reciprocal coordinates and each individual
+truncated-logarithm ratio are rational functions on one real elliptic factor.
+Their poles and logarithm-denominator zeros lie over finite subsets of
+that factor. Bounds for these basic functions bound all sixteen expressions
+in \eqref{sd:list}. None of the forbidden finite fibres contains a
+component of $\mathcal G$.
+Inside the previously chosen open set in each component, remove these
+fibres and choose a smaller nonempty open set. On these smaller sets all
+sixteen main expressions have a common bound $C_2$. Crucially $C_2$ is
+chosen before the main prime pattern and is independent of its later
+congruence moduli.
+
+At every place over $S_0$, the sixteen main expressions are integral
+whenever $c_*\mid h$ and $h\notin\{0,c_*\}$. Indeed $hP,(h-c_*)P$ lie
+in the fixed deep formal subgroup. Their integer multiples give truncated
+logarithm ratios of valuation $v_p(n_i)\ge0$, and their reciprocal
+$x$-coordinates are integral. Since $\beta$ and the coefficients of
+$g_L$ are integers, the last two expressions are integral as well.
+
+For the now fixed positive squares $a_r$, choose a square denominator
+$v=d_2^2w^2$ with $d_2$ sufficiently divisible and put $\eta=u/v$.
+Clear denominators so that all distinct positions
+\begin{equation}\label{sd:positions}
+             u-(\theta_j/a_r)v
+       \quad(0\le r\le8,\ 0\le j\le4)
+\end{equation}
+are integral quadratic polynomials in $u,w$. Since $\theta_0=0$, there
+are at most $37$ distinct positions. Apply the prime-pattern input with
+the odd squarefree product of the primes dividing $D_1$, except $7$, as
+its avoidance modulus. Take all selected primes beyond the fixed
+exceptions and the supports and differences of these rational coefficients.
+The theorem also permits arbitrarily large $\eta$ and arbitrary fixed
+denominator divisibility.
+
+Let $U$ be the least common multiple of all selected $d_+(q)$ and $V$ that
+of all selected $d_-(q)$. Impose
+\begin{equation}\label{sd:CRT}
+ h\equiv0\pmod U,\qquad h\equiv c_*\pmod V,
+ \qquad h\equiv j_0\pmod{D_1}.
+\end{equation}
+These congruences are compatible. Indeed $\gcd(U,V)=4\mid c_*$.
+Every common divisor of $UV$ and $D_1$ is a power of two: the avoidance
+condition handles all odd primes other than $7$, and the fixed Gaussian
+residue handles $7$. The relevant powers of two divide $4$ for $U$ and
+$64$ for $V$. Both $j_0$ and $c_*$ are divisible by $64$.
+This checks every pair of congruences, including arbitrary powers in
+$D_1$. The generalized Chinese remainder theorem therefore gives a
+nonconstant arithmetic progression of solutions. Choose an arbitrarily
+large positive solution whose real point belongs to one of the smaller
+open sets defining $C_2$; avoid $h=c_*$.
+
+At each selected contact prime orient the two places so that the first
+has order $d_+(q)$. Then $H_0,U_i$ are formal at the first place and
+$V_0,V_i$ at the second. The two rational index ratios in the formal
+comparison are both exactly $n_i$. Thus all sixteen main expressions
+have the required precisions at the first place: conjugation supplies
+the second family there, the logarithm differences vanish modulo $q^K$,
+and $g_L(n_s,n_t,n_w)=\beta-n_n=0$.
+
+For completeness of the pole predicates, the exact detector formula is
+\[
+ R_r=\frac{\prod_{j=0}^4\bigl(u-(\theta_j/a_r)v\bigr)}
+                    {v^5(t_r-\xi)^6}.
+\]
+Within each slope its five contact primes are distinct; $v$ is a square
+and is a unit at those primes. Hence $v_q(R_r)=1$ at its five contacts,
+and $v_p(R_r)$ is even elsewhere. At a contact, every local factor in
+$W$ is either $1$ modulo its place or has negative valuation. At the
+successful place they are all $1$ modulo that place. Consequently the
+trace of $W^{-1}$ has residue $1$ or $2$, which is nonzero, so the pole
+input has valuation one there and even valuation elsewhere. It has no
+negative odd valuation.
+
+Here are the bounds ensuring the remaining preparation requirements.
+Uniformly when the sixteen unscaled expressions are bounded by $C_2$,
+as $\eta\to+\infty$,
+\[
+ \begin{gathered}
+ R_r=a_r^{-6}\eta^{-1}(1+O(\eta^{-1})),\quad
+ W_r=1+O(\eta^{-3}),\quad \Theta_r=2+O(\eta^{-3}),\\
+ R_r/\Theta_r^2=(4a_r^6\eta)^{-1}(1+O(\eta^{-1})).
+ \end{gathered}
+\]
+Thus all nine pole inputs are positive and less than $\epsilon$ once a
+fixed lower bound on $\eta$ is imposed before the pattern is selected.
+For $p\in S_0$ put $\nu=v_p(v)$ and $\gamma_r=v_p(a_r)$, both even.
+For sufficiently divisible $v$, the prime $u$ is a $p$-unit and
+\[
+ v_p(R_r)=\nu-6\gamma_r,\qquad
+ v\left(R_r\left(\frac{D_j/(t_r-\xi)^{k_j+1}}{R_r^{k_j}}\right)^2\right)
+ \ge3\nu+(10k_j-8)\gamma_r.
+\]
+All unscaled $D_j$ are integral. Increasing the prescribed divisibility
+of $v$ makes the right side exceed $v_p(2)$ for every $r,j$.
+It follows that $v_p(\Theta_r)=v_p(2)$ and
+$v_p(R_r/\Theta_r^2)=\nu-6\gamma_r-2v_p(2)\ge b_p$.
+All bounds were fixed before the prime pattern and its CRT modulus.
+The completeness assertion for $\Phi_0$ now verifies every main predicate.
+This completes the proof that the formula holds for every integer $X$.
+
+\subsection{Polynomial compilation and variable count}
+
+\begin{sdtheorem}\label{sd:forty}
+Assume the arithmetic inputs above. There is a polynomial
+$F\in\sdZ[X,Y_1,\ldots,Y_{40}]$ such that, for every $X\in\sdQ$,
+\[
+ X\in\sdZ\quad\Longleftrightarrow\quad
+ \exists Y_1,\ldots,Y_{40}\in\sdQ\quad F(X,\mathbf Y)=0.
+\]
+Given numerical realizations of the fixed constants and finite multiplier
+data above, the proof gives a terminating finite algorithm to produce $F$.
+It does not claim that this polynomial, its circuit, or its coefficients
+have been emitted here.
+\end{sdtheorem}
+\begin{proof}
+The equivalence was proved above. There are nine cyclic points: four root
+points and five shared local points. Represent each as $[m](x,y)$ with
+$(x,y)\in E(F)$ affine. Every cyclic point admits such an affine preimage;
+for $O$, use the two-torsion point $(0,0)$.
+Writing $x=u+v\sqrt2$ gives two free rational coordinates. If
+$x^3-d^2x=C_0+C_1\sqrt2$ and $C_1\ne0$, its ordinate is encoded by the
+single finite choice
+\[
+ \tau^4-C_0\tau^2+C_1^2/2=0,\qquad
+ y=\tau+\frac{C_1}{2\tau}\sqrt2.
+\]
+This quartic is separable and $\tau\ne0$. If $C_1=0$, use the finite
+branches $y=\tau$, $\tau^2=C_0$, or $y=\tau\sqrt2$, $\tau^2=C_0/2$;
+split off $C_0=0$. Thus each point contributes two free coordinates and
+one finite algebraic choice.
+
+There are ten pole predicates: nine main predicates and one scalar
+predicate. Each contributes two structural coordinates $e,z$ and two
+finite square-root choices. There is one free slope $\eta$.
+Consequently the free structural parameters number
+\[
+                     9\cdot2+10\cdot2+1=39.
+\]
+The finite-algebra compilation of \cite[Section~10]{Sun2026} combines
+every remaining finite choice, branch and nonzero guard into one final
+rational variable. For clarity, it first separates the points of each
+finite reduced algebra by one of finitely many fixed linear combinations,
+retains a nonzero discriminant, recovers the component roots by matrix
+inversion, and filters equalities and inequations by polynomial gcds.
+Dependent square-root choices are then incorporated in a second reduced
+algebra and separated again. Degree drops and zero square inputs are
+handled by finite branches. Finally the reciprocal-polynomial construction
+absorbs every denominator and nonzero guard into that same variable;
+sums of squares combine equations and products combine the finitely many
+branches. This is an algorithm on polynomials of fixed finite degree and
+uses no additional free parameters. It gives $39+1=40$ existential variables.
+\end{proof}
+
+There is a less compressed presentation that avoids the global finite-algebra
+step. Keep one ordinate variable for each point. For the two square tests
+in a pole predicate, use the elementary identity
+\[
+ A,B\in\sdSq\quad\Longleftrightarrow\quad
+ \exists t\in\sdQ:\quad
+ (A^2+B^2)\bigl(1-2(A+B)t^2+(A-B)^2t^4\bigr)=0.
+\]
+Indeed, when not both inputs vanish, a rational root gives a nonzero
+rational number equal to a signed sum of square roots, from which both
+square roots are recovered using their sum and difference; the converse
+chooses a nonzero signed sum. This leaves
+\[
+              9\cdot3+10\cdot3+1+1=59
+\]
+variables, the last enforcing the product of all nonzero guards on each
+finite branch. The formula consists of the displayed rational-function
+compositions, local quartics and finite branches. It is likely more useful
+for a short circuit description than the forty-variable polynomial.
+Before branching, the uncompressed finite fibres already have degree at
+most $4^9 2^{20}=2^{38}$, so global primitive-element packing can increase
+degree and coefficient data enormously. Neither count alone establishes
+an improvement in total encoded bit length.

@@ -1,0 +1,9 @@
+{
+  "scope": "Exact polynomial identities after clearing denominators only. No rational-point existence or full arithmetic proof certified.",
+  "paired_point_parametrization": true,
+  "norm_substitution": true,
+  "discriminant": true,
+  "resultant_reduction": true,
+  "shared_article_sha256_old": "97ea54d6ef709d588966a7980edc6a71b1bb330f3f72cb990a6c66dfc0be491f",
+  "shared_article_sha256_new": "97ea54d6ef709d588966a7980edc6a71b1bb330f3f72cb990a6c66dfc0be491f"
+}

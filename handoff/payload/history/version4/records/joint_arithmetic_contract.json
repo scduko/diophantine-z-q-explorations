@@ -1,0 +1,157 @@
+{
+  "format": "joint-arithmetic-source-contract-v1",
+  "status": "Arithmetic contract; final emitted-source audit pending",
+  "source_family": "H19-root37-rational-conic-anchor4-v1",
+  "source_id_prefix": "rational-conic-anchor4-k40-q12-a25-h19-s32-",
+  "proofs": {
+    "charts/sub5000/RATIONAL_DIFFERENCE.md": "8558cbfdb09bfaf12054caa2907900bc30b6de91fd6ab43c14ddc294f1cd7e9d",
+    "precision/sub5000/ODD_DISCRIMINANT_PAIR_COMPRESSION.md": "ef4de3f02fa3d17c18dc7c2af490960a62f35cc541eac8e4b80958d320fa8ab9",
+    "parity/sub5000/ANCHOR_FOUR_PROOF.md": "9d349ae5caaaa9ed4433617762ecb4b8b349af58c2082ffa4b9be08442ba18e3",
+    "precision/PROOF.md": "258d07739bed4bd114580a51bbbbeac07f6b5f6441024db2f7c19ed237b7818f",
+    "precision/THREE_MODE_CONTACTS.md": "66311fffec418e9a6aa44f7f7503057133f92e21c4f70c3468971dd04ac55659"
+  },
+  "helpers_read": {
+    "charts/sub5000/rational_difference.py": "be766e35b06d8f334c326dedfddc7c200d226a4c70af6a73fe66242aa4ccc898",
+    "precision/sub5000/conic_emitter.py": "b8899e6b8c4bc443e207d8fa43abb696ce90997b35285f0c929c59efa851f327",
+    "parity/sub5000/anchor_four_kernel.py": "4f5944cfe3dd16f5a38ab7113e54a5ecba1faccfecac0d23b7c2f36b76a00dcb"
+  },
+  "field": {
+    "base": "Q",
+    "basis": ["1", "sqrt(2)"],
+    "generator_square": 2,
+    "conjugation": [1, -1],
+    "curve_droot": [3, -1],
+    "curve_d2": [11, -6],
+    "curve": "y^2=x^3-D*x"
+  },
+  "parameters": {
+    "height_exponent": 19,
+    "height_constant": "2*(2^109*210^1800)*(product_{p<=76176}p)^19+128",
+    "log2_height_strict_upper_bound": 2093966,
+    "selected_prime_lower_bound_exclusive": 76176,
+    "high": 40,
+    "label": 12,
+    "anchor_squarings": 25,
+    "scalar_orders": [1, 1, 1, 1, 32, 32]
+  },
+  "root": {
+    "ordinary_contact_count": 37,
+    "raw_infinity": "v/(32*25878772920)",
+    "raw_common_finite": "u-delta*v",
+    "raw_target_finite": "u-(47027*a_i+3)*v+delta*v",
+    "delta_list": ["0", "1", "2401", "-343/32"],
+    "height_coefficients": ["x(A)_0", "x(A)_1", "x(S)_0", "x(S)_1", "x(T)_0", "x(T)_1", "x(Z)_0", "x(Z)_1"],
+    "root_integer_indices": ["n", "s", "t", "z"],
+    "rational_proxies": ["beta", "xi", "tau", "zeta"],
+    "code_proxy_aliases": {"beta": "beta", "s": "xi", "t": "tau", "z": "zeta"},
+    "root_input_relation": "beta=X^2+2",
+    "proxy_lucas_relation": "tau^2-xi*(xi-2)*tau*zeta+(xi-2)^2*zeta^2-1=0",
+    "shared_targets": ["4P_*", "4A", "4S", "4T", "4Z"],
+    "shared_target_boundary": ["F_0", "F_1", "q_0", "q_1"],
+    "shared_target_equations": ["a*F=1", "a*q=b"],
+    "shared_target_rational_coordinates": 20,
+    "shared_target_rational_rows": 20,
+    "global_root_error_retained_but_unused": true,
+    "legacy_root_equation": "epsilon_global=theta_global^2-2",
+    "legacy_root_comparison_dependence": "None in any comparison residual, conic input, field test or local power; only ignored free slots remain"
+  },
+  "primary": {
+    "field_coordinates": ["f", "x", "p"],
+    "equations": ["x*f=1", "p^2=x-D*f"],
+    "represented_point": "(x,x*p)",
+    "index_group": "(1/2)Z via doubling",
+    "primary_square_transfer": false,
+    "x_squareclass_membership": false,
+    "nonzero_p_source": "Retained G equations and global nonvanishing of G_2 and G_9"
+  },
+  "difference": {
+    "model": "rational difference on B*T!=0; fused alternate; no difference formal tests",
+    "field_coordinates": ["t_den", "M", "T_den", "A_alt"],
+    "equations": ["t_den=f*F", "M*(1+D*t_den)=p", "T_den=2*x-p*q+2*M*(q-p)", "A_alt*conj(T_den)+conj(q-p)*inv_conj_zJ=0"],
+    "difference_formal_tests": false,
+    "rational_difference_four_fields": true,
+    "site_count": 145,
+    "independent_primary_points_per_occurrence": true
+  },
+  "modes": {
+    "q_compare4": {
+      "positions": [0, 1, 2, 3, 4, 21, 22, 23, 24, 25, 26, 27, 28],
+      "free": 31,
+      "proxies": ["beta", "xi", "tau", "zeta"],
+      "targets": ["4P_*", "4A", "4S", "4T", "4Z"],
+      "ignored_shared_root_inputs": [28, 29],
+      "raw_slot": 30,
+      "g_precisions": [40, 12, 40, 40, 40],
+      "fields": ["f(P0)", "f(Pbeta)", "f(Ps)", "f(Pt)", "f(Pz)", "conj(f(J))", "Cbeta-beta", "Cs-xi", "Ct-tau", "Cz-zeta", "Aalt0", "Aaltbeta", "Aalts", "Aaltt", "Aaltz"],
+      "field_orders": [1, 1, 1, 1, 1, 1, 12, 40, 40, 40, 40, 12, 40, 40, 40],
+      "conic_batch": "q_conic15",
+      "sorted_field_indices": [0, 1, 2, 3, 4, 5, 6, 11, 7, 8, 9, 10, 12, 13, 14],
+      "upper_norm_level_sizes": [16, 8, 4, 2]
+    },
+    "q_compare_beta": {
+      "positions": [5, 6, 7, 8, 9, 10, 11, 12],
+      "free": 16,
+      "proxies": ["beta"],
+      "targets": ["4P_*", "4A"],
+      "ignored_shared_root_inputs": [13, 14],
+      "raw_slot": 15,
+      "g_precisions": [12, 12],
+      "fields": ["f(P0)", "f(Pbeta)", "conj(f(J))", "Cbeta-beta", "Aalt0", "Aaltbeta"],
+      "field_orders": [1, 1, 1, 12, 12, 12],
+      "conic_batch": "q_conic6",
+      "sorted_field_indices": [0, 1, 2, 3, 4, 5],
+      "upper_norm_level_sizes": [7, 4, 2]
+    },
+    "q_compare_lucas": {
+      "positions": [13, 14, 15, 16, 17, 18, 19, 20, 29, 30, 31, 32, 33, 34, 35, 36],
+      "free": 26,
+      "proxies": ["xi", "tau", "zeta"],
+      "targets": ["4P_*", "4S", "4T", "4Z"],
+      "ignored_shared_root_inputs": [23, 24],
+      "raw_slot": 25,
+      "g_precisions": [40, 40, 40, 40],
+      "fields": ["f(P0)", "f(Ps)", "f(Pt)", "f(Pz)", "conj(f(J))", "Cs-xi", "Ct-tau", "Cz-zeta", "Aalt0", "Aalts", "Aaltt", "Aaltz"],
+      "field_orders": [1, 1, 1, 1, 1, 40, 40, 40, 40, 40, 40, 40],
+      "conic_batch": "q_conic12",
+      "sorted_field_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "upper_norm_level_sizes": [13, 7, 4, 2]
+    }
+  },
+  "logarithms": {
+    "high_profile": {"precision": 40, "scheme": "block3", "normalization": "a6", "hscale": 1, "bound_output": false},
+    "low_profile": {"precision": 12, "scheme": "direct", "normalization": "unit", "hscale": 1, "bound_output": false},
+    "recurrence": "a0=1; a1=-2/5; a_j=(4j-5)*a_(j-1)/(4j+1)",
+    "G_indices": {"40": 9, "12": 2},
+    "compressed_equations": ["Lambda*p0=G0", "aux_i=C_i*p_i", "aux_i*Lambda=G_i"]
+  },
+  "conic": {
+    "comparison_norm": "private conic field norm v1",
+    "private_conics": 37,
+    "conic_field_nodes": 435,
+    "private_coordinates": ["theta", "s_conic", "S_conic"],
+    "equations": ["S_conic=s_conic^2", "theta^2-r*S_conic-2=0"],
+    "contact_inverse_emitted": false,
+    "batch_input_layout": "r;A0;B0;A1;B1;...",
+    "field_coefficients_affine": true,
+    "field_coefficients_independent_of_private_conic": true,
+    "packed_equations": ["Y_i=A_i+theta*B_i", "r^(2e_i)*W_i=2*A_i*Y_i-A_i^2+2*B_i^2"],
+    "tree": "Literal1 first, then W_i in sorted-field order; successive N_r(a,b)=a^2+r*b^2; carry odd last node",
+    "pole_argument": "r*norm_root^2",
+    "squareclass_correction": false,
+    "old_epsilon_leaf_present": false,
+    "old_paired_rational_tests_present": false
+  },
+  "anchor": {
+    "module": "q_anchor",
+    "free": 2,
+    "locals": 4,
+    "rows": 2,
+    "shared_C_index": -26,
+    "shared_C_value": "3^(2^25)",
+    "encoding": "homogeneous trace 9+3(a^2+b^2) in S_2_3",
+    "equations": ["C*H-9*C^2-3*f0^2-3*f1^2=0", "H^2-8*U^2-12*V^2+24*W^2-4*C^2=0"]
+  },
+  "required_modules": ["Z_definition", "q_anchor", "q_primeparity", "q_height_batch", "q_compare4", "q_compare_beta", "q_compare_lucas", "q_conic15", "q_conic6", "q_conic12"],
+  "excluded_changes": ["H18", "shared private primary points across raw occurrences", "two-denominator difference proposal", "scaled parity fusion", "scalar-height conic conversion", "replacement of affine root height targets"],
+  "final_source_binding": "Pending emitted-source ID, canonical and byte hashes, independent complete source audit, fresh lift, replay and full expansion"
+}

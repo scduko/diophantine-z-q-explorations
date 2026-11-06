@@ -2,7 +2,7 @@
 
 This folder preserves the [October 11, 2026 manuscript PDF](ZIsDiophantineInQBySohailsGPT-6.pdf), *A conditional Diophantine definition of Z in Q from four arithmetic inputs*. The October 11 manuscript was produced by Sohail Farhangi with ChatGPT 6. The PDF is unchanged.
 
-The current manuscript is [*Z is Diophantine in Q*, Version 2](../quartic_12504.pdf), with [TeX source](../quartic_12504.tex) and an [explicit quartic package](../quartics/quartic-12504/README.md). Version 2 is a collaboration using the collective agentic notes from Gabe Conant, Sohail Farhangi, James Freitag, Elliot Glazer, Jenn Park, Caroline Terry. This credit does not change the October 11 manuscript's provenance.
+The current manuscript is [*Z is Diophantine in Q*, Version 2](../quartic_12504.pdf), with [TeX source](../quartic_12504.tex) and an [explicit quartic package](../quartics/quartic-12504/README.md). Version 2 is a collaboration using the collective agentic notes from Gabe Conant, Sohail Farhangi, James Freitag, Elliot Glazer, Jennifer Park, Caroline Terry. This credit does not change the October 11 manuscript's provenance.
 
 ## Scope and comparison
 

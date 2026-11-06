@@ -1,0 +1,281 @@
+{
+  "status": "PASS_SERIALIZATION_PATCH",
+  "scope": "Independent AST comparison of mathematical Python modules and exact parsed-data comparison of all core artifacts against the previously accepted Git snapshot. Integrity/replay policy reviewed separately.",
+  "baselineCommit": "81de7e45d60d458414ea0f96eb0f68ad8981a3a3",
+  "baselineManifestSha256": "37a5d9d0e4d1d9f51562a1ba4a004827ad5bc7c0fbdf3a7d74f031e9ddc933e3",
+  "currentManifestSha256": "aa7f04c54e8b778a419a1be8d24e0b3a9a8540c50202d41815864a156d6985c6",
+  "mathematicalModules": [
+    {
+      "path": "compiler/compile_ir.py",
+      "oldSha256": "adf72f0e20362373be6f050b19a6859c00d9535ec49e74272cf8e58df12f0435",
+      "newSha256": "c50510a5bed8f59543b64a3a2cb251e9aff4b300d4bfc750e13642e7b00eb46f",
+      "status": "AST_IDENTICAL_EXCEPT_EXPLICIT_UTF8_AND_NEWLINES"
+    },
+    {
+      "path": "identity/check_identity.py",
+      "oldSha256": "b1725c36bcb9fd6504fc774844ffc8e00bea11eea26cc20afe7dd8c6cb49c968",
+      "newSha256": "18a63c26c24b3a8c22ff660ce1bbba263d9144f0b8f4dabeb60e5d05b6153584",
+      "status": "AST_IDENTICAL_EXCEPT_EXPLICIT_UTF8_AND_NEWLINES"
+    },
+    {
+      "path": "optimization/find_affine_dependencies.py",
+      "oldSha256": "b31389c01f31c48510380ef3e8b4f8981058e01fff6673a074cbab47403d3fe2",
+      "newSha256": "972286adb71f3ce9faadeb3c2b68ab6f5415061a7a05ef805453552a169fdbd4",
+      "status": "AST_IDENTICAL_EXCEPT_EXPLICIT_UTF8_AND_NEWLINES"
+    },
+    {
+      "path": "optimization/verify_optimization.py",
+      "oldSha256": "98349dcedf10e14456d88d43c46b87eb26c721b104d8206ac353133401cce38a",
+      "newSha256": "7b344deef95cd9d6123e36af09168a511d4ff618a15fb57a6a07babbbd51b182",
+      "status": "AST_IDENTICAL_EXCEPT_EXPLICIT_UTF8_AND_NEWLINES"
+    },
+    {
+      "path": "oracle/check_oracle.py",
+      "oldSha256": "ee05d2b6e5137a490b7a384fa0679f6fadaff311a55f900e09fb64c1c22e3861",
+      "newSha256": "8f2338bc03abe2e03a8e23fa743d27d615f10fb029a63139e6efc1924ef4c04d",
+      "status": "AST_IDENTICAL_EXCEPT_EXPLICIT_UTF8_AND_NEWLINES"
+    },
+    {
+      "path": "source-review/build_inventory.py",
+      "oldSha256": "51072fb5079331de7cf12bbce112eff92edbce4934362d96a52c6412f8aeac7c",
+      "newSha256": "8ef9056c5610d01a928c1f5aec6bfb7b7077fea1d0e890e7819cfea39b98977f",
+      "status": "AST_IDENTICAL_EXCEPT_EXPLICIT_UTF8_AND_NEWLINES"
+    },
+    {
+      "path": "source-review/check_builder_semantics.py",
+      "oldSha256": "b1c3d6c4124ce4a39e76486522e46dd702d3b47b0b4ea751a7c39bf82ec0ab69",
+      "newSha256": "13f102f7801630d3c9dd280665da35bae03f51567255c8465f63f151844562a4",
+      "status": "AST_IDENTICAL_EXCEPT_EXPLICIT_UTF8_AND_NEWLINES"
+    }
+  ],
+  "coreArtifacts": [
+    {
+      "path": "builder/raw-ir.json",
+      "jsonIdentical": true,
+      "byteIdentical": true,
+      "oldSha256": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+      "newSha256": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3"
+    },
+    {
+      "path": "builder/raw-translated-ir.json",
+      "jsonIdentical": true,
+      "byteIdentical": true,
+      "oldSha256": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e",
+      "newSha256": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e"
+    },
+    {
+      "path": "source-review/source_inventory.json",
+      "jsonIdentical": true,
+      "byteIdentical": false,
+      "oldSha256": "0bd4e47068ee174bad7a5a2da61617ce840cd14d68d980c9b29300b19fedb98c",
+      "newSha256": "4e4e9b924f5d0d4705b2806f353b9e312d36389e041a86fa9abc60f36673b32b"
+    },
+    {
+      "path": "compiler/direct/compiled-ir.json",
+      "jsonIdentical": true,
+      "byteIdentical": false,
+      "oldSha256": "ee84bb197c4f3dbb680be3501f26c8e661be4b416c311542cc23fc9798f3e5b4",
+      "newSha256": "b79fdb306c25d85aa41c308ad96a1076d2b84b98a6f51c66d0682b2ae9b15b98"
+    },
+    {
+      "path": "compiler/direct/reduction-certificate.json",
+      "jsonIdentical": true,
+      "byteIdentical": false,
+      "oldSha256": "0d30bcbf2999b45f4240acbc304d9064d51dcb417c5de3fccadeb8e6fbef520f",
+      "newSha256": "130953b02693de8ce3da1996a3257a1e50a58cfdc03be73e6f05d105419cc06f"
+    },
+    {
+      "path": "compiler/direct/coordinate-map.json",
+      "jsonIdentical": true,
+      "byteIdentical": false,
+      "oldSha256": "68271e2dec96c091a0933fef71b25f6db397d0a177839b87f9e1d204e2a055d8",
+      "newSha256": "a2f10e89a380c456937623f9fc6655e0c419881693fb6bea84f8e975ba413624"
+    },
+    {
+      "path": "compiler/direct/polynomial.json",
+      "jsonIdentical": true,
+      "byteIdentical": true,
+      "oldSha256": "5acd7ebf8c09c7d95f66c16f6c5594fdbbde062a0f3204068e8f88b7fd4b54ba",
+      "newSha256": "5acd7ebf8c09c7d95f66c16f6c5594fdbbde062a0f3204068e8f88b7fd4b54ba"
+    },
+    {
+      "path": "compiler/direct/specialization-certificate.json",
+      "jsonIdentical": true,
+      "byteIdentical": false,
+      "oldSha256": "f531c45a82428707f84478ef908183b26d798b8a7acf1124846e9f4c2bd85465",
+      "newSha256": "409b54b3cd4fe3bc11e4739d8c2af622190785241bf54370812a05d6c35f7100"
+    },
+    {
+      "path": "compiler/translated/compiled-ir.json",
+      "jsonIdentical": true,
+      "byteIdentical": false,
+      "oldSha256": "21fcc73e863409511bb9ba7eec532d752e66ecda79a98a39b4df9f798bf53cb4",
+      "newSha256": "377cda57d18c320149f9cb47cbaeacf847ab0df1dd2a6cfd08a967f3c4af1433"
+    },
+    {
+      "path": "compiler/translated/reduction-certificate.json",
+      "jsonIdentical": true,
+      "byteIdentical": false,
+      "oldSha256": "85af0cc035d258c8cc19ae2e6f105a3b00f881d36861504c13a6fc01d9dd238f",
+      "newSha256": "489287cdb314cd89f1319b6818528a90dfc444f962d20e3acfb931800a7412a3"
+    },
+    {
+      "path": "compiler/translated/coordinate-map.json",
+      "jsonIdentical": true,
+      "byteIdentical": false,
+      "oldSha256": "a14aaa0f44167f3f4191edb78e5f655dc6973269d20acf89e3f79a5bd0e36868",
+      "newSha256": "02673ea95f96be7c77de80688fc57369a2e0c69fc94184c98f4d66983466fdb3"
+    },
+    {
+      "path": "compiler/translated/polynomial.json",
+      "jsonIdentical": true,
+      "byteIdentical": true,
+      "oldSha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586",
+      "newSha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586"
+    },
+    {
+      "path": "compiler/translated/specialization-certificate.json",
+      "jsonIdentical": true,
+      "byteIdentical": false,
+      "oldSha256": "12dfdc8b3a694984153a7a8e8f78dc716ea43c1050bcc3c16070d68a8c3e125b",
+      "newSha256": "73f1037dc54f3ac771bd66b97b7f266aef4ca2d4c679209b552fbefb08647d64"
+    }
+  ],
+  "changedFiles": [
+    "builder/FROZEN.json",
+    "checker/direct-check.json",
+    "checker/FINAL_CHECK.json",
+    "checker/MUTATION_TESTS.json",
+    "checker/translated-check.json",
+    "compiler/compile_ir.py",
+    "compiler/direct/compiled-ir.json",
+    "compiler/direct/compiler-report.json",
+    "compiler/direct/coordinate-map.json",
+    "compiler/direct/reduction-certificate.json",
+    "compiler/direct/specialization-certificate.json",
+    "compiler/translated/compiled-ir.json",
+    "compiler/translated/compiler-report.json",
+    "compiler/translated/coordinate-map.json",
+    "compiler/translated/reduction-certificate.json",
+    "compiler/translated/specialization-certificate.json",
+    "identity/anchor_certificate.json",
+    "identity/check_identity.py",
+    "identity/checks.json",
+    "identity/reconstructed_table_checks.json",
+    "identity/source_receipts.json",
+    "integrity.py",
+    "optimization/find_affine_dependencies.py",
+    "optimization/optimization-check.json",
+    "optimization/verify_optimization.py",
+    "oracle/check_oracle.py",
+    "oracle/results.json",
+    "PROVENANCE.json",
+    "README.md",
+    "reproduce.py",
+    "source-review/build_inventory.py",
+    "source-review/builder_semantic_checks.json",
+    "source-review/check_builder_semantics.py",
+    "source-review/review_verdict.json",
+    "source-review/source_inventory.json",
+    "sources/SOURCES.json"
+  ],
+  "nonCoreMetadataChanges": [
+    {
+      "path": "checker/direct-check.json",
+      "changedFields": [
+        "/artifactHashes/certificate/sha256",
+        "/artifactHashes/compiled/sha256",
+        "/artifactHashes/coordinateMap/sha256",
+        "/checkedAtUTC"
+      ]
+    },
+    {
+      "path": "checker/FINAL_CHECK.json",
+      "changedFields": [
+        "/checkedAtUTC",
+        "/mutations/testedAtUTC",
+        "/results/0/artifactHashes/certificate/sha256",
+        "/results/0/artifactHashes/compiled/sha256",
+        "/results/0/artifactHashes/coordinateMap/sha256",
+        "/results/1/artifactHashes/certificate/sha256",
+        "/results/1/artifactHashes/compiled/sha256",
+        "/results/1/artifactHashes/coordinateMap/sha256"
+      ]
+    },
+    {
+      "path": "checker/MUTATION_TESTS.json",
+      "changedFields": [
+        "/testedAtUTC"
+      ]
+    },
+    {
+      "path": "checker/translated-check.json",
+      "changedFields": [
+        "/artifactHashes/certificate/sha256",
+        "/artifactHashes/compiled/sha256",
+        "/artifactHashes/coordinateMap/sha256",
+        "/checkedAtUTC"
+      ]
+    },
+    {
+      "path": "compiler/direct/compiler-report.json",
+      "changedFields": [
+        "/artifacts/compiled-ir.json",
+        "/artifacts/coordinate-map.json",
+        "/artifacts/reduction-certificate.json",
+        "/artifacts/specialization-certificate.json",
+        "/elapsedSeconds"
+      ]
+    },
+    {
+      "path": "compiler/translated/compiler-report.json",
+      "changedFields": [
+        "/artifacts/compiled-ir.json",
+        "/artifacts/coordinate-map.json",
+        "/artifacts/reduction-certificate.json",
+        "/artifacts/specialization-certificate.json",
+        "/elapsedSeconds"
+      ]
+    },
+    {
+      "path": "identity/source_receipts.json",
+      "changedFields": [
+        "/generated_utc"
+      ]
+    },
+    {
+      "path": "optimization/optimization-check.json",
+      "changedFields": [
+        "/inputSha256/compiled",
+        "/inputSha256/trace"
+      ]
+    },
+    {
+      "path": "oracle/results.json",
+      "changedFields": [
+        "/inputs/sourceInventory/sha256",
+        "/wallSeconds"
+      ]
+    },
+    {
+      "path": "PROVENANCE.json",
+      "changedFields": [
+        "/changes",
+        "/copiedSourceFiles/1/byteIdentical",
+        "/copiedSourceFiles/1/packagedSha256",
+        "/copiedSourceFiles/10/packagedSha256",
+        "/copiedSourceFiles/12/byteIdentical",
+        "/copiedSourceFiles/12/packagedSha256",
+        "/copiedSourceFiles/13/byteIdentical",
+        "/copiedSourceFiles/13/packagedSha256",
+        "/copiedSourceFiles/7/packagedSha256",
+        "/copiedSourceFiles/8/byteIdentical",
+        "/copiedSourceFiles/8/packagedSha256",
+        "/copiedSourceFiles/9/packagedSha256",
+        "/serialization"
+      ]
+    }
+  ],
+  "explicitLineEndingsChecked": true,
+  "polynomialBytesUnchanged": true
+}

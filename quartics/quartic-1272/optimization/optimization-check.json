@@ -1,0 +1,117 @@
+{
+  "schema": "brox-independent-optimization-check-v1",
+  "status": "passed",
+  "inputSha256": {
+    "raw": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+    "compiled": "b79fdb306c25d85aa41c308ad96a1076d2b84b98a6f51c66d0682b2ae9b15b98",
+    "trace": "130953b02693de8ce3da1996a3257a1e50a58cfdc03be73e6f05d105419cc06f"
+  },
+  "counts": {
+    "baseCoordinates": 90,
+    "structuralRows": 47,
+    "rawCoordinates": 1304,
+    "rawRows": 1261,
+    "gates": 1214,
+    "traceOperations": {
+      "eliminate": 32,
+      "normalize": 1155
+    },
+    "compiledCoordinates": 1272,
+    "compiledRows": 1229,
+    "allCoordinatesActive": true,
+    "coordinateMinusRowInvariant": 43
+  },
+  "weightExponents": [
+    {
+      "order": 1,
+      "exponents": [
+        5,
+        2,
+        -1
+      ]
+    },
+    {
+      "order": 16,
+      "exponents": [
+        155,
+        152,
+        -31
+      ]
+    },
+    {
+      "order": 52,
+      "exponents": [
+        515,
+        512,
+        -103
+      ]
+    }
+  ],
+  "ePowerChain": [
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      3,
+      2,
+      1
+    ],
+    [
+      6,
+      3,
+      3
+    ],
+    [
+      12,
+      6,
+      6
+    ],
+    [
+      24,
+      12,
+      12
+    ],
+    [
+      48,
+      24,
+      24
+    ],
+    [
+      96,
+      48,
+      48
+    ],
+    [
+      30,
+      24,
+      6
+    ],
+    [
+      102,
+      96,
+      6
+    ]
+  ],
+  "ePowerChainMultiplications": 9,
+  "scalarInversePowers": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "optionalScalarGateSaving": 2,
+  "optionalScalarChangesApplied": false,
+  "quadraticRankCertificate": {
+    "prime": 1000000007,
+    "rank": 1229,
+    "rows": 1229,
+    "denominatorUnitsChecked": 6825,
+    "quadraticTermsContainS": false,
+    "pivotMonomialSha256": "46ef378291e1f34e47f9cedf534059c80083e3af30c2d64fadcb974906c9a382"
+  },
+  "scope": "Counts, exponent identities and affine-dependency exclusion only; no source arithmetic certification."
+}

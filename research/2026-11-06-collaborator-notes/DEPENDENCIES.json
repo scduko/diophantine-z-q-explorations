@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-06",
+  "type": "Exact transfer of an existing theorem, not a new external theorem audit",
+  "baseline_public_commit": "fef5fb2d7fc73798aeaca1017a3b3453253e1380",
+  "span_start": "\\subsection{The height input and the exact pole predicate}",
+  "span_end": "Define $\\Psi(b)$ by seven rational witnesses",
+  "span_sha256": "6e85a67cdc858f4fd0a491c3c1feaa9039b032ef675ac78ad75ef8a311d81b07",
+  "span_normalization": "UTF-8 text with LF newlines",
+  "existing_files": [
+    {
+      "path": "quartic_4973.tex",
+      "sha256": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34"
+    },
+    {
+      "path": "quartic_4973.pdf",
+      "sha256": "299e5f3342ddf42a30336aab73efd81a03c258b1012eb863397a101a74325fe7"
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/review/H5_FINAL_ACCEPTANCE.md",
+      "sha256": "db62a7fa5fbcd2d4bc711436f2fb4f98c37de9122751ea7aeb097d96680905eb"
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/review/GLOBAL_LEVEL_REVIEW.md",
+      "sha256": "4f1a0bccd5fdf6c5a7b314fc5ad542dcb2556d5fd734c42b7fe7938bb9082db9"
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/review/Q_ACCEPTANCE.md",
+      "sha256": "36ec05bd0f2a9c0bdc04eafaefc367393db1825074b0805d5356db62451935b8"
+    },
+    {
+      "path": "docs/degree8-original/research/accepted-h5/review/COCYCLE_ACCEPTANCE.md",
+      "sha256": "17d782ff9a4478ecef09c560fc8fa4791169cab87c4a42e4c0993a1daa1880f9"
+    }
+  ],
+  "existing_theorem": "hyp:o8-height",
+  "contact_forms": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -2401
+    ],
+    [
+      32,
+      343
+    ]
+  ],
+  "exponent": 24,
+  "exceptional_prime_cutoff": 76176,
+  "height_coefficient": "2*(4608^165888+6^100)*B_*^24+128",
+  "coefficient_log2_upper_bound": 4783227,
+  "consumers": [
+    {
+      "source": "supplied/paper_equivalence.pdf",
+      "location": "Input H, Section 2; fixed constants Section 2.1",
+      "changes": "Set C, S0, H0, c0 to the exact five-contact data; take c=24; absorb enlarged exceptional set into H_prime."
+    },
+    {
+      "source": "supplied/proof_optimization.pdf",
+      "location": "Section 4 as the proof of Input H",
+      "changes": "Replace the height proof with the pinned existing H5 proof; retain the other inputs and their separate status."
+    },
+    {
+      "source": "supplied/two-proofs-reduced-inputs-v3.tex",
+      "location": "Height subsection and fixed constants",
+      "changes": "Use H_star and S_star; preserve K=24 and the generator-rescaling argument; no other hypotheses discharged."
+    }
+  ],
+  "qualification": [
+    "Existing H5 acceptance is a mathematical/source review, not a completed Lean proof or a new human peer review.",
+    "Pan is consumed through the published Calegari formulation and detailed author version; direct comparison of the Pan journal text was not claimed.",
+    "Yuan is consumed through the author-identified English translation of the published Chinese article; direct Chinese-typesetting comparison was not claimed.",
+    "No uniform coefficient-field or scalar-character-order bound is assumed.",
+    "This transfer does not establish the collaborator parity assertion P or re-audit the restricted converse.",
+    "The exact new contact-form and constant substitution was checked; the supplied lower-bound and prime-pattern proofs were not re-audited in full."
+  ],
+  "direct_bibliography_entries": {
+    "Deligne1979": "\\bibitem{Deligne1979} P. Deligne,\n\\emph{Vari\\'et\\'es de Shimura: interpr\\'etation modulaire, et techniques\nde construction de mod\\`eles canoniques},\nin \\emph{Automorphic Forms, Representations and $L$-Functions},\nProceedings of Symposia in Pure Mathematics \\textbf{33}, Part 2 (1979),\n247--289, Sections 2.2.5 and 2.3.1.\nEnglish translation by J. S. Milne, corrected September 6, 2020, p.~29:\n\\url{https://www.jmilne.org/math/Documents/DeligneSV.pdf}.",
+    "GaudronRemond2023": "\\bibitem{GaudronRemond2023} \\'E. Gaudron and G. R\\'emond,\n\\emph{Nouveaux th\\'eor\\`emes d'isog\\'enie},\nM\\'emoires de la Soci\\'et\\'e Math\\'ematique de France \\textbf{176} (2023),\nvi+123 pp., Section 1.5 and Theorem 1.9(1), pp.~7--8.\n\\url{https://doi.org/10.24033/msmf.484}.",
+    "GonzalezRotger2006": "\\bibitem{GonzalezRotger2006} J. Gonz\\'alez and V. Rotger,\n\\emph{Non-elliptic Shimura curves of genus one},\nJournal of the Mathematical Society of Japan \\textbf{58} (2006), 927--948,\nTheorem 4.2 and Table 2, pp.~938--939; Proposition 5.2, pp.~940--941.\n\\url{https://doi.org/10.2969/jmsj/1179759530}.",
+    "Yuan2024": "\\bibitem{Yuan2024} X. Yuan,\n\\emph{Explicit Kodaira--Spencer maps over Shimura curves},\nActa Mathematica Sinica, Chinese Series \\textbf{67} (2024), 227--249.\n\\url{https://doi.org/10.12386/A20220154}.\nWe use the English translation dated April 30, 2024, identified by\nthe author as a translation of the published Chinese article:\n\\url{https://faculty.bicmr.pku.edu.cn/~yxy/preprints/explicit_KS.pdf}.\nThe author identifies it at\n\\url{https://faculty.bicmr.pku.edu.cn/~yxy/publications.html}.\nThe relevant locators in that translation are Theorem 1.1, p.~3;\nmetric definitions, pp.~2--3; Sections 2.1--2.2 and Lemma 2.1,\npp.~4--10; and the analytic and metric calculations in Sections\n4.2--4.3, pp.~20--26.",
+    "calegari-icm2022": "\\bibitem{calegari-icm2022} F. Calegari,\n\\emph{Reciprocity in the Langlands program since Fermat's Last Theorem},\nin \\emph{Proceedings of the International Congress of Mathematicians 2022},\nVol.~2, EMS Press, 2023, 610--651, Section 7, p.~624;\ndefinition of geometric representations, pp.~611--612.\n\\url{https://doi.org/10.4171/ICM2022/101}.",
+    "carayol": "\\bibitem{carayol} H. Carayol, \\emph{Sur les repr\\'esentations\n$\\ell$-adiques associ\\'ees aux formes modulaires de Hilbert},\nAnnales Scientifiques de l'\\'Ecole Normale Sup\\'erieure 19 (1986), 409--468,\nTheorem A. \\url{https://www.numdam.org/item/ASENS_1986_4_19_3_409_0/}.",
+    "casselman": "\\bibitem{casselman}\nW. Casselman, \\emph{On some results of Atkin and Lehner},\nMathematische Annalen 201 (1973), 301--314,\nTheorem~1 and its proof, pp.~302--306, and Theorem~4, p.~313.",
+    "cmheight": "\\bibitem{cmheight} A. Barquero-Sanchez, L. Cadwallader, O. Cannon,\nT. Genao and R. Masri, \\emph{Faltings heights of CM elliptic curves\nand special Gamma values}, Research in Number Theory 3 (2017),\narticle 13, Section 6, equation (6.2).\n\\url{https://doi.org/10.1007/s40993-017-0077-7}.",
+    "javanpeykar": "\\bibitem{javanpeykar} A. Javanpeykar, with an appendix by P. Bruin,\n\\emph{Polynomial bounds for Arakelov invariants of Belyi curves},\nAlgebra \\& Number Theory 8 (2014), 89--140,\nTheorem 1.1.1 and Section 2.3.\n\\url{https://doi.org/10.2140/ant.2014.8.89}.",
+    "pan2022": "\\bibitem{pan2022} L. Pan, \\emph{The Fontaine--Mazur conjecture in the\nresidually reducible case}, arXiv:1901.07166v2,\nTheorem 1.0.4, the version used here. Published in Journal of the\nAmerican Mathematical Society 35 (2022), 1031--1169.\n\\url{https://arxiv.org/abs/1901.07166v2}.",
+    "serrelocal": "\\bibitem{serrelocal} J.-P. Serre, \\emph{Local class field theory},\nin J. W. S. Cassels and A. Fr\\\"ohlich (eds.), \\emph{Algebraic Number Theory},\nAcademic Press, 1967, Chapter VI, 128--161, Sections 4.1--4.3.",
+    "silverbergzarhin": "\\bibitem{silverbergzarhin} A. Silverberg and Yu. G. Zarhin,\n\\emph{Semistable reduction and torsion subgroups of abelian varieties},\nAnnales de l'Institut Fourier 45 (1995), 403--420, Theorem 3.5.\n\\url{https://www.numdam.org/article/AIF_1995__45_2_403_0.pdf}.",
+    "voight2021": "\\bibitem{voight2021} J. Voight, \\emph{Quaternion algebras},\nGraduate Texts in Mathematics \\textbf{288}, Springer, 2021,\nChapter 43, equations (43.1.2)--(43.1.3), p.~800, and\nMain Theorem 43.6.14, p.~819; proof pp.~822--823.\n\\url{https://doi.org/10.1007/978-3-030-56694-4_43}.",
+    "vonKaenel2021": "\\bibitem{vonKaenel2021} R. von K\\\"anel,\n\\emph{The effective Shafarevich conjecture for abelian varieties of\n$\\mathrm{GL}_2$-type}, Forum of Mathematics, Sigma \\textbf{9} (2021), e39,\n1--29, equations (2.2) and (5.9), pp.~5 and 13.\n\\url{https://doi.org/10.1017/fms.2021.29}."
+  },
+  "upstream_scope": "The full pinned manuscript and existing acceptance records contain the indirect geometric, de Rham, CM and representation dependencies. This list indexes direct H5 citations, not a new claim to have audited their proofs.",
+  "editorial_rebinding": {
+    "date": "2026-11-06",
+    "reason": "Pheidas attribution and bibliography added; the pinned height-proof span is byte-identical.",
+    "record": "docs/quartic-4973-validation/pheidas-20261106/UPDATE.json"
+  }
+}

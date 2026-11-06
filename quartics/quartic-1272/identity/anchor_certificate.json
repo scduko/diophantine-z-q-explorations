@@ -1,0 +1,1578 @@
+{
+  "status": "exact-local-identity-verified",
+  "scope": "Displayed anchor only; not the missing 1272-row residual system",
+  "source_sha256": "fc8bc7b8fae727e24f934ddd7de0a7cff8a005e89c3d0cac1ea14e5191b910ca",
+  "source_lines": {
+    "anchor_and_maps": [
+      4674,
+      4708
+    ],
+    "bounds": [
+      4738,
+      4757
+    ]
+  },
+  "fixed_S": {
+    "base": 3,
+    "exponent": 134217728,
+    "is_coordinate": false
+  },
+  "anchor": [
+    {
+      "monomial": [],
+      "sPower": 2,
+      "coefficient": "32/1"
+    },
+    {
+      "monomial": [
+        52,
+        52
+      ],
+      "sPower": 0,
+      "coefficient": "-3/1"
+    },
+    {
+      "monomial": [
+        52,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "-6/1"
+    },
+    {
+      "monomial": [
+        52,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "6/1"
+    },
+    {
+      "monomial": [
+        53,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "-3/1"
+    },
+    {
+      "monomial": [
+        53,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "6/1"
+    },
+    {
+      "monomial": [
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-3/1"
+    },
+    {
+      "monomial": [
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "16/1"
+    },
+    {
+      "monomial": [
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "96/1"
+    },
+    {
+      "monomial": [
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-32/1"
+    }
+  ],
+  "translated_anchor": [
+    {
+      "monomial": [
+        52,
+        52
+      ],
+      "sPower": 0,
+      "coefficient": "-3/1"
+    },
+    {
+      "monomial": [
+        52,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "-6/1"
+    },
+    {
+      "monomial": [
+        52,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "6/1"
+    },
+    {
+      "monomial": [
+        53,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "-3/1"
+    },
+    {
+      "monomial": [
+        53,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "6/1"
+    },
+    {
+      "monomial": [
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-3/1"
+    },
+    {
+      "monomial": [
+        55
+      ],
+      "sPower": 1,
+      "coefficient": "8/1"
+    },
+    {
+      "monomial": [
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "1/1"
+    },
+    {
+      "monomial": [
+        55,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-6/1"
+    },
+    {
+      "monomial": [
+        55,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "6/1"
+    },
+    {
+      "monomial": [
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "15/1"
+    },
+    {
+      "monomial": [
+        56,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-18/1"
+    },
+    {
+      "monomial": [
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "7/1"
+    }
+  ],
+  "forward": {
+    "55": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "1/1"
+      },
+      {
+        "monomial": [
+          55
+        ],
+        "sPower": 0,
+        "coefficient": "1/4"
+      },
+      {
+        "monomial": [
+          56
+        ],
+        "sPower": 0,
+        "coefficient": "-3/4"
+      },
+      {
+        "monomial": [
+          57
+        ],
+        "sPower": 0,
+        "coefficient": "3/4"
+      }
+    ],
+    "56": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "1/2"
+      },
+      {
+        "monomial": [
+          56
+        ],
+        "sPower": 0,
+        "coefficient": "1/4"
+      }
+    ],
+    "57": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "3/2"
+      },
+      {
+        "monomial": [
+          57
+        ],
+        "sPower": 0,
+        "coefficient": "1/4"
+      }
+    ]
+  },
+  "inverse": {
+    "55": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "8/1"
+      },
+      {
+        "monomial": [
+          55
+        ],
+        "sPower": 0,
+        "coefficient": "4/1"
+      },
+      {
+        "monomial": [
+          56
+        ],
+        "sPower": 0,
+        "coefficient": "12/1"
+      },
+      {
+        "monomial": [
+          57
+        ],
+        "sPower": 0,
+        "coefficient": "-12/1"
+      }
+    ],
+    "56": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "-2/1"
+      },
+      {
+        "monomial": [
+          56
+        ],
+        "sPower": 0,
+        "coefficient": "4/1"
+      }
+    ],
+    "57": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "-6/1"
+      },
+      {
+        "monomial": [
+          57
+        ],
+        "sPower": 0,
+        "coefficient": "4/1"
+      }
+    ]
+  },
+  "original_square": [
+    {
+      "monomial": [],
+      "sPower": 4,
+      "coefficient": "1024/1"
+    },
+    {
+      "monomial": [
+        52,
+        52
+      ],
+      "sPower": 2,
+      "coefficient": "-192/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "sPower": 0,
+      "coefficient": "9/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        52,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "36/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        52,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        53,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "54/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        53,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-108/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "54/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "-96/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-576/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "192/1"
+    },
+    {
+      "monomial": [
+        52,
+        53
+      ],
+      "sPower": 2,
+      "coefficient": "-384/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        53,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "36/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        53,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-108/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "108/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "-192/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-1152/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "384/1"
+    },
+    {
+      "monomial": [
+        52,
+        54
+      ],
+      "sPower": 2,
+      "coefficient": "384/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "192/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "1152/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-384/1"
+    },
+    {
+      "monomial": [
+        53,
+        53
+      ],
+      "sPower": 2,
+      "coefficient": "-192/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        53,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "9/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        53,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "54/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "-96/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-576/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "192/1"
+    },
+    {
+      "monomial": [
+        53,
+        54
+      ],
+      "sPower": 2,
+      "coefficient": "384/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "192/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "1152/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-384/1"
+    },
+    {
+      "monomial": [
+        54,
+        54
+      ],
+      "sPower": 2,
+      "coefficient": "-192/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "9/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "-96/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-576/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "192/1"
+    },
+    {
+      "monomial": [
+        55,
+        55
+      ],
+      "sPower": 2,
+      "coefficient": "1024/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "256/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "3072/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-1024/1"
+    },
+    {
+      "monomial": [
+        56,
+        56
+      ],
+      "sPower": 2,
+      "coefficient": "6144/1"
+    },
+    {
+      "monomial": [
+        56,
+        56,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "9216/1"
+    },
+    {
+      "monomial": [
+        56,
+        56,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-6144/1"
+    },
+    {
+      "monomial": [
+        57,
+        57
+      ],
+      "sPower": 2,
+      "coefficient": "-2048/1"
+    },
+    {
+      "monomial": [
+        57,
+        57,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "1024/1"
+    }
+  ],
+  "translated_square": [
+    {
+      "monomial": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "sPower": 0,
+      "coefficient": "9/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        52,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "36/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        52,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        53,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "54/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        53,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-108/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "54/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        55
+      ],
+      "sPower": 1,
+      "coefficient": "-48/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "-6/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        55,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "36/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        55,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-90/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        56,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "108/1"
+    },
+    {
+      "monomial": [
+        52,
+        52,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-42/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        53,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "36/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        53,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-108/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "108/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        55
+      ],
+      "sPower": 1,
+      "coefficient": "-96/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "-12/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        55,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "72/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        55,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-72/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-180/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        56,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "216/1"
+    },
+    {
+      "monomial": [
+        52,
+        53,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-84/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        55
+      ],
+      "sPower": 1,
+      "coefficient": "96/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "12/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        55,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-72/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        55,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "72/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "180/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        56,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-216/1"
+    },
+    {
+      "monomial": [
+        52,
+        54,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "84/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        53,
+        53
+      ],
+      "sPower": 0,
+      "coefficient": "9/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        53,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "54/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        55
+      ],
+      "sPower": 1,
+      "coefficient": "-48/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "-6/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        55,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "36/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        55,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-90/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        56,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "108/1"
+    },
+    {
+      "monomial": [
+        53,
+        53,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-42/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        55
+      ],
+      "sPower": 1,
+      "coefficient": "96/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "12/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        55,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-72/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        55,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "72/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "180/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        56,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-216/1"
+    },
+    {
+      "monomial": [
+        53,
+        54,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "84/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        54,
+        54
+      ],
+      "sPower": 0,
+      "coefficient": "9/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        55
+      ],
+      "sPower": 1,
+      "coefficient": "-48/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "-6/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        55,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "36/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        55,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-36/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-90/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        56,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "108/1"
+    },
+    {
+      "monomial": [
+        54,
+        54,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-42/1"
+    },
+    {
+      "monomial": [
+        55,
+        55
+      ],
+      "sPower": 2,
+      "coefficient": "64/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        55
+      ],
+      "sPower": 1,
+      "coefficient": "16/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "sPower": 0,
+      "coefficient": "1/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        55,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-12/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        55,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "12/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        56
+      ],
+      "sPower": 1,
+      "coefficient": "-96/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "66/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        56,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-108/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        57
+      ],
+      "sPower": 1,
+      "coefficient": "96/1"
+    },
+    {
+      "monomial": [
+        55,
+        55,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "50/1"
+    },
+    {
+      "monomial": [
+        55,
+        56,
+        56
+      ],
+      "sPower": 1,
+      "coefficient": "240/1"
+    },
+    {
+      "monomial": [
+        55,
+        56,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "-180/1"
+    },
+    {
+      "monomial": [
+        55,
+        56,
+        56,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "396/1"
+    },
+    {
+      "monomial": [
+        55,
+        56,
+        57
+      ],
+      "sPower": 1,
+      "coefficient": "-288/1"
+    },
+    {
+      "monomial": [
+        55,
+        56,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-300/1"
+    },
+    {
+      "monomial": [
+        55,
+        57,
+        57
+      ],
+      "sPower": 1,
+      "coefficient": "112/1"
+    },
+    {
+      "monomial": [
+        55,
+        57,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "84/1"
+    },
+    {
+      "monomial": [
+        56,
+        56,
+        56,
+        56
+      ],
+      "sPower": 0,
+      "coefficient": "225/1"
+    },
+    {
+      "monomial": [
+        56,
+        56,
+        56,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-540/1"
+    },
+    {
+      "monomial": [
+        56,
+        56,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "534/1"
+    },
+    {
+      "monomial": [
+        56,
+        57,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "-252/1"
+    },
+    {
+      "monomial": [
+        57,
+        57,
+        57,
+        57
+      ],
+      "sPower": 0,
+      "coefficient": "49/1"
+    }
+  ],
+  "linear_determinant": "1/64",
+  "original_square_support": 49,
+  "translated_square_support": 79,
+  "original_private_support": 27,
+  "translated_private_support": 64,
+  "translated_integer_coefficient_max": 540,
+  "translated_S_coefficient_max": 288,
+  "translated_S_squared_coefficient": 64,
+  "S_power_overlap_in_anchor_square": false,
+  "global_support_29021": "not certified without full table and overlap checks",
+  "global_height_64S2": "not certified without remainder coefficient bound and input coefficient 1"
+}

@@ -1,0 +1,207 @@
+{
+  "arithmetic_acceptance": false,
+  "below10000": true,
+  "endpoint": "stages/coordinates",
+  "manifest_sha256": "eaaec2449711c625fc4afcf16dd33286c2c5d91ea568c6542317d2b1ba6623cb",
+  "mode": "exploratory",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "seconds": 32.282,
+  "status": "ALGEBRAIC CANDIDATE VERIFIED",
+  "steps": [
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/check_packet_syntax.py",
+        "--toolchain",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables",
+        "--rules",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/astra-wave11"
+      ],
+      "exit": 0,
+      "log": "syntax.log",
+      "log_sha256": "d74177cc0622452799e8364bf8993f76c478e79f66ce3cf404455430d040ba4d",
+      "seconds": 0.115,
+      "stage": "syntax"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/test_locators.py",
+        "--base-adapter",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/base_adapter.py",
+        "--producer",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/astra-wave11/batching/absorb_batch_error.py"
+      ],
+      "exit": 0,
+      "log": "locator-fixtures.log",
+      "log_sha256": "90bc168df78727d44ad9a459e5b144f9db1f4abb5593938cea2ce13e98d255aa",
+      "seconds": 1.321,
+      "stage": "locator-fixtures"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/build_source.py",
+        "--baseline",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/baseline",
+        "--out",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/source"
+      ],
+      "exit": 0,
+      "log": "build-source.log",
+      "log_sha256": "81164127054f4a2b7b44fd2ccb46bbeb07381e89dfa6b8fb72b46915de0dc4c9",
+      "seconds": 0.265,
+      "stage": "build-source"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/check_source.py",
+        "--source",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/source",
+        "--baseline",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/baseline",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/source-audit.json",
+        "--map",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/construction-map.json",
+        "--seconds",
+        "180"
+      ],
+      "exit": 0,
+      "log": "audit-source.log",
+      "log_sha256": "1de50ded380026aeacc48a7c3c2a9e1b66ec42ab8b721929de148c828d54ee8e",
+      "seconds": 0.265,
+      "stage": "audit-source"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/test_source.py",
+        "--source",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/source",
+        "--baseline",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/baseline",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/source-mutations.json",
+        "--seconds",
+        "180"
+      ],
+      "exit": 0,
+      "log": "source-mutations.log",
+      "log_sha256": "edc958f35784b3c782452ae4d96be2d205bf1acef1f8aa59c7aa8ee17d2a07bf",
+      "seconds": 0.77,
+      "stage": "source-mutations"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/build_source.py",
+        "--baseline",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/baseline",
+        "--out",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/source-repeat"
+      ],
+      "exit": 0,
+      "log": "repeat-source.log",
+      "log_sha256": "81164127054f4a2b7b44fd2ccb46bbeb07381e89dfa6b8fb72b46915de0dc4c9",
+      "seconds": 0.37,
+      "stage": "repeat-source"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/prepare_adapter.py",
+        "--source",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/source",
+        "--audit",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/source-audit.json",
+        "--construction-map",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/construction-map.json",
+        "--audit-checker",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/check_source.py",
+        "--toolchain",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables",
+        "--rules",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/astra-wave11",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter"
+      ],
+      "exit": 0,
+      "log": "prepare-adapter.log",
+      "log_sha256": "bff7fa7fc6924972123f30035d8b6f87b2da841ab88031c76030b34d6dbb204e",
+      "seconds": 0.316,
+      "stage": "prepare-adapter"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter/tools/run_pipeline.py",
+        "--adapter",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter",
+        "--output",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages",
+        "--stage-seconds",
+        "180",
+        "--optimize"
+      ],
+      "exit": 0,
+      "log": "algebraic-pipeline.log",
+      "log_sha256": "35af96065f965ea9e8d1baad3acf79e9f53101661bb214d76c0e520608f64d81",
+      "seconds": 27.187,
+      "stage": "algebraic-pipeline"
+    },
+    {
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-E",
+        "-B",
+        "/home/runner/work/private-diophantine/private-diophantine/research/quartic-variables/selective-beta-pipeline/test_named_source.py",
+        "--adapter",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/adapter",
+        "--candidate",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/stages/coordinates",
+        "--report",
+        "/home/runner/work/private-diophantine/private-diophantine/build/quartic-sub10000-high40-42229343245/named-source-mutations.json",
+        "--seconds",
+        "180"
+      ],
+      "exit": 0,
+      "log": "named-source-mutations.log",
+      "log_sha256": "e23ab570965849f8184cdb6da0211f389a589678208996503555a368a8601b9a",
+      "seconds": 1.618,
+      "stage": "named-source-mutations"
+    }
+  ],
+  "verification_sha256": "43ef58641d36e58d3d1422150e48f1858d0b0844b78be41cd939b1eb53e80053",
+  "verified": {
+    "certificate_sha256": "8aaa2249eda6972c441d58b212ec64a53e1202d5e9f74ea4cbc53e7e3f71a0bd",
+    "checker_sha256": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4",
+    "degree": 4,
+    "expanded_sha256": "6d67d45f3d615b7fd2242e3a9404dd9f5da570fc711a29ebe77f613e80ebbf99",
+    "max_abs_coefficient": 685783949153203534233601,
+    "monomials": 82476,
+    "rows": 9161,
+    "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+    "variables": 9625,
+    "witnesses": 9624
+  },
+  "zlib": "1.3"
+}

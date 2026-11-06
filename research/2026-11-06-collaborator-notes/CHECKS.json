@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "source_files": 12,
+  "existing_pins": 6,
+  "contact_determinants": [
+    -1,
+    -1,
+    -1,
+    -32,
+    -1,
+    -2401,
+    343,
+    -2400,
+    375,
+    77175
+  ],
+  "prime_count": 7499,
+  "primorial_bit_length": 109445,
+  "height_log2_upper_bound": 4783227,
+  "exponent": 24,
+  "transfer_budget": "4259/41472",
+  "algebra": "Exact cleared-denominator identities passed",
+  "scope": "Pins, elementary identities and numerical bounds only; no modularity, height theorem or point-existence proof certified"
+}

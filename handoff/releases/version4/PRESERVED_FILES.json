@@ -1,0 +1,2434 @@
+{
+  "commit": "5cb2c1997dde6e358f3c2fe9bbdb4b8f4c23bac6",
+  "files": {
+    "October 11 Manuscript/README.md": {
+      "bytes": 2102,
+      "sha256": "744d940186edf2fe810b9c8166d34b97d5a49d3be8368a902f5d8b05fce670d3"
+    },
+    "October 11 Manuscript/ZIsDiophantineInQBySohailsGPT-6.pdf": {
+      "bytes": 441413,
+      "sha256": "e5752baaf5ed8bc44707a9e96be545276ea6587349ece8f8030c78006f7983d6"
+    },
+    "construction/README.md": {
+      "bytes": 7640,
+      "sha256": "e3eb78309936d7c11cc6e2339b63a0d5b3c3962e3be65dce4c9ecba523420be7"
+    },
+    "construction/SOURCE_MANIFEST.json": {
+      "bytes": 10140,
+      "sha256": "c6bebffe6cc712ef6e519831bcdf2874c112249ffaf338c8e95b37b07bbd4c29"
+    },
+    "construction/audit-rational-expression.js": {
+      "bytes": 13594,
+      "sha256": "9d7313e65e27996caa852fcf1102a4add3cda790c0ad1b2438c424c59e9870bc"
+    },
+    "construction/bound-ordinary-integer-polynomial.py": {
+      "bytes": 5880,
+      "sha256": "d3c826dc4adbca3fa87bc5142ddee8d789e039eb316dbae10030120a161ae8ae"
+    },
+    "construction/division-polynomial-checks.json": {
+      "bytes": 1113,
+      "sha256": "8ec8233dd4be90bb95f12aea21de7f659a7abe9bf35c21346f437e676b51c24a"
+    },
+    "construction/elliptic-division-polynomials.js": {
+      "bytes": 2669,
+      "sha256": "ce4d92950444eff9e590dfb3ecb9fa78e84fdbb7348891166f8f90b2300364d7"
+    },
+    "construction/finite-polynomial-expressions.js": {
+      "bytes": 10366,
+      "sha256": "983a82e0a01d6bf7a19fef1d5f7e6a3a0493fb0b0592f283a073b0d147965a18"
+    },
+    "construction/fixed-certificate-constants.js": {
+      "bytes": 3691,
+      "sha256": "de3ba41ede9447c4bdefa8534c6a478c0805580a770fdc1a72163d4573ecd932"
+    },
+    "construction/integer-compiler-spec.txt": {
+      "bytes": 8625,
+      "sha256": "9a3a01fc78e922351cf4e6f47d1bc160c6f392d76279d71c9f0b9f2bc91d9eb1"
+    },
+    "construction/integer-diophantine-compiler.js": {
+      "bytes": 10621,
+      "sha256": "c0c7e8f738fe9b7a07c82be1429e1924b772cd360058dc14f2b331555b1dc893"
+    },
+    "construction/integer-halting-correctness-proof.txt": {
+      "bytes": 11955,
+      "sha256": "c7ed7faf156bfb6c769d2194335d84b807d32d89920b01dc07d986dd645f5fa3"
+    },
+    "construction/multiplication-certificate.js": {
+      "bytes": 8161,
+      "sha256": "222975953ce1dd42de37ee6411e338a08eeb213e1f6c314627670f4d6a65011c"
+    },
+    "construction/ordinary-integer-definition.json": {
+      "bytes": 23179783,
+      "sha256": "4d639d4c44e69ea360d36d4591b8fdc82269d68b9363af0157d1e5c1174c7af6"
+    },
+    "construction/ordinary-integer-definition.json.checks.json": {
+      "bytes": 1586,
+      "sha256": "038931df18514c3c4d49738892a8f4d85223b182ae2e34f1df7e1d0db95feb7a"
+    },
+    "construction/ordinary-integer-polynomial-size-bounds.json": {
+      "bytes": 3466,
+      "sha256": "dfef3ff3da641814edf62f9992cb7a27aa0a770deccc95b084a65751289dbd9e"
+    },
+    "construction/ordinary-integer-polynomial.js": {
+      "bytes": 11761,
+      "sha256": "a0f2c5915d479fbf4321e94c7d19b24b58eb8d618917a7b5a87fdb6943690846"
+    },
+    "construction/precision-natural-polynomial.json": {
+      "bytes": 17855181,
+      "sha256": "f3e163f5c60b972c98b48647274f956dd7d78428e27ddc0543574a5f18120b8c"
+    },
+    "construction/rational-circuit-translator.js": {
+      "bytes": 16040,
+      "sha256": "d0c389916b10e8523877026dd89aa0163c1fe9fecc7a129f61231ff5683a4bbd"
+    },
+    "construction/rational-elliptic-core.js": {
+      "bytes": 8684,
+      "sha256": "2c5ef4fa4a035e143fcce0a39eb9a98fccaf12f2f67569fe6af188552eb87bd6"
+    },
+    "construction/rational-field-arithmetic.js": {
+      "bytes": 2424,
+      "sha256": "ea2f0f2bd5b1aafdb5acca92ae9f1e95cc6c2f3e00eb514e97fd2e70fcceafa0"
+    },
+    "construction/rational-model-assembly.js": {
+      "bytes": 4146,
+      "sha256": "c581a45f68d4019452bf1c5c2b2f941a880b7a626a6e4ab83f3faae2d034bf2d"
+    },
+    "construction/rational-polynomial-library.js": {
+      "bytes": 6076,
+      "sha256": "54c1488882c9ec67e59d6ea8a598b06f817eb136565af52a324c98ada8abce7e"
+    },
+    "construction/variable-shift-polynomial-library.js": {
+      "bytes": 6835,
+      "sha256": "13c42d304e0bff268c382aab4cd8bd36f8e9d20c33d54b646ccdff92a0658767"
+    },
+    "construction/verify-division-polynomials.js": {
+      "bytes": 3054,
+      "sha256": "9a97febb9cf8df081b16db2ce37f20772f3d473c584971a7abef3657796e42f8"
+    },
+    "construction/verify-finite-polynomial-expressions.js": {
+      "bytes": 2689,
+      "sha256": "555564f5a215aabbfcddeffd01d161d6f4c4013d6e0743ac6b9243d8b42cf84f"
+    },
+    "construction/verify-integer-compiler.js": {
+      "bytes": 4127,
+      "sha256": "891701e2b63df5ae0c0e300166cd8afabfe8277b6c2e4fba3826f8099f005907"
+    },
+    "construction/verify-six-contact.js": {
+      "bytes": 4870,
+      "sha256": "45f3746130fa40ceed99a856e076d413485fcb52861256c4f16eb2f429a71910"
+    },
+    "construction/z-in-q-polynomial-size-bound-proof.txt": {
+      "bytes": 8927,
+      "sha256": "0ab03b116bab829cb9b8dbaea5ecd811d728ccf95345228a85a4fe37527b050e"
+    },
+    "degree8-original/README.md": {
+      "bytes": 881,
+      "sha256": "e0eda9fa05b25e6d916522a68b8fcb6da979f72205a2e3001626e899243d661c"
+    },
+    "degree8-original/arithmetic/H5_FINAL_ACCEPTANCE.md": {
+      "bytes": 5906,
+      "sha256": "db62a7fa5fbcd2d4bc711436f2fb4f98c37de9122751ea7aeb097d96680905eb"
+    },
+    "degree8-original/arithmetic/README.md": {
+      "bytes": 6693,
+      "sha256": "65cd15663a89e84ce08c4fda122aefc3df46db0e69c1722eaf34cdb3e33814c3"
+    },
+    "degree8-original/arithmetic/SMALLER_ONLY_ACCEPTANCE.md": {
+      "bytes": 3740,
+      "sha256": "3de379463fb4a32702f5098fd08dfa3d62a5a116641803c0411c48d212026b27"
+    },
+    "degree8-original/arithmetic/anchor/README.md": {
+      "bytes": 3280,
+      "sha256": "40ed2509400661894a1469ca0bf4e934393acdb6cbcc5a31377a11ef4735949f"
+    },
+    "degree8-original/arithmetic/anchor/anchor-proof.tex": {
+      "bytes": 7147,
+      "sha256": "eb2afc3ae1ff90f778f68e464c4dad063ecf373b8a2ef7dd31c82e9508cd9f91"
+    },
+    "degree8-original/arithmetic/anchor/check_anchor.py": {
+      "bytes": 6148,
+      "sha256": "ecfd3232899a64d8cb640f3b63ef024540b765fc6eb3963c8e9267d9092226b4"
+    },
+    "degree8-original/arithmetic/anchor/reference-anchor-check.json": {
+      "bytes": 2970,
+      "sha256": "60c236722fb2f53f95829c48e007c31828c60c8e7c8e21332e4d1b74ab1623b3"
+    },
+    "degree8-original/arithmetic/anchor/source-application-ledger.json": {
+      "bytes": 5111,
+      "sha256": "2f81ceea6b525913b1790c2695da9fb3cc3c9c8b63bfbe7e16bc26d0a227e5ef"
+    },
+    "degree8-original/arithmetic/assumption-status.json": {
+      "bytes": 2805,
+      "sha256": "79ab37c5b822300ae0472ad391dcc02e2ff15e6020f21b4dad58986b08816101"
+    },
+    "degree8-original/arithmetic/current-proof.json": {
+      "bytes": 3151,
+      "sha256": "af4570f0f20c0e1895b3567f2c18a13d0cc40d939ac051047a757a3c145d753e"
+    },
+    "degree8-original/arithmetic/geometry/README.md": {
+      "bytes": 1561,
+      "sha256": "ffdf48f9c18c278eef934e92dbc2e0571d759873e33c585fae8d66264c659d91"
+    },
+    "degree8-original/arithmetic/geometry/check_published_quotients.py": {
+      "bytes": 2873,
+      "sha256": "c505005853f0d3162554093590f6c252a34d95da5a9cf21228a9a0341584da3a"
+    },
+    "degree8-original/arithmetic/geometry/published-identification.tex": {
+      "bytes": 3937,
+      "sha256": "c1a3f1804a58ea932d808cdd16c03b6a83331ca0a54cd6a0946f83749ff8ae54"
+    },
+    "degree8-original/arithmetic/geometry/published-quotient-check.json": {
+      "bytes": 1280,
+      "sha256": "5ffcf76728a15b87c4f92ac7f5167bec6dbd33f2a027afcc5e838ea236e916a1"
+    },
+    "degree8-original/arithmetic/geometry/source-application-ledger.json": {
+      "bytes": 2930,
+      "sha256": "ccc5a1f092021e34fe833982221530e2bea41703384e87701956b2e4728f4cee"
+    },
+    "degree8-original/arithmetic/parity/AUDIT.md": {
+      "bytes": 8709,
+      "sha256": "be1b8d92771b59005a63acdd527b67a8cdd55b1f31e105733f70ab444d462aa7"
+    },
+    "degree8-original/arithmetic/parity/check_parity.py": {
+      "bytes": 4273,
+      "sha256": "d133d2629bc83d20a949b28438dd9e516debdef6cd910148385e6c00863d7ad4"
+    },
+    "degree8-original/arithmetic/parity/parity-justification.tex": {
+      "bytes": 12607,
+      "sha256": "df67c17520d942a4a5d8505b5ed1d97bf2bd3d18f8d13cbf514f758d7286075d"
+    },
+    "degree8-original/arithmetic/parity/reference-parity-checks.json": {
+      "bytes": 2544,
+      "sha256": "a810dbeacccabb6fddec943b403a1a1767e2ed335c1657ab377a6777fe4cc5d4"
+    },
+    "degree8-original/arithmetic/sieve/applications.json": {
+      "bytes": 4736,
+      "sha256": "28b8f85d33be96b7148de22214dbe7fd39d221a99ab56c75534ad47edc18b062"
+    },
+    "degree8-original/arithmetic/sieve/audit.md": {
+      "bytes": 10076,
+      "sha256": "2e03f01cbe555c2d6f4edcafd5b08c6f2b16b8e3f2e4ce0a55dfbcabbc015c7e"
+    },
+    "degree8-original/arithmetic/sieve/check_constants.py": {
+      "bytes": 1757,
+      "sha256": "22e21db4649fbd4209d9f75380525cdb17931d868ec2b947210b995beba475e4"
+    },
+    "degree8-original/arithmetic/sieve/input-hashes.json": {
+      "bytes": 1057,
+      "sha256": "1665d133d5f111a61e14f0bd06b4f49c31d920ce6428dc5ebd6187730f0cf23a"
+    },
+    "degree8-original/arithmetic/sieve/original41-proof.tex": {
+      "bytes": 13037,
+      "sha256": "650e7564eb0158b6ad72506ab465bd054a14b32ed76433908d573a3d05a3228b"
+    },
+    "degree8-original/arithmetic/sieve/reference-constant-check.json": {
+      "bytes": 1538,
+      "sha256": "9fca75c9fa30687a0ab3f80d024773118d40d5011c52e8c894084a012f353cc2"
+    },
+    "degree8-original/arithmetic/sieve/source-ledger.json": {
+      "bytes": 6692,
+      "sha256": "e98599849e678182edac7c825a58ec9d86604198fbdd277e64faa128eae2b125"
+    },
+    "degree8-original/modules/Z_definition.json": {
+      "bytes": 40576,
+      "sha256": "75fe909cbd7992c77ec99a2fe18495745362054d20083e4e6a3ff705bb17035e"
+    },
+    "degree8-original/modules/q_anchor.json": {
+      "bytes": 1337,
+      "sha256": "e4d8f1c9395d254fef83bddefdf304c520af8fee0575926be3aa7189376965cb"
+    },
+    "degree8-original/modules/q_batch41.json": {
+      "bytes": 7057,
+      "sha256": "8963245225447a7065b67de902ad27b8820dbeba5562d13756fdf1f71902ae6a"
+    },
+    "degree8-original/modules/q_compare4.json": {
+      "bytes": 40242,
+      "sha256": "639574951f42451345b3286a57ca922273567f20a548ee2426939c7a30a07212"
+    },
+    "degree8-original/modules/q_height_batch.json": {
+      "bytes": 3809,
+      "sha256": "6682b1069de2edb5fe5ef5ffd5d53ac74652699d8166c509bccad63bf741860a"
+    },
+    "degree8-original/modules/q_primeparity.json": {
+      "bytes": 820,
+      "sha256": "de1bd279f6ca85b6f4d972c36a4ad079cc9678c47a8672904c168eedbab17478"
+    },
+    "degree8-original/source/module-specification.md": {
+      "bytes": 7851,
+      "sha256": "8d48b84bb189f04d6d8970a53b272df1df7d8fb575dd8059f35ba93c504f566b"
+    },
+    "quartic_12504.pdf": {
+      "bytes": 1095681,
+      "sha256": "e747dcb58c541e5106ac6289cab660d624a7c1209b0e488aecc51ee8f54014b0"
+    },
+    "quartic_12504.tex": {
+      "bytes": 676695,
+      "sha256": "38d458ba4178083766c5ae56a894da595fe27170c1ef07f6b49750fc5edf7c37"
+    },
+    "quartic_4973.pdf": {
+      "bytes": 1164841,
+      "sha256": "299e5f3342ddf42a30336aab73efd81a03c258b1012eb863397a101a74325fe7"
+    },
+    "quartic_4973.tex": {
+      "bytes": 720126,
+      "sha256": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34"
+    },
+    "quartic_9625.pdf": {
+      "bytes": 1127656,
+      "sha256": "8bd816a8432e8f6f16ae1484916489d02834be657c01dd3925edf6a0fee5b3e5"
+    },
+    "quartic_9625.tex": {
+      "bytes": 697804,
+      "sha256": "dc77c88b5cc0819201343dc85d0891d4dad81d97ac3267ec1df34eb38003b552"
+    },
+    "quartics/quartic-12504/README.md": {
+      "bytes": 2436,
+      "sha256": "06f3892a2389ef267c4b85ced57558ec6467108e1ab905e8de39ce4dbf18ed7d"
+    },
+    "quartics/quartic-12504/candidate-rows.json.gz": {
+      "bytes": 243907,
+      "sha256": "ff5412848dff46ac6ea0328244930b66c0a51c365e2b133bbafc7f2c86ca4b9e"
+    },
+    "quartics/quartic-12504/certificate.jsonl.gz": {
+      "bytes": 506314,
+      "sha256": "9f7979c1e786bebad624b9ea4631b7eccd879f4bebb5b9ab69250b945973b268"
+    },
+    "quartics/quartic-12504/construction-map.json": {
+      "bytes": 32035,
+      "sha256": "edad166ce99d33fe50271e2afdc1628bbec0361d812762212240cadd30f93cfe"
+    },
+    "quartics/quartic-12504/evidence/wave13-adapter-manifest.json": {
+      "bytes": 3346,
+      "sha256": "2d775c0d62009a5892f6e6de964042d179295f55e1fa1978aa25e063702f2c2e"
+    },
+    "quartics/quartic-12504/evidence/wave13-source-mutations.json": {
+      "bytes": 1915,
+      "sha256": "adceded361a6803dafb26df0b358b7bf0b56c356d58f3fc5c2d9e4957eed4bd4"
+    },
+    "quartics/quartic-12504/evidence/wave13-verification.json": {
+      "bytes": 1180,
+      "sha256": "06424ae5fcd9de6d2e5674bf7927c665ed1096a85dde463d456feaadc352a400"
+    },
+    "quartics/quartic-12504/polynomial.expanded.txt": {
+      "bytes": 3239486,
+      "sha256": "7f5aa3117af82a0b323f0a4e74a18599204f5540408106d3ce99612b5ed830ca"
+    },
+    "quartics/quartic-12504/polynomial.expanded.txt.gz": {
+      "bytes": 801823,
+      "sha256": "aafb76c3ac0791ad2ed0bb73ee2526dd2c9056f9bdc617e09ed017d0fa14c5ba"
+    },
+    "quartics/quartic-12504/reproducibility/README.md": {
+      "bytes": 4833,
+      "sha256": "8218ac711b7591b66f8be00e7931a420bfebdba558c645bc5875b7ae80436489"
+    },
+    "quartics/quartic-12504/reproducibility/manifest.json": {
+      "bytes": 10740,
+      "sha256": "dfb628c064d20f93dd543d9bcdcb6c03cb4b575a51f8325e6b88769220667075"
+    },
+    "quartics/quartic-12504/reproducibility/original/arithmetic/anchor/anchor-proof.tex": {
+      "bytes": 7147,
+      "sha256": "eb2afc3ae1ff90f778f68e464c4dad063ecf373b8a2ef7dd31c82e9508cd9f91"
+    },
+    "quartics/quartic-12504/reproducibility/original/arithmetic/anchor/check_anchor.py": {
+      "bytes": 6148,
+      "sha256": "ecfd3232899a64d8cb640f3b63ef024540b765fc6eb3963c8e9267d9092226b4"
+    },
+    "quartics/quartic-12504/reproducibility/original/arithmetic/geometry/check_published_quotients.py": {
+      "bytes": 2873,
+      "sha256": "c505005853f0d3162554093590f6c252a34d95da5a9cf21228a9a0341584da3a"
+    },
+    "quartics/quartic-12504/reproducibility/original/arithmetic/parity/check_parity.py": {
+      "bytes": 4273,
+      "sha256": "d133d2629bc83d20a949b28438dd9e516debdef6cd910148385e6c00863d7ad4"
+    },
+    "quartics/quartic-12504/reproducibility/original/arithmetic/parity/parity-justification.tex": {
+      "bytes": 12607,
+      "sha256": "df67c17520d942a4a5d8505b5ed1d97bf2bd3d18f8d13cbf514f758d7286075d"
+    },
+    "quartics/quartic-12504/reproducibility/original/arithmetic/sieve/check_constants.py": {
+      "bytes": 1757,
+      "sha256": "22e21db4649fbd4209d9f75380525cdb17931d868ec2b947210b995beba475e4"
+    },
+    "quartics/quartic-12504/reproducibility/original/counts.json": {
+      "bytes": 389,
+      "sha256": "25d288257198674d6862ce1927187542d5cdb5edb629b9c82ddcbcc2473991e0"
+    },
+    "quartics/quartic-12504/reproducibility/original/modules/Z_definition.json": {
+      "bytes": 40576,
+      "sha256": "75fe909cbd7992c77ec99a2fe18495745362054d20083e4e6a3ff705bb17035e"
+    },
+    "quartics/quartic-12504/reproducibility/original/modules/q_anchor.json": {
+      "bytes": 1337,
+      "sha256": "e4d8f1c9395d254fef83bddefdf304c520af8fee0575926be3aa7189376965cb"
+    },
+    "quartics/quartic-12504/reproducibility/original/modules/q_batch41.json": {
+      "bytes": 7057,
+      "sha256": "8963245225447a7065b67de902ad27b8820dbeba5562d13756fdf1f71902ae6a"
+    },
+    "quartics/quartic-12504/reproducibility/original/modules/q_compare4.json": {
+      "bytes": 40242,
+      "sha256": "639574951f42451345b3286a57ca922273567f20a548ee2426939c7a30a07212"
+    },
+    "quartics/quartic-12504/reproducibility/original/modules/q_height_batch.json": {
+      "bytes": 3809,
+      "sha256": "6682b1069de2edb5fe5ef5ffd5d53ac74652699d8166c509bccad63bf741860a"
+    },
+    "quartics/quartic-12504/reproducibility/original/modules/q_primeparity.json": {
+      "bytes": 820,
+      "sha256": "de1bd279f6ca85b6f4d972c36a4ad079cc9678c47a8672904c168eedbab17478"
+    },
+    "quartics/quartic-12504/reproducibility/original/shared.json": {
+      "bytes": 672,
+      "sha256": "eae2a0ee0e29751a5613ed6a0489eb5da3510836c4041bcf30af5880dfc7e596"
+    },
+    "quartics/quartic-12504/reproducibility/original/source-inputs/focused_diophantine.tex": {
+      "bytes": 85005,
+      "sha256": "2b986ebe8dadbc7579a4390a2d0268c87170f0c4753e3ffba0fafd1eadf463a4"
+    },
+    "quartics/quartic-12504/reproducibility/original/source/archive_build.py": {
+      "bytes": 20149,
+      "sha256": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912"
+    },
+    "quartics/quartic-12504/reproducibility/original/source/article/short-polynomial-proof-sections.tex": {
+      "bytes": 14666,
+      "sha256": "2185b5031f986ecc24260bb7f963c746dee22d2fa887e58d1a67e688867b7b5f"
+    },
+    "quartics/quartic-12504/reproducibility/original/source/article/short-scalar-parity.tex": {
+      "bytes": 4084,
+      "sha256": "00a8add816c2660667866da3e04649d7b7927848ed429b5d7f2d89b6bf24d1f7"
+    },
+    "quartics/quartic-12504/reproducibility/original/source/module-specification.md": {
+      "bytes": 7851,
+      "sha256": "8d48b84bb189f04d6d8970a53b272df1df7d8fb575dd8059f35ba93c504f566b"
+    },
+    "quartics/quartic-12504/reproducibility/reciprocal-checks/check_arithmetic_contract.py": {
+      "bytes": 3315,
+      "sha256": "cec49a617827310641716632b43bd04b315d6be2543a0883bfec02291914c0d1"
+    },
+    "quartics/quartic-12504/reproducibility/reciprocal-checks/check_reciprocal_probe.py": {
+      "bytes": 10210,
+      "sha256": "4df3c50b3b0398849d865fc47de672f8c87e6218b53dd936ac52f115361fecf4"
+    },
+    "quartics/quartic-12504/reproducibility/run.py": {
+      "bytes": 12354,
+      "sha256": "db924e8a24b8b3a6eb04f8d7f0dc4e3dc721618b436073e87fa7b3a9d31c535f"
+    },
+    "quartics/quartic-12504/reproducibility/source-audit/check_source.py": {
+      "bytes": 32510,
+      "sha256": "495ca32737687fca335704c6bdbabacf8f20a7698839aa680639e8e1b60a948f"
+    },
+    "quartics/quartic-12504/reproducibility/source-audit/test_source.py": {
+      "bytes": 12258,
+      "sha256": "f6e402489872a7418edd17c7c78a582334df88e954987abe14af13a95b022656"
+    },
+    "quartics/quartic-12504/reproducibility/test_certificate.py": {
+      "bytes": 16548,
+      "sha256": "0d8cca89f045bc38089eddcf8b22aeedb1db08779bbf6fcfcd9d16dbe0a4856e"
+    },
+    "quartics/quartic-12504/reproducibility/tools/absorb_batch_error.py": {
+      "bytes": 12999,
+      "sha256": "7dba25312d5931810ea7e4cace0d1e2272348e304a78ba354e43aaaa4b45ba5d"
+    },
+    "quartics/quartic-12504/reproducibility/tools/export_artifact.py": {
+      "bytes": 2474,
+      "sha256": "791c8e503407b2b58cbdb788785a952e2d6bc2720f34802ece2b0958cb07ccb4"
+    },
+    "quartics/quartic-12504/reproducibility/tools/fresh_lift.py": {
+      "bytes": 5521,
+      "sha256": "172462f76df0db676ec442a0f95e9758bbdd624978bc10369e82dd373af7a985"
+    },
+    "quartics/quartic-12504/reproducibility/tools/merge_coordinates.py": {
+      "bytes": 5707,
+      "sha256": "bdb81b3fa2e99fe373da4f1e4b527c12decfa463da47e44f7ac7ddc304961f5e"
+    },
+    "quartics/quartic-12504/reproducibility/tools/optimize.py": {
+      "bytes": 14119,
+      "sha256": "6a0653e237f87a31808f64938761b42168691eb7773bee0a7ac5aca762a9de97"
+    },
+    "quartics/quartic-12504/reproducibility/tools/polynomial_ops.py": {
+      "bytes": 972,
+      "sha256": "fe325ee902ed3226da28277e4a70fd924a9628e40d5bea39451bba6c52a2b5c5"
+    },
+    "quartics/quartic-12504/reproducibility/tools/produce_parity.py": {
+      "bytes": 4729,
+      "sha256": "bfb6f4577cb7a49b141c6ae1d21a927a1c0d4b8aa89285c7f6796113be0bc31a"
+    },
+    "quartics/quartic-12504/reproducibility/tools/reduce_norms.py": {
+      "bytes": 7388,
+      "sha256": "2b458d7d1d534802cf1eef8adf8d2872d773a3d47a9ec9fd109f3c72233650e4"
+    },
+    "quartics/quartic-12504/reproducibility/tools/remove_chart_ordinates.py": {
+      "bytes": 3972,
+      "sha256": "caff782e4f7c364bf899c7a7fee95370b1db7403f2583b9a03b6fcb53b0a32c3"
+    },
+    "quartics/quartic-12504/reproducibility/tools/replace_charts.py": {
+      "bytes": 6232,
+      "sha256": "9b8486529eb3f79710551c9cd15227d5cc49c95773419ce21ac88d43a0dd3dcc"
+    },
+    "quartics/quartic-12504/residuals.json.gz": {
+      "bytes": 242518,
+      "sha256": "dd72c6830df6bfc8452d89ebccbe6a51c350f722fd50a4ecf1f294f81b25196e"
+    },
+    "quartics/quartic-12504/source-audit.json": {
+      "bytes": 4023,
+      "sha256": "7c67ff1736e4a4f0e1f7e70e7f5e47c956dfb0c644fd5264acd0c224bbd60e01"
+    },
+    "quartics/quartic-12504/source-entry.json": {
+      "bytes": 2441,
+      "sha256": "c0fc67ef6ead31dd018ca92643dc4988fcf28f9755dd9be7e017651bf4b14abc"
+    },
+    "quartics/quartic-12504/source-residuals.jsonl.gz": {
+      "bytes": 215245,
+      "sha256": "ce9eeac7c4730aced8cfb70a1ab3b1b6a7fb2110c597afad1f56ddc92aeea73f"
+    },
+    "quartics/quartic-12504/source/PROPOSED_SOURCE.json": {
+      "bytes": 1168,
+      "sha256": "93df4b4c2f8aba4dd74c93d64a95347e2494d804752dc3647907e14b91f1a9bb"
+    },
+    "quartics/quartic-12504/source/compiler/archive_build.py": {
+      "bytes": 20149,
+      "sha256": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912"
+    },
+    "quartics/quartic-12504/source/compiler/build_reciprocal_source.py": {
+      "bytes": 4173,
+      "sha256": "d9ec8f4788882f37f3a0b7746f8d19c28968f7bf3f09cc06addab92f787098f6"
+    },
+    "quartics/quartic-12504/source/compiler/reciprocal_kernel.py": {
+      "bytes": 6623,
+      "sha256": "c4e94463cd59a2418a6502ac7cdcfd713edf9bc1134fe0b4d4bd84700983b304"
+    },
+    "quartics/quartic-12504/source/counts.json": {
+      "bytes": 389,
+      "sha256": "71cf2c65bb51f837014e1803c19c9e5ed28faa86c8e3faffdff1992072d1933d"
+    },
+    "quartics/quartic-12504/source/modules/Z_definition.json": {
+      "bytes": 40576,
+      "sha256": "3481dc07810493980b94071aab3e728ead885710213d1fef337199e8d2f73885"
+    },
+    "quartics/quartic-12504/source/modules/q_anchor.json": {
+      "bytes": 1337,
+      "sha256": "961e0cdbaefef28d3fa718f4e5924b5b60e4c500fb4bf2ce33e0898a4650c270"
+    },
+    "quartics/quartic-12504/source/modules/q_batch41.json": {
+      "bytes": 7057,
+      "sha256": "2f9e8adfdabb3a224ddb0599c99c8e39877d27ac28516feec1a3df831aae96e2"
+    },
+    "quartics/quartic-12504/source/modules/q_compare4.json": {
+      "bytes": 28993,
+      "sha256": "0c529d02717b4300bb76525f3eb13524abfc99a6156a96c18b4ba5492cc31482"
+    },
+    "quartics/quartic-12504/source/modules/q_height_batch.json": {
+      "bytes": 3809,
+      "sha256": "15fc8a127c95a27b6104c9dfab5890c9f2ad801ee24203431248860f52b1ac42"
+    },
+    "quartics/quartic-12504/source/modules/q_primeparity.json": {
+      "bytes": 820,
+      "sha256": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a"
+    },
+    "quartics/quartic-12504/source/polynomial.json": {
+      "bytes": 824,
+      "sha256": "2874f4d2b9eaf9752771007f393628fd2fffe2c283a4a5187a7ca1ad7da47269"
+    },
+    "quartics/quartic-12504/source/residuals.jsonl": {
+      "bytes": 778940,
+      "sha256": "b5e836d7764363fcbfdafbacefe80a5f53e0979eba73af990827942b0fa9351d"
+    },
+    "quartics/quartic-12504/source/shared.json": {
+      "bytes": 672,
+      "sha256": "e8da6dac27a0aab65ab8a377a9a9c78bd8baccd40f4dff229fce17759b03cc28"
+    },
+    "quartics/quartic-12504/variable-map.json": {
+      "bytes": 65983,
+      "sha256": "de0cc5ffa613b60a3b10af4f4aa9033e09516c6fe4403dc7f0b58675e8e30b97"
+    },
+    "quartics/quartic-12504/verification.json": {
+      "bytes": 1180,
+      "sha256": "06424ae5fcd9de6d2e5674bf7927c665ed1096a85dde463d456feaadc352a400"
+    },
+    "quartics/quartic-12504/verify_certificate.py": {
+      "bytes": 47497,
+      "sha256": "d2079177a4960740c5b7d42fbd0756dfc4ce8953cc947cee91c8786ba26fa8ba"
+    },
+    "quartics/quartic-12504/weights.json": {
+      "bytes": 23880,
+      "sha256": "ae4342eaf01218bcc041aeda1960aca923b3f9089dd29cdfa62162ae3c7ba1bd"
+    },
+    "quartics/quartic-4973/README.md": {
+      "bytes": 1379,
+      "sha256": "9cb4be4e78030d71b96bb1b062e124ba8d055503207950c42a5342b1edaef1ae"
+    },
+    "quartics/quartic-4973/candidate-rows.json.gz": {
+      "bytes": 117471,
+      "sha256": "1399f9e16932863b4b46a8977061617ed2013ad0947f4b4b7742f07e8e30edd1"
+    },
+    "quartics/quartic-4973/certificate.jsonl.gz": {
+      "bytes": 247584,
+      "sha256": "81ca768459a13b76dbdf4bfe81e94fbab9ab99f14a5731f6b1a1b03e28c1df2b"
+    },
+    "quartics/quartic-4973/construction-map.json": {
+      "bytes": 27743,
+      "sha256": "3d1e002eee34f4917605da1ddc7227e43bfaf4a5044d30d9a77f50fabc7380d2"
+    },
+    "quartics/quartic-4973/evidence/arithmetic-source-review.md": {
+      "bytes": 7726,
+      "sha256": "3eaba41fee89ed2457292666821c65604124f0a2938fcf40cb7c5b1337b75965"
+    },
+    "quartics/quartic-4973/evidence/base-stages/coordinates.json": {
+      "bytes": 1084,
+      "sha256": "3479b547c270f3f017e2db1feea0d070abb05e8e02c35e04c8c306bdf12c4257"
+    },
+    "quartics/quartic-4973/evidence/base-stages/fresh-lift.json": {
+      "bytes": 1001,
+      "sha256": "a16714e0b0087d69cb5170ade08d4b9d844c27fc062cad6ca530f1dc49fd3294"
+    },
+    "quartics/quartic-4973/evidence/base-stages/optimized.json": {
+      "bytes": 1069,
+      "sha256": "cc1683ab6c6e494e8ac5bc45fe63a6340e5e669224d8c082cb0a661343454815"
+    },
+    "quartics/quartic-4973/evidence/base-stages/parity.json": {
+      "bytes": 1026,
+      "sha256": "a936cba03545c24633e7830f124f5733c8a6810b0f064c79c3b1871be787241c"
+    },
+    "quartics/quartic-4973/evidence/final-verification.json": {
+      "bytes": 1135,
+      "sha256": "eaae6fc4bedc1205be68f7b77f39d9543b4e131b981dc298caffc59c25cfaccb"
+    },
+    "quartics/quartic-4973/evidence/source-run/RUN_INPUTS.json": {
+      "bytes": 296,
+      "sha256": "d8cf1c53c3b24e27b52cae7ff7a70108d124c9c1acdf52d4713a1699d284e02e"
+    },
+    "quartics/quartic-4973/evidence/source-run/SUMMARY.json": {
+      "bytes": 19234,
+      "sha256": "d1e83880366d5e1bd721daf84457dd76e6f54f202df70d1a4b2d7df14e9683d5"
+    },
+    "quartics/quartic-4973/evidence/source-run/inherited-source-mutations.json": {
+      "bytes": 10872,
+      "sha256": "24565b5a03b5931fd2af7aea3b901a2184cfe2bddc9c3b2dd0418c09f755fac5"
+    },
+    "quartics/quartic-4973/evidence/source-run/named-source-mutations.json": {
+      "bytes": 1429,
+      "sha256": "99a7c8a40595ca289e630183f594fd9bec26e9563c6606fea8fcdf7d8e130ee6"
+    },
+    "quartics/quartic-4973/evidence/source-run/proxy-removal-guards.json": {
+      "bytes": 517,
+      "sha256": "d0b4156e50ac3b27cfcd60f8a0920093c5d09782eb92f954ac6d1aadb5bcdba6"
+    },
+    "quartics/quartic-4973/evidence/source-run/source-determinism.json": {
+      "bytes": 6021,
+      "sha256": "349e7becfdc015170dbc7dd9f5d88b88a89de5d3db90e29566f78a5e7015e38a"
+    },
+    "quartics/quartic-4973/evidence/source-run/source-mutations.json": {
+      "bytes": 16096,
+      "sha256": "bd888692f5d05287053d6cd42d728453e476af7e7c201ffb30b387ac5572fa7f"
+    },
+    "quartics/quartic-4973/polynomial.expanded.txt": {
+      "bytes": 1622053,
+      "sha256": "094f6a7ed17e7cc8d5d17a2f809127bbaffd0fe343cb2a32d18ac97e61279876"
+    },
+    "quartics/quartic-4973/polynomial.expanded.txt.gz": {
+      "bytes": 422245,
+      "sha256": "ac7ddfb1a5540ca996b5e7ca97265847b41000887ee4885f9d2b6a2fbf6c5264"
+    },
+    "quartics/quartic-4973/reproducibility/BINDING_TESTS.json": {
+      "bytes": 1718,
+      "sha256": "4d8c3aa9ddc64f32af0abd91c824ab479ee563e35be1c01635fda94269ab46ab"
+    },
+    "quartics/quartic-4973/reproducibility/README.md": {
+      "bytes": 5890,
+      "sha256": "e866ecdbeafe27245b9841d3f51e583385951e55030945c7e4627d1d5a6fbd18"
+    },
+    "quartics/quartic-4973/reproducibility/base/adapter-manifest.json": {
+      "bytes": 3474,
+      "sha256": "2df87285d8fba7eca2b05a6914b517e3bb1ebf0a08132b0f87937b3a577357cc"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/absorb_batch_error.py": {
+      "bytes": 13381,
+      "sha256": "453b41ac38e610aa9641e11600647a3f056e0aa36b1511a562608607a389be80"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/check_batch_absorb.py": {
+      "bytes": 7827,
+      "sha256": "f3d14675eb656849c305f0437ca8b733bb3cb0512b92b68e5892f07af638509c"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/check_chart_replacement.py": {
+      "bytes": 6591,
+      "sha256": "e2a3e2f006b425bdd3a1baba5c9e47f0b498fc5858ed02dcb0886971a99b8fb6"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/export_artifact.py": {
+      "bytes": 2474,
+      "sha256": "791c8e503407b2b58cbdb788785a952e2d6bc2720f34802ece2b0958cb07ccb4"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/fresh_lift.py": {
+      "bytes": 4939,
+      "sha256": "3687079f107467cfa1b6205cc297878f4ccd1d61684f0efd25a47cc1cabd2bc0"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/merge_coordinates.py": {
+      "bytes": 5707,
+      "sha256": "bdb81b3fa2e99fe373da4f1e4b527c12decfa463da47e44f7ac7ddc304961f5e"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/merge_kernel.py": {
+      "bytes": 7230,
+      "sha256": "47562044bb4caeedb49ab0e31e1ef138f4c32ed183c7914722e2d64e54768b63"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/optimize.py": {
+      "bytes": 14119,
+      "sha256": "6a0653e237f87a31808f64938761b42168691eb7773bee0a7ac5aca762a9de97"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/parity_rule.py": {
+      "bytes": 5163,
+      "sha256": "dd43bdbe277ec4de10e0e5ad472cc5f54ef7f2408f99b80e70ce1b852a8f020f"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/polynomial_ops.py": {
+      "bytes": 972,
+      "sha256": "fe325ee902ed3226da28277e4a70fd924a9628e40d5bea39451bba6c52a2b5c5"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/produce_parity.py": {
+      "bytes": 4902,
+      "sha256": "592c1b69da7079f285aba7baac61f478f96ce6ad48ba2994c031b41fb013096e"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/reduce_norms.py": {
+      "bytes": 7018,
+      "sha256": "c2fd3a2805b9f1b9b756019a586b118dc25d4d92a070d4e7014f94ffe9c31540"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/remove_chart_ordinates.py": {
+      "bytes": 3977,
+      "sha256": "c86d64b38b261472245ba85b57751b833dd301c7a22b5555c4efed737433b1ec"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/replace_charts.py": {
+      "bytes": 6292,
+      "sha256": "4d186c9422ef96aec9f7c80a1e7fe6e2f71201eb6e848e119670379091c8a0f8"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/run_pipeline.py": {
+      "bytes": 4002,
+      "sha256": "388151877642214d9ef831123e277e6928e5eb0f5a8c328fbc0878a5d39b5848"
+    },
+    "quartics/quartic-4973/reproducibility/base/tools/source_layout.py": {
+      "bytes": 17423,
+      "sha256": "4e8f9ada790ead20e87be1bcb226da9da0df12b8260d3aadfbcd6ffa10800d30"
+    },
+    "quartics/quartic-4973/reproducibility/base/verify_named_source.py": {
+      "bytes": 59638,
+      "sha256": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/BINDING.json": {
+      "bytes": 1509,
+      "sha256": "24c379b0564f3171cb6991ce42ebfdff7d41634ec36ee83979032f221906589f"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/MANIFEST.json": {
+      "bytes": 6400,
+      "sha256": "a2ccbce5a09e7e0660b1fbd5506f28f5417f7ddb74c701e9eb399f3cfe8fe381"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/PROOF.md": {
+      "bytes": 4859,
+      "sha256": "1e4f5cb9de4359dfec3271bbf466c5dc0510e7cf5c2da2330aa6577b3d762011"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/README.md": {
+      "bytes": 1798,
+      "sha256": "40627006c2effd2c309905afe9586dff7d3cf8940a1abb744ef4059d58986098"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/evidence/baseline-verification.json": {
+      "bytes": 1026,
+      "sha256": "a936cba03545c24633e7830f124f5733c8a6810b0f064c79c3b1871be787241c"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/adapter/construction-map.json": {
+      "bytes": 27743,
+      "sha256": "3d1e002eee34f4917605da1ddc7227e43bfaf4a5044d30d9a77f50fabc7380d2"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/adapter/source-entry.json": {
+      "bytes": 14068,
+      "sha256": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/adapter/source/modules/q_conic13.json": {
+      "bytes": 10304,
+      "sha256": "6c8ae40d31ac835612fc2ae980e27e6bc6338190e4f4282b14637d08782a52a5"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/base-checker.py": {
+      "bytes": 59638,
+      "sha256": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/parent/candidate-rows.json.gz": {
+      "bytes": 110769,
+      "sha256": "b33bd777e52740c54041a541922cfca26e0788ce38d198d968936fcfb605304c"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/parent/certificate.jsonl.gz": {
+      "bytes": 123848,
+      "sha256": "232d536ee6e884cdc283e1ddd9528c2a7123e6c6ef1504019677b992874cf177"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/parent/polynomial.expanded.txt": {
+      "bytes": 1453900,
+      "sha256": "058e438b3112a8d463661663a7d6581e86760f5a9bc2cf5d5d0e3e2a5bba1bad"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/parent/polynomial.expanded.txt.gz": {
+      "bytes": 407747,
+      "sha256": "e8a3076afd64c0d97d1543153266d15a3d7077382bfe60afde0a930afbf649d3"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/parent/residuals.json.gz": {
+      "bytes": 111787,
+      "sha256": "9540b574b0dabcb1066269e341644f6348c8b3b43fed3c2c72f8bbc28f461900"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/parent/source-entry.json": {
+      "bytes": 14068,
+      "sha256": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/parent/source-residuals.jsonl.gz": {
+      "bytes": 108491,
+      "sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/parent/variable-map.json": {
+      "bytes": 25374,
+      "sha256": "f482e87e82a0dfca5cc8c1d8bf3c9de08eec43d608c36d7a7017bceeb8d31237"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/inputs/parent/weights.json": {
+      "bytes": 9748,
+      "sha256": "ac2322fafb905b05128688a0622bf78ce79d6aecfa74ddc8c0ea9758fe113e4c"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/run.py": {
+      "bytes": 13700,
+      "sha256": "d3d3b96f8cfff3a6de1318c4929d81eb4ae44ee9c908b18617542dd5a7bac4b0"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/support/MIXED_MODE_DENOMINATOR_CLARIFICATION.md": {
+      "bytes": 3183,
+      "sha256": "2a1eb8ed9a7175995afa665a08035728c1714b5fa30e1ba52030b6adf7b8ba34"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/binding.py": {
+      "bytes": 7032,
+      "sha256": "42b1f0531ab69dbbec685d518a16f13cecaa7bc03f1de9c7b3a74542774a5340"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/check_localized.py": {
+      "bytes": 8765,
+      "sha256": "9828978e58f6475ab1446b9d663dddb9632f35cade14d21162b6dc1e0d91e736"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/check_relation_eliminate.py": {
+      "bytes": 5502,
+      "sha256": "fb24735fc9782d48281a820888050e8939c791f0167a45570643a21ab124db50"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/export_artifact.py": {
+      "bytes": 2474,
+      "sha256": "791c8e503407b2b58cbdb788785a952e2d6bc2720f34802ece2b0958cb07ccb4"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/make_checker.py": {
+      "bytes": 2392,
+      "sha256": "0c0b710c380c5890d52c920d262e9f248db28bee4d1cf31dfbf24f5aee399450"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/make_frozen_checker.py": {
+      "bytes": 228,
+      "sha256": "78e70dd96ff98dd1df23682aeead811f5f50fc87d8009d5bd5f63ff6e6b0ab20"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/merge_coordinates.py": {
+      "bytes": 5707,
+      "sha256": "bdb81b3fa2e99fe373da4f1e4b527c12decfa463da47e44f7ac7ddc304961f5e"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/optimize.py": {
+      "bytes": 14119,
+      "sha256": "6a0653e237f87a31808f64938761b42168691eb7773bee0a7ac5aca762a9de97"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/polynomial_ops.py": {
+      "bytes": 972,
+      "sha256": "fe325ee902ed3226da28277e4a70fd924a9628e40d5bea39451bba6c52a2b5c5"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/power_chain.py": {
+      "bytes": 8296,
+      "sha256": "60b6c1ad7834ee6251bfb39a893c8ae38f56f289c92a0da167f5419e29d7a746"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/probe_affine_unit_relations.py": {
+      "bytes": 1209,
+      "sha256": "d27ccfef903675d2574ae064fdae9a7233d1c05f66a56ba0a1b898f5a8fe675e"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/probe_localized.py": {
+      "bytes": 13919,
+      "sha256": "b5c4775d1184b4aed17fd4bdb69180bb400dc5814c7347e9ccf6f41c8c231f76"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/probe_relation_eliminate.py": {
+      "bytes": 16645,
+      "sha256": "c5f1f1a8a88c9a3eb77fb4bcf5344f23fb417946324591cfe1090f14e5a05e51"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/probe_unit_relations.py": {
+      "bytes": 10973,
+      "sha256": "f26bc7738ca49855ac661cbcf7b3ed9203407355f2f199feda2df48dc6492ad4"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/supplemental_tests.py": {
+      "bytes": 5527,
+      "sha256": "339174c5a9cafe08d460f05458829f318407d23b35110a0875f56ae01f78447f"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/test_affine_units.py": {
+      "bytes": 1721,
+      "sha256": "1be353f506855fa533b910ed2c36229393c8ecf95d5e92480f28fc283f021d90"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/test_power_chain.py": {
+      "bytes": 4590,
+      "sha256": "39213a8ddc83debfa9c1c33bf40fee6130fefc3597fdcc5840c6945d44496b85"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/test_relation_eliminate.py": {
+      "bytes": 6363,
+      "sha256": "fe6ba8bf7706b2d7d4fdba9cfb72279e15a7aac310845193030ab6b406f14b00"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/test_source_locator.py": {
+      "bytes": 3205,
+      "sha256": "2d601a76a99c81124d5ab79f358f9b0843df9af11df6a32acb0b96e42037d1a2"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/test_unit_relations.py": {
+      "bytes": 6015,
+      "sha256": "57a47f5318de4771b48c22f4f708973875641eb9ae75aa40b0aae6a20fa4791e"
+    },
+    "quartics/quartic-4973/reproducibility/cleanup/tools/verify_elimination.py": {
+      "bytes": 73987,
+      "sha256": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe"
+    },
+    "quartics/quartic-4973/reproducibility/common.py": {
+      "bytes": 5391,
+      "sha256": "63261fbabb7a77b690f13c87552d1b7202527bd6ab84233db1f7da9544136555"
+    },
+    "quartics/quartic-4973/reproducibility/copy-plan.json": {
+      "bytes": 93596,
+      "sha256": "55f3e0a0a7c1620ea58e1381ff64da7dfeca2debd7ff717ead3998220d7f8f93"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/astra-wave11/batching/absorb_batch_error.py": {
+      "bytes": 12942,
+      "sha256": "ba9f073a9b9628e9848ee54b7f6d4421785246ed711d9c117993de035d47c588"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/astra-wave11/batching/check_batch_absorb.py": {
+      "bytes": 7827,
+      "sha256": "f3d14675eb656849c305f0437ca8b733bb3cb0512b92b68e5892f07af638509c"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/astra-wave11/charts/check_chart_replacement.py": {
+      "bytes": 6591,
+      "sha256": "e2a3e2f006b425bdd3a1baba5c9e47f0b498fc5858ed02dcb0886971a99b8fb6"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/astra-wave11/charts/remove_chart_ordinates.py": {
+      "bytes": 3802,
+      "sha256": "0654945ff462e8a158d2f89accb52cf19b34534eed9dba2cea62f393ba19b03b"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/astra-wave11/charts/replace_charts.py": {
+      "bytes": 5783,
+      "sha256": "b34e218ebab191d66415d1a99f659318c71018f4a58c3bbb2e704cd1f9f16eb1"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/astra-wave11/parity/parity_rule.py": {
+      "bytes": 5163,
+      "sha256": "dd43bdbe277ec4de10e0e5ad472cc5f54ef7f2408f99b80e70ce1b852a8f020f"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/astra-wave11/parity/produce_parity.py": {
+      "bytes": 4684,
+      "sha256": "b4125d339cd2fa56240584e4aa55af010c98734a5e56c6c8f112a43f0889210a"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/export_artifact.py": {
+      "bytes": 2474,
+      "sha256": "791c8e503407b2b58cbdb788785a952e2d6bc2720f34802ece2b0958cb07ccb4"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/merge_coordinates.py": {
+      "bytes": 5707,
+      "sha256": "bdb81b3fa2e99fe373da4f1e4b527c12decfa463da47e44f7ac7ddc304961f5e"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/merge_kernel.py": {
+      "bytes": 7230,
+      "sha256": "47562044bb4caeedb49ab0e31e1ef138f4c32ed183c7914722e2d64e54768b63"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/optimize.py": {
+      "bytes": 14119,
+      "sha256": "6a0653e237f87a31808f64938761b42168691eb7773bee0a7ac5aca762a9de97"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/polynomial_ops.py": {
+      "bytes": 972,
+      "sha256": "fe325ee902ed3226da28277e4a70fd924a9628e40d5bea39451bba6c52a2b5c5"
+    },
+    "quartics/quartic-4973/reproducibility/external-repository/research/quartic-variables/verify_certificate.py": {
+      "bytes": 22855,
+      "sha256": "74dba155b43b1e6f707b8b6e3d335302eb25c8be8052017c9b47bc188758eff9"
+    },
+    "quartics/quartic-4973/reproducibility/freeze_runtime.py": {
+      "bytes": 1065,
+      "sha256": "7ca12ea2e769e230b91f0335777391345677d3a812dd116a571b59e031b6d59b"
+    },
+    "quartics/quartic-4973/reproducibility/manifest.json": {
+      "bytes": 60598,
+      "sha256": "ff5611923fa9a15fcd8ee8d0a21397fd7271cfe3fa6c6b2e1857d1ca1ad14ba9"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/ANCHOR_FOUR_PROOF.md": {
+      "bytes": 6575,
+      "sha256": "9d349ae5caaaa9ed4433617762ecb4b8b349af58c2082ffa4b9be08442ba18e3"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/ARITHMETIC_REVIEW.md": {
+      "bytes": 9154,
+      "sha256": "4a7cf0a7bbdf4a87f53f0cacbf38de45ae59df9899b44b9d1b0671fbc0a9fdbf"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/AUDITOR_PIN.json": {
+      "bytes": 2196,
+      "sha256": "b7f33e4abc46a1250d993e519664db8d910c8f3491017807e8bc92303cd87c2c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/BASELINE.json": {
+      "bytes": 1852,
+      "sha256": "2a1c41a19f0813e8676c4cbe57eb49a3faa0926f095389d8a4a2b390ea91035d"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/CONIC-CONTRACT.json": {
+      "bytes": 2177,
+      "sha256": "525717a727c8049084636d1ec2fe3182938b5079ed5f711e04d1f96a12032ee2"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/CONIC_AUDITOR_REVIEW.md": {
+      "bytes": 7710,
+      "sha256": "b78ccddb10f1ae16a47752831f8627e31e7260999fcdd687904d52864b05921f"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/CONIC_POLE_CONTRACT_ADDON.json": {
+      "bytes": 6436,
+      "sha256": "44bcef6a37f57a847f963313b146614b56ecf3fdb101e5443c2c65321494e4a4"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/EMITTER_API_JOINT.md": {
+      "bytes": 2280,
+      "sha256": "7d7b2d391368a7d85381961c6208e5878ffe365d17b3899ea2045a293487b76f"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/FIRST_NORM_ARITHMETIC_REVIEW.md": {
+      "bytes": 6495,
+      "sha256": "0208bf985c72d24e83863bb8b305b552b56c5fb9c5b6e9953c0df8b32ac0ef72"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/FIRST_NORM_CONTRACT.json": {
+      "bytes": 2121,
+      "sha256": "b327fcc99625f09c36509c6b22cb12edc4fdeb40c2f8a7b70f65f2509c75570c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/FIRST_NORM_GUARDS_REVIEW.md": {
+      "bytes": 4566,
+      "sha256": "90a8c92390d48a3ac5ceef6328b7451a3ffc67a78090537bc24294cdce29824c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/FIRST_NORM_HELPER_REVIEW.md": {
+      "bytes": 3666,
+      "sha256": "3948533b6734c159e2b0c71e79dbc7d7c0ef546ebfb3b79b5c0e0a1e50133750"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/FIRST_NORM_INTERFACE.md": {
+      "bytes": 4917,
+      "sha256": "26083042743573918470b76624fd58e5eb209b5dde7e8b95ee4c8c67171e2988"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/FIRST_NORM_PROOF.md": {
+      "bytes": 5744,
+      "sha256": "b18b32854d4ef6e8c49495ce404f7c96566a0a1926baca6f4ee1ed4cbedcba05"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/FIXED_TARGET2.json": {
+      "bytes": 20100,
+      "sha256": "2a52cbd19d92fedcf75b94e0cc0bc11673fd40775fde83cec621ba23c7b93c62"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/HELPER_REVIEW.md": {
+      "bytes": 3271,
+      "sha256": "7893faf78296c771e58116fdb197c95908ac0114b5fef2fd802802662a8abd2e"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/JOINT_ARITHMETIC_PROOF.md": {
+      "bytes": 21009,
+      "sha256": "76d1ffafe8fcf1e79c462f269187ebfb168edd6f4cc3b339842dac217c9051f7"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/JOINT_CHART_CONTRACT_ADDON.json": {
+      "bytes": 7865,
+      "sha256": "1793c7bdf798365247f04100d22c30490fa8e7e0df4f80534aaec8e2e775ffb3"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/JOINT_CHART_PROOF.md": {
+      "bytes": 6602,
+      "sha256": "947b505969ee3b6f1c8677e452703454adac6933c2bb01bbb54ab4b27b5e7451"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/JOINT_CHART_REVIEW.md": {
+      "bytes": 9021,
+      "sha256": "ed56a09b21bddc4595de9eb6c7d3b4f64adca89d395962fe531e59029f73120c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/JOINT_IMPLEMENTATION_REVIEW.md": {
+      "bytes": 6661,
+      "sha256": "cd04ae43075b0d95cbc82818a0da4044d16c8b29f8f95cf8ee9b762b806d4222"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/JOINT_OUTER_REVIEW.md": {
+      "bytes": 2909,
+      "sha256": "93298dd767c9a85c8c7ac680cf5727bcd6388f5b4c2bbcdbcf14d3ea93db697a"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/JOINT_SOURCE_CONTRACT.json": {
+      "bytes": 7714,
+      "sha256": "e658843c6ba95dc797f10e7c25c086189f9694a0689a88c203979c38f05ed79e"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LINEAR_HELPER_REVIEW.md": {
+      "bytes": 2880,
+      "sha256": "ab4dc05687d7164f9148f05d8bafdfd8ff6f6d40e687a0e71e63ad0c48db8321"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LINEAR_INTEGRATION_REVIEW.md": {
+      "bytes": 1977,
+      "sha256": "45003face56ef980ca195f435a9402d7a573dd1d0a5de727fedbfa29b22416f6"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LINEAR_POLE_IMPLEMENTATION_REVIEW.md": {
+      "bytes": 3897,
+      "sha256": "06bc655fe1a0549e70a59b533fbfdd7a736037e72cb42585f6e2324cc2b19b41"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LINEAR_POLE_PROOF.md": {
+      "bytes": 9010,
+      "sha256": "0b52a6ac4840636be12f455bf0e8b07ba02bb2308493d937afd840ea19bdb510"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LINEAR_POLE_REVIEW.md": {
+      "bytes": 6610,
+      "sha256": "885fa0233d3e739999ba0132a9bbae33f9eac53491945250fd08100751c685a3"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LOCAL-LUCAS-CONTRACT.json": {
+      "bytes": 2816,
+      "sha256": "92bac37466e412cd1cf5b140fd6e72c11b3d8084325c906651b975bba45451af"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LOCAL_LUCAS_CONTRACT_ADDON.json": {
+      "bytes": 7633,
+      "sha256": "13ebcdd31363e8d482a8daac988da75ac314d66a1d989926e39bdf01d4418048"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LOCAL_LUCAS_POLE_CONTRACT.json": {
+      "bytes": 6237,
+      "sha256": "cd7e4039c533eed79afd75fea9ba6abb53f10b7a26ea990b195b9f2c15badd8b"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LOCAL_LUCAS_RESIDUAL.md": {
+      "bytes": 7855,
+      "sha256": "2c4b1a1f24a485b021ff11561043a412a61186e243194ba244b6090124b83570"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LOCAL_LUCAS_REVIEW.md": {
+      "bytes": 6821,
+      "sha256": "818c51743e55536c0b10da8c4153d82f45ee5ab64d6f2cb68abb6d5482c9f715"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LOCAL_LUCAS_ROOT_REVIEW.json": {
+      "bytes": 1898,
+      "sha256": "72bafd6ad9a42cf21b1611fc761e8709173b6758ab6ff64fd382f2bc0179f99c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/LOCAL_LUCAS_SOURCE_CONTRACT.json": {
+      "bytes": 2381,
+      "sha256": "233ea7424864fb0d828346cfbfe29459cbc09e801d3d5cd327675b5ea3d95ad8"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/MIXED_MODE_DENOMINATOR_CLARIFICATION.md": {
+      "bytes": 3183,
+      "sha256": "2a1eb8ed9a7175995afa665a08035728c1714b5fa30e1ba52030b6adf7b8ba34"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED10_CONTRACT.json": {
+      "bytes": 2275,
+      "sha256": "19c3f7d65aae9f38aeaea9cc9c079d0ec7ca9918123d96d1744813ae81e61869"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_5512_SOURCE_REVIEW.md": {
+      "bytes": 5973,
+      "sha256": "06bbf6d4310b9c34610035528ad9428b5f13aadfd7ebf77d7edd6db4e129d8fb"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_ARITHMETIC_REVIEW.md": {
+      "bytes": 8527,
+      "sha256": "6a9da3f66aec7e5d796fb77569100dd8ecc1791cd533871942e89c490cf9f7c9"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_CHECKER_REVIEW.md": {
+      "bytes": 4498,
+      "sha256": "09cb32dc7b52d7289b821a575a268362a2b20254e277fbaf2b86aacbecf00266"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_LUCAS.md": {
+      "bytes": 10790,
+      "sha256": "e76a6361be9678369abb7d42e98255bce214dab4dd7215ff6584b029169cb811"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_LUCAS_CONTRACT_ADDON.json": {
+      "bytes": 6936,
+      "sha256": "af365079cce1bd502dc2d683fc1f76fa2a2ca85c396c22be888dbd9fb3237cb0"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_MATH_REVIEW.md": {
+      "bytes": 4745,
+      "sha256": "3c6731295b96b1023e42b1d188692c9af5f7a1fece16b6fdc6e6fff905fe10ad"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_OUTER_BINDINGS.json": {
+      "bytes": 4142,
+      "sha256": "74e0c653c4f1162fb005e96263b8da1b12f968a7b0d9aa5335f60a7ab3ab373b"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_OUTER_REVIEW.md": {
+      "bytes": 4251,
+      "sha256": "f2eef802e5260490e2f214f5bcd013d230ace3b7806ec116b11c643b9e52424f"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_PARENT_PINS.json": {
+      "bytes": 781,
+      "sha256": "d94bf88c98b5c3e5110ed9ab58c587ba83a7cda17b736f1a0d9d226e0b415e59"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_POLE_COMPOSITION.md": {
+      "bytes": 8288,
+      "sha256": "f10ca2fe7efc52bdccf2b67adf3277e8a26dd79c73dd339a89ad9a38fe6bc258"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_POLE_CONTRACT.json": {
+      "bytes": 9380,
+      "sha256": "0ad8288dd3a44daa524e753dfba04b0b788de46d84bfa63d3f34a71d3272dd10"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/NORMALIZED_SOURCE_CONTRACT.json": {
+      "bytes": 3349,
+      "sha256": "b038a32f4b22de7a43680857dc693d5614d25c6d0f432841bbafd2a8577898d6"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/ODD_DISCRIMINANT_PAIR_COMPRESSION.md": {
+      "bytes": 14125,
+      "sha256": "ef4de3f02fa3d17c18dc7c2af490960a62f35cc541eac8e4b80958d320fa8ab9"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/PARENT_INTEGRATION_REVIEW.md": {
+      "bytes": 6455,
+      "sha256": "de31c21ba8f6efab335ddabe277622077d53e1ab0ae95c1f22228155778af09c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/PARENT_SOURCE_PINS.json": {
+      "bytes": 1641,
+      "sha256": "003211cbd8995b9b251596d56411a2c51ca7121176ada686c22591f333f56bac"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/PARITY_CONIC_REUSE_PROOF.md": {
+      "bytes": 9800,
+      "sha256": "a7d2712ce511aca30f5c8e94e0e2ce93c6ee64e21074e2bff91f412fe5a1cb5c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/PARITY_CONIC_REUSE_REVIEW.md": {
+      "bytes": 9898,
+      "sha256": "84970af65abda253545e12cc7ac476183df321972316ed88e71a0e37a25b952f"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/PINNED_INPUTS.json": {
+      "bytes": 2067,
+      "sha256": "568a430b4fc223164b9ad19ba2e0e408afca5888b71e25ed715a4ae14b5839d6"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/POLE_IMPLEMENTATION_REVIEW.md": {
+      "bytes": 6733,
+      "sha256": "b0b3077c5fb0724d171cdc19da6b1a4397fe3bd29e84a1c47f1212c1b0fbe3b4"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/RATIONAL_DIFFERENCE.md": {
+      "bytes": 11186,
+      "sha256": "8558cbfdb09bfaf12054caa2907900bc30b6de91fd6ab43c14ddc294f1cd7e9d"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/README.md": {
+      "bytes": 2980,
+      "sha256": "5fd7f2cf456196bbb2c50a5d0a2ea3a491244a208dd1d7c856eb179e12b9212c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/ROOT_CHART_APPENDIX.md": {
+      "bytes": 4469,
+      "sha256": "9a126a387cd376f988964e76193ac9ca712e363f501cd26f4f55c543c8e1011e"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/ROOT_COMPOSITION_CONTRACT.json": {
+      "bytes": 3902,
+      "sha256": "4e41f830938c3bdf8b5361b410a2fb639bd74299f0461fb356afe2efb012f2b7"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/ROOT_INTEGRATION_REVIEW.md": {
+      "bytes": 6589,
+      "sha256": "dc4ef067e28770f3dce761ed8c00a74c3c1b00c2d67db5dc4109a78e00c232f5"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/ROOT_LITERAL_CHECKER_REVIEW.md": {
+      "bytes": 3230,
+      "sha256": "0171aa7b812c34ef26c483da4b7c443e340f1c5b82e1475c0cadf57c96fdd259"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/ROOT_PROOF.md": {
+      "bytes": 12108,
+      "sha256": "ecdbfc9acd575a8ab194f8e76c356e7898544a506c705a40f169c6686c70a80e"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/ROOT_SHARED_CONTRACT.json": {
+      "bytes": 4206,
+      "sha256": "73e17ecc19a797ce442412549931ff11e43f42ebff9c48e1b2c636ff2d839a8c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/ROOT_SOURCE_CONTRACT.json": {
+      "bytes": 5596,
+      "sha256": "505b3a743585187ebde58642bb02237dbb45bc55b328b5b88bd84a0724cf1d5c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/SELECTED_PARENT.json": {
+      "bytes": 2075,
+      "sha256": "248778bdda2810db04368a692bd39ff5e17edcf954585e19613493ec9b6f58d0"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/SELECTED_PARENT_REVIEW.md": {
+      "bytes": 5738,
+      "sha256": "f8feaa0584dc8da654baa04e8e3c0c6f864c0cb3b80c7548e778062f85925872"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/SHARED_SQUARE_CONTRACT.json": {
+      "bytes": 4381,
+      "sha256": "13f97f687a15f1d0bf283b608c8c00b425c2c4797eb9b4dc0df14fa2a93c3750"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/SHARED_SQUARE_IMPLEMENTATION_REVIEW.md": {
+      "bytes": 4641,
+      "sha256": "406463e0e898811d0cef3aacc40f09d82efbb46107e17ddfc45ce4ea2075f5f5"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/SHARED_SQUARE_INCIDENCE_REVIEW.md": {
+      "bytes": 5105,
+      "sha256": "e70425d60d870a914a826809faf4f57415ce807f453c5fe6083a2303460cfd82"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/SHARED_SQUARE_PROOF.md": {
+      "bytes": 7204,
+      "sha256": "378017d3ad813f69a0e6ee09c2de36f062fe2bd0e0b9c4c84a125eed99d84cc3"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/STATUS.md": {
+      "bytes": 95,
+      "sha256": "be10cf3c8899b272d192942f293a084667fe3cfe44780470751e7a764b684ebb"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/TANGENT_IMPLEMENTATION_REVIEW.md": {
+      "bytes": 4211,
+      "sha256": "7753f3c9dbdac926bdb568fafc8e1a0df0fd9b51af1beb97dae04842f80cfc5a"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/TANGENT_PROOF.md": {
+      "bytes": 3339,
+      "sha256": "3591709058c666a1dd2786d46039b408a04f1908b644c16c6f722a72788a50c8"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/TANGENT_SOURCE_CONTRACT.json": {
+      "bytes": 1529,
+      "sha256": "d9ef1fedd0703377747353f44619d73eca47c160634757de7c477fc02c887e70"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/TARGET2_COMPOSITION_CONTRACT.json": {
+      "bytes": 7937,
+      "sha256": "77e26c27804a00701306c115984df84129e26431ff285468a8e8f14cd8b217dd"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/TARGET2_IMPLEMENTATION_REVIEW.md": {
+      "bytes": 7090,
+      "sha256": "04aea447a4dd9cbae4ffe848e8b402252305014daebf1f117438a82b9ec8c9bd"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/TARGET_TWO_CONTRACT.md": {
+      "bytes": 6606,
+      "sha256": "8e42299e4d281ecab724868d39eeb21589957c971516296500b942605ac0b711"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/TARGET_TWO_IMPLEMENTATION_REVIEW.md": {
+      "bytes": 3436,
+      "sha256": "8d0ea23e349ab2deac60f569ec82f684214e8ebf0b37c4f10222df507fbbf32c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/TARGET_TWO_PROOF.md": {
+      "bytes": 7605,
+      "sha256": "cfc62097ffdbf072fe77524f7e0448356812712689394ca22dfc4a0fd64b7feb"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/TARGET_TWO_SOURCE_CONTRACT.json": {
+      "bytes": 3000,
+      "sha256": "510ee91c4777c4e8ae4343622817b90e30a20e7507ec83fa7a26bc8b50d581c7"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/TWO_DENOMINATOR.md": {
+      "bytes": 6651,
+      "sha256": "d4f43b3fef411179f8c1afe7a9029fc5a3e67d42399376761e965281c79b8dc2"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/adapt_absorb.py": {
+      "bytes": 2350,
+      "sha256": "40ba2ed31851289046972149097533e193b163bf88c7eb2b0f35d1c17990bf2d"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/anchor_four_kernel.py": {
+      "bytes": 1086,
+      "sha256": "4f5944cfe3dd16f5a38ab7113e54a5ecba1faccfecac0d23b7c2f36b76a00dcb"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_conic_pole.py": {
+      "bytes": 2729,
+      "sha256": "35b774437705759c2309aa905cf8f2d1fd91c19669dc35b1489b8a466db36bff"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_conic_source.py": {
+      "bytes": 18127,
+      "sha256": "0358e595147d8e840093b5f1a73e01c710f7c8bc0a7235f2d94611792c0b2baa"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_first_norm.py": {
+      "bytes": 5447,
+      "sha256": "5e13e16621f5de043a5bb63d069f91fbab7b6284e19c4f077b093746efa2a2a5"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_joint_conic.py": {
+      "bytes": 13286,
+      "sha256": "0c304cc799563ce26631ee5969d96afadc564be8ac502bb676e618e0320ab907"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_linear_pole.py": {
+      "bytes": 2797,
+      "sha256": "956d1f3f5d6e38248fde0edbedbf3c2ef5a175f89ac8770bb711a1490742ff9a"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_local_lucas.py": {
+      "bytes": 17941,
+      "sha256": "c08ee3db7b7711ccc32d942a615a893d4cb14b03a58a4eb0a3965430f5b89543"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_normalized_lucas.py": {
+      "bytes": 19047,
+      "sha256": "105f4cc79a85649041e95be4a9059ed93e1d296fb77e0937e612f54aa801bb33"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_root_rewrite.py": {
+      "bytes": 11922,
+      "sha256": "05fa04d6016212cdfde1613ce3c265f984cfa6f4adcc48737e714269dbbb01b2"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_root_shared.py": {
+      "bytes": 3529,
+      "sha256": "50add2b9cd294e86f91c45cc373b4433807a464a4a4cb7c8934688d0a623c281"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_shared_square.py": {
+      "bytes": 11072,
+      "sha256": "2e7498a05baad8996341ce7c87c839683a6f196a2682167a731fd329f9101fba"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/audit_target2.py": {
+      "bytes": 6986,
+      "sha256": "b2737e3575ad8512dcc33c6c1d84f38178172e53b5d786193d8eed5c1df886c3"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/base_adapter.py": {
+      "bytes": 14349,
+      "sha256": "cabb72d21f1308925513003a7375d8b87f766328485d0dd554597dad32e77ed5"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/COMBINED_SOURCE.json": {
+      "bytes": 3071,
+      "sha256": "2e1b1fba14916121388adc0eb77242cccbbabe5f5c2272eb02e6717a88f07f6a"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/compiler/archive_build.py": {
+      "bytes": 20149,
+      "sha256": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/compiler/build_combined_source.py": {
+      "bytes": 6793,
+      "sha256": "e8f8dabb4acb1cfce945147bc21969856e4d939961e9d37598e0527509515042"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/compiler/combined_kernel.py": {
+      "bytes": 9201,
+      "sha256": "f41dc82a5dd451b3196bd20f46c14bb5a2ace4a29d6d22bc898725f1eba6e9f5"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/compiler/lowprecision_kernel.py": {
+      "bytes": 5810,
+      "sha256": "66854ff3ee24d8dd6f4b3b54fa5ca627d87b5d0da09cafa35e3d05d47d0d5c31"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/modules/Z_definition.json": {
+      "bytes": 38251,
+      "sha256": "26b6b8674056bb3e7b4ba8ca75bd5b2b47cba7a58c1d84db78ba108a2f264117"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/modules/q_anchor.json": {
+      "bytes": 1337,
+      "sha256": "e5b74df60328d739e94224f199efb16dd817c994658c95d5dd781704bcf94fb1"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/modules/q_batch41.json": {
+      "bytes": 7463,
+      "sha256": "a45569adc62e09ce254b01cb38a3b31eb891842a73f515f21732eeeb24799985"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/modules/q_compare4.json": {
+      "bytes": 25317,
+      "sha256": "ef3aba59c082b9dc312993cc5ea8d0298cc1c81b21e58d4762186bb9a53d4eb2"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/modules/q_height_batch.json": {
+      "bytes": 3972,
+      "sha256": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/baseline/modules/q_primeparity.json": {
+      "bytes": 820,
+      "sha256": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/beta_kernel.py": {
+      "bytes": 5035,
+      "sha256": "38f5524c9e87a9a7baea0e83b78a77c0f7e32230f52cbe1e3270806094d8c1e5"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/build_source.py": {
+      "bytes": 12078,
+      "sha256": "2f973408d8f022fdf178606bc42a6ce41ec68aa0272b0e7186df2e5fff00bd61"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/check_anchor_four.py": {
+      "bytes": 1612,
+      "sha256": "0e5f93f61114f9bd6589dc950271938b5d630820a920565043f63ab749081e30"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/check_conic_pole.py": {
+      "bytes": 3628,
+      "sha256": "d0e11d3fa4405eff7012bee7e112f74a6eda528382ebb14ca5433982fa4e4933"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/check_lucas_batch.py": {
+      "bytes": 7068,
+      "sha256": "446ff0fb520d3922d1a3c96455dd4fade07206dbed5357dcc38700ce6eb2e0ce"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/check_packet_syntax.py": {
+      "bytes": 2569,
+      "sha256": "1d3e85d05684d66d823634410beabd4ee82462aa75c90d32e18d8f6e8071f755"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/check_source.py": {
+      "bytes": 17975,
+      "sha256": "58bf1da4007247bc4558eacce6bdbbc83d2394ac2a47f128390f20f26567d50a"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/compress_doublings.py": {
+      "bytes": 8635,
+      "sha256": "a136e6cce43277ed63351fd1989c428c48b811b9a8682d213f6609d6a95f5cb2"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/conic_emitter.py": {
+      "bytes": 10540,
+      "sha256": "b8899e6b8c4bc443e207d8fa43abb696ce90997b35285f0c929c59efa851f327"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/conic_emitter_joint.py": {
+      "bytes": 11149,
+      "sha256": "ab04ab979b8c239a89b7e129fd53031587438943efac266f6b9fc28040b7b4f1"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/conic_lucas.py": {
+      "bytes": 11325,
+      "sha256": "42fcb55ec95be9ee34e98c5d0b0e672062b7cce6c5f9f9d0e676edff72e5ed86"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/conic_pole_kernel.py": {
+      "bytes": 3081,
+      "sha256": "d9bd4564618f79a4b04f7c4d74f3a119715597fe64b0cf3a0f415e92c21d771c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/core_audit.py": {
+      "bytes": 38079,
+      "sha256": "0da0dfef661211fd4ada262050895ef24ca54dfdc1aca4aa4bec4e69c1dcbce8"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/emit_linear.py": {
+      "bytes": 1329,
+      "sha256": "19e7dc5b5516674dc972aa4b1e15c6b10725192d3f5e8bf48419dbdb93446878"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/first_norm.py": {
+      "bytes": 3258,
+      "sha256": "badaa92471df68d9250f77d8584fee0eecafd8641d3873ab0f8babbf0d1d7438"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/freeze_packet.py": {
+      "bytes": 2664,
+      "sha256": "7fbf88a3af9f6f851f271a0c430eed693612d24a6f446575a2b837f74362963f"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/fresh_lift.py": {
+      "bytes": 4939,
+      "sha256": "3687079f107467cfa1b6205cc297878f4ccd1d61684f0efd25a47cc1cabd2bc0"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/frozen_conic_tests.py": {
+      "bytes": 9509,
+      "sha256": "e022d97f11399d12fdbf0c2e70b90f4a29d386c2b0f007faea5f50bbed5ec0c8"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/joint_chart.py": {
+      "bytes": 7806,
+      "sha256": "f6868d7fc6f6898388288d4f088966220158e888aa47def53cd21c599ef7ff85"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/linear_pole_kernel.py": {
+      "bytes": 2314,
+      "sha256": "01622f4c3f126d2c6bb190c0a4f87e7a22d45546baee99a33837c6ba60e96f1d"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/local_lucas.py": {
+      "bytes": 13008,
+      "sha256": "fc85b3c3a8a307bfa7113dc163790092b13738baef7e7431e071f31730f2b280"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/manifest.json": {
+      "bytes": 29560,
+      "sha256": "7654b06f450db87a3181dd5e16fe23949cb4e57d22751aef3681fed80a1fcf26"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/mutations.py": {
+      "bytes": 7134,
+      "sha256": "749d23458cbd2dbc96aefab9512e02fc716cd6d36471e316f3bb2d0a41928fb1"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/normalized_lucas.py": {
+      "bytes": 8089,
+      "sha256": "3e1e420306de2fbe51c17aeb8f24169e23a9d74f47601262d3333360e7c7d921"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/construction-map.json": {
+      "bytes": 27849,
+      "sha256": "85c62b411c112a639e5d1906259c7d57ee107eecca9baac3286ba5ec3834476a"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/Z_definition.json": {
+      "bytes": 50518,
+      "sha256": "5e96bf1b0de4e1694dcc7ff21a9a7b69b5e2cc61295c2fc2816696092c5dacde"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/q_anchor.json": {
+      "bytes": 731,
+      "sha256": "3edef11d7871866f6224bf9a6e4a6f2d99d5c8f535eef2d3c2c57f98a33f0f6f"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/q_compare4.json": {
+      "bytes": 16769,
+      "sha256": "924daadfdb5fb9f13b9e06fc7e457f224115d2e34801c070810d3ab5eef310c4"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/q_compare_beta.json": {
+      "bytes": 5278,
+      "sha256": "75189120b018c23bbf1573de56687103160872aca41d3d1d35138abb7b05203e"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/q_compare_lucas.json": {
+      "bytes": 14344,
+      "sha256": "a9157980855175cc0072f63c193c43f31c1350d850fdaeb3569d75e738229feb"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/q_conic10.json": {
+      "bytes": 7511,
+      "sha256": "6eaba063e47fa2210528829077c88a0873d68e111ff9bea39efa4c91456e245a"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/q_conic13.json": {
+      "bytes": 9766,
+      "sha256": "e228d0556e6b2c3376d07e30ed9093f9cd456503689720de9535b11aabdab2dc"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/q_conic6.json": {
+      "bytes": 5020,
+      "sha256": "01b8559bfb5e7e03447225b50afe562f4d3428bfcd4ea8f8add4b6c7d5215f51"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/q_height_batch.json": {
+      "bytes": 3972,
+      "sha256": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/q_linearnormalpole.json": {
+      "bytes": 1177,
+      "sha256": "b3f86d819e831eb6970ab4249cea9337a874a0adcdbc4bd13efef9678fba547d"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/modules/q_primeparity.json": {
+      "bytes": 820,
+      "sha256": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/source-audit.json": {
+      "bytes": 8503,
+      "sha256": "cdd8f03f79aaaa3f3445612c402b0e50dbf9dd8f2c73134802abb43e7fe465f7"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parent/source-entry.json": {
+      "bytes": 11133,
+      "sha256": "f9b10fde2222f228ccaea718c93f9a4dacaa18a6b30bef1ab4fca5ffc8438677"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/parity_scale_rule.py": {
+      "bytes": 4259,
+      "sha256": "3d545b06ab71c06ae98de43fd74e7ed59930dbcfdc3b970762a62475e480ea59"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/prepare_adapter.py": {
+      "bytes": 17478,
+      "sha256": "aa3c9f6ef0eed12da5ef3b9b26c4d58cfa37e23c3ad4c0e3e758e581b5a85809"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/probe_tangents.py": {
+      "bytes": 11610,
+      "sha256": "75299d5a1118dd7d75892786079003cd8588dc0b814017ae33c82672d00b80b0"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/rational_difference.py": {
+      "bytes": 8222,
+      "sha256": "be766e35b06d8f334c326dedfddc7c200d226a4c70af6a73fe66242aa4ccc898"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/reduce_norms.py": {
+      "bytes": 7018,
+      "sha256": "c2fd3a2805b9f1b9b756019a586b118dc25d4d92a070d4e7014f94ffe9c31540"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/root_rewrite.py": {
+      "bytes": 12977,
+      "sha256": "5a9d82fdb68db591a275c67b2c555735e1376a6a86da21221d76976abd68d479"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/run_candidate.py": {
+      "bytes": 7519,
+      "sha256": "eb15cb2ed6f8213fcd5ad436aa2fc2134673bd5923eb3e480e3803cb073138af"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/run_pipeline.py": {
+      "bytes": 4002,
+      "sha256": "388151877642214d9ef831123e277e6928e5eb0f5a8c328fbc0878a5d39b5848"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/shared_square.py": {
+      "bytes": 8794,
+      "sha256": "5a4b325c86255beb9f6271b0638822656c31ce46b8fa67997629ecd3e8887c73"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/shared_square_cases.py": {
+      "bytes": 6273,
+      "sha256": "42b33b7506998584b53d7ca7a6f309a1a8846c3d464cb9e620cabc5fe1c1cc7a"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/source_layout.py": {
+      "bytes": 17423,
+      "sha256": "4e8f9ada790ead20e87be1bcb226da9da0df12b8260d3aadfbcd6ffa10800d30"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/spec_linear.py": {
+      "bytes": 2225,
+      "sha256": "86789c5fd288d2c739659b1f15779d9c81599f84d54c14d7d26f17efe083603b"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/target2_rewrite.py": {
+      "bytes": 15169,
+      "sha256": "fa53e47698aaa11ddaf1383f74fb690fb69557c696064c8fd036893660c7c799"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_anchor_four.py": {
+      "bytes": 4793,
+      "sha256": "58429d4f4d410381b78da5231937a71ab8106927fde24bb1f880cdff7cb5936b"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_conic_batches.py": {
+      "bytes": 2744,
+      "sha256": "1eb0cec980d46d0caf4042c19d50290c0d124ec6d0960df41ece0755e1b68cb3"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_conic_locators.py": {
+      "bytes": 13849,
+      "sha256": "244db18687ab123538043b8ed4645a1517467ba540899cec3d319b0048049762"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_conic_pole.py": {
+      "bytes": 4399,
+      "sha256": "2edb6099952daeccabfc0bb56296b930c65027ad543e3fbdd4d5d5875de7de47"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_doublings.py": {
+      "bytes": 9977,
+      "sha256": "d5f6c7e8a5c05e8503182446d89b22bf4d41ff0924ac49c2653ed5429994bee6"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_first_norm_cases.py": {
+      "bytes": 5080,
+      "sha256": "e63a0ef152d0c9442330430d881e6c9f22b00230d9dd0355f8ad1147af7d9822"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_first_norm_identities.py": {
+      "bytes": 2481,
+      "sha256": "68b6e3c745ad871c365731420dc285d8818b930f1fdbf85147ebff62f0939e28"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_joint_chart.py": {
+      "bytes": 11341,
+      "sha256": "ff2255c543bb2613de33ea8cbdb2e4ba1f2b7d9d58e4797a1cf210d21e1304d1"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_joint_source.py": {
+      "bytes": 7352,
+      "sha256": "2e374076fa453fd5b6db1fb6811fe0397749f5611b119e658900ec6ac1ea5595"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_linear.py": {
+      "bytes": 4557,
+      "sha256": "1f64ffa57b0ebc5e200e8d28bc7079c4d543abfbb75cba5486cf6ee7b410e1c4"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_linear_integration.py": {
+      "bytes": 5518,
+      "sha256": "c7ddc64dc2678ef19d807693c693ff81cb148338ff2f171d0142328ec097e689"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_local_lucas.py": {
+      "bytes": 13562,
+      "sha256": "5d0c1df50330a39176ade07b124245c5f284d2bd5ef5e9270f0eb48c8c94096e"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_named_source.py": {
+      "bytes": 4936,
+      "sha256": "85bd99d054d2bce934a5f4f3437f976cb641ed249ff1cfc8e117a6c360e2d417"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_normalization_identity.py": {
+      "bytes": 3641,
+      "sha256": "75cc462431a1f61367398581a99f64e662f93fd697e52701718b139006242db3"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_normalized_lucas.py": {
+      "bytes": 16453,
+      "sha256": "b862d6d0959eb4b357d4a999228f6fb70f4ded5562e39542b8c65c593314c54c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_normalized_pole_source.py": {
+      "bytes": 3339,
+      "sha256": "780f5675a0986e83e97de4afdc954bcb46a7c2a7c2adc5effed05da9574bb286"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_pole_integration.py": {
+      "bytes": 3680,
+      "sha256": "5b4e50c12a7a288e2bf4169f4df74b8f55032efe3f965ddaff6724fa4e34eb52"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_proxy_removal.py": {
+      "bytes": 3440,
+      "sha256": "9160b88088f7777083dc89e69cd1231344bf2a8d2cc325b5bff230d0669a287c"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_rational_difference.py": {
+      "bytes": 6780,
+      "sha256": "de4171833bf486e64b917be5a8f6630f2f9a6702fccae77809d74d5b7f182ca7"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_root_audit.py": {
+      "bytes": 6374,
+      "sha256": "4d3499f018b3e268d67f4c0dad007905cc39dc2e9b2457eb484ef603d74f3ba8"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_root_shared_source.py": {
+      "bytes": 5443,
+      "sha256": "290fdc602bbcf7fef826471221e065a4029a93c913a5457cff1bb9f992f35305"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_shared_square.py": {
+      "bytes": 2279,
+      "sha256": "5d38f4a346122312561350329321a0574bd39f2d1b8902c167f1c06d709bb739"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_shared_square_resources.py": {
+      "bytes": 1104,
+      "sha256": "0c559035397a5b18c921e179fde7b157a8c906452c561e8571b17174cba58ccd"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_tangent_portable.py": {
+      "bytes": 1825,
+      "sha256": "55f90b183763362bb06d0050b0a684ca667cd65078333ef0ca24243f6231f99b"
+    },
+    "quartics/quartic-4973/reproducibility/pipeline/test_target2_audit.py": {
+      "bytes": 6041,
+      "sha256": "c25ef8482c8f01befd2c0c9e5e3465cc3e221b7cd7d3cd821fe2cc9f1a240e67"
+    },
+    "quartics/quartic-4973/reproducibility/plan_release.py": {
+      "bytes": 8128,
+      "sha256": "ee5566d8021475a64f1becaa60f4033b0b44de045fd96be4f3b4f0b593164f43"
+    },
+    "quartics/quartic-4973/reproducibility/prepare_package.py": {
+      "bytes": 2659,
+      "sha256": "2a009fdb951329418aa384b3bc54b0e06faf187b87eb3b70f647cd047750e173"
+    },
+    "quartics/quartic-4973/reproducibility/run.py": {
+      "bytes": 18917,
+      "sha256": "942350a2616ae3db936f1d976837c7578d37999a3be14974efd4b9030b1b6bf9"
+    },
+    "quartics/quartic-4973/reproducibility/runtime-manifest.json": {
+      "bytes": 1489,
+      "sha256": "bd5c8606ebc1b95414011eb2ef1e642f7529299a279b44668063aaa220c1f255"
+    },
+    "quartics/quartic-4973/reproducibility/selection.json": {
+      "bytes": 928,
+      "sha256": "f42e5b49ac08d5e132b0879fc51e3b3fb763ed6c4ad4b665d69b512ed9c10988"
+    },
+    "quartics/quartic-4973/reproducibility/test_binding.py": {
+      "bytes": 7316,
+      "sha256": "d3c79362bd5a943339bf3cf418a214c75bb244a49ee6dd18bf44a5b556262be6"
+    },
+    "quartics/quartic-4973/residuals.json.gz": {
+      "bytes": 118851,
+      "sha256": "67fa6e2554045ba89dad1575dc31299d0cf34ea93611fac7710b7183ea29f7ab"
+    },
+    "quartics/quartic-4973/source-audit.json": {
+      "bytes": 13295,
+      "sha256": "e4b93b2da1babcdc3fcf4a63123fd813143d559358fdf4c76f3880733977333f"
+    },
+    "quartics/quartic-4973/source-entry.json": {
+      "bytes": 14068,
+      "sha256": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857"
+    },
+    "quartics/quartic-4973/source-layout.json": {
+      "bytes": 49430,
+      "sha256": "50c518b1f7e5a69bda243c8b027c2ddd88193cd20d15b3f3ddcb4deffead1006"
+    },
+    "quartics/quartic-4973/source-residuals.jsonl.gz": {
+      "bytes": 108491,
+      "sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d"
+    },
+    "quartics/quartic-4973/source/CONIC_POLE_CONTRACT_ADDON.json": {
+      "bytes": 6436,
+      "sha256": "44bcef6a37f57a847f963313b146614b56ecf3fdb101e5443c2c65321494e4a4"
+    },
+    "quartics/quartic-4973/source/CONIC_SOURCE.json": {
+      "bytes": 8041,
+      "sha256": "0a0df805b2e0b2d7102278c4b20a8d584249c7f8b203fe9acd745bf76d4dcabc"
+    },
+    "quartics/quartic-4973/source/FIRST_NORM_CONTRACT.json": {
+      "bytes": 2121,
+      "sha256": "b327fcc99625f09c36509c6b22cb12edc4fdeb40c2f8a7b70f65f2509c75570c"
+    },
+    "quartics/quartic-4973/source/FIRST_NORM_PROOF.md": {
+      "bytes": 5744,
+      "sha256": "b18b32854d4ef6e8c49495ce404f7c96566a0a1926baca6f4ee1ed4cbedcba05"
+    },
+    "quartics/quartic-4973/source/JOINT_CHART_CONTRACT_ADDON.json": {
+      "bytes": 7865,
+      "sha256": "1793c7bdf798365247f04100d22c30490fa8e7e0df4f80534aaec8e2e775ffb3"
+    },
+    "quartics/quartic-4973/source/JOINT_SOURCE_CONTRACT.json": {
+      "bytes": 7714,
+      "sha256": "e658843c6ba95dc797f10e7c25c086189f9694a0689a88c203979c38f05ed79e"
+    },
+    "quartics/quartic-4973/source/LOCAL_LUCAS_CONTRACT_ADDON.json": {
+      "bytes": 7633,
+      "sha256": "13ebcdd31363e8d482a8daac988da75ac314d66a1d989926e39bdf01d4418048"
+    },
+    "quartics/quartic-4973/source/LOCAL_LUCAS_POLE_CONTRACT.json": {
+      "bytes": 6237,
+      "sha256": "cd7e4039c533eed79afd75fea9ba6abb53f10b7a26ea990b195b9f2c15badd8b"
+    },
+    "quartics/quartic-4973/source/LOCAL_LUCAS_SOURCE_CONTRACT.json": {
+      "bytes": 2381,
+      "sha256": "233ea7424864fb0d828346cfbfe29459cbc09e801d3d5cd327675b5ea3d95ad8"
+    },
+    "quartics/quartic-4973/source/MIXED_MODE_DENOMINATOR_CLARIFICATION.md": {
+      "bytes": 3183,
+      "sha256": "2a1eb8ed9a7175995afa665a08035728c1714b5fa30e1ba52030b6adf7b8ba34"
+    },
+    "quartics/quartic-4973/source/NORMALIZED10_CONTRACT.json": {
+      "bytes": 2275,
+      "sha256": "19c3f7d65aae9f38aeaea9cc9c079d0ec7ca9918123d96d1744813ae81e61869"
+    },
+    "quartics/quartic-4973/source/NORMALIZED_LUCAS_CONTRACT_ADDON.json": {
+      "bytes": 6936,
+      "sha256": "af365079cce1bd502dc2d683fc1f76fa2a2ca85c396c22be888dbd9fb3237cb0"
+    },
+    "quartics/quartic-4973/source/NORMALIZED_PARENT_PINS.json": {
+      "bytes": 781,
+      "sha256": "d94bf88c98b5c3e5110ed9ab58c587ba83a7cda17b736f1a0d9d226e0b415e59"
+    },
+    "quartics/quartic-4973/source/NORMALIZED_POLE_CONTRACT.json": {
+      "bytes": 9380,
+      "sha256": "0ad8288dd3a44daa524e753dfba04b0b788de46d84bfa63d3f34a71d3272dd10"
+    },
+    "quartics/quartic-4973/source/NORMALIZED_SOURCE_CONTRACT.json": {
+      "bytes": 3349,
+      "sha256": "b038a32f4b22de7a43680857dc693d5614d25c6d0f432841bbafd2a8577898d6"
+    },
+    "quartics/quartic-4973/source/PARENT_SOURCE_PINS.json": {
+      "bytes": 1641,
+      "sha256": "003211cbd8995b9b251596d56411a2c51ca7121176ada686c22591f333f56bac"
+    },
+    "quartics/quartic-4973/source/ROOT_COMPOSITION_CONTRACT.json": {
+      "bytes": 3902,
+      "sha256": "4e41f830938c3bdf8b5361b410a2fb639bd74299f0461fb356afe2efb012f2b7"
+    },
+    "quartics/quartic-4973/source/ROOT_SHARED_CONTRACT.json": {
+      "bytes": 4206,
+      "sha256": "73e17ecc19a797ce442412549931ff11e43f42ebff9c48e1b2c636ff2d839a8c"
+    },
+    "quartics/quartic-4973/source/ROOT_SOURCE_CONTRACT.json": {
+      "bytes": 5596,
+      "sha256": "505b3a743585187ebde58642bb02237dbb45bc55b328b5b88bd84a0724cf1d5c"
+    },
+    "quartics/quartic-4973/source/SELECTED_PARENT.json": {
+      "bytes": 2075,
+      "sha256": "248778bdda2810db04368a692bd39ff5e17edcf954585e19613493ec9b6f58d0"
+    },
+    "quartics/quartic-4973/source/SHARED_SQUARE_CONTRACT.json": {
+      "bytes": 4381,
+      "sha256": "13f97f687a15f1d0bf283b608c8c00b425c2c4797eb9b4dc0df14fa2a93c3750"
+    },
+    "quartics/quartic-4973/source/TANGENT_PROOF.md": {
+      "bytes": 3339,
+      "sha256": "3591709058c666a1dd2786d46039b408a04f1908b644c16c6f722a72788a50c8"
+    },
+    "quartics/quartic-4973/source/TANGENT_SOURCE_CONTRACT.json": {
+      "bytes": 1529,
+      "sha256": "d9ef1fedd0703377747353f44619d73eca47c160634757de7c477fc02c887e70"
+    },
+    "quartics/quartic-4973/source/TARGET2_COMPOSITION_CONTRACT.json": {
+      "bytes": 7937,
+      "sha256": "77e26c27804a00701306c115984df84129e26431ff285468a8e8f14cd8b217dd"
+    },
+    "quartics/quartic-4973/source/TARGET_TWO_CONTRACT.md": {
+      "bytes": 6606,
+      "sha256": "8e42299e4d281ecab724868d39eeb21589957c971516296500b942605ac0b711"
+    },
+    "quartics/quartic-4973/source/TARGET_TWO_PROOF.md": {
+      "bytes": 7605,
+      "sha256": "cfc62097ffdbf072fe77524f7e0448356812712689394ca22dfc4a0fd64b7feb"
+    },
+    "quartics/quartic-4973/source/TARGET_TWO_SOURCE_CONTRACT.json": {
+      "bytes": 3000,
+      "sha256": "510ee91c4777c4e8ae4343622817b90e30a20e7507ec83fa7a26bc8b50d581c7"
+    },
+    "quartics/quartic-4973/source/compiler/anchor_four_kernel.py": {
+      "bytes": 1086,
+      "sha256": "4f5944cfe3dd16f5a38ab7113e54a5ecba1faccfecac0d23b7c2f36b76a00dcb"
+    },
+    "quartics/quartic-4973/source/compiler/archive_build.py": {
+      "bytes": 20149,
+      "sha256": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912"
+    },
+    "quartics/quartic-4973/source/compiler/beta_kernel.py": {
+      "bytes": 5035,
+      "sha256": "38f5524c9e87a9a7baea0e83b78a77c0f7e32230f52cbe1e3270806094d8c1e5"
+    },
+    "quartics/quartic-4973/source/compiler/build_source.py": {
+      "bytes": 12078,
+      "sha256": "2f973408d8f022fdf178606bc42a6ce41ec68aa0272b0e7186df2e5fff00bd61"
+    },
+    "quartics/quartic-4973/source/compiler/combined_kernel.py": {
+      "bytes": 9201,
+      "sha256": "f41dc82a5dd451b3196bd20f46c14bb5a2ace4a29d6d22bc898725f1eba6e9f5"
+    },
+    "quartics/quartic-4973/source/compiler/compress_doublings.py": {
+      "bytes": 8635,
+      "sha256": "a136e6cce43277ed63351fd1989c428c48b811b9a8682d213f6609d6a95f5cb2"
+    },
+    "quartics/quartic-4973/source/compiler/conic_lucas.py": {
+      "bytes": 11325,
+      "sha256": "42fcb55ec95be9ee34e98c5d0b0e672062b7cce6c5f9f9d0e676edff72e5ed86"
+    },
+    "quartics/quartic-4973/source/compiler/emit_linear.py": {
+      "bytes": 1329,
+      "sha256": "19e7dc5b5516674dc972aa4b1e15c6b10725192d3f5e8bf48419dbdb93446878"
+    },
+    "quartics/quartic-4973/source/compiler/first_norm.py": {
+      "bytes": 3258,
+      "sha256": "badaa92471df68d9250f77d8584fee0eecafd8641d3873ab0f8babbf0d1d7438"
+    },
+    "quartics/quartic-4973/source/compiler/joint_chart.py": {
+      "bytes": 7806,
+      "sha256": "f6868d7fc6f6898388288d4f088966220158e888aa47def53cd21c599ef7ff85"
+    },
+    "quartics/quartic-4973/source/compiler/linear_pole_kernel.py": {
+      "bytes": 2314,
+      "sha256": "01622f4c3f126d2c6bb190c0a4f87e7a22d45546baee99a33837c6ba60e96f1d"
+    },
+    "quartics/quartic-4973/source/compiler/local_lucas.py": {
+      "bytes": 13008,
+      "sha256": "fc85b3c3a8a307bfa7113dc163790092b13738baef7e7431e071f31730f2b280"
+    },
+    "quartics/quartic-4973/source/compiler/lowprecision_kernel.py": {
+      "bytes": 5810,
+      "sha256": "66854ff3ee24d8dd6f4b3b54fa5ca627d87b5d0da09cafa35e3d05d47d0d5c31"
+    },
+    "quartics/quartic-4973/source/compiler/normalized_lucas.py": {
+      "bytes": 8089,
+      "sha256": "3e1e420306de2fbe51c17aeb8f24169e23a9d74f47601262d3333360e7c7d921"
+    },
+    "quartics/quartic-4973/source/compiler/rational_difference.py": {
+      "bytes": 8222,
+      "sha256": "be766e35b06d8f334c326dedfddc7c200d226a4c70af6a73fe66242aa4ccc898"
+    },
+    "quartics/quartic-4973/source/compiler/shared_square.py": {
+      "bytes": 8794,
+      "sha256": "5a4b325c86255beb9f6271b0638822656c31ce46b8fa67997629ecd3e8887c73"
+    },
+    "quartics/quartic-4973/source/compiler/target2_rewrite.py": {
+      "bytes": 15169,
+      "sha256": "fa53e47698aaa11ddaf1383f74fb690fb69557c696064c8fd036893660c7c799"
+    },
+    "quartics/quartic-4973/source/counts.json": {
+      "bytes": 519,
+      "sha256": "8125c7db12e018fcff85ff849d13f5b24a7323e25c94a11d905ec7be42c9ca72"
+    },
+    "quartics/quartic-4973/source/modules/Z_definition.json": {
+      "bytes": 40523,
+      "sha256": "221e5ee5b95d18081941dd4ecd6977990bb170e583b182b2fbe329726ab35d59"
+    },
+    "quartics/quartic-4973/source/modules/q_anchor.json": {
+      "bytes": 731,
+      "sha256": "3edef11d7871866f6224bf9a6e4a6f2d99d5c8f535eef2d3c2c57f98a33f0f6f"
+    },
+    "quartics/quartic-4973/source/modules/q_compare4.json": {
+      "bytes": 17172,
+      "sha256": "32b774216d8404d4a046d64bff9d51280e83c6b63699012d20f852f90a3c1301"
+    },
+    "quartics/quartic-4973/source/modules/q_compare_beta.json": {
+      "bytes": 5680,
+      "sha256": "c3f5f3895d805ae4027d53c437440bb9666ebc74e48e2c656dd8e27618b7781c"
+    },
+    "quartics/quartic-4973/source/modules/q_compare_lucas.json": {
+      "bytes": 14605,
+      "sha256": "418277c6d6f4187ed10cb721a219dd561d3580150fd3320384e9f1f1cac69cdb"
+    },
+    "quartics/quartic-4973/source/modules/q_conic10.json": {
+      "bytes": 8051,
+      "sha256": "1a72243de8cc0de56d9a1b90922bbb8637ba447f033999821ac5c4a74afefaf0"
+    },
+    "quartics/quartic-4973/source/modules/q_conic13.json": {
+      "bytes": 10304,
+      "sha256": "6c8ae40d31ac835612fc2ae980e27e6bc6338190e4f4282b14637d08782a52a5"
+    },
+    "quartics/quartic-4973/source/modules/q_conic6.json": {
+      "bytes": 5560,
+      "sha256": "aff175c604c523f88741cf6a2024cfd1d06edbb8984f5edf591ed06cbc7deaed"
+    },
+    "quartics/quartic-4973/source/modules/q_height_batch.json": {
+      "bytes": 3972,
+      "sha256": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761"
+    },
+    "quartics/quartic-4973/source/modules/q_linearnormalpole.json": {
+      "bytes": 1177,
+      "sha256": "b3f86d819e831eb6970ab4249cea9337a874a0adcdbc4bd13efef9678fba547d"
+    },
+    "quartics/quartic-4973/source/modules/q_primeparity.json": {
+      "bytes": 820,
+      "sha256": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a"
+    },
+    "quartics/quartic-4973/source/polynomial.json": {
+      "bytes": 1177,
+      "sha256": "1d644b27d173b2467576e404eba009345cc5f98cc43bba4a9936193c489190c1"
+    },
+    "quartics/quartic-4973/source/residuals.jsonl": {
+      "bytes": 383130,
+      "sha256": "4a82d9a8dc1b5c92eb40a49751c0a6aae073c8f765ca5e276a74802fd56b84be"
+    },
+    "quartics/quartic-4973/source/shared.json": {
+      "bytes": 699,
+      "sha256": "f879f79eb7e8072176c8204df4c07a0097a219b7c2452c7c09bd52ca04abe83e"
+    },
+    "quartics/quartic-4973/variable-map.json": {
+      "bytes": 23939,
+      "sha256": "2402920061d7db7084485d448c8f8c0c9688900d1946d73db390cdf6c21a2a3b"
+    },
+    "quartics/quartic-4973/verify_certificate.py": {
+      "bytes": 73987,
+      "sha256": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe"
+    },
+    "quartics/quartic-4973/weights.json": {
+      "bytes": 9106,
+      "sha256": "3dd137c9c1a8930b0f9d2de90cf49d6bd71b24de77b9a0317ac4ce97b9c10da8"
+    },
+    "quartics/quartic-9625/README.md": {
+      "bytes": 1724,
+      "sha256": "29e3ef58046d7c7fa58a6eefac4233ea5c6c86c51b377d1eb74865babab820b1"
+    },
+    "quartics/quartic-9625/candidate-rows.json.gz": {
+      "bytes": 164310,
+      "sha256": "bb9605f4c80be64ed175ade81dedf9c580c2b20ebdeee544df2489978c44d446"
+    },
+    "quartics/quartic-9625/certificate.jsonl.gz": {
+      "bytes": 380278,
+      "sha256": "8aaa2249eda6972c441d58b212ec64a53e1202d5e9f74ea4cbc53e7e3f71a0bd"
+    },
+    "quartics/quartic-9625/construction-map.json": {
+      "bytes": 27252,
+      "sha256": "bcefd99b40537c59c422e9e44ebc6e444469ddb873909239e8a21d3e9d82f7f9"
+    },
+    "quartics/quartic-9625/evidence/original-run/RUN_INPUTS.json": {
+      "bytes": 296,
+      "sha256": "76f6c3a8f4bec97a0d487f72bd2affdd5239f63f7a3b9808fd0f243921058a87"
+    },
+    "quartics/quartic-9625/evidence/original-run/SUMMARY.json": {
+      "bytes": 9315,
+      "sha256": "3e04f5e1abae5cec8ddb17aedf57795e5a2e678f0727a1db24a2451a4dfef41d"
+    },
+    "quartics/quartic-9625/evidence/original-run/named-source-mutations.json": {
+      "bytes": 1394,
+      "sha256": "f3cd872eb83c18faba26a3fa46a3782768987ef97b4036bbe684fae39e66ec8e"
+    },
+    "quartics/quartic-9625/evidence/original-run/source-determinism.json": {
+      "bytes": 1799,
+      "sha256": "6a8adbeba2a6ef19344af8cab67c37d56d85e2578105b3219e48cc963f8c7465"
+    },
+    "quartics/quartic-9625/evidence/original-run/source-mutations.json": {
+      "bytes": 1145,
+      "sha256": "d5cad775b59d72c0b18dfebde1fd27ea3e65a8a0a755976263e3ef7ab88a40e7"
+    },
+    "quartics/quartic-9625/evidence/original-run/stages.json": {
+      "bytes": 9472,
+      "sha256": "770b7f58c62a937316d84f88e3b6370f825041b2b973a9a67d4fe70375d23caa"
+    },
+    "quartics/quartic-9625/evidence/stages/batch.json": {
+      "bytes": 1120,
+      "sha256": "d3eb9c7790dbc3ffc64948f362277eec885204eb9c379c922df19605559c7768"
+    },
+    "quartics/quartic-9625/evidence/stages/charts.json": {
+      "bytes": 1050,
+      "sha256": "e54316954595b5fcafa5a3b92e3ae8657c7b3502ec8e5a0c9a807ac70e1f7e42"
+    },
+    "quartics/quartic-9625/evidence/stages/coordinates.json": {
+      "bytes": 1177,
+      "sha256": "43ef58641d36e58d3d1422150e48f1858d0b0844b78be41cd939b1eb53e80053"
+    },
+    "quartics/quartic-9625/evidence/stages/fresh-lift.json": {
+      "bytes": 969,
+      "sha256": "521951fa45534a8d82874c4c5ad372f06c114a2fea1eb9b2ffef6a688813d972"
+    },
+    "quartics/quartic-9625/evidence/stages/norms.json": {
+      "bytes": 1027,
+      "sha256": "a9d2733725eff113dd61a57fa7610297039704c302b710e9d2755f7f4a521cbd"
+    },
+    "quartics/quartic-9625/evidence/stages/optimized.json": {
+      "bytes": 1161,
+      "sha256": "63cecfc178a005230cbf7bf5e911e26d07b5c4e8bf770377351d6e8771387abf"
+    },
+    "quartics/quartic-9625/evidence/stages/ordinates.json": {
+      "bytes": 1075,
+      "sha256": "fcdf38d75a8c1d52dd6e89fb7eb67aa83031367620e12e633ee446d46d2ab155"
+    },
+    "quartics/quartic-9625/evidence/stages/parity.json": {
+      "bytes": 1099,
+      "sha256": "fae1567725cff4e64c4bbb614358da35748504b3ece8a86b31e0693e853ba25a"
+    },
+    "quartics/quartic-9625/polynomial.expanded.txt": {
+      "bytes": 1558552,
+      "sha256": "6d67d45f3d615b7fd2242e3a9404dd9f5da570fc711a29ebe77f613e80ebbf99"
+    },
+    "quartics/quartic-9625/polynomial.expanded.txt.gz": {
+      "bytes": 469949,
+      "sha256": "6b4e4d11c20f8ea883f9bb607e878fe53acb8e213bf34bfed4c2350ef9896f48"
+    },
+    "quartics/quartic-9625/reproducibility/README.md": {
+      "bytes": 3803,
+      "sha256": "36a780ff2008022ca09a8238a00f7206a9f81048e1931e830c807bdb846ec911"
+    },
+    "quartics/quartic-9625/reproducibility/copy-plan.json": {
+      "bytes": 33979,
+      "sha256": "e0215e0c75e44bda8c6bdba917ef88bd9680c514ef2b43607268e78e81aeeee8"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/astra-wave11/batching/absorb_batch_error.py": {
+      "bytes": 12942,
+      "sha256": "ba9f073a9b9628e9848ee54b7f6d4421785246ed711d9c117993de035d47c588"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/astra-wave11/batching/check_batch_absorb.py": {
+      "bytes": 7827,
+      "sha256": "f3d14675eb656849c305f0437ca8b733bb3cb0512b92b68e5892f07af638509c"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/astra-wave11/charts/check_chart_replacement.py": {
+      "bytes": 6591,
+      "sha256": "e2a3e2f006b425bdd3a1baba5c9e47f0b498fc5858ed02dcb0886971a99b8fb6"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/astra-wave11/charts/remove_chart_ordinates.py": {
+      "bytes": 3802,
+      "sha256": "0654945ff462e8a158d2f89accb52cf19b34534eed9dba2cea62f393ba19b03b"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/astra-wave11/charts/replace_charts.py": {
+      "bytes": 5783,
+      "sha256": "b34e218ebab191d66415d1a99f659318c71018f4a58c3bbb2e704cd1f9f16eb1"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/astra-wave11/parity/parity_rule.py": {
+      "bytes": 5163,
+      "sha256": "dd43bdbe277ec4de10e0e5ad472cc5f54ef7f2408f99b80e70ce1b852a8f020f"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/astra-wave11/parity/produce_parity.py": {
+      "bytes": 4684,
+      "sha256": "b4125d339cd2fa56240584e4aa55af010c98734a5e56c6c8f112a43f0889210a"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/export_artifact.py": {
+      "bytes": 2474,
+      "sha256": "791c8e503407b2b58cbdb788785a952e2d6bc2720f34802ece2b0958cb07ccb4"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/merge_coordinates.py": {
+      "bytes": 5707,
+      "sha256": "bdb81b3fa2e99fe373da4f1e4b527c12decfa463da47e44f7ac7ddc304961f5e"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/merge_kernel.py": {
+      "bytes": 7230,
+      "sha256": "47562044bb4caeedb49ab0e31e1ef138f4c32ed183c7914722e2d64e54768b63"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/optimize.py": {
+      "bytes": 14119,
+      "sha256": "6a0653e237f87a31808f64938761b42168691eb7773bee0a7ac5aca762a9de97"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/polynomial_ops.py": {
+      "bytes": 972,
+      "sha256": "fe325ee902ed3226da28277e4a70fd924a9628e40d5bea39451bba6c52a2b5c5"
+    },
+    "quartics/quartic-9625/reproducibility/external-repository/research/quartic-variables/verify_certificate.py": {
+      "bytes": 22855,
+      "sha256": "74dba155b43b1e6f707b8b6e3d335302eb25c8be8052017c9b47bc188758eff9"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-adapter-manifest.json": {
+      "bytes": 3439,
+      "sha256": "5bf5ed37f398d155e5e9732e26f7e64549498d9bc3d179dc102fa1d4bc08e473"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/absorb_batch_error.py": {
+      "bytes": 13381,
+      "sha256": "453b41ac38e610aa9641e11600647a3f056e0aa36b1511a562608607a389be80"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/check_batch_absorb.py": {
+      "bytes": 7827,
+      "sha256": "f3d14675eb656849c305f0437ca8b733bb3cb0512b92b68e5892f07af638509c"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/check_chart_replacement.py": {
+      "bytes": 6591,
+      "sha256": "e2a3e2f006b425bdd3a1baba5c9e47f0b498fc5858ed02dcb0886971a99b8fb6"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/export_artifact.py": {
+      "bytes": 2474,
+      "sha256": "791c8e503407b2b58cbdb788785a952e2d6bc2720f34802ece2b0958cb07ccb4"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/fresh_lift.py": {
+      "bytes": 4939,
+      "sha256": "3687079f107467cfa1b6205cc297878f4ccd1d61684f0efd25a47cc1cabd2bc0"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/merge_coordinates.py": {
+      "bytes": 5707,
+      "sha256": "bdb81b3fa2e99fe373da4f1e4b527c12decfa463da47e44f7ac7ddc304961f5e"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/merge_kernel.py": {
+      "bytes": 7230,
+      "sha256": "47562044bb4caeedb49ab0e31e1ef138f4c32ed183c7914722e2d64e54768b63"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/optimize.py": {
+      "bytes": 14119,
+      "sha256": "6a0653e237f87a31808f64938761b42168691eb7773bee0a7ac5aca762a9de97"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/parity_rule.py": {
+      "bytes": 5163,
+      "sha256": "dd43bdbe277ec4de10e0e5ad472cc5f54ef7f2408f99b80e70ce1b852a8f020f"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/polynomial_ops.py": {
+      "bytes": 972,
+      "sha256": "fe325ee902ed3226da28277e4a70fd924a9628e40d5bea39451bba6c52a2b5c5"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/produce_parity.py": {
+      "bytes": 4902,
+      "sha256": "592c1b69da7079f285aba7baac61f478f96ce6ad48ba2994c031b41fb013096e"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/reduce_norms.py": {
+      "bytes": 7018,
+      "sha256": "c2fd3a2805b9f1b9b756019a586b118dc25d4d92a070d4e7014f94ffe9c31540"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/remove_chart_ordinates.py": {
+      "bytes": 3977,
+      "sha256": "c86d64b38b261472245ba85b57751b833dd301c7a22b5555c4efed737433b1ec"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/replace_charts.py": {
+      "bytes": 6174,
+      "sha256": "ad482d1d916e9fa182fce3a71e8890a4dcd6e5c0425968f929563bf49eff9429"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/run_pipeline.py": {
+      "bytes": 4110,
+      "sha256": "cba2e7813232962850f7147666975f5fec7b7629bd9b5843f0a48ee105fe5d21"
+    },
+    "quartics/quartic-9625/reproducibility/frozen-tools/source_layout.py": {
+      "bytes": 7399,
+      "sha256": "a3bbfe5ee16e84a47a9b2ca28d62fa83b40ddbfcb112e95d338a9fc15c2e2b80"
+    },
+    "quartics/quartic-9625/reproducibility/manifest.json": {
+      "bytes": 22936,
+      "sha256": "eb4b2ae93f932d96919d8779f937b7eec47163c8cf8909d1b66a55b1fdc08559"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/AUDITOR_PIN.json": {
+      "bytes": 531,
+      "sha256": "5ee35204becc724c004942feed160bc45299e5d88985fbfdcac5793a0519f0ad"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/BASELINE.json": {
+      "bytes": 1852,
+      "sha256": "2a1c41a19f0813e8676c4cbe57eb49a3faa0926f095389d8a4a2b390ea91035d"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/PINNED_INPUTS.json": {
+      "bytes": 2067,
+      "sha256": "568a430b4fc223164b9ad19ba2e0e408afca5888b71e25ed715a4ae14b5839d6"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/README.md": {
+      "bytes": 2714,
+      "sha256": "036f5136fab82efce2d9b51cd8314856f16cc69afe94ae2ddc8867765a595b01"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/STATUS.md": {
+      "bytes": 824,
+      "sha256": "4e739ef7c6e0b35a832a07142435e17ee05b979c148e2e2a9b257934523c6879"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/adapt_absorb.py": {
+      "bytes": 2350,
+      "sha256": "40ba2ed31851289046972149097533e193b163bf88c7eb2b0f35d1c17990bf2d"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/base_adapter.py": {
+      "bytes": 14349,
+      "sha256": "cabb72d21f1308925513003a7375d8b87f766328485d0dd554597dad32e77ed5"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/COMBINED_SOURCE.json": {
+      "bytes": 3071,
+      "sha256": "2e1b1fba14916121388adc0eb77242cccbbabe5f5c2272eb02e6717a88f07f6a"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/compiler/archive_build.py": {
+      "bytes": 20149,
+      "sha256": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/compiler/build_combined_source.py": {
+      "bytes": 6793,
+      "sha256": "e8f8dabb4acb1cfce945147bc21969856e4d939961e9d37598e0527509515042"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/compiler/combined_kernel.py": {
+      "bytes": 9201,
+      "sha256": "f41dc82a5dd451b3196bd20f46c14bb5a2ace4a29d6d22bc898725f1eba6e9f5"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/compiler/lowprecision_kernel.py": {
+      "bytes": 5810,
+      "sha256": "66854ff3ee24d8dd6f4b3b54fa5ca627d87b5d0da09cafa35e3d05d47d0d5c31"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/modules/Z_definition.json": {
+      "bytes": 38251,
+      "sha256": "26b6b8674056bb3e7b4ba8ca75bd5b2b47cba7a58c1d84db78ba108a2f264117"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/modules/q_anchor.json": {
+      "bytes": 1337,
+      "sha256": "e5b74df60328d739e94224f199efb16dd817c994658c95d5dd781704bcf94fb1"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/modules/q_batch41.json": {
+      "bytes": 7463,
+      "sha256": "a45569adc62e09ce254b01cb38a3b31eb891842a73f515f21732eeeb24799985"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/modules/q_compare4.json": {
+      "bytes": 25317,
+      "sha256": "ef3aba59c082b9dc312993cc5ea8d0298cc1c81b21e58d4762186bb9a53d4eb2"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/modules/q_height_batch.json": {
+      "bytes": 3972,
+      "sha256": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/baseline/modules/q_primeparity.json": {
+      "bytes": 820,
+      "sha256": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/beta_kernel.py": {
+      "bytes": 2944,
+      "sha256": "ed2ffbd0e1533fe071b81f9cbd3cacfd7cf2897dba7084c220b3eac23c56516d"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/build_source.py": {
+      "bytes": 3383,
+      "sha256": "7cce6989be939c0422db3cbe3bb0735e3e31b2528beb0ff7f66be749ad2ae2b6"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/check_packet_syntax.py": {
+      "bytes": 2537,
+      "sha256": "5f9fbb4e375dc9f925b696b443506c61506d1aad3a276eae0848efbbf376182e"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/check_source.py": {
+      "bytes": 9502,
+      "sha256": "41a3d780636c1f28852762ee0ce7a252e207ec74e7367da275676200a6068ffa"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/core_audit.py": {
+      "bytes": 38079,
+      "sha256": "0da0dfef661211fd4ada262050895ef24ca54dfdc1aca4aa4bec4e69c1dcbce8"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/freeze_packet.py": {
+      "bytes": 1934,
+      "sha256": "9c320dc234c41586e1c4e7ac84e696b22a7efce6533e39db210cc91f8aeee280"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/fresh_lift.py": {
+      "bytes": 4939,
+      "sha256": "3687079f107467cfa1b6205cc297878f4ccd1d61684f0efd25a47cc1cabd2bc0"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/manifest.json": {
+      "bytes": 7250,
+      "sha256": "eaaec2449711c625fc4afcf16dd33286c2c5d91ea568c6542317d2b1ba6623cb"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/prepare_adapter.py": {
+      "bytes": 14363,
+      "sha256": "80b85e5c4232e8b7f0d3ca7721f50aed6770ec36ab8bb5e6f5c8741d4cef31d3"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/reduce_norms.py": {
+      "bytes": 7018,
+      "sha256": "c2fd3a2805b9f1b9b756019a586b118dc25d4d92a070d4e7014f94ffe9c31540"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/run_candidate.py": {
+      "bytes": 5707,
+      "sha256": "7c895f55c343dfdc05c1bab2fa13604f0af77324e5fa38a72b8fd432c2f782ae"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/run_pipeline.py": {
+      "bytes": 4110,
+      "sha256": "cba2e7813232962850f7147666975f5fec7b7629bd9b5843f0a48ee105fe5d21"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/source_layout.py": {
+      "bytes": 7399,
+      "sha256": "a3bbfe5ee16e84a47a9b2ca28d62fa83b40ddbfcb112e95d338a9fc15c2e2b80"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/test_locators.py": {
+      "bytes": 6249,
+      "sha256": "5d7612a39843ae7b065295d6eb429840bf9e73dc47680c8617fff91d797f86a1"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/test_named_source.py": {
+      "bytes": 4936,
+      "sha256": "85bd99d054d2bce934a5f4f3437f976cb641ed249ff1cfc8e117a6c360e2d417"
+    },
+    "quartics/quartic-9625/reproducibility/pipeline/test_source.py": {
+      "bytes": 4072,
+      "sha256": "d36dc63790049ec3e9a7a4461d058fd6048651f9c8dfc49a73048c2b5d3004af"
+    },
+    "quartics/quartic-9625/reproducibility/plan_package.py": {
+      "bytes": 7363,
+      "sha256": "37050b26ad42b6d969244c651db41d51e41ec5a7b038db9d9301e640924f4847"
+    },
+    "quartics/quartic-9625/reproducibility/prepare_package.py": {
+      "bytes": 2659,
+      "sha256": "2a009fdb951329418aa384b3bc54b0e06faf187b87eb3b70f647cd047750e173"
+    },
+    "quartics/quartic-9625/reproducibility/run.py": {
+      "bytes": 14411,
+      "sha256": "8afd999aa7e3c2fa091705fc754e5a625bd7a1f40a4d09f31b4256128a87a66c"
+    },
+    "quartics/quartic-9625/residuals.json.gz": {
+      "bytes": 162767,
+      "sha256": "f0fa1a5911616b59a497c4af04dc071e47701937e5b2a429fd87e0111f9d1b19"
+    },
+    "quartics/quartic-9625/source-audit.json": {
+      "bytes": 3502,
+      "sha256": "9020dcfdcfab0b05a1b26d9f73713369bde40dae3fe5f179fab77bafcc5f0b40"
+    },
+    "quartics/quartic-9625/source-entry.json": {
+      "bytes": 4772,
+      "sha256": "8b45e266b0b4692320bb4f4924a2d3216d5f17fdc47a5c7fb9cdf6010a9a36f7"
+    },
+    "quartics/quartic-9625/source-layout.json": {
+      "bytes": 26317,
+      "sha256": "c9ea9cd505cdb42f94d67d46fa0dca896860df8bf518d717e115c50c5e154634"
+    },
+    "quartics/quartic-9625/source-residuals.jsonl.gz": {
+      "bytes": 142423,
+      "sha256": "97b7bc300084afaefe9980f1feea760be8b4dedaf6eb788fcc4c3af440262579"
+    },
+    "quartics/quartic-9625/source/BETA_SOURCE.json": {
+      "bytes": 2266,
+      "sha256": "f263dafbe24f85b74ff5059df9973422217effc115941f267399bf3671a6d9fa"
+    },
+    "quartics/quartic-9625/source/compiler/archive_build.py": {
+      "bytes": 20149,
+      "sha256": "c7ef798894a106e3c6b02816583be2b6e966e4e701f73ee670c9a0de52a70912"
+    },
+    "quartics/quartic-9625/source/compiler/beta_kernel.py": {
+      "bytes": 2944,
+      "sha256": "ed2ffbd0e1533fe071b81f9cbd3cacfd7cf2897dba7084c220b3eac23c56516d"
+    },
+    "quartics/quartic-9625/source/compiler/build_source.py": {
+      "bytes": 3383,
+      "sha256": "7cce6989be939c0422db3cbe3bb0735e3e31b2528beb0ff7f66be749ad2ae2b6"
+    },
+    "quartics/quartic-9625/source/compiler/combined_kernel.py": {
+      "bytes": 9201,
+      "sha256": "f41dc82a5dd451b3196bd20f46c14bb5a2ace4a29d6d22bc898725f1eba6e9f5"
+    },
+    "quartics/quartic-9625/source/compiler/lowprecision_kernel.py": {
+      "bytes": 5810,
+      "sha256": "66854ff3ee24d8dd6f4b3b54fa5ca627d87b5d0da09cafa35e3d05d47d0d5c31"
+    },
+    "quartics/quartic-9625/source/counts.json": {
+      "bytes": 432,
+      "sha256": "551c3d2dc10f812261b4af7ad732ea2618c6cd5046bda0c5cfff4bcd159570bd"
+    },
+    "quartics/quartic-9625/source/modules/Z_definition.json": {
+      "bytes": 37982,
+      "sha256": "c79a28fdfdd42d16d37e083ba76c30a3c225be5662cc41ddaf00ebe32147b77d"
+    },
+    "quartics/quartic-9625/source/modules/q_anchor.json": {
+      "bytes": 1337,
+      "sha256": "e5b74df60328d739e94224f199efb16dd817c994658c95d5dd781704bcf94fb1"
+    },
+    "quartics/quartic-9625/source/modules/q_batch17.json": {
+      "bytes": 3518,
+      "sha256": "a1e5b8b88e69b85cb165521eeb9791f130ed342d30424d591f1dac585e5840a5"
+    },
+    "quartics/quartic-9625/source/modules/q_batch41.json": {
+      "bytes": 7463,
+      "sha256": "a45569adc62e09ce254b01cb38a3b31eb891842a73f515f21732eeeb24799985"
+    },
+    "quartics/quartic-9625/source/modules/q_compare4.json": {
+      "bytes": 25317,
+      "sha256": "ef3aba59c082b9dc312993cc5ea8d0298cc1c81b21e58d4762186bb9a53d4eb2"
+    },
+    "quartics/quartic-9625/source/modules/q_compare_beta.json": {
+      "bytes": 8541,
+      "sha256": "8af636d55884340de851952144e1243bb7d89c35708178055083ccf5f92659a8"
+    },
+    "quartics/quartic-9625/source/modules/q_height_batch.json": {
+      "bytes": 3972,
+      "sha256": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761"
+    },
+    "quartics/quartic-9625/source/modules/q_primeparity.json": {
+      "bytes": 820,
+      "sha256": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a"
+    },
+    "quartics/quartic-9625/source/polynomial.json": {
+      "bytes": 951,
+      "sha256": "6ab9f2e74cb75089e6ff18feb2bc3569bdb5d4543f78d306e6510093f6ef3bd4"
+    },
+    "quartics/quartic-9625/source/residuals.jsonl": {
+      "bytes": 487436,
+      "sha256": "d68d86cdf995a0e80c38953f1ad03262733f81145b949a0501b143eca6ac0a9c"
+    },
+    "quartics/quartic-9625/source/shared.json": {
+      "bytes": 699,
+      "sha256": "f879f79eb7e8072176c8204df4c07a0097a219b7c2452c7c09bd52ca04abe83e"
+    },
+    "quartics/quartic-9625/variable-map.json": {
+      "bytes": 49215,
+      "sha256": "6c300b51ff3bd20a2f4f89f3e507005e6cb90650bc20935afb17e523aefa40c7"
+    },
+    "quartics/quartic-9625/verify_certificate.py": {
+      "bytes": 49982,
+      "sha256": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4"
+    },
+    "quartics/quartic-9625/weights.json": {
+      "bytes": 18324,
+      "sha256": "279e3071ecfdc638c6eb6e9aeaefff90dc4f9c2c0fa670b878b9dcdfa975ec67"
+    }
+  },
+  "schema": "quartic-v4-preserved-files-v1"
+}

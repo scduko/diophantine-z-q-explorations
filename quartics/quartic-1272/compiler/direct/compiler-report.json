@@ -1,0 +1,38 @@
+{
+  "schema": "brox-compiler-report-v1",
+  "inputSha256": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+  "initial": {
+    "coordinates": 1304,
+    "residuals": 1261,
+    "gates": 1214
+  },
+  "final": {
+    "coordinates": 1272,
+    "compiledCoordinatesBeforeFreeOmission": 1272,
+    "residuals": 1229,
+    "activeCoordinates": 1272,
+    "ordinaryCoordinateMonomials": 47984,
+    "parameterCoefficientTerms": 47986,
+    "degree": 4,
+    "maxSPower": 4,
+    "integerCoefficients": true,
+    "sIndependentCoefficientGcd": 1
+  },
+  "reduction": {
+    "eliminations": 32,
+    "rowAdditions": 0,
+    "rounds": 33,
+    "heuristicMaxGrowth": 400
+  },
+  "omittedFreeCoordinateIds": [],
+  "normalizationNote": "Primitive over Z[S]; fixed-S content is 1 if S-independent coefficient gcd is 1.",
+  "sourceGateNote": "Raw gate metadata is retained historically, not presented as final gate definitions.",
+  "elapsedSeconds": 3.328,
+  "artifacts": {
+    "compiled-ir.json": "b79fdb306c25d85aa41c308ad96a1076d2b84b98a6f51c66d0682b2ae9b15b98",
+    "reduction-certificate.json": "130953b02693de8ce3da1996a3257a1e50a58cfdc03be73e6f05d105419cc06f",
+    "polynomial.json": "5acd7ebf8c09c7d95f66c16f6c5594fdbbde062a0f3204068e8f88b7fd4b54ba",
+    "coordinate-map.json": "a2f10e89a380c456937623f9fc6655e0c419881693fb6bea84f8e975ba413624",
+    "specialization-certificate.json": "409b54b3cd4fe3bc11e4739d8c2af622190785241bf54370812a05d6c35f7100"
+  }
+}

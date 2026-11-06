@@ -1,0 +1,1301 @@
+{
+  "additional_published_applications": [
+    {
+      "application": "The norm-one reduced trace set of quaternion algebra (2,3), ramification exactly at 2 and 3, local residue criteria U_2={1}, U_3={0}, no extra split-finite or real restriction, and local-to-global trace membership",
+      "archived_pdf_sha256": "f26c2e155d025978045a0c68073505631677624ef4d6f9b461640c6fbe1d3c93",
+      "author": "Jochen Koenigsmann",
+      "author_proof": "anchor_proof",
+      "consumer": "N5",
+      "current_source": {
+        "end_character": 452735,
+        "first_line": 9492,
+        "label": "lem:quartic-anchor-four",
+        "last_line": 9524,
+        "start_character": 450930,
+        "text_sha256": "8908ac7be40394f421e6ad5b96271e6b20e2bb1d1cf66011465f94eb4b758ae7"
+      },
+      "id": "K_TRACE_23",
+      "independent_review": "anchor_review",
+      "locations": [
+        "Definition 4, printed page 75",
+        "Observation 5 and Hilbert-symbol ramification calculation",
+        "Proof of Proposition 6, Facts (a),(b),(c),(e), printed page 77"
+      ],
+      "not_sufficient_alone": "The older equality T=S+S=Z_(2) intersect Z_(3) does not by itself prove the new one-trace criterion",
+      "publication": "Annals of Mathematics 183 (2016), 73-93",
+      "publisher_pdf": "https://annals.math.princeton.edu/wp-content/uploads/annals-v183-n1-p02-p.pdf",
+      "separate_elementary_step": "For a,b rational, h=9+3(a^2+b^2) lies in that trace set exactly when both a,b are integral at 2 and 3; the h in 4Z_2 branch is proved in the author note",
+      "title": "Defining Z in Q"
+    }
+  ],
+  "approval_scopes": {
+    "integrated_manuscript_review": "exact integrated manuscript and selected arithmetic exposition",
+    "reproduction": "clean source regeneration, fresh base pipeline and exact selected certificate replay",
+    "source_arithmetic_review": "exact emitted source and its integer rational-projection theorem",
+    "verification": "exact certificate replay, full quartic expansion and coefficient bound"
+  },
+  "arithmetic_lemmas": [
+    {
+      "current_source": {
+        "end_character": 439147,
+        "first_line": 9212,
+        "label": "lem:quartic-three-mode-coverage",
+        "last_line": 9228,
+        "start_character": 438141,
+        "text_sha256": "5d7db3d464a72af6798e7ed83a374d31775293453d2c30d0677aa572dceef7bb"
+      },
+      "depends_on": [],
+      "external": [
+        "I_H5",
+        "I_SIEVE",
+        "I_LUCAS"
+      ],
+      "id": "N1",
+      "kind": "new_arithmetic_construction",
+      "label": "lem:quartic-three-mode-coverage",
+      "proof_artifacts": [
+        {
+          "id": "three_mode_proof",
+          "path": "evidence/three_mode_proof.md"
+        },
+        {
+          "id": "three_mode_review",
+          "path": "evidence/three_mode_review.md"
+        }
+      ],
+      "proofs": [
+        "three_mode_proof"
+      ],
+      "reviews": [
+        "three_mode_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 440023,
+        "first_line": 9230,
+        "label": "lem:quartic-doubled-private-comparison",
+        "last_line": 9249,
+        "start_character": 439149,
+        "text_sha256": "df87b6fcc18d8e19f7e26582a61c5cca9dd4da8504b01d9f62922a858d944e53"
+      },
+      "depends_on": [],
+      "external": [
+        "I_GEN",
+        "I_FORMAL",
+        "I_RECIPROCAL"
+      ],
+      "id": "N2",
+      "kind": "new_arithmetic_construction",
+      "label": "lem:quartic-doubled-private-comparison",
+      "proof_artifacts": [
+        {
+          "id": "private_comparison_proof",
+          "path": "evidence/private_comparison_proof.md"
+        },
+        {
+          "id": "private_comparison_review",
+          "path": "evidence/private_comparison_review.md"
+        }
+      ],
+      "proofs": [
+        "private_comparison_proof"
+      ],
+      "reviews": [
+        "private_comparison_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 442495,
+        "first_line": 9261,
+        "label": "lem:quartic-joint-chart",
+        "last_line": 9313,
+        "start_character": 440624,
+        "text_sha256": "93a281b5e40bf47320134a5772c60157ffb684d4ca3b352e972612a9bb68f50d"
+      },
+      "depends_on": [
+        "N2"
+      ],
+      "external": [],
+      "id": "N3",
+      "kind": "exact_curve_identity_with_stated_carrier",
+      "label": "lem:quartic-joint-chart",
+      "proof_artifacts": [
+        {
+          "id": "joint_chart_proof",
+          "path": "evidence/joint_chart_proof.md"
+        },
+        {
+          "id": "two_denominator_proof",
+          "path": "evidence/two_denominator_proof.md"
+        },
+        {
+          "id": "joint_chart_review",
+          "path": "evidence/joint_chart_review.md"
+        }
+      ],
+      "proofs": [
+        "joint_chart_proof",
+        "two_denominator_proof"
+      ],
+      "reviews": [
+        "joint_chart_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 444744,
+        "first_line": 9337,
+        "label": "lem:quartic-private-conic-packing",
+        "last_line": 9365,
+        "start_character": 443273,
+        "text_sha256": "7b537913ac148ce3570bb0b7d0fdccd980a820128a23b3cc2d5b1011c85e5b04"
+      },
+      "depends_on": [],
+      "external": [
+        "I_NORM"
+      ],
+      "id": "N4a",
+      "kind": "elementary_conic_and_valuation_lemma",
+      "label": "lem:quartic-private-conic-packing",
+      "proof_artifacts": [
+        {
+          "id": "conic_proof",
+          "path": "evidence/conic_proof.md"
+        },
+        {
+          "id": "conic_review",
+          "path": "evidence/conic_review.md"
+        }
+      ],
+      "proofs": [
+        "conic_proof"
+      ],
+      "reviews": [
+        "conic_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 444744,
+        "first_line": 9337,
+        "label": "lem:quartic-private-conic-packing",
+        "last_line": 9365,
+        "start_character": 443273,
+        "text_sha256": "7b537913ac148ce3570bb0b7d0fdccd980a820128a23b3cc2d5b1011c85e5b04"
+      },
+      "depends_on": [
+        "N4a",
+        "N8"
+      ],
+      "external": [],
+      "id": "N4b",
+      "kind": "field_order_decoding",
+      "label": "lem:quartic-private-conic-packing",
+      "proof_artifacts": [
+        {
+          "id": "conic_proof",
+          "path": "evidence/conic_proof.md"
+        },
+        {
+          "id": "joint_arithmetic_proof",
+          "path": "evidence/joint_arithmetic_proof.md"
+        },
+        {
+          "id": "conic_review",
+          "path": "evidence/conic_review.md"
+        }
+      ],
+      "proofs": [
+        "conic_proof",
+        "joint_arithmetic_proof"
+      ],
+      "reviews": [
+        "conic_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 446358,
+        "first_line": 9370,
+        "label": "lem:quartic-conic-completeness",
+        "last_line": 9396,
+        "start_character": 444892,
+        "text_sha256": "0e26026bf095f11d6583340d16e3ef2562c1698cab51270adca96f071f63875d"
+      },
+      "depends_on": [
+        "N4a",
+        "N8"
+      ],
+      "external": [
+        "I_SIEVE",
+        "I_CRT"
+      ],
+      "id": "N4c",
+      "kind": "elementary_conic_approximation_construction",
+      "label": "lem:quartic-conic-completeness",
+      "proof_artifacts": [
+        {
+          "id": "conic_proof",
+          "path": "evidence/conic_proof.md"
+        },
+        {
+          "id": "joint_arithmetic_proof",
+          "path": "evidence/joint_arithmetic_proof.md"
+        },
+        {
+          "id": "conic_review",
+          "path": "evidence/conic_review.md"
+        }
+      ],
+      "proofs": [
+        "conic_proof",
+        "joint_arithmetic_proof"
+      ],
+      "reviews": [
+        "conic_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 452735,
+        "first_line": 9492,
+        "label": "lem:quartic-anchor-four",
+        "last_line": 9524,
+        "start_character": 450930,
+        "text_sha256": "8908ac7be40394f421e6ad5b96271e6b20e2bb1d1cf66011465f94eb4b758ae7"
+      },
+      "depends_on": [],
+      "external": [
+        "I_ANCHOR",
+        "K_TRACE_23"
+      ],
+      "id": "N5",
+      "kind": "new_published_trace_application_and_elementary_criterion",
+      "label": "lem:quartic-anchor-four",
+      "proof_artifacts": [
+        {
+          "id": "anchor_proof",
+          "path": "evidence/anchor_proof.md"
+        },
+        {
+          "id": "anchor_review",
+          "path": "evidence/anchor_review.md"
+        }
+      ],
+      "proofs": [
+        "anchor_proof"
+      ],
+      "reviews": [
+        "anchor_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 453868,
+        "first_line": 9532,
+        "label": "lem:quartic-local-lucas",
+        "last_line": 9552,
+        "start_character": 452842,
+        "text_sha256": "a2c1167ecb8f1772c23445a5b151711f6890696f10c46f087ae2e94c7ae70da5"
+      },
+      "depends_on": [
+        "N1",
+        "N2",
+        "N3",
+        "N4b",
+        "N4c"
+      ],
+      "external": [
+        "I_LUCAS"
+      ],
+      "id": "N6",
+      "kind": "new_arithmetic_construction",
+      "label": "lem:quartic-local-lucas",
+      "proof_artifacts": [
+        {
+          "id": "local_lucas_proof",
+          "path": "evidence/local_lucas_proof.md"
+        },
+        {
+          "id": "local_lucas_review",
+          "path": "evidence/local_lucas_review.md"
+        }
+      ],
+      "proofs": [
+        "local_lucas_proof"
+      ],
+      "reviews": [
+        "local_lucas_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 455982,
+        "first_line": 9554,
+        "label": "lem:quartic-normalized-lucas",
+        "last_line": 9595,
+        "start_character": 453870,
+        "text_sha256": "876a3b13213a6431443d3fd4f5da44dde8d9f82368462fc69a2ede2106f00c79"
+      },
+      "depends_on": [
+        "N6"
+      ],
+      "external": [
+        "I_RECIPROCAL",
+        "I_SIEVE"
+      ],
+      "id": "N7",
+      "kind": "new_arithmetic_construction_with_zero_branches",
+      "label": "lem:quartic-normalized-lucas",
+      "proof_artifacts": [
+        {
+          "id": "normalized_proof",
+          "path": "evidence/normalized_proof.md"
+        },
+        {
+          "id": "normalized_review",
+          "path": "evidence/normalized_review.md"
+        }
+      ],
+      "proofs": [
+        "normalized_proof"
+      ],
+      "reviews": [
+        "normalized_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 450928,
+        "first_line": 9398,
+        "label": "lem:quartic-linear-pole",
+        "last_line": 9490,
+        "start_character": 446360,
+        "text_sha256": "414b693f9645c38b2e4742e1f359d4e715b31de85351480609d6acf533b1201c"
+      },
+      "depends_on": [
+        "N4a"
+      ],
+      "external": [
+        "I_POLE"
+      ],
+      "id": "N8",
+      "kind": "one_sided_pole_and_source_completeness",
+      "label": "lem:quartic-linear-pole",
+      "proof_artifacts": [
+        {
+          "id": "linear_pole_proof",
+          "path": "evidence/linear_pole_proof.md"
+        },
+        {
+          "id": "parity_scale_proof",
+          "path": "evidence/parity_scale_proof.md"
+        },
+        {
+          "id": "linear_pole_review",
+          "path": "evidence/linear_pole_review.md"
+        },
+        {
+          "id": "parity_scale_review",
+          "path": "evidence/parity_scale_review.md"
+        }
+      ],
+      "proofs": [
+        "linear_pole_proof",
+        "parity_scale_proof"
+      ],
+      "reviews": [
+        "linear_pole_review",
+        "parity_scale_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 472114,
+        "first_line": 9122,
+        "label": null,
+        "last_line": 9954,
+        "start_character": 433764,
+        "text_sha256": "3d59f71d31c894b5641b8e806e421c9aee599ff50201fc598f725b12c49832ad"
+      },
+      "depends_on": [
+        "N2"
+      ],
+      "external": [
+        "I_FORMAL",
+        "I_RECIPROCAL"
+      ],
+      "id": "C1",
+      "kind": "mandatory_superseding_elementary_clarification",
+      "label": null,
+      "proof_artifacts": [
+        {
+          "id": "mixed_mode_clarification",
+          "path": "evidence/mixed_mode_clarification.md"
+        }
+      ],
+      "proofs": [
+        "mixed_mode_clarification"
+      ],
+      "reviews": [],
+      "supersedes": "Only the uniform order40 denominator assertions in pinned general-root and target-two notes/early reviews"
+    },
+    {
+      "current_source": {
+        "end_character": 459272,
+        "first_line": 9656,
+        "label": "lem:quartic-doubled-indices",
+        "last_line": 9674,
+        "start_character": 458586,
+        "text_sha256": "fbd618fe0c919f8ffb2d9652ad23b30932b04281c8169084553e5c123f3daf6b"
+      },
+      "depends_on": [
+        "N1",
+        "N2",
+        "N5",
+        "N7",
+        "N8",
+        "C1"
+      ],
+      "external": [
+        "I_GEN",
+        "I_H5",
+        "I_CRT"
+      ],
+      "id": "N9",
+      "kind": "new_arithmetic_root_carrier",
+      "label": "lem:quartic-doubled-indices",
+      "proof_artifacts": [
+        {
+          "id": "general_root_proof",
+          "path": "evidence/general_root_proof.md"
+        },
+        {
+          "id": "mixed_mode_clarification",
+          "path": "evidence/mixed_mode_clarification.md"
+        },
+        {
+          "id": "general_root_review",
+          "path": "evidence/general_root_review.md"
+        },
+        {
+          "id": "root_shared_source_review",
+          "path": "evidence/root_shared_source_review.md"
+        }
+      ],
+      "proofs": [
+        "general_root_proof",
+        "mixed_mode_clarification"
+      ],
+      "reviews": [
+        "general_root_review",
+        "root_shared_source_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 460716,
+        "first_line": 9681,
+        "label": "lem:quartic-general-root-charts",
+        "last_line": 9704,
+        "start_character": 459531,
+        "text_sha256": "420b4f129d6625eb70de4e531c86adf427cadd291b3fab82b996e4db6bcad787"
+      },
+      "depends_on": [
+        "N9"
+      ],
+      "external": [],
+      "id": "N10",
+      "kind": "exact_root_chart_on_reviewed_carrier",
+      "label": "lem:quartic-general-root-charts",
+      "proof_artifacts": [
+        {
+          "id": "root_chart_proof",
+          "path": "evidence/root_chart_proof.md"
+        },
+        {
+          "id": "root_chart_review",
+          "path": "evidence/root_chart_review.md"
+        },
+        {
+          "id": "root_implementation_review",
+          "path": "evidence/root_implementation_review.md"
+        }
+      ],
+      "proofs": [
+        "root_chart_proof"
+      ],
+      "reviews": [
+        "root_chart_review",
+        "root_implementation_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 468218,
+        "first_line": 9862,
+        "label": "lem:quartic-shared-field-square",
+        "last_line": 9880,
+        "start_character": 467308,
+        "text_sha256": "c64054691f079b72563546c632d919c1b36be6387cb9f5adf9da4aeec452120a"
+      },
+      "depends_on": [
+        "N4a"
+      ],
+      "external": [],
+      "id": "N12",
+      "kind": "exact_quadratic_identity_and_coordinate_map",
+      "label": "lem:quartic-shared-field-square",
+      "proof_artifacts": [
+        {
+          "id": "shared_square_proof",
+          "path": "evidence/shared_square_proof.md"
+        },
+        {
+          "id": "shared_square_review",
+          "path": "evidence/shared_square_review.md"
+        },
+        {
+          "id": "shared_square_implementation_review",
+          "path": "evidence/shared_square_implementation_review.md"
+        }
+      ],
+      "proofs": [
+        "shared_square_proof"
+      ],
+      "reviews": [
+        "shared_square_review",
+        "shared_square_implementation_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 465417,
+        "first_line": 9758,
+        "label": "lem:quartic-target-two",
+        "last_line": 9803,
+        "start_character": 463113,
+        "text_sha256": "e326da7ff0eeef669fb7cb94acca4c056ebe4e334587db05bae6be69aecd5b88"
+      },
+      "depends_on": [
+        "N9",
+        "N10",
+        "N12",
+        "C1"
+      ],
+      "external": [
+        "I_GEN",
+        "I_CRT"
+      ],
+      "id": "N13",
+      "kind": "new_arithmetic_target_and_CRT_construction",
+      "label": "lem:quartic-target-two",
+      "proof_artifacts": [
+        {
+          "id": "target_two_proof",
+          "path": "evidence/target_two_proof.md"
+        },
+        {
+          "id": "target_two_author_contract",
+          "path": "evidence/target_two_author_contract.md"
+        },
+        {
+          "id": "mixed_mode_clarification",
+          "path": "evidence/mixed_mode_clarification.md"
+        },
+        {
+          "id": "target_two_review",
+          "path": "evidence/target_two_review.md"
+        },
+        {
+          "id": "target_two_implementation_review",
+          "path": "evidence/target_two_implementation_review.md"
+        },
+        {
+          "id": "target_two_source_review",
+          "path": "evidence/target_two_source_review.md"
+        }
+      ],
+      "proofs": [
+        "target_two_proof",
+        "target_two_author_contract",
+        "mixed_mode_clarification"
+      ],
+      "reviews": [
+        "target_two_review",
+        "target_two_implementation_review",
+        "target_two_source_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 467302,
+        "first_line": 9833,
+        "label": "lem:quartic-tangent-fusion",
+        "last_line": 9856,
+        "start_character": 466295,
+        "text_sha256": "d86576384374be3fe6314561f0f4153ced967a754ee84ab178a6ab040280a91a"
+      },
+      "depends_on": [
+        "N10",
+        "N13"
+      ],
+      "external": [],
+      "id": "N14",
+      "kind": "exact_quadratic_replacement_and_polynomial_inverse",
+      "label": "lem:quartic-tangent-fusion",
+      "proof_artifacts": [
+        {
+          "id": "tangent_proof",
+          "path": "evidence/tangent_proof.md"
+        },
+        {
+          "id": "tangent_review",
+          "path": "evidence/tangent_review.md"
+        },
+        {
+          "id": "tangent_outer_review",
+          "path": "evidence/tangent_outer_review.md"
+        }
+      ],
+      "proofs": [
+        "tangent_proof"
+      ],
+      "reviews": [
+        "tangent_review",
+        "tangent_outer_review"
+      ]
+    },
+    {
+      "current_source": {
+        "end_character": 469743,
+        "first_line": 9884,
+        "label": "lem:quartic-first-norm-fusion",
+        "last_line": 9913,
+        "start_character": 468222,
+        "text_sha256": "8aa0759ff5c221c0541541c3b08d699c0d4a9cef77bb25ed605b842543cbfd02"
+      },
+      "depends_on": [
+        "N4a",
+        "N4b",
+        "N4c",
+        "N8"
+      ],
+      "external": [],
+      "id": "N15",
+      "kind": "arithmetic_denominator_change_then_exact_fusion",
+      "label": "lem:quartic-first-norm-fusion",
+      "proof_artifacts": [
+        {
+          "id": "first_norm_proof",
+          "path": "evidence/first_norm_proof.md"
+        },
+        {
+          "id": "first_norm_parity_review",
+          "path": "evidence/first_norm_parity_review.md"
+        },
+        {
+          "id": "first_norm_arithmetic_review",
+          "path": "evidence/first_norm_arithmetic_review.md"
+        },
+        {
+          "id": "first_norm_helper_review",
+          "path": "evidence/first_norm_helper_review.md"
+        },
+        {
+          "id": "first_norm_locator_review",
+          "path": "evidence/first_norm_locator_review.md"
+        },
+        {
+          "id": "first_norm_outer_review",
+          "path": "evidence/first_norm_outer_review.md"
+        }
+      ],
+      "proofs": [
+        "first_norm_proof"
+      ],
+      "reviews": [
+        "first_norm_parity_review",
+        "first_norm_arithmetic_review",
+        "first_norm_helper_review",
+        "first_norm_locator_review",
+        "first_norm_outer_review"
+      ],
+      "source_composition_after": [
+        "N13",
+        "N14",
+        "N12"
+      ]
+    }
+  ],
+  "arithmetic_summary": {
+    "end_character": 458507,
+    "first_line": 9609,
+    "label": "thm:quartic-selective-arithmetic",
+    "last_line": 9650,
+    "start_character": 456757,
+    "text_sha256": "0ff90514dc3b16a98ba8a76d4ccbf10851f611e821c92029761e02077ace1588"
+  },
+  "endpoint": {
+    "degree": 4,
+    "max_abs_coefficient": 685783949153203534233890,
+    "monomials": 72925,
+    "rows": 4552,
+    "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+    "source_raw_sha256": "4a82d9a8dc1b5c92eb40a49751c0a6aae073c8f765ca5e276a74802fd56b84be",
+    "source_rows": 4513,
+    "source_sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+    "source_variables": 4935,
+    "variables": 4973,
+    "witnesses": 4972
+  },
+  "finite_rules": {
+    "circuit": {
+      "proof_role": "power_proof",
+      "review_role": "finite_review"
+    },
+    "eliminate": {
+      "proof_role": "algebra_proof",
+      "review_role": "finite_review"
+    },
+    "linear": {
+      "proof_role": "algebra_proof",
+      "review_role": "finite_review"
+    },
+    "parity_conic": {
+      "proof_role": "parity_proof",
+      "review_role": "finite_review"
+    },
+    "relation_eliminate": {
+      "proof_role": "relation_proof",
+      "review_role": "finite_review"
+    },
+    "shear": {
+      "proof_role": "algebra_proof",
+      "review_role": "finite_review"
+    }
+  },
+  "inherited_additional_published_applications": [
+    {
+      "citation_keys": [
+        "diamond-im"
+      ],
+      "conventions": [
+        "Use final primitive form after finite twist absorption.",
+        "Consistent dualization replaces finite character by inverse; order and kernel unchanged."
+      ],
+      "current_sites": [
+        {
+          "excerpt_sha256": "0da52263918636c67b28041116fee5da12032d9457c9c242405bc9bd7a6ffa85",
+          "id": "P_DETERMINANT-0",
+          "review_scope": "Original historical object and qualifications; exact text bridge only",
+          "version3_location": [
+            8795,
+            8806
+          ],
+          "version4_location": {
+            "end_character": 420004,
+            "first_line": 8785,
+            "label": null,
+            "last_line": 8796,
+            "start_character": 419351,
+            "text_sha256": "0da52263918636c67b28041116fee5da12032d9457c9c242405bc9bd7a6ffa85"
+          }
+        }
+      ],
+      "id": "P_DETERMINANT",
+      "relation_to_release": "additional explicit published application at the final modular form",
+      "sources": [
+        {
+          "evidence_limit": "Indexed primary scan inspected; no new local full-PDF byte pin. A different OCR copy omits epsilon and must not be used for the determinant text.",
+          "locator": "section12.5, equations12.5.1-12.5.2, Remark12.5.1, pp119-120",
+          "title": "Diamond and Im, Modular forms and modular curves (1995)",
+          "url": "https://wstein.org/edu/Fall2003/252/references/diamond-im/Diamond-Im-Modular_forms_and_modular_curves.pdf"
+        }
+      ],
+      "statement": "det r=epsilon*chi_cyc for weight2 in arithmetic-Frobenius Tate convention."
+    },
+    {
+      "citation_keys": [
+        "baker-et-al-finiteness",
+        "mascot-moduli",
+        "shimura-factors"
+      ],
+      "conventions": [
+        "Kernel fixes entire conjugate orbit.",
+        "Effective diamond group used in push-pull; no spurious factor2 or cyclotomic field extension."
+      ],
+      "current_sites": [
+        {
+          "excerpt_sha256": "5c76bf57fc1f52b0ea595a9f3adaf86379374a077b126aa94997ea3fba6323a0",
+          "id": "P_MODULAR_FACTOR-0",
+          "review_scope": "Original historical object and qualifications; exact text bridge only",
+          "version3_location": [
+            8808,
+            8819
+          ],
+          "version4_location": {
+            "end_character": 420551,
+            "first_line": 8798,
+            "label": null,
+            "last_line": 8809,
+            "start_character": 420006,
+            "text_sha256": "5c76bf57fc1f52b0ea595a9f3adaf86379374a077b126aa94997ea3fba6323a0"
+          }
+        },
+        {
+          "excerpt_sha256": "acf0c4f74f9796ff53b8e3a5bd185ab6138f3169827296f8ff51a420b88bbd69",
+          "id": "P_MODULAR_FACTOR-1",
+          "review_scope": "Original historical object and qualifications; exact text bridge only",
+          "version3_location": [
+            8821,
+            8834
+          ],
+          "version4_location": {
+            "end_character": 421221,
+            "first_line": 8811,
+            "label": null,
+            "last_line": 8824,
+            "start_character": 420553,
+            "text_sha256": "acf0c4f74f9796ff53b8e3a5bd185ab6138f3169827296f8ff51a420b88bbd69"
+          }
+        }
+      ],
+      "id": "P_MODULAR_FACTOR",
+      "relation_to_release": "published quotient/differential facts applied to the new intermediate modular curve",
+      "sources": [
+        {
+          "evidence_limit": "Author copy identifies journal publication; section locators used, not unverified publisher pagination.",
+          "locator": "sections3.1 and3.2.1",
+          "title": "Baker, Gonzalez-Jimenez, Gonzalez and Poonen, American Journal of Mathematics127(2005)",
+          "url": "https://math.mit.edu/~poonen/papers/finiteness.pdf"
+        },
+        {
+          "evidence_limit": "Publisher HTML inspected. Printed reversed subgroup quotient2.1.4 is not used; neither is mod-l formula2.2.4.",
+          "locator": "section2.1 equation2.1.8 and section2.2 equation2.2.1",
+          "title": "Mascot, Research in Number Theory8(2022),48",
+          "url": "https://link.springer.com/article/10.1007/s40993-022-00329-6"
+        },
+        {
+          "locator": "Theorem1(i),(iv),p526",
+          "relation": "inherited newform quotient fact; corroborating citation",
+          "title": "Shimura, Journal of the Mathematical Society of Japan25(1973),523-544",
+          "url": "https://doi.org/10.2969/jmsj/02530523"
+        }
+      ],
+      "statement": "Rational newform quotient has the all-conjugates differential span; rational diamonds act by nebentypus; X_H has the rational point-level quotient model."
+    },
+    {
+      "citation_keys": [
+        "javanpeykar",
+        "vonKaenel2021"
+      ],
+      "conventions": [
+        "Original stable Faltings normalization.",
+        "Generic congruence subgroup; no squarefree-level or trivial-nebentypus restriction."
+      ],
+      "current_sites": [
+        {
+          "excerpt_sha256": "365e46e47d5a9433d7e0088b277d2052614b7b272523573ac6cbd8027d904f14",
+          "id": "P_BELYI-0",
+          "review_scope": "Original historical object and qualifications; exact text bridge only",
+          "version3_location": [
+            8856,
+            8878
+          ],
+          "version4_location": {
+            "end_character": 423033,
+            "first_line": 8846,
+            "label": null,
+            "last_line": 8868,
+            "start_character": 422150,
+            "text_sha256": "365e46e47d5a9433d7e0088b277d2052614b7b272523573ac6cbd8027d904f14"
+          }
+        },
+        {
+          "excerpt_sha256": "fdec9388f6ae6fb408ed8453eb5b183d719fa1a1d7e2ea711b250daf952b4eb2",
+          "id": "P_BELYI-1",
+          "review_scope": "Original historical object and qualifications; exact text bridge only",
+          "version3_location": [
+            8880,
+            8909
+          ],
+          "version4_location": {
+            "end_character": 424059,
+            "first_line": 8870,
+            "label": null,
+            "last_line": 8899,
+            "start_character": 423035,
+            "text_sha256": "fdec9388f6ae6fb408ed8453eb5b183d719fa1a1d7e2ea711b250daf952b4eb2"
+          }
+        }
+      ],
+      "id": "P_BELYI",
+      "inherited_application_ids": [
+        "A014"
+      ],
+      "relation_to_release": "inherited published height theorem applied to J_H instead of J1(N)",
+      "sources": [
+        {
+          "local_sha256": "ec890fb41c58dee038ee2e06b530954f3aab85035238cd54a4c0ef081fcb8ea0",
+          "locator": "Theorem1.1.1 and section2.3",
+          "title": "Javanpeykar, Algebra & Number Theory8(2014),89-140",
+          "url": "https://doi.org/10.2140/ant.2014.8.89"
+        },
+        {
+          "local_sha256": "5749ce3a371c571655b44174e2a0d65c2e53dc179f518f0e52d585ff73da46f9",
+          "locator": "section4 equations4.1-4.2",
+          "title": "von Kanel, Forum of Mathematics,Sigma9(2021),e39",
+          "url": "https://doi.org/10.1017/fms.2021.29"
+        }
+      ],
+      "statement": "h_F(Jac X)<=13000000*g*deg_B(X)^5, with modular degree/index conventions."
+    },
+    {
+      "application_ids": [
+        "A063"
+      ],
+      "citation_keys": [
+        "GaudronRemond2023"
+      ],
+      "conventions": [
+        "Apply Xi to source J_H over same L'.",
+        "No chosen polarization-degree bound on A or Z.",
+        "Include complement lower bound and zero complement case."
+      ],
+      "current_sites": [
+        {
+          "excerpt_sha256": "fdec9388f6ae6fb408ed8453eb5b183d719fa1a1d7e2ea711b250daf952b4eb2",
+          "id": "P_TRANSFER-0",
+          "review_scope": "Original historical object and qualifications; exact text bridge only",
+          "version3_location": [
+            8880,
+            8909
+          ],
+          "version4_location": {
+            "end_character": 424059,
+            "first_line": 8870,
+            "label": null,
+            "last_line": 8899,
+            "start_character": 423035,
+            "text_sha256": "fdec9388f6ae6fb408ed8453eb5b183d719fa1a1d7e2ea711b250daf952b4eb2"
+          }
+        }
+      ],
+      "id": "P_TRANSFER",
+      "inherited_inventory": "baseline_applications",
+      "inventory_warning": "The frozen baseline A015 describes a 2014 isogeny application. The authoritative current source for the reused 2023 general estimate is released LT3/current-proof, not an assertion that A015 already contains the 2023 locator.",
+      "relation_to_release": "reuse of inherited applications with source J_H",
+      "sources": [
+        {
+          "local_sha256": "b1e2e32bec626cf6d27fb7d6d8702b5c707e0c3dc002d979088e62d8cda514a4",
+          "locator": "section1.5,Theorem1.9(1),pp7-8",
+          "title": "Gaudron-Remond, Memoires SMF176(2023)",
+          "url": "https://doi.org/10.24033/msmf.484"
+        },
+        {
+          "locator": "equation2.2,p5",
+          "title": "von Kanel2021",
+          "url": "https://doi.org/10.1017/fms.2021.29"
+        }
+      ],
+      "statement": "Faltings Hom and Poincare over L' give A times Z isogenous to J_H; general isogeny-height variation and Bost bound control h_F(A)."
+    }
+  ],
+  "inherited_applications": [
+    {
+      "current_consumers": [
+        "N1",
+        "N9"
+      ],
+      "current_consumption_scope": "Only retained statement and replacement above; historical convention text is not a current premise",
+      "historical_application_only": {
+        "also": [
+          "baseline_assumption_status"
+        ],
+        "convention": "Use the final representation after finite-twist absorption; scalar-character and coefficient-field degrees may vary. The H19 argument uses only the displayed degree and conductor bounds. Preserve the Pan/Calegari and Yuan source-version qualifications.",
+        "id": "I_H5",
+        "inventory": "baseline_current_proof",
+        "labels": [
+          "hyp:o8-height",
+          "sec:h5-level-repair",
+          "LR2",
+          "LR3",
+          "LR5",
+          "LT1",
+          "LT3"
+        ],
+        "statement": "Released geometry supplies R=B_*M5(a), [L:Q]<=576, normal L'/Q with [L':Q]<=2304R, final primitive weight-two r, V_l(A)|G_L'=r+r, determinant-square=chi_cyc^2, N<=210^300R^2 and rad(N)|R; metric h(a)<=2max(0,h_F(A))+128 and CM h_F(A)<854R."
+      },
+      "id": "I_H5",
+      "replacement": "General-root doubled-index estimates use effective 5H19; no H18 or new arithmetic assumption",
+      "retained": "The qualified height/geometry inputs and explicit H19 bound remain"
+    },
+    {
+      "current_consumers": [
+        "N2",
+        "N9",
+        "N13"
+      ],
+      "current_consumption_scope": "Only retained statement and replacement above; historical convention text is not a current premise",
+      "historical_application_only": {
+        "application_ids": [
+          "A058",
+          "A059",
+          "A060"
+        ],
+        "convention": "Retain the released two-isogeny, saturation and canonical-height conventions. The unit normalization scales x by a square. The selected source retains its u and v chart coordinates; no new single-x kernel deduction is used.",
+        "id": "I_GEN",
+        "inventory": "baseline_applications",
+        "labels": [
+          "prop:generator",
+          "lem:o8-chart",
+          "eq:o8-indexheight"
+        ],
+        "statement": "For the fixed normalized E/K, 2E(K)=Z P_* is torsion-free and h(x(nP_*))>=n^2-6 for n!=0. The retained membership charts characterize this group."
+      },
+      "id": "I_GEN",
+      "replacement": "Old u/v square-membership source charts are not current premises. Root points are general nontorsion E(K) with integer doubled indices; private points retain half-integer Pstar coefficients",
+      "retained": "2E(K)=Z Pstar, full rational two-torsion, nontorsion/index facts and lower height bound for multiples"
+    },
+    {
+      "current_consumers": [
+        "N2",
+        "C1"
+      ],
+      "current_consumption_scope": "Only retained statement and replacement above; historical convention text is not a current premise",
+      "historical_application_only": {
+        "application_ids": [
+          "A071",
+          "A072"
+        ],
+        "convention": "Require actual formal-group membership, not merely positive valuation of z. Selected comparison primes split; scalar argument can use inert primes. Use actual order/cardinality annihilators; no cross-prime coprimality.",
+        "id": "I_FORMAL",
+        "inventory": "baseline_applications",
+        "statement": "Formal logarithm, isometry and reduction-kernel statements with z=-x/y; good-prime and same-prime conjugate order calculations."
+      },
+      "id": "I_FORMAL",
+      "replacement": "Small z may indicate the identity or translated two-torsion neighborhood; actual doubled group identities are used before logs. Denominator order is mode dependent",
+      "retained": "Formal logarithm, isometry and good-reduction facts in their proved domains"
+    },
+    {
+      "current_consumers": [
+        "N1",
+        "N4c",
+        "N7"
+      ],
+      "current_consumption_scope": "Only retained statement and replacement above; historical convention text is not a current premise",
+      "historical_application_only": {
+        "also": [
+          "baseline_sieve_sources"
+        ],
+        "application_ids": [
+          "OP01",
+          "OP02",
+          "OP03",
+          "OP04",
+          "OP05",
+          "OP06",
+          "OP07",
+          "OP08",
+          "OP09",
+          "OP10",
+          "OP11",
+          "OP12",
+          "OP13",
+          "OP14"
+        ],
+        "convention": "Coefficients, denominator choices, exceptional cutoff and real box are fixed before the size limit. Preserve GI published theorem plus inherited corrected-author-v5/erratum convention. Repeated slopes are deduplicated analytically only.",
+        "id": "I_SIEVE",
+        "inventory": "baseline_sieve_applications",
+        "statement": "Existing fixed-affine-form prime pattern and order sieve with GT, MN, GI, Mertens and elliptic reduction applications."
+      },
+      "id": "I_SIEVE",
+      "replacement": "Fix the nonzero Lucas s before avoiding its prime divisors; no cross-prime group-order coprimality or common arbitrary-witness orientation is added",
+      "retained": "The qualified fixed-system prime-pattern theorem, finite exclusions and 37-contact construction"
+    },
+    {
+      "current_consumers": [
+        "N5"
+      ],
+      "current_consumption_scope": "Only retained statement and replacement above; historical convention text is not a current premise",
+      "historical_application_only": {
+        "application_ids": [
+          "A23-1",
+          "A23-2",
+          "A23-3",
+          "A23-4"
+        ],
+        "convention": "T=S+S without offset, quaternion parameters2 and3, reduced trace2u0 and ramification{2,3}. Retain both T predicates. The old24-squaring numerical cutoff remains historical; the new25-squaring cutoff is calculated explicitly in V3_ANCHOR.",
+        "id": "I_ANCHOR",
+        "inventory": "baseline_anchor_sources",
+        "labels": [
+          "subsec:o8-anchor-proof"
+        ],
+        "statement": "The literal seven-witness T is exactly Z_(2) intersection Z_(3). The inherited local formal-group calculation is applied with25 squarings in V3_ANCHOR, giving s in2*3^(2^24-1)Z."
+      },
+      "id": "I_ANCHOR",
+      "replacement": "The two old literal T-predicate calls are replaced by the four-witness trace criterion; both 2 and 3 remain in the predicate",
+      "retained": "The mathematical membership set Z_(2) intersect Z_(3) and resulting anchor bounds"
+    },
+    {
+      "current_consumers": [
+        "N8"
+      ],
+      "current_consumption_scope": "Only retained statement and replacement above; historical convention text is not a current premise",
+      "historical_application_only": {
+        "also": [
+          "baseline_assumption_status"
+        ],
+        "convention": "Retain the baseline restricted-converse dependency. Positivity, square reduced denominator and local square classes at2,3,17 remain required for completeness. Finite checks do not reprove RC.",
+        "id": "I_POLE",
+        "inventory": "baseline_parity",
+        "labels": [
+          "hyp:o8-pole",
+          "hyp:RC"
+        ],
+        "statement": "Seven-witness pole/parity predicate and its soundness/completeness at the released stated status."
+      },
+      "id": "I_POLE",
+      "replacement": "Ordinary contacts use a one-sided negative-odd exclusion plus completeness, not full Psi equivalence. The original scalar-height Psi call is unchanged",
+      "retained": "Restricted-converse, rank, simultaneous realization and fixed-U inputs with unchanged proof-status qualifications"
+    },
+    {
+      "current_consumers": [
+        "N4a"
+      ],
+      "current_consumption_scope": "Only retained statement and replacement above; historical convention text is not a current premise",
+      "historical_application_only": {
+        "convention": "Odd negative raw valuations are excluded before extracting positive orders. Keep the root-error constant-left branch and correction bits; zero nonconstant leaves are allowed.",
+        "id": "I_NORM",
+        "inventory": "baseline_quartic_inventory",
+        "statement": "Constant-left ramified norm-tree soundness and sufficiently deep leaf completeness for positive integer leaf orders."
+      },
+      "id": "I_NORM",
+      "replacement": "No old shared root-error leaf, inverse or paired-test convention is inherited. Each contact has its own rational conic. First-norm fusion uses a virtual T/r leaf",
+      "retained": "Elementary odd-valuation descent for the abstract constant-first binary norm tree"
+    },
+    {
+      "current_consumers": [
+        "N4c",
+        "N9",
+        "N13"
+      ],
+      "current_consumption_scope": "Only retained statement and replacement above; historical convention text is not a current premise",
+      "historical_application_only": {
+        "also": [
+          "baseline_quartic_inventory"
+        ],
+        "convention": "Use j equal to the least common multiple of second-place orders over all selected distinct primes and h=4 modulo p^(40+v_p(j)). Use the same-prime gcd4 condition, avoid0,+4,-4 for affine completeness, and choose theta after every actual field-test coefficient.",
+        "id": "I_CRT",
+        "inventory": "baseline_sieve_applications",
+        "labels": [
+          "subsec:o8-common-J-proof",
+          "subsec:o8-root-proof"
+        ],
+        "statement": "Common J, private h CRT choices and a common rational root approximation."
+      },
+      "id": "I_CRT",
+      "replacement": "Target-four h=4/full-group construction is superseded in target-two by doubling-image orders M_i=N_i/4 and private k=0/1 congruences. Full orders and image orders are distinguished",
+      "retained": "Finite group-order facts at each selected prime and the required same-prime compatibility"
+    },
+    {
+      "current_consumers": [
+        "N1",
+        "N6"
+      ],
+      "current_consumption_scope": "Only retained statement and replacement above; historical convention text is not a current premise",
+      "historical_application_only": {
+        "convention": "Use the stated lower bound for |t| after the first contradiction. Both B_L=max(|s|,|t|,|z|) and B=max(|n|,|s|,|t|,|z|) are at least |t|. No comparison between |z| and |t| is assumed.",
+        "id": "I_LUCAS",
+        "inventory": "baseline_manuscript",
+        "labels": [
+          "lem:o8-lucas"
+        ],
+        "statement": "If s,t,z are integers, a=|s|>=7, z!=0 and t^2-s(s-2)tz+(s-2)^2z^2=1, then |t|>exp(a-3); every eligible s has positive integer t,z solutions."
+      },
+      "id": "I_LUCAS",
+      "replacement": "Global Lucas proxy coordinates are removed; local normalized field residuals give congruences before the two height contradictions",
+      "retained": "The Lucas/Pell zero-set, existence, nonzero-z and exponential growth conclusions"
+    },
+    {
+      "current_consumers": [
+        "N2",
+        "N7",
+        "C1"
+      ],
+      "current_consumption_scope": "Only retained statement and replacement above; historical convention text is not a current premise",
+      "historical_application_only": {
+        "convention": "Released realized precisions16/64 do not by themselves accept a new circuit or source; general tail proof and each exact circuit output require binding.",
+        "id": "I_RECIPROCAL",
+        "inventory": "baseline_quartic_inventory",
+        "labels": [
+          "lem:quartic-reciprocal-log",
+          "lem:quartic-reciprocal-nonzero",
+          "lem:quartic-compressed-primary"
+        ],
+        "statement": "Exact reciprocal differential identity, global G_J nonvanishing for J>=2, and compressed primary rational maps."
+      },
+      "id": "I_RECIPROCAL",
+      "replacement": "The H/primary point is actually formal at its consumed place. No formal logarithm is applied merely because a rational z value is small",
+      "retained": "G2/G9 nonvanishing and approximation on the exact field/formal domains proved in the baseline"
+    }
+  ],
+  "main_theorem": {
+    "end_character": 416320,
+    "first_line": 8695,
+    "label": "thm:quartic",
+    "last_line": 8711,
+    "start_character": 415664,
+    "text_sha256": "135e52c477fbcab32c21967aec0483a5aceeec3c691d9b3f285d79d9f5b26d83"
+  },
+  "manuscript": {
+    "bytes": 720126,
+    "path": "quartic_4973.tex",
+    "sha256": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34"
+  },
+  "schema": "quartic-v4-theorem-inventory-v1",
+  "scope": "Text, dependency and exact artifact binding; arithmetic truth, source audit and replay are separate reviewed gates",
+  "selected_body": {
+    "end_character": 472114,
+    "first_line": 9122,
+    "label": null,
+    "last_line": 9954,
+    "start_character": 433764,
+    "text_sha256": "3d59f71d31c894b5641b8e806e421c9aee599ff50201fc598f725b12c49832ad"
+  },
+  "selected_features": {
+    "FirstNorm": true,
+    "GeneralRoots": true,
+    "ScalarFusion": false,
+    "SharedSquare": true,
+    "TangentFusion": true,
+    "TargetTwo": true
+  },
+  "source_family": "H19-root37-target2-tangent-first-norm-normalized-linear-pole-v1",
+  "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+  "source_version_requirements": [
+    {
+      "id": "V1",
+      "text": "Preserve current-proof and assumption-status qualifications. Restricted converse and baseline arithmetic retain their stated proof status; numerical or finite checks do not upgrade them."
+    },
+    {
+      "id": "V2",
+      "text": "Prime-pattern sources include published GT/MN/GI plus inherited arXiv1009.3998v5(23Apr2026) and author erratum conventions. They are inherited correction/version inputs, not newly introduced unpublished theorems. Do not claim a published-only proof with no such qualification."
+    },
+    {
+      "id": "V3",
+      "text": "Pan interface uses Calegari ICM2022 published2023 formulation pp611-612,624 and inspected Pan author theorem. No comparison with inaccessible Pan journal full text is claimed."
+    },
+    {
+      "id": "V4",
+      "text": "Yuan geometry/metric evidence includes the author-attested English translation of the published Chinese text; no direct Chinese-typesetting comparison is claimed."
+    },
+    {
+      "id": "V5",
+      "text": "Preserve exact original stable Faltings metric, Tate/arithmetic-Frobenius convention, effective diamond quotient, and final primitive-form twist."
+    }
+  ]
+}

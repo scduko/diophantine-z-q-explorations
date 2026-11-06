@@ -1,0 +1,1240 @@
+{
+  "coefficient_limit": 1208925819614629174706176,
+  "denominator_factors": {
+    "F": [
+      {
+        "41": 2
+      },
+      {
+        "41": 2
+      }
+    ],
+    "c": [
+      {
+        "2": 3,
+        "41": 2
+      },
+      {
+        "2": 1,
+        "41": 2
+      }
+    ],
+    "inverse_q": [
+      {
+        "17": 1,
+        "3": 1,
+        "7": 1
+      },
+      {
+        "17": 1,
+        "3": 1,
+        "7": 1
+      }
+    ],
+    "q": [
+      {
+        "41": 1
+      },
+      {
+        "2": 2,
+        "41": 1
+      }
+    ],
+    "s": [
+      {
+        "17": 1,
+        "3": 1,
+        "41": 1,
+        "7": 1
+      },
+      {
+        "17": 1,
+        "2": 2,
+        "3": 1,
+        "41": 1,
+        "7": 1
+      }
+    ],
+    "s_over_q": [
+      {
+        "17": 2,
+        "3": 2,
+        "7": 2
+      },
+      {
+        "17": 2,
+        "3": 1,
+        "7": 2
+      }
+    ],
+    "t": [
+      {
+        "17": 2,
+        "7": 2
+      },
+      {
+        "17": 2,
+        "3": 2,
+        "7": 2
+      }
+    ],
+    "x": [
+      {
+        "2": 3
+      },
+      {
+        "2": 1
+      }
+    ],
+    "y": [
+      {
+        "2": 3
+      },
+      {
+        "2": 5
+      }
+    ]
+  },
+  "direct_bindings": [
+    {
+      "name": "x0",
+      "primitive_row": {
+        "1": -57,
+        "x0": 8
+      },
+      "squared_row": [
+        [
+          3249,
+          []
+        ],
+        [
+          -912,
+          [
+            "x0"
+          ]
+        ],
+        [
+          64,
+          [
+            "x0",
+            "x0"
+          ]
+        ]
+      ],
+      "value": {
+        "denominator": 8,
+        "denominator_bits": 4,
+        "numerator": 57,
+        "numerator_bits": 6
+      }
+    },
+    {
+      "name": "x1",
+      "primitive_row": {
+        "1": 7,
+        "x1": 2
+      },
+      "squared_row": [
+        [
+          49,
+          []
+        ],
+        [
+          28,
+          [
+            "x1"
+          ]
+        ],
+        [
+          4,
+          [
+            "x1",
+            "x1"
+          ]
+        ]
+      ],
+      "value": {
+        "denominator": 2,
+        "denominator_bits": 2,
+        "numerator": -7,
+        "numerator_bits": 3
+      }
+    },
+    {
+      "name": "q0",
+      "primitive_row": {
+        "1": 87,
+        "q0": 41
+      },
+      "squared_row": [
+        [
+          7569,
+          []
+        ],
+        [
+          7134,
+          [
+            "q0"
+          ]
+        ],
+        [
+          1681,
+          [
+            "q0",
+            "q0"
+          ]
+        ]
+      ],
+      "value": {
+        "denominator": 41,
+        "denominator_bits": 6,
+        "numerator": -87,
+        "numerator_bits": 7
+      }
+    },
+    {
+      "name": "q1",
+      "primitive_row": {
+        "1": -129,
+        "q1": 164
+      },
+      "squared_row": [
+        [
+          16641,
+          []
+        ],
+        [
+          -42312,
+          [
+            "q1"
+          ]
+        ],
+        [
+          26896,
+          [
+            "q1",
+            "q1"
+          ]
+        ]
+      ],
+      "value": {
+        "denominator": 164,
+        "denominator_bits": 8,
+        "numerator": 129,
+        "numerator_bits": 8
+      }
+    },
+    {
+      "name": "F0",
+      "primitive_row": {
+        "1": -456,
+        "F0": 1681
+      },
+      "squared_row": [
+        [
+          207936,
+          []
+        ],
+        [
+          -1533072,
+          [
+            "F0"
+          ]
+        ],
+        [
+          2825761,
+          [
+            "F0",
+            "F0"
+          ]
+        ]
+      ],
+      "value": {
+        "denominator": 1681,
+        "denominator_bits": 11,
+        "numerator": 456,
+        "numerator_bits": 9
+      }
+    },
+    {
+      "name": "F1",
+      "primitive_row": {
+        "1": -224,
+        "F1": 1681
+      },
+      "squared_row": [
+        [
+          50176,
+          []
+        ],
+        [
+          -753088,
+          [
+            "F1"
+          ]
+        ],
+        [
+          2825761,
+          [
+            "F1",
+            "F1"
+          ]
+        ]
+      ],
+      "value": {
+        "denominator": 1681,
+        "denominator_bits": 11,
+        "numerator": 224,
+        "numerator_bits": 8
+      }
+    },
+    {
+      "name": "s0",
+      "primitive_row": {
+        "1": 55123,
+        "s0": 14637
+      },
+      "squared_row": [
+        [
+          3038545129,
+          []
+        ],
+        [
+          1613670702,
+          [
+            "s0"
+          ]
+        ],
+        [
+          214241769,
+          [
+            "s0",
+            "s0"
+          ]
+        ]
+      ],
+      "value": {
+        "denominator": 14637,
+        "denominator_bits": 14,
+        "numerator": -55123,
+        "numerator_bits": 16
+      }
+    },
+    {
+      "name": "s1",
+      "primitive_row": {
+        "1": 19301,
+        "s1": 58548
+      },
+      "squared_row": [
+        [
+          372528601,
+          []
+        ],
+        [
+          2260069896,
+          [
+            "s1"
+          ]
+        ],
+        [
+          3427868304,
+          [
+            "s1",
+            "s1"
+          ]
+        ]
+      ],
+      "value": {
+        "denominator": 58548,
+        "denominator_bits": 16,
+        "numerator": -19301,
+        "numerator_bits": 15
+      }
+    },
+    {
+      "name": "t0",
+      "primitive_row": {
+        "1": -7624,
+        "t0": 14161
+      },
+      "squared_row": [
+        [
+          58125376,
+          []
+        ],
+        [
+          -215926928,
+          [
+            "t0"
+          ]
+        ],
+        [
+          200533921,
+          [
+            "t0",
+            "t0"
+          ]
+        ]
+      ],
+      "value": {
+        "denominator": 14161,
+        "denominator_bits": 14,
+        "numerator": 7624,
+        "numerator_bits": 13
+      }
+    },
+    {
+      "name": "t1",
+      "primitive_row": {
+        "1": 39904,
+        "t1": 127449
+      },
+      "squared_row": [
+        [
+          1592329216,
+          []
+        ],
+        [
+          10171449792,
+          [
+            "t1"
+          ]
+        ],
+        [
+          16243247601,
+          [
+            "t1",
+            "t1"
+          ]
+        ]
+      ],
+      "value": {
+        "denominator": 127449,
+        "denominator_bits": 17,
+        "numerator": -39904,
+        "numerator_bits": 16
+      }
+    }
+  ],
+  "field": "Q(sqrt(2)); D=11-6sqrt(2)",
+  "fourteen_binding_sos": {
+    "constant": 5061813942,
+    "max_abs_coefficient": 154563475872,
+    "max_bits": 38,
+    "terms": [
+      [
+        5061813942,
+        []
+      ],
+      [
+        -1533072,
+        [
+          "F0"
+        ]
+      ],
+      [
+        2825761,
+        [
+          "F0",
+          "F0"
+        ]
+      ],
+      [
+        -753088,
+        [
+          "F1"
+        ]
+      ],
+      [
+        2825761,
+        [
+          "F1",
+          "F1"
+        ]
+      ],
+      [
+        92873622549,
+        [
+          "J0",
+          "J0"
+        ]
+      ],
+      [
+        -154563475872,
+        [
+          "J0",
+          "J1"
+        ]
+      ],
+      [
+        165648,
+        [
+          "J0",
+          "r0"
+        ]
+      ],
+      [
+        -61404,
+        [
+          "J0",
+          "r1"
+        ]
+      ],
+      [
+        -74346864354,
+        [
+          "J0",
+          "u0"
+        ]
+      ],
+      [
+        22512591360,
+        [
+          "J0",
+          "u1"
+        ]
+      ],
+      [
+        116274911937,
+        [
+          "J1",
+          "J1"
+        ]
+      ],
+      [
+        -122808,
+        [
+          "J1",
+          "r0"
+        ]
+      ],
+      [
+        165648,
+        [
+          "J1",
+          "r1"
+        ]
+      ],
+      [
+        45025182720,
+        [
+          "J1",
+          "u0"
+        ]
+      ],
+      [
+        -74346864354,
+        [
+          "J1",
+          "u1"
+        ]
+      ],
+      [
+        7134,
+        [
+          "q0"
+        ]
+      ],
+      [
+        1681,
+        [
+          "q0",
+          "q0"
+        ]
+      ],
+      [
+        -42312,
+        [
+          "q1"
+        ]
+      ],
+      [
+        26896,
+        [
+          "q1",
+          "q1"
+        ]
+      ],
+      [
+        127449,
+        [
+          "r0",
+          "r0"
+        ]
+      ],
+      [
+        127449,
+        [
+          "r1",
+          "r1"
+        ]
+      ],
+      [
+        1613670702,
+        [
+          "s0"
+        ]
+      ],
+      [
+        214241769,
+        [
+          "s0",
+          "s0"
+        ]
+      ],
+      [
+        2260069896,
+        [
+          "s1"
+        ]
+      ],
+      [
+        3427868304,
+        [
+          "s1",
+          "s1"
+        ]
+      ],
+      [
+        -215926928,
+        [
+          "t0"
+        ]
+      ],
+      [
+        200533921,
+        [
+          "t0",
+          "t0"
+        ]
+      ],
+      [
+        10171449792,
+        [
+          "t1"
+        ]
+      ],
+      [
+        16243247601,
+        [
+          "t1",
+          "t1"
+        ]
+      ],
+      [
+        16243247601,
+        [
+          "u0",
+          "u0"
+        ]
+      ],
+      [
+        16243247601,
+        [
+          "u1",
+          "u1"
+        ]
+      ],
+      [
+        -912,
+        [
+          "x0"
+        ]
+      ],
+      [
+        64,
+        [
+          "x0",
+          "x0"
+        ]
+      ],
+      [
+        28,
+        [
+          "x1"
+        ]
+      ],
+      [
+        4,
+        [
+          "x1",
+          "x1"
+        ]
+      ]
+    ]
+  },
+  "linear_J_bindings": [
+    {
+      "name": "r0",
+      "primitive_row": {
+        "J0": 232,
+        "J1": -172,
+        "r0": 357
+      },
+      "squared_row": [
+        [
+          53824,
+          [
+            "J0",
+            "J0"
+          ]
+        ],
+        [
+          -79808,
+          [
+            "J0",
+            "J1"
+          ]
+        ],
+        [
+          165648,
+          [
+            "J0",
+            "r0"
+          ]
+        ],
+        [
+          29584,
+          [
+            "J1",
+            "J1"
+          ]
+        ],
+        [
+          -122808,
+          [
+            "J1",
+            "r0"
+          ]
+        ],
+        [
+          127449,
+          [
+            "r0",
+            "r0"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "r1",
+      "primitive_row": {
+        "J0": -86,
+        "J1": 232,
+        "r1": 357
+      },
+      "squared_row": [
+        [
+          7396,
+          [
+            "J0",
+            "J0"
+          ]
+        ],
+        [
+          -39904,
+          [
+            "J0",
+            "J1"
+          ]
+        ],
+        [
+          -61404,
+          [
+            "J0",
+            "r1"
+          ]
+        ],
+        [
+          53824,
+          [
+            "J1",
+            "J1"
+          ]
+        ],
+        [
+          165648,
+          [
+            "J1",
+            "r1"
+          ]
+        ],
+        [
+          127449,
+          [
+            "r1",
+            "r1"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "u0",
+      "primitive_row": {
+        "J0": -291673,
+        "J1": 176640,
+        "u0": 127449
+      },
+      "squared_row": [
+        [
+          85073138929,
+          [
+            "J0",
+            "J0"
+          ]
+        ],
+        [
+          -103042237440,
+          [
+            "J0",
+            "J1"
+          ]
+        ],
+        [
+          -74346864354,
+          [
+            "J0",
+            "u0"
+          ]
+        ],
+        [
+          31201689600,
+          [
+            "J1",
+            "J1"
+          ]
+        ],
+        [
+          45025182720,
+          [
+            "J1",
+            "u0"
+          ]
+        ],
+        [
+          16243247601,
+          [
+            "u0",
+            "u0"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "u1",
+      "primitive_row": {
+        "J0": 88320,
+        "J1": -291673,
+        "u1": 127449
+      },
+      "squared_row": [
+        [
+          7800422400,
+          [
+            "J0",
+            "J0"
+          ]
+        ],
+        [
+          -51521118720,
+          [
+            "J0",
+            "J1"
+          ]
+        ],
+        [
+          22512591360,
+          [
+            "J0",
+            "u1"
+          ]
+        ],
+        [
+          85073138929,
+          [
+            "J1",
+            "J1"
+          ]
+        ],
+        [
+          -74346864354,
+          [
+            "J1",
+            "u1"
+          ]
+        ],
+        [
+          16243247601,
+          [
+            "u1",
+            "u1"
+          ]
+        ]
+      ]
+    }
+  ],
+  "mathematical_values": {
+    "F": [
+      {
+        "denominator": 1681,
+        "denominator_bits": 11,
+        "numerator": 456,
+        "numerator_bits": 9
+      },
+      {
+        "denominator": 1681,
+        "denominator_bits": 11,
+        "numerator": 224,
+        "numerator_bits": 8
+      }
+    ],
+    "c": [
+      {
+        "denominator": 13448,
+        "denominator_bits": 14,
+        "numerator": 114441,
+        "numerator_bits": 17
+      },
+      {
+        "denominator": 3362,
+        "denominator_bits": 12,
+        "numerator": -12311,
+        "numerator_bits": 14
+      }
+    ],
+    "inverse_q": [
+      {
+        "denominator": 357,
+        "denominator_bits": 9,
+        "numerator": -232,
+        "numerator_bits": 8
+      },
+      {
+        "denominator": 357,
+        "denominator_bits": 9,
+        "numerator": -86,
+        "numerator_bits": 7
+      }
+    ],
+    "q": [
+      {
+        "denominator": 41,
+        "denominator_bits": 6,
+        "numerator": -87,
+        "numerator_bits": 7
+      },
+      {
+        "denominator": 164,
+        "denominator_bits": 8,
+        "numerator": 129,
+        "numerator_bits": 8
+      }
+    ],
+    "s": [
+      {
+        "denominator": 14637,
+        "denominator_bits": 14,
+        "numerator": -55123,
+        "numerator_bits": 16
+      },
+      {
+        "denominator": 58548,
+        "denominator_bits": 16,
+        "numerator": 19301,
+        "numerator_bits": 15
+      }
+    ],
+    "s_over_q": [
+      {
+        "denominator": 127449,
+        "denominator_bits": 17,
+        "numerator": 291673,
+        "numerator_bits": 19
+      },
+      {
+        "denominator": 42483,
+        "denominator_bits": 16,
+        "numerator": 29440,
+        "numerator_bits": 15
+      }
+    ],
+    "t": [
+      {
+        "denominator": 14161,
+        "denominator_bits": 14,
+        "numerator": 7624,
+        "numerator_bits": 13
+      },
+      {
+        "denominator": 127449,
+        "denominator_bits": 17,
+        "numerator": 39904,
+        "numerator_bits": 16
+      }
+    ],
+    "x": [
+      {
+        "denominator": 8,
+        "denominator_bits": 4,
+        "numerator": 57,
+        "numerator_bits": 6
+      },
+      {
+        "denominator": 2,
+        "denominator_bits": 2,
+        "numerator": -7,
+        "numerator_bits": 3
+      }
+    ],
+    "y": [
+      {
+        "denominator": 8,
+        "denominator_bits": 4,
+        "numerator": -165,
+        "numerator_bits": 8
+      },
+      {
+        "denominator": 32,
+        "denominator_bits": 6,
+        "numerator": 417,
+        "numerator_bits": 9
+      }
+    ]
+  },
+  "point": "2R=Pstar",
+  "q_norm": {
+    "denominator_factors": {
+      "2": 3,
+      "41": 1
+    },
+    "numerator_factors": {
+      "17": 1,
+      "3": 2,
+      "7": 1
+    },
+    "value": {
+      "denominator": 328,
+      "denominator_bits": 9,
+      "numerator": 1071,
+      "numerator_bits": 11
+    }
+  },
+  "scope": "Complete isolated binding SOS including shared-J cross terms; not a global source or quartic coefficient certificate.",
+  "source_convention": "raw x,q,F; conjugated s,t; r=J/conj(q); u=r*conj(s)",
+  "source_script_sha256": "73667d34c8007b1f019578fcccfb26c98c1fa4d4a636ae0c5f3056929a95f3ba",
+  "source_values": {
+    "F": [
+      {
+        "denominator": 1681,
+        "denominator_bits": 11,
+        "numerator": 456,
+        "numerator_bits": 9
+      },
+      {
+        "denominator": 1681,
+        "denominator_bits": 11,
+        "numerator": 224,
+        "numerator_bits": 8
+      }
+    ],
+    "q": [
+      {
+        "denominator": 41,
+        "denominator_bits": 6,
+        "numerator": -87,
+        "numerator_bits": 7
+      },
+      {
+        "denominator": 164,
+        "denominator_bits": 8,
+        "numerator": 129,
+        "numerator_bits": 8
+      }
+    ],
+    "s": [
+      {
+        "denominator": 14637,
+        "denominator_bits": 14,
+        "numerator": -55123,
+        "numerator_bits": 16
+      },
+      {
+        "denominator": 58548,
+        "denominator_bits": 16,
+        "numerator": -19301,
+        "numerator_bits": 15
+      }
+    ],
+    "t": [
+      {
+        "denominator": 14161,
+        "denominator_bits": 14,
+        "numerator": 7624,
+        "numerator_bits": 13
+      },
+      {
+        "denominator": 127449,
+        "denominator_bits": 17,
+        "numerator": -39904,
+        "numerator_bits": 16
+      }
+    ],
+    "x": [
+      {
+        "denominator": 8,
+        "denominator_bits": 4,
+        "numerator": 57,
+        "numerator_bits": 6
+      },
+      {
+        "denominator": 2,
+        "denominator_bits": 2,
+        "numerator": -7,
+        "numerator_bits": 3
+      }
+    ]
+  },
+  "status": "EXACT PROPOSED 2R TARGET CONSTANTS; NO SOURCE CHANGE",
+  "ten_binding_sos": {
+    "constant": 5061813942,
+    "max_abs_coefficient": 16243247601,
+    "max_bits": 34,
+    "terms": [
+      [
+        5061813942,
+        []
+      ],
+      [
+        -1533072,
+        [
+          "F0"
+        ]
+      ],
+      [
+        2825761,
+        [
+          "F0",
+          "F0"
+        ]
+      ],
+      [
+        -753088,
+        [
+          "F1"
+        ]
+      ],
+      [
+        2825761,
+        [
+          "F1",
+          "F1"
+        ]
+      ],
+      [
+        7134,
+        [
+          "q0"
+        ]
+      ],
+      [
+        1681,
+        [
+          "q0",
+          "q0"
+        ]
+      ],
+      [
+        -42312,
+        [
+          "q1"
+        ]
+      ],
+      [
+        26896,
+        [
+          "q1",
+          "q1"
+        ]
+      ],
+      [
+        1613670702,
+        [
+          "s0"
+        ]
+      ],
+      [
+        214241769,
+        [
+          "s0",
+          "s0"
+        ]
+      ],
+      [
+        2260069896,
+        [
+          "s1"
+        ]
+      ],
+      [
+        3427868304,
+        [
+          "s1",
+          "s1"
+        ]
+      ],
+      [
+        -215926928,
+        [
+          "t0"
+        ]
+      ],
+      [
+        200533921,
+        [
+          "t0",
+          "t0"
+        ]
+      ],
+      [
+        10171449792,
+        [
+          "t1"
+        ]
+      ],
+      [
+        16243247601,
+        [
+          "t1",
+          "t1"
+        ]
+      ],
+      [
+        -912,
+        [
+          "x0"
+        ]
+      ],
+      [
+        64,
+        [
+          "x0",
+          "x0"
+        ]
+      ],
+      [
+        28,
+        [
+          "x1"
+        ]
+      ],
+      [
+        4,
+        [
+          "x1",
+          "x1"
+        ]
+      ]
+    ]
+  }
+}

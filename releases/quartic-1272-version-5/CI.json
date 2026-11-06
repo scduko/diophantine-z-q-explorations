@@ -1,0 +1,42 @@
+{
+  "repository": "elliotglazer/diophantine-z-q",
+  "run": 42259971495,
+  "commit": "2aba1a2c458812d24d671307ed23dbde39523c07",
+  "url": "https://github.com/elliotglazer/diophantine-z-q/actions/runs/42259971495",
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "id": 128037012576,
+      "name": "Reconstructed quartic and Version 5 inventory",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-06T17:15:35Z",
+      "completed_at": "2026-11-06T17:16:26Z"
+    },
+    {
+      "id": 128037012938,
+      "name": "Construction regeneration and finite checks",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-06T17:15:35Z",
+      "completed_at": "2026-11-06T17:16:02Z"
+    },
+    {
+      "id": 128037013153,
+      "name": "Paper build",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-06T17:15:35Z",
+      "completed_at": "2026-11-06T17:15:57Z"
+    },
+    {
+      "id": 128037013273,
+      "name": "Accepted Lean helpers and axiom audit",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-06T17:15:35Z",
+      "completed_at": "2026-11-06T17:18:42Z"
+    }
+  ]
+}

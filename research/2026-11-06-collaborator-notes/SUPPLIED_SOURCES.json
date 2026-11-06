@@ -1,0 +1,106 @@
+{
+  "received": "2026-11-06",
+  "archive": {
+    "name": "H10-research-handoff-2026-11-05.zip",
+    "bytes": 244772517,
+    "sha256": "dc493670c2b290ba1c9976a3624ce09bdef793b52458009c373fb5126fed6cee",
+    "entries": 616
+  },
+  "files": [
+    {
+      "path": "supplied/contacts-explained.tex",
+      "source": "H10-research-handoff-2026-11-05.zip",
+      "member": "H10-research-handoff-2026-11-05/01_current_articles/contacts-explained.tex",
+      "bytes": 8614,
+      "sha256": "4715f9fc9c2cd30a9a348450a2a23c2a0f693681c37cb3467f688966af7dfc11",
+      "status": "Unchanged supplied source, not adopted as a theorem by copying"
+    },
+    {
+      "path": "supplied/contacts-explained.pdf",
+      "source": "H10-research-handoff-2026-11-05.zip",
+      "member": "H10-research-handoff-2026-11-05/01_current_articles/contacts-explained.pdf",
+      "bytes": 273472,
+      "sha256": "a401b7383a5094e7f1459a60a62e83fcee724ceb1c5e19d576309ef91761f9a4",
+      "status": "Unchanged supplied source, not adopted as a theorem by copying"
+    },
+    {
+      "path": "supplied/lower-bounds-existential-integers.tex",
+      "source": "H10-research-handoff-2026-11-05.zip",
+      "member": "H10-research-handoff-2026-11-05/01_current_articles/lower-bounds-existential-integers.tex",
+      "bytes": 40425,
+      "sha256": "a0198edd31c77e0b20bdaf64126c6babfccceb11dfb781d78ae614ec08edde28",
+      "status": "Unchanged supplied source, not adopted as a theorem by copying"
+    },
+    {
+      "path": "supplied/lower-bounds-existential-integers.pdf",
+      "source": "H10-research-handoff-2026-11-05.zip",
+      "member": "H10-research-handoff-2026-11-05/01_current_articles/lower-bounds-existential-integers.pdf",
+      "bytes": 421299,
+      "sha256": "9fdc50478543705dd97fdd191a5a7ca8868cb8df622174fb2ff3213063adc02e",
+      "status": "Unchanged supplied source, not adopted as a theorem by copying"
+    },
+    {
+      "path": "supplied/two-proofs-reduced-inputs-v3.tex",
+      "source": "H10-research-handoff-2026-11-05.zip",
+      "member": "H10-research-handoff-2026-11-05/01_current_articles/two-proofs-reduced-inputs-v3.tex",
+      "bytes": 49967,
+      "sha256": "57612ea0a05ec9695a34774c55d7aeb0583852f57078111040ce6652f15ec086",
+      "status": "Unchanged supplied source, not adopted as a theorem by copying"
+    },
+    {
+      "path": "supplied/two-proofs-reduced-inputs-v3.pdf",
+      "source": "H10-research-handoff-2026-11-05.zip",
+      "member": "H10-research-handoff-2026-11-05/01_current_articles/two-proofs-reduced-inputs-v3.pdf",
+      "bytes": 481711,
+      "sha256": "fc54d13d68241291272239b292a3a2a00e1eb36c6afe8c92e91529e2c48c3dce",
+      "status": "Unchanged supplied source, not adopted as a theorem by copying"
+    },
+    {
+      "path": "supplied/shared-witness-definitions-ai-generated.pdf",
+      "source": "H10-research-handoff-2026-11-05.zip",
+      "member": "H10-research-handoff-2026-11-05/01_current_articles/shared-witness-definitions-ai-generated.pdf",
+      "bytes": 486519,
+      "sha256": "a0624d9a2d66b96d2a7e401da4c708142f40ed8deda7c82a47c7075680c0050b",
+      "status": "Unchanged supplied source, not adopted as a theorem by copying"
+    },
+    {
+      "path": "supplied/shared-definition.tex",
+      "source": "H10-research-handoff-2026-11-05.zip",
+      "member": "H10-research-handoff-2026-11-05/06_working_packages/shared-witness/shared-witness-polynomials/article/shared-definition.tex",
+      "bytes": 27023,
+      "sha256": "97ea54d6ef709d588966a7980edc6a71b1bb330f3f72cb990a6c66dfc0be491f",
+      "status": "Unchanged supplied source, not adopted as a theorem by copying"
+    },
+    {
+      "path": "supplied/COMPLEXITY.md",
+      "source": "H10-research-handoff-2026-11-05.zip",
+      "member": "H10-research-handoff-2026-11-05/00_handoff/COMPLEXITY.md",
+      "bytes": 8143,
+      "sha256": "55b23466e06d760e7997d2a098f711b68246f475228c3c45e1efe938d3d0cd79",
+      "status": "Unchanged supplied source, not adopted as a theorem by copying"
+    },
+    {
+      "path": "supplied/DEPENDENCIES.md",
+      "source": "H10-research-handoff-2026-11-05.zip",
+      "member": "H10-research-handoff-2026-11-05/00_handoff/DEPENDENCIES.md",
+      "bytes": 8656,
+      "sha256": "b9afcaf49a72b8a89bc38709b0094a60ea47c269e8464e486e05c377b9a388e5",
+      "status": "Unchanged supplied source, not adopted as a theorem by copying"
+    },
+    {
+      "path": "supplied/paper_equivalence.pdf",
+      "source": "paper_equivalence.pdf",
+      "bytes": 465283,
+      "sha256": "1b231f3f210fb0aeb5a2a8a31152fa904b0d98cd729a90c191c189ec0b24d044",
+      "status": "Unchanged note supplied as work of Sohail Farhangi's collaborator; exact authorship not independently established"
+    },
+    {
+      "path": "supplied/proof_optimization.pdf",
+      "source": "proof_optimization.pdf",
+      "bytes": 669892,
+      "sha256": "4dc6ca943848bcf743dc96f3655bef60ef22971894ed3bbaf78ae7a4719b1c4a",
+      "status": "Unchanged note supplied as work of Sohail Farhangi's collaborator; exact authorship not independently established"
+    }
+  ],
+  "scope": "Selected mathematical articles and dependency/complexity ledgers only. Raw archive, nested ZIPs, execution logs, prompts and conversational transcripts are not republished."
+}

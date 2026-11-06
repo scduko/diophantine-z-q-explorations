@@ -1,0 +1,118 @@
+{
+  "retrieved_on": "2026-11-06",
+  "hashed_at_utc": "2026-11-06T16:45:31.683Z",
+  "sources": [
+    {
+      "file": "sun-2610.20691v2.html",
+      "url": "https://arxiv.org/html/2610.20691v2",
+      "format": "HTML",
+      "version": "Sun v2",
+      "bytes": 997745,
+      "sha256": "5fd399609b8c5425d3ddffaf5e467d54219d36ed3383594c141c46b83cf15526"
+    },
+    {
+      "file": "sun-2610.20691v2.tar",
+      "url": "https://arxiv.org/src/2610.20691v2",
+      "format": "gzip tar",
+      "version": "Sun v2",
+      "bytes": 45311,
+      "sha256": "4630f7292be0f856029d0c81ca37dc220c0328d94289fe5910931270dd2fa02e"
+    },
+    {
+      "file": "P103q.tex",
+      "url": "https://arxiv.org/src/2610.20691v2",
+      "format": "extracted TeX",
+      "version": "Sun v2",
+      "bytes": 129910,
+      "sha256": "b561d39ffc0e46798bd6ad5d3cfb8b543b75871780758876a8af67fb6daf15ba"
+    },
+    {
+      "file": "browning-heath-brown-2003.09593v1.tar",
+      "url": "https://arxiv.org/src/2003.09593v1",
+      "format": "gzip single TeX, despite local suffix",
+      "version": "BHB v1",
+      "bytes": 25599,
+      "sha256": "80b49e27b7c36b6c1b1bf5621e09867d0b41707043dc5b398a74bb31b4a29ad8"
+    },
+    {
+      "file": "browning-heath-brown-2003.09593v1/source.tex",
+      "url": "https://arxiv.org/src/2003.09593v1",
+      "format": "decompressed TeX",
+      "version": "BHB v1",
+      "bytes": 77203,
+      "sha256": "6bd855b28115708539121552527347d77c703b37cef7ee361144ef29e0cbc53f"
+    },
+    {
+      "file": "browning-loughran-1705.01999v2.tar",
+      "url": "https://arxiv.org/src/1705.01999v2",
+      "format": "gzip single TeX, despite local suffix",
+      "version": "BL v2",
+      "bytes": 32042,
+      "sha256": "3098a3f5cd8f70a5deb231cd3244e422d7e97c007af6811290962ed910fbf670"
+    },
+    {
+      "file": "browning-loughran-1705.01999v2/source.tex",
+      "url": "https://arxiv.org/src/1705.01999v2",
+      "format": "decompressed TeX",
+      "version": "BL v2",
+      "bytes": 101347,
+      "sha256": "d4ba9343c25b33e83639fa61b880e9782d500e4475f02a1f998ec63e85685225"
+    },
+    {
+      "file": "frei-tinkova-2408.17441v3.tar",
+      "url": "https://arxiv.org/src/2408.17441v3",
+      "format": "gzip tar",
+      "version": "FT v3",
+      "bytes": 69566,
+      "sha256": "55a86b9ebb977358c19a41581555642fc829185140818e72013f2305bd457ee5"
+    },
+    {
+      "file": "frei-tinkova-2408.17441v3/linear_equations_in_artin_primes.tex",
+      "url": "https://arxiv.org/src/2408.17441v3",
+      "format": "extracted TeX",
+      "version": "FT v3",
+      "bytes": 244251,
+      "sha256": "72ab8baf0743dd9fd597b27d8f75d656c8e606dc70530f10745bc58a3a9988a1"
+    },
+    {
+      "file": "tao-ziegler-1603.07817v1.source",
+      "url": "https://arxiv.org/src/1603.07817v1",
+      "format": "gzip single TeX",
+      "version": "TZ v1",
+      "bytes": 38233,
+      "sha256": "0846df2e5e30edfa7607b7434026c2498a621062e15c43fdea6f3d3b411b1845"
+    },
+    {
+      "file": "tao-ziegler-1603.07817v1.tex",
+      "url": "https://arxiv.org/src/1603.07817v1",
+      "format": "decompressed TeX",
+      "version": "TZ v1",
+      "bytes": 144027,
+      "sha256": "22a9a7308ea723dbe5e302b6d46eb5692fe3f32c1a0fa4b7eaa46d9c030290ae"
+    },
+    {
+      "file": "tao-ziegler-published-2018.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B46C46EEC613F34152B7904E83EA0E3F/S2050508617000038a.pdf/polynomial-patterns-in-the-primes.pdf",
+      "format": "published PDF",
+      "version": "TZ 2018 DOI 10.1017/fmp.2017.3",
+      "bytes": 559406,
+      "sha256": "ba1645db9857dd621e8ea6a280927c1e4b7cef5f6df04a4f19e7ac7782220f43"
+    },
+    {
+      "file": "tao-ziegler-published-2018.txt",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B46C46EEC613F34152B7904E83EA0E3F/S2050508617000038a.pdf/polynomial-patterns-in-the-primes.pdf",
+      "format": "PDF text extracted by pypdf, with one-based PAGE markers",
+      "version": "TZ 2018 DOI 10.1017/fmp.2017.3",
+      "bytes": 123466,
+      "sha256": "3e91ef95df87288722991522beaa729d0ec263ac80770e6c4528c89b2ef68468"
+    },
+    {
+      "file": "milne-CFT-v4.03.pdf",
+      "url": "https://www.jmilne.org/math/CourseNotes/CFT.pdf",
+      "format": "PDF",
+      "version": "Milne v4.03, 2020-08-06",
+      "bytes": 2072714,
+      "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5"
+    }
+  ]
+}

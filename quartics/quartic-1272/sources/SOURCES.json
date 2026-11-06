@@ -1,0 +1,45 @@
+{
+  "schema": "quartic-1272-pinned-sources-v1",
+  "files": [
+    {
+      "path": "diophantine_optimization_20261106_v3.tex",
+      "bytes": 448727,
+      "sha256": "fc8bc7b8fae727e24f934ddd7de0a7cff8a005e89c3d0cac1ea14e5191b910ca"
+    },
+    {
+      "path": "upstream-quartic-12504-28e87b1.tex",
+      "bytes": 676695,
+      "sha256": "38d458ba4178083766c5ae56a894da595fe27170c1ef07f6b49750fc5edf7c37"
+    },
+    {
+      "path": "sun-2610.20691v2-P103q.tex",
+      "bytes": 129910,
+      "sha256": "b561d39ffc0e46798bd6ad5d3cfb8b543b75871780758876a8af67fb6daf15ba"
+    },
+    {
+      "path": "proof-supplements/reciprocal_unramified_repair.tex",
+      "bytes": 4065,
+      "sha256": "7fb6119956d24749c1b8477f2cf567dc1c913e2cd55bfe168fff55367d096635"
+    },
+    {
+      "path": "proof-supplements/brox-local-proof-supplement.tex",
+      "bytes": 1877,
+      "sha256": "e88ce9eba6ed7b287f7f8e3555810004a8dc8f39762be8f21037d49129739e6c"
+    },
+    {
+      "path": "proof-supplements/sun-local-repair.tex",
+      "bytes": 1675,
+      "sha256": "6c2a1b021a7b39f3f9572e09aef3aa288ca366d43cb711714c712920bd58e747"
+    },
+    {
+      "path": "proof-supplements/sun-citation-repair.tex",
+      "bytes": 1250,
+      "sha256": "bea9cb3624bbc3ea85f565462da2db5bc07b289e3d3d053e4a9fef435d10ec5a"
+    }
+  ],
+  "references": {
+    "brox": "https://github.com/JoseBrox/diophantine-z-q_improvements/blob/f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6/paper/diophantine_optimization_20261106_v3.tex",
+    "sun": "https://arxiv.org/abs/2610.20691v2"
+  },
+  "scope": "Pinned mathematical sources and local proof supplements. External arithmetic theorems remain stated inputs."
+}

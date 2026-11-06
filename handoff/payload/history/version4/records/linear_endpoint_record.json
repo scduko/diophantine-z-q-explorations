@@ -1,0 +1,42 @@
+{
+  "run": 42239347916,
+  "commit": "7ee76efe57425734cfaf6408c1d1bffbf6bb8c24",
+  "artifact": 13513781187,
+  "artifact_sha256": "7813b774dbcf977918ae660146c127f5dfddc1b8965e80ebfb649dd583d69747",
+  "manifest_sha256": "6f0ed06a6874c12d37430a704bf97a017a7f580c29a10fc7516a0986895975d8",
+  "verified": {
+    "status": "PASS",
+    "scope": "Exact projection-preserving algebraic equivalence to the pinned source system; exact full integer expansion. The source arithmetic theorem is not checked here.",
+    "witnesses": 5161,
+    "variables": 5162,
+    "rows": 4741,
+    "monomials": 78083,
+    "degree": 4,
+    "max_abs_coefficient": 685783949153203534233889,
+    "source_id": "joint-chart-normalized-lucas-linear-pole-anchor4-k40-q12-a25-h19-s32-0f54051d0d14",
+    "source_sha256": "2629edef151e8bf0cb366edc3bc5876bbd5c09d59e1785670848a6ce12c5d82e",
+    "operations": {
+      "gpoint_chart": 6,
+      "field_ordinate": 2,
+      "parity_conic": 1,
+      "circuit": 13,
+      "linear": 230,
+      "eliminate": 120,
+      "shear": 2,
+      "relation_eliminate": 150
+    },
+    "total_operations": 524,
+    "weights_greater_than_one": 0,
+    "expanded_bytes": 1561345,
+    "compressed_bytes": 434958,
+    "expanded_sha256": "49cbd9471bd7523a8b5ca180ecfb0650b2b1eae8aa6cb03d8fbfd0a65e251523",
+    "certificate_sha256": "bb494eb275ce4ee0e6336e1b9bc7d502f6d312d28e58b5164550d31229d156f8",
+    "distinct_circuit_identities_checked": 1,
+    "checker_sha256": "baddc6eaf461556a2b9a05f2973120fcfb4ea896260bba2fb56c6285c44368e1",
+    "seconds": 0.984
+  },
+  "version4_threshold_met": false,
+  "scope": "Remote algebraic replay with independent source-arithmetic review under inherited theorem inputs",
+  "arithmetic_review": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/LINEAR_POLE_5364_SOURCE_REVIEW.md",
+  "arithmetic_review_sha256": "f8feaa0584dc8da654baa04e8e3c0c6f864c0cb3b80c7548e778062f85925872"
+}

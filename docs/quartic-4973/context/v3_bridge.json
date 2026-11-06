@@ -1,0 +1,8143 @@
+{
+  "format": "historical-review-current-text-bridge/v2",
+  "status": "PASS",
+  "unresolved": [],
+  "historical_manuscript": "docs/theorem-application-audit/source/audited-baseline.tex",
+  "historical_sha256": "cb1148cd6c7769d2af3f1636b60ff0ada4b40431978d1e98d0c339274b3d792b",
+  "current_manuscript": "quartic_9625.tex",
+  "current_sha256": "dc77c88b5cc0819201343dc85d0891d4dad81d97ac3267ec1df34eb38003b552",
+  "anchors": [
+    {
+      "id": "A001-S01",
+      "application_id": "A001",
+      "old_lines": [
+        404,
+        441
+      ],
+      "current_lines": [
+        415,
+        452
+      ],
+      "excerpt_sha256": "b489acdfa0fbb3b3a25d9ebb68116cd4d9378a968b3e4af3890998f328f1fa8e",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A001-S02",
+      "application_id": "A001",
+      "old_lines": [
+        404,
+        441
+      ],
+      "current_lines": [
+        415,
+        452
+      ],
+      "excerpt_sha256": "b489acdfa0fbb3b3a25d9ebb68116cd4d9378a968b3e4af3890998f328f1fa8e",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A001-S03",
+      "application_id": "A001",
+      "old_lines": [
+        409,
+        413
+      ],
+      "current_lines": [
+        420,
+        424
+      ],
+      "excerpt_sha256": "adaea338f7ecfa7a7d158566555b53d6c36c71ee1a80791fd15a7fefd5a99178",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A001-S04",
+      "application_id": "A001",
+      "old_lines": [
+        439,
+        443
+      ],
+      "current_lines": [
+        450,
+        454
+      ],
+      "excerpt_sha256": "98b74ee07a378d1ab3c8eae380f920a297c0d4ddbec0c73a0b44c62aec97c727",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A002-S01",
+      "application_id": "A002",
+      "old_lines": [
+        443,
+        462
+      ],
+      "current_lines": [
+        454,
+        473
+      ],
+      "excerpt_sha256": "ae9ba8eccf7a7c0a9e8cc05aec08ee2b004ef0ac135fd9f1254ebd3b8c60444f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A002-S02",
+      "application_id": "A002",
+      "old_lines": [
+        441,
+        445
+      ],
+      "current_lines": [
+        452,
+        456
+      ],
+      "excerpt_sha256": "3f6df0d5524456a420f20502934d6791120786e08579559500c60b58cbed938d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A002-S03",
+      "application_id": "A002",
+      "old_lines": [
+        484,
+        488
+      ],
+      "current_lines": [
+        495,
+        499
+      ],
+      "excerpt_sha256": "f7f858cad1fdcb0bef75c972c6ce5cafc08b843ae206cb9bc1588aa7836eeb73",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A003-S01",
+      "application_id": "A003",
+      "old_lines": [
+        581,
+        593
+      ],
+      "current_lines": [
+        592,
+        604
+      ],
+      "excerpt_sha256": "089f14dfce9dce1f5380eddbf8978a739e022dfb451fa8fdc2abad6737ebe7eb",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A003-S02",
+      "application_id": "A003",
+      "old_lines": [
+        580,
+        584
+      ],
+      "current_lines": [
+        591,
+        595
+      ],
+      "excerpt_sha256": "939cb91d101b2f339e1c1d909b1d981d241c0d4dc80c4641d1c56f6a9cc2f4b4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A003-S03",
+      "application_id": "A003",
+      "old_lines": [
+        592,
+        596
+      ],
+      "current_lines": [
+        603,
+        607
+      ],
+      "excerpt_sha256": "8c547ac2b2ec2562c4a33d4d4a2a2fd13c0d5a66a4a935dae0bcff7acc61eead",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A004-S01",
+      "application_id": "A004",
+      "old_lines": [
+        595,
+        630
+      ],
+      "current_lines": [
+        606,
+        641
+      ],
+      "excerpt_sha256": "14bdee31bcfd916d1839b7a01b950fd62b0fa5806fea17aac5498ad90d764b77",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A004-S02",
+      "application_id": "A004",
+      "old_lines": [
+        594,
+        598
+      ],
+      "current_lines": [
+        605,
+        609
+      ],
+      "excerpt_sha256": "8d63ed5a3490690ae6b7634b5c635ef1fe8a52fc2cbe134cc7bceb0cc0b59b9d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A004-S03",
+      "application_id": "A004",
+      "old_lines": [
+        611,
+        615
+      ],
+      "current_lines": [
+        622,
+        626
+      ],
+      "excerpt_sha256": "988990a81294795108a929d793f8b590eba3acf3df6dcd5c0e08ba9a377ad5da",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A005-S01",
+      "application_id": "A005",
+      "old_lines": [
+        595,
+        630
+      ],
+      "current_lines": [
+        606,
+        641
+      ],
+      "excerpt_sha256": "14bdee31bcfd916d1839b7a01b950fd62b0fa5806fea17aac5498ad90d764b77",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A005-S02",
+      "application_id": "A005",
+      "old_lines": [
+        612,
+        616
+      ],
+      "current_lines": [
+        623,
+        627
+      ],
+      "excerpt_sha256": "348d564865212b1174a4a58992dd003893e7d50ffe62b1f4c5a6d5a37527dbb5",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A005-S03",
+      "application_id": "A005",
+      "old_lines": [
+        625,
+        629
+      ],
+      "current_lines": [
+        636,
+        640
+      ],
+      "excerpt_sha256": "307adf194005bcbd07d2ec99d56c5737b8da1bde9c81ccad7d5cb87e4b01fe29",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A006-S01",
+      "application_id": "A006",
+      "old_lines": [
+        595,
+        630
+      ],
+      "current_lines": [
+        606,
+        641
+      ],
+      "excerpt_sha256": "14bdee31bcfd916d1839b7a01b950fd62b0fa5806fea17aac5498ad90d764b77",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A006-S02",
+      "application_id": "A006",
+      "old_lines": [
+        619,
+        623
+      ],
+      "current_lines": [
+        630,
+        634
+      ],
+      "excerpt_sha256": "75cfd6e4ed850e43e0af981abe32bfeb4c056a6cc76510b775f390e4e0f05dab",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A006-S03",
+      "application_id": "A006",
+      "old_lines": [
+        626,
+        630
+      ],
+      "current_lines": [
+        637,
+        641
+      ],
+      "excerpt_sha256": "565c599e1ca4002c2c22e729de1356f044e094b34affe37a4c323bc2e0d5ac50",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A006-S04",
+      "application_id": "A006",
+      "old_lines": [
+        894,
+        898
+      ],
+      "current_lines": [
+        905,
+        909
+      ],
+      "excerpt_sha256": "97ceaab8ddcbce07bbdc107603db4b03edbb04b1e859b80d57332e8b6a493a81",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A006-S05",
+      "application_id": "A006",
+      "old_lines": [
+        899,
+        903
+      ],
+      "current_lines": [
+        910,
+        914
+      ],
+      "excerpt_sha256": "cbf18bafcc8d6d163841784ed7856fc28ecde54334b42658206e774b2b0141ee",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A007-S01",
+      "application_id": "A007",
+      "old_lines": [
+        681,
+        708
+      ],
+      "current_lines": [
+        692,
+        719
+      ],
+      "excerpt_sha256": "6e67a3fcda70323abb84e18aed0034070fc7313d824c17627dd3c0bec297c9bd",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A007-S02",
+      "application_id": "A007",
+      "old_lines": [
+        659,
+        663
+      ],
+      "current_lines": [
+        670,
+        674
+      ],
+      "excerpt_sha256": "264fdc3d1b811a935169a12e1129c9193ecfb3960ca18852611ac0ab6b6d936e",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A007-S03",
+      "application_id": "A007",
+      "old_lines": [
+        702,
+        706
+      ],
+      "current_lines": [
+        713,
+        717
+      ],
+      "excerpt_sha256": "7a042b704c93cc1b0098a81aa82ba7b85a3c0761c9f19aef42156f44ee11ab4f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A008-S01",
+      "application_id": "A008",
+      "old_lines": [
+        718,
+        753
+      ],
+      "current_lines": [
+        729,
+        764
+      ],
+      "excerpt_sha256": "76b88961f13a719527f770610fe970a88bef020fbd96405f02985f2ff4f700eb",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A008-S02",
+      "application_id": "A008",
+      "old_lines": [
+        712,
+        716
+      ],
+      "current_lines": [
+        723,
+        727
+      ],
+      "excerpt_sha256": "2edbb6bcea24853b57f7590f996f97a2e0097c1b37d687c11ff580d91ade7844",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A008-S03",
+      "application_id": "A008",
+      "old_lines": [
+        733,
+        737
+      ],
+      "current_lines": [
+        744,
+        748
+      ],
+      "excerpt_sha256": "05581c0488fe2e05c1fbe9341d0fe04a26ec015372cde7c77e970c95fa39478a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A009-S01",
+      "application_id": "A009",
+      "old_lines": [
+        718,
+        753
+      ],
+      "current_lines": [
+        729,
+        764
+      ],
+      "excerpt_sha256": "76b88961f13a719527f770610fe970a88bef020fbd96405f02985f2ff4f700eb",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A009-S02",
+      "application_id": "A009",
+      "old_lines": [
+        10953,
+        10965
+      ],
+      "current_lines": [
+        14195,
+        14207
+      ],
+      "excerpt_sha256": "503d7f4c5a924650c997dec9da200ce503bcc81d9f685e89342298d14aefe959",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A009-S03",
+      "application_id": "A009",
+      "old_lines": [
+        10953,
+        10965
+      ],
+      "current_lines": [
+        14195,
+        14207
+      ],
+      "excerpt_sha256": "503d7f4c5a924650c997dec9da200ce503bcc81d9f685e89342298d14aefe959",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A009-S04",
+      "application_id": "A009",
+      "old_lines": [
+        10953,
+        10965
+      ],
+      "current_lines": [
+        14195,
+        14207
+      ],
+      "excerpt_sha256": "503d7f4c5a924650c997dec9da200ce503bcc81d9f685e89342298d14aefe959",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A009-S05",
+      "application_id": "A009",
+      "old_lines": [
+        10967,
+        10978
+      ],
+      "current_lines": [
+        14209,
+        14220
+      ],
+      "excerpt_sha256": "7edb9cb088ba777876bc0072bd6a26f137fbd8d22f11f295644b7ec302f7f97a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A009-S06",
+      "application_id": "A009",
+      "old_lines": [
+        10967,
+        10978
+      ],
+      "current_lines": [
+        14209,
+        14220
+      ],
+      "excerpt_sha256": "7edb9cb088ba777876bc0072bd6a26f137fbd8d22f11f295644b7ec302f7f97a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A009-S07",
+      "application_id": "A009",
+      "old_lines": [
+        10980,
+        10994
+      ],
+      "current_lines": [
+        14222,
+        14236
+      ],
+      "excerpt_sha256": "be5b6e413730cf0deaf4e64c2785fd199fee9208299acd5413c720fb01c53be0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A009-S08",
+      "application_id": "A009",
+      "old_lines": [
+        733,
+        737
+      ],
+      "current_lines": [
+        744,
+        748
+      ],
+      "excerpt_sha256": "05581c0488fe2e05c1fbe9341d0fe04a26ec015372cde7c77e970c95fa39478a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A009-S09",
+      "application_id": "A009",
+      "old_lines": [
+        738,
+        742
+      ],
+      "current_lines": [
+        749,
+        753
+      ],
+      "excerpt_sha256": "9f89afb32f8133db40be82aa32229e2425a408cc873473134b63350960306a21",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A009-S10",
+      "application_id": "A009",
+      "old_lines": [
+        11001,
+        11005
+      ],
+      "current_lines": [
+        14243,
+        14247
+      ],
+      "excerpt_sha256": "8ae823833188e65fff4ecad31c981d174470694e25e7314359e424586d47bf6d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A010-S01",
+      "application_id": "A010",
+      "old_lines": [
+        718,
+        753
+      ],
+      "current_lines": [
+        729,
+        764
+      ],
+      "excerpt_sha256": "76b88961f13a719527f770610fe970a88bef020fbd96405f02985f2ff4f700eb",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A010-S02",
+      "application_id": "A010",
+      "old_lines": [
+        737,
+        741
+      ],
+      "current_lines": [
+        748,
+        752
+      ],
+      "excerpt_sha256": "34e3a81308c9cb23dc8335d40c3818899fb9c92d9d9724d9942880d28b432632",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A010-S03",
+      "application_id": "A010",
+      "old_lines": [
+        739,
+        743
+      ],
+      "current_lines": [
+        750,
+        754
+      ],
+      "excerpt_sha256": "c3f2665f7b47d2b992a023b9d7094b00741ec86a8603a5de9d66f93c598a3e40",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A011-S01",
+      "application_id": "A011",
+      "old_lines": [
+        755,
+        774
+      ],
+      "current_lines": [
+        766,
+        785
+      ],
+      "excerpt_sha256": "386827c707d37fabd8f52350668decec4cedb526eb3a352701f6add30e37b088",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A011-S02",
+      "application_id": "A011",
+      "old_lines": [
+        755,
+        774
+      ],
+      "current_lines": [
+        766,
+        785
+      ],
+      "excerpt_sha256": "386827c707d37fabd8f52350668decec4cedb526eb3a352701f6add30e37b088",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A011-S03",
+      "application_id": "A011",
+      "old_lines": [
+        755,
+        774
+      ],
+      "current_lines": [
+        766,
+        785
+      ],
+      "excerpt_sha256": "386827c707d37fabd8f52350668decec4cedb526eb3a352701f6add30e37b088",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A011-S04",
+      "application_id": "A011",
+      "old_lines": [
+        755,
+        774
+      ],
+      "current_lines": [
+        766,
+        785
+      ],
+      "excerpt_sha256": "386827c707d37fabd8f52350668decec4cedb526eb3a352701f6add30e37b088",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A011-S05",
+      "application_id": "A011",
+      "old_lines": [
+        753,
+        757
+      ],
+      "current_lines": [
+        764,
+        768
+      ],
+      "excerpt_sha256": "de59e0c4de07fff52cf13bd1b914447f1f42f5150a11f0c7d0943930dafeab13",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A011-S06",
+      "application_id": "A011",
+      "old_lines": [
+        771,
+        775
+      ],
+      "current_lines": [
+        782,
+        786
+      ],
+      "excerpt_sha256": "83eead5217d9845fa2f6d6741a11e8241efc747e0f0c751d8be909a84289941a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A012-S01",
+      "application_id": "A012",
+      "old_lines": [
+        796,
+        812
+      ],
+      "current_lines": [
+        807,
+        823
+      ],
+      "excerpt_sha256": "b9ea3f13d4e8901288a5f1bf684d6ef3fb559079464cc44013be282a96ae2edc",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A012-S02",
+      "application_id": "A012",
+      "old_lines": [
+        814,
+        846
+      ],
+      "current_lines": [
+        825,
+        857
+      ],
+      "excerpt_sha256": "ab7e4ac8e8ddaad4b0abe9479192edb452bfa1378c0eefaf9234e2cde7b3a528",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A012-S03",
+      "application_id": "A012",
+      "old_lines": [
+        794,
+        798
+      ],
+      "current_lines": [
+        805,
+        809
+      ],
+      "excerpt_sha256": "64f8d26889b130a6190e51214cdbfcbaf39cb3cb7a8e14260e181bfc7d4684c0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A012-S04",
+      "application_id": "A012",
+      "old_lines": [
+        846,
+        850
+      ],
+      "current_lines": [
+        857,
+        861
+      ],
+      "excerpt_sha256": "b4d7cdd7cc8e9f8867e56bb45af983d752e8831299f7c100be59e2ad1bd8b06d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A013-S01",
+      "application_id": "A013",
+      "old_lines": [
+        814,
+        846
+      ],
+      "current_lines": [
+        825,
+        857
+      ],
+      "excerpt_sha256": "ab7e4ac8e8ddaad4b0abe9479192edb452bfa1378c0eefaf9234e2cde7b3a528",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A013-S02",
+      "application_id": "A013",
+      "old_lines": [
+        812,
+        816
+      ],
+      "current_lines": [
+        823,
+        827
+      ],
+      "excerpt_sha256": "6161eea83010389bb7dcbe575b675c0efdf55eb36ae80f5fce50badcac2d8fbe",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A013-S03",
+      "application_id": "A013",
+      "old_lines": [
+        845,
+        849
+      ],
+      "current_lines": [
+        856,
+        860
+      ],
+      "excerpt_sha256": "e8491407e428829c0ffa996c64d4e6b6eb8219971ef85e1bec9b93061b69afef",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A014-S01",
+      "application_id": "A014",
+      "old_lines": [
+        860,
+        876
+      ],
+      "current_lines": [
+        871,
+        887
+      ],
+      "excerpt_sha256": "e25ce3cb7c945ca2cf8d07b9cd53a3c24e6b1dae96440d540da4d74d18bb1e43",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A014-S02",
+      "application_id": "A014",
+      "old_lines": [
+        858,
+        862
+      ],
+      "current_lines": [
+        869,
+        873
+      ],
+      "excerpt_sha256": "ef256dde3d024382a2712565a4c8c9e3fdf3c1375d222f3cebabc0505732dc3a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A014-S03",
+      "application_id": "A014",
+      "old_lines": [
+        874,
+        878
+      ],
+      "current_lines": [
+        885,
+        889
+      ],
+      "excerpt_sha256": "6839fc7e01b10d42d1fecbe2cbed36163e16fe2781ae331c9d2d24f2e25d939a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A015-S01",
+      "application_id": "A015",
+      "old_lines": [
+        878,
+        905
+      ],
+      "current_lines": [
+        889,
+        916
+      ],
+      "excerpt_sha256": "1a8c87b940c08525a0d1714d052238c7b69e13a2c92b98bf9067ee29caeda4f7",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A015-S02",
+      "application_id": "A015",
+      "old_lines": [
+        876,
+        880
+      ],
+      "current_lines": [
+        887,
+        891
+      ],
+      "excerpt_sha256": "36efe1f3532a53a3be0e8e732dc0104588f9cc44356a1c6b6be87dd211ca4577",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A015-S03",
+      "application_id": "A015",
+      "old_lines": [
+        891,
+        895
+      ],
+      "current_lines": [
+        902,
+        906
+      ],
+      "excerpt_sha256": "aaed00cda2fbf6088cbef526cecfc322b4f6defb952c788409b334ef65d85aa8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A016-S01",
+      "application_id": "A016",
+      "old_lines": [
+        878,
+        905
+      ],
+      "current_lines": [
+        889,
+        916
+      ],
+      "excerpt_sha256": "1a8c87b940c08525a0d1714d052238c7b69e13a2c92b98bf9067ee29caeda4f7",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A016-S02",
+      "application_id": "A016",
+      "old_lines": [
+        893,
+        897
+      ],
+      "current_lines": [
+        904,
+        908
+      ],
+      "excerpt_sha256": "fd0189ff20eb81e01457eff5ea4c7861a7ecb56180dc5c60abcc8ada3f8df4f0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A016-S03",
+      "application_id": "A016",
+      "old_lines": [
+        899,
+        903
+      ],
+      "current_lines": [
+        910,
+        914
+      ],
+      "excerpt_sha256": "cbf18bafcc8d6d163841784ed7856fc28ecde54334b42658206e774b2b0141ee",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A017-S01",
+      "application_id": "A017",
+      "old_lines": [
+        908,
+        932
+      ],
+      "current_lines": [
+        919,
+        943
+      ],
+      "excerpt_sha256": "50ed86ea6fb8c97945db04bf7ca4d8d9e5e21bf6907565b6794f6e107d3bcaef",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A017-S02",
+      "application_id": "A017",
+      "old_lines": [
+        908,
+        932
+      ],
+      "current_lines": [
+        919,
+        943
+      ],
+      "excerpt_sha256": "50ed86ea6fb8c97945db04bf7ca4d8d9e5e21bf6907565b6794f6e107d3bcaef",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A017-S03",
+      "application_id": "A017",
+      "old_lines": [
+        906,
+        910
+      ],
+      "current_lines": [
+        917,
+        921
+      ],
+      "excerpt_sha256": "e84585405e439a4ceeb07c6ba3a6e81bf496447d86cab9eb043ac620f9a8f5e9",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A017-S04",
+      "application_id": "A017",
+      "old_lines": [
+        928,
+        932
+      ],
+      "current_lines": [
+        939,
+        943
+      ],
+      "excerpt_sha256": "e1a58fd648a1a64b7d7177f3924c673050e6a6b821bdaea5db3d8390d6d40a7f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A018-S01",
+      "application_id": "A018",
+      "old_lines": [
+        934,
+        947
+      ],
+      "current_lines": [
+        945,
+        958
+      ],
+      "excerpt_sha256": "80aa7f7248e2811737cd47977354cb8df4db00f05b01ff43fafedf2f619cc888",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A018-S02",
+      "application_id": "A018",
+      "old_lines": [
+        939,
+        943
+      ],
+      "current_lines": [
+        950,
+        954
+      ],
+      "excerpt_sha256": "95357ebfaeb354c6614d74d62ba7e884b5b920e21bb22cdb0254cb1cd38f4aaf",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A018-S03",
+      "application_id": "A018",
+      "old_lines": [
+        957,
+        961
+      ],
+      "current_lines": [
+        968,
+        972
+      ],
+      "excerpt_sha256": "8e374694b48f351387fe2a2464287bfe7b594bf258967bcef22e5c6ed5aada39",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A019-S01",
+      "application_id": "A019",
+      "old_lines": [
+        1072,
+        1084
+      ],
+      "current_lines": [
+        1083,
+        1095
+      ],
+      "excerpt_sha256": "4420bb1c43297a27e84c672fc5f48b0ddac11e0546d53b24e50eb060abb1b60a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A019-S02",
+      "application_id": "A019",
+      "old_lines": [
+        1069,
+        1073
+      ],
+      "current_lines": [
+        1080,
+        1084
+      ],
+      "excerpt_sha256": "e20524eafc1417978d9a53faf9cfe0ff6772569266d4177d64f3fc323dc7cb57",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A019-S03",
+      "application_id": "A019",
+      "old_lines": [
+        1082,
+        1086
+      ],
+      "current_lines": [
+        1093,
+        1097
+      ],
+      "excerpt_sha256": "5a28f17ffff4b7e1753ac5a239587a409c5c23705da0689569f947d0ff4c60c2",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A020-S01",
+      "application_id": "A020",
+      "old_lines": [
+        1086,
+        1109
+      ],
+      "current_lines": [
+        1097,
+        1120
+      ],
+      "excerpt_sha256": "752850520c38c21ae6a391365868a16b2a1a5561026038e742a21ea685e72574",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A020-S02",
+      "application_id": "A020",
+      "old_lines": [
+        1086,
+        1109
+      ],
+      "current_lines": [
+        1097,
+        1120
+      ],
+      "excerpt_sha256": "752850520c38c21ae6a391365868a16b2a1a5561026038e742a21ea685e72574",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A020-S03",
+      "application_id": "A020",
+      "old_lines": [
+        1084,
+        1088
+      ],
+      "current_lines": [
+        1095,
+        1099
+      ],
+      "excerpt_sha256": "a5dd7ffde2a5d940cff283e828c3856ddaa49f2fc7b56e36e4e006101c4cf7b5",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A020-S04",
+      "application_id": "A020",
+      "old_lines": [
+        1113,
+        1117
+      ],
+      "current_lines": [
+        1124,
+        1128
+      ],
+      "excerpt_sha256": "4b4828249e1a477df7e0580b21d5ab795a8697294b61dee4e1dd43dd95fe328f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A020-S05",
+      "application_id": "A020",
+      "old_lines": [
+        4015,
+        4019
+      ],
+      "current_lines": [
+        4026,
+        4030
+      ],
+      "excerpt_sha256": "f650bc25a78b2593b65b19928756d21d0c60bd440d5dfd6afc7f600710f7d1b2",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A020-S06",
+      "application_id": "A020",
+      "old_lines": [
+        4029,
+        4033
+      ],
+      "current_lines": [
+        4040,
+        4044
+      ],
+      "excerpt_sha256": "c4970dda9f4743dc8165f7fbeccbfd2f39ea7b91cfa3fe5bbfc4c77b9624b565",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A021-S01",
+      "application_id": "A021",
+      "old_lines": [
+        1382,
+        1403
+      ],
+      "current_lines": [
+        1393,
+        1414
+      ],
+      "excerpt_sha256": "74bbde0cf222197f94f4379921e321efe4ea4b2ffac801af201fee9e7cc1c16e",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A021-S02",
+      "application_id": "A021",
+      "old_lines": [
+        1405,
+        1435
+      ],
+      "current_lines": [
+        1416,
+        1446
+      ],
+      "excerpt_sha256": "3a41891c333c68c52185e630fe30ecfcfe1c624c31dcf2e80eadbf316d280351",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A021-S03",
+      "application_id": "A021",
+      "old_lines": [
+        1405,
+        1435
+      ],
+      "current_lines": [
+        1416,
+        1446
+      ],
+      "excerpt_sha256": "3a41891c333c68c52185e630fe30ecfcfe1c624c31dcf2e80eadbf316d280351",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A021-S04",
+      "application_id": "A021",
+      "old_lines": [
+        1405,
+        1435
+      ],
+      "current_lines": [
+        1416,
+        1446
+      ],
+      "excerpt_sha256": "3a41891c333c68c52185e630fe30ecfcfe1c624c31dcf2e80eadbf316d280351",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A021-S05",
+      "application_id": "A021",
+      "old_lines": [
+        1405,
+        1435
+      ],
+      "current_lines": [
+        1416,
+        1446
+      ],
+      "excerpt_sha256": "3a41891c333c68c52185e630fe30ecfcfe1c624c31dcf2e80eadbf316d280351",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A021-S06",
+      "application_id": "A021",
+      "old_lines": [
+        1504,
+        1532
+      ],
+      "current_lines": [
+        1515,
+        1543
+      ],
+      "excerpt_sha256": "4a9e9da8a5e33a5132f78559746f576f066178f27f537fb234b9ec0caa7581da",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A021-S07",
+      "application_id": "A021",
+      "old_lines": [
+        1534,
+        1552
+      ],
+      "current_lines": [
+        1545,
+        1563
+      ],
+      "excerpt_sha256": "f694c2a6ddf1df7805b532d4f3c0b8646a83c9ef0cbed368ed0c8b50def60bcc",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A021-S08",
+      "application_id": "A021",
+      "old_lines": [
+        1322,
+        1326
+      ],
+      "current_lines": [
+        1333,
+        1337
+      ],
+      "excerpt_sha256": "487f6392bd4689178435bc1d74b6c7edf06f7eddfc8549b4da64fb88a3505f96",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A021-S09",
+      "application_id": "A021",
+      "old_lines": [
+        1452,
+        1456
+      ],
+      "current_lines": [
+        1463,
+        1467
+      ],
+      "excerpt_sha256": "67830fd16484c554b7f1d2d03f0c7dfaa7a2e0d2d61f6016d29e2908a6d93327",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A022-S01",
+      "application_id": "A022",
+      "old_lines": [
+        1771,
+        1803
+      ],
+      "current_lines": [
+        1782,
+        1814
+      ],
+      "excerpt_sha256": "4aa2ef431f02d4e69076666a13fbe1fbf78a9215941a9dfb041c949a4149ab68",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A022-S02",
+      "application_id": "A022",
+      "old_lines": [
+        8222,
+        8259
+      ],
+      "current_lines": [
+        11464,
+        11501
+      ],
+      "excerpt_sha256": "b855541f9503f7c91240065f20d23fc1e425a337096deed1963f515b254388b3",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A022-S03",
+      "application_id": "A022",
+      "old_lines": [
+        1777,
+        1781
+      ],
+      "current_lines": [
+        1788,
+        1792
+      ],
+      "excerpt_sha256": "58c661b805c3c3837780ad60dece9df17459c8dd5d6baa64e18165e36d780852",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A022-S04",
+      "application_id": "A022",
+      "old_lines": [
+        1795,
+        1799
+      ],
+      "current_lines": [
+        1806,
+        1810
+      ],
+      "excerpt_sha256": "6c3f2fcfc639e927b053cfe189fabf8202c2faadc6bdd93d9cafd6733fb04c92",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A022-S05",
+      "application_id": "A022",
+      "old_lines": [
+        8243,
+        8247
+      ],
+      "current_lines": [
+        11485,
+        11489
+      ],
+      "excerpt_sha256": "5da5caa3b5c47e878c372fecef5a9597e7834e5b85748f1064cfc8829bd2c043",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A022-S06",
+      "application_id": "A022",
+      "old_lines": [
+        8252,
+        8256
+      ],
+      "current_lines": [
+        11494,
+        11498
+      ],
+      "excerpt_sha256": "a09fbecab6585f027b819be89c686d1f419d77edab9bce50a0b77473ab2d12e7",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A023-S01",
+      "application_id": "A023",
+      "old_lines": [
+        1884,
+        1892
+      ],
+      "current_lines": [
+        1895,
+        1903
+      ],
+      "excerpt_sha256": "7521ea4329d1f309483a580e4bdc3db1c1d7c364d3c04c70d5f4930552c92a6e",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A023-S02",
+      "application_id": "A023",
+      "old_lines": [
+        1882,
+        1886
+      ],
+      "current_lines": [
+        1893,
+        1897
+      ],
+      "excerpt_sha256": "a03152138653d04bfad486cd6377fc0afd3716d2d39ec3e5cc78759ac0a558ed",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A023-S03",
+      "application_id": "A023",
+      "old_lines": [
+        1893,
+        1897
+      ],
+      "current_lines": [
+        1904,
+        1908
+      ],
+      "excerpt_sha256": "72502aac2aceaf2815e5dcf2217c4b8cba4ee0c03bce9dd5c47d04e025173c3d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A023-S04",
+      "application_id": "A023",
+      "old_lines": [
+        7215,
+        7219
+      ],
+      "current_lines": [
+        10457,
+        10461
+      ],
+      "excerpt_sha256": "1d7e2f99d38176dc40ad3968138fa8a8935a0efe845d4f048e38f6dd975dcab0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A023-S05",
+      "application_id": "A023",
+      "old_lines": [
+        7344,
+        7348
+      ],
+      "current_lines": [
+        10586,
+        10590
+      ],
+      "excerpt_sha256": "75e3afc9ef306085894c2389790e30970f10f4635ab4d8c2383cd5386fa58a71",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A024-S01",
+      "application_id": "A024",
+      "old_lines": [
+        1981,
+        1992
+      ],
+      "current_lines": [
+        1992,
+        2003
+      ],
+      "excerpt_sha256": "d81d017d9380d49aadc9327c8a68b0ea98bbf911f84994a6d3f4612c02d8a7a0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A024-S02",
+      "application_id": "A024",
+      "old_lines": [
+        9995,
+        9999
+      ],
+      "current_lines": [
+        13237,
+        13241
+      ],
+      "excerpt_sha256": "cbca8474570a405754b7f1a6abef72c0a4a75612adf558fe7849fa1fc62b056f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A024-S03",
+      "application_id": "A024",
+      "old_lines": [
+        1980,
+        1984
+      ],
+      "current_lines": [
+        1991,
+        1995
+      ],
+      "excerpt_sha256": "ea04c834da75b04322e8e7b94046f0bbfd2026007d6f99472ba8f76878408679",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A024-S04",
+      "application_id": "A024",
+      "old_lines": [
+        1993,
+        1997
+      ],
+      "current_lines": [
+        2004,
+        2008
+      ],
+      "excerpt_sha256": "01444f7aa1609e1168c286c703c494854e9b6ed68b9f851a685d03d21b2675ee",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A024-S05",
+      "application_id": "A024",
+      "old_lines": [
+        9986,
+        9990
+      ],
+      "current_lines": [
+        13228,
+        13232
+      ],
+      "excerpt_sha256": "7539bf0fdeeb6bc0fce0658504676e00f9b4925e90126dd3ea20b4d811abc49a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A024-S06",
+      "application_id": "A024",
+      "old_lines": [
+        10031,
+        10035
+      ],
+      "current_lines": [
+        13273,
+        13277
+      ],
+      "excerpt_sha256": "f9b026f667c686b78cb5f7a92052f28d58868e526e1642a7b877b665e4af1afa",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A025-S01",
+      "application_id": "A025",
+      "old_lines": [
+        1981,
+        1992
+      ],
+      "current_lines": [
+        1992,
+        2003
+      ],
+      "excerpt_sha256": "d81d017d9380d49aadc9327c8a68b0ea98bbf911f84994a6d3f4612c02d8a7a0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A025-S02",
+      "application_id": "A025",
+      "old_lines": [
+        8222,
+        8259
+      ],
+      "current_lines": [
+        11464,
+        11501
+      ],
+      "excerpt_sha256": "b855541f9503f7c91240065f20d23fc1e425a337096deed1963f515b254388b3",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A025-S03",
+      "application_id": "A025",
+      "old_lines": [
+        1980,
+        1984
+      ],
+      "current_lines": [
+        1991,
+        1995
+      ],
+      "excerpt_sha256": "ea04c834da75b04322e8e7b94046f0bbfd2026007d6f99472ba8f76878408679",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A025-S04",
+      "application_id": "A025",
+      "old_lines": [
+        1993,
+        1997
+      ],
+      "current_lines": [
+        2004,
+        2008
+      ],
+      "excerpt_sha256": "01444f7aa1609e1168c286c703c494854e9b6ed68b9f851a685d03d21b2675ee",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A025-S05",
+      "application_id": "A025",
+      "old_lines": [
+        8243,
+        8247
+      ],
+      "current_lines": [
+        11485,
+        11489
+      ],
+      "excerpt_sha256": "5da5caa3b5c47e878c372fecef5a9597e7834e5b85748f1064cfc8829bd2c043",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A025-S06",
+      "application_id": "A025",
+      "old_lines": [
+        8266,
+        8270
+      ],
+      "current_lines": [
+        11508,
+        11512
+      ],
+      "excerpt_sha256": "82b75ff003c684af927165e09d1f093854f556726fde1c84eca208358ad00b5c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A026-S01",
+      "application_id": "A026",
+      "old_lines": [
+        1994,
+        2004
+      ],
+      "current_lines": [
+        2005,
+        2015
+      ],
+      "excerpt_sha256": "2ca152730236f98e39e59db4ed418b2083589e9eb7ada1df446d6d9b56d3a2dd",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A026-S02",
+      "application_id": "A026",
+      "old_lines": [
+        1994,
+        1998
+      ],
+      "current_lines": [
+        2005,
+        2009
+      ],
+      "excerpt_sha256": "41b7593f0adbf756258bb204c075d6267237b8e3d63fcaadd167bfbc5befce06",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A026-S03",
+      "application_id": "A026",
+      "old_lines": [
+        2002,
+        2006
+      ],
+      "current_lines": [
+        2013,
+        2017
+      ],
+      "excerpt_sha256": "39cce04360cfa8d0493ddf5af6ab1b59d3025993b583ada7f09bec623ad570c2",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A027-S01",
+      "application_id": "A027",
+      "old_lines": [
+        2418,
+        2440
+      ],
+      "current_lines": [
+        2429,
+        2451
+      ],
+      "excerpt_sha256": "c618f8a12e6addd54519c98f2ca64c7ad8ed3a5443884545620a487ba85f1f98",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A027-S02",
+      "application_id": "A027",
+      "old_lines": [
+        8261,
+        8272
+      ],
+      "current_lines": [
+        11503,
+        11514
+      ],
+      "excerpt_sha256": "486c6096ad912fc632012d48b61cc0734151b9e8ebfe8ad809cec00a5eaccb35",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A027-S03",
+      "application_id": "A027",
+      "old_lines": [
+        2413,
+        2417
+      ],
+      "current_lines": [
+        2424,
+        2428
+      ],
+      "excerpt_sha256": "74eb7e9246ff175f92e9ff8aecbd141773757c699cfb82decf41af5bb744dfe8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A027-S04",
+      "application_id": "A027",
+      "old_lines": [
+        2446,
+        2450
+      ],
+      "current_lines": [
+        2457,
+        2461
+      ],
+      "excerpt_sha256": "1bf21dabb5579bf452129f33a50ece18b744070ca5956f182af43581c3befd01",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A027-S05",
+      "application_id": "A027",
+      "old_lines": [
+        8267,
+        8271
+      ],
+      "current_lines": [
+        11509,
+        11513
+      ],
+      "excerpt_sha256": "f4a586c550949e769bc35c1b4ac4c2c053205e9b677522aa5ce41001069b5e9b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A027-S06",
+      "application_id": "A027",
+      "old_lines": [
+        8304,
+        8308
+      ],
+      "current_lines": [
+        11546,
+        11550
+      ],
+      "excerpt_sha256": "6fc26e3f65db6431a8000875ecd8c84c3be6e8ae9e948101abd92f8852ade877",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S01",
+      "application_id": "A028",
+      "old_lines": [
+        2522,
+        2536
+      ],
+      "current_lines": [
+        2533,
+        2547
+      ],
+      "excerpt_sha256": "d58ad4141ada8da1c0b181311939ac0b7adf2f2c6bdab0d2bfb72caec8c6f3a8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S02",
+      "application_id": "A028",
+      "old_lines": [
+        9150,
+        9169
+      ],
+      "current_lines": [
+        12392,
+        12411
+      ],
+      "excerpt_sha256": "55c8658ce6a87f4de72b568d32cf5311793c67d6020d80b94ba704915fc7d426",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S03",
+      "application_id": "A028",
+      "old_lines": [
+        9195,
+        9211
+      ],
+      "current_lines": [
+        12437,
+        12453
+      ],
+      "excerpt_sha256": "6deac4794478c958279861afee77c2e8a56dd423cd4a7ee59e272d0eef64592d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S04",
+      "application_id": "A028",
+      "old_lines": [
+        9213,
+        9223
+      ],
+      "current_lines": [
+        12455,
+        12465
+      ],
+      "excerpt_sha256": "60a07371d93bc163c43b06b53093848ba1a8f56d471c960db2359e71390eabaf",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S05",
+      "application_id": "A028",
+      "old_lines": [
+        9225,
+        9243
+      ],
+      "current_lines": [
+        12467,
+        12485
+      ],
+      "excerpt_sha256": "aa8c5c17e8e4931f9adede18aad2f3b8d0d8ea5108eae92905e527bb5f06ceb8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S06",
+      "application_id": "A028",
+      "old_lines": [
+        9225,
+        9243
+      ],
+      "current_lines": [
+        12467,
+        12485
+      ],
+      "excerpt_sha256": "aa8c5c17e8e4931f9adede18aad2f3b8d0d8ea5108eae92905e527bb5f06ceb8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S07",
+      "application_id": "A028",
+      "old_lines": [
+        9225,
+        9243
+      ],
+      "current_lines": [
+        12467,
+        12485
+      ],
+      "excerpt_sha256": "aa8c5c17e8e4931f9adede18aad2f3b8d0d8ea5108eae92905e527bb5f06ceb8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S08",
+      "application_id": "A028",
+      "old_lines": [
+        9245,
+        9263
+      ],
+      "current_lines": [
+        12487,
+        12505
+      ],
+      "excerpt_sha256": "ec3b2c842ab82e4aae5de4027058cb3100f5359fbf91f9bd76ccd752a46a685d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S09",
+      "application_id": "A028",
+      "old_lines": [
+        9265,
+        9295
+      ],
+      "current_lines": [
+        12507,
+        12537
+      ],
+      "excerpt_sha256": "604e9e577f3e4a910e73b031373db0953d48d612edf16c10f15bc24ab0256e3f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S10",
+      "application_id": "A028",
+      "old_lines": [
+        2519,
+        2523
+      ],
+      "current_lines": [
+        2530,
+        2534
+      ],
+      "excerpt_sha256": "a089e7c684541fc7fbabc7603a4e6bd3f47b907dc70bbaf9df0e79d1c3129e23",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S11",
+      "application_id": "A028",
+      "old_lines": [
+        2536,
+        2540
+      ],
+      "current_lines": [
+        2547,
+        2551
+      ],
+      "excerpt_sha256": "a05a3fbb77cca329e70494185895377d639a050cf22d4bd4a6d8f1b48512925b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S12",
+      "application_id": "A028",
+      "old_lines": [
+        8460,
+        8464
+      ],
+      "current_lines": [
+        11702,
+        11706
+      ],
+      "excerpt_sha256": "9f0e1680d93adb88c00bc600e0c3c9f0d218f3f45dc67b9f96601efaa5d9645a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S13",
+      "application_id": "A028",
+      "old_lines": [
+        9148,
+        9152
+      ],
+      "current_lines": [
+        12390,
+        12394
+      ],
+      "excerpt_sha256": "23c2c952c69e570f7066c1e8b8cd9f57020f0c52472448ad96c2953f4ce3e82f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S14",
+      "application_id": "A028",
+      "old_lines": [
+        9154,
+        9158
+      ],
+      "current_lines": [
+        12396,
+        12400
+      ],
+      "excerpt_sha256": "62b0f34c0ff6a3ea1667958800d4bb10c127de5cd0974a4dc88a37e4cbe08ede",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S15",
+      "application_id": "A028",
+      "old_lines": [
+        9185,
+        9189
+      ],
+      "current_lines": [
+        12427,
+        12431
+      ],
+      "excerpt_sha256": "e08b1d78d02cbc6282b0c06a82a1c6ff3f38f5fd159e0f6c6ebca598a24c4032",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A028-S16",
+      "application_id": "A028",
+      "old_lines": [
+        9341,
+        9345
+      ],
+      "current_lines": [
+        12583,
+        12587
+      ],
+      "excerpt_sha256": "c21ebb48c5fa8730a72656651a5ca989f59d53771abb60d8a2dec6cac0adfa0a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A029-S01",
+      "application_id": "A029",
+      "old_lines": [
+        2553,
+        2567
+      ],
+      "current_lines": [
+        2564,
+        2578
+      ],
+      "excerpt_sha256": "25254cb150db5b8762b07717746773d9deef6b6734ac73ba059b862a2bed2c6d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A029-S02",
+      "application_id": "A029",
+      "old_lines": [
+        7957,
+        7966
+      ],
+      "current_lines": [
+        11199,
+        11208
+      ],
+      "excerpt_sha256": "32b3b24cee4ecfb40ad2b07f391ade4b5ff030d694255d084a9746edbb93d3d2",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A029-S03",
+      "application_id": "A029",
+      "old_lines": [
+        7957,
+        7966
+      ],
+      "current_lines": [
+        11199,
+        11208
+      ],
+      "excerpt_sha256": "32b3b24cee4ecfb40ad2b07f391ade4b5ff030d694255d084a9746edbb93d3d2",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A029-S04",
+      "application_id": "A029",
+      "old_lines": [
+        7968,
+        7987
+      ],
+      "current_lines": [
+        11210,
+        11229
+      ],
+      "excerpt_sha256": "619e32245f3dc7888f6edd41a80512507a3af6f54495c3d1facde91710319d15",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A029-S05",
+      "application_id": "A029",
+      "old_lines": [
+        8003,
+        8028
+      ],
+      "current_lines": [
+        11245,
+        11270
+      ],
+      "excerpt_sha256": "22ff9eb9df489b36995d718bf6a345becfcfd63961db41ab6cb508509fbfd5cf",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A029-S06",
+      "application_id": "A029",
+      "old_lines": [
+        2553,
+        2557
+      ],
+      "current_lines": [
+        2564,
+        2568
+      ],
+      "excerpt_sha256": "81b9191a528b4f21e7690c14c5685d82664759981e07412895e57470132f792e",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A029-S07",
+      "application_id": "A029",
+      "old_lines": [
+        2566,
+        2570
+      ],
+      "current_lines": [
+        2577,
+        2581
+      ],
+      "excerpt_sha256": "c3ac1596fddd99a6a50da5a4af3056dfc16dd77387389abd5d370a04feb7f719",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A029-S08",
+      "application_id": "A029",
+      "old_lines": [
+        7954,
+        7958
+      ],
+      "current_lines": [
+        11196,
+        11200
+      ],
+      "excerpt_sha256": "f6e2e1ff19385486c01953bedd2d849289e876301836b3d33f38f219b554e929",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A029-S09",
+      "application_id": "A029",
+      "old_lines": [
+        8028,
+        8032
+      ],
+      "current_lines": [
+        11270,
+        11274
+      ],
+      "excerpt_sha256": "615e5c94fec781b5215b8085107791e2e7e0aa7166960dd68f508ba12d9d4f79",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A030-S01",
+      "application_id": "A030",
+      "old_lines": [
+        7821,
+        7835
+      ],
+      "current_lines": [
+        11063,
+        11077
+      ],
+      "excerpt_sha256": "157ef6bfcd7d1a034fcb668d73fcf34403f3674e587da31fa67fd5531b23b6dc",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A030-S02",
+      "application_id": "A030",
+      "old_lines": [
+        7821,
+        7835
+      ],
+      "current_lines": [
+        11063,
+        11077
+      ],
+      "excerpt_sha256": "157ef6bfcd7d1a034fcb668d73fcf34403f3674e587da31fa67fd5531b23b6dc",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A030-S03",
+      "application_id": "A030",
+      "old_lines": [
+        7929,
+        7940
+      ],
+      "current_lines": [
+        11171,
+        11182
+      ],
+      "excerpt_sha256": "0d58687dc0274f08340236ee2e16b38a39352b89fe08432e3e4d9a073faa1653",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A030-S04",
+      "application_id": "A030",
+      "old_lines": [
+        7816,
+        7820
+      ],
+      "current_lines": [
+        11058,
+        11062
+      ],
+      "excerpt_sha256": "b19c2b6b67cbe1bdb5c40315eb31dba1c5e4cd99a95c6e0217d326a959b53205",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A030-S05",
+      "application_id": "A030",
+      "old_lines": [
+        7953,
+        7957
+      ],
+      "current_lines": [
+        11195,
+        11199
+      ],
+      "excerpt_sha256": "1af3e6fd854e6789c33d0ced390577a4f291a396abf2d137eaa38cd001a9f22a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A031-S01",
+      "application_id": "A031",
+      "old_lines": [
+        8041,
+        8051
+      ],
+      "current_lines": [
+        11283,
+        11293
+      ],
+      "excerpt_sha256": "607ae4773bb989f10cc41be8015f1a26ac71c7babd3de2323e4be06cb7ac4978",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A031-S02",
+      "application_id": "A031",
+      "old_lines": [
+        8053,
+        8083
+      ],
+      "current_lines": [
+        11295,
+        11325
+      ],
+      "excerpt_sha256": "5268f362a2d112a909798d2907ccb91c1e53ee6939273925a0986d6798ed4127",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A031-S03",
+      "application_id": "A031",
+      "old_lines": [
+        8036,
+        8040
+      ],
+      "current_lines": [
+        11278,
+        11282
+      ],
+      "excerpt_sha256": "1dbbca8bf25d2e66b0e0a4d3b02c9ffac23127e3ae837e581f8c8b5b59e6a6ff",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A031-S04",
+      "application_id": "A031",
+      "old_lines": [
+        8114,
+        8118
+      ],
+      "current_lines": [
+        11356,
+        11360
+      ],
+      "excerpt_sha256": "6ed5c3cd796fdb6499c0c0862422ccda013f38d66375daa2a4910c96c92c9c89",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A032-S01",
+      "application_id": "A032",
+      "old_lines": [
+        9773,
+        9797
+      ],
+      "current_lines": [
+        13015,
+        13039
+      ],
+      "excerpt_sha256": "2457e5a8996ea40dcceb4e920b165ee7c6c59d6c66619a9aa875c3878c4d9ab9",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A032-S02",
+      "application_id": "A032",
+      "old_lines": [
+        9799,
+        9811
+      ],
+      "current_lines": [
+        13041,
+        13053
+      ],
+      "excerpt_sha256": "1056039ef95535ae08a5195fcba834113049f57ab423feb4b2d77cb3e79009f4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A032-S03",
+      "application_id": "A032",
+      "old_lines": [
+        9813,
+        9864
+      ],
+      "current_lines": [
+        13055,
+        13106
+      ],
+      "excerpt_sha256": "cc3d9f6134a95648e0d7c7d29d2de81f2a45c623d802e0f0b868b1645d784566",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A032-S04",
+      "application_id": "A032",
+      "old_lines": [
+        2567,
+        2571
+      ],
+      "current_lines": [
+        2578,
+        2582
+      ],
+      "excerpt_sha256": "32db369e96b7d56d697a217d1c768fdb0a8d8b266a64968006fd295313e7bd88",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A032-S05",
+      "application_id": "A032",
+      "old_lines": [
+        2583,
+        2587
+      ],
+      "current_lines": [
+        2594,
+        2598
+      ],
+      "excerpt_sha256": "b79bee805712d2bca863acb95cf42b21233c0753cc16248d1bd931eca4be59e9",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A032-S06",
+      "application_id": "A032",
+      "old_lines": [
+        9761,
+        9765
+      ],
+      "current_lines": [
+        13003,
+        13007
+      ],
+      "excerpt_sha256": "a293df3478d256600e5b3dac9e1e295f0c88ebd2d772d96458d33996ec762685",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A032-S07",
+      "application_id": "A032",
+      "old_lines": [
+        9880,
+        9884
+      ],
+      "current_lines": [
+        13122,
+        13126
+      ],
+      "excerpt_sha256": "7f152ab7ac2216deb0e48ddb47eda553bb631e37fb76854473d3e2f9d6093c28",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A033-S01",
+      "application_id": "A033",
+      "old_lines": [
+        2870,
+        2900
+      ],
+      "current_lines": [
+        2881,
+        2911
+      ],
+      "excerpt_sha256": "1e0a6dd084e3707c0ecbf0836a8ebf1a79989d13d703131fde673a90128204b0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A033-S02",
+      "application_id": "A033",
+      "old_lines": [
+        3597,
+        3633
+      ],
+      "current_lines": [
+        3608,
+        3644
+      ],
+      "excerpt_sha256": "5e40a85344ab195018178c7eb19d7a13691fdda5790a90b89b27357fef99f865",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A033-S03",
+      "application_id": "A033",
+      "old_lines": [
+        8319,
+        8331
+      ],
+      "current_lines": [
+        11561,
+        11573
+      ],
+      "excerpt_sha256": "5511af18dc7bbdb820fa7ee413718b67bd1988d279060099d62b3ad0b41ec05e",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A033-S04",
+      "application_id": "A033",
+      "old_lines": [
+        2879,
+        2883
+      ],
+      "current_lines": [
+        2890,
+        2894
+      ],
+      "excerpt_sha256": "badda788d2ad6092078497280538df4465d31dbb4ff87a66b847272a03e6e626",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A033-S05",
+      "application_id": "A033",
+      "old_lines": [
+        2898,
+        2902
+      ],
+      "current_lines": [
+        2909,
+        2913
+      ],
+      "excerpt_sha256": "0cb8160727977bd20c82bb3eda642e901c965d13c980054a145fafc9e4a6faf4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A033-S06",
+      "application_id": "A033",
+      "old_lines": [
+        3595,
+        3599
+      ],
+      "current_lines": [
+        3606,
+        3610
+      ],
+      "excerpt_sha256": "5eb4e1aecbecebdb3ad261bbde7f0a36b8a456ea04c4353d9922c1b367e8c492",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A033-S07",
+      "application_id": "A033",
+      "old_lines": [
+        3631,
+        3635
+      ],
+      "current_lines": [
+        3642,
+        3646
+      ],
+      "excerpt_sha256": "06dbd51ce8d871315c4fb91191f927011972faf04ccc9e2f69e0ede486db3231",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A033-S08",
+      "application_id": "A033",
+      "old_lines": [
+        8307,
+        8311
+      ],
+      "current_lines": [
+        11549,
+        11553
+      ],
+      "excerpt_sha256": "64de708e9db92cc499a5543f395e50609d84382e40f0d7b7570bef00136d28f6",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A033-S09",
+      "application_id": "A033",
+      "old_lines": [
+        8341,
+        8345
+      ],
+      "current_lines": [
+        11583,
+        11587
+      ],
+      "excerpt_sha256": "9f55a7698a69b642fcb72c93aa1dd81137b57e3b101e4964cdbc2b939540dac1",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A034-S01",
+      "application_id": "A034",
+      "old_lines": [
+        2914,
+        2946
+      ],
+      "current_lines": [
+        2925,
+        2957
+      ],
+      "excerpt_sha256": "be4f2ac537219cbadb8953ceabb43d9cf301d27629a910222c9465e27ac876f6",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A034-S02",
+      "application_id": "A034",
+      "old_lines": [
+        2912,
+        2916
+      ],
+      "current_lines": [
+        2923,
+        2927
+      ],
+      "excerpt_sha256": "f868dda4da49846d1632be23762642bb9b65195d4cea5fac9e2946984206e6bc",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A034-S03",
+      "application_id": "A034",
+      "old_lines": [
+        2949,
+        2953
+      ],
+      "current_lines": [
+        2960,
+        2964
+      ],
+      "excerpt_sha256": "d8f666d3b6518d1dd114f8c11ae4b89f97c4eef3855d5647bdf334e9e79136b0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A035-S01",
+      "application_id": "A035",
+      "old_lines": [
+        2948,
+        2967
+      ],
+      "current_lines": [
+        2959,
+        2978
+      ],
+      "excerpt_sha256": "6e1153a3bf1a34b555b0d645d6a7724cda0fc4a9d77c78fdd246079ba9cd0604",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A035-S02",
+      "application_id": "A035",
+      "old_lines": [
+        2951,
+        2955
+      ],
+      "current_lines": [
+        2962,
+        2966
+      ],
+      "excerpt_sha256": "a3efb673b88068f60c8d5039611fdbb8e0b3f563079bd50198be48d2b4518b08",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A035-S03",
+      "application_id": "A035",
+      "old_lines": [
+        2965,
+        2969
+      ],
+      "current_lines": [
+        2976,
+        2980
+      ],
+      "excerpt_sha256": "73a08c50064722996c2349535025db0a4798b4bc7d0a015d6e9f68e69386a6b7",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A036-S01",
+      "application_id": "A036",
+      "old_lines": [
+        3034,
+        3056
+      ],
+      "current_lines": [
+        3045,
+        3067
+      ],
+      "excerpt_sha256": "e192fed8a56f80acba3a2d794b05bba4a5b2b0d7cfa2a53e42164f3bd7b46528",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A036-S02",
+      "application_id": "A036",
+      "old_lines": [
+        3031,
+        3035
+      ],
+      "current_lines": [
+        3042,
+        3046
+      ],
+      "excerpt_sha256": "a801d8a0420b8b424f15cf4b74c475d56c973bd21d45d56724c3ed073eb787a8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A036-S03",
+      "application_id": "A036",
+      "old_lines": [
+        3056,
+        3060
+      ],
+      "current_lines": [
+        3067,
+        3071
+      ],
+      "excerpt_sha256": "3bc88c1b1b9d392d50d64606481d17981a17c4b375fa424c1c3e1fa939b32c35",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A037-S01",
+      "application_id": "A037",
+      "old_lines": [
+        3442,
+        3456
+      ],
+      "current_lines": [
+        3453,
+        3467
+      ],
+      "excerpt_sha256": "5452c3474b56f9247b6ecbaede534afa5b06f42b40e02257b526c16f3c67b82d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A037-S02",
+      "application_id": "A037",
+      "old_lines": [
+        3408,
+        3412
+      ],
+      "current_lines": [
+        3419,
+        3423
+      ],
+      "excerpt_sha256": "a5565a5329e3f5e8eb51b215f186e8e9eaf6e84e98d27a4f9aa82ad7d8f6070f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A037-S03",
+      "application_id": "A037",
+      "old_lines": [
+        3452,
+        3456
+      ],
+      "current_lines": [
+        3463,
+        3467
+      ],
+      "excerpt_sha256": "64a44ee3b7e494e38c9070e9b5ddbfd43cd82af885a0abf621fbeca8ece36751",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A038-S01",
+      "application_id": "A038",
+      "old_lines": [
+        3442,
+        3456
+      ],
+      "current_lines": [
+        3453,
+        3467
+      ],
+      "excerpt_sha256": "5452c3474b56f9247b6ecbaede534afa5b06f42b40e02257b526c16f3c67b82d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A038-S02",
+      "application_id": "A038",
+      "old_lines": [
+        3820,
+        3835
+      ],
+      "current_lines": [
+        3831,
+        3846
+      ],
+      "excerpt_sha256": "004d78bc74f844f317ab5c8239308aaddebbdc559598847b8054a91349f8098d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A038-S03",
+      "application_id": "A038",
+      "old_lines": [
+        3440,
+        3444
+      ],
+      "current_lines": [
+        3451,
+        3455
+      ],
+      "excerpt_sha256": "14fd1d323db56478344d54ce8d96a2a6de71e6b3d2854f2825970d9612b0942c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A038-S04",
+      "application_id": "A038",
+      "old_lines": [
+        3456,
+        3460
+      ],
+      "current_lines": [
+        3467,
+        3471
+      ],
+      "excerpt_sha256": "4561d40738391be327cbb0214ee84b55167f317ca4c29b9cb6759fffc27599e7",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A038-S05",
+      "application_id": "A038",
+      "old_lines": [
+        3813,
+        3817
+      ],
+      "current_lines": [
+        3824,
+        3828
+      ],
+      "excerpt_sha256": "51f985cfac538b7c8d50f99b1dfe07e8bb5cb6fe3e84a00182cc116c13947c81",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A038-S06",
+      "application_id": "A038",
+      "old_lines": [
+        3836,
+        3840
+      ],
+      "current_lines": [
+        3847,
+        3851
+      ],
+      "excerpt_sha256": "a30c82a91d2428f6b8fdfc10c22854ebcf5d21cd6f7ea40fa245a5832032ef13",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A039-S01",
+      "application_id": "A039",
+      "old_lines": [
+        3483,
+        3498
+      ],
+      "current_lines": [
+        3494,
+        3509
+      ],
+      "excerpt_sha256": "7e25c3d6f0a9d7959a49f72af159c36087edb1dd07319aeaedad9528ad4686df",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A039-S02",
+      "application_id": "A039",
+      "old_lines": [
+        4612,
+        4631
+      ],
+      "current_lines": [
+        4623,
+        4642
+      ],
+      "excerpt_sha256": "f420a9294e62c7c5b472666a15a0e75c3156ebc16e0914afe3674ba30e88799b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A039-S03",
+      "application_id": "A039",
+      "old_lines": [
+        3480,
+        3484
+      ],
+      "current_lines": [
+        3491,
+        3495
+      ],
+      "excerpt_sha256": "2320c6c6c0264e256a880a9cc0c2a7b841614d3fe7a91118678ce780046f1c89",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A039-S04",
+      "application_id": "A039",
+      "old_lines": [
+        3497,
+        3501
+      ],
+      "current_lines": [
+        3508,
+        3512
+      ],
+      "excerpt_sha256": "704f4519f86932b639cd9cd3fc55fea79146c700aeb66b51eee7665e40c24b1a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A039-S05",
+      "application_id": "A039",
+      "old_lines": [
+        4609,
+        4613
+      ],
+      "current_lines": [
+        4620,
+        4624
+      ],
+      "excerpt_sha256": "579597b0d5ef9dcc8906299c6bce482db89df6e81351c9a16f3c3d98dbc13ba8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A039-S06",
+      "application_id": "A039",
+      "old_lines": [
+        4631,
+        4635
+      ],
+      "current_lines": [
+        4642,
+        4646
+      ],
+      "excerpt_sha256": "e155ca789b2c279f1a010187a203a05a1b7493ac3316fcfbcea2d0e4445a0fc0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A040-S01",
+      "application_id": "A040",
+      "old_lines": [
+        4020,
+        4030
+      ],
+      "current_lines": [
+        4031,
+        4041
+      ],
+      "excerpt_sha256": "5161e68ee9aeedbecbc26518cffa1cefd76f0475c2b78b8423c7c8ab17ea0a94",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A040-S02",
+      "application_id": "A040",
+      "old_lines": [
+        4016,
+        4020
+      ],
+      "current_lines": [
+        4027,
+        4031
+      ],
+      "excerpt_sha256": "305765363667ef2d16ed0c91bc999cf99cab06a048f01253856e99a9fe800981",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A040-S03",
+      "application_id": "A040",
+      "old_lines": [
+        4031,
+        4035
+      ],
+      "current_lines": [
+        4042,
+        4046
+      ],
+      "excerpt_sha256": "0bab3aa9b5b1eb18a2c38805912ddbd5197b3711cc355887b9db48e279eb2f0c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A040-S04",
+      "application_id": "A040",
+      "old_lines": [
+        4068,
+        4072
+      ],
+      "current_lines": [
+        4079,
+        4083
+      ],
+      "excerpt_sha256": "1cbd594a81decdf36afd2fac8e9d1ba5fc5f4c5254f2961c6f21c5e4c904e292",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A040-S05",
+      "application_id": "A040",
+      "old_lines": [
+        4141,
+        4145
+      ],
+      "current_lines": [
+        4152,
+        4156
+      ],
+      "excerpt_sha256": "f8c36ab68e5883d7deec26761a2f989ab46210a2d278c1e404ab495820b206b5",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A041-S01",
+      "application_id": "A041",
+      "old_lines": [
+        4082,
+        4194
+      ],
+      "current_lines": [
+        4093,
+        4205
+      ],
+      "excerpt_sha256": "c3e160624c07ec9cc3d9ce3b68687511dd9bf4aed68bfc30e0d2d85e168a5321",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A041-S02",
+      "application_id": "A041",
+      "old_lines": [
+        4144,
+        4148
+      ],
+      "current_lines": [
+        4155,
+        4159
+      ],
+      "excerpt_sha256": "44fc66c2b3b44be3dc076a82e2bc33f8a713e1713611a732e01d069678aef3a7",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A041-S03",
+      "application_id": "A041",
+      "old_lines": [
+        4206,
+        4210
+      ],
+      "current_lines": [
+        4217,
+        4221
+      ],
+      "excerpt_sha256": "76c9c15ad2a51b3e97a89eb11e0833f9ec3367534694a4d28aba69b9bf557a67",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A042-S01",
+      "application_id": "A042",
+      "old_lines": [
+        4519,
+        4542
+      ],
+      "current_lines": [
+        4530,
+        4553
+      ],
+      "excerpt_sha256": "096653109d21c6e8bcac1a577eeca1b4e78c5fc43558a58849903d495c93611d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A042-S02",
+      "application_id": "A042",
+      "old_lines": [
+        4486,
+        4490
+      ],
+      "current_lines": [
+        4497,
+        4501
+      ],
+      "excerpt_sha256": "871afb0a1a6204c7a581ef8d63aeb9c1f7ec6acbea4bb3398d64f87dfc6c64c5",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A042-S03",
+      "application_id": "A042",
+      "old_lines": [
+        4539,
+        4543
+      ],
+      "current_lines": [
+        4550,
+        4554
+      ],
+      "excerpt_sha256": "269184707744bdf8b4eb126a3069726a64dea8d0c36d88332ce7d8ba0a5e0709",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A043-S01",
+      "application_id": "A043",
+      "old_lines": [
+        4544,
+        4582
+      ],
+      "current_lines": [
+        4555,
+        4593
+      ],
+      "excerpt_sha256": "b8793451f5f06c95b5a32183781dd2d0d5a0fd6f9075c34110d4432f86c7dc15",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A043-S02",
+      "application_id": "A043",
+      "old_lines": [
+        4542,
+        4546
+      ],
+      "current_lines": [
+        4553,
+        4557
+      ],
+      "excerpt_sha256": "d8bd9301d73c02abab0ff4fc31c84baf767b6c1c9b305cfe84df78bbb897f2dc",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A043-S03",
+      "application_id": "A043",
+      "old_lines": [
+        4586,
+        4590
+      ],
+      "current_lines": [
+        4597,
+        4601
+      ],
+      "excerpt_sha256": "f6a7c1a94f567de1181f79731889ef718f14bd0fe405ec56e443d27081e3b6b6",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A044-S01",
+      "application_id": "A044",
+      "old_lines": [
+        4844,
+        4898
+      ],
+      "current_lines": [
+        4855,
+        4909
+      ],
+      "excerpt_sha256": "8be011a6c74cf67c77ec27771b92550a6b8d26c14b6e3a6e6a186b1c2388e0b1",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A044-S02",
+      "application_id": "A044",
+      "old_lines": [
+        5055,
+        5085
+      ],
+      "current_lines": [
+        5066,
+        5096
+      ],
+      "excerpt_sha256": "2ce5ea74ea5112eefc4d571c4a742f2f2b6f5fb17f8c78326ca8888c411cee52",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A044-S03",
+      "application_id": "A044",
+      "old_lines": [
+        4846,
+        4850
+      ],
+      "current_lines": [
+        4857,
+        4861
+      ],
+      "excerpt_sha256": "f29a9ffee49e667ddd65c5f72a9fb180f9f23a796e8e9ad36742f2c5e06e9b5d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A044-S04",
+      "application_id": "A044",
+      "old_lines": [
+        4911,
+        4915
+      ],
+      "current_lines": [
+        4922,
+        4926
+      ],
+      "excerpt_sha256": "c72331be245f447827674d7daa70ab5a3b32bc9384cad36e64fb35f0df603df4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A044-S05",
+      "application_id": "A044",
+      "old_lines": [
+        5054,
+        5058
+      ],
+      "current_lines": [
+        5065,
+        5069
+      ],
+      "excerpt_sha256": "7969c44fe6c4e7e780110c3d8b54fd8248f15560030165d9c00839ba9e55cbf7",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A044-S06",
+      "application_id": "A044",
+      "old_lines": [
+        5096,
+        5100
+      ],
+      "current_lines": [
+        5107,
+        5111
+      ],
+      "excerpt_sha256": "1eb7da8a597e1ff5be0355f947376beb8e942204e83548025e881743d13a77f2",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A045-S01",
+      "application_id": "A045",
+      "old_lines": [
+        5269,
+        5283
+      ],
+      "current_lines": [
+        5280,
+        5294
+      ],
+      "excerpt_sha256": "f3a2a01da088dc6681ad1557fdb914cd0fcb4ec8d5ed579fe6575ec7c4bb216a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A045-S02",
+      "application_id": "A045",
+      "old_lines": [
+        7684,
+        7713
+      ],
+      "current_lines": [
+        10926,
+        10955
+      ],
+      "excerpt_sha256": "f9b33bcf6e39bd96c52041e1fe2c8f7cb154359949a498436a4fe976fa8777cf",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A045-S03",
+      "application_id": "A045",
+      "old_lines": [
+        5259,
+        5263
+      ],
+      "current_lines": [
+        5270,
+        5274
+      ],
+      "excerpt_sha256": "705d9c4c57cc4fc300016e12833ec8de3381892c7ec98d15831359e513fa9079",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A045-S04",
+      "application_id": "A045",
+      "old_lines": [
+        5286,
+        5290
+      ],
+      "current_lines": [
+        5297,
+        5301
+      ],
+      "excerpt_sha256": "8fb601597e8daebb7b9c066a350b5762c0ce2b86b79c801dfd16c1b2fc670868",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A045-S05",
+      "application_id": "A045",
+      "old_lines": [
+        7670,
+        7674
+      ],
+      "current_lines": [
+        10912,
+        10916
+      ],
+      "excerpt_sha256": "18ec6eb78d729701f99ea2d95ec737e9b43fc7278c74e28cff89e398fb004525",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A045-S06",
+      "application_id": "A045",
+      "old_lines": [
+        7706,
+        7710
+      ],
+      "current_lines": [
+        10948,
+        10952
+      ],
+      "excerpt_sha256": "00e0e14b6a2023ac7fc9626e78d86933648e4eaba529309d77eb6a7522f0030c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A046-S01",
+      "application_id": "A046",
+      "old_lines": [
+        6285,
+        6349
+      ],
+      "current_lines": [
+        6296,
+        6360
+      ],
+      "excerpt_sha256": "d7b17b1053b40e1a639864e6134841bbf345d33eafae78220d725ffb2f3185c6",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A046-S02",
+      "application_id": "A046",
+      "old_lines": [
+        6283,
+        6287
+      ],
+      "current_lines": [
+        6294,
+        6298
+      ],
+      "excerpt_sha256": "4099ef802d9db61005a713be6b1118a342eb6a0f9cd1d1e8d074893fc0534a10",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A046-S03",
+      "application_id": "A046",
+      "old_lines": [
+        6333,
+        6337
+      ],
+      "current_lines": [
+        6344,
+        6348
+      ],
+      "excerpt_sha256": "e010118d96f794179cfe770d2096c9dd2dbbc953580c717f698c4b4a541f4326",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A047-S01",
+      "application_id": "A047",
+      "old_lines": [
+        6470,
+        6495
+      ],
+      "current_lines": [
+        6481,
+        6506
+      ],
+      "excerpt_sha256": "14193cb632839f4ab04c39b04e539266bf3055546cbb00e42c7ed47c7f8e9e9c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A047-S02",
+      "application_id": "A047",
+      "old_lines": [
+        6468,
+        6472
+      ],
+      "current_lines": [
+        6479,
+        6483
+      ],
+      "excerpt_sha256": "93e83bb3f1a16e8cd37a492f508482c784635b39490a5c5af71a233b674341fe",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A047-S03",
+      "application_id": "A047",
+      "old_lines": [
+        6502,
+        6506
+      ],
+      "current_lines": [
+        6513,
+        6517
+      ],
+      "excerpt_sha256": "bb2825a690e240d1d0bf28a95d3fdb10d93738e9bf0f5eaa4d4f40b32c8ced23",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A048-S01",
+      "application_id": "A048",
+      "old_lines": [
+        6497,
+        6539
+      ],
+      "current_lines": [
+        6508,
+        6550
+      ],
+      "excerpt_sha256": "9a27ab7b9e131c976b188aeacc4548ce37ed0f9ba0b48410fe0d226dde46680c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A048-S02",
+      "application_id": "A048",
+      "old_lines": [
+        6497,
+        6539
+      ],
+      "current_lines": [
+        6508,
+        6550
+      ],
+      "excerpt_sha256": "9a27ab7b9e131c976b188aeacc4548ce37ed0f9ba0b48410fe0d226dde46680c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A048-S03",
+      "application_id": "A048",
+      "old_lines": [
+        6505,
+        6509
+      ],
+      "current_lines": [
+        6516,
+        6520
+      ],
+      "excerpt_sha256": "1eb0bbb807190b3bb0371368269f4fbf09771e852cd5ae97e03c4ccdaaef384a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A048-S04",
+      "application_id": "A048",
+      "old_lines": [
+        6569,
+        6573
+      ],
+      "current_lines": [
+        6580,
+        6584
+      ],
+      "excerpt_sha256": "18e1042c31dac7ecc1c718a61557c58d90b59407e6b860ab616a97a101db5140",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A049-S01",
+      "application_id": "A049",
+      "old_lines": [
+        6845,
+        6901
+      ],
+      "current_lines": [
+        10087,
+        10143
+      ],
+      "excerpt_sha256": "a6b71243e231cf523a19e4edfab61bb24df9d8a48d50e8a5bed679509d430257",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A049-S02",
+      "application_id": "A049",
+      "old_lines": [
+        6899,
+        6903
+      ],
+      "current_lines": [
+        10141,
+        10145
+      ],
+      "excerpt_sha256": "1d390d0ae1a3e47cbdbedda08e7a467bcb33a75cd34fc39ab0ff9ba649ad8a45",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A049-S03",
+      "application_id": "A049",
+      "old_lines": [
+        6926,
+        6930
+      ],
+      "current_lines": [
+        10168,
+        10172
+      ],
+      "excerpt_sha256": "257c385cae51c92e4de5666af4be7e2ae0ff58cda0a758a5058a741711c1bcbd",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A050-S01",
+      "application_id": "A050",
+      "old_lines": [
+        6845,
+        6901
+      ],
+      "current_lines": [
+        10087,
+        10143
+      ],
+      "excerpt_sha256": "a6b71243e231cf523a19e4edfab61bb24df9d8a48d50e8a5bed679509d430257",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A050-S02",
+      "application_id": "A050",
+      "old_lines": [
+        6928,
+        6932
+      ],
+      "current_lines": [
+        10170,
+        10174
+      ],
+      "excerpt_sha256": "8e317f1bc0fae57603c3a12ceff5e46892049157ea940de30f1100e2421d5689",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A050-S03",
+      "application_id": "A050",
+      "old_lines": [
+        6950,
+        6954
+      ],
+      "current_lines": [
+        10192,
+        10196
+      ],
+      "excerpt_sha256": "8009e922fec1d304da4c9404bc264542333e53ec01b137c86b21e7cf96ea985e",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A050-S04",
+      "application_id": "A050",
+      "old_lines": [
+        7116,
+        7120
+      ],
+      "current_lines": [
+        10358,
+        10362
+      ],
+      "excerpt_sha256": "f4ae353a12dd1a90dabf1ef49796cecf5f0a7a1bdf8c76f0d38d05736efa3fb0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A050-S05",
+      "application_id": "A050",
+      "old_lines": [
+        7214,
+        7218
+      ],
+      "current_lines": [
+        10456,
+        10460
+      ],
+      "excerpt_sha256": "cd02ca3af5ee53b4bdc0b533b00127a6e82e65c0f2edb035fe79766c1459d3ff",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A051-S01",
+      "application_id": "A051",
+      "old_lines": [
+        6845,
+        6901
+      ],
+      "current_lines": [
+        10087,
+        10143
+      ],
+      "excerpt_sha256": "a6b71243e231cf523a19e4edfab61bb24df9d8a48d50e8a5bed679509d430257",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A051-S02",
+      "application_id": "A051",
+      "old_lines": [
+        6952,
+        6956
+      ],
+      "current_lines": [
+        10194,
+        10198
+      ],
+      "excerpt_sha256": "dc3e8dcede414ae6579a5752f5ad0ca7320d97addd1380c46a666688c6c74444",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A051-S03",
+      "application_id": "A051",
+      "old_lines": [
+        7116,
+        7120
+      ],
+      "current_lines": [
+        10358,
+        10362
+      ],
+      "excerpt_sha256": "f4ae353a12dd1a90dabf1ef49796cecf5f0a7a1bdf8c76f0d38d05736efa3fb0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A051-S04",
+      "application_id": "A051",
+      "old_lines": [
+        7256,
+        7260
+      ],
+      "current_lines": [
+        10498,
+        10502
+      ],
+      "excerpt_sha256": "69ed337cea9c2bfaabaeb632bf8560ca2a341f641a1e5afd99cfa0b10fcd0481",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A051-S05",
+      "application_id": "A051",
+      "old_lines": [
+        7344,
+        7348
+      ],
+      "current_lines": [
+        10586,
+        10590
+      ],
+      "excerpt_sha256": "75e3afc9ef306085894c2389790e30970f10f4635ab4d8c2383cd5386fa58a71",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A052-S01",
+      "application_id": "A052",
+      "old_lines": [
+        8462,
+        8474
+      ],
+      "current_lines": [
+        11704,
+        11716
+      ],
+      "excerpt_sha256": "f50254f773255098b15cf0bba49875506ab540d68c55540028058f61a1162e7b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A052-S02",
+      "application_id": "A052",
+      "old_lines": [
+        8462,
+        8474
+      ],
+      "current_lines": [
+        11704,
+        11716
+      ],
+      "excerpt_sha256": "f50254f773255098b15cf0bba49875506ab540d68c55540028058f61a1162e7b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A052-S03",
+      "application_id": "A052",
+      "old_lines": [
+        9150,
+        9169
+      ],
+      "current_lines": [
+        12392,
+        12411
+      ],
+      "excerpt_sha256": "55c8658ce6a87f4de72b568d32cf5311793c67d6020d80b94ba704915fc7d426",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A052-S04",
+      "application_id": "A052",
+      "old_lines": [
+        8458,
+        8462
+      ],
+      "current_lines": [
+        11700,
+        11704
+      ],
+      "excerpt_sha256": "51937b522b2246b73241a084a41652dc72da875d2965c88db665e54c71493c2c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A052-S05",
+      "application_id": "A052",
+      "old_lines": [
+        8460,
+        8464
+      ],
+      "current_lines": [
+        11702,
+        11706
+      ],
+      "excerpt_sha256": "9f0e1680d93adb88c00bc600e0c3c9f0d218f3f45dc67b9f96601efaa5d9645a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A052-S06",
+      "application_id": "A052",
+      "old_lines": [
+        8487,
+        8491
+      ],
+      "current_lines": [
+        11729,
+        11733
+      ],
+      "excerpt_sha256": "722fde36e8a925bc92b17a4f728cc9ba5b4d642df178d1d81f5f5396fa938669",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A052-S07",
+      "application_id": "A052",
+      "old_lines": [
+        9148,
+        9152
+      ],
+      "current_lines": [
+        12390,
+        12394
+      ],
+      "excerpt_sha256": "23c2c952c69e570f7066c1e8b8cd9f57020f0c52472448ad96c2953f4ce3e82f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A052-S08",
+      "application_id": "A052",
+      "old_lines": [
+        9154,
+        9158
+      ],
+      "current_lines": [
+        12396,
+        12400
+      ],
+      "excerpt_sha256": "62b0f34c0ff6a3ea1667958800d4bb10c127de5cd0974a4dc88a37e4cbe08ede",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A053-S01",
+      "application_id": "A053",
+      "old_lines": [
+        8623,
+        8663
+      ],
+      "current_lines": [
+        11865,
+        11905
+      ],
+      "excerpt_sha256": "9162a32124fd1ba5e8dd4992bb30066babc592c3caef863e53be475c1c63f87d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A053-S02",
+      "application_id": "A053",
+      "old_lines": [
+        8688,
+        8724
+      ],
+      "current_lines": [
+        11930,
+        11966
+      ],
+      "excerpt_sha256": "65822227d40472d92684fa739eec48bbd38a87469174e1a3c9b8b1f424084b94",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A053-S03",
+      "application_id": "A053",
+      "old_lines": [
+        8688,
+        8724
+      ],
+      "current_lines": [
+        11930,
+        11966
+      ],
+      "excerpt_sha256": "65822227d40472d92684fa739eec48bbd38a87469174e1a3c9b8b1f424084b94",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A053-S04",
+      "application_id": "A053",
+      "old_lines": [
+        8746,
+        8770
+      ],
+      "current_lines": [
+        11988,
+        12012
+      ],
+      "excerpt_sha256": "3ff9dfc88c04eeabb4dfcbe1181c16695517d6b02400963ef6ffcf806c6cd442",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A053-S05",
+      "application_id": "A053",
+      "old_lines": [
+        8837,
+        8860
+      ],
+      "current_lines": [
+        12079,
+        12102
+      ],
+      "excerpt_sha256": "cbcea483b3f393d54465c55f4a9d4ef4724e9be2e5638514cb7498925ce1f692",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A053-S06",
+      "application_id": "A053",
+      "old_lines": [
+        8614,
+        8618
+      ],
+      "current_lines": [
+        11856,
+        11860
+      ],
+      "excerpt_sha256": "3dac2f5cc2b6e074a705e6140cac5d35ebfd9475cf0fab9b6d81b07278d5db06",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A053-S07",
+      "application_id": "A053",
+      "old_lines": [
+        8869,
+        8873
+      ],
+      "current_lines": [
+        12111,
+        12115
+      ],
+      "excerpt_sha256": "aad6d864b81f2ebfc5faa6abb23ea5035adacf62cedc070b3bd9444110eeef0b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A054-S01",
+      "application_id": "A054",
+      "old_lines": [
+        8938,
+        8951
+      ],
+      "current_lines": [
+        12180,
+        12193
+      ],
+      "excerpt_sha256": "2e145b01ecd1f609daedc80eebd712a6b84f80742cdaae979f742f05cc35fc87",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A054-S02",
+      "application_id": "A054",
+      "old_lines": [
+        8953,
+        8966
+      ],
+      "current_lines": [
+        12195,
+        12208
+      ],
+      "excerpt_sha256": "ec5dad217d6a62e53aca673380a505c5545910de1a4a690ccfd7b31d76fedfd1",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A054-S03",
+      "application_id": "A054",
+      "old_lines": [
+        8968,
+        9017
+      ],
+      "current_lines": [
+        12210,
+        12259
+      ],
+      "excerpt_sha256": "bb580945f3b71fb3ea1612c75c03c4a3286998604239fb4656ebfe8359de8f97",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A054-S04",
+      "application_id": "A054",
+      "old_lines": [
+        8968,
+        9017
+      ],
+      "current_lines": [
+        12210,
+        12259
+      ],
+      "excerpt_sha256": "bb580945f3b71fb3ea1612c75c03c4a3286998604239fb4656ebfe8359de8f97",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A054-S05",
+      "application_id": "A054",
+      "old_lines": [
+        8870,
+        8874
+      ],
+      "current_lines": [
+        12112,
+        12116
+      ],
+      "excerpt_sha256": "646e29df9da008c1baf44ab2cf1107dd3b0fbd5365ea05d09ca402992a566e34",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A054-S06",
+      "application_id": "A054",
+      "old_lines": [
+        9017,
+        9021
+      ],
+      "current_lines": [
+        12259,
+        12263
+      ],
+      "excerpt_sha256": "1eae6206dd875abaa111471cff075dd0740fa80bc7faa45c9328a118b24108a2",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A055-S01",
+      "application_id": "A055",
+      "old_lines": [
+        187,
+        191
+      ],
+      "current_lines": [
+        198,
+        202
+      ],
+      "excerpt_sha256": "f303ff979758dc678250e0ef13fd1b5fbd6b8b2f6e4cdbb16ac3211591f397a2",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A055-S02",
+      "application_id": "A055",
+      "old_lines": [
+        199,
+        203
+      ],
+      "current_lines": [
+        210,
+        214
+      ],
+      "excerpt_sha256": "c5f31f0e30e3e3b7338ce34a22467743fa89f070fccb51128c7b76faa6338ae8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A055-S03",
+      "application_id": "A055",
+      "old_lines": [
+        362,
+        366
+      ],
+      "current_lines": [
+        373,
+        377
+      ],
+      "excerpt_sha256": "8b82f5c289057d17ae7102d2383d8a139aaeb00cfceb94b95a9d5ea9c09da0bf",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A055-S04",
+      "application_id": "A055",
+      "old_lines": [
+        369,
+        373
+      ],
+      "current_lines": [
+        380,
+        384
+      ],
+      "excerpt_sha256": "b8ff328d22d6d604416e15c24d9eed603d28bbe2b23523a1ca46223f31f549ae",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A056-S01",
+      "application_id": "A056",
+      "old_lines": [
+        210,
+        236
+      ],
+      "current_lines": [
+        221,
+        247
+      ],
+      "excerpt_sha256": "51c9e5e3fe131406d8e4b99d636719779fe06559783055667c7bb0d1ed1ba1a7",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A056-S02",
+      "application_id": "A056",
+      "old_lines": [
+        207,
+        211
+      ],
+      "current_lines": [
+        218,
+        222
+      ],
+      "excerpt_sha256": "faf8f406f8e13a093363b0d1c32d8d213001daa7a3ebc0db1415e8c892bd344d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A056-S03",
+      "application_id": "A056",
+      "old_lines": [
+        220,
+        224
+      ],
+      "current_lines": [
+        231,
+        235
+      ],
+      "excerpt_sha256": "71fcc95e16022c9c96cc8f93f362e0390c9130f649231bb9f323a16f0a896f3c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S01",
+      "application_id": "A057",
+      "old_lines": [
+        237,
+        241
+      ],
+      "current_lines": [
+        248,
+        252
+      ],
+      "excerpt_sha256": "4642e50b561da5adb908cddc3f6a2b6d225288f5ab610a16c5b3b5183152b2c6",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S02",
+      "application_id": "A057",
+      "old_lines": [
+        1054,
+        1058
+      ],
+      "current_lines": [
+        1065,
+        1069
+      ],
+      "excerpt_sha256": "5be3b423afbcfe40e420d1573d501830a726346f6f8adde9516a03e98384e856",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S03",
+      "application_id": "A057",
+      "old_lines": [
+        1338,
+        1342
+      ],
+      "current_lines": [
+        1349,
+        1353
+      ],
+      "excerpt_sha256": "3e671581166a20b6bef206d1fef4d29675c1a7dd9da5c305e31d97f0c02f6081",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S04",
+      "application_id": "A057",
+      "old_lines": [
+        1982,
+        1986
+      ],
+      "current_lines": [
+        1993,
+        1997
+      ],
+      "excerpt_sha256": "fb05a840e2a380c9b6f777f5b09722aa9e6561d11961c1d622c88e42c33c1cb9",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S05",
+      "application_id": "A057",
+      "old_lines": [
+        1983,
+        1987
+      ],
+      "current_lines": [
+        1994,
+        1998
+      ],
+      "excerpt_sha256": "6c8dd802ecd7b70704bb55d6a24904c553667c3fac2304d2771a9d24883b1ecb",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S06",
+      "application_id": "A057",
+      "old_lines": [
+        2163,
+        2167
+      ],
+      "current_lines": [
+        2174,
+        2178
+      ],
+      "excerpt_sha256": "cc862d7ad226232db158e9ba92db953777a2d26864a0d068153e2ef26b7168a5",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S07",
+      "application_id": "A057",
+      "old_lines": [
+        2641,
+        2645
+      ],
+      "current_lines": [
+        2652,
+        2656
+      ],
+      "excerpt_sha256": "9f5b01ea37ddddb253a3721948932a8b30a6aef8bb72f605b99c8dcc493def86",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S08",
+      "application_id": "A057",
+      "old_lines": [
+        2643,
+        2647
+      ],
+      "current_lines": [
+        2654,
+        2658
+      ],
+      "excerpt_sha256": "e95567c90b84da1ec663ecc4d04b9c6e6b73e3b78d9c42765526bcbbe90d06f4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S09",
+      "application_id": "A057",
+      "old_lines": [
+        2668,
+        2672
+      ],
+      "current_lines": [
+        2679,
+        2683
+      ],
+      "excerpt_sha256": "1c2496223f3835bbdec1144538111a943139ec3e928730120fbbcc2dae3c0362",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S10",
+      "application_id": "A057",
+      "old_lines": [
+        9956,
+        9960
+      ],
+      "current_lines": [
+        13198,
+        13202
+      ],
+      "excerpt_sha256": "8798d00b35e28b54bafb381637e0510cbc657c5e087e574a6e4482951b031e31",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S11",
+      "application_id": "A057",
+      "old_lines": [
+        10014,
+        10018
+      ],
+      "current_lines": [
+        13256,
+        13260
+      ],
+      "excerpt_sha256": "8142c7b49a08b4be25a8d25e987c839468781f292ca08acf6a2cb8d5abfeb06f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S12",
+      "application_id": "A057",
+      "old_lines": [
+        10485,
+        10489
+      ],
+      "current_lines": [
+        13727,
+        13731
+      ],
+      "excerpt_sha256": "51c9ba2ee95a44c3917eff06d349d9f9c45dc247ded4d7c3adc1406f3110fce6",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A057-S13",
+      "application_id": "A057",
+      "old_lines": [
+        10823,
+        10827
+      ],
+      "current_lines": [
+        14065,
+        14069
+      ],
+      "excerpt_sha256": "f2e017af375dfcfa9d5a21a057a5f5f3b5fe67f25d0d0ec70d5ff694991220cc",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A058-S01",
+      "application_id": "A058",
+      "old_lines": [
+        270,
+        274
+      ],
+      "current_lines": [
+        281,
+        285
+      ],
+      "excerpt_sha256": "31e95106c7b21a8ff7aa73edb4b5d4eb4f2cc91c275711ab3a3ec28dcf8f1c85",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A058-S02",
+      "application_id": "A058",
+      "old_lines": [
+        289,
+        293
+      ],
+      "current_lines": [
+        300,
+        304
+      ],
+      "excerpt_sha256": "8b9abc0e73d1fdf7a9aa5009b66214ece33365dd6bc81b48002747b580fa695b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A059-S01",
+      "application_id": "A059",
+      "old_lines": [
+        288,
+        292
+      ],
+      "current_lines": [
+        299,
+        303
+      ],
+      "excerpt_sha256": "7dd295e05f137610988a982f06340c521268579e83b9864f3d9cf0a84ab1300d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A059-S02",
+      "application_id": "A059",
+      "old_lines": [
+        298,
+        302
+      ],
+      "current_lines": [
+        309,
+        313
+      ],
+      "excerpt_sha256": "ffd328ac9f9f6d54911cf56a1653088757b83ba36b848aecf60015f4c686df47",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A060-S01",
+      "application_id": "A060",
+      "old_lines": [
+        300,
+        304
+      ],
+      "current_lines": [
+        311,
+        315
+      ],
+      "excerpt_sha256": "99fcf818862312bf272c5b1e43a240f524ff388f12a47e2360892ec213f156f9",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A060-S02",
+      "application_id": "A060",
+      "old_lines": [
+        344,
+        348
+      ],
+      "current_lines": [
+        355,
+        359
+      ],
+      "excerpt_sha256": "3828fa30de9e84851a0f5bea2bf32487822566ecf1c62fb259ebe5ee01e6a2e9",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A061-S01",
+      "application_id": "A061",
+      "old_lines": [
+        520,
+        524
+      ],
+      "current_lines": [
+        531,
+        535
+      ],
+      "excerpt_sha256": "d027211a90fadf7aa5a3f30bfc9fb8895655b18f7a189f8b34f279a89a5c6a1c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A061-S02",
+      "application_id": "A061",
+      "old_lines": [
+        560,
+        564
+      ],
+      "current_lines": [
+        571,
+        575
+      ],
+      "excerpt_sha256": "d1a097412651515fe7ba0fcc8d7a7204e1e13713cb1946fbc195141d08792a02",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A062-S01",
+      "application_id": "A062",
+      "old_lines": [
+        630,
+        634
+      ],
+      "current_lines": [
+        641,
+        645
+      ],
+      "excerpt_sha256": "94dba1b84571733036f420ad26015213b7e0583c96243956b8efe5dbe8911343",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A062-S02",
+      "application_id": "A062",
+      "old_lines": [
+        657,
+        661
+      ],
+      "current_lines": [
+        668,
+        672
+      ],
+      "excerpt_sha256": "394d87fcf2a4dac06e9423e8e68f05b269af0f77f2a2545ca22851eb1144b505",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A063-S01",
+      "application_id": "A063",
+      "old_lines": [
+        858,
+        862
+      ],
+      "current_lines": [
+        869,
+        873
+      ],
+      "excerpt_sha256": "ef256dde3d024382a2712565a4c8c9e3fdf3c1375d222f3cebabc0505732dc3a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A063-S02",
+      "application_id": "A063",
+      "old_lines": [
+        865,
+        869
+      ],
+      "current_lines": [
+        876,
+        880
+      ],
+      "excerpt_sha256": "2288a6d48b436b0a4ce4b6fab52f5e5af474bbc44fd25d5810e4a56e0ec893e0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A064-S01",
+      "application_id": "A064",
+      "old_lines": [
+        773,
+        777
+      ],
+      "current_lines": [
+        784,
+        788
+      ],
+      "excerpt_sha256": "3ca36f1c781ca0e4209e8440c489e5e0cc2fa0e0d148ea6821dc5e078ad121d7",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A064-S02",
+      "application_id": "A064",
+      "old_lines": [
+        792,
+        796
+      ],
+      "current_lines": [
+        803,
+        807
+      ],
+      "excerpt_sha256": "a51480e453a705281e8fa5eb77299fba544da29b94616d8cf348f1490e0ec959",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A065-S01",
+      "application_id": "A065",
+      "old_lines": [
+        580,
+        584
+      ],
+      "current_lines": [
+        591,
+        595
+      ],
+      "excerpt_sha256": "939cb91d101b2f339e1c1d909b1d981d241c0d4dc80c4641d1c56f6a9cc2f4b4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A065-S02",
+      "application_id": "A065",
+      "old_lines": [
+        586,
+        590
+      ],
+      "current_lines": [
+        597,
+        601
+      ],
+      "excerpt_sha256": "3b3ea0bd8610983807aa887178a7e6b3d4c587e278d17dc7e14b42fa21fc6c00",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A065-S03",
+      "application_id": "A065",
+      "old_lines": [
+        594,
+        598
+      ],
+      "current_lines": [
+        605,
+        609
+      ],
+      "excerpt_sha256": "8d63ed5a3490690ae6b7634b5c635ef1fe8a52fc2cbe134cc7bceb0cc0b59b9d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A065-S04",
+      "application_id": "A065",
+      "old_lines": [
+        595,
+        599
+      ],
+      "current_lines": [
+        606,
+        610
+      ],
+      "excerpt_sha256": "6c5182a66e2327884e551d58dfadf5d05d9c877ab87c12aecfab2e0bd893ef53",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A065-S05",
+      "application_id": "A065",
+      "old_lines": [
+        1009,
+        1013
+      ],
+      "current_lines": [
+        1020,
+        1024
+      ],
+      "excerpt_sha256": "3a1d72b44c9b723498b869a357aa0900ce08e7f9050e982bfbf38eb7d49709e8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A065-S06",
+      "application_id": "A065",
+      "old_lines": [
+        1012,
+        1016
+      ],
+      "current_lines": [
+        1023,
+        1027
+      ],
+      "excerpt_sha256": "e804d1fa56c5d4ec04f923e1059e8e9bff32163f3dd4f357cd950bb4d0310068",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A065-S07",
+      "application_id": "A065",
+      "old_lines": [
+        1759,
+        1763
+      ],
+      "current_lines": [
+        1770,
+        1774
+      ],
+      "excerpt_sha256": "29604fb83f5a0e563471fabaa89e665093c652eef45b15cf2b7b5bcd7702c360",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A065-S08",
+      "application_id": "A065",
+      "old_lines": [
+        1765,
+        1769
+      ],
+      "current_lines": [
+        1776,
+        1780
+      ],
+      "excerpt_sha256": "aec48a6ba2d458aa9fc9929807723f99791313abe4af45d331b6ae6edf69c0ce",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A066-S01",
+      "application_id": "A066",
+      "old_lines": [
+        1086,
+        1109
+      ],
+      "current_lines": [
+        1097,
+        1120
+      ],
+      "excerpt_sha256": "752850520c38c21ae6a391365868a16b2a1a5561026038e742a21ea685e72574",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A066-S02",
+      "application_id": "A066",
+      "old_lines": [
+        1771,
+        1803
+      ],
+      "current_lines": [
+        1782,
+        1814
+      ],
+      "excerpt_sha256": "4aa2ef431f02d4e69076666a13fbe1fbf78a9215941a9dfb041c949a4149ab68",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A066-S03",
+      "application_id": "A066",
+      "old_lines": [
+        1771,
+        1803
+      ],
+      "current_lines": [
+        1782,
+        1814
+      ],
+      "excerpt_sha256": "4aa2ef431f02d4e69076666a13fbe1fbf78a9215941a9dfb041c949a4149ab68",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A066-S04",
+      "application_id": "A066",
+      "old_lines": [
+        1777,
+        1781
+      ],
+      "current_lines": [
+        1788,
+        1792
+      ],
+      "excerpt_sha256": "58c661b805c3c3837780ad60dece9df17459c8dd5d6baa64e18165e36d780852",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A066-S05",
+      "application_id": "A066",
+      "old_lines": [
+        1788,
+        1792
+      ],
+      "current_lines": [
+        1799,
+        1803
+      ],
+      "excerpt_sha256": "d0324a1253c33318c8107a527a38953a433101e78e3076083551d6d8daf70bed",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A066-S06",
+      "application_id": "A066",
+      "old_lines": [
+        6833,
+        6837
+      ],
+      "current_lines": [
+        10075,
+        10079
+      ],
+      "excerpt_sha256": "02a5643f0e147943ba44c89b42c7470445db5f5406e70f325a202b6888e090e4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A066-S07",
+      "application_id": "A066",
+      "old_lines": [
+        6838,
+        6842
+      ],
+      "current_lines": [
+        10080,
+        10084
+      ],
+      "excerpt_sha256": "c9d905c3dedabf5ba02967c2843c50fd134b45cc9c0f7b9f8ecccc5438ceb22c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A066-S08",
+      "application_id": "A066",
+      "old_lines": [
+        770,
+        774
+      ],
+      "current_lines": [
+        781,
+        785
+      ],
+      "excerpt_sha256": "5b153a58b721b3071464836d608e82b9fbcad005d3758b7c8ecb36f792c4c6bb",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S01",
+      "application_id": "A067",
+      "old_lines": [
+        2486,
+        2490
+      ],
+      "current_lines": [
+        2497,
+        2501
+      ],
+      "excerpt_sha256": "377d4bb21c291c250eb60029a5a40fc679fd3801c885bc67c2b87370765c6f0c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S02",
+      "application_id": "A067",
+      "old_lines": [
+        3532,
+        3536
+      ],
+      "current_lines": [
+        3543,
+        3547
+      ],
+      "excerpt_sha256": "9c71d49f047a8cd69e2d145a9beb1127f688cc6b3c0def111c031c3b33e61fbe",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S03",
+      "application_id": "A067",
+      "old_lines": [
+        3543,
+        3547
+      ],
+      "current_lines": [
+        3554,
+        3558
+      ],
+      "excerpt_sha256": "48cddda5cee702bb152623bd5d3b45b3ff5b6d4fa213881748a729bb98a1112c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S04",
+      "application_id": "A067",
+      "old_lines": [
+        3549,
+        3553
+      ],
+      "current_lines": [
+        3560,
+        3564
+      ],
+      "excerpt_sha256": "143607ed07c4452496d58dd04bb62166a7446a9a8ca04e553246bf02084838d1",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S05",
+      "application_id": "A067",
+      "old_lines": [
+        3622,
+        3626
+      ],
+      "current_lines": [
+        3633,
+        3637
+      ],
+      "excerpt_sha256": "bcf4278a052ddcb99239f4ce58dc03c83b384fc7c9f4344180a3ea4a91347219",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S06",
+      "application_id": "A067",
+      "old_lines": [
+        3660,
+        3664
+      ],
+      "current_lines": [
+        3671,
+        3675
+      ],
+      "excerpt_sha256": "80106dabc77459bd944ced0c7d0b5053b61815ea3d96a6a2cd08dbe3a02cf3d1",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S07",
+      "application_id": "A067",
+      "old_lines": [
+        3668,
+        3672
+      ],
+      "current_lines": [
+        3679,
+        3683
+      ],
+      "excerpt_sha256": "874d83e81de23ee402358e1cf83ced0c7c244ce5e8b88c205dbb44572afdf2dc",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S08",
+      "application_id": "A067",
+      "old_lines": [
+        3672,
+        3676
+      ],
+      "current_lines": [
+        3683,
+        3687
+      ],
+      "excerpt_sha256": "3ded6438105dd2b8f3cfa1431b440267c638ec431583453366793896289c5809",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S09",
+      "application_id": "A067",
+      "old_lines": [
+        4753,
+        4757
+      ],
+      "current_lines": [
+        4764,
+        4768
+      ],
+      "excerpt_sha256": "5df2403479b7a61a2dc9f390deb32e2422a1534d8b8dcb5f8148a408897ea7a3",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S10",
+      "application_id": "A067",
+      "old_lines": [
+        4807,
+        4811
+      ],
+      "current_lines": [
+        4818,
+        4822
+      ],
+      "excerpt_sha256": "1377ea78fab9e1381e5924889889d6a86b19c82a659d9cdcc026ad28fc8c866c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S11",
+      "application_id": "A067",
+      "old_lines": [
+        4810,
+        4814
+      ],
+      "current_lines": [
+        4821,
+        4825
+      ],
+      "excerpt_sha256": "59cb4c4acfe1f946fac89eaea46d8c5880b686da6a179d1d9b5d76c2b082d214",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S12",
+      "application_id": "A067",
+      "old_lines": [
+        4816,
+        4820
+      ],
+      "current_lines": [
+        4827,
+        4831
+      ],
+      "excerpt_sha256": "ef6afdd2af8a9bef6c54df8efe405c39f2e9d5bdf27070fd093daaf05c311ccc",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S13",
+      "application_id": "A067",
+      "old_lines": [
+        5106,
+        5110
+      ],
+      "current_lines": [
+        5117,
+        5121
+      ],
+      "excerpt_sha256": "15b9052f5ea8ba93ae7e6ce3f5b8dfbbb16bc5a76e278609d163208ba1c55e54",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S14",
+      "application_id": "A067",
+      "old_lines": [
+        8306,
+        8310
+      ],
+      "current_lines": [
+        11548,
+        11552
+      ],
+      "excerpt_sha256": "eabccb9b53a207a6941eeafd2e6dd86cc961ec5ede60db0a7b625797c3c10904",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S15",
+      "application_id": "A067",
+      "old_lines": [
+        8331,
+        8335
+      ],
+      "current_lines": [
+        11573,
+        11577
+      ],
+      "excerpt_sha256": "91ad99d5d9ee7e5307ae1ce85fb749fb093fc02cb623765d6104dfafbb039dc6",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S16",
+      "application_id": "A067",
+      "old_lines": [
+        8360,
+        8364
+      ],
+      "current_lines": [
+        11602,
+        11606
+      ],
+      "excerpt_sha256": "ff2078ac444f8165b3de0d45dbacef9381a82ce81f9dee6bcea266638974b810",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S17",
+      "application_id": "A067",
+      "old_lines": [
+        8363,
+        8367
+      ],
+      "current_lines": [
+        11605,
+        11609
+      ],
+      "excerpt_sha256": "a8487aa81f351fd0320bdbda521dbf6eccb80fac00693e0b739557e1da1f9495",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S18",
+      "application_id": "A067",
+      "old_lines": [
+        9664,
+        9668
+      ],
+      "current_lines": [
+        12906,
+        12910
+      ],
+      "excerpt_sha256": "8f9cc8883807d92bbd813246fb435f833423ab529987b984c9ada024d6ff3db4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S19",
+      "application_id": "A067",
+      "old_lines": [
+        9710,
+        9714
+      ],
+      "current_lines": [
+        12952,
+        12956
+      ],
+      "excerpt_sha256": "feff74a0f14ea3d81a43f531a98dc7ef9eb3b3e1233a4b319de9576b9ccbc659",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S20",
+      "application_id": "A067",
+      "old_lines": [
+        9766,
+        9770
+      ],
+      "current_lines": [
+        13008,
+        13012
+      ],
+      "excerpt_sha256": "75627070ff3372a75242023e4b8adfd48135d85ee91dea18c7282a5e8689daf1",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S21",
+      "application_id": "A067",
+      "old_lines": [
+        9894,
+        9898
+      ],
+      "current_lines": [
+        13136,
+        13140
+      ],
+      "excerpt_sha256": "fcdd259b2dfbd79c8d0f4664681825038f020139388736eb0eaf2faf0af3f143",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A067-S22",
+      "application_id": "A067",
+      "old_lines": [
+        9917,
+        9921
+      ],
+      "current_lines": [
+        13159,
+        13163
+      ],
+      "excerpt_sha256": "76324ecab650ca33e3c0d92e811ea472ea68baf34231cba67bb197549c277ef5",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A068-S01",
+      "application_id": "A068",
+      "old_lines": [
+        2916,
+        2920
+      ],
+      "current_lines": [
+        2927,
+        2931
+      ],
+      "excerpt_sha256": "6a84c9e932ea6b17590a090b073ea9f03bb1294bf98a4e4a1eacd2fdea655750",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A068-S02",
+      "application_id": "A068",
+      "old_lines": [
+        2984,
+        2988
+      ],
+      "current_lines": [
+        2995,
+        2999
+      ],
+      "excerpt_sha256": "d6e86ac767e53bb70a911a4e5e47140d845287b8d9d406b3b18cb0a849eb1b2b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A068-S03",
+      "application_id": "A068",
+      "old_lines": [
+        3086,
+        3090
+      ],
+      "current_lines": [
+        3097,
+        3101
+      ],
+      "excerpt_sha256": "305282fb0f9959fe31b1b71f3449588c9dad52252e31e688f7d73b11a4ece625",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A068-S04",
+      "application_id": "A068",
+      "old_lines": [
+        3104,
+        3108
+      ],
+      "current_lines": [
+        3115,
+        3119
+      ],
+      "excerpt_sha256": "a5450c7f6b66bfc4c4c1a02f7fe1e1f934294625fee50caf6172e123e0961be1",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A068-S05",
+      "application_id": "A068",
+      "old_lines": [
+        3515,
+        3519
+      ],
+      "current_lines": [
+        3526,
+        3530
+      ],
+      "excerpt_sha256": "6f051390d1f01ea5170a399eff730346843f2cb1b5ff44266f3cf23454416ad4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A068-S06",
+      "application_id": "A068",
+      "old_lines": [
+        3594,
+        3598
+      ],
+      "current_lines": [
+        3605,
+        3609
+      ],
+      "excerpt_sha256": "a75f76523fe3692c35c64c8259b401ba574608318f0605db86985bd62392207a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A068-S07",
+      "application_id": "A068",
+      "old_lines": [
+        4230,
+        4234
+      ],
+      "current_lines": [
+        4241,
+        4245
+      ],
+      "excerpt_sha256": "48a7b233ec13880a5fdd22e306cbd8e1a790e9685895169582729912380bd908",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A068-S08",
+      "application_id": "A068",
+      "old_lines": [
+        4326,
+        4330
+      ],
+      "current_lines": [
+        4337,
+        4341
+      ],
+      "excerpt_sha256": "61b680f93a8edc619ee16dfb3865e429ca4e24c407d42b6d7d22fca59720f684",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A069-S01",
+      "application_id": "A069",
+      "old_lines": [
+        4082,
+        4194
+      ],
+      "current_lines": [
+        4093,
+        4205
+      ],
+      "excerpt_sha256": "c3e160624c07ec9cc3d9ce3b68687511dd9bf4aed68bfc30e0d2d85e168a5321",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A069-S02",
+      "application_id": "A069",
+      "old_lines": [
+        4114,
+        4118
+      ],
+      "current_lines": [
+        4125,
+        4129
+      ],
+      "excerpt_sha256": "b6bd3e37a7a544ccb9346e82342802a7fe0c3a6137e45c6d4836de7db2909322",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A069-S03",
+      "application_id": "A069",
+      "old_lines": [
+        4138,
+        4142
+      ],
+      "current_lines": [
+        4149,
+        4153
+      ],
+      "excerpt_sha256": "93fdb133779c3a89efa7f7860e303234e19bc70074969d4ba953161ee625990b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A070-S01",
+      "application_id": "A070",
+      "old_lines": [
+        2914,
+        2946
+      ],
+      "current_lines": [
+        2925,
+        2957
+      ],
+      "excerpt_sha256": "be4f2ac537219cbadb8953ceabb43d9cf301d27629a910222c9465e27ac876f6",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A070-S02",
+      "application_id": "A070",
+      "old_lines": [
+        2931,
+        2935
+      ],
+      "current_lines": [
+        2942,
+        2946
+      ],
+      "excerpt_sha256": "90d1a21c848cab237cd7e420d70548f935d607dfb6eaf80633f2c737f894c419",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A070-S03",
+      "application_id": "A070",
+      "old_lines": [
+        2948,
+        2952
+      ],
+      "current_lines": [
+        2959,
+        2963
+      ],
+      "excerpt_sha256": "61c99f51e53952014f3f61af3168951f716267a72e7ba6421bc629ee59844993",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A070-S04",
+      "application_id": "A070",
+      "old_lines": [
+        8409,
+        8413
+      ],
+      "current_lines": [
+        11651,
+        11655
+      ],
+      "excerpt_sha256": "8e2faa54b2882ab1d0ff9be61862fa0e877fdba1efc596d6861225331b31fcad",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A070-S05",
+      "application_id": "A070",
+      "old_lines": [
+        8423,
+        8427
+      ],
+      "current_lines": [
+        11665,
+        11669
+      ],
+      "excerpt_sha256": "9a3475c62c20cb8d1e07ba437b3eebb8423305d89f03b5704329acd0ad2df083",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S01",
+      "application_id": "A071",
+      "old_lines": [
+        814,
+        846
+      ],
+      "current_lines": [
+        825,
+        857
+      ],
+      "excerpt_sha256": "ab7e4ac8e8ddaad4b0abe9479192edb452bfa1378c0eefaf9234e2cde7b3a528",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S02",
+      "application_id": "A071",
+      "old_lines": [
+        1131,
+        1148
+      ],
+      "current_lines": [
+        1142,
+        1159
+      ],
+      "excerpt_sha256": "18d2d0e8e9535db3b42541e008559337de70b92bfbebcfc84fabff92adcfffaa",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S03",
+      "application_id": "A071",
+      "old_lines": [
+        1131,
+        1148
+      ],
+      "current_lines": [
+        1142,
+        1159
+      ],
+      "excerpt_sha256": "18d2d0e8e9535db3b42541e008559337de70b92bfbebcfc84fabff92adcfffaa",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S04",
+      "application_id": "A071",
+      "old_lines": [
+        1131,
+        1148
+      ],
+      "current_lines": [
+        1142,
+        1159
+      ],
+      "excerpt_sha256": "18d2d0e8e9535db3b42541e008559337de70b92bfbebcfc84fabff92adcfffaa",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S05",
+      "application_id": "A071",
+      "old_lines": [
+        3034,
+        3056
+      ],
+      "current_lines": [
+        3045,
+        3067
+      ],
+      "excerpt_sha256": "e192fed8a56f80acba3a2d794b05bba4a5b2b0d7cfa2a53e42164f3bd7b46528",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S06",
+      "application_id": "A071",
+      "old_lines": [
+        3167,
+        3200
+      ],
+      "current_lines": [
+        3178,
+        3211
+      ],
+      "excerpt_sha256": "c10773cd6bbe39be1e084cc2c6bffd920e58ed28ee1161ef2274e440ab423666",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S07",
+      "application_id": "A071",
+      "old_lines": [
+        6102,
+        6128
+      ],
+      "current_lines": [
+        6113,
+        6139
+      ],
+      "excerpt_sha256": "0fbb3ff6cf08d57ff5a3300eee72c9e45ccfb456347eca6c43362466a72e8261",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S08",
+      "application_id": "A071",
+      "old_lines": [
+        6170,
+        6200
+      ],
+      "current_lines": [
+        6181,
+        6211
+      ],
+      "excerpt_sha256": "67e4f6a1ee475c7d5029355cad2cf6bf0e7d2bffefc372489e61c04ffee0f594",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S09",
+      "application_id": "A071",
+      "old_lines": [
+        6202,
+        6219
+      ],
+      "current_lines": [
+        6213,
+        6230
+      ],
+      "excerpt_sha256": "681d449479ae30d76894185b87e418bede19dc28916e043d19b1866ba34bd6bb",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S10",
+      "application_id": "A071",
+      "old_lines": [
+        6285,
+        6349
+      ],
+      "current_lines": [
+        6296,
+        6360
+      ],
+      "excerpt_sha256": "d7b17b1053b40e1a639864e6134841bbf345d33eafae78220d725ffb2f3185c6",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S11",
+      "application_id": "A071",
+      "old_lines": [
+        6285,
+        6349
+      ],
+      "current_lines": [
+        6296,
+        6360
+      ],
+      "excerpt_sha256": "d7b17b1053b40e1a639864e6134841bbf345d33eafae78220d725ffb2f3185c6",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S12",
+      "application_id": "A071",
+      "old_lines": [
+        1223,
+        1227
+      ],
+      "current_lines": [
+        1234,
+        1238
+      ],
+      "excerpt_sha256": "846d6fd6d15046bc5445058032bbc08d4958a333d713df86a927adc32ee2b683",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S13",
+      "application_id": "A071",
+      "old_lines": [
+        1263,
+        1267
+      ],
+      "current_lines": [
+        1274,
+        1278
+      ],
+      "excerpt_sha256": "5abc556454d3cc6d1ea909912f13f945c19307384844dea08448cc838bb26059",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S14",
+      "application_id": "A071",
+      "old_lines": [
+        6100,
+        6104
+      ],
+      "current_lines": [
+        6111,
+        6115
+      ],
+      "excerpt_sha256": "4ca734bfaa9dba090bbbd826cb68351b708e046ed7467f3d13308b46ceb72957",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S15",
+      "application_id": "A071",
+      "old_lines": [
+        6126,
+        6130
+      ],
+      "current_lines": [
+        6137,
+        6141
+      ],
+      "excerpt_sha256": "670004c100b112a16c26c86d9962fc8f8b373922fdb5b689e2c8dda4f0aed400",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S16",
+      "application_id": "A071",
+      "old_lines": [
+        6173,
+        6177
+      ],
+      "current_lines": [
+        6184,
+        6188
+      ],
+      "excerpt_sha256": "acd3f0e0b8e4eeb90375dc44bf9b6eebaeabebd05f78e2710f7e55ebf9287d57",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S17",
+      "application_id": "A071",
+      "old_lines": [
+        6197,
+        6201
+      ],
+      "current_lines": [
+        6208,
+        6212
+      ],
+      "excerpt_sha256": "d17027eeb80ffe1ff0cdb2a0899b8f837a28f19295787a4705da664d8cec74c1",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S18",
+      "application_id": "A071",
+      "old_lines": [
+        6312,
+        6316
+      ],
+      "current_lines": [
+        6323,
+        6327
+      ],
+      "excerpt_sha256": "bb40de87c41be013d8c786c1634fd3be90cf48c3cc878a42f7e7a2a74d93e606",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A071-S19",
+      "application_id": "A071",
+      "old_lines": [
+        6356,
+        6360
+      ],
+      "current_lines": [
+        6367,
+        6371
+      ],
+      "excerpt_sha256": "1aaed16eecaed8be08f7e9c20f24cd2c786647fd95768b326ed14430ddcc7822",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A072-S01",
+      "application_id": "A072",
+      "old_lines": [
+        1563,
+        1593
+      ],
+      "current_lines": [
+        1574,
+        1604
+      ],
+      "excerpt_sha256": "ec38549f552f8f900503da0ddb4800ffc530da3a745d091aacaf3355518f1214",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A072-S02",
+      "application_id": "A072",
+      "old_lines": [
+        1563,
+        1593
+      ],
+      "current_lines": [
+        1574,
+        1604
+      ],
+      "excerpt_sha256": "ec38549f552f8f900503da0ddb4800ffc530da3a745d091aacaf3355518f1214",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A072-S03",
+      "application_id": "A072",
+      "old_lines": [
+        1563,
+        1593
+      ],
+      "current_lines": [
+        1574,
+        1604
+      ],
+      "excerpt_sha256": "ec38549f552f8f900503da0ddb4800ffc530da3a745d091aacaf3355518f1214",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A072-S04",
+      "application_id": "A072",
+      "old_lines": [
+        1563,
+        1593
+      ],
+      "current_lines": [
+        1574,
+        1604
+      ],
+      "excerpt_sha256": "ec38549f552f8f900503da0ddb4800ffc530da3a745d091aacaf3355518f1214",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A072-S05",
+      "application_id": "A072",
+      "old_lines": [
+        1552,
+        1556
+      ],
+      "current_lines": [
+        1563,
+        1567
+      ],
+      "excerpt_sha256": "d5709de2b60690c11d6168ff237110c15dd7f186f241831f582781ebc1ee6885",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A072-S06",
+      "application_id": "A072",
+      "old_lines": [
+        1596,
+        1600
+      ],
+      "current_lines": [
+        1607,
+        1611
+      ],
+      "excerpt_sha256": "599d0ae4f7b0a85484bdabe4f40a842e8eafc2734fe74ecd3baf25bf0d012487",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A073-S01",
+      "application_id": "A073",
+      "old_lines": [
+        4479,
+        4483
+      ],
+      "current_lines": [
+        4490,
+        4494
+      ],
+      "excerpt_sha256": "de271c3ee66ac73f04a0f2e6b4542bfecc6d2b865d000db7f6a8fb47656f0b45",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A073-S02",
+      "application_id": "A073",
+      "old_lines": [
+        4518,
+        4522
+      ],
+      "current_lines": [
+        4529,
+        4533
+      ],
+      "excerpt_sha256": "cd5b92343a1becf6fb2bae426633b6c53bfd7d17fba3baac3dc47d4371efe368",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A074-S01",
+      "application_id": "A074",
+      "old_lines": [
+        4528,
+        4532
+      ],
+      "current_lines": [
+        4539,
+        4543
+      ],
+      "excerpt_sha256": "65d243e73b1db72d4b9f9171fa6f12e2a0c76127a1d6e534567a65017fb85160",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A074-S02",
+      "application_id": "A074",
+      "old_lines": [
+        4539,
+        4543
+      ],
+      "current_lines": [
+        4550,
+        4554
+      ],
+      "excerpt_sha256": "269184707744bdf8b4eb126a3069726a64dea8d0c36d88332ce7d8ba0a5e0709",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A075-S01",
+      "application_id": "A075",
+      "old_lines": [
+        3451,
+        3455
+      ],
+      "current_lines": [
+        3462,
+        3466
+      ],
+      "excerpt_sha256": "5c8a34d5147c5c6a4bd07c5fcf1ea2ddcb222aa943da9d482116b03ddbc01524",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A075-S02",
+      "application_id": "A075",
+      "old_lines": [
+        4388,
+        4392
+      ],
+      "current_lines": [
+        4399,
+        4403
+      ],
+      "excerpt_sha256": "9aa87f71c878b38c26f2144178ed65fce4efb8c6de2e957550c06d9c728d4283",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A075-S03",
+      "application_id": "A075",
+      "old_lines": [
+        4450,
+        4454
+      ],
+      "current_lines": [
+        4461,
+        4465
+      ],
+      "excerpt_sha256": "ca1dbd7c38e648727aab9c4bc2303b6cdf7655c308c390e374d93dfdfe6c8276",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A075-S04",
+      "application_id": "A075",
+      "old_lines": [
+        4734,
+        4738
+      ],
+      "current_lines": [
+        4745,
+        4749
+      ],
+      "excerpt_sha256": "a2c28c3b8fd45266405664c5477e0b0099f5a293236aecfab5a2360d20afe4af",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A075-S05",
+      "application_id": "A075",
+      "old_lines": [
+        5259,
+        5263
+      ],
+      "current_lines": [
+        5270,
+        5274
+      ],
+      "excerpt_sha256": "705d9c4c57cc4fc300016e12833ec8de3381892c7ec98d15831359e513fa9079",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A075-S06",
+      "application_id": "A075",
+      "old_lines": [
+        5287,
+        5291
+      ],
+      "current_lines": [
+        5298,
+        5302
+      ],
+      "excerpt_sha256": "322db190afc87a4a8c5be3c776af3be9a466b6c93db041f3da6e9cbc56aaec98",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A075-S07",
+      "application_id": "A075",
+      "old_lines": [
+        5409,
+        5413
+      ],
+      "current_lines": [
+        5420,
+        5424
+      ],
+      "excerpt_sha256": "284041934fbf221f7feb588b25eaef016f43823f597ebf6eb0d2877a61dcbbb3",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A075-S08",
+      "application_id": "A075",
+      "old_lines": [
+        7386,
+        7390
+      ],
+      "current_lines": [
+        10628,
+        10632
+      ],
+      "excerpt_sha256": "9acde20be96d36aa4f274b601593eaecbf062c64bb7494225fab4f2d2e7b9b16",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A075-S09",
+      "application_id": "A075",
+      "old_lines": [
+        7398,
+        7402
+      ],
+      "current_lines": [
+        10640,
+        10644
+      ],
+      "excerpt_sha256": "5a0c22807bbe85b585a97473ab025709c7889561dab941427317c7c7aa8d3528",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S01",
+      "application_id": "A076",
+      "old_lines": [
+        2013,
+        2017
+      ],
+      "current_lines": [
+        2024,
+        2028
+      ],
+      "excerpt_sha256": "023edfaa821f7e457bd48651df6b4a79185faa5f38d15060b971494cfa3a6434",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S02",
+      "application_id": "A076",
+      "old_lines": [
+        2048,
+        2052
+      ],
+      "current_lines": [
+        2059,
+        2063
+      ],
+      "excerpt_sha256": "d3363b6944a11bcc6665464e292c1072dba36b7a3ae1c808e943ff2694676bfd",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S03",
+      "application_id": "A076",
+      "old_lines": [
+        2149,
+        2153
+      ],
+      "current_lines": [
+        2160,
+        2164
+      ],
+      "excerpt_sha256": "9bce29d91f938608ce3a52ad22d4a27c0559d187dbdcd6796e76312a81fc0beb",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S04",
+      "application_id": "A076",
+      "old_lines": [
+        2593,
+        2597
+      ],
+      "current_lines": [
+        2604,
+        2608
+      ],
+      "excerpt_sha256": "e494239ac4d68352000e4316ad856b8eb7b0ac410e4a6a2d5c548d07e0d1bb87",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S05",
+      "application_id": "A076",
+      "old_lines": [
+        2603,
+        2607
+      ],
+      "current_lines": [
+        2614,
+        2618
+      ],
+      "excerpt_sha256": "d4ca6f3c6616fcee35a16f7bc620a5665bdf576e9174ae5d00f66351bd8100ca",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S06",
+      "application_id": "A076",
+      "old_lines": [
+        2626,
+        2630
+      ],
+      "current_lines": [
+        2637,
+        2641
+      ],
+      "excerpt_sha256": "d76f81f6f2a4149d6c3e3432bc687550952ae4859ab1c6e89962eaf8edeb9d39",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S07",
+      "application_id": "A076",
+      "old_lines": [
+        4388,
+        4392
+      ],
+      "current_lines": [
+        4399,
+        4403
+      ],
+      "excerpt_sha256": "9aa87f71c878b38c26f2144178ed65fce4efb8c6de2e957550c06d9c728d4283",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S08",
+      "application_id": "A076",
+      "old_lines": [
+        4450,
+        4454
+      ],
+      "current_lines": [
+        4461,
+        4465
+      ],
+      "excerpt_sha256": "ca1dbd7c38e648727aab9c4bc2303b6cdf7655c308c390e374d93dfdfe6c8276",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S09",
+      "application_id": "A076",
+      "old_lines": [
+        4796,
+        4800
+      ],
+      "current_lines": [
+        4807,
+        4811
+      ],
+      "excerpt_sha256": "bf5451abb21d795c0162639d387642884c7e2d501a58c8fbf1378d8a63e35be2",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S10",
+      "application_id": "A076",
+      "old_lines": [
+        4823,
+        4827
+      ],
+      "current_lines": [
+        4834,
+        4838
+      ],
+      "excerpt_sha256": "93fad739ffc287a877f1e3c2a5029a9cb866081e462c8de77c82d3f6e56b6b81",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S11",
+      "application_id": "A076",
+      "old_lines": [
+        6111,
+        6115
+      ],
+      "current_lines": [
+        6122,
+        6126
+      ],
+      "excerpt_sha256": "b200026d8cb783dee53cffda26d54e42b26dc6d763245c7de0bfb50eca01c738",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S12",
+      "application_id": "A076",
+      "old_lines": [
+        6126,
+        6130
+      ],
+      "current_lines": [
+        6137,
+        6141
+      ],
+      "excerpt_sha256": "670004c100b112a16c26c86d9962fc8f8b373922fdb5b689e2c8dda4f0aed400",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S13",
+      "application_id": "A076",
+      "old_lines": [
+        9729,
+        9733
+      ],
+      "current_lines": [
+        12971,
+        12975
+      ],
+      "excerpt_sha256": "0bebad8d017cca34f59f736332dc26616e6c732ca8cadce14437b06f43a4c579",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S14",
+      "application_id": "A076",
+      "old_lines": [
+        10257,
+        10261
+      ],
+      "current_lines": [
+        13499,
+        13503
+      ],
+      "excerpt_sha256": "7cc46e1648fb7c43b1011edbc80d8287fc81481cfeb2e11c7cac74b6e7c9c064",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S15",
+      "application_id": "A076",
+      "old_lines": [
+        10506,
+        10510
+      ],
+      "current_lines": [
+        13748,
+        13752
+      ],
+      "excerpt_sha256": "6836f60cf0af8dd347e30f6cb893d0a328705d261940ab5cd8b4189803112108",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S16",
+      "application_id": "A076",
+      "old_lines": [
+        10551,
+        10555
+      ],
+      "current_lines": [
+        13793,
+        13797
+      ],
+      "excerpt_sha256": "abcd1862dfbc4d7e541c1b2d2cf4f84703bbcdb592706cf6867c71fabbce681b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S17",
+      "application_id": "A076",
+      "old_lines": [
+        10586,
+        10590
+      ],
+      "current_lines": [
+        13828,
+        13832
+      ],
+      "excerpt_sha256": "94e0cb4aad86372ec79c7136a540058bd9b3bdd3ccdf47ad2e84d5b4feb9bfc7",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S18",
+      "application_id": "A076",
+      "old_lines": [
+        10790,
+        10794
+      ],
+      "current_lines": [
+        14032,
+        14036
+      ],
+      "excerpt_sha256": "1b317dfc9b7408b3c83bafac988cbe21ae42caf89f73df4966ccd994720f6569",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S19",
+      "application_id": "A076",
+      "old_lines": [
+        10813,
+        10817
+      ],
+      "current_lines": [
+        14055,
+        14059
+      ],
+      "excerpt_sha256": "034f38aed6634bb13fd32bdd7745bbc103b541f668899f31d051dec00f4725c3",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S20",
+      "application_id": "A076",
+      "old_lines": [
+        10831,
+        10835
+      ],
+      "current_lines": [
+        14073,
+        14077
+      ],
+      "excerpt_sha256": "7fce7e684db2918016e083a952acf49b9bbe6f43f62f2f25055d09866de72440",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A076-S21",
+      "application_id": "A076",
+      "old_lines": [
+        10859,
+        10863
+      ],
+      "current_lines": [
+        14101,
+        14105
+      ],
+      "excerpt_sha256": "23ee46a3a9c26f69254cbd4d888038612f8757fd4aaa6b8c4d287fc40d89d593",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A077-S01",
+      "application_id": "A077",
+      "old_lines": [
+        5855,
+        5878
+      ],
+      "current_lines": [
+        5866,
+        5889
+      ],
+      "excerpt_sha256": "74c9c65ee2c201dcc2c09c0dd100c755ea208a680502fc11a8bee4368053e5fa",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A077-S02",
+      "application_id": "A077",
+      "old_lines": [
+        5788,
+        5792
+      ],
+      "current_lines": [
+        5799,
+        5803
+      ],
+      "excerpt_sha256": "28f72d483855fbb37c104a71c41e3c5a3a8dc6647018226cf6b926a762e56709",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A077-S03",
+      "application_id": "A077",
+      "old_lines": [
+        5974,
+        5978
+      ],
+      "current_lines": [
+        5985,
+        5989
+      ],
+      "excerpt_sha256": "2120a76ba9aed190154e3b0b3fabc30116d212886547f79d893052cd9d6d6715",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A078-S01",
+      "application_id": "A078",
+      "old_lines": [
+        461,
+        465
+      ],
+      "current_lines": [
+        472,
+        476
+      ],
+      "excerpt_sha256": "516a42cbe62a8034ca03abcc0fe5263ca83a5c1ca93f32aec8af2ea36aeeb344",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A078-S02",
+      "application_id": "A078",
+      "old_lines": [
+        530,
+        534
+      ],
+      "current_lines": [
+        541,
+        545
+      ],
+      "excerpt_sha256": "ba3ca434b8a1ccf4c393cd4e0241f40c7b591a0f2d6ac7a876cef691e89f5c96",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A079-S01",
+      "application_id": "A079",
+      "old_lines": [
+        564,
+        579
+      ],
+      "current_lines": [
+        575,
+        590
+      ],
+      "excerpt_sha256": "52f739c3e4755becea3e647115230caf7cebaa8e05ba1b10ebfed63fd902027d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A079-S02",
+      "application_id": "A079",
+      "old_lines": [
+        569,
+        573
+      ],
+      "current_lines": [
+        580,
+        584
+      ],
+      "excerpt_sha256": "3eed0e177e2d29982f6d101b0214433d66ac78eafcaa6b20d4f35b0078217cab",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A079-S03",
+      "application_id": "A079",
+      "old_lines": [
+        576,
+        580
+      ],
+      "current_lines": [
+        587,
+        591
+      ],
+      "excerpt_sha256": "e7419e51c998441e1e0fe202a01bfdcb5130062cb2144912360f28e8f7845ea0",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S01",
+      "application_id": "A080",
+      "old_lines": [
+        3004,
+        3032
+      ],
+      "current_lines": [
+        3015,
+        3043
+      ],
+      "excerpt_sha256": "cefc89153193d2dba66c4e58e65b68cc55e5d785fb4467e92dadf1a0e306a057",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S02",
+      "application_id": "A080",
+      "old_lines": [
+        3219,
+        3249
+      ],
+      "current_lines": [
+        3230,
+        3260
+      ],
+      "excerpt_sha256": "4f8418108ab4adef87bd5bfb65269d723e0c58dfcb42147dcc65402a9d56cb5e",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S03",
+      "application_id": "A080",
+      "old_lines": [
+        3337,
+        3370
+      ],
+      "current_lines": [
+        3348,
+        3381
+      ],
+      "excerpt_sha256": "7d633139642993eb07185d8231e0d93100de6aa37e48f617790c585e7794029e",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S04",
+      "application_id": "A080",
+      "old_lines": [
+        6953,
+        6969
+      ],
+      "current_lines": [
+        10195,
+        10211
+      ],
+      "excerpt_sha256": "2e4bf9b92803c089785ec8528c3b2c283e46f407a2c592711e2ba9b092d6ec8c",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S05",
+      "application_id": "A080",
+      "old_lines": [
+        7074,
+        7084
+      ],
+      "current_lines": [
+        10316,
+        10326
+      ],
+      "excerpt_sha256": "9b1bd3cb7e8ebea374a24ce6888e6868df73aa661905789e7be44e30d16d2e9d",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S06",
+      "application_id": "A080",
+      "old_lines": [
+        2967,
+        2971
+      ],
+      "current_lines": [
+        2978,
+        2982
+      ],
+      "excerpt_sha256": "acfd8678ea5769e0202810dcc2a0f9ee947360a974a57be7560b4138532a0bc5",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S07",
+      "application_id": "A080",
+      "old_lines": [
+        3031,
+        3035
+      ],
+      "current_lines": [
+        3042,
+        3046
+      ],
+      "excerpt_sha256": "a801d8a0420b8b424f15cf4b74c475d56c973bd21d45d56724c3ed073eb787a8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S08",
+      "application_id": "A080",
+      "old_lines": [
+        3200,
+        3204
+      ],
+      "current_lines": [
+        3211,
+        3215
+      ],
+      "excerpt_sha256": "1ba28995bcee15eb6fff13d34cf8145fe90c153bd8bdc90d55575ee0c21243bd",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S09",
+      "application_id": "A080",
+      "old_lines": [
+        3370,
+        3374
+      ],
+      "current_lines": [
+        3381,
+        3385
+      ],
+      "excerpt_sha256": "7e6c9c86f0e1815886ae931db4e91b26cec67dcadabe777a515cc3c1bd95016b",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S10",
+      "application_id": "A080",
+      "old_lines": [
+        6952,
+        6956
+      ],
+      "current_lines": [
+        10194,
+        10198
+      ],
+      "excerpt_sha256": "dc3e8dcede414ae6579a5752f5ad0ca7320d97addd1380c46a666688c6c74444",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A080-S11",
+      "application_id": "A080",
+      "old_lines": [
+        7034,
+        7038
+      ],
+      "current_lines": [
+        10276,
+        10280
+      ],
+      "excerpt_sha256": "72fd3ba438b6626582eab26087ad69830bce738423d0360bb83555bda59de2d4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A081-S01",
+      "application_id": "A081",
+      "old_lines": [
+        7331,
+        7335
+      ],
+      "current_lines": [
+        10573,
+        10577
+      ],
+      "excerpt_sha256": "a48203de88947ead3a0cf05fee0baf4a984ab45271353a0d990e9bae14b245f4",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A081-S02",
+      "application_id": "A081",
+      "old_lines": [
+        7349,
+        7353
+      ],
+      "current_lines": [
+        10591,
+        10595
+      ],
+      "excerpt_sha256": "4d68e56cc4fbf2dad76c30ec81731f46fc4c609f5c5ed2baa06c3410fb4a8aaa",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S01",
+      "application_id": "A082",
+      "old_lines": [
+        1086,
+        1109
+      ],
+      "current_lines": [
+        1097,
+        1120
+      ],
+      "excerpt_sha256": "752850520c38c21ae6a391365868a16b2a1a5561026038e742a21ea685e72574",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S02",
+      "application_id": "A082",
+      "old_lines": [
+        1086,
+        1109
+      ],
+      "current_lines": [
+        1097,
+        1120
+      ],
+      "excerpt_sha256": "752850520c38c21ae6a391365868a16b2a1a5561026038e742a21ea685e72574",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S03",
+      "application_id": "A082",
+      "old_lines": [
+        1086,
+        1109
+      ],
+      "current_lines": [
+        1097,
+        1120
+      ],
+      "excerpt_sha256": "752850520c38c21ae6a391365868a16b2a1a5561026038e742a21ea685e72574",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S04",
+      "application_id": "A082",
+      "old_lines": [
+        2385,
+        2389
+      ],
+      "current_lines": [
+        2396,
+        2400
+      ],
+      "excerpt_sha256": "4398ec83a2ea1a4d4dca4755e7b2000f7ad240424af6aaea0dfd80fba91fb373",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S05",
+      "application_id": "A082",
+      "old_lines": [
+        2614,
+        2618
+      ],
+      "current_lines": [
+        2625,
+        2629
+      ],
+      "excerpt_sha256": "dda141696c6af17b575e55fe779b68b6bc76669489a2bda1891262f0e6a5605a",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S06",
+      "application_id": "A082",
+      "old_lines": [
+        4050,
+        4054
+      ],
+      "current_lines": [
+        4061,
+        4065
+      ],
+      "excerpt_sha256": "ca509d57cb4d6765db783cb97651ed0255e3593d0db945c2f0bee0d0a9a79f40",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S07",
+      "application_id": "A082",
+      "old_lines": [
+        5264,
+        5268
+      ],
+      "current_lines": [
+        5275,
+        5279
+      ],
+      "excerpt_sha256": "4c716e48f21918a63f4390c2409dcb35b3e39722aaf910cad03284e50a238e1f",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S08",
+      "application_id": "A082",
+      "old_lines": [
+        7624,
+        7628
+      ],
+      "current_lines": [
+        10866,
+        10870
+      ],
+      "excerpt_sha256": "a254dd0add374e37a2bd991fd16bcfb58cb5572006c83bd0e34b9c193e5a7f91",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S09",
+      "application_id": "A082",
+      "old_lines": [
+        7778,
+        7782
+      ],
+      "current_lines": [
+        11020,
+        11024
+      ],
+      "excerpt_sha256": "6b032fabdcacd1854bec2da7da1517db8e0b725bcb67811228f1639b2324a4e5",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S10",
+      "application_id": "A082",
+      "old_lines": [
+        8265,
+        8269
+      ],
+      "current_lines": [
+        11507,
+        11511
+      ],
+      "excerpt_sha256": "ae9c2b77ed6a3dd61a298494a59ffcb65b6b460bc80ae1dfd96e263d6a93dca2",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S11",
+      "application_id": "A082",
+      "old_lines": [
+        10138,
+        10142
+      ],
+      "current_lines": [
+        13380,
+        13384
+      ],
+      "excerpt_sha256": "88231197539cfca9cacf03941312e18950b9afd22a181b9e60f9810510df09a8",
+      "earlier_review_scope_preserved": true
+    },
+    {
+      "id": "A082-S12",
+      "application_id": "A082",
+      "old_lines": [
+        10277,
+        10281
+      ],
+      "current_lines": [
+        13519,
+        13523
+      ],
+      "excerpt_sha256": "534294ee889ee047781672aedec67ef73de8eb98130ce1eb1e2406da3f077810",
+      "earlier_review_scope_preserved": true
+    }
+  ],
+  "citation_paragraphs": [
+    {
+      "id": "C001",
+      "keys": [
+        "openaihtp"
+      ],
+      "role": "provenance",
+      "old_line": 54,
+      "current_paragraph_lines": [
+        54,
+        57
+      ],
+      "paragraph_sha256": "148e024239892562b4475ad21865499192874180057eea589fdcbb2c1a98407c"
+    },
+    {
+      "id": "C002",
+      "keys": [
+        "sutherland"
+      ],
+      "role": "application",
+      "old_line": 223,
+      "current_paragraph_lines": [
+        221,
+        247
+      ],
+      "paragraph_sha256": "51c9e5e3fe131406d8e4b99d636719779fe06559783055667c7bb0d1ed1ba1a7"
+    },
+    {
+      "id": "C003",
+      "keys": [
+        "linyang"
+      ],
+      "role": "application",
+      "old_line": 419,
+      "current_paragraph_lines": [
+        415,
+        452
+      ],
+      "paragraph_sha256": "b489acdfa0fbb3b3a25d9ebb68116cd4d9378a968b3e4af3890998f328f1fa8e"
+    },
+    {
+      "id": "C004",
+      "keys": [
+        "babagranath",
+        "linyang"
+      ],
+      "role": "application",
+      "old_line": 422,
+      "current_paragraph_lines": [
+        415,
+        452
+      ],
+      "paragraph_sha256": "b489acdfa0fbb3b3a25d9ebb68116cd4d9378a968b3e4af3890998f328f1fa8e"
+    },
+    {
+      "id": "C005",
+      "keys": [
+        "buzzard"
+      ],
+      "role": "application",
+      "old_line": 444,
+      "current_paragraph_lines": [
+        454,
+        473
+      ],
+      "paragraph_sha256": "ae9ba8eccf7a7c0a9e8cc05aec08ee2b004ef0ac135fd9f1254ebd3b8c60444f"
+    },
+    {
+      "id": "C006",
+      "keys": [
+        "milne-av"
+      ],
+      "role": "application",
+      "old_line": 564,
+      "current_paragraph_lines": [
+        575,
+        590
+      ],
+      "paragraph_sha256": "52f739c3e4755becea3e647115230caf7cebaa8e05ba1b10ebfed63fd902027d"
+    },
+    {
+      "id": "C007",
+      "keys": [
+        "fowler"
+      ],
+      "role": "application",
+      "old_line": 588,
+      "current_paragraph_lines": [
+        592,
+        604
+      ],
+      "paragraph_sha256": "089f14dfce9dce1f5380eddbf8978a739e022dfb451fa8fdc2abad6737ebe7eb"
+    },
+    {
+      "id": "C008",
+      "keys": [
+        "cmheight"
+      ],
+      "role": "application",
+      "old_line": 605,
+      "current_paragraph_lines": [
+        606,
+        641
+      ],
+      "paragraph_sha256": "14bdee31bcfd916d1839b7a01b950fd62b0fa5806fea17aac5498ad90d764b77"
+    },
+    {
+      "id": "C009",
+      "keys": [
+        "gr2014"
+      ],
+      "role": "application",
+      "old_line": 615,
+      "current_paragraph_lines": [
+        606,
+        641
+      ],
+      "paragraph_sha256": "14bdee31bcfd916d1839b7a01b950fd62b0fa5806fea17aac5498ad90d764b77"
+    },
+    {
+      "id": "C010",
+      "keys": [
+        "faltings1983"
+      ],
+      "role": "application",
+      "old_line": 621,
+      "current_paragraph_lines": [
+        606,
+        641
+      ],
+      "paragraph_sha256": "14bdee31bcfd916d1839b7a01b950fd62b0fa5806fea17aac5498ad90d764b77"
+    },
+    {
+      "id": "C011",
+      "keys": [
+        "milne"
+      ],
+      "role": "application",
+      "old_line": 692,
+      "current_paragraph_lines": [
+        692,
+        719
+      ],
+      "paragraph_sha256": "6e67a3fcda70323abb84e18aed0034070fc7313d824c17627dd3c0bec297c9bd"
+    },
+    {
+      "id": "C012",
+      "keys": [
+        "faltings1983"
+      ],
+      "role": "application",
+      "old_line": 733,
+      "current_paragraph_lines": [
+        729,
+        764
+      ],
+      "paragraph_sha256": "76b88961f13a719527f770610fe970a88bef020fbd96405f02985f2ff4f700eb"
+    },
+    {
+      "id": "C013",
+      "keys": [
+        "scholze2013",
+        "scholze-erratum"
+      ],
+      "role": "application",
+      "old_line": 737,
+      "current_paragraph_lines": [
+        729,
+        764
+      ],
+      "paragraph_sha256": "76b88961f13a719527f770610fe970a88bef020fbd96405f02985f2ff4f700eb"
+    },
+    {
+      "id": "C014",
+      "keys": [
+        "berger2002"
+      ],
+      "role": "application",
+      "old_line": 739,
+      "current_paragraph_lines": [
+        729,
+        764
+      ],
+      "paragraph_sha256": "76b88961f13a719527f770610fe970a88bef020fbd96405f02985f2ff4f700eb"
+    },
+    {
+      "id": "C015",
+      "keys": [
+        "pan2022"
+      ],
+      "role": "application",
+      "old_line": 756,
+      "current_paragraph_lines": [
+        766,
+        785
+      ],
+      "paragraph_sha256": "386827c707d37fabd8f52350668decec4cedb526eb3a352701f6add30e37b088"
+    },
+    {
+      "id": "C016",
+      "keys": [
+        "conrad-local-characters"
+      ],
+      "role": "application",
+      "old_line": 761,
+      "current_paragraph_lines": [
+        766,
+        785
+      ],
+      "paragraph_sha256": "386827c707d37fabd8f52350668decec4cedb526eb3a352701f6add30e37b088"
+    },
+    {
+      "id": "C017",
+      "keys": [
+        "li-newforms"
+      ],
+      "role": "application",
+      "old_line": 769,
+      "current_paragraph_lines": [
+        766,
+        785
+      ],
+      "paragraph_sha256": "386827c707d37fabd8f52350668decec4cedb526eb3a352701f6add30e37b088"
+    },
+    {
+      "id": "C018",
+      "keys": [
+        "shimura-factors"
+      ],
+      "role": "application",
+      "old_line": 771,
+      "current_paragraph_lines": [
+        766,
+        785
+      ],
+      "paragraph_sha256": "386827c707d37fabd8f52350668decec4cedb526eb3a352701f6add30e37b088"
+    },
+    {
+      "id": "C019",
+      "keys": [
+        "serrelocal"
+      ],
+      "role": "application",
+      "old_line": 812,
+      "current_paragraph_lines": [
+        807,
+        823
+      ],
+      "paragraph_sha256": "b9ea3f13d4e8901288a5f1bf684d6ef3fb559079464cc44013be282a96ae2edc"
+    },
+    {
+      "id": "C020",
+      "keys": [
+        "silverbergzarhin"
+      ],
+      "role": "application",
+      "old_line": 816,
+      "current_paragraph_lines": [
+        825,
+        857
+      ],
+      "paragraph_sha256": "ab7e4ac8e8ddaad4b0abe9479192edb452bfa1378c0eefaf9234e2cde7b3a528"
+    },
+    {
+      "id": "C021",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 830,
+      "current_paragraph_lines": [
+        825,
+        857
+      ],
+      "paragraph_sha256": "ab7e4ac8e8ddaad4b0abe9479192edb452bfa1378c0eefaf9234e2cde7b3a528"
+    },
+    {
+      "id": "C022",
+      "keys": [
+        "javanpeykar"
+      ],
+      "role": "application",
+      "old_line": 870,
+      "current_paragraph_lines": [
+        871,
+        887
+      ],
+      "paragraph_sha256": "e25ce3cb7c945ca2cf8d07b9cd53a3c24e6b1dae96440d540da4d74d18bb1e43"
+    },
+    {
+      "id": "C023",
+      "keys": [
+        "gr2014"
+      ],
+      "role": "application",
+      "old_line": 878,
+      "current_paragraph_lines": [
+        889,
+        916
+      ],
+      "paragraph_sha256": "1a8c87b940c08525a0d1714d052238c7b69e13a2c92b98bf9067ee29caeda4f7"
+    },
+    {
+      "id": "C024",
+      "keys": [
+        "gr2014"
+      ],
+      "role": "application",
+      "old_line": 895,
+      "current_paragraph_lines": [
+        889,
+        916
+      ],
+      "paragraph_sha256": "1a8c87b940c08525a0d1714d052238c7b69e13a2c92b98bf9067ee29caeda4f7"
+    },
+    {
+      "id": "C025",
+      "keys": [
+        "linyang"
+      ],
+      "role": "application",
+      "old_line": 911,
+      "current_paragraph_lines": [
+        919,
+        943
+      ],
+      "paragraph_sha256": "50ed86ea6fb8c97945db04bf7ca4d8d9e5e21bf6907565b6794f6e107d3bcaef"
+    },
+    {
+      "id": "C026",
+      "keys": [
+        "lny"
+      ],
+      "role": "application",
+      "old_line": 916,
+      "current_paragraph_lines": [
+        919,
+        943
+      ],
+      "paragraph_sha256": "50ed86ea6fb8c97945db04bf7ca4d8d9e5e21bf6907565b6794f6e107d3bcaef"
+    },
+    {
+      "id": "C027",
+      "keys": [
+        "pazuki"
+      ],
+      "role": "application",
+      "old_line": 934,
+      "current_paragraph_lines": [
+        945,
+        958
+      ],
+      "paragraph_sha256": "80aa7f7248e2811737cd47977354cb8df4db00f05b01ff43fafedf2f619cc888"
+    },
+    {
+      "id": "C028",
+      "keys": [
+        "poonenstoll"
+      ],
+      "role": "application",
+      "old_line": 1081,
+      "current_paragraph_lines": [
+        1083,
+        1095
+      ],
+      "paragraph_sha256": "4420bb1c43297a27e84c672fc5f48b0ddac11e0546d53b24e50eb060abb1b60a"
+    },
+    {
+      "id": "C029",
+      "keys": [
+        "bcdt"
+      ],
+      "role": "application",
+      "old_line": 1092,
+      "current_paragraph_lines": [
+        1097,
+        1120
+      ],
+      "paragraph_sha256": "752850520c38c21ae6a391365868a16b2a1a5561026038e742a21ea685e72574"
+    },
+    {
+      "id": "C030",
+      "keys": [
+        "kolyvagin"
+      ],
+      "role": "application",
+      "old_line": 1093,
+      "current_paragraph_lines": [
+        1097,
+        1120
+      ],
+      "paragraph_sha256": "752850520c38c21ae6a391365868a16b2a1a5561026038e742a21ea685e72574"
+    },
+    {
+      "id": "C031",
+      "keys": [
+        "kato"
+      ],
+      "role": "application",
+      "old_line": 1105,
+      "current_paragraph_lines": [
+        1097,
+        1120
+      ],
+      "paragraph_sha256": "752850520c38c21ae6a391365868a16b2a1a5561026038e742a21ea685e72574"
+    },
+    {
+      "id": "C032",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 1134,
+      "current_paragraph_lines": [
+        1142,
+        1159
+      ],
+      "paragraph_sha256": "18d2d0e8e9535db3b42541e008559337de70b92bfbebcfc84fabff92adcfffaa"
+    },
+    {
+      "id": "C033",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 1139,
+      "current_paragraph_lines": [
+        1142,
+        1159
+      ],
+      "paragraph_sha256": "18d2d0e8e9535db3b42541e008559337de70b92bfbebcfc84fabff92adcfffaa"
+    },
+    {
+      "id": "C034",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 1148,
+      "current_paragraph_lines": [
+        1142,
+        1159
+      ],
+      "paragraph_sha256": "18d2d0e8e9535db3b42541e008559337de70b92bfbebcfc84fabff92adcfffaa"
+    },
+    {
+      "id": "C035",
+      "keys": [
+        "williams-mertens"
+      ],
+      "role": "application",
+      "old_line": 1403,
+      "current_paragraph_lines": [
+        1393,
+        1414
+      ],
+      "paragraph_sha256": "74bbde0cf222197f94f4379921e321efe4ea4b2ffac801af201fee9e7cc1c16e"
+    },
+    {
+      "id": "C036",
+      "keys": [
+        "greentao"
+      ],
+      "role": "application",
+      "old_line": 1406,
+      "current_paragraph_lines": [
+        1416,
+        1446
+      ],
+      "paragraph_sha256": "3a41891c333c68c52185e630fe30ecfcfe1c624c31dcf2e80eadbf316d280351"
+    },
+    {
+      "id": "C037",
+      "keys": [
+        "moebius"
+      ],
+      "role": "application",
+      "old_line": 1407,
+      "current_paragraph_lines": [
+        1416,
+        1446
+      ],
+      "paragraph_sha256": "3a41891c333c68c52185e630fe30ecfcfe1c624c31dcf2e80eadbf316d280351"
+    },
+    {
+      "id": "C038",
+      "keys": [
+        "gtz"
+      ],
+      "role": "application",
+      "old_line": 1408,
+      "current_paragraph_lines": [
+        1416,
+        1446
+      ],
+      "paragraph_sha256": "3a41891c333c68c52185e630fe30ecfcfe1c624c31dcf2e80eadbf316d280351"
+    },
+    {
+      "id": "C039",
+      "keys": [
+        "greentao"
+      ],
+      "role": "application",
+      "old_line": 1414,
+      "current_paragraph_lines": [
+        1416,
+        1446
+      ],
+      "paragraph_sha256": "3a41891c333c68c52185e630fe30ecfcfe1c624c31dcf2e80eadbf316d280351"
+    },
+    {
+      "id": "C040",
+      "keys": [
+        "williams-mertens"
+      ],
+      "role": "application",
+      "old_line": 1520,
+      "current_paragraph_lines": [
+        1515,
+        1543
+      ],
+      "paragraph_sha256": "4a9e9da8a5e33a5132f78559746f576f066178f27f537fb234b9ec0caa7581da"
+    },
+    {
+      "id": "C041",
+      "keys": [
+        "williams-mertens"
+      ],
+      "role": "application",
+      "old_line": 1537,
+      "current_paragraph_lines": [
+        1545,
+        1563
+      ],
+      "paragraph_sha256": "f694c2a6ddf1df7805b532d4f3c0b8646a83c9ef0cbed368ed0c8b50def60bcc"
+    },
+    {
+      "id": "C042",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 1572,
+      "current_paragraph_lines": [
+        1574,
+        1604
+      ],
+      "paragraph_sha256": "ec38549f552f8f900503da0ddb4800ffc530da3a745d091aacaf3355518f1214"
+    },
+    {
+      "id": "C043",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 1578,
+      "current_paragraph_lines": [
+        1574,
+        1604
+      ],
+      "paragraph_sha256": "ec38549f552f8f900503da0ddb4800ffc530da3a745d091aacaf3355518f1214"
+    },
+    {
+      "id": "C044",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 1581,
+      "current_paragraph_lines": [
+        1574,
+        1604
+      ],
+      "paragraph_sha256": "ec38549f552f8f900503da0ddb4800ffc530da3a745d091aacaf3355518f1214"
+    },
+    {
+      "id": "C045",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 1591,
+      "current_paragraph_lines": [
+        1574,
+        1604
+      ],
+      "paragraph_sha256": "ec38549f552f8f900503da0ddb4800ffc530da3a745d091aacaf3355518f1214"
+    },
+    {
+      "id": "C046",
+      "keys": [
+        "bcdt"
+      ],
+      "role": "application",
+      "old_line": 1779,
+      "current_paragraph_lines": [
+        1782,
+        1814
+      ],
+      "paragraph_sha256": "4aa2ef431f02d4e69076666a13fbe1fbf78a9215941a9dfb041c949a4149ab68"
+    },
+    {
+      "id": "C047",
+      "keys": [
+        "milnemf"
+      ],
+      "role": "application",
+      "old_line": 1784,
+      "current_paragraph_lines": [
+        1782,
+        1814
+      ],
+      "paragraph_sha256": "4aa2ef431f02d4e69076666a13fbe1fbf78a9215941a9dfb041c949a4149ab68"
+    },
+    {
+      "id": "C048",
+      "keys": [
+        "dd"
+      ],
+      "role": "application",
+      "old_line": 1794,
+      "current_paragraph_lines": [
+        1782,
+        1814
+      ],
+      "paragraph_sha256": "4aa2ef431f02d4e69076666a13fbe1fbf78a9215941a9dfb041c949a4149ab68"
+    },
+    {
+      "id": "C049",
+      "keys": [
+        "kato"
+      ],
+      "role": "application",
+      "old_line": 1886,
+      "current_paragraph_lines": [
+        1895,
+        1903
+      ],
+      "paragraph_sha256": "7521ea4329d1f309483a580e4bdc3db1c1d7c364d3c04c70d5f4930552c92a6e"
+    },
+    {
+      "id": "C050",
+      "keys": [
+        "hl"
+      ],
+      "role": "application",
+      "old_line": 1986,
+      "current_paragraph_lines": [
+        1992,
+        2003
+      ],
+      "paragraph_sha256": "d81d017d9380d49aadc9327c8a68b0ea98bbf911f84994a6d3f4612c02d8a7a0"
+    },
+    {
+      "id": "C051",
+      "keys": [
+        "bfh"
+      ],
+      "role": "application",
+      "old_line": 1987,
+      "current_paragraph_lines": [
+        1992,
+        2003
+      ],
+      "paragraph_sha256": "d81d017d9380d49aadc9327c8a68b0ea98bbf911f84994a6d3f4612c02d8a7a0"
+    },
+    {
+      "id": "C052",
+      "keys": [
+        "desjardins"
+      ],
+      "role": "application",
+      "old_line": 1997,
+      "current_paragraph_lines": [
+        2005,
+        2015
+      ],
+      "paragraph_sha256": "2ca152730236f98e39e59db4ed418b2083589e9eb7ada1df446d6d9b56d3a2dd"
+    },
+    {
+      "id": "C053",
+      "keys": [
+        "cst"
+      ],
+      "role": "application",
+      "old_line": 2428,
+      "current_paragraph_lines": [
+        2429,
+        2451
+      ],
+      "paragraph_sha256": "c618f8a12e6addd54519c98f2ca64c7ad8ed3a5443884545620a487ba85f1f98"
+    },
+    {
+      "id": "C054",
+      "keys": [
+        "cornutjetchev"
+      ],
+      "role": "application",
+      "old_line": 2523,
+      "current_paragraph_lines": [
+        2533,
+        2547
+      ],
+      "paragraph_sha256": "d58ad4141ada8da1c0b181311939ac0b7adf2f2c6bdab0d2bfb72caec8c6f3a8"
+    },
+    {
+      "id": "C055",
+      "keys": [
+        "waldspurger"
+      ],
+      "role": "application",
+      "old_line": 2557,
+      "current_paragraph_lines": [
+        2564,
+        2578
+      ],
+      "paragraph_sha256": "25254cb150db5b8762b07717746773d9deef6b6734ac73ba059b862a2bed2c6d"
+    },
+    {
+      "id": "C056",
+      "keys": [
+        "serre"
+      ],
+      "role": "application",
+      "old_line": 2882,
+      "current_paragraph_lines": [
+        2881,
+        2911
+      ],
+      "paragraph_sha256": "1e0a6dd084e3707c0ecbf0836a8ebf1a79989d13d703131fde673a90128204b0"
+    },
+    {
+      "id": "C057",
+      "keys": [
+        "ccl"
+      ],
+      "role": "application",
+      "old_line": 2918,
+      "current_paragraph_lines": [
+        2925,
+        2957
+      ],
+      "paragraph_sha256": "be4f2ac537219cbadb8953ceabb43d9cf301d27629a910222c9465e27ac876f6"
+    },
+    {
+      "id": "C058",
+      "keys": [
+        "elkik"
+      ],
+      "role": "application",
+      "old_line": 2940,
+      "current_paragraph_lines": [
+        2925,
+        2957
+      ],
+      "paragraph_sha256": "be4f2ac537219cbadb8953ceabb43d9cf301d27629a910222c9465e27ac876f6"
+    },
+    {
+      "id": "C059",
+      "keys": [
+        "howard2012"
+      ],
+      "role": "application",
+      "old_line": 2965,
+      "current_paragraph_lines": [
+        2959,
+        2978
+      ],
+      "paragraph_sha256": "6e1153a3bf1a34b555b0d645d6a7724cda0fc4a9d77c78fdd246079ba9cd0604"
+    },
+    {
+      "id": "C060",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 3007,
+      "current_paragraph_lines": [
+        3015,
+        3043
+      ],
+      "paragraph_sha256": "cefc89153193d2dba66c4e58e65b68cc55e5d785fb4467e92dadf1a0e306a057"
+    },
+    {
+      "id": "C061",
+      "keys": [
+        "lang1956"
+      ],
+      "role": "application",
+      "old_line": 3044,
+      "current_paragraph_lines": [
+        3045,
+        3067
+      ],
+      "paragraph_sha256": "e192fed8a56f80acba3a2d794b05bba4a5b2b0d7cfa2a53e42164f3bd7b46528"
+    },
+    {
+      "id": "C062",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 3051,
+      "current_paragraph_lines": [
+        3045,
+        3067
+      ],
+      "paragraph_sha256": "e192fed8a56f80acba3a2d794b05bba4a5b2b0d7cfa2a53e42164f3bd7b46528"
+    },
+    {
+      "id": "C063",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 3180,
+      "current_paragraph_lines": [
+        3178,
+        3211
+      ],
+      "paragraph_sha256": "c10773cd6bbe39be1e084cc2c6bffd920e58ed28ee1161ef2274e440ab423666"
+    },
+    {
+      "id": "C064",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 3246,
+      "current_paragraph_lines": [
+        3230,
+        3260
+      ],
+      "paragraph_sha256": "4f8418108ab4adef87bd5bfb65269d723e0c58dfcb42147dcc65402a9d56cb5e"
+    },
+    {
+      "id": "C065",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 3364,
+      "current_paragraph_lines": [
+        3348,
+        3381
+      ],
+      "paragraph_sha256": "7d633139642993eb07185d8231e0d93100de6aa37e48f617790c585e7794029e"
+    },
+    {
+      "id": "C066",
+      "keys": [
+        "milne"
+      ],
+      "role": "application",
+      "old_line": 3442,
+      "current_paragraph_lines": [
+        3453,
+        3467
+      ],
+      "paragraph_sha256": "5452c3474b56f9247b6ecbaede534afa5b06f42b40e02257b526c16f3c67b82d"
+    },
+    {
+      "id": "C067",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 3455,
+      "current_paragraph_lines": [
+        3453,
+        3467
+      ],
+      "paragraph_sha256": "5452c3474b56f9247b6ecbaede534afa5b06f42b40e02257b526c16f3c67b82d"
+    },
+    {
+      "id": "C068",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 3483,
+      "current_paragraph_lines": [
+        3494,
+        3509
+      ],
+      "paragraph_sha256": "7e25c3d6f0a9d7959a49f72af159c36087edb1dd07319aeaedad9528ad4686df"
+    },
+    {
+      "id": "C069",
+      "keys": [
+        "serre"
+      ],
+      "role": "application",
+      "old_line": 3600,
+      "current_paragraph_lines": [
+        3608,
+        3644
+      ],
+      "paragraph_sha256": "5e40a85344ab195018178c7eb19d7a13691fdda5790a90b89b27357fef99f865"
+    },
+    {
+      "id": "C070",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 3833,
+      "current_paragraph_lines": [
+        3831,
+        3846
+      ],
+      "paragraph_sha256": "004d78bc74f844f317ab5c8239308aaddebbdc559598847b8054a91349f8098d"
+    },
+    {
+      "id": "C071",
+      "keys": [
+        "milne"
+      ],
+      "role": "application",
+      "old_line": 4027,
+      "current_paragraph_lines": [
+        4031,
+        4041
+      ],
+      "paragraph_sha256": "5161e68ee9aeedbecbc26518cffa1cefd76f0475c2b78b8423c7c8ab17ea0a94"
+    },
+    {
+      "id": "C072",
+      "keys": [
+        "edixhoven"
+      ],
+      "role": "application",
+      "old_line": 4119,
+      "current_paragraph_lines": [
+        4093,
+        4205
+      ],
+      "paragraph_sha256": "c3e160624c07ec9cc3d9ce3b68687511dd9bf4aed68bfc30e0d2d85e168a5321"
+    },
+    {
+      "id": "C073",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 4165,
+      "current_paragraph_lines": [
+        4093,
+        4205
+      ],
+      "paragraph_sha256": "c3e160624c07ec9cc3d9ce3b68687511dd9bf4aed68bfc30e0d2d85e168a5321"
+    },
+    {
+      "id": "C074",
+      "keys": [
+        "milne"
+      ],
+      "role": "application",
+      "old_line": 4526,
+      "current_paragraph_lines": [
+        4530,
+        4553
+      ],
+      "paragraph_sha256": "096653109d21c6e8bcac1a577eeca1b4e78c5fc43558a58849903d495c93611d"
+    },
+    {
+      "id": "C075",
+      "keys": [
+        "milne"
+      ],
+      "role": "application",
+      "old_line": 4547,
+      "current_paragraph_lines": [
+        4555,
+        4593
+      ],
+      "paragraph_sha256": "b8793451f5f06c95b5a32183781dd2d0d5a0fd6f9075c34110d4432f86c7dc15"
+    },
+    {
+      "id": "C076",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 4616,
+      "current_paragraph_lines": [
+        4623,
+        4642
+      ],
+      "paragraph_sha256": "f420a9294e62c7c5b472666a15a0e75c3156ebc16e0914afe3674ba30e88799b"
+    },
+    {
+      "id": "C077",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 4896,
+      "current_paragraph_lines": [
+        4855,
+        4909
+      ],
+      "paragraph_sha256": "8be011a6c74cf67c77ec27771b92550a6b8d26c14b6e3a6e6a186b1c2388e0b1"
+    },
+    {
+      "id": "C078",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 5070,
+      "current_paragraph_lines": [
+        5066,
+        5096
+      ],
+      "paragraph_sha256": "2ce5ea74ea5112eefc4d571c4a742f2f2b6f5fb17f8c78326ca8888c411cee52"
+    },
+    {
+      "id": "C079",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 5276,
+      "current_paragraph_lines": [
+        5280,
+        5294
+      ],
+      "paragraph_sha256": "f3a2a01da088dc6681ad1557fdb914cd0fcb4ec8d5ed579fe6575ec7c4bb216a"
+    },
+    {
+      "id": "C080",
+      "keys": [
+        "afp"
+      ],
+      "role": "application",
+      "old_line": 5859,
+      "current_paragraph_lines": [
+        5866,
+        5889
+      ],
+      "paragraph_sha256": "74c9c65ee2c201dcc2c09c0dd100c755ea208a680502fc11a8bee4368053e5fa"
+    },
+    {
+      "id": "C081",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 6125,
+      "current_paragraph_lines": [
+        6113,
+        6139
+      ],
+      "paragraph_sha256": "0fbb3ff6cf08d57ff5a3300eee72c9e45ccfb456347eca6c43362466a72e8261"
+    },
+    {
+      "id": "C082",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 6186,
+      "current_paragraph_lines": [
+        6181,
+        6211
+      ],
+      "paragraph_sha256": "67e4f6a1ee475c7d5029355cad2cf6bf0e7d2bffefc372489e61c04ffee0f594"
+    },
+    {
+      "id": "C083",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 6210,
+      "current_paragraph_lines": [
+        6213,
+        6230
+      ],
+      "paragraph_sha256": "681d449479ae30d76894185b87e418bede19dc28916e043d19b1866ba34bd6bb"
+    },
+    {
+      "id": "C084",
+      "keys": [
+        "bmor"
+      ],
+      "role": "application",
+      "old_line": 6298,
+      "current_paragraph_lines": [
+        6296,
+        6360
+      ],
+      "paragraph_sha256": "d7b17b1053b40e1a639864e6134841bbf345d33eafae78220d725ffb2f3185c6"
+    },
+    {
+      "id": "C085",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 6322,
+      "current_paragraph_lines": [
+        6296,
+        6360
+      ],
+      "paragraph_sha256": "d7b17b1053b40e1a639864e6134841bbf345d33eafae78220d725ffb2f3185c6"
+    },
+    {
+      "id": "C086",
+      "keys": [
+        "silverman"
+      ],
+      "role": "application",
+      "old_line": 6324,
+      "current_paragraph_lines": [
+        6296,
+        6360
+      ],
+      "paragraph_sha256": "d7b17b1053b40e1a639864e6134841bbf345d33eafae78220d725ffb2f3185c6"
+    },
+    {
+      "id": "C087",
+      "keys": [
+        "mazur1995"
+      ],
+      "role": "application",
+      "old_line": 6477,
+      "current_paragraph_lines": [
+        6481,
+        6506
+      ],
+      "paragraph_sha256": "14193cb632839f4ab04c39b04e539266bf3055546cbb00e42c7ed47c7f8e9e9c"
+    },
+    {
+      "id": "C088",
+      "keys": [
+        "matiyasevich1971"
+      ],
+      "role": "application",
+      "old_line": 6512,
+      "current_paragraph_lines": [
+        6508,
+        6550
+      ],
+      "paragraph_sha256": "9a27ab7b9e131c976b188aeacc4548ce37ed0f9ba0b48410fe0d226dde46680c"
+    },
+    {
+      "id": "C089",
+      "keys": [
+        "matiyasevich1971"
+      ],
+      "role": "application",
+      "old_line": 6525,
+      "current_paragraph_lines": [
+        6508,
+        6550
+      ],
+      "paragraph_sha256": "9a27ab7b9e131c976b188aeacc4548ce37ed0f9ba0b48410fe0d226dde46680c"
+    },
+    {
+      "id": "C090",
+      "keys": [
+        "dd"
+      ],
+      "role": "summary",
+      "old_line": 6786,
+      "current_paragraph_lines": [
+        10025,
+        10061
+      ],
+      "paragraph_sha256": "2e73efdc38a3bf1c9fe1c4cce6706613a387a037e4f9063fbd392ba85f5dae51"
+    },
+    {
+      "id": "C091",
+      "keys": [
+        "kato"
+      ],
+      "role": "summary",
+      "old_line": 6788,
+      "current_paragraph_lines": [
+        10025,
+        10061
+      ],
+      "paragraph_sha256": "2e73efdc38a3bf1c9fe1c4cce6706613a387a037e4f9063fbd392ba85f5dae51"
+    },
+    {
+      "id": "C092",
+      "keys": [
+        "bfh",
+        "hl"
+      ],
+      "role": "summary",
+      "old_line": 6791,
+      "current_paragraph_lines": [
+        10025,
+        10061
+      ],
+      "paragraph_sha256": "2e73efdc38a3bf1c9fe1c4cce6706613a387a037e4f9063fbd392ba85f5dae51"
+    },
+    {
+      "id": "C093",
+      "keys": [
+        "waldspurger",
+        "ramsey"
+      ],
+      "role": "summary",
+      "old_line": 6794,
+      "current_paragraph_lines": [
+        10025,
+        10061
+      ],
+      "paragraph_sha256": "2e73efdc38a3bf1c9fe1c4cce6706613a387a037e4f9063fbd392ba85f5dae51"
+    },
+    {
+      "id": "C094",
+      "keys": [
+        "ccl",
+        "cst",
+        "cornutjetchev"
+      ],
+      "role": "summary",
+      "old_line": 6797,
+      "current_paragraph_lines": [
+        10025,
+        10061
+      ],
+      "paragraph_sha256": "2e73efdc38a3bf1c9fe1c4cce6706613a387a037e4f9063fbd392ba85f5dae51"
+    },
+    {
+      "id": "C095",
+      "keys": [
+        "milne",
+        "nekovar"
+      ],
+      "role": "summary",
+      "old_line": 6800,
+      "current_paragraph_lines": [
+        10025,
+        10061
+      ],
+      "paragraph_sha256": "2e73efdc38a3bf1c9fe1c4cce6706613a387a037e4f9063fbd392ba85f5dae51"
+    },
+    {
+      "id": "C096",
+      "keys": [
+        "gz",
+        "kolyvagin"
+      ],
+      "role": "summary",
+      "old_line": 6803,
+      "current_paragraph_lines": [
+        10025,
+        10061
+      ],
+      "paragraph_sha256": "2e73efdc38a3bf1c9fe1c4cce6706613a387a037e4f9063fbd392ba85f5dae51"
+    },
+    {
+      "id": "C097",
+      "keys": [
+        "milne"
+      ],
+      "role": "summary",
+      "old_line": 6805,
+      "current_paragraph_lines": [
+        10025,
+        10061
+      ],
+      "paragraph_sha256": "2e73efdc38a3bf1c9fe1c4cce6706613a387a037e4f9063fbd392ba85f5dae51"
+    },
+    {
+      "id": "C098",
+      "keys": [
+        "pan2022",
+        "javanpeykar",
+        "gr2014",
+        "fowler",
+        "cmheight",
+        "pazuki"
+      ],
+      "role": "summary",
+      "old_line": 6808,
+      "current_paragraph_lines": [
+        10025,
+        10061
+      ],
+      "paragraph_sha256": "2e73efdc38a3bf1c9fe1c4cce6706613a387a037e4f9063fbd392ba85f5dae51"
+    },
+    {
+      "id": "C099",
+      "keys": [
+        "greentao",
+        "moebius",
+        "gtz",
+        "bmor"
+      ],
+      "role": "summary",
+      "old_line": 6812,
+      "current_paragraph_lines": [
+        10025,
+        10061
+      ],
+      "paragraph_sha256": "2e73efdc38a3bf1c9fe1c4cce6706613a387a037e4f9063fbd392ba85f5dae51"
+    },
+    {
+      "id": "C100",
+      "keys": [
+        "kato"
+      ],
+      "role": "source-scope declaration",
+      "old_line": 6833,
+      "current_paragraph_lines": [
+        10074,
+        10075
+      ],
+      "paragraph_sha256": "18760a7562412bb778623e610095f5a1a7861d0940900689dbd0f20159272631"
+    },
+    {
+      "id": "C101",
+      "keys": [
+        "kato"
+      ],
+      "role": "application",
+      "old_line": 6895,
+      "current_paragraph_lines": [
+        10087,
+        10143
+      ],
+      "paragraph_sha256": "a6b71243e231cf523a19e4edfab61bb24df9d8a48d50e8a5bed679509d430257"
+    },
+    {
+      "id": "C102",
+      "keys": [
+        "stackscohom"
+      ],
+      "role": "application",
+      "old_line": 6962,
+      "current_paragraph_lines": [
+        10195,
+        10211
+      ],
+      "paragraph_sha256": "2e4bf9b92803c089785ec8528c3b2c283e46f407a2c592711e2ba9b092d6ec8c"
+    },
+    {
+      "id": "C103",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 7079,
+      "current_paragraph_lines": [
+        10316,
+        10326
+      ],
+      "paragraph_sha256": "9b1bd3cb7e8ebea374a24ce6888e6868df73aa661905789e7be44e30d16d2e9d"
+    },
+    {
+      "id": "C104",
+      "keys": [
+        "nekovar"
+      ],
+      "role": "application",
+      "old_line": 7696,
+      "current_paragraph_lines": [
+        10926,
+        10955
+      ],
+      "paragraph_sha256": "f9b33bcf6e39bd96c52041e1fe2c8f7cb154359949a498436a4fe976fa8777cf"
+    },
+    {
+      "id": "C105",
+      "keys": [
+        "waldspurgerICM"
+      ],
+      "role": "application",
+      "old_line": 7832,
+      "current_paragraph_lines": [
+        11063,
+        11077
+      ],
+      "paragraph_sha256": "157ef6bfcd7d1a034fcb668d73fcf34403f3674e587da31fa67fd5531b23b6dc"
+    },
+    {
+      "id": "C106",
+      "keys": [
+        "waldspurger"
+      ],
+      "role": "application",
+      "old_line": 7833,
+      "current_paragraph_lines": [
+        11063,
+        11077
+      ],
+      "paragraph_sha256": "157ef6bfcd7d1a034fcb668d73fcf34403f3674e587da31fa67fd5531b23b6dc"
+    },
+    {
+      "id": "C107",
+      "keys": [
+        "waldspurger"
+      ],
+      "role": "application",
+      "old_line": 7937,
+      "current_paragraph_lines": [
+        11171,
+        11182
+      ],
+      "paragraph_sha256": "0d58687dc0274f08340236ee2e16b38a39352b89fe08432e3e4d9a073faa1653"
+    },
+    {
+      "id": "C108",
+      "keys": [
+        "waldspurger"
+      ],
+      "role": "application",
+      "old_line": 7958,
+      "current_paragraph_lines": [
+        11199,
+        11208
+      ],
+      "paragraph_sha256": "32b3b24cee4ecfb40ad2b07f391ade4b5ff030d694255d084a9746edbb93d3d2"
+    },
+    {
+      "id": "C109",
+      "keys": [
+        "waldspurger"
+      ],
+      "role": "application",
+      "old_line": 7960,
+      "current_paragraph_lines": [
+        11199,
+        11208
+      ],
+      "paragraph_sha256": "32b3b24cee4ecfb40ad2b07f391ade4b5ff030d694255d084a9746edbb93d3d2"
+    },
+    {
+      "id": "C110",
+      "keys": [
+        "waldspurger"
+      ],
+      "role": "application",
+      "old_line": 7971,
+      "current_paragraph_lines": [
+        11210,
+        11229
+      ],
+      "paragraph_sha256": "619e32245f3dc7888f6edd41a80512507a3af6f54495c3d1facde91710319d15"
+    },
+    {
+      "id": "C111",
+      "keys": [
+        "waldspurger"
+      ],
+      "role": "application",
+      "old_line": 8010,
+      "current_paragraph_lines": [
+        11245,
+        11270
+      ],
+      "paragraph_sha256": "22ff9eb9df489b36995d718bf6a345becfcfd63961db41ab6cb508509fbfd5cf"
+    },
+    {
+      "id": "C112",
+      "keys": [
+        "ramsey"
+      ],
+      "role": "application",
+      "old_line": 8042,
+      "current_paragraph_lines": [
+        11283,
+        11293
+      ],
+      "paragraph_sha256": "607ae4773bb989f10cc41be8015f1a26ac71c7babd3de2323e4be06cb7ac4978"
+    },
+    {
+      "id": "C113",
+      "keys": [
+        "ramsey"
+      ],
+      "role": "application",
+      "old_line": 8064,
+      "current_paragraph_lines": [
+        11295,
+        11325
+      ],
+      "paragraph_sha256": "5268f362a2d112a909798d2907ccb91c1e53ee6939273925a0986d6798ed4127"
+    },
+    {
+      "id": "C114",
+      "keys": [
+        "dd"
+      ],
+      "role": "application",
+      "old_line": 8249,
+      "current_paragraph_lines": [
+        11464,
+        11501
+      ],
+      "paragraph_sha256": "b855541f9503f7c91240065f20d23fc1e425a337096deed1963f515b254388b3"
+    },
+    {
+      "id": "C115",
+      "keys": [
+        "bfh"
+      ],
+      "role": "application",
+      "old_line": 8251,
+      "current_paragraph_lines": [
+        11464,
+        11501
+      ],
+      "paragraph_sha256": "b855541f9503f7c91240065f20d23fc1e425a337096deed1963f515b254388b3"
+    },
+    {
+      "id": "C116",
+      "keys": [
+        "cst"
+      ],
+      "role": "application",
+      "old_line": 8269,
+      "current_paragraph_lines": [
+        11503,
+        11514
+      ],
+      "paragraph_sha256": "486c6096ad912fc632012d48b61cc0734151b9e8ebfe8ad809cec00a5eaccb35"
+    },
+    {
+      "id": "C117",
+      "keys": [
+        "serre"
+      ],
+      "role": "application",
+      "old_line": 8319,
+      "current_paragraph_lines": [
+        11561,
+        11573
+      ],
+      "paragraph_sha256": "5511af18dc7bbdb820fa7ee413718b67bd1988d279060099d62b3ad0b41ec05e"
+    },
+    {
+      "id": "C118",
+      "keys": [
+        "voight-quaternion"
+      ],
+      "role": "application",
+      "old_line": 8462,
+      "current_paragraph_lines": [
+        11704,
+        11716
+      ],
+      "paragraph_sha256": "f50254f773255098b15cf0bba49875506ab540d68c55540028058f61a1162e7b"
+    },
+    {
+      "id": "C119",
+      "keys": [
+        "jetchevkane"
+      ],
+      "role": "application",
+      "old_line": 8474,
+      "current_paragraph_lines": [
+        11704,
+        11716
+      ],
+      "paragraph_sha256": "f50254f773255098b15cf0bba49875506ab540d68c55540028058f61a1162e7b"
+    },
+    {
+      "id": "C120",
+      "keys": [
+        "weil"
+      ],
+      "role": "application",
+      "old_line": 8626,
+      "current_paragraph_lines": [
+        11865,
+        11905
+      ],
+      "paragraph_sha256": "9162a32124fd1ba5e8dd4992bb30066babc592c3caef863e53be475c1c63f87d"
+    },
+    {
+      "id": "C121",
+      "keys": [
+        "weil"
+      ],
+      "role": "application",
+      "old_line": 8696,
+      "current_paragraph_lines": [
+        11930,
+        11966
+      ],
+      "paragraph_sha256": "65822227d40472d92684fa739eec48bbd38a87469174e1a3c9b8b1f424084b94"
+    },
+    {
+      "id": "C122",
+      "keys": [
+        "weil"
+      ],
+      "role": "application",
+      "old_line": 8711,
+      "current_paragraph_lines": [
+        11930,
+        11966
+      ],
+      "paragraph_sha256": "65822227d40472d92684fa739eec48bbd38a87469174e1a3c9b8b1f424084b94"
+    },
+    {
+      "id": "C123",
+      "keys": [
+        "weil"
+      ],
+      "role": "application",
+      "old_line": 8746,
+      "current_paragraph_lines": [
+        11988,
+        12012
+      ],
+      "paragraph_sha256": "3ff9dfc88c04eeabb4dfcbe1181c16695517d6b02400963ef6ffcf806c6cd442"
+    },
+    {
+      "id": "C124",
+      "keys": [
+        "weil"
+      ],
+      "role": "application",
+      "old_line": 8860,
+      "current_paragraph_lines": [
+        12079,
+        12102
+      ],
+      "paragraph_sha256": "cbcea483b3f393d54465c55f4a9d4ef4724e9be2e5638514cb7498925ce1f692"
+    },
+    {
+      "id": "C125",
+      "keys": [
+        "weil"
+      ],
+      "role": "application",
+      "old_line": 8943,
+      "current_paragraph_lines": [
+        12180,
+        12193
+      ],
+      "paragraph_sha256": "2e145b01ecd1f609daedc80eebd712a6b84f80742cdaae979f742f05cc35fc87"
+    },
+    {
+      "id": "C126",
+      "keys": [
+        "weil"
+      ],
+      "role": "application",
+      "old_line": 8953,
+      "current_paragraph_lines": [
+        12195,
+        12208
+      ],
+      "paragraph_sha256": "ec5dad217d6a62e53aca673380a505c5545910de1a4a690ccfd7b31d76fedfd1"
+    },
+    {
+      "id": "C127",
+      "keys": [
+        "weil"
+      ],
+      "role": "application",
+      "old_line": 9001,
+      "current_paragraph_lines": [
+        12210,
+        12259
+      ],
+      "paragraph_sha256": "bb580945f3b71fb3ea1612c75c03c4a3286998604239fb4656ebfe8359de8f97"
+    },
+    {
+      "id": "C128",
+      "keys": [
+        "weil"
+      ],
+      "role": "application",
+      "old_line": 9008,
+      "current_paragraph_lines": [
+        12210,
+        12259
+      ],
+      "paragraph_sha256": "bb580945f3b71fb3ea1612c75c03c4a3286998604239fb4656ebfe8359de8f97"
+    },
+    {
+      "id": "C129",
+      "keys": [
+        "voight-quaternion"
+      ],
+      "role": "application",
+      "old_line": 9154,
+      "current_paragraph_lines": [
+        12392,
+        12411
+      ],
+      "paragraph_sha256": "55c8658ce6a87f4de72b568d32cf5311793c67d6020d80b94ba704915fc7d426"
+    },
+    {
+      "id": "C130",
+      "keys": [
+        "cornutjetchev"
+      ],
+      "role": "application",
+      "old_line": 9197,
+      "current_paragraph_lines": [
+        12437,
+        12453
+      ],
+      "paragraph_sha256": "6deac4794478c958279861afee77c2e8a56dd423cd4a7ee59e272d0eef64592d"
+    },
+    {
+      "id": "C131",
+      "keys": [
+        "cornutjetchev"
+      ],
+      "role": "application",
+      "old_line": 9214,
+      "current_paragraph_lines": [
+        12455,
+        12465
+      ],
+      "paragraph_sha256": "60a07371d93bc163c43b06b53093848ba1a8f56d471c960db2359e71390eabaf"
+    },
+    {
+      "id": "C132",
+      "keys": [
+        "cornutjetchev"
+      ],
+      "role": "application",
+      "old_line": 9226,
+      "current_paragraph_lines": [
+        12467,
+        12485
+      ],
+      "paragraph_sha256": "aa8c5c17e8e4931f9adede18aad2f3b8d0d8ea5108eae92905e527bb5f06ceb8"
+    },
+    {
+      "id": "C133",
+      "keys": [
+        "cornutjetchev"
+      ],
+      "role": "application",
+      "old_line": 9242,
+      "current_paragraph_lines": [
+        12467,
+        12485
+      ],
+      "paragraph_sha256": "aa8c5c17e8e4931f9adede18aad2f3b8d0d8ea5108eae92905e527bb5f06ceb8"
+    },
+    {
+      "id": "C134",
+      "keys": [
+        "cornutjetchev"
+      ],
+      "role": "application",
+      "old_line": 9243,
+      "current_paragraph_lines": [
+        12467,
+        12485
+      ],
+      "paragraph_sha256": "aa8c5c17e8e4931f9adede18aad2f3b8d0d8ea5108eae92905e527bb5f06ceb8"
+    },
+    {
+      "id": "C135",
+      "keys": [
+        "cornutjetchev"
+      ],
+      "role": "application",
+      "old_line": 9254,
+      "current_paragraph_lines": [
+        12487,
+        12505
+      ],
+      "paragraph_sha256": "ec3b2c842ab82e4aae5de4027058cb3100f5359fbf91f9bd76ccd752a46a685d"
+    },
+    {
+      "id": "C136",
+      "keys": [
+        "cornutjetchev"
+      ],
+      "role": "application",
+      "old_line": 9266,
+      "current_paragraph_lines": [
+        12507,
+        12537
+      ],
+      "paragraph_sha256": "604e9e577f3e4a910e73b031373db0953d48d612edf16c10f15bc24ab0256e3f"
+    },
+    {
+      "id": "C137",
+      "keys": [
+        "carayol"
+      ],
+      "role": "application",
+      "old_line": 9778,
+      "current_paragraph_lines": [
+        13015,
+        13039
+      ],
+      "paragraph_sha256": "2457e5a8996ea40dcceb4e920b165ee7c6c59d6c66619a9aa875c3878c4d9ab9"
+    },
+    {
+      "id": "C138",
+      "keys": [
+        "casselman"
+      ],
+      "role": "application",
+      "old_line": 9803,
+      "current_paragraph_lines": [
+        13041,
+        13053
+      ],
+      "paragraph_sha256": "1056039ef95535ae08a5195fcba834113049f57ab423feb4b2d77cb3e79009f4"
+    },
+    {
+      "id": "C139",
+      "keys": [
+        "casselman"
+      ],
+      "role": "application",
+      "old_line": 9860,
+      "current_paragraph_lines": [
+        13055,
+        13106
+      ],
+      "paragraph_sha256": "cc3d9f6134a95648e0d7c7d29d2de81f2a45c623d802e0f0b868b1645d784566"
+    },
+    {
+      "id": "C140",
+      "keys": [
+        "hl"
+      ],
+      "role": "application",
+      "old_line": 9996,
+      "current_paragraph_lines": [
+        13237,
+        13241
+      ],
+      "paragraph_sha256": "cbca8474570a405754b7f1a6abef72c0a4a75612adf558fe7849fa1fc62b056f"
+    },
+    {
+      "id": "C141",
+      "keys": [
+        "scholze2013"
+      ],
+      "role": "application",
+      "old_line": 10955,
+      "current_paragraph_lines": [
+        14195,
+        14207
+      ],
+      "paragraph_sha256": "503d7f4c5a924650c997dec9da200ce503bcc81d9f685e89342298d14aefe959"
+    },
+    {
+      "id": "C142",
+      "keys": [
+        "scholze-erratum"
+      ],
+      "role": "application",
+      "old_line": 10956,
+      "current_paragraph_lines": [
+        14195,
+        14207
+      ],
+      "paragraph_sha256": "503d7f4c5a924650c997dec9da200ce503bcc81d9f685e89342298d14aefe959"
+    },
+    {
+      "id": "C143",
+      "keys": [
+        "scholze2013"
+      ],
+      "role": "application",
+      "old_line": 10957,
+      "current_paragraph_lines": [
+        14195,
+        14207
+      ],
+      "paragraph_sha256": "503d7f4c5a924650c997dec9da200ce503bcc81d9f685e89342298d14aefe959"
+    },
+    {
+      "id": "C144",
+      "keys": [
+        "milne-av"
+      ],
+      "role": "application",
+      "old_line": 10968,
+      "current_paragraph_lines": [
+        14209,
+        14220
+      ],
+      "paragraph_sha256": "7edb9cb088ba777876bc0072bd6a26f137fbd8d22f11f295644b7ec302f7f97a"
+    },
+    {
+      "id": "C145",
+      "keys": [
+        "brinon-conrad"
+      ],
+      "role": "application",
+      "old_line": 10975,
+      "current_paragraph_lines": [
+        14209,
+        14220
+      ],
+      "paragraph_sha256": "7edb9cb088ba777876bc0072bd6a26f137fbd8d22f11f295644b7ec302f7f97a"
+    },
+    {
+      "id": "C146",
+      "keys": [
+        "brinon-conrad"
+      ],
+      "role": "application",
+      "old_line": 10994,
+      "current_paragraph_lines": [
+        14222,
+        14236
+      ],
+      "paragraph_sha256": "be5b6e413730cf0deaf4e64c2785fd199fee9208299acd5413c720fb01c53be0"
+    },
+    {
+      "id": "C147",
+      "keys": [
+        "faltings1988"
+      ],
+      "role": "source-scope declaration",
+      "old_line": 11003,
+      "current_paragraph_lines": [
+        14245,
+        14248
+      ],
+      "paragraph_sha256": "cc4ffcce2c388b72462e8e1fae83dabc04ae9f147b5df9ed1a59b22b6132afb5"
+    }
+  ],
+  "scope": "Exact unchanged excerpts only. New H19 and selective-source applications have separate current bindings."
+}

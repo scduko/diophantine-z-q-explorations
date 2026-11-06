@@ -1,0 +1,65 @@
+{
+  "format": "quartic-handoff-release/v1",
+  "version": 4,
+  "date": "2026-11-06",
+  "release_tag": "quartic-4973-version-4",
+  "assets": {
+    "full": "z-in-q-version4-full-handoff.zip",
+    "current": "z-in-q-version4-current-handoff.zip"
+  },
+  "manuscript": "quartic_4973.tex",
+  "pdf": "quartic_4973.pdf",
+  "package": "quartics/quartic-4973",
+  "verification": "evidence/final-verification.json",
+  "inventory": "docs/quartic-4973/README.md",
+  "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b",
+  "next_release": {
+    "version": 5,
+    "total_variable_upper_bound": 2486,
+    "total_includes_input": true,
+    "status": "Research target only; Version 4 remains the fixed 4973-variable release"
+  },
+  "expected": {
+    "variables": 4973,
+    "witnesses": 4972,
+    "rows": 4552,
+    "monomials": 72925,
+    "degree": 4,
+    "max_abs_coefficient": 685783949153203534233890,
+    "expanded_sha256": "094f6a7ed17e7cc8d5d17a2f809127bbaffd0fe343cb2a32d18ac97e61279876"
+  },
+  "source_contract": {
+    "ordinary_contacts": 37,
+    "full_comparisons": 13,
+    "beta_only_comparisons": 8,
+    "height_exponent": 19,
+    "high_precision": 40,
+    "beta_precision": 12,
+    "anchor_squarings": 25,
+    "scalar_orders": [
+      1,
+      1,
+      1,
+      1,
+      32,
+      32
+    ],
+    "lucas_only_comparisons": 16,
+    "root_carrier": "general_E_mixed",
+    "comparison_target_multiplier": 2,
+    "direct_tangent_doublings": 4,
+    "first_norm_instances": 37,
+    "first_norm_virtual_denominator_exponent": 1,
+    "shared_square_fields": 37
+  },
+  "proof_pins": {
+    "polynomial.expanded.txt": "094f6a7ed17e7cc8d5d17a2f809127bbaffd0fe343cb2a32d18ac97e61279876",
+    "verify_certificate.py": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe",
+    "certificate.jsonl.gz": "81ca768459a13b76dbdf4bfe81e94fbab9ab99f14a5731f6b1a1b03e28c1df2b",
+    "source-residuals.jsonl.gz": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d",
+    "source-entry.json": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857",
+    "source-audit.json": "e4b93b2da1babcdc3fcf4a63123fd813143d559358fdf4c76f3880733977333f",
+    "construction-map.json": "3d1e002eee34f4917605da1ddc7227e43bfaf4a5044d30d9a77f50fabc7380d2"
+  },
+  "replayed_certificate": "docs/quartic-4973-validation/replayed-certificate.jsonl.gz"
+}

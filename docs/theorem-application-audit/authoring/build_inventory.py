@@ -220,9 +220,13 @@ for a in applications:
  if 'fresh_source_check' in a:
   md += ['', '**Source inspection on 2026-11-05:** '+a['fresh_source_check']['result'], '', a['fresh_source_check']['scope']]
 (OUT/'INVENTORY.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
+def markdown_bibliography(text):
+ # GitHub otherwise autolinks the closing TeX brace as part of the URL.
+ return re.sub(r'\\url\{(https?://[^{}\s]+)\}', lambda m: '<'+m[1]+'>', text)
+
 sm=['# Source versions','', 'Hashes identify the files actually available for review. A hash does not identify a journal version unless that equivalence has been checked. Primary files are not duplicated here; workspace-relative paths locate them in the research corpus, and retrieval URLs are supplied where recorded.','']
 for s in sources:
- sm += [f'<a id="{s["id"]}"></a>',f'## {s["id"]}','',s['bibliography'] or 'Supplementary source, not a distinct current bibliography entry.','',s['version_notes'],'',f'Pin status: **{s["source_status"]}**.','']
+ sm += [f'<a id="{s["id"]}"></a>',f'## {s["id"]}','',markdown_bibliography(s['bibliography']) or 'Supplementary source, not a distinct current bibliography entry.','',s['version_notes'],'',f'Pin status: **{s["source_status"]}**.','']
  for f in s['files']:
   sm += ['- `'+f['workspace_relative_path']+'`', '  - SHA256: `'+f.get('sha256','MISSING')+'`']
   if 'retrieval_url' in f:sm+=['  - [Retrieved source]('+f['retrieval_url']+') on '+f.get('retrieved_date','date not recorded')+'.']

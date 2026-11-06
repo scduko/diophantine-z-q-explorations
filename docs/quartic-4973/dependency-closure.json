@@ -1,0 +1,444 @@
+{
+  "edges": [
+    {
+      "kind": "external_application",
+      "source": "N1",
+      "target": "I_H5"
+    },
+    {
+      "kind": "external_application",
+      "source": "N1",
+      "target": "I_SIEVE"
+    },
+    {
+      "kind": "external_application",
+      "source": "N1",
+      "target": "I_LUCAS"
+    },
+    {
+      "kind": "external_application",
+      "source": "N2",
+      "target": "I_GEN"
+    },
+    {
+      "kind": "external_application",
+      "source": "N2",
+      "target": "I_FORMAL"
+    },
+    {
+      "kind": "external_application",
+      "source": "N2",
+      "target": "I_RECIPROCAL"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N3",
+      "target": "N2"
+    },
+    {
+      "kind": "external_application",
+      "source": "N4a",
+      "target": "I_NORM"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N4b",
+      "target": "N4a"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N4b",
+      "target": "N8"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N4c",
+      "target": "N4a"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N4c",
+      "target": "N8"
+    },
+    {
+      "kind": "external_application",
+      "source": "N4c",
+      "target": "I_SIEVE"
+    },
+    {
+      "kind": "external_application",
+      "source": "N4c",
+      "target": "I_CRT"
+    },
+    {
+      "kind": "external_application",
+      "source": "N5",
+      "target": "I_ANCHOR"
+    },
+    {
+      "kind": "external_application",
+      "source": "N5",
+      "target": "K_TRACE_23"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N6",
+      "target": "N1"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N6",
+      "target": "N2"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N6",
+      "target": "N3"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N6",
+      "target": "N4b"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N6",
+      "target": "N4c"
+    },
+    {
+      "kind": "external_application",
+      "source": "N6",
+      "target": "I_LUCAS"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N7",
+      "target": "N6"
+    },
+    {
+      "kind": "external_application",
+      "source": "N7",
+      "target": "I_RECIPROCAL"
+    },
+    {
+      "kind": "external_application",
+      "source": "N7",
+      "target": "I_SIEVE"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N8",
+      "target": "N4a"
+    },
+    {
+      "kind": "external_application",
+      "source": "N8",
+      "target": "I_POLE"
+    },
+    {
+      "kind": "depends_on",
+      "source": "C1",
+      "target": "N2"
+    },
+    {
+      "kind": "external_application",
+      "source": "C1",
+      "target": "I_FORMAL"
+    },
+    {
+      "kind": "external_application",
+      "source": "C1",
+      "target": "I_RECIPROCAL"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N9",
+      "target": "N1"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N9",
+      "target": "N2"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N9",
+      "target": "N5"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N9",
+      "target": "N7"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N9",
+      "target": "N8"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N9",
+      "target": "C1"
+    },
+    {
+      "kind": "external_application",
+      "source": "N9",
+      "target": "I_GEN"
+    },
+    {
+      "kind": "external_application",
+      "source": "N9",
+      "target": "I_H5"
+    },
+    {
+      "kind": "external_application",
+      "source": "N9",
+      "target": "I_CRT"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N10",
+      "target": "N9"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N12",
+      "target": "N4a"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N13",
+      "target": "N9"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N13",
+      "target": "N10"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N13",
+      "target": "N12"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N13",
+      "target": "C1"
+    },
+    {
+      "kind": "external_application",
+      "source": "N13",
+      "target": "I_GEN"
+    },
+    {
+      "kind": "external_application",
+      "source": "N13",
+      "target": "I_CRT"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N14",
+      "target": "N10"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N14",
+      "target": "N13"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N15",
+      "target": "N4a"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N15",
+      "target": "N4b"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N15",
+      "target": "N4c"
+    },
+    {
+      "kind": "depends_on",
+      "source": "N15",
+      "target": "N8"
+    },
+    {
+      "kind": "source_composition_after",
+      "source": "N15",
+      "target": "N13"
+    },
+    {
+      "kind": "source_composition_after",
+      "source": "N15",
+      "target": "N14"
+    },
+    {
+      "kind": "source_composition_after",
+      "source": "N15",
+      "target": "N12"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N1"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N2"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N3"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N4a"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N4b"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N4c"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N5"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N6"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N7"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N8"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "C1"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N9"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N10"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N12"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N13"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N14"
+    },
+    {
+      "kind": "arithmetic_lemma",
+      "source": "source_arithmetic",
+      "target": "N15"
+    },
+    {
+      "kind": "arithmetic",
+      "source": "thm:quartic",
+      "target": "source_arithmetic"
+    },
+    {
+      "kind": "finite",
+      "source": "thm:quartic",
+      "target": "finite_certificate"
+    },
+    {
+      "kind": "active_certificate_rule",
+      "source": "finite_certificate",
+      "target": "rule:circuit"
+    },
+    {
+      "kind": "active_certificate_rule",
+      "source": "finite_certificate",
+      "target": "rule:eliminate"
+    },
+    {
+      "kind": "active_certificate_rule",
+      "source": "finite_certificate",
+      "target": "rule:linear"
+    },
+    {
+      "kind": "active_certificate_rule",
+      "source": "finite_certificate",
+      "target": "rule:parity_conic"
+    },
+    {
+      "kind": "active_certificate_rule",
+      "source": "finite_certificate",
+      "target": "rule:relation_eliminate"
+    },
+    {
+      "kind": "active_certificate_rule",
+      "source": "finite_certificate",
+      "target": "rule:shear"
+    }
+  ],
+  "external_groups": [
+    "I_H5",
+    "I_GEN",
+    "I_FORMAL",
+    "I_SIEVE",
+    "I_ANCHOR",
+    "I_POLE",
+    "I_NORM",
+    "I_CRT",
+    "I_LUCAS",
+    "I_RECIPROCAL",
+    "K_TRACE_23"
+  ],
+  "optional_J0": false,
+  "root": "thm:quartic",
+  "schema": "quartic-v4-dependency-closure-v1",
+  "selected_nodes": [
+    "N1",
+    "N2",
+    "N3",
+    "N4a",
+    "N4b",
+    "N4c",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "C1",
+    "N9",
+    "N10",
+    "N12",
+    "N13",
+    "N14",
+    "N15"
+  ]
+}

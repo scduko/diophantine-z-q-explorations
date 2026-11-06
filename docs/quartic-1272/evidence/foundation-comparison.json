@@ -1,0 +1,173 @@
+{
+  "old_source": {
+    "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\josebrox-deep-audit-20261106\\common\\upstream-quartic-12504-28e87b1.tex",
+    "sha256": "38d458ba4178083766c5ae56a894da595fe27170c1ef07f6b49750fc5edf7c37"
+  },
+  "current_source": {
+    "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+    "sha256": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34"
+  },
+  "blocks": [
+    {
+      "id": "cyclic_generator",
+      "old_lines": [
+        279,
+        361
+      ],
+      "current_lines": [
+        288,
+        370
+      ],
+      "identical_text": true,
+      "identical_ignoring_whitespace": true,
+      "old_block_sha256": "5427bfc965a9089fbe97ad979aaa878608acd78d45a82973c4c7aa3f339e6b31",
+      "current_block_sha256": "5427bfc965a9089fbe97ad979aaa878608acd78d45a82973c4c7aa3f339e6b31",
+      "diff_file": null
+    },
+    {
+      "id": "restricted_converse_statement",
+      "old_lines": [
+        1016,
+        1030
+      ],
+      "current_lines": [
+        1025,
+        1039
+      ],
+      "identical_text": true,
+      "identical_ignoring_whitespace": true,
+      "old_block_sha256": "efc1abfcd470102a0fbff9e9f93302bac52146ceb4a9d71ee0926c8341d2a51d",
+      "current_block_sha256": "efc1abfcd470102a0fbff9e9f93302bac52146ceb4a9d71ee0926c8341d2a51d",
+      "diff_file": null
+    },
+    {
+      "id": "five_contact_height_full",
+      "old_lines": [
+        6648,
+        7523
+      ],
+      "current_lines": [
+        6657,
+        7532
+      ],
+      "identical_text": true,
+      "identical_ignoring_whitespace": true,
+      "old_block_sha256": "6e85a67cdc858f4fd0a491c3c1feaa9039b032ef675ac78ad75ef8a311d81b07",
+      "current_block_sha256": "6e85a67cdc858f4fd0a491c3c1feaa9039b032ef675ac78ad75ef8a311d81b07",
+      "diff_file": null
+    },
+    {
+      "id": "seven_witness_pole_and_completeness",
+      "old_lines": [
+        7523,
+        7754
+      ],
+      "current_lines": [
+        7532,
+        7763
+      ],
+      "identical_text": true,
+      "identical_ignoring_whitespace": true,
+      "old_block_sha256": "1eb2f5c12fd51364f0d71bb34c9d3bc527fc94ede423fc9dada024a20cde2a88",
+      "current_block_sha256": "1eb2f5c12fd51364f0d71bb34c9d3bc527fc94ede423fc9dada024a20cde2a88",
+      "diff_file": null
+    },
+    {
+      "id": "finite_correction_and_scalar_units",
+      "old_lines": [
+        7754,
+        7806
+      ],
+      "current_lines": [
+        7763,
+        7815
+      ],
+      "identical_text": true,
+      "identical_ignoring_whitespace": true,
+      "old_block_sha256": "c3ebc189be29443cad600f8532693e7d19db7db157b14819fd32e5fab57bc524",
+      "current_block_sha256": "c3ebc189be29443cad600f8532693e7d19db7db157b14819fd32e5fab57bc524",
+      "diff_file": null
+    },
+    {
+      "id": "normalized_chart_indexheight_and_anchor",
+      "old_lines": [
+        7806,
+        8080
+      ],
+      "current_lines": [
+        7815,
+        8089
+      ],
+      "identical_text": true,
+      "identical_ignoring_whitespace": true,
+      "old_block_sha256": "816beaa77dfca8d14c754b0fa3f768c3053ca85aa8f3c0e4c0e4d5124ec04f8c",
+      "current_block_sha256": "816beaa77dfca8d14c754b0fa3f768c3053ca85aa8f3c0e4c0e4d5124ec04f8c",
+      "diff_file": null
+    },
+    {
+      "id": "exact_norm_tests",
+      "old_lines": [
+        8080,
+        8121
+      ],
+      "current_lines": [
+        8089,
+        8130
+      ],
+      "identical_text": true,
+      "identical_ignoring_whitespace": true,
+      "old_block_sha256": "9ba1f209e3aa95e779c148aa98410affc519eaa0ab3f62a929977bcb19023d37",
+      "current_block_sha256": "9ba1f209e3aa95e779c148aa98410affc519eaa0ab3f62a929977bcb19023d37",
+      "diff_file": null
+    },
+    {
+      "id": "scalar_height_and_lucas",
+      "old_lines": [
+        8499,
+        8588
+      ],
+      "current_lines": [
+        8508,
+        8597
+      ],
+      "identical_text": true,
+      "identical_ignoring_whitespace": true,
+      "old_block_sha256": "db755f9689b61bf4ee7fbbfab144db9d14344b707aabb098a33065892e88672d",
+      "current_block_sha256": "db755f9689b61bf4ee7fbbfab144db9d14344b707aabb098a33065892e88672d",
+      "diff_file": null
+    },
+    {
+      "id": "reciprocal_logarithm",
+      "old_lines": [
+        8753,
+        8818
+      ],
+      "current_lines": [
+        9029,
+        9095
+      ],
+      "identical_text": false,
+      "identical_ignoring_whitespace": false,
+      "old_block_sha256": "1bc76f67715d23f887a6ffa0b8ccbbc9827976ae7729697c8e8885671a96b115",
+      "current_block_sha256": "2b68c1b49c7cdee7f3a3e4bb495666f5e039e44452d0cd042725936452100dba",
+      "diff_file": "reciprocal_logarithm.diff"
+    },
+    {
+      "id": "global_reciprocal_nonvanishing",
+      "old_lines": [
+        8818,
+        8843
+      ],
+      "current_lines": [
+        9095,
+        9120
+      ],
+      "identical_text": false,
+      "identical_ignoring_whitespace": false,
+      "old_block_sha256": "61b5493ff07fa2a320fbe6bf1c7f79f01dba5086e5d8352610f8b86bdfaccbc8",
+      "current_block_sha256": "73b64f9429193540e402f8a3c7790606c627d6e6265c10d30a6f1574d3419d04",
+      "diff_file": "global_reciprocal_nonvanishing.diff"
+    }
+  ],
+  "note": "Block digests use decoded UTF-8 with normalized filesystem newlines as returned by Path.read_text; whole-file digests use literal bytes."
+}

@@ -1,0 +1,37 @@
+% Sun, arXiv:2610.20691v2, Appendix A: explicit good-prime convention.
+% Frozen source P103q.tex is not modified.
+% This local repair restores the odd-prime hypothesis in
+% Browning--Heath-Brown, arXiv:2003.09593v1, Lemma 4.1.
+% It changes no statement of Theorem 4.1, no exponent, and no stated
+% dependence of an implied constant.
+
+% Replacement for the good-prime sentence in P103q.tex line 1455:
+A good prime is an odd prime at which the reduction of the quadratic
+form still has rank at least three.
+
+% Replacement for the beginning of the lattice-summation paragraph
+% in P103q.tex line 1503, through the definition of the bad-prime set:
+In either chart, $t\mid R(x,z,w)$, where
+$R(x,z,w)=\kappa w^2-xz$.
+Fix
+\[
+ S_R=\{p:\ p\text{ is prime and }p\mid 2\kappa\}.
+\]
+For every prime outside $S_R$, the ternary form $R$ retains rank three
+and the prime is odd. Let
+\[
+ q=\prod_{\substack{p\mid t\\p\notin S_R}}p.
+\]
+Thus $q$ is a squarefree product of good primes, $q\mid t$, and $q\ll B$.
+For each fixed $q$, the number of possible nonzero $t$ with
+$|t|\ll B$ is $O_{\kappa,\alpha}(B^\alpha)$.
+Indeed, $t/q$ is supported on primes dividing $q$ or belonging to $S_R$,
+so the Rankin bound in the original proof applies with this fixed set.
+
+% Verification of impact:
+% (1) BHB Lemma 4.1 now applies to q exactly as stated.
+% (2) In both charts the obstruction prime ell is restricted by ell ∤ 2t.
+%     Since det(E)=q^2 and q|t, this still makes E invertible modulo ell.
+% (3) The Rankin product over the fixed S_R changes only its kappa- and
+%     alpha-dependent constant. All B and T exponents in (A.7)-(A.8)
+%     remain unchanged, as do Theorem A.1 and Theorem 4.1.

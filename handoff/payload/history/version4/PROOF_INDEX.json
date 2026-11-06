@@ -1,0 +1,525 @@
+{
+  "format": "quartic-v4-selected-proof-index/v1",
+  "inherited_qualifications": "See inventory/CURRENT_CONSUMPTION.json; all five inherited source-version qualifications remain",
+  "records": [
+    {
+      "id": "v3_manuscript",
+      "original_path": "work/quartic-sub10000-release/repository/quartic_9625.tex",
+      "path": "history/version4/records/v3_manuscript.tex",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "dc77c88b5cc0819201343dc85d0891d4dad81d97ac3267ec1df34eb38003b552"
+    },
+    {
+      "id": "v3_inventory",
+      "original_path": "work/quartic-sub10000-release/repository/docs/quartic-9625/theorem-applications.json",
+      "path": "history/version4/records/v3_inventory.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "249279512a7871e97ab216067ed82ea772676dbf722cd6933976f004ff1d0e99"
+    },
+    {
+      "id": "v3_registry",
+      "original_path": "work/quartic-sub10000-release/repository/docs/quartic-9625/publication-additions.json",
+      "path": "history/version4/records/v3_registry.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "e06b377ecedd1bb42e0443606dd85cc54743e98a98188dfd2ddf9db4e06f29c1"
+    },
+    {
+      "id": "v3_dependencies",
+      "original_path": "work/quartic-sub10000-release/repository/docs/quartic-9625/dependency-closure.json",
+      "path": "history/version4/records/v3_dependencies.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "60ddf7f190cd2a2b1c49058e4c537753ac8647a75167460a82012a4679615af9"
+    },
+    {
+      "id": "three_mode_proof",
+      "original_path": "work/quartic-sub10000-20261106/precision/THREE_MODE_CONTACTS.md",
+      "path": "history/version4/records/three_mode_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "66311fffec418e9a6aa44f7f7503057133f92e21c4f70c3468971dd04ac55659"
+    },
+    {
+      "id": "three_mode_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/THREE_MODE_REVIEW.md",
+      "path": "history/version4/records/three_mode_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "4572dfa3e6905b00de4c49799b7ed58ee225a1f418224a7d6b5aeedb103dbeb6"
+    },
+    {
+      "id": "private_comparison_proof",
+      "original_path": "work/quartic-sub10000-20261106/charts/sub5000/RATIONAL_DIFFERENCE.md",
+      "path": "history/version4/records/private_comparison_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "8558cbfdb09bfaf12054caa2907900bc30b6de91fd6ab43c14ddc294f1cd7e9d"
+    },
+    {
+      "id": "private_comparison_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/RATIONAL_DIFFERENCE_REVIEW.md",
+      "path": "history/version4/records/private_comparison_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "4a7cf0a7bbdf4a87f53f0cacbf38de45ae59df9899b44b9d1b0671fbc0a9fdbf"
+    },
+    {
+      "id": "joint_chart_proof",
+      "original_path": "work/quartic-sub10000-20261106/charts/sub5000/next-interface/joint-chart/PROOF.md",
+      "path": "history/version4/records/joint_chart_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "947b505969ee3b6f1c8677e452703454adac6933c2bb01bbb54ab4b27b5e7451"
+    },
+    {
+      "id": "two_denominator_proof",
+      "original_path": "work/quartic-sub10000-20261106/charts/sub5000/next-interface/TWO_DENOMINATOR.md",
+      "path": "history/version4/records/two_denominator_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "d4f43b3fef411179f8c1afe7a9029fc5a3e67d42399376761e965281c79b8dc2"
+    },
+    {
+      "id": "joint_chart_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/JOINT_CHART_REVIEW.md",
+      "path": "history/version4/records/joint_chart_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "ed56a09b21bddc4595de9eb6c7d3b4f64adca89d395962fe531e59029f73120c"
+    },
+    {
+      "id": "joint_chart_contract",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/JOINT_CHART_CONTRACT_ADDON.json",
+      "path": "history/version4/records/joint_chart_contract.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "1793c7bdf798365247f04100d22c30490fa8e7e0df4f80534aaec8e2e775ffb3"
+    },
+    {
+      "id": "conic_proof",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/ODD_DISCRIMINANT_PAIR_COMPRESSION.md",
+      "path": "history/version4/records/conic_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "ef4de3f02fa3d17c18dc7c2af490960a62f35cc541eac8e4b80958d320fa8ab9"
+    },
+    {
+      "id": "conic_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/ODD_DISCRIMINANT_REVIEW.md",
+      "path": "history/version4/records/conic_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "3606e41ebfd9b2c426a4be55273ca71a32ea4ca710c943af7b402d910f21bf6b"
+    },
+    {
+      "id": "joint_arithmetic_contract",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/JOINT_SOURCE_CONTRACT.json",
+      "path": "history/version4/records/joint_arithmetic_contract.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "e658843c6ba95dc797f10e7c25c086189f9694a0689a88c203979c38f05ed79e"
+    },
+    {
+      "id": "joint_arithmetic_proof",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/JOINT_ARITHMETIC_PROOF.md",
+      "path": "history/version4/records/joint_arithmetic_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "76d1ffafe8fcf1e79c462f269187ebfb168edd6f4cc3b339842dac217c9051f7"
+    },
+    {
+      "id": "anchor_proof",
+      "original_path": "work/quartic-sub10000-20261106/parity/sub5000/ANCHOR_FOUR_PROOF.md",
+      "path": "history/version4/records/anchor_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "9d349ae5caaaa9ed4433617762ecb4b8b349af58c2082ffa4b9be08442ba18e3"
+    },
+    {
+      "id": "anchor_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/ANCHOR_FOUR_REVIEW.md",
+      "path": "history/version4/records/anchor_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "7357856cbd6dd36ea56f0475b9e3e9ab3d76810002950fed82638499bbcc3f37"
+    },
+    {
+      "id": "local_lucas_proof",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/LOCAL_LUCAS_RESIDUAL.md",
+      "path": "history/version4/records/local_lucas_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "2c4b1a1f24a485b021ff11561043a412a61186e243194ba244b6090124b83570"
+    },
+    {
+      "id": "local_lucas_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/LOCAL_LUCAS_REVIEW.md",
+      "path": "history/version4/records/local_lucas_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "818c51743e55536c0b10da8c4153d82f45ee5ab64d6f2cb68abb6d5482c9f715"
+    },
+    {
+      "id": "local_lucas_contract",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/LOCAL_LUCAS_CONTRACT_ADDON.json",
+      "path": "history/version4/records/local_lucas_contract.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "13ebcdd31363e8d482a8daac988da75ac314d66a1d989926e39bdf01d4418048"
+    },
+    {
+      "id": "normalized_proof",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/normalized-lucas/NORMALIZED_LUCAS.md",
+      "path": "history/version4/records/normalized_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "e76a6361be9678369abb7d42e98255bce214dab4dd7215ff6584b029169cb811"
+    },
+    {
+      "id": "normalized_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/NORMALIZED_LUCAS_REVIEW.md",
+      "path": "history/version4/records/normalized_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "6a9da3f66aec7e5d796fb77569100dd8ecc1791cd533871942e89c490cf9f7c9"
+    },
+    {
+      "id": "normalized_contract",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/NORMALIZED_LUCAS_CONTRACT_ADDON.json",
+      "path": "history/version4/records/normalized_contract.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "af365079cce1bd502dc2d683fc1f76fa2a2ca85c396c22be888dbd9fb3237cb0"
+    },
+    {
+      "id": "parity_scale_proof",
+      "original_path": "work/quartic-sub10000-20261106/parity/sub5000/PARITY_SCALE_PROOF.md",
+      "path": "history/version4/records/parity_scale_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "5d36002ff1b144135c5c27735c909553e1b469774cb227ae5cf36f55ebde63c4"
+    },
+    {
+      "id": "parity_scale_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/PARITY_SCALE_REVIEW.md",
+      "path": "history/version4/records/parity_scale_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "7301463e102d8e7f32eb28806369da0473c20c06c743cb8c07b67943a6a1abb2"
+    },
+    {
+      "id": "linear_pole_proof",
+      "original_path": "work/quartic-sub10000-20261106/parity/sub5000/linear-pole-next/PROOF.md",
+      "path": "history/version4/records/linear_pole_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "0b52a6ac4840636be12f455bf0e8b07ba02bb2308493d937afd840ea19bdb510"
+    },
+    {
+      "id": "linear_pole_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/LINEAR_POLE_REVIEW.md",
+      "path": "history/version4/records/linear_pole_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "885fa0233d3e739999ba0132a9bbae33f9eac53491945250fd08100751c685a3"
+    },
+    {
+      "id": "linear_pole_contract",
+      "original_path": "work/quartic-sub10000-20261106/parity/sub5000/linear-pole-next/NORMALIZED10_CONTRACT.json",
+      "path": "history/version4/records/linear_pole_contract.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "19c3f7d65aae9f38aeaea9cc9c079d0ec7ca9918123d96d1744813ae81e61869"
+    },
+    {
+      "id": "linear_source_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/LINEAR_POLE_5364_SOURCE_REVIEW.md",
+      "path": "history/version4/records/linear_source_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "f8feaa0584dc8da654baa04e8e3c0c6f864c0cb3b80c7548e778062f85925872"
+    },
+    {
+      "id": "linear_endpoint_record",
+      "original_path": "work/quartic-sub5000-20261106/NORMALIZED_LINEAR_POLE_POWER_5162.json",
+      "path": "history/version4/records/linear_endpoint_record.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "9b9ab094ea1027194b3c114c194a00e7d047319b036aef2067517664d2b4cb7d"
+    },
+    {
+      "id": "general_root_proof",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/root-doubled-indices/PROOF.md",
+      "path": "history/version4/records/general_root_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "ecdbfc9acd575a8ab194f8e76c356e7898544a506c705a40f169c6686c70a80e"
+    },
+    {
+      "id": "general_root_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/HALF_GENERATOR_ROOT_REVIEW.md",
+      "path": "history/version4/records/general_root_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "418becf67de2e5a3957d8e4066e4a9d3a96d70e8d3b7ba2552401f0733d08702"
+    },
+    {
+      "id": "root_chart_proof",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/root-doubled-indices/CHART_APPENDIX.md",
+      "path": "history/version4/records/root_chart_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "9a126a387cd376f988964e76193ac9ca712e363f501cd26f4f55c543c8e1011e"
+    },
+    {
+      "id": "root_chart_review",
+      "original_path": "work/quartic-sub10000-20261106/charts/sub5000/half-generator-review/CHART_REVIEW.md",
+      "path": "history/version4/records/root_chart_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "483ce5869c4b11b70f6915309929da7147caf79a1f3388f7cedbefaf8718ab33"
+    },
+    {
+      "id": "fixed_target_proof",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/root-doubled-indices/FIXED_TARGET_INTERFACE.md",
+      "path": "history/version4/records/fixed_target_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "13653b3bd21c5eff3485664c0c65d5a407d36d69a7d57336f3e734ab00354687"
+    },
+    {
+      "id": "fixed_target_values",
+      "original_path": "work/quartic-sub10000-20261106/charts/sub5000/half-generator-review/FIXED_TARGET.json",
+      "path": "history/version4/records/fixed_target_values.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "03d5ffae826a5183d1c1470594c113bc62c285ca12a09702c26f1fb0e69c1409"
+    },
+    {
+      "id": "fixed_target_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/HALF_GENERATOR_FIXED_TARGET_ADDENDUM.md",
+      "path": "history/version4/records/fixed_target_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "d6ef6bc92564d5caf259d7d1689053dbb759d3851a07392a8be0e08d3b5923b4"
+    },
+    {
+      "id": "general_root_contract",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/root-doubled-indices/UNIFIED_SOURCE_CONTRACT.json",
+      "path": "history/version4/records/general_root_contract.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "505b3a743585187ebde58642bb02237dbb45bc55b328b5b88bd84a0724cf1d5c"
+    },
+    {
+      "id": "general_root_composition",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/HALF_GENERATOR_COMPOSITION_CONTRACT.json",
+      "path": "history/version4/records/general_root_composition.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "4e41f830938c3bdf8b5361b410a2fb639bd74299f0461fb356afe2efb012f2b7"
+    },
+    {
+      "id": "root_implementation_review",
+      "original_path": "work/quartic-sub10000-20261106/charts/sub5000/half-generator-review/ROOT_IMPLEMENTATION_REVIEW.md",
+      "path": "history/version4/records/root_implementation_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "5be01f54ca1470f59c4cdaaef78f0d607a92b8a87e4d3477dd8c42072cdd3507"
+    },
+    {
+      "id": "root_integration_review_historical_contract",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/ROOT_REWRITE_INTEGRATION_REVIEW.md",
+      "path": "history/version4/records/root_integration_review_historical_contract.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "dc4ef067e28770f3dce761ed8c00a74c3c1b00c2d67db5dc4109a78e00c232f5"
+    },
+    {
+      "id": "root_shared_outer_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/ROOT_SHARED_OUTER_REVIEW.md",
+      "path": "history/version4/records/root_shared_outer_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "f122e2c4bb54085740c7e24cc972d1d74d7e80ec4538af65ded5948a47713e1b"
+    },
+    {
+      "id": "shared_square_proof",
+      "original_path": "work/quartic-sub10000-20261106/batching/sub5000/field-bookkeeping/SHARED_SQUARE.md",
+      "path": "history/version4/records/shared_square_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "378017d3ad813f69a0e6ee09c2de36f062fe2bd0e0b9c4c84a125eed99d84cc3"
+    },
+    {
+      "id": "shared_square_contract",
+      "original_path": "work/quartic-sub10000-20261106/batching/sub5000/field-bookkeeping/SOURCE_CONTRACT.json",
+      "path": "history/version4/records/shared_square_contract.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "13f97f687a15f1d0bf283b608c8c00b425c2c4797eb9b4dc0df14fa2a93c3750"
+    },
+    {
+      "id": "shared_square_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/SHARED_SQUARE_REVIEW.md",
+      "path": "history/version4/records/shared_square_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "62af17f1d6e045d06ed32824bfc42918673d757fad4eaf8781940db03e1709d6"
+    },
+    {
+      "id": "shared_square_implementation_review",
+      "original_path": "work/quartic-sub10000-20261106/charts/sub5000/shared-square-review/REVIEW.md",
+      "path": "history/version4/records/shared_square_implementation_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "406463e0e898811d0cef3aacc40f09d82efbb46107e17ddfc45ce4ea2075f5f5"
+    },
+    {
+      "id": "target_two_proof",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/root-doubled-indices/TARGET_TWO.md",
+      "path": "history/version4/records/target_two_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "cfc62097ffdbf072fe77524f7e0448356812712689394ca22dfc4a0fd64b7feb"
+    },
+    {
+      "id": "target_two_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/TARGET_TWO_REVIEW.md",
+      "path": "history/version4/records/target_two_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "d5048cc8ac8944d26c8af6d9b8cfcdd672ddee1beed73efaf3d634a53b012155"
+    },
+    {
+      "id": "target_two_implementation_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/TARGET2_IMPLEMENTATION_REVIEW.md",
+      "path": "history/version4/records/target_two_implementation_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "04aea447a4dd9cbae4ffe848e8b402252305014daebf1f117438a82b9ec8c9bd"
+    },
+    {
+      "id": "target_two_composition",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/TARGET2_COMPOSITION_CONTRACT.json",
+      "path": "history/version4/records/target_two_composition.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "77e26c27804a00701306c115984df84129e26431ff285468a8e8f14cd8b217dd"
+    },
+    {
+      "id": "mixed_mode_clarification",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/MIXED_MODE_DENOMINATOR_CLARIFICATION.md",
+      "path": "history/version4/records/mixed_mode_clarification.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "2a1eb8ed9a7175995afa665a08035728c1714b5fa30e1ba52030b6adf7b8ba34"
+    },
+    {
+      "id": "root_shared_source_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/ROOT_SHARED_5270_SOURCE_REVIEW.md",
+      "path": "history/version4/records/root_shared_source_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "97652e4425cd96a885443b7581c6620a53603a9f938f8c6d3bfb615507add04e"
+    },
+    {
+      "id": "root_shared_endpoint_record",
+      "original_path": "work/quartic-sub5000-20261106/GENERAL_ROOT_SHARED_SQUARE_POWER_5070.json",
+      "path": "history/version4/records/root_shared_endpoint_record.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "06f6b2a6e19603956032e55205c9782d3b515198bfc435114c030fb2d44b7f94"
+    },
+    {
+      "id": "target_two_author_contract",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/target-two/CONTRACT.md",
+      "path": "history/version4/records/target_two_author_contract.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "8e42299e4d281ecab724868d39eeb21589957c971516296500b942605ac0b711"
+    },
+    {
+      "id": "target_two_machine_contract",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/target-two/SOURCE_CONTRACT.json",
+      "path": "history/version4/records/target_two_machine_contract.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "510ee91c4777c4e8ae4343622817b90e30a20e7507ec83fa7a26bc8b50d581c7"
+    },
+    {
+      "id": "target_two_outer_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/TARGET2_OUTER_REVIEW.md",
+      "path": "history/version4/records/target_two_outer_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "04497fdad26833b9ab4dfc4152401ed4a29ce52e790efd18671017c36f58cc21"
+    },
+    {
+      "id": "target_two_source_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/TARGET2_5218_SOURCE_REVIEW.md",
+      "path": "history/version4/records/target_two_source_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "918861e4dd7a7e5d052e17550020278fb0173cd116cacffd0af1b9c28f4581f8"
+    },
+    {
+      "id": "target_two_endpoint_record",
+      "original_path": "work/quartic-sub5000-20261106/TARGET2_ROOT_SHARED_SQUARE_5218.json",
+      "path": "history/version4/records/target_two_endpoint_record.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "d44463d69581dbacec85a6e990dbfdabb231f4b3cf6806c4f777fe8523e42f98"
+    },
+    {
+      "id": "tangent_proof",
+      "original_path": "work/quartic-sub10000-20261106/elimination/sub5000/doubling-target-two/PROOF.md",
+      "path": "history/version4/records/tangent_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "3591709058c666a1dd2786d46039b408a04f1908b644c16c6f722a72788a50c8"
+    },
+    {
+      "id": "tangent_contract",
+      "original_path": "work/quartic-sub10000-20261106/elimination/sub5000/doubling-target-two/CONTRACT.json",
+      "path": "history/version4/records/tangent_contract.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "d9ef1fedd0703377747353f44619d73eca47c160634757de7c477fc02c887e70"
+    },
+    {
+      "id": "tangent_review",
+      "original_path": "work/quartic-sub10000-20261106/charts/sub5000/doubling-target2-review/REVIEW.md",
+      "path": "history/version4/records/tangent_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "7753f3c9dbdac926bdb568fafc8e1a0df0fd9b51af1beb97dae04842f80cfc5a"
+    },
+    {
+      "id": "tangent_outer_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/TANGENT_INTEGRATION_REVIEW.md",
+      "path": "history/version4/records/tangent_outer_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "a296f27fe4c42e1ad7a8ed8a785f4a18cfea42f19f5b374ca9ba87bf485578d1"
+    },
+    {
+      "id": "first_norm_proof",
+      "original_path": "work/quartic-sub10000-20261106/batching/sub5000/first-norm-fusion/PROOF.md",
+      "path": "history/version4/records/first_norm_proof.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "b18b32854d4ef6e8c49495ce404f7c96566a0a1926baca6f4ee1ed4cbedcba05"
+    },
+    {
+      "id": "first_norm_contract",
+      "original_path": "work/quartic-sub10000-20261106/batching/sub5000/first-norm-fusion/CONTRACT.json",
+      "path": "history/version4/records/first_norm_contract.json",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "b327fcc99625f09c36509c6b22cb12edc4fdeb40c2f8a7b70f65f2509c75570c"
+    },
+    {
+      "id": "first_norm_parity_review",
+      "original_path": "work/quartic-sub10000-20261106/parity/sub5000/first-norm-fusion-review/REVIEW.md",
+      "path": "history/version4/records/first_norm_parity_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "0208bf985c72d24e83863bb8b305b552b56c5fb9c5b6e9953c0df8b32ac0ef72"
+    },
+    {
+      "id": "first_norm_arithmetic_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/FIRST_NORM_ARITHMETIC_REVIEW.md",
+      "path": "history/version4/records/first_norm_arithmetic_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "90a8c92390d48a3ac5ceef6328b7451a3ffc67a78090537bc24294cdce29824c"
+    },
+    {
+      "id": "first_norm_helper_review",
+      "original_path": "work/quartic-sub10000-20261106/charts/sub5000/first-norm-review/HELPER_REVIEW.md",
+      "path": "history/version4/records/first_norm_helper_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "3948533b6734c159e2b0c71e79dbc7d7c0ef546ebfb3b79b5c0e0a1e50133750"
+    },
+    {
+      "id": "first_norm_outer_review",
+      "original_path": "work/quartic-sub10000-20261106/arithmetic-audit/sub5000/FIRST_NORM_INTEGRATION_REVIEW.md",
+      "path": "history/version4/records/first_norm_outer_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "97c0720e681dec3044d1912d12a7fab609f28648025e697038a644d0405eb3a3"
+    },
+    {
+      "id": "first_norm_locator_review",
+      "original_path": "work/quartic-sub10000-20261106/charts/sub5000/first-norm-review/LOCATOR_REVIEW.md",
+      "path": "history/version4/records/first_norm_locator_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "96ffda2050e46b2b62f540ea107d31c9c92725857a8b15d82c0cb6ce1c714c24"
+    },
+    {
+      "id": "scalar_inverse_proof",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/scalar-ratio/PROOF.md",
+      "path": "history/version4/records/scalar_inverse_proof.md",
+      "scope": "Unadopted optional J0/scalar-inverse research; excluded from the V4 source.",
+      "sha256": "6814cb5338f5a42bf0c9863b2f0b67b5a0bc9d312b2df03745f1691632ea32e7"
+    },
+    {
+      "id": "scalar_inverse_contract",
+      "original_path": "work/quartic-sub10000-20261106/precision/sub5000/scalar-ratio/SOURCE_CONTRACT.json",
+      "path": "history/version4/records/scalar_inverse_contract.json",
+      "scope": "Unadopted optional J0/scalar-inverse research; excluded from the V4 source.",
+      "sha256": "7188938ad87baf8475c8a7111ab1679a341a453dd538a0f2f67a2e5a764e15e0"
+    },
+    {
+      "id": "scalar_inverse_review",
+      "original_path": "work/quartic-sub10000-20261106/elimination/sub5000/scalar-ratio-review/REVIEW.md",
+      "path": "history/version4/records/scalar_inverse_review.md",
+      "scope": "Unadopted optional J0/scalar-inverse research; excluded from the V4 source.",
+      "sha256": "64ce4f7d83001ca1f589846eff61cf6e297a531bbd90cdafbb48a8217ee38f96"
+    },
+    {
+      "id": "inventory_delta_review",
+      "original_path": "work/quartic-sub10000-20261106/parity/sub5000/publication-review/INVENTORY_DELTA.md",
+      "path": "history/version4/records/inventory_delta_review.md",
+      "scope": "Selected project proof/review provenance. Original status and source scope remain unchanged; final release metadata is authoritative.",
+      "sha256": "039ad69c0110b5a25d3d9e3abbeb35a7d343de795d280ad7171afb37e100b523"
+    }
+  ],
+  "status": "Project provenance only; final source/count/acceptance comes from committed release metadata"
+}

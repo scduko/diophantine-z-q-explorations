@@ -1,0 +1,33 @@
+{
+  "pages": 192,
+  "changed_quartic_pages": [
+    114,
+    130
+  ],
+  "pdf_sha256": "8bd816a8432e8f6f16ae1484916489d02834be657c01dd3925edf6a0fee5b3e5",
+  "rendered_pages": [
+    1,
+    2,
+    3,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    177,
+    192
+  ],
+  "visual_inspection": "PASS: root inspected pages 1,114-117,129-130,192; independent workers inspected 2-3,118-128,177. Final render differs only on pages118-119, both re-inspected by root after display split; remaining images byte-identical."
+}

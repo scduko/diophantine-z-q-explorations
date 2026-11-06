@@ -1,0 +1,1633 @@
+
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools,booktabs}
+\usepackage{microtype}
+\usepackage[colorlinks=true,urlcolor=blue,citecolor=red,linkcolor=blue]{hyperref}
+\textheight=8.2 true in
+\textwidth=5.0 true in
+\topmargin30pt
+\emergencystretch=1em
+\raggedbottom
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\Lam}{\Lambda'}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\F}{\mathbb F}
+\newcommand{\C}{\mathbb C}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\HTP}{\operatorname{HTP}}
+\newcommand{\Nm}{\operatorname{N}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\disc}{\operatorname{disc}}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\rad}{\operatorname{rad}}
+\newcommand{\Sq}{\operatorname{Sq}}
+\newcommand{\Supp}{\operatorname{Supp}}
+\newcommand{\im}{\operatorname{Im}}
+\newcommand{\ord}{\operatorname{ord}}
+\def\l{\left}
+\def\r{\right}
+\def\bg{\bigg}
+\def\({\bg(}
+\def\){\bg)}
+\def\t{\text}
+\def\f{\frac}
+\def\mo{{\rm{mod}\ }}
+\def\pmod#1{\ (\mo\ #1)}
+\def\Aut{\text{Aut}}
+\def\lcm{\rm{lcm}}
+\def\ord{{\rm ord}}
+\def\sgn{{\rm sgn}}
+\def\gen{{\rm gen}}
+\def\cs{\ldots}
+\def\ov{\overline}
+\def\ls{\leq}
+\def\gs{\geq}
+\def\se {\subseteq}
+\def\sm{\setminus}
+\def\bi{\binom}
+\def\al{\alpha}
+\def\be{\beta}
+\def\ga{\gamma}
+\def\ve{\varepsilon}
+\def\lr{\Leftarrow}
+\def\ra{\rightarrow}
+\def\Lr{\leftrightarrow}
+\def\ar{\Rightarrow}
+\def\Ar{\Leftrightarrow}
+\def\eq{\equiv}
+\def\Da{\Delta}
+\def\da{\delta}
+\def\la{\lambda}
+\def\La{\Lambda}
+\def\ta{\theta}
+\def\AP{\rm{AP}}
+\def\va{\varphi}
+\def\supp {\rm supp}
+\def\colon{{:}\;}
+\def\Proof{\noindent{\it Proof}}
+\def\Ack{\medskip\noindent {\bf Acknowledgments}}
+\DeclareMathOperator{\Sel}{Sel}
+
+\begin{document}
+\hbox{Preprint, {\tt arXiv:2610.20691}}
+\medskip
+
+\title[86 unknowns over the rationals]{86 unknowns for Hilbert's tenth problem over the rationals}
+\author[Zhi-Wei Sun]{Zhi-Wei Sun}
+
+\address{School of Mathematics, Nanjing
+University, Nanjing 210093, People's Republic of China}
+\email{zwsun@nju.edu.cn}
+
+
+\keywords{Hilbert's tenth problem, rational solutions, bounded variables, elliptic curves, polynomial patterns in primes.
+\newline \indent 2020 {\it Mathematics Subject Classification}. Primary 11U05, 03D35; Secondary 11D99, 11G05, 11N32, 11N36.
+\newline \indent
+Supported by the National Natural Science Foundation of China (grant no. 12371004).}
+
+\begin{abstract} Recently, Hilbert's Tenth Problem over the field $\mathbb Q$ of rational numbers was solved negatively by OpenAI based on a five-contact height estimate and a pole-parity construction. In this paper, we prove further that there is no algorithm to decide for any polynomial $P(x_1,\ldots,x_{86})$ with integer coefficients whether the equation $P(x_1,\ldots,x_{86})=0$ has solutions with $x_1,\ldots,x_{86}\in\mathbb Q$. 
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+Hilbert's tenth problem (HTP in short), posed in 1900, asks for an algorithm to decide for any polynomial equation
+$$P(x_1,\ldots,x_n)=0$$
+with integer coefficients whether it has integer solutions. This was finally solved negatively by
+ Matiyasevich \cite{Mat} in 1970, based on the important work of Davis, Putnam and Robinson \cite{DPR} in 1961.
+ 
+ For a ring $R$ containing $\Z$ and a fixed positive integer $n$, let $\HTP_n(R)$ be the problem of deciding whether an input polynomial in $\Z[x_1,\ldots,x_n]$ has a zero in $R^n$. 
+Sun \cite{Sun11} proved that $\HTP_{11}(\Z)$ is undecidable, and recently 
+ he \cite[Corollary 1.1]{Sun10} established the undecidability of $\HTP_{10}(\Z)$.
+
+Let $\mathbb Q$ be the field of rational numbers.In 1949, Robinsion \cite{Rob} gave a 
+first-order definition of $\Z$ in $\Q$ via the theory of ternary quadratic forms.
+This was simplified by Poonen  \cite{Poonen} in 2009.
+In 2016, Koenigsmann \cite{Koen} found that $\Q\sm \Z$ is diophantine over $\Q$, i.e.,
+there is a polynomial $f(x_0,x_1,\ldots,x_n)$ with integer coefficients such that  $t\in\Q$ is not an integer if and only if $f(t,x_1,\ldots,x_n)=0$ for some $x_1,\ldots,x_n\in\Q$.
+In 2024 Daans \cite{Daans} proved that we may take $n=10$; recently Sun \cite{Sun7}
+showed further that we may even take $n=7$. If $\Z$ is diophantine over $\Q$, then
+the undecidability of  HTP over $\Q$ follows from Matiyasevich's theorem on HTP over $\Z$.
+
+Quite recently, OpenAI released a preprint \cite{OAI} in which HTP over $\Q$ is proved to be undecidable. The proof uses a five-contact height estimate and an existential predicate excluding odd poles.  We will state precisely the arithmetic inputs used there in Section~\ref{sec:inputs}.
+
+In this paper, we go further by establishing the following result.
+
+\begin{theorem}\label{thm:main} $\HTP_{86}(\Q)$ is undecidable.
+\end{theorem}
+
+To prove Theorem \ref{thm:main}, we use the height and Selmer-theoretic inputs from \cite{OAI}, and Sun's result \cite{Sun10} that $\HTP_{10}(\Z)$
+is undecidable. 
+Ten points in a fixed cyclic elliptic subgroup encode ten integer indices. At primes detected by the height estimate, two anchored logarithm ratios agree modulo high prime powers and therefore agree with those indices. We test the input polynomial on the ratios to force divisibility of its value at the integer index tuple. If this value is nonzero, the height estimate bounds every index. A sequence of finite tuple guards excludes all bounded false certificates. Running those rational queries alongside the enumeration of integer solutions gives a decision procedure relative to the rational oracle.
+
+We explain five strategies that save variables. First, a rational projective change moves all five height contacts to finite points $\theta_0=0,\theta_1,\ldots,\theta_4$. Fix a rational normalizing point $\xi$ outside that set, and put
+\begin{equation}\label{eq:introdetector}
+ F_5(t)=\prod_{j=0}^4(t-\theta_j).
+\end{equation}
+For the twenty rational components $X_r$ of the elliptic $x$-coordinates, we define $A_r=X_r^2$ if $X_r\ne0$, and $A_r=1$ otherwise. In addition, we set $A_0=1$. These are computed expressions on finite branches. One slope $s$ gives all twenty-one arguments $A_rs$, and
+\[
+ 2h(X_r)=h(A_r)\le h(s)+h(A_rs).
+\]
+The base argument $s$ and its certificate are used once, so only twenty-one pole predicates are required.
+
+Second, the detectors
+\begin{equation}\label{eq:intromultiplicative}
+ R_r=\frac{A_r^{-5}F_5(A_rs)}{(A_rs-\xi)^6}
+\end{equation}
+have an especially useful prime-pattern expression. With a common square denominator $v$ and $s=u/v$, their numerators become products of the five contacts $u-(\theta_j/A_r)v$, divided by square factors. Across all slopes there are at most $1+4\cdot21=85$ distinct positions. The factor $A_r^{-5}$ is a rational square; it preserves valuation parity even at primes dividing $A_r$.
+
+Third, all these positions can share one group of eleven elliptic witnesses. The substantive requirement is simultaneous compatibility of the reduction orders at \emph{different} primes in the same pattern. 
+We use an extension of the Chinese Remainder Theorem (cf. \cite{Sun-book}) which states that a system of congruences $h\equiv a_j\pmod{n_j}$ $(j=1,\ldots,k$) is solvable exactly when $\gcd(n_j,n_l)\mid a_j-a_l$ for all $1\le j<l\ls k$.
+
+The simultaneous prime construction needs more than positive-density polynomial recurrence. The polynomial prime-pattern results of Tao and Ziegler \cite{TZ,TZerr,TZpoly} provide the relevant transference framework. We adapt their asymptotic argument using the unconditional linear Artin-symbol theorem of Frei and Tinkov\'a \cite[Theorem 1.4]{FT}. At a fixed cutoff $L$, Gaussian ray-class fibres give a weighted lower bound of size $NT/(\log L)^{4k}$ for $k$ fixed positions. A Selberg sieve using the quadric congruence estimate of Browning and Loughran \cite{BL}, together with a large-prime geometric sieve based on \cite{BHB}, bounds the remaining bad weight by $O(NT/(L\log L))+o(NT)$. Choosing $L$ first makes the two estimates compatible. The fields in the Artin-symbol theorem remain fixed while the counting limit is taken.
+
+Fourth, divide each local expression of required precision $k_j$ by $(t-\xi)^{k_j+1}$. This denominator is a unit at its contact primes and makes the expressions small at the real embeddings and the prime ideals above the fixed exceptional primes. A product of quadratic factors packages the local inequalities. With one witness group, its reciprocal trace tends to 2, and each predicate input is asymptotic to $1/(4A_r^6s)$. Uniform bounds independent of the later congruence moduli permit every preparation parameter to be zero. Each pole predicate needs only two structural witnesses. A separable finite-algebra construction and a reciprocal polynomial combine all remaining root choices and nonzero guards in one final variable.
+
+Fifth, we remove the rational source tuple altogether. Instead of comparing two logarithm ratios $L_i$ and $L'_i$ to a free coordinate $a_i$ and imposing $f(\mathbf a)=0$, we impose local precision on
+\[
+ L_i-L'_i\quad(1\le i\le10)\ \ \t{and}\ \ f(L_1,\ldots,L_{10}).
+\]
+Two anchors ensure that these ratios are integral at the relevant prime ideal and congruent to the integer indices. For every bounded integer tuple $\mathbf k$ with $f(\mathbf k)\ne0$, exclude the entire point tuple $([k_1]P,\ldots,[k_{10}]P)$. For this source-tuple elimination, Sections~\ref{sec:local}, \ref{sec:sharing} and \ref{sec:reduction} give its local, completeness, and height arguments. 
+
+There are ten root points and eleven shared local points, each with two free rational coordinate components. The resulting total is
+\begin{equation}\label{eq:introcount}
+ 2(10+11)+1+2\cdot21+1=86.
+\end{equation}
+The temporary prime-pattern parameters and the analytic cutoff add no query variables. The sections below prove both the simultaneous prime theorem and its use in this count.
+
+\section{Arithmetic data and the pole-parity predicate}\label{sec:inputs}
+
+All heights below are absolute \emph{logarithmic} Weil heights. In particular, for coprime integers $a$ and $b>0$, we have $h(a/b)=\log\max(|a|,b)$, and in particular $h(0)=0$. 
+For any prime $p$, we write $\F_p=\Z/p\Z$, set
+$$\Z_{(p)}=\l\{\f ab:a,b\in\Z\ \t{and}\ p\nmid b\r\},$$
+ and let $\Q_p$ be the field of $p$-adic numbers. 
+   For $b\in\Q^\times=\Q\sm\{0\}$, we define its {\it support} 
+$\Supp(b)$ as the set of primes $p$ with the $p$-adic valuation $v_p(b)$ of $b$ nonzero. 
+As usual, we regard $v_p(0)$ as $+\infty$ for any prime $p$. We also set
+  $$\Sq(\Q)=\{x^2:x\in\Q\}\ \ \t{and}\ \ \Q^{\times2}=\Sq(\Q)\setminus\{0\}.$$
+
+The letter $p$ always denotes a rational prime. For a number field $L$, write $\OO_L$ for the ring of algebraic integers in $L$. We use $\mathcal P$ for a nonzero prime ideal of $\OO_L$. The notation $\mathcal P\mid p$ means that $\mathcal P$ divides the ideal $p\OO_L$ (equivalently, $\mathcal P\cap\Z=p\Z$). For $b\in L^\times=L\sm\{0\}$, let $\operatorname{ord}_{\mathcal P}(b)$ be the exponent of $\mathcal P$ in the principal fractional ideal $(b)$. Call $e_{\mathcal P}=\operatorname{ord}_{\mathcal P}(p)$ the ramification index, and define the normalized \emph{additive} valuation by
+\[\qquad v_{\mathcal P}(0)=+\infty,
+\ \ \t{and}\
+ v_{\mathcal P}(b)=\frac{\operatorname{ord}_{\mathcal P}(b)}{e_{\mathcal P}} \ \t{for}\ b\in L^\times. 
+\]
+Thus $v_{\mathcal P}(L^\times)=e_{\mathcal P}^{-1}\Z$, and its values are integers when $\mathcal P$ is unramified. Write $L_{\mathcal P}$ for the completion and $\OO_{\mathcal P}$ for its valuation ring. 
+For $b\in\Q^\times$ and $\mathcal P\mid p$, we have $v_{\mathcal P}(b)=v_p(b)$ and $|b|_p=p^{-v_p(b)}$. 
+
+ For a number field $L$, $\Tr_{L/\Q}$ and $\Nm_{L/\Q}$ denote trace and norm respectively,  with respect to the field extension $L/\Q$. The origin of an elliptic curve is $O$, and $[n]Q$ denotes multiplication of a point by the integer $n$. The symbols $O(\cdot),o(\cdot),\ll,\asymp$ have their usual asymptotic meanings; subscripts specify allowed dependence of constants.
+
+\subsection{A cyclic elliptic subgroup}
+Fix
+\begin{equation}\label{eq:curve}
+ F=\Q(\sqrt2),\qquad d_0=75-53\sqrt2,\qquad
+ E:y^2=x^3-d_0^2x.
+\end{equation}
+Let $\sigma$ be the nontrivial automorphism of $F$; a superscript $\sigma$ on a curve, point or expression means that its coefficients or coordinates are conjugated by this automorphism. 
+For an ideal $\mathcal P\subset\OO_F$, write $\mathcal P^\sigma=\sigma(\mathcal P)$ for its conjugate ideal.
+We have $d_0d_0^\sigma=7$. The rank calculation in \cite[Section 5]{OAI} gives a fixed even integer $m>0$ and a non-torsion point $P$ such that
+\begin{equation}\label{eq:cyclic}
+ mE(F)=\Z P.
+\end{equation}
+We recall the calculation to make the cyclic group in the construction explicit.
+
+The ring $\OO_F=\Z[\sqrt2]$ is principal by Minkowski's bound $\sqrt2<2$. Its unit group modulo squares has order four, and the signs of $-1$ and $1+\sqrt2$ show that every totally positive unit is a square. For the two-isogenous curve $E':y^2=x^3+4d_0^2x$, the usual descent maps $\alpha,\alpha'$ to $F^\times/F^{\times2}$ satisfy
+\[
+ |\im\alpha|\cdot|\im\alpha'|=4\cdot2^{\operatorname{rank}E(F)};
+\]
+see \cite[Chapter X, Section 4]{Silv}. The image for $E$ is supported only at $(d_0)$ and in the unit classes, and hence has size at most eight. Its torsion classes are $1,-1,d_0,-d_0$. With $w=-5+4\sqrt2=d_0(1+\sqrt2)^3$, one has $w^3-w=-8d_0$ and
+\[
+ (-d_0w,2\sqrt2\,d_0^2)\in E(F).
+\]
+Its $x$-coordinate has opposite signs at the two embeddings, so its class is outside those four classes. Thus $|\im\alpha|=8$.
+
+For this descent paragraph, use the integer-valued ideal valuations $\operatorname{ord}_{\mathcal P}$. For $E'$, every nonzero $x$ is totally positive, and it has even $\operatorname{ord}_{\mathcal P}(x)$ away from $2d_0$. At $\mathcal P=(\sqrt2)$, one has $\operatorname{ord}_{\mathcal P}(4d_0^2)=4$. If $a=\operatorname{ord}_{\mathcal P}(x)$ were odd, then $3a$ and $4+a$ would be distinct odd integers, so $x^3+4d_0^2x=y^2$ would have odd valuation, a contradiction. At $\mathcal P=(d_0)$ the same argument leaves only $\operatorname{ord}_{\mathcal P}(x)=1$ to check. Writing $x=d_0u$ in that case would require $u^2+4=0$ in $\F_7$, which is impossible. Thus $\operatorname{ord}_{\mathcal P}(x)$ is even at every nonzero prime ideal. Principality and positivity imply that $x$ is a square. The exceptional points also have trivial image, so $|\im\alpha'|=1$. The rank is one. Taking $m$ divisible by the exponent of the torsion subgroup proves \eqref{eq:cyclic}; it is even because $E$ has nontrivial rational two-torsion.
+
+
+Every point in \eqref{eq:cyclic} has an affine preimage under $[m]$. For the origin one can use $(0,0)$, and a preimage of a nonzero point cannot be the origin. This observation will save coordinates in Section~\ref{sec:encoding}.
+
+\subsection{Formal comparisons}
+Put $z=-x/y$ on nonzero cyclic points and $z(O)=0$. Such points are not two-torsion, so both $x$ and $y$ are nonzero. Let
+\[
+ \ell(Z)=Z+\sum_{t\ge2}c_tZ^t\ \ \t{and}\ \ 
+ \ell_K(Z)=Z+\sum_{2\le t\le K}c_tZ^t
+\]
+be the formal logarithm and its truncation. The coefficients are effectively computable from \eqref{eq:curve}.
+
+\begin{lemma}\label{lem:formal}
+There is a fixed finite set $S_E$ of primes such that the following holds. 
+Suppose $p\notin S_E$, $\mathcal P\mid p$, and $nP,n'P$ reduce to $O$ modulo $\mathcal P$, where $n,n'\in\Z$ and $n'\ne0$. Then
+\begin{equation}\label{eq:formalval}
+ v_{\mathcal P}\left(\frac{z(nP)}{z(n'P)}\right)=v_p\l(\f n{n'}\r).
+\end{equation}
+If $p>K+1$ and $v_p(n/n')\ge0$, then $\ell_K(z(n'P))\ne0$ and
+\begin{equation}\label{eq:formalapprox}
+ v_{\mathcal P}\left(\frac{\ell_K(z(nP))}{\ell_K(z(n'P))}-\frac n{n'}\right)\ge K.
+\end{equation}
+For $p>K+1$, we have
+\begin{equation}\label{eq:truncval}
+ v_{\mathcal P}\left(\frac{\ell_K(z(nP))}{\ell_K(z(n'P))}\right)=v_p\l(\f n{n'}\r).
+\end{equation}
+The same statements hold for $E^\sigma,P^\sigma$, using the conjugate coefficients $\ell_K^\sigma$.
+\end{lemma}
+\begin{proof}
+Exclude 2, ramified primes, and bad reduction primes. The invariant differential has integral coefficients, so $v_{\mathcal P}(c_t)\ge-v_p(t)$. For $v_{\mathcal P}(Z)\ge1$ the logarithm converges, is a homomorphism on the formal kernel, and has valuation $v_{\mathcal P}(Z)$. The identity $[n'](nP)=[n](n'P)$ gives \eqref{eq:formalval}. If $p>K+1$, then for $t>K$ one has $t-1-v_p(t)\ge K$, and consequently
+\[
+ v_{\mathcal P}(\ell(Z)-\ell_K(Z))\ge v_{\mathcal P}(Z)+K.
+\]
+Apply this to both parameters, using \eqref{eq:formalval} and the integrality of $n/n'$, and divide by $\ell_K(z(n'P))$, whose valuation is $v_{\mathcal P}(z(n'P))$. This proves \eqref{eq:formalapprox}. For every formal parameter, $\ell_K(Z)$ has valuation $v_{\mathcal P}(Z)$, which also proves \eqref{eq:truncval}. These arguments prove the conjugate statements; compare \cite[Proposition 2.2]{OAI} and \cite[Chapter IV]{Silv}.
+\end{proof}
+
+\subsection{The height input in finite-contact coordinates}
+Theorem 2.4 and Corollary 2.5 of \cite{OAI} give five distinct points
+\[
+ \mathcal C=\{\infty,\beta_1,\ldots,\beta_4\}\subset\mathbb P^1(\Q),
+\]
+a finite exceptional set, and constants $H,c_H>0$ bounding the logarithmic height by the $c_H$th power of the odd-contact radical. We first state the precise coordinate change used here. Choose $\gamma\in\Q\setminus\{\beta_1,\ldots,\beta_4\}$ and put
+\begin{equation}\label{eq:contactchange}
+ \varphi(t)=\gamma+1/t,\qquad
+ \theta_0=0,\quad\theta_j=\frac1{\beta_j-\gamma}\ (1\le j\le4).
+\end{equation}
+Thus $\varphi^{-1}(\mathcal C)=\{\theta_0,\ldots,\theta_4\}$ consists of five finite points. Choose the positive integers $\alpha_j$ so that $L_j(U,V)=\alpha_j(U-\theta_jV)$ have coprime integral coefficients and, for $t=(u:v)$ outside these points, let $M_S(t)$ be the product of primes outside $S$ at which some normalized depth
+\begin{equation}\label{eq:contactdepth}
+ v_p(L_j(u,v))-\min\{v_p(u),v_p(v)\}\ \ \t{with}\ 0\le j\le4,
+\end{equation}
+is odd. There is no contact at infinity in this definition.
+
+\begin{lemma}\label{lem:heightchange}
+There is a fixed exceptional set $S_H$ such that for every fixed finite $S\supseteq S_H$ there is $H_S>0$ satisfying
+\begin{equation}\label{eq:heightinput}
+ h(t)\le H_S M_S(t)^{c_H}.
+\end{equation}
+The exponent is the one supplied by the original height theorem and is unchanged by enlarging $S$.
+\end{lemma}
+\begin{proof}
+In homogeneous coordinates the map is $(u:v)\mapsto(\gamma u+v:u)$. Outside a fixed set its matrix and inverse are integral with unit determinant, so they preserve $\min\{v_p(u),v_p(v)\}$. The pullback of the original infinity form is $u$. The pullback of a form vanishing at $\beta_j$ is a fixed nonzero multiple of
+\[
+ (\gamma-\beta_j)u+v=(\gamma-\beta_j)(u-\theta_jv).
+\]
+After excluding fixed coefficient primes, these multiples and the primitive-form normalizations are units. The normalized contact depths, and hence the radicals, agree. Apply the cited theorem to $\varphi(t)$. The elementary projective height inequality $h(t)\le h(\varphi(t))+O_\gamma(1)$ absorbs the additive constant into $H_S$, since $M_S(t)\ge1$. The enlargement assertion follows from the cited corollary.
+\end{proof}
+
+Fix a positive integer $c\ge c_H$. Since $M_S(t)\ge1$, we shall use the weaker bound $h(t)\le H_SM_S(t)^c$. Choose $\xi\in\Q$ different from the five $\theta_j$, and $\Delta\in\Z_{>0}$ with $\Delta^2\theta_j\in\Z$ for every $j$. All these numbers are fixed arithmetic data. Enlarge the fixed exceptions to include all relevant coefficients and nonzero differences, including $\theta_j-\xi$.
+
+\subsection{A pole predicate with its preparation parameter fixed}
+Let $\mathcal D_2$ be the set of rationals whose reduced positive denominator is a square, equivalently those having no negative odd prime valuation; include zero. The finite multiplier list $\mathcal M\subset\Q^\times$ of \cite[Section 3.2]{OAI} has this property: for every $B\ne0$, some $\mu\in\mathcal M$ makes $\mu B$ positive, square in $\Q_2$, and of unit nonsquare class in $\Q_3$. The last condition refers to its square class and permits even nonzero 3-adic valuation. Such a finite list is obtained by weak approximation in the finite local square-class groups, as explained in the source. Fix
+\[
+ S_0=\{2,3\}\cup\bigcup_{\mu\in\mathcal M}\Supp(\mu).
+\]
+Write $\mathcal E_e:y^2=x(x-e)(x+3e)$. For $B\ne0$, define $\Phi_0(B)$ by choosing $\mu\in\mathcal M$, setting
+\begin{equation}\label{eq:phioriginal}
+ B'=\mu B,\qquad H'=B'(B'-B^2)=(\mu B)^2(1-B/\mu),
+\end{equation}
+and choosing $e\in\Q$ with $eH'\ne0$ and a rational point with $x$ in $B'\Q^{\times2}$ on each of $\mathcal E_e$ and $\mathcal E_{eH'}$. Set $\Phi_0(0)$ to be true. This is the source's pole predicate with its preparation parameter fixed at zero. Its second finite multiplier is no longer needed.
+
+\begin{proposition}\label{prop:phi}
+The predicate satisfies
+\begin{equation}\label{eq:phiproperties}
+ \Phi_0(B),\ p\notin S_0
+ \quad\Longrightarrow\quad v_p(B)\notin\{-1,-3,-5,\ldots\}.
+\end{equation}
+There are fixed $\epsilon>0$ and integers $b_p\ge1$ for $p\in S_0$ such that
+\begin{equation}\label{eq:smallcomplete}
+ B\in\mathcal D_2,\quad 0<B<\epsilon,\quad
+ v_p(B)\ge b_p\ (p\in S_0)
+ \quad\Longrightarrow\quad\Phi_0(B).
+\end{equation}
+For each multiplier choice, the predicate has two free rational structural witnesses $e,z$ and two square conditions.
+\end{proposition}
+\begin{proof}
+If $k=v_p(B)<0$ is odd and $p\notin S_0$, then $v_p(B')=k$ and $v_p(H')=3k$. The valuations of $e$ and $eH'$ have opposite parities. Scale the curve for the parameter with even valuation by a square power of $p$ to make that parameter a unit. For a unit $l$ and $p\ne2,3$, every nonzero $x$ on $y^2=x(x-l)(x+3l)$ has even valuation: a negative valuation gives $3v_p(x)$ on the right, and a positive valuation gives $v_p(x)$. This contradicts $x\in B'\Q_p^{\times2}$ and proves \eqref{eq:phiproperties}.
+
+For completeness, one may take
+\[
+ \varepsilon=\frac12\min_{\substack{\mu\in\mathcal M\\\mu>0}}\mu\ \ \t{and}\ 
+ \ 
+ b_p=3+\max\bigl(0,\max_{\mu\in\mathcal M}v_p(\mu)\bigr).
+\]
+The set of positive multipliers is nonempty. Select $\mu$ for $B$ by the stated multiplier property. Since $B>0$, this $\mu$ is positive. The parenthesis $1-B/\mu$ is positive and is a square in every $\Q_p$ for $p\in S_0$: at odd primes it lies in $1+p\Z_p$, and at 2 it lies in $1+8\Z_2$. So $H'>0$ and $H'$ is locally square at $S_0$.
+
+Let $\beta,\theta$ be the positive squarefree representatives of $B',H'$. Their supports avoid 2 and 3. Moreover $\beta\ne1$, because its class is nonsquare in $\Q_3$; thus $\beta$ has a nonempty prime support, as required in the cited construction. If $p\mid\beta$ and $p\notin S_0$, then $v_p(B)$ is odd and, because $B\in\mathcal D_2$, positive. Thus $1-B/\mu$ is a local square, so $\theta$ is locally square at $p$. At $p\in S_0$ this was already arranged. The two supports are disjoint.
+
+Conversely, if $p\mid\theta$, then $p\notin S_0$ and $v_p(B)$ is even. In
+\[
+ H'=\mu B^2(\mu-B),
+\]
+a positive valuation of $B$ makes $v_p(H')=2v_p(B)$ even; a negative one makes it $3v_p(B)$ even. Therefore $v_p(B)=0$, and odd valuation of $H'$ requires $v_p(\mu-B)>0$. Consequently $B'=\mu B$ is locally square, being $\mu^2$ times an element of $1+p\Z_p$. Both $\beta,\theta$ are squares at 2, and at 3 the class of $\theta$ is square while that of $\beta$ is a unit nonsquare. These are exactly the square-class properties in \cite[Lemma 3.2]{OAI}. Lemmas 3.3--3.6 of that source supply a common parameter for the two curves and points of class $\beta$. Replacing $\theta$ by $H'$ changes the second curve by a rational square scaling, preserving the $x$-class. This proves \eqref{eq:smallcomplete}. This step uses the cited Selmer-theoretic input; no assertion that $\Phi_0$ contains all of $\mathcal D_2$ is made.
+
+To normalize the coordinates, if the first point has $x=B'q^2$, $q\ne0$, scale both curves by $(x,y)\mapsto(x/q^2,y/q^3)$ and replace $e$ by $e/q^2$. The first $x$ becomes $B'$, and the second becomes $B'z^2$ for some $z\ne0$. Thus the equivalent conditions are
+\begin{align}
+ BeH'z&\ne0,\label{eq:phinonzero}\\
+ A_1:=B'(B'-e)(B'+3e)&\in\Sq(\Q),\label{eq:phisquareone}\\
+ A_2:=B'(B'z^2-eH')(B'z^2+3eH')&\in\Sq(\Q).\label{eq:phisquaretwo}
+\end{align}
+The right side of the second curve equation is $z^2A_2$. All scalings are reversible under the nonzero guard, and zero ordinates are allowed. The two square roots are finite choices; only $e,z$ are free structural parameters.
+\end{proof}
+
+\subsection{A fixed deeper anchor}
+
+For the fixed set $S_0$ just defined, fix a positive integer $c_\ast$ divisible by 4 such that $[c_\ast]P$ lies in the formal neighborhood
+\begin{equation}\label{eq:deepanchor}
+ v_{\mathcal P}(x([c_\ast]P))\le-4
+ \qquad({\mathcal P}\mid p,\ p\in S_0),
+\end{equation}
+with $v_{\mathcal P}(p)=1$, including ramified prime ideals. On the formal neighborhood of $O$, the integral equation \eqref{eq:curve} gives
+\[
+ v_{\mathcal P}(x(Q))=-2v_{\mathcal P}(z(Q)).
+\]
+For each $\mathcal P$ above a prime in $S_0$, the origin together with the formal points satisfying $v_{\mathcal P}(z(Q))\ge2$ is an open subgroup of the compact group $E(F_{\mathcal P})$. Indeed the integral formal group law preserves this condition, including at prime ideals of bad reduction; see \cite[Chapter IV]{Silv}. This open subgroup has finite index. A common multiple of these finitely many indices and 4 therefore gives an integer $c_\ast$ satisfying \eqref{eq:deepanchor}. One can find such a multiple by enumerating multiples of 4 and checking the finitely many $x$-coordinate valuations. The integer $c_\ast$ is fixed arithmetic data, not an unknown. Add its prime divisors to the exceptional set used for local soundness. This enlargement does not require enlarging $S_0$ or choosing the anchor again.
+
+
+\section{A reciprocal trace of products for local disjunctions}\label{sec:local}
+
+The following device combines local valuation conditions. We state it for a finite family of witnesses, although the final construction uses one group. The successful family member may depend on the prime and on the place above it; no rational variable selects that member.
+
+\begin{lemma}\label{lem:packing}
+Let $G,J\ge1$, let $R\in\Q^\times$, let $D_{g,j}\in F$ for $1\le g\le G$, $1\le j\le J$, and let $k_j\ge1$ be integers. Define
+\begin{gather}
+ W_g=\prod_{j=1}^J\left(1+R(D_{g,j}/R^{k_j})^2\right),\label{eq:packing}\\
+ \Theta=\Tr_{F/\Q}\(\sum_{g=1}^G W_g^{-1}\)\ \ \t{and}\ \
+ B=\f{R}{\Theta^2}.\label{eq:traceaggregate}
+\end{gather}
+Impose $W_g\ne0$ for every $g$, $\Theta\ne0$, and $\Phi_0(B)$. At every unramified prime $p\notin S_0$ with $\alpha=v_p(R)$ odd, one has $\alpha>0$, and some pair $(g,{\mathcal P})$ with ${\mathcal P}\mid p$ satisfies
+\begin{equation}\label{eq:goodfamily}
+ v_{\mathcal P}(D_{g,j})\ge k_j\qquad(1\le j\le J).
+\end{equation}
+
+Conversely, suppose there is a nonempty finite set $\mathcal T$ of rational primes that split in $F$, all exceeding $2G$, such that
+\begin{equation}\label{eq:Rnormalized}
+ v_p(R)=1\ \t{for}\ p\in\mathcal T,\ \ \t{and}\ \ v_p(R)\in2\Z\ \t{for}\ p\notin\mathcal T.
+\end{equation}
+If for each $p\in\mathcal T$ some pair $(g,{\mathcal P})$ with ${\mathcal P}\mid p$ satisfies \eqref{eq:goodfamily}, then every $W_g$ and $\Theta$ are nonzero, and $B\in\mathcal D_2$.
+\end{lemma}
+\begin{proof}
+At an unramified prime ideal ${\mathcal P}\mid p$, each nonzero $D_{g,j}$ gives the odd integer
+\[
+ b_{g,j,{\mathcal P}}=\alpha+2\bigl(v_{\mathcal P}(D_{g,j})-k_j\alpha\bigr).
+\]
+In particular this valuation is not zero. The valuation of the corresponding factor in \eqref{eq:packing} is therefore $\min(0,b_{g,j,{\mathcal P}})$. If $D_{g,j}=0$, its factor is 1 and contributes zero. Thus
+\[
+ \lambda_{g,{\mathcal P}}:=v_{\mathcal P}(W_g)
+ =\sum_{D_{g,j}\ne0}\min(0,b_{g,j,{\mathcal P}})\le0.
+\]
+Put $\lambda=\max_{g,{\mathcal P}\mid p}\lambda_{g,{\mathcal P}}$. All inverse terms have valuation at least $-\lambda$. Taking their sum and trace gives
+\[
+ \tau:=v_p(\Theta)\ge-\lambda\ge0.
+\]
+For split $p$ this follows by summing over the two prime ideals above $p$. For inert $p$, trace in the unramified local extension preserves integrality after division by a rational integer power of $p$. Hence
+\[
+ v_p(B)=\alpha-2\tau\le\alpha+2\lambda.
+\]
+The left side is odd and cannot be negative by Proposition~\ref{prop:phi}. Consequently, $\alpha>0$ and $\lambda\ge-\alpha/2$. Choose a pair attaining $\lambda$. Each summand in the expression for $\lambda_{g,{\mathcal P}}$ is nonpositive, so for every nonzero $D_{g,j}$,
+\[
+ b_{g,j,{\mathcal P}}\ge\min(0,b_{g,j,{\mathcal P}})\ge\lambda\ge-\alpha/2.
+\]
+It follows that
+\[
+ v_{\mathcal P}(D_{g,j})\ge\l(k_j-\f34\r)\alpha>k_j-1,
+\]
+where the last inequality uses $k_j\ge1$ and the positive integer $\alpha\ge1$. Integral valuations prove \eqref{eq:goodfamily}; zero terms satisfy it automatically.
+
+For completeness, fix $p\in\mathcal T$, so $\alpha=1$. At each prime ideal $\mathcal P\mid p$, every factor is either congruent to 1 modulo $\mathcal P\OO_{\mathcal P}$, or has negative valuation. Its valuation is never positive. Thus $W_g$ is either congruent to 1 or has negative valuation, and $W_g^{-1}$ has residue 1 or 0, respectively. At a pair satisfying \eqref{eq:goodfamily}, all the nonconstant terms in the factors have positive valuation, so the residue of $W_g^{-1}$ is 1. As $p$ splits, the trace sum modulo $p$ is therefore an integer
+\[
+ c_p\in\{1,2,\ldots,2G\}.
+\]
+Since $p>2G$, this is nonzero. The factor valuations at any one prime in the nonempty set $\mathcal T$ also show that every $W_g$ is a nonzero field element. We obtain $\Theta\ne0$ and $v_p(\Theta)=0$ for every $p\in\mathcal T$, so $v_p(B)=1$ there. At every other prime, $v_p(B)=v_p(R)-2v_p(\Theta)$ is even by \eqref{eq:Rnormalized}. Hence $B\in\mathcal D_2$.
+\end{proof}
+
+For $G=1$, the expression $R/\Theta^2$ is $R(\Nm W_1/\Tr W_1)^2$, the single-group norm/trace expression. For $G>1$ the sum of inverses expresses a local disjunction. Multiplying the individual predicate inputs would not give the same soundness property.
+
+\subsection{Two anchors test the polynomial directly}
+Fix a nonconstant polynomial $f\in\Z[X_1,\ldots,X_{10}]$, a precision $K\ge1$, and ten cyclic root points $P_i=n_iP$. The uniquely determined integers $n_i$ are proof objects, not rational query variables. Let $S_K$ contain $S_0,S_E,S_H$, all bad and ramified primes, the prime divisors of $c_\ast$, the contact-form coefficient and difference exceptions, and every prime at most $\max(K+1,10)$. It is fixed once $K$ and the arithmetic data are fixed. We will take $K=c\deg f$ in Section~\ref{sec:reduction}.
+
+A witness group consists of
+\[
+ H_g=h_gP\ \ \t{and}\ \ U_{g,i}=z_{g,i}P\quad(1\le i\le10),
+\]
+with $H_g\ne O,[c_\ast]P$. Put $V_{g,0}=H_g-[c_\ast]P$ and $V_{g,i}=U_{g,i}-[c_\ast]P_i$. The integers $h_g,z_{g,i}$ also occur only in the proof. Define
+\[
+ \rho(Q)=\begin{cases}1/x(Q)&\t{if}\ Q\ne O,\\0&\t{if}\ Q=O,\end{cases}
+\]
+on cyclic points, and set
+\begin{equation}\label{eq:directratios}
+ L_{g,i}=\frac{\ell_K(z(U_{g,i}))}{\ell_K(z(H_g))}\ \ \t{and}\ \ 
+ L'_{g,i}=\frac{\ell_K^\sigma(z(V_{g,i}^\sigma))}
+ {\ell_K^\sigma(z(V_{g,0}^\sigma))}.
+\end{equation}
+Both truncated-logarithm denominators are required to be nonzero. These ratios are computed elements of $F$, not new unknowns. Write $\mathbf L_g=(L_{g,1},\ldots,L_{g,10})$.
+
+Each group has the following 33 expressions $D_{g,j}$, in the displayed order and increasing index order within each row:
+\begin{center}\small
+\begin{tabular}{@{}p{8.8cm}rr@{}}
+\toprule
+Expressions & Number & $k_j$\\\midrule
+$\rho(H_g),\rho(U_{g,i})$, $1\le i\le10$ &11&1\\
+$\rho(V_{g,i}^\sigma)$, $0\le i\le10$ &11&1\\
+$L_{g,i}-L'_{g,i}$, $1\le i\le10$ &10&$K$\\
+$f(\mathbf L_g)$ &1&$K$\\\midrule
+Total &33&\\\bottomrule
+\end{tabular}
+\end{center}
+In particular there is no free rational source tuple and no exact equation $f(\mathbf L_g)=0$. The last row is a local precision test enforced by the pole certificates. The input polynomial has integer coefficients, so it can be evaluated in $F$ without introducing a new algebraic choice.
+
+For a slope $t\notin\{\theta_0,\ldots,\theta_4,\xi\}$ and a specified nonzero rational square $\kappa$, put
+\begin{equation}\label{eq:scaleddata}
+ R=\kappa\frac{F_5(t)}{(t-\xi)^6},\qquad
+ \widetilde D_{g,j}(t)=\frac{D_{g,j}}{(t-\xi)^{k_j+1}},
+ \quad F_5(t)=\prod_{r=0}^4(t-\theta_r).
+\end{equation}
+For a nonempty finite set of group labels, its aggregate certificate uses Lemma~\ref{lem:packing} with $J=33$, input $R$, and the expressions $\widetilde D_{g,j}(t)$. The square factor $\kappa$ will be $1$ or $A^{-5}$, a computed expression rather than a new unknown. All inverses and group-law outputs are expressions, with their guards retained for compilation. Since $R\Theta\ne0$, the predicate input $B$ is nonzero. The final construction uses just one group.
+
+\begin{lemma}\label{lem:local}
+For every prime $p\notin S_K$, an aggregate certificate at $t$ implies
+\begin{equation}\label{eq:localcongruence}
+ p\mid M_{S_K}(t)\quad\Longrightarrow\quad
+ p^K\mid f(n_1,\ldots,n_{10}).
+\end{equation}
+Here the radical uses the five finite contacts of \eqref{eq:contactchange}.
+\end{lemma}
+\begin{proof}
+At an odd contact prime, $t$ is integral and congruent to exactly one $\theta_r$ with positive odd depth. Indeed, if $v_p(t)<0$, all five normalized depths are zero. The fixed difference exclusions show that $t-\xi$ and all other contact factors are units. Thus $v_p(R)$ is odd, since $\kappa$ is a square, and $v_{\mathcal P}(\widetilde D_{g,j})=v_{\mathcal P}(D_{g,j})$ at every prime ideal ${\mathcal P}\mid p$. Lemma~\ref{lem:packing} forces $v_p(R)>0$ and supplies a pair $(g,{\mathcal P})$ at which all 33 original expressions have the required precision. 
+
+The first two rows make $H,U_i$ and $V_0^\sigma,V_i^\sigma$ formal at ${\mathcal P}$: at good reduction, $v_{\mathcal P}(1/x(Q))>0$ for a nonzero point means that it reduces to $O$. The remaining rows give
+\begin{equation}\label{eq:directlocaltests}
+ L_i-L'_i\in p^K\OO_{\mathcal P}\ \ \t{and} \ \ f(\mathbf L)\in p^K\OO_{\mathcal P}.
+\end{equation}
+Write $h=h_g$ and $z_i=z_{g,i}$, and define the rational index ratios
+\[
+ r_i=\f{z_i}h\ \ \t{and}\ \ r'_i=\f{z_i-c_\ast n_i}{h-c_\ast}.
+\]
+The two denominators are nonzero by the point guards. Since $p\nmid c_\ast$, at least one of $h$ and $h-c_\ast$ is a $p$-adic unit.
+
+If $h$ is a unit, then $r_i\in\Z_{(p)}$ and Lemma~\ref{lem:formal} makes $L_i$ integral at $\mathcal P$. If $h-c_\ast$ is a unit, its conjugate version instead makes $L'_i$ integral. In either case \eqref{eq:directlocaltests} makes both ratios integral. Equation~\eqref{eq:truncval} now implies that both $r_i,r'_i$ are $p$-integral, so \eqref{eq:formalapprox} applies to both and gives
+\[
+ r_i\equiv L_i\ \ \t{and}\ \ r'_i\equiv L'_i\pmod{p^K\OO_{\mathcal P}}.
+\]
+Multiply by the respective integral denominators and subtract:
+\begin{equation*}
+ c_\ast n_i
+ =h r_i-(h-c_\ast)r'_i
+ \equiv hL_i-(h-c_\ast)L'_i
+ \equiv c_\ast L_i\pmod{p^K\OO_{\mathcal P}}.
+\end{equation*}
+Division by the unit $c_\ast$ yields $L_i\equiv n_i\pmod{p^K\OO_{\mathcal P}}$ for every $i$. Zero numerators, including $U_i=O$ or $V_i=O$, are included in this argument.
+
+Polynomial evaluation with integral coefficients preserves these congruences. Explicitly, for a monomial one can telescope the difference of the two products, and each difference of powers is divisible by $L_i-n_i$. Hence
+\[
+ f(\mathbf n)\equiv f(\mathbf L)\equiv0\pmod{p^K\OO_{\mathcal P}}.
+\]
+Since $f(\mathbf n)$ is a rational integer and $v_{\mathcal P}(p)=1$, this proves \eqref{eq:localcongruence}.  The successful group and prime ideal may vary with $p$; the integer tuple and the conclusion do not.
+\end{proof}
+
+\section{Simultaneous avoidance in quadratic prime patterns}\label{sec:primes}
+
+For sufficiently large primes $p$ satisfying
+\begin{equation}\label{eq:primecongruences}
+ p\equiv1\pmod8\ \t{and}\  p\equiv3\pmod7,
+\end{equation}
+the two prime ideals of $\OO_F$ above $p$ give opposite quadratic twists of $y^2=x^3-x$: the product of their twisting parameters is 7, a nonsquare modulo $p$. Their reduction-group orders form the unordered pair
+\begin{equation}\label{eq:orders}
+ \{d_1(p),d_2(p)\}=\{p+1-2a,p+1+2a\},
+\end{equation}
+where we write $p=a^2+b^2$ with $a$ odd and $b$ even.
+These are the complex-multiplication formulas used in \cite[Section 6.1]{OAI}. Both orders are divisible by four; their difference is $4a$, so exactly one has 2-adic valuation two. For large $p$, the orders are positive and less than $2p$, and divisibility by four rules out equality with $p$. Hence $p\nmid d_1(p)d_2(p)$.
+
+For a Gaussian prime generator $\pi=a+bi$, write
+\begin{equation}\label{an:eq:orders}
+ d^+(p)=(a+1)^2+b^2\ \ \t{and}\ \  d^-(p)=(a-1)^2+b^2.
+\end{equation}
+Conjugation of $\pi$ does not change these integers. The congruence $\pi\equiv9\pmod{16}$ gives $v_2(d^+)=2$ and $v_2(d^-)=6$, so it fixes a common orientation: $d_1=d^+$ and $d_2=d^-$. The next theorem supplies all primes needed for one shared witness group.
+
+\begin{theorem}\label{an:thm:patterns}
+Let $c_1,\ldots,c_k$ be distinct integers, $k\ge2$. Let $q\ge1$, let $M$ be odd and squarefree with $7\nmid M$, and prescribe positive lower bounds $Y,H$. There are positive integers $u,w$, with $q\mid w$ and $u/w^2>H$, such that all
+\[
+ p_j=u+c_jw^2\quad(1\le j\le k)
+\]
+are primes exceeding $Y$. Each has a Gaussian generator $\pi_j$ satisfying
+\begin{equation}\label{an:eq:ray}
+ \pi_j\equiv9\pmod{16},\qquad
+ \pi_j\equiv1+3i\pmod7,\qquad
+ \pi_j\equiv i\pmod M.
+\end{equation}
+The self-gcds equal four. For $j\ne h$, any common factor of either order at $p_j$ and either order at $p_h$ is a power of two. In particular,
+\begin{equation}\label{an:eq:allcross}
+ \gcd(d^+(p_j),d^-(p_h))=4\qquad(1\le j,h\le k).
+\end{equation}
+All orders are coprime to $M$.
+\end{theorem}
+
+The theorem concerns any fixed finite $k$; its constants need not be uniform in $k$, the coefficients, or $M$. Repeated positions can be deleted before applying it. Prescribed square-denominator dilations are included by replacing $c_j$ by $q^2c_j$ and then replacing the parameter by $qw$.
+
+The proof uses the uniform quadric congruence estimate of Browning--Loughran \cite[Theorem 4.1]{BL}, the polynomial transference estimates of Tao--Ziegler \cite{TZpoly}, the unconditional linear Artin-symbol theorem of Frei--Tinkov\'a \cite[Theorem 1.4]{FT}, and the two elementary geometric-sieve inputs of Browning--Heath-Brown \cite[Lemmas 2.1 and 4.1]{BHB}. The needed nonhomogeneous large-prime estimate is proved in Appendix~\ref{an:app:large}. Section~\ref{an:sec:transfer} gives the transfer argument for the modified prime weights, rather than assuming that a linear theorem already covers quadratic patterns.
+
+\subsection{Local counts and primitive quadric congruences}\label{an:sec:counts}
+Fix $\kappa\in\Z\setminus\{0\}$ and write
+\begin{equation}\label{an:eq:quadric}
+ Q_\kappa=a^2+b^2-c^2-d^2-\kappa w^2.
+\end{equation}
+Set $G_\eps=(a+\eps)^2+b^2$, $H_\eta=(c+\eta)^2+d^2$, where $\eps,\eta\in\{1,-1\}$. For an odd $\ell\nmid\kappa$, the nonzero quadric residue set has $\ell^4-1$ elements. The collision set
+\[
+ \Omega_\ell=\{Q_\kappa=G_\eps=H_\eta=0\}\subset\F_\ell^5
+\]
+contains no zero vector and has at most $4\ell^2$ elements. If $\ell\equiv3\pmod4$, it has exactly one element. Indeed, in the split case the four branches $a+\eps=\pm ib$, $c+\eta=\pm id$ each leave a single equation, linear in $d$, in $b,d,w$. In the inert case both shifted norm-zero equations force $(a,b,c,d)=(-\eps,0,-\eta,0)$, and then $w=0$.
+
+Let $L_j=a^2+b^2+\gamma_jw^2$, where the distinct integers $\gamma_1,\ldots,\gamma_k$ include $0,-\kappa$. Outside a fixed finite prime set $S$, containing the divisors of $2\kappa\prod_{i<j}(\gamma_i-\gamma_j)$, the fraction $g(p)$ of nonzero quadric residues on which $\prod_jL_j=0$ is
+\begin{equation}\label{an:eq:localg}
+ g(p)=\frac{k+2\chi(p)}p+O_k(p^{-2})\ \t{with}\  \chi(p)=\left(\frac{-1}p\right)=(-1)^{(p-1)/2}.
+\end{equation}
+Here and below $S$ may be enlarged by finitely many small primes. For an explicit verification, put $\nu_0=p+(p-1)\chi(p)$. The numerator of $g(p)$ is
+\begin{equation}\label{an:eq:exactlocal}
+ (p-1)(p-\chi(p))\bigl(2\nu_0+(k-2)(p-\chi(p))\bigr)+\nu_0^2-1,
+\end{equation}
+and the denominator is $p^4-1$. For an intermediate $L_j$, its zero count is $(p-1)(p-\chi)^2+\nu_0^2$; for either norm position it is $\nu_0((p-1)(p-\chi)+\nu_0)$. All pairwise intersections coincide with $w=0$ and both norms zero, a set of size $\nu_0^2$. Inclusion--exclusion and removal of the origin give \eqref{an:eq:exactlocal}.
+
+Let $\psi$ be a nonnegative smooth function of compact support away from the singular point of the real cone. The real density is
+\[
+ \sigma_\infty(\psi)=\int_{Q_\kappa(\mathbf x)=0}
+       \frac{\psi(\mathbf x)}{\|\nabla Q_\kappa(\mathbf x)\|}\,dS(\mathbf x),
+\]
+where $dS$ is Euclidean surface measure. For a prime $p$, the full cone density is
+\[
+ \sigma_p=\lim_{e\to\infty}p^{-4e}
+       \#\{\mathbf x\bmod p^e:Q_\kappa(\mathbf x)=0\}.
+\]
+These are the normalizations in \cite[Section 4]{BL}. For squarefree $m$ supported outside $S$, choose arbitrary subsets $\Omega_p$ of the nonzero quadric residues. Browning--Loughran's estimate, followed by primitive-vector inversion, gives
+\begin{equation}\label{an:eq:primitive}
+ \sum_{\substack{\mathbf x\in\Z^5_{\rm prim},\ Q_\kappa(\mathbf x)=0\\
+                  \mathbf x\bmod p\in\Omega_p\ (p\mid m)}}
+ \psi(\mathbf x/B)
+ =C_\kappa\sigma_\infty(\psi)B^3
+     \prod_{p\mid m}\frac{|\Omega_p|}{p^4-1}
+ +O_{\kappa,\psi,\varepsilon}(B^{5/2+\varepsilon}m^{5/2+\varepsilon}).
+\end{equation}
+The constant $C_\kappa>0$ is independent of $m,\psi$ and the residue subsets. Here $\Z^5_{\rm prim}$ denotes vectors with coordinate gcd one.
+
+We detail the inversion because the collision conditions are not homogeneous. For a common scaling divisor $h$, the congruence subsets become $h^{-1}\Omega_p$. If $p\mid h$ there is no contribution, since $0\notin\Omega_p$; otherwise their cardinalities are unchanged. Apply \cite[Theorem 4.1]{BL} at scale $B/h$ and sum with $\mu(h)$, where $\mu$ denotes the M\"obius function in this sieve argument. The errors are summable since $\sum h^{-5/2-\varepsilon}<\infty$. The main sum contributes $\prod_{p\nmid m}(1-p^{-3})$, with a truncation error $O(B)$. At a good prime the full cone density is
+\[
+ \sigma_p=\frac{1-p^{-4}}{1-p^{-3}}.
+\]
+This identity follows by separating primitive residues from vectors divisible by $p$. Thus the primitive local factors are $1-p^{-4}$ and the prescribed-residue ratio is exactly $|\Omega_p|/(p^4-1)$. Finitely many bad-prime factors are absorbed into $C_\kappa$. The uniformity in the subsets in the published theorem justifies applying it to every $h^{-1}\Omega_p$.
+
+\subsection{The intermediate prime range}\label{an:sec:medium}
+We prove an upper bound retaining all $k$ prime conditions. Work in a region with both norm coordinates between fixed positive multiples of $B^2$, with every $L_j$ between such multiples, and with $|w|\le\tau B$, where $0<\tau\le\tau_0$. Choose a smooth majorant $\psi_\tau$ with this support enlarged by fixed factors and with
+\begin{equation}\label{an:eq:realmass}
+ \sigma_\infty(\psi_\tau)\ll_\kappa\tau.
+\end{equation}
+The implied constant can be uniform in $\tau$. To see this, use polar coordinates in $(a,b)$ and $(c,d)$ on the support. Integrating the delta constraint $r_1^2-r_2^2-\kappa w^2=0$ cancels the factor $r_2$ in the second polar measure. The remaining radial and angular integrals are bounded, and the $w$-interval has length $O(\tau)$. Bounds for derivatives of $\psi_\tau$ may depend on $\tau$; they will remain in error constants.
+
+\begin{lemma}\label{an:lem:G}
+For $g$ in \eqref{an:eq:localg}, after a fixed enlargement of $S$ we have $0<g(p)<1$. Put $h(p)=g(p)/(1-g(p))$, extend $h$ multiplicatively on squarefree integers, and omit a further arbitrary prime $\ell\notin S$. Then
+\[
+ G_\ell(z):=\sum_{\substack{d<z\text{ squarefree}\\p\mid d\Rightarrow p\notin S\cup\{\ell\}}}h(d)
+ \gg (\log z)^k
+\]
+uniformly in $\ell$.
+\end{lemma}
+\begin{proof}
+The classical prime estimates
+\[
+ \sum_{p\le y}\frac1p=\log\log y+O(1),\qquad
+ \sum_{p\le y}\frac{\chi(p)}p=O(1),\qquad
+ \sum_{p\le y}\frac{\log p}{p}\ll\log y
+\]
+follow from Mertens' theorem and the prime number theorem in the fixed progressions modulo four; see \cite{Dav}. Together with \eqref{an:eq:localg} they give
+\[
+ \prod_{\substack{p\le y\\p\notin S\cup\{\ell\}}}(1+h(p))\asymp(\log y)^k
+\]
+uniformly in the omitted prime; its single factor is bounded. Take $y=z^a$ for a sufficiently small fixed $a>0$. Normalize the terms in this Euler product to a probability distribution on squarefree products $d$ of these primes. Its expected $\log d$ is $\sum g(p)\log p\ll_k\log y$. With $a$ small enough it is at most $\tfrac12\log z$. At least half the mass therefore has $d<z$, up to an immaterial adjustment of $a$. These terms occur in $G_\ell(z)$.
+\end{proof}
+
+For fixed $\ell\notin S$, impose the collision residues $\Omega_\ell$ and sieve $\prod_jL_j$ by primes outside $S\cup\{\ell\}$. Every vector with both norm coordinates prime is primitive, so \eqref{an:eq:primitive} applies to all vectors being counted. For squarefree $d$ coprime to $\ell$, the count with $d\mid\prod_j L_j$ has the form
+\begin{equation}\label{an:eq:sievesequence}
+ A_{\ell,d}=X_\ell g(d)+r_{\ell,d},\qquad
+ X_\ell\ll\frac{\tau B^3}{\ell^2},\qquad
+ r_{\ell,d}\ll_{\tau,\varepsilon} B^{5/2+\varepsilon}(\ell d)^{5/2+\varepsilon}.
+\end{equation}
+All fixed polynomial data may enter these constants, but $\ell,d$ do not.
+
+For clarity, the required Selberg weights can be written explicitly:
+\[
+ \lambda_d=\frac{\mu(d)}{G_\ell(z)}
+   \prod_{p\mid d}(1-g(p))^{-1}
+   \sum_{\substack{r<z/d\\(r,d)=1}}h(r),
+\]
+with all integers in the sums squarefree and supported on the sieving primes; other weights are zero. They satisfy $\lambda_1=1$, $|\lambda_d|\ll_\varepsilon d^\varepsilon$, and
+\begin{equation}\label{an:eq:selbergmain}
+ \sum_{d,e<z}\lambda_d\lambda_e g([d,e])=G_\ell(z)^{-1}.
+\end{equation}
+Here $[d,e]=\lcm(d,e)$. The identity follows by writing the quadratic form as
+\[
+ \sum_r\frac1{h(r)}
+       \(\sum_{r\mid d}\lambda_dg(d)\)^2
+\]
+and applying finite divisor inversion. The bound for $\lambda_d$ follows from $g(p)\ll_k1/p$ and the fact that its inner sum is at most $G_\ell(z)$.
+
+On prime vectors, every $L_j\asymp B^2$ exceeds $z$, so the square of $\sum_{d\mid\prod L_j}\lambda_d$ is one. It bounds their indicator from above on the whole sequence. Applying \eqref{an:eq:selbergmain} and Lemma~\ref{an:lem:G} yields
+\begin{equation}\label{an:eq:oneell}
+ \#\{\text{prime vectors with collision at }\ell\}
+ \ll \frac{\tau B^3}{\ell^2(\log z)^k}
+ +O_{\tau,\varepsilon}\bigl(B^{5/2+\varepsilon}\ell^{5/2+\varepsilon}z^{7+4\varepsilon}\bigr).
+\end{equation}
+For the error, use $[d,e]\le de$ and sum the absolute values in \eqref{an:eq:sievesequence}; no cancellation of remainders is assumed.
+
+Set $z=B^{1/100}$ and $\delta=1/100$. Sum \eqref{an:eq:oneell} over $L<\ell\le B^\delta$, with $L$ beyond $S$. Since $\sum_{\ell>L}\ell^{-2}\ll1/(L\log L)$, the main term is
+\begin{equation}\label{an:eq:mediummain}
+ \ll\frac{\tau B^3}{(\log B)^kL\log L}.
+\end{equation}
+With, for example, $\varepsilon=1/1000$, the summed error has exponent at most
+\[
+ \frac52+\varepsilon+\frac{7+4\varepsilon}{100}
+       +\frac{7/2+\varepsilon}{100}<\frac{27}{10}.
+\]
+Thus its contribution, even after multiplication by $(\log B)^k$, is $O_\tau(B^{14/5})$. The constants in the main term are independent of $\tau,L$.
+
+The self-gcd case uses an ordinary lattice sieve in $(a,b,w)$, because an odd prime dividing both orders divides $a$ and $b^2+1$. The collision set modulo $\ell$ has at most $2\ell$ elements. For the prime forms $a^2+b^2+\gamma_jw^2$, with exactly one $\gamma_j=0$, their union of zero loci has density
+\[
+ g_0(p)=\frac{k+\chi(p)}p+O_k(p^{-2}).
+\]
+Indeed its exact cardinality is $(k-1)p^2+(p-k+1)\nu_0$. The same Euler-product proof gives sieve denominator $\gg(\log z)^k$. For arbitrary residue subsets modulo $m$, smooth lattice counting has error $O_\tau(B^2m+Bm^2+m^3)$, obtained by summing the boundary error of the residue-class boxes. Taking $m=\ell[d,e]\le B^{3/100}$, and summing over $\ell,d,e$, gives an error smaller than $B^{27/10}$. This proves the counterpart of \eqref{an:eq:mediummain} for self-gcds as well.
+
+\begin{proposition}\label{an:prop:fulltail}
+Fix distinct integers $c_1,\ldots,c_k$. For $N=B^2$, consider
+\[
+ N/2<u\le N,\qquad 1\le w\le\tau B,
+ \qquad p_j=u+c_jw^2,
+\]
+with $\tau_0$ small enough that all $p_j\asymp N$. Restrict, if desired, to any fixed ray-class conditions under which the norms have chosen Gaussian generators. Give each prime pattern weight $\prod_j\log p_j$. There are constants $L_0,C$ independent of $\tau,L$ such that the total weight of patterns with a self- or cross-order obstruction prime greater than $L\ge L_0$ is at most
+\begin{equation}\label{an:eq:weightedtail}
+ \frac{C\tau B^3}{L\log L}
+       +O_\tau(B^{3-1/400}).
+\end{equation}
+An obstruction means an odd common divisor of $d_j^+,d_j^-$, or of an order at one position and an order at another.
+\end{proposition}
+\begin{proof}
+For a fixed cross pair, choose its two Gaussian representations and set $\kappa=c_j-c_h$. Their coordinates lie on \eqref{an:eq:quadric}; every other prime form has coefficient $\gamma_i=c_i-c_j$. A pattern maps injectively to such vectors after a deterministic choice of generators: $u$ is recovered from the first norm and $w$. There are finitely many pairs and sign choices. Apply the medium-prime estimate to each, multiplying by $O((\log B)^k)$. Apply Corollary~\ref{an:cor:weightedlarge} for primes greater than $B^{1/100}$. Its bound is $O(B^{3-1/200})$, which is absorbed by the displayed error. The self-gcd large-prime bound is included in Appendix~\ref{an:app:large}. Ray restrictions may be dropped in upper bounds. If $L>B^{1/100}$, the large-prime estimate alone suffices.
+\end{proof}
+
+\section{Polynomial patterns with fixed Artin conditions}\label{an:sec:transfer}
+\subsection{The weights and the counting statement}
+Let $\mathcal K/\Q$ be a fixed finite Galois extension. Write $\mathcal K^{\rm ab}$ for its maximal subextension abelian over $\Q$, and let $\mathcal C_1,\ldots,\mathcal C_k$ be conjugacy-invariant subsets of $\Gal(\mathcal K/\Q)$. For an unramified rational prime $p$, $\operatorname{Frob}_p$ denotes its Frobenius conjugacy class. Define, on all integers,
+\[
+ \Lam_j(n)=\begin{cases}\log p&\t{if}\ n\ \text{is an unramified prime}\ p\ \t{with}\ \operatorname{Frob}_p\subseteq\mathcal C_j,\\0&\text{otherwise.}\end{cases}
+\]
+Let $D$ be divisible by the conductor of $\mathcal K^{\rm ab}$, namely the least $d$ such that $\mathcal K^{\rm ab}\subseteq\Q(\zeta_d)$, where $\zeta_d$ is a primitive $d$th root of unity. For $(b,D)=1$, let $\sigma_b(\zeta_D)=\zeta_D^b$, and put
+\begin{equation}\label{an:eq:conditionalmu}
+ \mu_j(b)=\frac{\#\{g\in\mathcal C_j:
+    g|_{\mathcal K^{\rm ab}}=\sigma_b|_{\mathcal K^{\rm ab}}\}}
+    {[\mathcal K:\mathcal K^{\rm ab}]}.
+\end{equation}
+Set $\mu_j(b)=0$ on nonunit classes. Chebotarev applied to $\mathcal K\Q(\zeta_D)$ identifies $\mu_j(b)\in[0,1]$ with the conditional density among primes congruent to $b$ modulo $D$. In the notation of \cite[(1.10)--(1.12)]{FT}, it is the sum of $\varphi(D)\eta_{\mathcal K,C}(b,D)$ over conjugacy classes $C\subseteq\mathcal C_j$. Here $\varphi$ is Euler's totient.
+
+For a finite nonempty set or multiset $X$, $\mathbb E_{x\in X}$ denotes its normalized average, counting multiplicities. Write $[J]=\{1,\ldots,\lfloor J\rfloor\}$ and $1_{\mathcal A}$ for the indicator of a condition $\mathcal A$. Constants may depend on the fixed field, subsets and coefficients. These data never vary with the counting parameter.
+
+\begin{proposition}\label{an:prop:Artinpoly}
+Fix $k\ge2$ and distinct integers $c_1,\ldots,c_k$. There is a positive function $\omega(N)\to0$ such that, for every integer-valued $T=T(N)$ satisfying
+$ \omega(N)\sqrt N\le T$ and $ T=o(\sqrt N)$,
+one has
+\begin{equation}\label{an:eq:artinasymptotic}
+ \sum_{1\le u\le N}\sum_{1\le w\le T}\prod_{j=1}^k\Lam_j(u+c_jw^2)
+ =\mathfrak S\,NT+o(NT),
+\end{equation}
+where
+\begin{equation}\label{an:eq:Artinconstant}
+ \mathfrak S=
+ \left(\frac D{\varphi(D)}\right)^k
+ \mathbb E_{u,w\bmod D}\prod_j\mu_j(u+c_jw^2)
+ \prod_{p\nmid D}\beta_p,
+\end{equation}
+and
+\[
+ \beta_p=\mathbb E_{u,w\bmod p}
+    \prod_{j=1}^k\frac p{p-1}1_{p\nmid u+c_jw^2}.
+\]
+The Euler product converges absolutely. After enlarging $\omega$ if necessary, the same assertion holds on $N/2<u\le N$, with main term $\mathfrak S NT/2$.
+\end{proposition}
+
+We adapt the transference argument of \cite{TZpoly}, replacing its arithmetic input by the unconditional linear Artin-symbol theorem \cite[Theorem 1.4]{FT}. We specify both the norms and the scales needed for this adaptation.
+
+\subsection{Difference-multiset norms and global uniformity}
+For finite multisets $Q_1,\ldots,Q_a$ in $\Z/n\Z$ and a real function $g$ on that group, define
+\begin{equation}\label{an:eq:boxnormdef}
+ \|g\|_{\Box^a_{Q_1,\ldots,Q_a}}^{2^a}
+ =\mathbb E_{x\in\Z/n\Z}
+   \mathbb E_{\substack{h_i,h'_i\in Q_i\\1\le i\le a}}
+   \prod_{\omega\in\{0,1\}^a}
+       g\left(x+\sum_i\omega_i(h_i-h'_i)\right).
+\end{equation}
+Write $\|g\|_{U^a_Q}$ when every $Q_i=Q$. These are the box and progression Gowers norms of \cite[Section 1.8]{TZpoly}; they satisfy the triangle inequality. The difference multiset $Q_i-Q_i$ counts differences with their ordered-pair multiplicities. A one-sided increment average from $Q_i$ would not be the norm in \eqref{an:eq:boxnormdef}.
+
+Fix $0<\rho<1$ and, initially, a large fixed cutoff $v$. Put
+\begin{equation}\label{an:eq:analyticW}
+ W=D\prod_{p\le v,\ p\nmid D}p,\qquad A=W^{1/\rho},\qquad R=n^\rho.
+\end{equation}
+For $b\in[W]$ coprime to $W$, define on $\Z/n\Z$, using representatives in $[n]$, we have
+\begin{equation}\label{an:eq:modifiedweight}
+ f_{j,b}(x)=\frac{\varphi(W)}W\Lam_j(Wx+b)1_{R\le x\le n}\ \ \t{and}\ \ g_{j,b}=f_{j,b}-\mu_j(b).
+\end{equation}
+Arguments of $\mu_j$ are reduced modulo $D$. Since $D\mid W$, one has $\mathcal K\cap\Q(\zeta_W)=\mathcal K^{\rm ab}$.
+
+\begin{lemma}\label{an:lem:Artinuniform}
+Fix $a\ge2$ and positive constants $C_1<C_2<C_3$. Uniformly for
+\[
+ 1\le q\le A^{C_1},\qquad
+ nA^{-C_3}\le J\le nA^{-C_2},\qquad (b,W)=1,
+\]
+one has
+\begin{equation}\label{an:eq:globaluniform}
+ \|g_{j,b}\|_{U^a_{q[J]}}^{2^a}
+ \ll \frac1{\log v}+o_v(1).
+\end{equation}
+Here $o_v(1)\to0$ as $n\to\infty$ with $v$ fixed; the implied constant is independent of $v,n,b,q,J$. A sufficiently slow diagonal choice $v\to\infty$ therefore makes these norms $o(1)$.
+\end{lemma}
+\begin{proof}
+Expand the norm with independent $\boldsymbol h,\boldsymbol h'\in[J]^a$. For a nonempty vertex set $I$, consider the correlation of $f_{j,b}$ at those vertices. To handle cyclic reduction, partition the box according to the integers $m_\omega$ for which
+\[
+ y_\omega=x+q\omega\cdot(\boldsymbol h-\boldsymbol h')-m_\omega n
+ \quad\text{lies in }(0,n].
+\]
+For large $v$, $aqJ<n$, so $m_\omega\in\{-1,0,1\}$. Add $y_\omega\ge R$ for $\omega\in I$. Each cell is convex, and its prime arguments are
+\begin{equation}\label{an:eq:wrappedforms}
+ L_\omega=W\bigl(x+q\omega\cdot(\boldsymbol h-\boldsymbol h')-m_\omega n\bigr)+b.
+\end{equation}
+Their linear parts are pairwise nonproportional over $\Q$: their common $x$ coefficient forces a proportionality constant to be one, and then the step coefficients force equality of the vertices. Thus the system has finite complexity.
+
+Apply \cite[Theorem 1.4 and (1.15)]{FT} on each cell, expanding $\mathcal C_j$ into its finitely many conjugacy classes. The coefficients and the constant terms divided by $n$ are bounded in terms of fixed $v$. Uniformity over bounded-size systems and convex regions gives error $o_v(n^{2a+1})$, even as $m_\omega n$ and $J$ vary. Since $J\asymp_v n$, this is $o_v(nJ^{2a})$.
+
+All forms are $b$ modulo $W$. After multiplication by $(\varphi(W)/W)^{|I|}$, the Artin factor is $\mu_j(b)^{|I|}$ and the factors at primes dividing $W$ cancel. For $p>v$ with $p\nmid q$, the linear parts remain pairwise nonproportional over $\F_p$. Each zero hyperplane has density $1/p$, and each pairwise intersection has density $1/p^2$. Inclusion--exclusion gives a local factor $1+O_a(p^{-2})$, uniformly in the constant terms. At $p\mid q$ it is $1+O_a(p^{-1})$. These factors are positive for large $v$. Since $\log q\le C_1\log A=O(v)$, there are $O(v/\log v)$ prime divisors of $q$ exceeding $v$. The product of all factors outside $W$ is consequently $1+O(1/\log v)$, uniformly in the cells. The bound $\sum_{p\le v}\log p\ll v$ used here is the classical Chebyshev estimate; see \cite{Dav}.
+
+Before the cutoff, the cells fill the original box up to boundaries. For fixed step variables, translation modulo $n$ preserves Lebesgue measure in $x$. The cutoffs remove at most $|I|R/n$ of the normalized volume. Endpoint changes give $o_v(1)$. Thus the volumes sum to $1+o_v(1)$ after normalization, and summing the local-factor errors does not enlarge their order.
+
+The weights in \cite{FT} include proper prime powers. For fixed steps and one vertex, the nonzero $x$ coefficient $W$ and the range $O_v(n)$ allow at most $O_v(n^{1/2}\log n)$ such values. Bound the remaining factors by $O_v(\log n)$ and sum over steps. The normalized error is $O_v(n^{-1/2}(\log n)^{2^a+1})=o_v(1)$. We obtain
+\[
+ \mathbb E_x\mathbb E_{\boldsymbol h,\boldsymbol h'\in[J]^a}
+ \prod_{\omega\in I}
+ f_{j,b}\bigl(x+q\omega\cdot(\boldsymbol h-\boldsymbol h')\bigr)
+ =\mu_j(b)^{|I|}+O\l(\f1{\log v}\r)+o_v(1).
+\]
+The empty correlation is one. The centered main terms cancel, since
+\[
+ \sum_{I\subseteq\{0,1\}^a}
+  (-\mu_j(b))^{2^a-|I|}\mu_j(b)^{|I|}=0.
+\]
+This proves \eqref{an:eq:globaluniform}. For fixed $v$ there are finitely many residues, $q$ values and vertex systems; uniformity in the convex region already covers the varying $J$. A slow diagonal choice proves the last assertion.
+\end{proof}
+
+\subsection{The majorant, local scales, and the \texorpdfstring{$W$}{W}-trick}
+
+
+\begin{proof}[Proof of Proposition~\ref{an:prop:Artinpoly}]
+Let $\Lambda'_{\rm pr}(n)$ equal $\log n$ on positive primes and zero otherwise, and put
+\[
+ \Lambda'_{b,W;\kappa}(x)=\frac{\varphi(W)}W
+       \Lambda'_{\rm pr}(Wx+b)1_{n^\kappa\le x\le n}
+       \qquad(0<\kappa<1).
+\]
+Then $0\le f_{j,b}\le\Lambda'_{b,W;\rho}$. Fix the polynomial complexity first. Let $D',C$ be bounds for the local norm order and coefficient exponents in the generalized von Neumann theorem below. Choose an integer $B>C+2$ large enough for all the finitely many coefficient bounds, and a global norm order $a\ge2$ sufficiently large for the corresponding applications of \cite[Theorem 2.5 and Corollary 3.9]{TZpoly}. Next choose $0<\rho<1$ sufficiently small for all applications of \cite[Sections 3--4]{TZpoly}, and put $\rho_* =\rho/B$. All these constants are fixed before $v,n,N$ vary.
+
+\emph{The ordinary majorants.}
+For $\kappa\in\{\rho,\rho_*\}$, put $R_\kappa=n^\kappa$ and use the majorant of \cite[(3.5)]{TZpoly}:
+\[
+ \nu_{b,\kappa}(x)=\frac{\varphi(W)}W\log R_\kappa
+ \left(\sum_{d\mid Wx+b}\mu(d)
+             \chi_0\left(\frac{\log d}{\log R_\kappa}\right)\right)^2.
+\]
+Here $\mu$ is the M\"obius function, and $\chi_0$ is smooth, even, supported on $[-1,1]$, positive at zero, with $\int_0^1|\chi'_0(t)|^2\,dt=1$. It is distinct from the quadratic character $\chi(p)$ in Section~\ref{an:sec:counts}. If $x$ belongs to the support of $\Lambda'_{b,W;\kappa}$, then $Wx+b$ is prime and exceeds $R_\kappa$. Only the divisor $d=1$ contributes to the displayed sum. For the slow choice $W=n^{o(1)}$, we therefore have, uniformly in $b,v,n$,
+\[
+ \Lambda'_{b,W;\kappa}\ll_\kappa\nu_{b,\kappa},
+ \qquad
+ f_{j,b}\le\Lambda'_{b,W;\rho}
+       \le\Lambda'_{b,W;\rho_*}.
+\]
+Use $\kappa=\rho$ for the generalized von Neumann argument and $\kappa=\rho_*$ for the dense-model argument. These two invocations need not use the same majorant. Neither majorant imposes an Artin condition.
+
+\emph{The fixed conductor factor.}
+The statements in \cite[Sections 3--4]{TZpoly} use the squarefree primorial $W_0=\prod_{p\le v}p$. Once $v$ exceeds all prime divisors of $D$, our modulus is
+\[
+ W=E_DW_0,\qquad
+ E_D=\prod_{p\mid D}p^{v_p(D)-1},
+ \qquad \frac{\varphi(W)}W=\frac{\varphi(W_0)}{W_0}.
+\]
+The multiplier $E_D$ is fixed throughout the counting limit. We use the corresponding extension of the proof of the polynomial-forms condition in \cite[Appendix A]{TZpoly}, rather than a literal application of its squarefree-$W$ statement. To verify this extension, note first that $(b,W)=1$ excludes every prime dividing $W$ from the divisors in the majorant. The local factors at these primes and the normalization $\varphi(W)/W$ are unchanged. At a prime outside $W$, multiplication by $E_D$ is invertible. The divisor-sum argument consequently has the same local factors and the same estimates for exceptional primes dividing all nonconstant coefficients of a polynomial difference. Multiplication by fixed $E_D$ preserves the fixed-power coefficient bounds used there. The polynomial-forms estimates thus hold with constants allowed to depend on fixed $D$. The dense-model and generalized von Neumann arguments of \cite[Corollary 3.9 and Theorem 4.1]{TZpoly} then apply with these majorants. Lemma~\ref{an:lem:Artinuniform} has already supplied the required Artin correlations directly for this $W$.
+
+\emph{A precise scale choice.}
+Set $n=\lfloor N/W\rfloor$ and $M_0=\lfloor T/W\rfloor$. Choose the eventual slow threshold so that
+\begin{equation}\label{an:eq:outerthreshold}
+ T/\sqrt N\ge4\sqrt W/A\ \ \t{and}\ \ T\le\sqrt N
+\end{equation}
+for sufficiently large $N$. Its lower bound tends to zero. The integer scales then satisfy
+\begin{equation}\label{an:eq:innerscales}
+ A^{-1}\sqrt n\le M_0\le\sqrt n\ \ \t{and}\ \
+ A^{-3}\sqrt n\le M=\lfloor A^{-1}M_0\rfloor\le\sqrt n.
+\end{equation}
+The exponent $-3$ absorbs floors. Choose $v$ slowly enough that every fixed power of $A$ is smaller than every fixed positive power of $n$.
+
+The generalized von Neumann theorem \cite[Theorem 4.1]{TZpoly}, with $d=d_0=2$ and one step variable, bounds a correlation containing a centered factor by a positive fixed power of an averaged local box norm of that factor, plus $o(1)$. Its local norm is of the form
+\begin{equation}\label{an:eq:localnormtarget}
+ \mathbb E_{h\in[M]}
+    \|g_{j,b}\|_{\Box^{D'}_{P_1(h)[-M,M],\ldots,P_{D'}(h)[-M,M]}}.
+\end{equation}
+Here $D'$ is bounded in terms of the original complexity, each $P_i$ is an integral polynomial of degree exactly one, and its coefficients are $O(A^C)$ for fixed $C$, as in (4.1) of that source. All multisets are reduced modulo $n$; endpoint rounding in $M$ is harmless.
+
+With the fixed $B$ and $\rho_*$ chosen above, put
+\[
+ \mathcal A=A^B=W^{1/\rho_*}.
+\]
+Use the arbitrary-function part of \cite[Theorem 3.1 and Corollary 3.9]{TZpoly} with coefficient parameter $\mathcal A$ and majorant $\nu_{b,\rho_*}$. It applies because $f_{j,b}\le\Lambda'_{b,W;\rho_*}$: the original cutoff $n^\rho$ is larger. Moreover,
+\[
+ (\log n)^{1/\rho_*}\le M\le(\mathcal A n)^{1/2}
+\]
+for sufficiently slow $v$, and all coefficients in \eqref{an:eq:localnormtarget} are at most $\mathcal A$ for large $v$.
+
+Corollary 3.9 supplies a bounded function $f'_{j,b}$ such that $f_{j,b}-f'_{j,b}$ is $o(1)$ both in the averaged local norms in \eqref{an:eq:localnormtarget} and in
+\begin{equation}\label{an:eq:progressionscale}
+ U^a_{q[J]},\qquad q\le\mathcal A^a,\qquad
+ J=\lfloor\mathcal A^{-2a}M^2\rfloor.
+\end{equation}
+The same function $f'_{j,b}$ controls both kinds of norms. It may depend on the selected local polynomial system; a single model for every possible system is not needed. The integer $a$ was fixed sufficiently large for the largest local complexity before choosing $\rho$. By \eqref{an:eq:innerscales}, we have
+\[
+ nA^{-2Ba-7}\le J\le nA^{-2Ba}\ \ \t{and}\ \  q\le A^{Ba}.
+\]
+Lemma~\ref{an:lem:Artinuniform}, with $(C_1,C_2,C_3)=(Ba,2Ba,2Ba+7)$, makes $f_{j,b}-\mu_j(b)$ small in exactly these progression norms.
+
+By the triangle inequality the same is true of $f'_{j,b}-\mu_j(b)$. Divide by a fixed bound and apply \cite[Theorem 2.5]{TZpoly} with $(d,d_0,r)=(2,2,1)$, coefficient bound $\mathcal A$ and step length $M$. Its condition $n>\mathcal A^{-1}M^2$ follows from $M\le\sqrt n$. The remaining lower bound on $M$ holds for large $n$ at every fixed $v$. For each desired local error $\eps>0$, the smallness threshold $\delta$ in that theorem is independent of $\mathcal A$; the required lower bound on $\mathcal A$ may depend on $\eps,\delta$. Thus first take $v$ large enough to meet that bound and make the $O(1/\log v)$ contribution in Lemma~\ref{an:lem:Artinuniform} sufficiently small, and then take $n$ large enough to control its $o_v(1)$ term and the size conditions. The dense-model errors are handled by the same slow diagonal choice. This yields averaged local norms of $f'_{j,b}-\mu_j(b)$ tending to zero. Adding the dense-model error proves that \eqref{an:eq:localnormtarget} is $o(1)$. No quantitative rate for the Artin theorem is required, and the special second part of \cite[Theorem 3.1]{TZpoly} has not been used outside its stated range.
+
+\emph{Polynomial counting.}
+Call residues $b,c\in[W]$ admissible when $(b+c_jc^2,W)=1$ for every $j$. Choose $b_j\in[W]$ congruent to $b+c_jc^2$ and write
+\begin{equation}\label{an:eq:innerpolys}
+ W x+b+c_j(Wm+c)^2=W(x+R_j(m))+b_j.
+\end{equation}
+Explicitly,
+\[
+ R_j(m)=c_jWm^2+2c_jcm+\frac{b+c_jc^2-b_j}{W}.
+\]
+Its coefficients are integers of size $O_{\boldsymbol c}(W)$, hence at most $A$ for large $v$. The leading coefficient of $R_j-R_l$ is $(c_j-c_l)W\ne0$. These verify the coefficient and degree hypotheses of \cite[Theorem 4.1]{TZpoly}. Expand the product of $f_{j,b_j}$ into constant models and centered terms. Its constant term is $\prod_j\mu_j(b_j)$; all other terms are $o(1)$ by that theorem and \eqref{an:eq:localnormtarget}. The factors are bounded by a fixed multiple of $\Lambda'_{b_j,W;\rho}+1$, as required. A term with only one centered factor is its mean, which tends to zero by the linear Artin theorem. Thus, uniformly over admissible residues,
+\[
+ \mathbb E_{x\in\Z/n\Z}\mathbb E_{m\in[M_0]}
+       \prod_j f_{j,b_j}(x+R_j(m))
+   =\prod_j\mu_j(b_j)+o(1).
+\]
+
+\emph{Removing the $W$-trick.}
+Use the residue decomposition and endpoint estimates in \cite[Section 5, proof of Theorem 1.4]{TZpoly}. The shifts in the outer variable have size $O_{\boldsymbol c}(T^2)=o(N)$. The endpoint strips and cutoff contributions are bounded by their ordinary-prime counterparts there, since $0\le\Lam_j\le\Lambda'_{\rm pr}$. On inadmissible residues a prime value must divide $W$, again giving a negligible contribution. Floors in residue lengths contribute $o(NT)$ for sufficiently slow $v$.
+
+Summing uniform errors over residues causes no loss, because the ordinary admissible mass satisfies
+\begin{equation}\label{an:eq:admissiblemass}
+ \left(\frac W{\varphi(W)}\right)^k
+  \frac{\#\{(b,c)\bmod W:\ (b,c)\text{ admissible}\}}{W^2}
+   =\prod_{p\mid W}\beta_p=O_{\boldsymbol c}(1).
+\end{equation}
+This also holds for prime powers in $W$, since the unit conditions depend only on the underlying prime. The bound follows from convergence below.
+
+Define $\mu_{j,W}(b)=1_{(b,W)=1}\mu_j(b\bmod D)$. The leading constant before the limit is
+\[
+ \left(\frac W{\varphi(W)}\right)^k
+   \mathbb E_{u,w\bmod W}\prod_j\mu_{j,W}(u+c_jw^2).
+\]
+The CRT factors it into the finite factor in \eqref{an:eq:Artinconstant} and $\prod_{p\le v,\ p\nmid D}\beta_p$. For primes outside the fixed coefficient differences, count $w=0$ and $w\ne0$ separately to obtain
+\[
+ \beta_p=\left(\frac p{p-1}\right)^k
+             \frac{(p-1)(p-k+1)}{p^2}=1+O_k(p^{-2}).
+\]
+This proves convergence and the constant formula.
+
+All complexity constants, including $a,B,\rho$, are fixed before $v$ grows. The linear counting remainders tend to zero as $n\to\infty$ at fixed $v$, uniformly in the permitted convex regions and scales. The local-factor error $O(1/\log v)$ does not vanish in that limit; it vanishes only when $v$ also grows. The ordinary-majorant, dense-model and transference errors have the same iterated-limit interpretation. For each target error, first choose a sufficiently large cutoff $v$, then a sufficiently large counting threshold. A stepwise choice $v=v(N)\to\infty$ through these thresholds makes all errors tend to zero and enforces all size conditions, uniformly in the allowed $T$. A lower threshold at least $4\sqrt W/A$, enlarged for floors and finitely many initial values, still tends to zero. It defines one $\omega(N)$ valid for every $T$ in the stated range. Apply the asymptotic at $N$ and at $N/2$ with the same $T$; taking the larger of their two slow lower thresholds permits subtraction and gives the last assertion.
+\end{proof}
+
+
+\section{Ray fibres and the finite-cutoff lower bound}\label{an:sec:raylower}
+
+Let $\mathcal O=\Z[i]$. Fix a rational integer modulus $H_0$ divisible by 16 and 7 and by $M$. Enlarge its odd part to contain all primes below a fixed $L_1\ge11$. It is enough to use exponent one at odd primes. Choose a unit residue $r\bmod H_0$ satisfying \eqref{an:eq:ray}, and $r\equiv i$ at the other odd prime factors of $H_0$, apart from 7. These prescriptions are compatible. At 7 the two order norms are 6 and 2; at every other odd factor they are both 2. At 2 the order valuations are 2 and 6.
+
+Let $K_0$ be the Gaussian ray class field of modulus $H_0\mathcal O$, viewed as a Galois extension of $\Q$. Write $G_0=\Gal(K_0/\Q)$, and let $h_r\in\Gal(K_0/\Q(i))$ be the ray class of $r$ under Artin reciprocity. Complex conjugation carries it to $h_{\bar r}$. These two elements are distinct: equality of their ray classes would mean $r=u\bar r\bmod H_0$ for a Gaussian unit $u$; reduction modulo 16 forces $u=1$, whereas their residues modulo 7 differ. Thus
+\[
+ \mathcal C_0=\{h_r,h_{\bar r}\}
+\]
+is a nonempty conjugacy class in $G_0$. A rational norm prime in this class has a Gaussian prime generator congruent to $r$, after conjugating the prime ideal if necessary. Put $G_0'=[G_0,G_0]$, where $[G,G]$ denotes the commutator subgroup of a group $G$. Let $D_0$ be the conductor of $K_0^{\rm ab}$. The two elements of $\mathcal C_0$ have the same restriction to this abelian subfield. Choose a unit class $b_0\bmod D_0$ inducing that restriction. The conditional density defined in \eqref{an:eq:conditionalmu} is
+\[
+ \mu_0=\frac{|\mathcal C_0|}{|G_0'|}>0.
+\]
+The existence of $b_0$ follows from the surjectivity of the restriction map from $\Gal(\Q(\zeta_{D_0})/\Q)$ to $\Gal(K_0^{\rm ab}/\Q)$.
+
+For $L>L_1$, put $T_L=\prod_{L_1<\ell\le L,\ \ell\nmid H_0}\ell$ and let $K_L$ be the ray field of modulus $H_0T_L\mathcal O$. A class above $h_r$ is normalized to have base residue $r$; a class above $h_{\bar r}$ is normalized to have base residue $\bar r$. In addition to the base condition, require that neither $\Nm(1+\pi)$ nor $\Nm(1-\pi)$ is divisible by any $\ell\mid T_L$, using these normalized residues. The following lemma makes the normalization and the resulting density precise.
+
+\begin{lemma}\label{an:lem:rayfibres}
+The maximal abelian subfield of $K_L/\Q$ is
+\[
+ K_L^{\rm ab}=K_0^{\rm ab}\Q(\zeta_{T_L}).
+\]
+Fix a base element in $\mathcal C_0$ and nonzero norm residues $s_\ell\bmod\ell$ for all $\ell\mid T_L$. Its normalized lifts form a Cartesian product of fibres of sizes $\ell-\chi(\ell)$. At each $\ell$, at most four elements of its fibre violate the added order-avoidance condition. In particular, the fibres are independent for uniform counting in this finite group.
+\end{lemma}
+\begin{proof}
+Put
+\[
+ U=\mathcal O^*=\{1,-1,i,-i\},
+ \ A_0=(\mathcal O/H_0\mathcal O)^*,\ 
+ B_\ell=(\mathcal O/\ell\mathcal O)^*,\ 
+  B=\prod_{\ell\mid T_L}B_\ell.
+\]
+The Gaussian class number is one. The ray-class exact sequence and the Chinese remainder theorem give
+\[
+ H_L:=\Gal(K_L/\Q(i))=(A_0\times B)/U\ \ \t{nad}\ \ 
+ \Gal(K_0/\Q(i))=A_0/U,
+\]
+with diagonal action of $U$; see \cite[Chapter V, Theorem 1.7 and Section 3]{Milne}. Since $16\mid H_0$, the map $U\to A_0$ is injective. If a lift of $h_r$ has representative $(ur,\boldsymbol b)$, multiplication by the unique $u^{-1}$ normalizes it to $(r,u^{-1}\boldsymbol b)$. The same holds with $\bar r$ in place of $r$. All units have norm one, so this normalization leaves the new norm residues unchanged. In particular, the kernel of $H_L\to\Gal(K_0/\Q(i))$ is the full group $B$, embedded by $\boldsymbol b\mapsto[(1,\boldsymbol b)]$; there is no further quotient by $U$.
+
+Define
+\[
+ \mathcal N_\ell=\ker(\Nm:B_\ell\to\F_\ell^*)\ \ \t{and}\ \ 
+ \mathcal N=\prod_{\ell\mid T_L}\mathcal N_\ell.
+\]
+The norm maps are onto. If $\ell\equiv1\pmod4$, then $B_\ell\simeq\F_\ell^*\times\F_\ell^*$ and conjugation interchanges the two coordinates. If $\ell\equiv3\pmod4$, then $B_\ell\simeq\F_{\ell^2}^*$ and conjugation is the $\ell$th-power map. Consequently
+$|\mathcal N_\ell|=\ell-\chi(\ell),$
+and the image of $b\mapsto b/\bar b$ is exactly $\mathcal N_\ell$: in the split case it is $(x,y)\mapsto(x/y,y/x)$, and in the inert case it is $z\mapsto z^{1-\ell}$. Set $G_L=\Gal(K_L/\Q)$ and $G_L'=[G_L,G_L]$. Commutators with complex conjugation therefore give $\mathcal N\subseteq G_L'$.
+
+By the norm compatibility of Artin reciprocity, $\Q(\zeta_{T_L})$ is contained in $K_L$, and the restriction of an element of $B$ to it is given by its norm residues; see \cite[Chapter V, Section 3]{Milne}. The kernel of restriction to $K_0\Q(\zeta_{T_L})$ is consequently exactly $\mathcal N$. Since the norms on the factors of $B$ are onto, this compositum has degree $|G_0|\varphi(T_L)$ over $\Q$. Restriction thus identifies
+\[
+ G_L/\mathcal N\simeq
+ G_0\times\prod_{\ell\mid T_L}\F_\ell^*.
+\]
+The new factors are abelian. Taking commutator subgroups, using $\mathcal N\subseteq G_L'$, yields
+\[
+ G_L'/\mathcal N\simeq G_0'\ \ \t{and}\ \ 
+ |G_L'|=|\mathcal N|\,|G_0'|.
+\]
+Taking fixed fields proves the asserted formula for $K_L^{\rm ab}$.
+
+After the base normalization, prescribing all norms leaves a product of norm-one torsors. Each such torsor is a coset of $\mathcal N_\ell$ and has $\ell-\chi(\ell)$ elements. This proves the finite-group independence assertion. Write a residue as $\pi=a+bi$. On the fibre $a^2+b^2=s_\ell$, one has
+\[
+ \Nm(1\pm\pi)=1+s_\ell\pm2a.
+\]
+For each sign, vanishing fixes $a$ and permits at most two values of $b$, so the two conditions exclude at most four residues. Equivalently, in the split case the fibre consists of $(x,s_\ell/x)$, and the forbidden values of $x$ lie in $\{1,-1,s_\ell,-s_\ell\}$. In the inert case a zero norm forces $\pi=1$ or $-1$, possible only if $s_\ell=1$. The representatives $r,\bar r$ are interchanged by conjugation, and $\Nm(1\pm\bar\pi)=\Nm(1\pm\pi)$. Thus the normalized condition defines a conjugacy-invariant subset $\mathcal C_L\subseteq G_L$, as required for rational Artin symbols.
+\end{proof}
+
+The field $K_0$ is ramified only at rational primes dividing $H_0$, so $(D_0,T_L)=1$. A valid conductor multiple for $K_L^{\rm ab}$ is therefore $D_L=D_0T_L$. Let $\mu_L(b)$ be the conditional density \eqref{an:eq:conditionalmu} for $(K_L,\mathcal C_L)$. If $b\equiv b_0\pmod{D_0}$ and $(b,D_L)=1$, each of the $|\mathcal C_0|$ eligible base elements has a fibre of $|\mathcal N|$ lifts with the prescribed abelian restriction. By Lemma~\ref{an:lem:rayfibres}, the proportion of good lifts is at least
+\[
+ \prod_{\ell\mid T_L}
+ \left(1-\frac4{\ell-\chi(\ell)}\right)
+ \ge \prod_{\ell\mid T_L}\left(1-\frac4{\ell-1}\right).
+\]
+Dividing the number of good lifts by $[K_L:K_L^{\rm ab}]=|G_L'|=|\mathcal N|\,|G_0'|$ gives
+\begin{equation}\label{an:eq:muL}
+ \mu_L(b)\ge
+ \mu_0\prod_{\ell\mid T_L}\left(1-\frac4{\ell-1}\right).
+\end{equation}
+Thus no extra factor $[K_L:\Q]^{-1}$ belongs in this conditional density. Every factor is positive since $\ell>L_1\ge11$. Moreover,
+\[
+ \log\left(1-\frac4{\ell-1}\right)
+ =-\frac4\ell+O(\ell^{-2}).
+\]
+Mertens' estimate \cite{Dav}, with the finitely many primes dividing $H_0$ absorbed in the constant, gives
+\begin{equation}\label{an:eq:logcost}
+ \prod_{\ell\mid T_L}\left(1-\frac4{\ell-1}\right)^k
+ \gg_{k,H_0}(\log L)^{-4k}.
+\end{equation}
+It is essential here to retain all good norm-fibre classes, rather than one specified residue at each new prime.
+
+\begin{proposition}\label{an:prop:lower}
+For fixed $L$ and fixed distinct coefficients $c_j$, the weighted count of patterns satisfying the finite-cutoff ray conditions, on $N/2<u\le N$ and  $1\le w\le T$, is
+\[
+ (\mathfrak S_L/2+o_L(1))NT\ \ \t{and}\ \ \mathfrak S_L\ge c(\log L)^{-4k}>0,
+\]
+where $c$ is independent of $L$. The ratio $T/\sqrt N$ must tend to zero sufficiently slowly for this fixed $L$.
+\end{proposition}
+\begin{proof}
+Apply Proposition~\ref{an:prop:Artinpoly} to the conjugacy-invariant subset of $\Gal(K_L/\Q)$ just constructed. In the average modulo $D_0$, keep the single residue pair $u=b_0,w=0$. Then all positions have the compatible norm residue $b_0$. At each new $\ell$, keep all residue pairs for which every $u+c_jw^2$ is a unit, and use \eqref{an:eq:muL} uniformly in those norm residues. Their ordinary local contribution is $\beta_\ell$. The factors $\beta_\ell$ from the new primes and those outside $D_L$ together form the fixed product $\prod_{p\nmid D_0}\beta_p$. It is strictly positive: the residue choice $u=1,w=0$ is admissible at every prime, and the product converges absolutely. More explicitly, the lower bound is
+\[
+ \mathfrak S_L\ge
+ \left(\frac{D_0}{\varphi(D_0)}\right)^k
+ \frac{\mu_0^k}{D_0^2}
+ \prod_{p\nmid D_0}\beta_p
+ \prod_{\ell\mid T_L}\left(1-\frac4{\ell-1}\right)^k.
+\]
+Everything preceding the last product is a fixed positive constant. Equation \eqref{an:eq:logcost} proves the uniform-in-$L$ lower bound for the leading constant. The errors may depend on $L$, which is fixed before $N$ tends to infinity.
+\end{proof}
+
+
+
+\subsection{Closing the limits and proving simultaneous avoidance}\label{an:sec:closing}
+Fix all coefficients, the dilation and base avoidance conditions first; absorb the dilation into the coefficients. Let $L_0$ in Proposition~\ref{an:prop:fulltail} also exceed every exceptional prime in its local calculations. Take a fixed $L\ge\max(L_0,L_1)$ sufficiently large that
+\begin{equation}\label{an:eq:compare}
+ \frac C{L\log L}<\frac c{32(\log L)^{4k}},
+\end{equation}
+where $C$ is the tail constant and $c$ the lower-bound constant. Such an $L$ exists. Fix this $L$, and hence the field $K_L$ and its Artin subset, before making the slow cutoff choice in Section~\ref{an:sec:transfer}. No counting theorem uniform in the degree of $K_L$ is used. The fixed anchor $c_\ast$ of Section~\ref{sec:inputs} is not changed in making this choice.
+
+It remains to choose the short parameter with a valid order of limits. Let $\tau_j\downarrow0$ be positive constants, all at most $\tau_0$. Let $\omega_L(N)$ be a lower threshold valid for the interval version of Proposition~\ref{an:prop:Artinpoly} with the fixed field $K_L$. For each fixed $\tau_j$, the error in \eqref{an:eq:weightedtail}, divided by $\tau_jB^3$, tends to zero. Choose increasing thresholds $N_j$ so large that, for every $N\ge N_j$, this ratio is at most $1/j$, $\omega_L(N)\le\tau_j/2$, and $\tau_j\sqrt N\ge2$. Set $\tau(N)=\tau_j$ for $N_j\le N<N_{j+1}$ and $T=\lfloor\tau(N)\sqrt N\rfloor$. Then $T\ge\tau(N)\sqrt N/2$ and
+\[
+ \tau(N)\longrightarrow0,\qquad T\ge\omega_L(N)\sqrt N
+\]
+and the tail error is $o(NT)$. Thus the same integer-valued $T$ satisfies both the lower-bound hypothesis and the tail estimate, with $L$ fixed first.
+
+For this common choice, Proposition~\ref{an:prop:lower} supplies at least
+$cNT/(4(\log L)^{4k})$ finite-cutoff patterns in weight, for large $N$. Since $B=\sqrt N$ and $T\ge\tau(N)\sqrt N/2$, the main term of the tail in Proposition~\ref{an:prop:fulltail} is at most
+\[
+ \frac{C\tau(N)B^3}{L\log L}
+ \le\frac{2CNT}{L\log L}
+ <\frac{cNT}{16(\log L)^{4k}}.
+\]
+Its $o(NT)$ remainder is smaller than $cNT/(16(\log L)^{4k})$ for all sufficiently large $N$, because $L$ was fixed first. The total removed weight is therefore less than $cNT/(8(\log L)^{4k})$, which is half the stated lower bound. Hence a positive weighted remainder has no odd self- or cross-order obstruction at any prime. All surviving positions are prime by construction.
+
+The base congruences give $v_2(d^+)=2$, $v_2(d^-)=6$. Thus the self-gcds are four and \eqref{an:eq:allcross} holds, with all other cross-gcds powers of two. The congruence $\pi\equiv i\pmod M$ gives both orders congruent to 2 modulo every divisor of $M$. Finally $u\ge N/2$, $w\le T=o(\sqrt N)$, so $u/w^2\to\infty$, while every norm tends to infinity. Restoring the prescribed dilation proves Theorem~\ref{an:thm:patterns} in full.
+
+
+\section{One common slope and one witness group}\label{sec:batches}
+\subsection{Square rescaling and height comparison}
+The finite contacts and $\xi$ are fixed as in Section~\ref{sec:inputs}. We first record why square rescaling preserves the local soundness conditions.
+
+\begin{lemma}\label{lem:parity}
+Let $t\in\Q\setminus\{\theta_0,\ldots,\theta_4,\xi\}$ and $\kappa\in\Q^{\times2}$. Outside the fixed coefficient and difference exceptions, each prime in the five-contact odd radical of $t$ has odd valuation in $\kappa F_5(t)/(t-\xi)^6$. At such a prime, $t-\xi$ is a unit, so division of the $j$th local expression by $(t-\xi)^{k_j+1}$ preserves its valuation.
+\end{lemma}
+\begin{proof}
+If $v_p(t)<0$, all five normalized finite contact depths are zero. Otherwise at most one contact factor has positive valuation, and an odd contact depth is its positive odd valuation. All other factors and $t-\xi$ are units. The square factor $\kappa$ changes the detector valuation by an even integer. Lemma~\ref{lem:packing} forces this odd valuation to be positive and supplies the original local comparisons whenever its certificate holds. This does not require $\kappa$ to be a unit at $p$.
+\end{proof}
+
+For $P_i=n_iP\ne O$, write $x(P_i)=X_{i,0}+X_{i,1}\sqrt2$, setting both components to zero at $O$. Enumerate these twenty rational components as $X_1,\ldots,X_{20}$ and define
+\begin{equation}\label{eq:squareheight}
+ A_0=1,\ \t{and}\  A_r=\begin{cases}X_r^2&\t{if}\ X_r\ne0,\\1&\t{if}\ X_r=0,\end{cases}
+ \quad(1\le r\le20).
+\end{equation}
+Each $A_r$ is a computed positive rational square. The finite branches introduce no new unknown. One free rational parameter $s$ supplies the slopes $t_r=A_rs$ for $0\le r\le20$, and
+\begin{equation}\label{eq:heightpair}
+ h(A_r)=2h(X_r)\ \ \t{and}\ \  h(A_r)\le h(s)+h(A_rs)\quad(s\ne0).
+\end{equation}
+
+Use one witness group $H,U_1,\ldots,U_{10}$ and its 33 expressions $D_j$ from Section~\ref{sec:local}. For each $r$ require $t_r$ to avoid all contacts and $\xi$, and put
+\begin{align}
+ R_r&=A_r^{-5}\frac{F_5(t_r)}{(t_r-\xi)^6},
+ &\widetilde D_{r,j}&=D_j/(t_r-\xi)^{k_j+1},\label{eq:commondata}\\
+ W_r&=\prod_{j=1}^{33}\left(1+R_r(\widetilde D_{r,j}/R_r^{k_j})^2\right),
+ &\Theta_r&=\Tr_{F/\Q}(W_r^{-1}),\label{eq:commonpacking}\\
+ B_r&=R_r/\Theta_r^2.&&\label{eq:commonB}
+\end{align}
+Impose the nonzero guards for these expressions and require $\Phi_0(B_r)$ for all $0\le r\le20$. This is Lemma~\ref{lem:packing} with $G=1$ and $J=33$. Every height coordinate uses the two certificates at $s$ and $A_rs$, but the certificate at $s$ is literally the same expression for every coordinate and is imposed only once. Thus there are twenty-one predicates, with independent structural witnesses for each.
+
+\subsection{A simultaneous pattern for completeness}
+For completeness, fix an integer zero $\mathbf n$ of $f$ and set $P_i=n_iP$, so the $A_r$ are now fixed. Choose a sufficiently divisible positive integer $D$ and temporarily put
+\begin{equation}\label{eq:twoslopes}
+ v=\Delta^2D^2w^2\ \ \t{and}\ \ s=\f uv.
+\end{equation}
+Choose $D$ so that every $\Delta^2D^2\theta_j/A_r$ is an integer. The contact positions are
+\begin{equation}\label{eq:primecontacts}
+ p_{r,j}=u-(\theta_j/A_r)v
+ \quad(0\le r\le20\ \t{and}\  0\le j\le4).
+\end{equation}
+All positions with $j=0$ equal $u$; consequently there are at most 85 distinct positions. Delete repetitions and apply Theorem~\ref{an:thm:patterns} to their integral quadratic coefficients. It supplies prime values with simultaneous order avoidance, arbitrarily large $s$, and arbitrary fixed denominator divisibility after enlarging $D$. Choose the lower bound for these primes beyond all fixed exclusions and all numerator and denominator primes of the $A_r$. These tuple-dependent choices are made only in the completeness proof; they do not enlarge the fixed exceptional set in the soundness argument.
+
+Taking $s$ large enough makes every $t_r$ greater than all contacts and $\xi$, and in particular $R_r>0$. The detectors have the exact expressions
+\begin{equation}\label{eq:primeR}
+ R_r=\frac{\prod_{j=0}^4p_{r,j}}{v^5(t_r-\xi)^6}.
+\end{equation}
+The factor $A_r^5$ cancels before any valuation is considered.
+
+\begin{lemma}\label{lem:normalization}
+For a fixed $r$, its five contact primes are distinct, none divides $v$, and $t_r-\xi$ is a unit at each. The detector $R_r$ has valuation one at those five primes and even valuation at every other prime. Coincidences between contacts for different $r$ do not affect these assertions.
+\end{lemma}
+\begin{proof}
+Within one slope, differences of positions are the nonzero rational multiples $(\theta_l-\theta_j)v/A_r$. The coefficients and their differences are units at every selected prime. If one selected prime divided $v$, all five prime positions for that slope would be divisible by it, hence equal to it, contrary to their distinctness. At a selected prime $t_r\equiv\theta_j$, so the excluded differences make $t_r-\xi$ a unit. The numerator of \eqref{eq:primeR} is squarefree, and its denominator is a square because $v$ is a square and the other exponent is six. This proves the valuation assertions, including at primes dividing $A_r$.
+\end{proof}
+
+\section{Completeness with zero preparation parameters}\label{sec:sharing}
+We prove completeness of the common-slope construction for every integer zero of the fixed input polynomial $f$. The essential order of choices is to obtain bounds independent of the congruence moduli, choose all contact primes, and only then choose the single elliptic witness group.
+
+\subsection{Bounds independent of the congruence moduli}
+We first prove two facts needed to construct compatible witnesses.
+
+\begin{lemma}\label{lem:uniformbounds}
+Fix $f\in\Z[X_1,\ldots,X_{10}]$, an integer tuple $\mathbf n$, and $K\ge1$, and set $P_i=n_iP$. In one witness group, set $H=hP$ and $U_i=hn_iP$.
+\begin{enumerate}
+\item If $c_\ast\mid h$ and $h\notin\{0,c_\ast\}$, all 33 expressions are defined and integral at every prime ideal above a prime in $S_0$.
+\item There is a constant $C$, depending only on $f,\mathbf n,K$ and the fixed data, such that every nonconstant integer arithmetic progression contains arbitrarily large positive $h\notin\{0,c_\ast\}$ for which all 33 expressions are defined and have absolute value at most $C$ at both real embeddings.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+For (i), fix $p\in S_0$ and a prime ideal ${\mathcal P}\mid p$. Both $hP$ and $(h-c_\ast)P$, and all their integer multiples, lie in the formal neighborhoods \eqref{eq:deepanchor}. In that neighborhood the integral formal group and its logarithm satisfy
+\[
+ v_{\mathcal P}(\ell(Z))=v_{\mathcal P}(\ell_K(Z))=v_{\mathcal P}(Z)
+ \quad\text{for every }K\ge1,
+\]
+because $v_{\mathcal P}(c_t)\ge-v_p(t)$ and $v_{\mathcal P}(Z)\ge2$. The full logarithm is an injective homomorphism there. Thus the two truncated-logarithm ratios have valuation $v_p(n_i)\ge0$ when $n_i\ne0$; when $n_i=0$ their numerators are zero. The denominators are nonzero. Taking differences preserves integrality, and $f(\mathbf L)$ is integral because $f$ has integer coefficients. The functions $1/x$ vanish to order two at the origin and are integral on this formal neighborhood. This proves (i), including the primes of bad reduction and the ramified prime.
+
+For (ii), let $G$ be the closure of $\Z(P,P^\sigma)$ in the compact Lie group $E(\mathbb R)\times E^\sigma(\mathbb R)$. The closed subgroup theorem and the structure theorem for compact connected abelian Lie groups imply that its identity component $G^0$ is a torus; see \cite{Hall}. Its component group is finite, because a compact Lie group has open components. The projection of $G^0$ to the identity component of either elliptic factor is surjective. Indeed the projection of $G$ is an infinite compact subgroup of a real elliptic curve (otherwise $P$ would be torsion); hence its identity component is the whole identity circle. The finitely many components of $G$ show that this identity component is the image of $G^0$.
+
+First consider the 22 formal-neighborhood expressions and the 20 individual ratios $L_i,L'_i$. Each is a rational function on one real elliptic factor, using fixed integer multiplications and translations by $c_\ast P$. Bounding these basic functions also bounds the new differences and the polynomial test. Their poles and the zeros of the two required denominators lie in finitely many fibers over finite subsets of one of the elliptic factors. None of these bad fibers contains a whole component of $G$: its projection to the relevant factor is a circle. More explicitly, Haar measure on a component pushes forward to circle Haar measure, so a finite union of these fibers has measure zero. Removable values at $O$ are filled in as in the definitions; constant numerators arising from $n_i=0$ cause no additional poles.
+
+Choose in each component a point outside these bad fibers, and a relatively open neighborhood on which all the basic functions at both embeddings are bounded by one common $C_0\ge1$. Then $|L_i-L'_i|\le2C_0$. Writing $f=\sum_{\boldsymbol\alpha}c_{\boldsymbol\alpha}X_1^{\alpha_1}\cdots X_{10}^{\alpha_{10}}$, where $|\boldsymbol\alpha|=\sum_i\alpha_i$, gives
+\[
+ |f(\mathbf L)|\le\sum_{\boldsymbol\alpha}|c_{\boldsymbol\alpha}|C_0^{|\boldsymbol\alpha|}.
+\]
+Take $C$ at least as large as these finitely many bounds and $C_0$. It is independent of any progression modulus. For a progression $h=h_0+Lk$, $L>0$, its closure is $h_0(P,P^\sigma)+[L]G$. Since $[L]G^0=G^0$, this closure contains an entire component of $G$. The forward orbit is dense in the same closure as the two-sided orbit: in a compact group, positive multiples have the identity as an accumulation point and therefore approximate the negative multiples as well. The same holds after removing any finite initial segment. Consequently, arbitrarily large positive $h$ in the progression enter the chosen neighborhood of a component. This proves (ii), uniformly in $h_0,L$.
+\end{proof}
+
+\subsection{Constructing the shared elliptic group}
+Fix an integer zero $\mathbf n$ of $f$ and $K\ge1$, with $P_i=n_iP$. Obtain the bound $C$ of Lemma~\ref{lem:uniformbounds} before choosing any prime pattern. The estimates in the next subsection prescribe a sufficiently large lower bound for $s$ and sufficiently large fixed prime powers dividing $v$. They depend only on $C,K,\mathbf n,f$ and the fixed arithmetic data.
+
+Choose the pattern of Section~\ref{sec:batches}, with all selected primes greater than $\max(K+1,10)$ and outside every required exception. Let $\mathcal T$ be the set of its distinct contact primes and put
+\begin{equation}\label{eq:CRTmoduli}
+ U=\lcm_{p\in\mathcal T}d^+(p),\qquad
+ V=\lcm_{p\in\mathcal T}d^-(p).
+\end{equation}
+Theorem~\ref{an:thm:patterns} gives $\gcd(U,V)=4$. The system
+\begin{equation}\label{eq:CRT}
+ h\equiv0\pmod U,\qquad h\equiv c_\ast\pmod V,
+ \qquad h\equiv0\pmod{c_\ast}
+\end{equation}
+is soluble. Indeed $\gcd(\lcm(U,c_\ast),V)$ divides $c_\ast$: the assertion holds prime by prime because $\gcd(U,V)=4\mid c_\ast$. The generalized Chinese remainder theorem therefore gives a nonconstant arithmetic progression of solutions. Use Lemma~\ref{lem:uniformbounds}(ii) to choose an $h>c_\ast$ in this progression and set
+\[
+ H=hP\ \ \t{and}\ \  U_i=hn_iP\quad(1\le i\le10).
+\]
+Their 33 expressions are integral above $S_0$ and bounded by $C$ at both real embeddings.
+
+At each $p\in\mathcal T$, choose the prime ideal $\mathcal P\mid p$ where the reduction order is $d^+(p)$. The primary points are formal there because $d^+(p)\mid h$. At the conjugate prime ideal $\mathcal P^\sigma$, the translated points are formal because $d^-(p)\mid h-c_\ast$. Both index ratios equal $n_i$ exactly. Lemma~\ref{lem:formal}, with its conjugate version for the second ratio, gives
+\[
+ L_i\equiv n_i\equiv L'_i\pmod{p^K\OO_{\mathcal P}}.
+\]
+The 22 formal-neighborhood expressions have valuation at least one, the ten differences have valuation at least $K$, and $f(\mathbf L)\equiv f(\mathbf n)=0\pmod{p^K\OO_{\mathcal P}}$. Thus all 33 required inequalities hold at the designated prime ideal $\mathcal P$. Lemma~\ref{lem:normalization} shows that division by the slope normalizer preserves those inequalities at the relevant contacts. Lemma~\ref{lem:packing} with $G=1$ now gives $W_r\ne0$, $\Theta_r\ne0$ and $B_r\in\mathcal D_2$ for every $r$. The same group works at every contact prime, including contacts shared by different slopes.
+
+\subsection{Uniform bounds at real embeddings and prime ideals}
+All $A_r$ are fixed positive rational squares. At either real embedding, uniformly over the choices of $h$ just made, as $s\to+\infty$ we have
+\begin{align}
+ R_r&=A_r^{-6}s^{-1}(1+O_{A_r}(s^{-1})),\label{eq:realR}\\
+ \widetilde D_{r,j}&=O_{C,A_r}(s^{-k_j-1}).\label{eq:realD}
+\end{align}
+Each factor of $W_r$ is consequently $1+O(s^{-3})$. Since the number of factors is fixed, we have
+\begin{equation}\label{eq:realB}
+ W_r=1+O(s^{-3}),\quad \Theta_r=2+O(s^{-3}),\quad
+ B_r=\frac{1+O(s^{-1})}{4A_r^6s}.
+\end{equation}
+Moreover, $R_r>0$ and every factor is one plus a positive multiple of a square, so both real values of $W_r$ are at least one and $\Theta_r>0$. A single sufficiently large lower bound on $s$ ensures $0<B_r<\varepsilon$ for all twenty-one inputs. The constants depend on $f,\mathbf n,K$ and the fixed data, but not on the later congruence moduli.
+
+For $p\in S_0$ put $\nu_p=v_p(v)$ and $\eta_{p,r}=v_p(A_r)$. Both are even; the latter is fixed. Increase the required divisibility of $v$ so that all $\theta_jv/A_r$ and $\xi v/A_r$ lie in $p\Z_p$. As $u$ is a prime outside $S_0$, it is a $p$-adic unit. Thus
+\[
+ v_p(t_r)=v_p(t_r-\xi)=\eta_{p,r}-\nu_p\ \ \t{and}\ \ 
+  v_p(R_r)=\nu_p-6\eta_{p,r}.
+\]
+The integral unscaled expressions give
+\[
+ v_{\mathcal P}(\widetilde D_{r,j})\ge(k_j+1)(\nu_p-\eta_{p,r})
+ \quad({\mathcal P}\mid p).
+\]
+The nonconstant term in the corresponding factor of $W_r$ therefore has valuation at least
+\begin{equation}\label{eq:secondWbound}
+ 3\nu_p+(10k_j-8)\eta_{p,r}.
+\end{equation}
+Choose an integer $C_p$ not smaller than
+\[
+ \max_{r,j}|10k_j-8|\cdot|\eta_{p,r}|.
+\]
+Here $1\le j\le33$. All these lower bounds are at least $3\nu_p-C_p$. Once this number is positive, multiplying the factors gives $W_r=1+O_p(p^{3\nu_p-C_p})$. Taking inverses and tracing gives
+\begin{equation}\label{eq:padicTheta}
+ \Theta_r=2+O_p(p^{3\nu_p-C_p})\ \ \t{and}\ \ 
+ v_p(\Theta_r)=v_p(2)
+\end{equation}
+once $3\nu_p-C_p>v_p(2)$. Here $O_p(p^b)$ means valuation at least $b$. Trace preserves this integrality, including at the ramified prime, because division by the rational integer power $p^b$ reduces the claim to integrality of trace. Consequently
+\begin{equation}\label{eq:padicB}
+ v_p(B_r)=\nu_p-6\eta_{p,r}-2v_p(2).
+\end{equation}
+A common sufficiently large lower bound for $\nu_p$ therefore ensures $v_p(B_r)\ge b_p$ for all $r$. Only lower bounds on denominator divisibility are used.
+
+\begin{proposition}\label{prop:complete}
+For every integer zero $\mathbf n$ of $f$ and every $K\ge1$, the twenty-one common-slope certificates have rational witnesses with $P_i=n_iP$, one shared elliptic group, and two structural witnesses per pole predicate.
+\end{proposition}
+\begin{proof}
+The set $S_0$, anchor $c_\ast$, constants $\varepsilon,b_p$, and contacts are fixed. First choose the real bound from Lemma~\ref{lem:uniformbounds}. Equations \eqref{eq:realB} and \eqref{eq:padicB} prescribe one slope lower bound and fixed denominator divisibility sufficient for every input. The simultaneous prime theorem supplies the pattern; the compatible progression \eqref{eq:CRT} then supplies $h$ with the required real bound. The preceding arguments put all inputs in $\mathcal D_2$ and satisfy all smallness conditions of Proposition~\ref{prop:phi}. Choose a finite multiplier and the two structural witnesses for each of the twenty-one predicate occurrences.  All bounds used before selecting the prime pattern were uniform in its later congruence moduli.
+\end{proof}
+
+\section{Finite queries and the height argument}\label{sec:reduction}
+
+Let $f\in\Z[X_1,\ldots,X_{10}]$ be nonconstant, put $d=\deg f\ge1$, and take $K=cd$ with the fixed integer $c$ from Section~\ref{sec:inputs}. Use the finite exceptional set $S_K$ specified in Section~\ref{sec:local}. It is fixed for this input and independent of the witnesses. 
+All fixed arithmetic data, including an integer $c$ at least as large as the height exponent, may be built into the reducing algorithm. 
+
+For each integer $T\ge1$ form the following finite rational certificate:
+\begin{enumerate}
+\item Choose ten cyclic root points $P_i=[m]Q_i$, with $Q_i\in E(F)$ affine. Their integer indices $n_i$, characterized by $P_i=n_iP$, are not additional unknowns.
+\item Use one slope $s$ and the twenty-one arguments $t_r=A_rs$ of Section~\ref{sec:batches}, all different from the five contacts and $\xi$.
+\item Choose one cyclic witness group and impose the twenty-one normalized certificates \eqref{eq:commondata}--\eqref{eq:commonB}, using the 33 expressions of Section~\ref{sec:local}, with their pole predicates and nonzero guards.
+\item Define the finite set of forbidden integer tuples
+\begin{equation}\label{eq:forbiddenset}
+ \mathcal F_T(f)=\{\mathbf k\in\Z^{10}:|k_i|\le T\ (1\le i\le10),\ f(\mathbf k)\ne0\}.
+\end{equation}
+For each $\mathbf k\in\mathcal F_T(f)$ impose the tuple guard
+\begin{equation}\label{eq:guard}
+ (P_1,\ldots,P_{10})\ne([k_1]P,\ldots,[k_{10}]P).
+\end{equation}
+\end{enumerate}
+There is no free rational source tuple and no exact source equation in this certificate. The guard set is effectively computed by finite integer evaluation of $f$.
+
+A tuple inequality in \eqref{eq:guard} is the disjunction of its ten point inequalities. For two affine $F$-points, a point inequality is the disjunction of inequalities between the rational components of their two coordinates; origin cases are separate charts. Thus these are finite Boolean combinations of polynomial equalities and inequations over $\Q$. The fixed points $[k_i]P$ are computable by the group law. The number of guards can grow with $T$, but it introduces no rational parameter. Section~\ref{sec:encoding} turns the whole certificate into one polynomial equation.
+
+\begin{proposition}\label{prop:height}
+For fixed $f$, there is a bound $B_f$ such that every unguarded certificate with $f(n_1,\ldots,n_{10})\ne0$, where $P_i=n_iP$, has $|n_i|\le B_f$ for every $i$. The bound is independent of $T$ and of all certificate witnesses.
+\end{proposition}
+\begin{proof}
+Write
+\[
+ \delta=f(n_1,\ldots,n_{10})\ne0\ \ \t{and}\ \ B_0=\max(1,|n_1|,\ldots,|n_{10}|).
+\]
+The integer indices exist uniquely by \eqref{eq:cyclic}. Since $\deg f=d$, there is $C_f>0$ with
+$ 0<|\delta|\le C_fB_0^d.$
+For each of the twenty-one slopes $t_r$, Lemmas~\ref{lem:parity} and \ref{lem:local} give $p^K\mid\delta$ at every prime in its odd-contact radical. Distinct primes are coprime, so
+$ M_{S_K}(t_r)^K\mid\delta.$
+Applying Lemma~\ref{lem:heightchange} with $K=cd$, we obtain
+\begin{equation}\label{eq:directheight}
+ h(t_r)\le H_{S_K}M_{S_K}(t_r)^c
+ \le H_{S_K}|\delta|^{c/K}\ll_f B_0.
+\end{equation}
+The same bound holds for $s=t_0$. Implied constants may also depend on the fixed arithmetic data.
+
+For each nonzero component $X_r$, equation~\eqref{eq:heightpair} gives
+\[
+ 2h(X_r)=h(A_r)\le h(s)+h(A_rs)\ll_f B_0.
+\]
+For $X_r=0$ its height is zero. Thus all twenty rational component heights are $O_f(B_0)$. The height inequalities for sums and products with fixed algebraic numbers give
+\begin{equation}\label{eq:coordheight}
+ h(x(P_i))\ll_f B_0\qquad(P_i\ne O).
+\end{equation}
+Let $\widehat h$ be the N\'eron--Tate canonical height on the fixed curve, normalized so that $h(x(Q))=2\widehat h(Q)+O(1)$ for $Q\ne O$. For $n_i\ne0$ this gives
+\[
+ h(x(n_iP))=2n_i^2\widehat h(P)+O(1),\qquad \widehat h(P)>0;
+\]
+see \cite[Chapter VIII]{Silv}. If $B_0>1$, take an index with $|n_i|=B_0$ in \eqref{eq:coordheight}. The quadratic lower bound and linear upper bound bound $B_0$. The case $B_0=1$ is already bounded. No guard was used, so the bound is uniform in $T$.
+\end{proof}
+
+\begin{proposition}\label{prop:queries}
+If $f$ has an integer zero, every guarded query has a rational certificate. If $f$ has no integer zero, some guarded query has no rational certificate.
+\end{proposition}
+\begin{proof}
+For an integer zero $\mathbf n$, Proposition~\ref{prop:complete} supplies an unguarded certificate with $P_i=n_iP$. If one tuple guard failed, then $n_iP=k_iP$ for all $i$ with $\mathbf k\in\mathcal F_T(f)$. Since $P$ is nontorsion, $\mathbf n=\mathbf k$, contradicting $f(\mathbf n)=0$ and $f(\mathbf k)\ne0$. Thus every guard holds, for every $T$.
+
+Conversely, if $f$ has no integer zero, every certificate has $\delta\ne0$. Choose an integer $T\ge B_f$. Proposition~\ref{prop:height} places its entire index tuple in the box $[-T,T]^{10}$, and $f(\mathbf n)\ne0$ puts it in $\mathcal F_T(f)$. The corresponding tuple guard excludes that certificate. Hence this query is insoluble.
+\end{proof}
+
+
+\section{Algebraic compilation without extra guard variables}\label{sec:encoding}
+
+We now count free rational parameters and justify elimination of every remaining finite algebraic choice. All constructions in this section are finite algorithms on polynomials. Their degrees and branch counts can be very large, and may depend on $f$ and $T$.
+
+All equations over $F$ in the preceding sections must first be expressed over $\Q$. Write each computed element as $\alpha=a_0+a_1\sqrt2$, where $a_0,a_1$ are rational functions in the rational parameters and finite root choices. Then
+\[
+ \alpha=0\ \Longleftrightarrow\ a_0=a_1=0,
+ \qquad
+ \alpha\ne0\ \Longleftrightarrow\ a_0^2-2a_1^2\ne0.
+\]
+Under this last guard,
+\[
+ \alpha^{-1}=\frac{a_0-a_1\sqrt2}{a_0^2-2a_1^2}.
+\]
+Thus equality, inversion, conjugation and every denominator guard in $F$ become rational expressions, equations and inequations without adding variables. Fixed $F$-coefficients are split into their rational components in the same way. Numerical rational coefficients will be cleared at the final step.
+
+\subsection{Two parameters per cyclic point}
+Represent a cyclic point by an affine preimage $(x,y)\in E(F)$ under $[m]$, writing $x=u+v\sqrt2$ with $u,v\in\Q$. Since $d_0^2=11243-7950\sqrt2$, put
+\begin{align}
+ C_0&=u^3+6uv^2-11243u+15900v,\label{eq:Czero}\\
+ C_1&=3u^2v+2v^3-11243v+7950u.\label{eq:Cone}
+\end{align}
+The equation for $y$ is $y^2=C_0+C_1\sqrt2$. It is encoded by the following finite branches.
+\begin{enumerate}
+\item If $C_1\ne0$, take a rational root $t$ of
+$t^4-C_0t^2+C_1^2/2=0$, and set
+ $y=t+C_1/(\sqrt2\,t).$
+The root is nonzero, and the quartic is separable: a repeated root would force $C_0^2=2C_1^2$, impossible for rational $C_0$ and $C_1$ with $C_1\ne0$.
+\item If $C_1=0$ and $C_0\ne0$, use either $t^2-C_0=0$ and $y=t$, or $t^2-C_0/2=0$ and $y=t\sqrt2$. Both polynomials are separable.
+\item If $C_0=C_1=0$, use $t=0$ and $y=0$.
+\end{enumerate}
+These branches are exhaustive, by comparing the two components of $(a+b\sqrt2)^2$. Thus each point has two free parameters and one finite root choice. Addition, fixed multiplication by $m$ or $c_\ast$, conjugation, and the origin cases use finitely many rational charts. On each chart all computed coordinates are rational expressions in the parameters and finite roots, with every denominator recorded as nonzero. 
+
+\subsection{No source-coordinate parameters or guard parameters}
+The input $f$ is fixed data. Its local evaluation $f(\mathbf L)$ is a computed rational expression in the point coordinates and their finite ordinate choices. Accordingly no coordinate of a separate tuple $\mathbf a$ is quantified, and no root choice for $f(a_1,\ldots,a_9,X)$ is needed.
+
+The tuple guards \eqref{eq:guard} are finite Boolean combinations in these same computed coordinates. Distributing finite conjunctions and disjunctions gives finitely many branches, each specified by equations and inequations. Their number is unrestricted; all branches use the same free parameters. The construction below filters the equations and inequations inside a finite algebra, and uses one final rational variable for all remaining finite choices and nonzero guards.
+
+\subsection{One coordinate for the first finite choices}
+The finite roots just described satisfy independent monic separable polynomials
+\[
+ p_i(t_i)=0\quad(1\le i\le N)
+\]
+over the free rational parameters, on each branch. At a fixed rational specialization let $D=\prod_i\deg p_i$. The algebra
+\[
+ A=\Q[t_1,\ldots,t_N]/(p_1(t_1),\ldots,p_N(t_N))
+\]
+is reduced and has $D$ complex points. For an integer $b$ take the characteristic polynomial $R_b(Z)$ of multiplication by
+\[
+ z_b=t_1+bt_2+\cdots+b^{N-1}t_N.
+\]
+Two distinct tuples collide for at most $N-1$ values of $b$. Thus some
+\begin{equation}\label{eq:separatingrange}
+ 1\le b\le1+(N-1)\f{D(D-1)}2
+\end{equation}
+separates all points. It is enough to allow this finite list of constants and require $\disc R_b\ne0$. The polynomials $R_b$ are monic of degree $D$.
+
+A rational root of such an $R_b$ recovers a unique tuple. Every automorphism of $\overline\Q/\Q$ fixes the root and permutes the tuples, so it fixes every component of that tuple. Hence all the recovered $t_i$ are rational. Conversely, a rational tuple gives a rational root for any separating $b$. For explicit recovery, the powers $1,z_b,\ldots,z_b^{D-1}$ form a basis of $A$: after extension to $\C$ their evaluation matrix is a Vandermonde matrix on the distinct primitive values. Invert this matrix in any original monomial basis to express each $t_i$ as a polynomial in $z_b$. Matrix inversion records only rational-function coefficients and nonzero pivots. We may now write the first algebraic witness as $Z$, its monic separable polynomial as $R(Z)$, and every computed quantity as a rational function of the free parameters and $Z$.
+
+\subsection{Square conditions give one further finite choice}
+By Proposition~\ref{prop:phi}, each of the twenty-one predicates contributes two free structural parameters $e,z$ and two square conditions. Clearing their rational denominators by square factors preserves squareness, with the denominators retained as inequations. Split off zero square inputs. For the remaining $k$ nonzero inputs $A_1,\ldots,A_k$, put 
+\begin{align*}
+ P_0&=\prod_i A_i,& P_i&=\prod_{j\ne i}A_j,\\
+ U_0&=\left(k+\sum_i A_i^2\right)
+          \left(P_0^2+\sum_iP_i^2\right),&
+ C_i&=P_0^{\,2(k-i)+1}U_0^{\,i-1}.
+\end{align*}
+Define
+\begin{equation}\label{eq:Omega}
+ \Omega(\mathbf A,w)=
+ \prod_{\boldsymbol\varepsilon\in\{\pm1\}^k}
+ \left(1+w\sum_i\varepsilon_iC_i\sqrt{A_i}\right).
+\end{equation}
+Independent changes of signs show that this is a polynomial with integer coefficients in $\mathbf A$ and $w$. 
+
+In the spirit of the Rational Relation-Combining Theorem of Zhang and Sun \cite[Theorem 1.2]{ZS}, we set
+\[
+ W_0=\left(k+\sum_i A_i^2\right)\left(1+\sum_i A_i^{-2}\right).
+\]
+Then $C_i=P_0^{2k-1}W_0^{i-1}$. For nonzero rational inputs, let
+\[
+ m_0=\min_i\sqrt{|A_i|},\quad M_0=\max_i\sqrt{|A_i|}\ \t{and}\ \rho=\f{M_0}{m_0}.
+\]
+Expansion gives $W_0>k+\rho^4\ge1+\rho$. In any nonempty signed subsum of the quantities $W_0^{i-1}\sqrt{A_i}$, the last term has larger modulus than the sum of the earlier terms, because
+\[
+ M_0\sum_{i<j}W_0^{i-1}<m_0W_0^{j-1}.
+\]
+Consequently, the $2^k$ signed sums in \eqref{eq:Omega} are nonzero and pairwise distinct. It follows that $\Omega$ has degree $2^k$ in $w$ and is separable at every nonzero rational input, even when some $A_i$ are negative.
+
+If all $A_i$ are rational squares, any signed sum gives a rational root of $\Omega$. Conversely, a rational root makes one signed sum rational. Galois automorphisms act on that sum by changing signs of the square roots. Pairwise distinctness forces every square root to be fixed, so every $A_i$ is a rational square. When $k=0$ use $\Omega=w-1$. The square tests are therefore equivalent to one further finite root choice, whose coefficients may depend on $Z$.
+
+\subsection{Merging the dependent choices}
+We give the extra step that replaces both $Z$ and $w$ by one rational variable. At a fixed rational specialization of all free parameters, the remaining conditions have the form
+\begin{equation}\label{eq:oldsystem}
+ R(Z)=0,\quad F_j(Z)=0,\quad G_l(Z)\ne0,
+ \quad\Omega(Z,w)=0,
+\end{equation}
+where $R$ is monic separable. After clearing rational denominators, include the leading coefficient and the discriminant of $\Omega$ as further inequations in $Z$. This removes no successful rational witness by the preceding subsection; it may remove unsuitable complex conjugate fibers. Let $G$ be the product of all inequation polynomials, including every denominator, and use monic gcds to define
+\begin{equation}\label{eq:filter}
+ R_0=\gcd(R,F_1,\ldots,F_s)\ \ \t{and}\ \ 
+ R_1=\f{R_0}{\gcd(R_0,G)}.
+\end{equation}
+Since $R$ is separable, the roots of $R_1$ are exactly the roots satisfying the equations and inequations. Discard the branch if $R_1=1$.
+
+In $A_1=\Q[Z]/(R_1)$ the leading coefficient of $\Omega$ is a unit; compute its inverse by the extended Euclidean algorithm. Dividing by that unit gives a monic polynomial $p(Z,w)$ whose fibers are all separable of the same degree $e$. Thus
+$ \mathcal A=A_1[w]/(p)$
+is a reduced algebra of dimension $D_1=e\deg R_1$, with basis $Z^iw^j$ in the usual degree ranges. Its complex points are exactly the remaining pairs $(z,\omega)$. For each integer $b$, form
+\begin{equation}\label{eq:pairchar}
+ P_b(T)=\det(TI-M_{Z+bw}).
+\end{equation}
+For a pair of distinct points, a collision gives a nonzero polynomial of degree at most one in $b$. Hence one of
+\[
+ 1\le b\le1+\f{D_1(D_1-1)}2
+\]
+separates all pairs. Require $\disc P_b\ne0$. The same Galois argument as before shows that a rational root of $P_b$ is equivalent to a rational pair satisfying \eqref{eq:oldsystem}.
+
+The discriminant requirement is essential. For example, $Z^2=w^2=2$ has no rational pair, but the characteristic polynomial for $Z+w$ is $T^2(T^2-8)$ and has a rational root. Its discriminant is zero. At $Z+2w$ the polynomial is $T^4-20T^2+36$, with distinct roots and no rational zero. The separation condition prevents this source of false solutions.
+
+All the preceding operations can be made uniform in the free parameters. At each division step first branch on the actual degree, imposing zero conditions on higher coefficients and a nonzero condition on the leading coefficient. Polynomial remainders then have strictly smaller degree. All initial degree bounds are fixed for the input query, so the branching tree is finite and effective. The same process handles squarefree parts, gcds, unit inverses and matrix pivots. On every final branch the characteristic polynomial is monic of fixed degree with rational-function coefficients in the free parameters; all coefficient denominators and all branch conditions have been recorded. This treats exceptional specializations, rather than assuming generic separability or constant gcd degree.
+
+\subsection{Absorbing every nonzero guard}
+For a separating $P_b$ allow $c_0=0$ or 1 and replace it by $P_b(T-c_0)$. For every rational pair at least one of the two corresponding primitive values is nonzero. Thus it suffices to ask for a nonzero rational root of a monic polynomial
+\[
+ P(T)=T^d+\sum_{j=1}^d\frac{N_j(\mathbf x)}{B(\mathbf x)}T^{d-j},
+\]
+where $N_j,B\in\Q[\mathbf x]$ and $\mathbf x$ is the tuple of free parameters. Take $B$ to be a common polynomial denominator and let $H$ be the product of the numerators of all remaining inequations. Define
+\begin{equation}\label{eq:reciprocal}
+ \Psi(\mathbf x,U)=1+\sum_{j=1}^d
+ N_j(\mathbf x)B(\mathbf x)^{2j-1}H(\mathbf x)^jU^j.
+\end{equation}
+If $BH=0$, this is identically 1. If $BH\ne0$, putting $S=B^2H$ gives, for $U\ne0$, the identity
+\[
+ \Psi(\mathbf x,U)=(SU)^dP(1/(SU)).
+\]
+Since $\Psi(\mathbf x,0)=1$, its rational roots correspond exactly to nonzero rational roots of $P$. In particular it enforces all inequations without another inverse variable. The exponent $2j-1$ is positive; simply clearing denominators without this factor would not justify the assertion on $B=0$.
+
+If $E_1(\mathbf x)=\cdots=E_r(\mathbf x)=0$ are the polynomial equations of a branch, use
+\[
+ \Psi(\mathbf x,U)^2+\sum_{i=1}^rE_i(\mathbf x)^2=0.
+\]
+Over $\Q$ this is the desired conjunction. Multiply these branch polynomials over all finite choices, using the same $U$, to express their disjunction. Clearing numerical rational coefficients gives one integer-coefficient polynomial. An empty disjunction is represented by the constant polynomial 1. There is no selector variable and no unrecorded nonzero condition.
+
+\section{Variable count and proof of Theorem~\ref{thm:main}}\label{sec:count}
+We use the undecidability of $\HTP_{10}(\Z)$ obtained by Sun \cite{Sun10}.
+There are ten root points and one group of eleven local points, hence 21 cyclic points and 42 free rational coordinate components. All height coordinates share one slope. Each of the twenty-one pole predicates has two structural witnesses and two square conditions. Section~\ref{sec:encoding} combines the finite ordinate choices, the 42 square tests and every nonzero guard into one final variable. 
+\begin{center}
+\begin{tabular}{@{}p{4.25in}r@{}}
+\toprule
+Free rational unknowns & Number\\\midrule
+Two components for each of 21 elliptic preimages &42\\
+One common slope &1\\
+Two structural witnesses for each of 21 pole predicates &42\\
+One final algebraic witness, including all guards &1\\\midrule
+Total &\textbf{86}\\\bottomrule
+\end{tabular}
+\end{center}
+The $A_r$ and $A_r^{-5}$ are computed rational expressions on finite branches. The integer indices, the temporary parameters $u,v,w,h$, the at most 85 prime positions, and the cutoff $L$ occur only in the completeness proof. None is an additional rational unknown in the compiled polynomial. The fixed arithmetic constants and finite multiplier choices likewise add no unknowns.
+
+For each input polynomial $f$ and guard bound $T$, the construction is effective and gives one integer-coefficient polynomial in at most 86 rational variables. An integer zero of $f$ supplies a rational certificate for every $T$. If $f$ has no integer zero, the height bound and finite guards make some query insoluble.  As $\HTP_{10}(\Z)$ is undecidable by  \cite[Corollary 1.1]{Sun10},
+$\HTP_{86}(\Q)$ must be undecidable.
+
+The essential sharing assertions have been proved rather than inserted as extra hypotheses: Theorem~\ref{an:thm:patterns} supplies simultaneous order compatibility, and Proposition~\ref{prop:complete} supplies completeness after sharing the group and slope. Structural witnesses for distinct pole inputs remain independent. The number 86 is an upper bound supplied by this construction.
+
+\appendix
+\section{A geometric sieve for the actual order expressions}\label{an:app:large}
+The general quadric theorem of Browning and Heath-Brown \cite[Theorem 1.2]{BHB} is stated for homogeneous auxiliary forms. The expressions $G_\eps,H_\eta$ are not homogeneous. Simply homogenizing them introduces another coordinate and does not give the following five-variable estimate. We instead verify directly the fibre conditions needed by their lattice method.
+
+\begin{theorem}\label{an:thm:tail}
+For $B,L\ge2$, let $N_{\kappa,\eps,\eta}(B,L)$ count integer vectors of supremum norm at most $B$ on \eqref{an:eq:quadric} for which some prime $\ell>L$ divides both $G_\eps$ and $H_\eta$. For every $\alpha>0$, we have
+\begin{equation}\label{an:eq:tail}
+ N_{\kappa,\eps,\eta}(B,L)
+ \ll_{\kappa,\alpha}
+ \frac{B^{3+\alpha}}{L\log L}+B^{11/4+\alpha}.
+\end{equation}
+\end{theorem}
+
+We first specify the two published inputs to the proof. The polynomial box sieve \cite[Lemma 2.1]{BHB} bounds common prime divisors greater than $L$ of coprime, bounded-degree integral polynomials in a box by
+\begin{equation}\label{an:eq:box}
+ \ll \frac{V\log(VH)}{L\log L}
+       +\frac{V\log(VH)}{B_{\min}},
+\end{equation}
+where the box is $\prod_i[-B_i,B_i]$ with $B_i\ge2$, $V=\prod_i B_i$, $B_{\min}=\min_i B_i$, and $H\ge2$ bounds coefficient heights. Here coprimality is in the integral polynomial ring, so a common constant prime factor must also be removed. The second input, \cite[Lemma 4.1]{BHB}, covers solutions of a rank-three quadratic congruence modulo a squarefree good modulus $q$ by $O(9^{\omega(q)}q)$ lattices of determinant $q^2$. The number whose largest successive minimum exceeds $T$ is $O(9^{\omega(q)}q^3T^{-3})$. Here $\omega(q)$ denotes the number of distinct prime divisors of $q$, rather than the slow threshold function of Section~\ref{an:sec:transfer}. A good prime is one at which the reduction of the quadratic form still has rank at least three. The successive minima are taken with respect to the Euclidean unit ball: the $i$th is the least radius containing $i$ independent lattice vectors. Each covering lattice contains $q\Z^3$, so all its successive minima are at most $q$.
+
+\begin{proof}[Proof of Theorem~\ref{an:thm:tail}]
+Sign changes in $a,c$ reduce to $\eps=\eta=1$. Make the integral linear change
+\[
+ x_0=a+c,\quad x_1=a-c,\quad x=b-d,\quad z=b+d.
+\]
+The equation becomes
+\begin{equation}\label{an:eq:hyperbolic}
+ x_0x_1=R(x,z,w):=\kappa w^2-xz.
+\end{equation}
+The new box has side parameters at most $2B$. Enlarging to it, and absorbing this factor in the constants, can only increase the count.
+
+\smallskip\noindent
+\emph{Primes dividing both hyperbolic coordinates.}
+Suppose $\ell\mid x_0,x_1$. Then $R=\ell^2h$. Uniformly in a fixed integer $v$ in the range $|v|\ll_\kappa B^2$, the equation $R=v$ has $O_{\kappa,\alpha}(B^{1+\alpha})$ solutions in the box: for each $w$, count divisors in $xz=\kappa w^2-v$. We use the elementary bound $\tau(m)\ll_\varepsilon |m|^\varepsilon$ for $m\ne0$, where $\tau(m)$ is the number of positive divisors of $|m|$. It follows by multiplying the prime-power factors $a+1$: for all sufficiently large primes $p$, $a+1\le p^{\epsilon a}$, and each of the finitely many smaller primes contributes a bounded extra factor. Its right side is zero for at most two $w$, and these cases contribute only $O(B)$. For nonzero $R$, the number of pairs $x_0x_1=R$ is $O_\alpha(B^\alpha)$. Summing over $\ell>L$ and the $O_\kappa(B^2/\ell^2)$ possible nonzero $h$ gives
+\[
+ O_{\kappa,\alpha}\left(\frac{B^{3+2\alpha}}{L\log L}\right).
+\]
+The case $R=0$ contributes $O_{\kappa,\alpha}(B^{2+\alpha})$. We may therefore treat the two charts $\ell\nmid x_1$ and $\ell\nmid x_0$ separately.
+
+\smallskip\noindent
+\emph{The chart with $t=a-c$.}
+Fix $t\ne0$ and put $x_0=R/t$. A common divisor $\ell\nmid2t$ of $G_+$ and $H_+$ divides
+\begin{equation}\label{an:eq:chartone}
+ P_t=\kappa w^2+2t\ \ \t{and}\ \ T_t=(t^2+x^2)(t^2+z^2).
+\end{equation}
+To check this explicitly, $G_+-H_+=\kappa w^2+2t$ and
+\[
+ 4t^2G_+=K_t:=(\kappa w^2-xz+t^2+2t)^2+t^2(x+z)^2.
+\]
+The polynomial identity
+\begin{equation}\label{an:eq:identity}
+ K_t-T_t=P_t(P_t+2t^2-2xz)
+\end{equation}
+proves the claim. The two polynomials in \eqref{an:eq:chartone} are coprime over $\Q$: one depends only on $w$, the other only on $x,z$. Also $T_t$ has coefficient 1 at $x^2z^2$, so the pair has no common constant prime factor.
+
+\smallskip\noindent
+\emph{The chart with $t=a+c$.}
+Now $a-c=R/t$. The corresponding necessary divisibilities are
+\begin{equation}\label{an:eq:charttwo}
+ P'_t=\kappa(t+2)w^2-2xz\ \t{and}\ 
+ K_t=(\kappa w^2-xz+t^2+2t)^2+t^2(x+z)^2,
+\end{equation}
+since $P'_t=t(G_+-H_+)$ and $K_t=4t^2G_+$. If $t\ne-2$, $P'_t$ is an irreducible rank-three quadratic form, whereas $K_t(0,0,0)=t^2(t+2)^2\ne0$. Hence they have no common polynomial factor. For $t=-2$, $P'_t=-2xz$, and neither $x$ nor $z$ divides $K_t$, as is seen by setting that variable to zero. Finally, the coefficient $-2$ in $P'_t$ rules out common constant odd primes.
+
+\smallskip\noindent
+\emph{The lattice summation.}
+In either chart, $t\mid R(x,z,w)$. Let $q$ be the product of the good primes for $R$ which divide $t$; thus $q$ is squarefree and $q\ll B$. For each fixed $q$, the number of possible nonzero $t$ with $|t|\ll B$ is $O_{\kappa,\alpha}(B^\alpha)$. To see the uniformity in $q$, let $S_R$ be the finite set of bad primes. Since $t/q$ is supported on primes dividing $q$ or belonging to $S_R$, for any $\alpha>0$ a Rankin bound gives
+\[
+ \#\{t:0<|t|\le CB,\ \operatorname{rad}_{\rm good}(t)=q\}
+ \le 2(CB/q)^\alpha
+       \prod_{p\mid q\ {\rm or}\ p\in S_R}(1-p^{-\alpha})^{-1}.
+\]
+Here $\operatorname{rad}_{\rm good}(t)$ is the product of the good primes dividing $t$. The product is $O_{\kappa,\alpha}(q^\alpha)$: for all large primes its individual factor is at most $p^\alpha$, and the remaining finitely many factors have bounded product. This proves the asserted $O_{\kappa,\alpha}(B^\alpha)$ estimate.
+
+Weaken $t\mid R$ to $q\mid R$ and use the lattice cover above. For a covering lattice $\Lambda$, let $\lambda_1\le\lambda_2\le\lambda_3$ be its successive minima. Its number of vectors in the box is
+$ \ll B^3/q^2,$
+because $\lambda_i\le q\ll B$ and Minkowski's second theorem gives $\lambda_1\lambda_2\lambda_3\asymp\det\Lambda=q^2$. The lattice-point bound and the choice of a basis of lengths $O(\lambda_i)$ below are the standard geometry-of-numbers estimates also used in \cite[Section 4]{BHB}. The contribution of lattices with $\lambda_3>T$ is consequently
+\begin{equation}\label{an:eq:largemin}
+ \ll_{\kappa,\alpha}
+ B^\alpha\sum_{q\ll B}9^{\omega(q)}q^3T^{-3}\frac{B^3}{q^2}
+ \ll_{\kappa,\alpha} B^{5+2\alpha}T^{-3}.
+\end{equation}
+
+For the other lattices choose an integral basis matrix $E$ with column lengths $O(\lambda_i)$. Its determinant is $q^2\asymp\lambda_1\lambda_2\lambda_3$. The cofactor formula bounds the $i$th row of $E^{-1}$ by $O(1/\lambda_i)$. Hence $(x,z,w)^t=E\mathbf y$ is contained in a coordinate box with side parameters chosen as fixed sufficiently large multiples of $B/\lambda_i$. Its volume parameter is $O(B^3/q^2)$ and its smallest side is $\gg B/T$. These sides are at least two in the range where the estimate is needed; bounded $B$ is absorbed into the final constant. The coefficient heights after substitution are bounded by a fixed power of $B$.
+
+It remains to check that \eqref{an:eq:box} applies after substitution; this is precisely where homogeneity cannot simply be assumed. The explicit coprimality checks in the two charts persist under the invertible rational substitution $E$. If a common constant prime $\ell\nmid2t$ appeared after substitution, then $\det E=q^2$ would be invertible modulo $\ell$. The original pair would consequently vanish identically modulo $\ell$, contradicting the coefficient checks above. Any common content supported on $2t$ can be removed, since the counted primes do not divide $2t$.
+
+Thus \eqref{an:eq:box} bounds each small-minimum lattice contribution by
+\[
+ \ll_{\kappa}
+ \frac{B^3\log B}{q^2L\log L}
+ +\frac{B^2T\log B}{q^2}.
+\]
+Summing over $O(9^{\omega(q)}q)$ lattices, the $O(B^\alpha)$ possible $t$, and $q\ll B$, and absorbing logarithms into arbitrarily small powers, gives
+\begin{equation}\label{an:eq:smallmin}
+ \ll_{\kappa,\alpha}
+ \frac{B^{3+3\alpha}}{L\log L}+B^{2+3\alpha}T.
+\end{equation}
+Take $T=B^{3/4}$. Equations \eqref{an:eq:largemin}--\eqref{an:eq:smallmin} and the first case give \eqref{an:eq:tail} after renaming the arbitrary exponent. The possible prime 2 is absent because $L\ge2$.
+\end{proof}
+
+\begin{corollary}\label{an:cor:weightedlarge}
+Fix $0<\delta<1/4$ and $k\ge0$. On the set in Theorem~\ref{an:thm:tail}, attach any nonnegative weights bounded by $(\log B)^k$. The weighted contribution from a common prime divisor greater than $B^\delta$ is $O_{\kappa,\delta,k}(B^{3-\delta/2}).$
+In particular the conclusion allows restricting to a prime pattern and multiplying by its fixed number of prime logarithmic weights.
+\end{corollary}
+\begin{proof}
+Use \eqref{an:eq:tail} with $L=B^\delta$ and a sufficiently small $\alpha$, then absorb the fixed logarithmic power into $B^{\delta/4}$. Restricting the set only decreases this upper bound.
+\end{proof}
+
+The self-gcd tail is simpler. An odd prime dividing both orders in \eqref{an:eq:orders} divides $a$ and $b^2+1$. Apply \eqref{an:eq:box} to these two coprime polynomials in the three variables $a,b,w$. The number of such triples with an obstruction prime greater than $L$ is
+\[
+ \ll \frac{B^3\log B}{L\log L}+B^2\log B.
+\]
+This likewise gives a power saving at $L=B^\delta$, including fixed prime logarithmic weights.
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{BHB} T. D. Browning and D. R. Heath-Brown, \emph{The geometric sieve for quadrics}, \href{https://arxiv.org/abs/2003.09593v1}{arXiv:2003.09593v1}.
+    
+\bibitem{BL} T. Browning and D. Loughran, \emph{Sieving rational points on varieties}, \href{https://arxiv.org/abs/1705.01999v2}{arXiv:1705.01999v2}.
+    
+\bibitem{Daans}
+N. Daans,
+\emph{Universally defining $\mathbb Z$ in $\mathbb Q$ with $10$ quantifiers},
+J. London Math. Soc. \textbf{109} (2024), no.~2, Article e12864.
+   
+
+\bibitem{Dav} H. Davenport, \emph{Multiplicative Number Theory}, third edition, revised by H. L. Montgomery, Graduate Texts in Mathematics, vol. 74, Springer, New York, 2000.
+\href{https://link.springer.com/book/9780387950976}{Publisher's edition}.
+
+\bibitem{DPR} M. Davis, H. Putnam and J. Robinson,
+\emph{The decision problem for exponential Diophantine equations},
+Ann. of Math. (2) \textbf{74} (1961), 425--436.
+
+\bibitem{FT} C. Frei and M. Tinkov\'a, \emph{Linear constellations in primes with arithmetic restrictions}, with an appendix by C. Frei, J. K\"onig and M. Tinkov\'a, \href{https://arxiv.org/abs/2408.17441v3}{arXiv:2408.17441v3}.
+   
+
+\bibitem{Hall} B. C. Hall, \emph{Lie Groups, Lie Algebras, and Representations: An Elementary Introduction}, second edition, Graduate Texts in Mathematics, vol. 222, Springer, Cham, 2015.
+
+\bibitem{Koen} J. Koenigsmann,
+\emph{Defining $\Z$ in $\Q$},
+Ann. of Math. (2) \textbf{183} (2016), 73--93.
+
+\bibitem {Mat} Y. Matiyasevich, {\it Enumerable sets are diophantine},
+ Dokl. Akad. Nauk SSSR {\bf 191} (1970), 279--282;
+English translation with addendum, Soviet Math. Doklady {\bf 11} (1970), 354--357.
+
+\bibitem{Milne} J. S. Milne, \emph{Class Field Theory}, version 4.03 (2020), Chapter V, \href{https://www.jmilne.org/math/CourseNotes/CFT.pdf}{author's course notes}.
+    
+\bibitem{OAI} OpenAI,
+\emph{Hilbert's tenth problem over the rational numbers},
+OpenAI Math Release preprint, October 6, 2026. Available from the website
+{\tt https://github.com/openai/math/tree/main/preprints/Hilberts-tenth-problem
+\\-over-the-rational-numbers-October-6-2026.}
+
+\bibitem{Poonen} B. Poonen,
+\emph{Characterizing integers among rational numbers with a universal-existential formula},
+Amer. J. Math. \textbf{131} (2009), 675--682.
+
+\bibitem{Rob} J. Robinson,
+\emph{Definability and decision problems in arithmetic},
+J. Symbolic Logic \textbf{14} (1949), 98--114.
+
+\bibitem{Silv} J. H. Silverman,
+\emph{The Arithmetic of Elliptic Curves}, second edition,
+Graduate Texts in Mathematics, vol. 106, Springer, Dordrecht, 2009.
+
+\bibitem{Sun-book} Z.-W. Sun, Introduction to Basic Number Theory, Harbin Institute of Technology Press, 2014.
+
+\bibitem{Sun11} Z.-W. Sun,
+\emph{Further results on Hilbert's Tenth Problem},
+Sci. China Math. \textbf{64} (2021), 281--306.
+
+
+\bibitem{Sun10} Z.-W. Sun,
+\emph{Ten unknowns for Hilbert's tenth problem over the integers}, \href{https://arxiv.org/abs/2609.01594v2}{arXiv:2609.01594v2}, 2026.
+
+\bibitem{Sun7} Z.-W. Sun, {\it $\Q\sm\Z$ is diophantine over $\Q$ with $7$ unknowns}, preprint, arXiv:2607.28606, 2026.
+
+\bibitem{TZ} T. Tao and T. Ziegler,
+\emph{The primes contain arbitrarily long polynomial progressions},
+Acta Math. \textbf{201} (2008), 213--305.
+
+\bibitem{TZerr} T. Tao and T. Ziegler,
+\emph{Erratum to ``The primes contain arbitrarily long polynomial progressions''},
+Acta Math. \textbf{210} (2013), 403--404.
+
+\bibitem{TZpoly} T. Tao and T. Ziegler, \emph{Polynomial patterns in the primes}, Forum Math. Pi \textbf{6} (2018), Article e1. 
+
+\bibitem{ZS} G.-R. Zhang and Z.-W. Sun,
+\emph{$\Q\setminus\Z$ is Diophantine over $\Q$ with 32 unknowns},
+Bull. Pol. Acad. Sci. Math. \textbf{70} (2022), no. 2, 93--106.
+
+\end{thebibliography}
+\end{document}

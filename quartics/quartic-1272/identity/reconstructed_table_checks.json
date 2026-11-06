@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "tables": [
+    {
+      "variant": "direct",
+      "path": "compiler/direct/polynomial.json",
+      "sha256": "5acd7ebf8c09c7d95f66c16f6c5594fdbbde062a0f3204068e8f88b7fd4b54ba",
+      "status": "PASS",
+      "scope": "Exact specialized coefficient statistics, not source equivalence",
+      "encoded_entries": 47986,
+      "ordinary_monomials": 47984,
+      "active_coordinates": 1272,
+      "witnesses": 1271,
+      "degree": 4,
+      "maximum_absolute_coefficient": [
+        {
+          "sPower": 0,
+          "coefficient": "113075223583936053838490651466826933637775210216313916697070631946494587068549977095892150968125007908645879870205943613897412140196159129391006706383285829803005739941003936867391419229883823914016536746970816817429071783910512096590420364535801721291166707454802793158843226623092427901293313184"
+        },
+        {
+          "sPower": 4,
+          "coefficient": "4"
+        }
+      ],
+      "maximum_attained_at_monomial": [],
+      "max_required_leading_domination_bound_bits": 5337,
+      "available_bound_bits": 134217728,
+      "S_independent_coefficient_gcd": 1,
+      "input_fourth_power_coefficient": "1",
+      "primitive_after_specialization": true,
+      "monomials_receiving_multiple_S_powers": [
+        {
+          "monomial": [],
+          "coefficient": [
+            {
+              "sPower": 0,
+              "coefficient": "113075223583936053838490651466826933637775210216313916697070631946494587068549977095892150968125007908645879870205943613897412140196159129391006706383285829803005739941003936867391419229883823914016536746970816817429071783910512096590420364535801721291166707454802793158843226623092427901293313184"
+            },
+            {
+              "sPower": 4,
+              "coefficient": "4"
+            }
+          ]
+        },
+        {
+          "monomial": [
+            1271,
+            1271
+          ],
+          "coefficient": [
+            {
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "sPower": 2,
+              "coefficient": "-12"
+            }
+          ]
+        }
+      ],
+      "identity_with_published_Brox1315": false
+    },
+    {
+      "variant": "translated",
+      "path": "compiler/translated/polynomial.json",
+      "sha256": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586",
+      "status": "PASS",
+      "scope": "Exact specialized coefficient statistics, not source equivalence",
+      "encoded_entries": 48001,
+      "ordinary_monomials": 48001,
+      "active_coordinates": 1272,
+      "witnesses": 1271,
+      "degree": 4,
+      "maximum_absolute_coefficient": [
+        {
+          "sPower": 2,
+          "coefficient": "64"
+        }
+      ],
+      "maximum_attained_at_monomial": [
+        79,
+        79
+      ],
+      "max_required_leading_domination_bound_bits": 5333,
+      "available_bound_bits": 134217728,
+      "S_independent_coefficient_gcd": 1,
+      "input_fourth_power_coefficient": "1",
+      "primitive_after_specialization": true,
+      "monomials_receiving_multiple_S_powers": [],
+      "identity_with_published_Brox1315": false
+    }
+  ],
+  "raw_translation": {
+    "status": "PASS",
+    "direct_raw_sha256": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+    "translated_raw_sha256": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e",
+    "residuals": 1261,
+    "coordinates": 1304,
+    "anchor_row": 1260,
+    "private_coordinate_ids": [
+      79,
+      80,
+      81
+    ],
+    "unchanged_other_rows": 1260,
+    "anchor_identity": "q_translated = 16 * (q_direct composed with affine map)",
+    "affine_inverse_checked_both_directions": true,
+    "linear_determinant": "1/64",
+    "private_coordinates_only_in_anchor": true,
+    "residual_zero_sets_affinely_bijective_over_characteristic_zero": true,
+    "rational_SOS_input_projections_equal": true,
+    "literal_SOS_affine_identity": false,
+    "exact_SOS_difference": "P_translated - (P_direct composed with affine map) = 255*(q_direct composed with affine map)^2",
+    "does_not_establish": "Equivalence of either raw source to the published missing gate program or source arithmetic theorem"
+  },
+  "full_certificate_replay": "separate independent checker responsibility"
+}

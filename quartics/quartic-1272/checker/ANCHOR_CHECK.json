@@ -1,0 +1,136 @@
+{
+  "schema": "brox-independent-anchor-check-v1",
+  "status": "passed",
+  "inputHashes": {
+    "raw": "0ac8ea9ad16f4439c83e3cfa03ee8a8a4eb24adb5717c994ca19e5db47fffba3",
+    "translated": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e"
+  },
+  "anchorResidualId": 1260,
+  "privateCoordinateIds": [
+    79,
+    80,
+    81
+  ],
+  "unchangedResiduals": 1260,
+  "forward": {
+    "79": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "1/1"
+      },
+      {
+        "monomial": [
+          79
+        ],
+        "sPower": 0,
+        "coefficient": "1/4"
+      },
+      {
+        "monomial": [
+          80
+        ],
+        "sPower": 0,
+        "coefficient": "-3/4"
+      },
+      {
+        "monomial": [
+          81
+        ],
+        "sPower": 0,
+        "coefficient": "3/4"
+      }
+    ],
+    "80": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "1/2"
+      },
+      {
+        "monomial": [
+          80
+        ],
+        "sPower": 0,
+        "coefficient": "1/4"
+      }
+    ],
+    "81": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "3/2"
+      },
+      {
+        "monomial": [
+          81
+        ],
+        "sPower": 0,
+        "coefficient": "1/4"
+      }
+    ]
+  },
+  "inverse": {
+    "79": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "8/1"
+      },
+      {
+        "monomial": [
+          79
+        ],
+        "sPower": 0,
+        "coefficient": "4/1"
+      },
+      {
+        "monomial": [
+          80
+        ],
+        "sPower": 0,
+        "coefficient": "12/1"
+      },
+      {
+        "monomial": [
+          81
+        ],
+        "sPower": 0,
+        "coefficient": "-12/1"
+      }
+    ],
+    "80": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "-2/1"
+      },
+      {
+        "monomial": [
+          80
+        ],
+        "sPower": 0,
+        "coefficient": "4/1"
+      }
+    ],
+    "81": [
+      {
+        "monomial": [],
+        "sPower": 1,
+        "coefficient": "-6/1"
+      },
+      {
+        "monomial": [
+          81
+        ],
+        "sPower": 0,
+        "coefficient": "4/1"
+      }
+    ]
+  },
+  "determinant": "1/64",
+  "inverseCompositionChecked": true,
+  "rowScale": "16/1",
+  "conclusion": "The rational common-zero sets are in bijection. The translated SOS is not asserted to equal the literal affine substitution into the old SOS, since the anchor residual is multiplied by 16.",
+  "scope": "Exact polynomial identities only; inherited arithmetic remains external."
+}

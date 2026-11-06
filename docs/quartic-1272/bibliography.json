@@ -1,0 +1,2278 @@
+[
+  {
+    "historical_source_records": [],
+    "key": "Brox2026",
+    "span": {
+      "end_character": 786222,
+      "first_line": 16580,
+      "last_line": 16586,
+      "path": "quartic_1272.tex",
+      "start_character": 785719,
+      "text_sha256": "67b9e764d294d99f44514fb962a60b2a10eecd6fed12a62ab29f3e2b5f8f1c68"
+    },
+    "text": "\\bibitem{Brox2026} J. Brox,\n\\emph{Conditional polynomial constructions, lower bounds, and number-field\nobstructions for rational Diophantine integrality}, working version 3,\n6 November 2026. Public source at Git revision\n\\nolinkurl{f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6}.\n\\url{https://github.com/JoseBrox/diophantine-z-q_improvements/blob/f4d1b5e6c23d4adeb3ae1f986ab0bf87884bdff6/paper/diophantine_optimization_20261106_v3.tex}.\n% Insert these items inside the manuscript's existing thebibliography.\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "v5sun",
+    "span": {
+      "end_character": 786428,
+      "first_line": 16587,
+      "last_line": 16591,
+      "path": "quartic_1272.tex",
+      "start_character": 786222,
+      "text_sha256": "ac215fb3b627e2137b41fc88813039518af7b3d2b9d656a43e18860845f168e6"
+    },
+    "text": "\\bibitem{v5sun}\nZ.-W. Sun, \\emph{86 unknowns for Hilbert's tenth problem over the rationals},\narXiv:2610.20691v2, 2026. Theorem~4.1, Sections~4--6 and Appendix~A.\n\\url{https://arxiv.org/abs/2610.20691v2}.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "v5bl",
+    "span": {
+      "end_character": 786774,
+      "first_line": 16592,
+      "last_line": 16599,
+      "path": "quartic_1272.tex",
+      "start_character": 786428,
+      "text_sha256": "433f7fd6f21be34e90a29659e816d8f6d9d557155329b45aad1a4400a9f6a540"
+    },
+    "text": "\\bibitem{v5bl}\nT. Browning and D. Loughran, \\emph{Sieving rational points on varieties},\nTrans. Amer. Math. Soc. \\textbf{371} (2019), 5757--5785.\n\\url{https://doi.org/10.1090/tran/7514}.\nTheorem~4.1 was checked in the institutional accepted manuscript and\narXiv:1705.01999v2; the publisher's final typeset text was not accessible\nin this audit.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "v5bhb",
+    "span": {
+      "end_character": 787149,
+      "first_line": 16600,
+      "last_line": 16607,
+      "path": "quartic_1272.tex",
+      "start_character": 786774,
+      "text_sha256": "a2adee5b2f8172e7dce91797d495bee761deb219395abbc48c9a8901bc48f83d"
+    },
+    "text": "\\bibitem{v5bhb}\nT. D. Browning and D. R. Heath-Brown, \\emph{The geometric sieve for quadrics},\nForum Math. \\textbf{33} (2021), no.~1, 147--165.\n\\url{https://doi.org/10.1515/forum-2020-0074}.\nLemmas~2.1 and 4.1 were checked in the Oxford accepted manuscript dated\n14 September 2020 and arXiv:2003.09593v1; the publisher's final typeset\ntext was not accessible in this audit.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "v5ft",
+    "span": {
+      "end_character": 787561,
+      "first_line": 16608,
+      "last_line": 16616,
+      "path": "quartic_1272.tex",
+      "start_character": 787149,
+      "text_sha256": "28b5fb900033c3d35f99fddfef11b0e1302ef8284ff5470160c14b783ed5e0d0"
+    },
+    "text": "\\bibitem{v5ft}\nC. Frei and M. Tinkov\\'a, with an appendix by C. Frei, J. K\\\"onig and\nM. Tinkov\\'a, \\emph{Linear constellations in primes with arithmetic restrictions},\narXiv:2408.17441v3, 5 November 2025.\n\\url{https://arxiv.org/abs/2408.17441v3}.\nTheorem~1.4. Listed as \\emph{Mathematika}, to appear, on\n\\url{https://www.math.tugraz.at/~frei/}, checked 6 November 2026.\nNo final published version was verified.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "v5dk",
+    "span": {
+      "end_character": 787887,
+      "first_line": 16617,
+      "last_line": 16624,
+      "path": "quartic_1272.tex",
+      "start_character": 787561,
+      "text_sha256": "e49cbc15577498d0891267d1f728f9933fd108468c680feccbe56dbc0820cae2"
+    },
+    "text": "\\bibitem{v5dk}\nP. Dodos and V. Kanellopoulos,\n\\emph{Uniformity norms, their weaker versions, and applications},\nActa Arith. \\textbf{203} (2022), no.~3, 251--270.\n\\url{https://doi.org/10.4064/aa210728-27-2}.\nTheorem~5.1 was checked in arXiv:1610.00487v4, 9 June 2022,\npp.~12--13; the final typeset statement was not compared.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "v5tz",
+    "span": {
+      "end_character": 788101,
+      "first_line": 16625,
+      "last_line": 16630,
+      "path": "quartic_1272.tex",
+      "start_character": 787887,
+      "text_sha256": "bb27fcdc0327cd1bbcacb64107a517f7e9a97ae85fed11895c04e28ff9f9f7d3"
+    },
+    "text": "\\bibitem{v5tz}\nT. Tao and T. Ziegler, \\emph{Polynomial patterns in the primes},\nForum Math. Pi \\textbf{6} (2018), e1, 73 pp.\n\\url{https://doi.org/10.1017/fmp.2017.3}.\nPublished Theorems~9, 11, 13 and Corollary~3.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "v5kl",
+    "span": {
+      "end_character": 788367,
+      "first_line": 16631,
+      "last_line": 16637,
+      "path": "quartic_1272.tex",
+      "start_character": 788101,
+      "text_sha256": "2c187f60e26bdf19c387d5d1783efd34c5e7970d63a0112b1a0deb75981b84f7"
+    },
+    "text": "\\bibitem{v5kl}\nG. S. Kopp and J. C. Lagarias,\n\\emph{Ray class groups and ray class fields for orders of number fields},\nEssential Number Theory \\textbf{4} (2025), no.~1, 1--65.\n\\url{https://doi.org/10.2140/ent.2025.4.1}.\nTheorems~1.1, 1.3, 6.5, 7.2 and Remark~7.3.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "v5williams",
+    "span": {
+      "end_character": 788575,
+      "first_line": 16638,
+      "last_line": 16642,
+      "path": "quartic_1272.tex",
+      "start_character": 788367,
+      "text_sha256": "b7e0efc3d8ca8b16266a2b4c6c312f36fb5fcf9141aa6128b58de0547b00eae3"
+    },
+    "text": "\\bibitem{v5williams}\nK. S. Williams, \\emph{Mertens' theorem for arithmetic progressions},\nJ. Number Theory \\textbf{6} (1974), 353--359, Theorem~1, p.~356.\n\\url{https://doi.org/10.1016/0022-314X(74)90032-8}.\n\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "P. Scholze,\n\\emph{$p$-adic Hodge theory for rigid-analytic varieties},\nForum of Mathematics, Pi 1 (2013), e1, 1--77,\nCorollary 1.8 and Theorems 9.1, 9.3.\n\\url{https://doi.org/10.1017/fmp.2013.1}.",
+        "files": [
+          {
+            "bytes": 688182,
+            "retrieval_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/9C5E8381BE3CD320ECADDDEAD2616B55/S2050508613000012a.pdf/dollarpdollar-adic-hodge-theory-for-rigid-analytic-varieties.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "f47a05bbcdd1ac69deb87ce4b6af5bbbc245cbbf0e99df74e8bf73b6d89227d7",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/closure/primary/scholze-published.pdf"
+          },
+          {
+            "bytes": 577883,
+            "retrieval_url": "https://people.mpim-bonn.mpg.de/scholze/pAdicHodgeTheory.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "73dded06286031066e9d98b638e065d650688f1e36e877f4d711331a3508dee3",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/scholze2013.pdf"
+          }
+        ],
+        "id": "scholze2013",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://doi.org/10.1017/fmp.2013.1"
+        ],
+        "version_notes": "Published Forum of Mathematics Pi 1 (2013), e1, 77 pages. Corollary 1.8 is on pp.5-6; Theorems 9.1 and 9.3 are on pp.74-75. The author version is also retained separately. The applied repair uses the published article with its published corrigendum. Published Forum of Mathematics Pi 1 (2013), e1, 77 pages. Corollary 1.8 is on pp.5-6; Theorems 9.1 and 9.3 are on pp.74-75. The author version is also retained separately. The applied repair uses the published article with its published corrigendum."
+      }
+    ],
+    "key": "scholze2013",
+    "span": {
+      "end_character": 788793,
+      "first_line": 16643,
+      "last_line": 16647,
+      "path": "quartic_1272.tex",
+      "start_character": 788575,
+      "text_sha256": "7a3bef29350f85bb8b2b1b27b4e09e1712d4eff45b55635b5234f393e18faa23"
+    },
+    "text": "\\bibitem{scholze2013} P. Scholze,\n\\emph{$p$-adic Hodge theory for rigid-analytic varieties},\nForum of Mathematics, Pi 1 (2013), e1, 1--77,\nCorollary 1.8 and Theorems 9.1, 9.3.\n\\url{https://doi.org/10.1017/fmp.2013.1}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "P. Scholze,\n\\emph{$p$-adic Hodge theory for rigid-analytic varieties---corrigendum},\nForum of Mathematics, Pi 4 (2016), e6, 1--4.\n\\url{https://doi.org/10.1017/fmp.2016.4}.",
+        "files": [
+          {
+            "bytes": 166017,
+            "retrieval_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/423022854D448D337C999BCD505D8F75/S2050508616000044a.pdf/div-class-title-span-class-inlineformula-span-class-alternatives-img-class-inline-graphic-mathjax-alternative-mathjax-alt-graphic-mathjax-off-data-mimesubtype-gif-data-type-simple-src-staticdomain-binary-version-id-urn-cambridge-org-id-binary-20160920235108143-0373-s2050508616000044-s2050508616000044-inline1-gif-span-class-mathjax-tex-wrapper-data-mathjax-type-texmath-span-class-tex-math-mathjax-tex-math-mathjax-on-p-span-span-span-span-adic-hodge-theory-for-rigid-analytic-varieties-corrigendum-div.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "3caea8d89df1e7d047d4edc89a679cd1deb2a19ec350effb450305a9c8eef3d1",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/closure/primary/scholze-erratum-published.pdf"
+          },
+          {
+            "bytes": 178436,
+            "retrieval_url": "https://www.math.uni-bonn.de/people/scholze/pAdicHodgeErratum.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "3cfa56b9e3875c04240d97739dccd58091e41f714c101d5470b95172f73cb235",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/scholze-erratum.pdf"
+          }
+        ],
+        "id": "scholze-erratum",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://doi.org/10.1017/fmp.2016.4"
+        ],
+        "version_notes": "Published Forum of Mathematics Pi 4 (2016), e6, four pages, DOI 10.1017/fmp.2016.4. Read with the 2013 article; the author version is retained separately. Published Forum of Mathematics Pi 4 (2016), e6, four pages, DOI 10.1017/fmp.2016.4. Read with the 2013 article; the author version is retained separately."
+      }
+    ],
+    "key": "scholze-erratum",
+    "span": {
+      "end_character": 788991,
+      "first_line": 16648,
+      "last_line": 16651,
+      "path": "quartic_1272.tex",
+      "start_character": 788793,
+      "text_sha256": "2ef0c5c906e896956a30708f7ac47c09c9fcc477e22a7294bc2c6e3bb91c29f8"
+    },
+    "text": "\\bibitem{scholze-erratum} P. Scholze,\n\\emph{$p$-adic Hodge theory for rigid-analytic varieties---corrigendum},\nForum of Mathematics, Pi 4 (2016), e6, 1--4.\n\\url{https://doi.org/10.1017/fmp.2016.4}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "O. Brinon and B. Conrad,\n\\emph{CMI summer school notes on $p$-adic Hodge theory},\npreliminary version, June 24, 2009,\nTheorem 5.2.1 and Propositions 6.3.3, 6.3.8.\n\\url{https://math.stanford.edu/~conrad/papers/notes.pdf}.",
+        "files": [
+          {
+            "bytes": 2659899,
+            "retrieval_url": "https://math.stanford.edu/~conrad/papers/notes.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "f27d508bc64b3c9e2e9de5041429b2cb6a909b2cd72ff8096c20493f27b5a187",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/brinon-conrad.pdf"
+          },
+          {
+            "bytes": 2659899,
+            "retrieval_url": "https://math.stanford.edu/~conrad/papers/notes.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "f27d508bc64b3c9e2e9de5041429b2cb6a909b2cd72ff8096c20493f27b5a187",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/brinon-conrad.pdf"
+          }
+        ],
+        "id": "brinon-conrad",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://math.stanford.edu/~conrad/papers/notes.pdf"
+        ],
+        "version_notes": "CMI Summer School Notes on p-adic Hodge Theory, preliminary version dated June 24, 2009. Supplementary exposition, not a published research article; do not classify all sources in this audit as published literature. CMI Summer School Notes on p-adic Hodge Theory, preliminary version dated June 24, 2009. Supplementary exposition, not a published research article; do not classify all sources in this audit as published literature."
+      }
+    ],
+    "key": "brinon-conrad",
+    "span": {
+      "end_character": 789236,
+      "first_line": 16652,
+      "last_line": 16656,
+      "path": "quartic_1272.tex",
+      "start_character": 788991,
+      "text_sha256": "3c0c75a6375fc19d9e7a34765d5d7be2c4f07f3f4c3afae837a43810c9e6061e"
+    },
+    "text": "\\bibitem{brinon-conrad} O. Brinon and B. Conrad,\n\\emph{CMI summer school notes on $p$-adic Hodge theory},\npreliminary version, June 24, 2009,\nTheorem 5.2.1 and Propositions 6.3.3, 6.3.8.\n\\url{https://math.stanford.edu/~conrad/papers/notes.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J. S. Milne, \\emph{Abelian varieties},\nversion 2.00 (2008), Part I, Theorem 12.1(a).\n\\url{https://www.jmilne.org/math/CourseNotes/AV.pdf}.",
+        "files": [
+          {
+            "bytes": 1291594,
+            "retrieval_url": "https://www.jmilne.org/math/CourseNotes/AV.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "f5ca4e63e5092a4b102daad1470e4cbed5fe8f82115e3a28c8881e3f67f6aaef",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/milne-av.pdf"
+          },
+          {
+            "bytes": 1291594,
+            "retrieval_url": "https://www.jmilne.org/math/CourseNotes/AV.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "f5ca4e63e5092a4b102daad1470e4cbed5fe8f82115e3a28c8881e3f67f6aaef",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/milne-av.pdf"
+          }
+        ],
+        "id": "milne-av",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.jmilne.org/math/CourseNotes/AV.pdf"
+        ],
+        "version_notes": "Abelian Varieties v2.00. Title page says March 16, 2008; version history says March 17, 2008. Exact bytes disambiguate the file. Proposition numbers include the part/chapter."
+      }
+    ],
+    "key": "milne-av",
+    "span": {
+      "end_character": 789394,
+      "first_line": 16657,
+      "last_line": 16659,
+      "path": "quartic_1272.tex",
+      "start_character": 789236,
+      "text_sha256": "a27db534d996fafd01645879cb151ebd9bcdbcad75279b79c690d3c0e5177ed4"
+    },
+    "text": "\\bibitem{milne-av} J. S. Milne, \\emph{Abelian varieties},\nversion 2.00 (2008), Part I, Theorem 12.1(a).\n\\url{https://www.jmilne.org/math/CourseNotes/AV.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "S. Baba and H. Granath,\n\\emph{Genus 2 curves with quaternionic multiplication}, 2005 preprint,\nSections 2.1, 3 and Proposition 10.\n\\url{https://webdoc.sub.gwdg.de/ebook/serien/e/mpi_mathematik/2005/18.pdf}.",
+        "files": [
+          {
+            "bytes": 240177,
+            "sha256": "b049ce64f9b662af0e078f4faa9e5325cc7a99bf2d6ccda0a31a84719d031c32",
+            "workspace_relative_path": "work/astra-final-height-producers-001/primary/baba-granath-2005.pdf"
+          }
+        ],
+        "id": "babagranath",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://webdoc.sub.gwdg.de/ebook/serien/e/mpi_mathematik/2005/18.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "babagranath",
+    "span": {
+      "end_character": 789623,
+      "first_line": 16660,
+      "last_line": 16663,
+      "path": "quartic_1272.tex",
+      "start_character": 789394,
+      "text_sha256": "173254b15765d25c2ad1dd7102cb5a83a5a0cc7996d9907eed75d68df763cc6a"
+    },
+    "text": "\\bibitem{babagranath} S. Baba and H. Granath,\n\\emph{Genus 2 curves with quaternionic multiplication}, 2005 preprint,\nSections 2.1, 3 and Proposition 10.\n\\url{https://webdoc.sub.gwdg.de/ebook/serien/e/mpi_mathematik/2005/18.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "K. Buzzard, \\emph{Integral models of certain Shimura\ncurves}, 1996, corrected 2002, Theorem 2.1 and Corollary 2.3.\n\\url{https://www.ma.imperial.ac.uk/~buzzard/maths/research/papers/shimura.pdf}.",
+        "files": [
+          {
+            "bytes": 231177,
+            "sha256": "4854cb4adc99fec7eac47596dea86832e2e468f3c80d78726afeb98d2404b915",
+            "workspace_relative_path": "work/astra-final-height-producers-001/primary/buzzard-1996.pdf"
+          }
+        ],
+        "id": "buzzard",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.ma.imperial.ac.uk/~buzzard/maths/research/papers/shimura.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "buzzard",
+    "span": {
+      "end_character": 789836,
+      "first_line": 16664,
+      "last_line": 16666,
+      "path": "quartic_1272.tex",
+      "start_character": 789623,
+      "text_sha256": "0ff6f544b38d0c4e5680fb02b3f2429cdb4f82d5f19b627622f5e7403222452b"
+    },
+    "text": "\\bibitem{buzzard} K. Buzzard, \\emph{Integral models of certain Shimura\ncurves}, 1996, corrected 2002, Theorem 2.1 and Corollary 2.3.\n\\url{https://www.ma.imperial.ac.uk/~buzzard/maths/research/papers/shimura.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "Y.-H. Lin and Y. Yang, \\emph{Quaternionic loci in\nSiegel's modular threefold}, arXiv:1807.00466v1, 2018, equations (2), (14).\n\\url{https://arxiv.org/abs/1807.00466v1}.",
+        "files": [
+          {
+            "bytes": 884274,
+            "sha256": "773518a4a30e4f4acac650b7f7c5f19decfb1f893431e6d04f4cfd0205919038",
+            "workspace_relative_path": "work/astra-final-height-producers-001/primary/lin-yang.pdf"
+          }
+        ],
+        "id": "linyang",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://arxiv.org/abs/1807.00466v1"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "linyang",
+    "span": {
+      "end_character": 790022,
+      "first_line": 16667,
+      "last_line": 16669,
+      "path": "quartic_1272.tex",
+      "start_character": 789836,
+      "text_sha256": "9b7be6906adc2781abd79fe937ed60d9fd52422820558db1ab1c2352d4f06a79"
+    },
+    "text": "\\bibitem{linyang} Y.-H. Lin and Y. Yang, \\emph{Quaternionic loci in\nSiegel's modular threefold}, arXiv:1807.00466v1, 2018, equations (2), (14).\n\\url{https://arxiv.org/abs/1807.00466v1}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "L. Berger, \\emph{Repr\\'esentations $p$-adiques et\n\\'equations diff\\'erentielles}, Inventiones Mathematicae 148 (2002),\n219--284, $p$-adic monodromy theorem.\n\\url{https://doi.org/10.1007/s002220100202}.",
+        "files": [
+          {
+            "bytes": 617453,
+            "retrieval_url": "https://perso.ens-lyon.fr/laurent.berger/articles/article02.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "aada448ae1e8536e370e743a2dd9ca96768ff9f3cf85e1816bb6f88e92f544df",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/berger2002.pdf"
+          },
+          {
+            "bytes": 562200,
+            "retrieval_url": "https://arxiv.org/pdf/math/0102179v3",
+            "retrieved_date": "2026-11-05",
+            "sha256": "142e7948f3c2da0cba0e0e764c2543cb3f0cf039470711fae729c9c3d2f54f6c",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/berger-arxiv-v3.pdf"
+          }
+        ],
+        "id": "berger2002",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://doi.org/10.1007/s002220100202"
+        ],
+        "version_notes": "The author article has Theorem 0.7/Corollary 5.22; arXiv v3 has Theorems 0.6/5.19. Both files are separately pinned. Do not transfer numbering."
+      }
+    ],
+    "key": "berger2002",
+    "span": {
+      "end_character": 790245,
+      "first_line": 16670,
+      "last_line": 16673,
+      "path": "quartic_1272.tex",
+      "start_character": 790022,
+      "text_sha256": "4e95717d2847a46fc98935c50735952e0a8d19479039271b73e2f0c5be77982b"
+    },
+    "text": "\\bibitem{berger2002} L. Berger, \\emph{Repr\\'esentations $p$-adiques et\n\\'equations diff\\'erentielles}, Inventiones Mathematicae 148 (2002),\n219--284, $p$-adic monodromy theorem.\n\\url{https://doi.org/10.1007/s002220100202}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "L. Pan, \\emph{The Fontaine--Mazur conjecture in the\nresidually reducible case}, arXiv:1901.07166v2,\nTheorem 1.0.4, the version used here. Published in Journal of the\nAmerican Mathematical Society 35 (2022), 1031--1169.\n\\url{https://arxiv.org/abs/1901.07166v2}.",
+        "files": [
+          {
+            "bytes": 1552018,
+            "retrieval_url": "https://arxiv.org/pdf/1901.07166v2",
+            "retrieved_date": "2026-11-05",
+            "sha256": "590171129d28a65749cf92b1f6099dbacaa90cc6698828f0a4dfd3da943f4824",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/pan2022.pdf"
+          },
+          {
+            "bytes": 1552018,
+            "retrieval_url": "https://arxiv.org/pdf/1901.07166v2",
+            "retrieved_date": "2026-11-05",
+            "sha256": "590171129d28a65749cf92b1f6099dbacaa90cc6698828f0a4dfd3da943f4824",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/pan2022.pdf"
+          }
+        ],
+        "id": "pan2022",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://arxiv.org/abs/1901.07166v2"
+        ],
+        "version_notes": "The application uses the pinned arXiv:1901.07166v2, Theorem 1.0.4, as explicitly identified in the revised bibliography. The bibliography also records the later JAMS publication. Publisher bytes were not retrieved, and no publisher/preprint statement equivalence is asserted."
+      }
+    ],
+    "key": "pan2022",
+    "span": {
+      "end_character": 790524,
+      "first_line": 16674,
+      "last_line": 16678,
+      "path": "quartic_1272.tex",
+      "start_character": 790245,
+      "text_sha256": "1e5ac42b198c6acc1c31c3ac710b44df65f652166ee82efb6ed24987d0258d76"
+    },
+    "text": "\\bibitem{pan2022} L. Pan, \\emph{The Fontaine--Mazur conjecture in the\nresidually reducible case}, arXiv:1901.07166v2,\nTheorem 1.0.4, the version used here. Published in Journal of the\nAmerican Mathematical Society 35 (2022), 1031--1169.\n\\url{https://arxiv.org/abs/1901.07166v2}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "B. Conrad,\n\\emph{Lifting global representations with local properties},\nauthor preprint, December 11, 2011, Appendix B, pp.~32--33.\n\\url{https://math.stanford.edu/~conrad/papers/locchar.pdf}.",
+        "files": [
+          {
+            "bytes": 528777,
+            "sha256": "782fe71a3c7f26ccd67943d468f73540d384e2de5d474bf8369475b8b631d9bd",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/galois-height/conrad-locchar.pdf"
+          }
+        ],
+        "id": "conrad-local-characters",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://math.stanford.edu/~conrad/papers/locchar.pdf"
+        ],
+        "version_notes": "Original downloaded bytes; exact retrieval recorded in downloads.json."
+      }
+    ],
+    "key": "conrad-local-characters",
+    "span": {
+      "end_character": 790750,
+      "first_line": 16679,
+      "last_line": 16682,
+      "path": "quartic_1272.tex",
+      "start_character": 790524,
+      "text_sha256": "a958f61be68ae91e716da1552741f83bee7297ee47b560aba8949cf76db26225"
+    },
+    "text": "\\bibitem{conrad-local-characters} B. Conrad,\n\\emph{Lifting global representations with local properties},\nauthor preprint, December 11, 2011, Appendix B, pp.~32--33.\n\\url{https://math.stanford.edu/~conrad/papers/locchar.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "W.-C. W. Li,\n\\emph{Newforms and functional equations}, Mathematische Annalen\n212 (1975), 285--315, p.~296.",
+        "files": [
+          {
+            "bytes": 268845,
+            "retrieval_url": "https://gdz.sub.uni-goettingen.de/content/PPN235181684_0212/1000/0/00000293.jpg",
+            "sha256": "15c3948aac6dae70b96348462d1d7b6492b0c14efac8906d40c2d16a7cf6334b",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/geometry/li1975-scan-293.jpg"
+          },
+          {
+            "bytes": 405131,
+            "retrieval_url": "https://gdz.sub.uni-goettingen.de/content/PPN235181684_0212/1000/0/00000302.jpg",
+            "sha256": "a207581a157559fc1a5d3f59a3d4da6e6e194b1ef9bc6a73652cd393c6b0d760",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/geometry/li1975-scan-302.jpg"
+          },
+          {
+            "bytes": 321274,
+            "retrieval_url": "https://gdz.sub.uni-goettingen.de/content/PPN235181684_0212/1000/0/00000304.jpg",
+            "sha256": "07530575e712b4ded14ce64f877ca4f9383bbc7a020cb7dbd70fe88e6ab3ccb2",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/geometry/li1975-scan-304.jpg"
+          },
+          {
+            "bytes": 367936,
+            "retrieval_url": "https://gdz.sub.uni-goettingen.de/content/PPN235181684_0212/1000/0/00000306.jpg",
+            "sha256": "b85999bac4388c35355775dc9fa4f59da9f010ef284a7ab45d3e48b58f857aaf",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/geometry/li1975-scan-306.jpg"
+          }
+        ],
+        "id": "li-newforms",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "Published 1975 article, GDZ original page scans. OCR basenames are offset by one and are not printed-page locators."
+      }
+    ],
+    "key": "li-newforms",
+    "span": {
+      "end_character": 790879,
+      "first_line": 16683,
+      "last_line": 16685,
+      "path": "quartic_1272.tex",
+      "start_character": 790750,
+      "text_sha256": "badd8b167e4b3522450f481337d0311ae49be5f43bce79a28e91ceac22dad8df"
+    },
+    "text": "\\bibitem{li-newforms} W.-C. W. Li,\n\\emph{Newforms and functional equations}, Mathematische Annalen\n212 (1975), 285--315, p.~296.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "G. Shimura,\n\\emph{On the factors of the jacobian variety of a modular function field},\nJournal of the Mathematical Society of Japan 25 (1973), 523--544,\nTheorem 1.\n\\url{https://doi.org/10.2969/jmsj/02530523}.",
+        "files": [
+          {
+            "bytes": 1646652,
+            "sha256": "6a34cc46d06c0f5d4e7d380ddcbc45ec3143b19359bfebba5b1c8f00976f3308",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/galois-height/shimura1973.pdf"
+          }
+        ],
+        "id": "shimura-factors",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://doi.org/10.2969/jmsj/02530523"
+        ],
+        "version_notes": "Original downloaded bytes; exact retrieval recorded in downloads.json."
+      }
+    ],
+    "key": "shimura-factors",
+    "span": {
+      "end_character": 791114,
+      "first_line": 16686,
+      "last_line": 16690,
+      "path": "quartic_1272.tex",
+      "start_character": 790879,
+      "text_sha256": "9955cca7e30a1ac4318674a304879a476a7af6da583aa3945aa74fff065a39fa"
+    },
+    "text": "\\bibitem{shimura-factors} G. Shimura,\n\\emph{On the factors of the jacobian variety of a modular function field},\nJournal of the Mathematical Society of Japan 25 (1973), 523--544,\nTheorem 1.\n\\url{https://doi.org/10.2969/jmsj/02530523}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "A. Javanpeykar, with an appendix by P. Bruin,\n\\emph{Polynomial bounds for Arakelov invariants of Belyi curves},\nAlgebra \\& Number Theory 8 (2014), 89--140,\nTheorem 1.1.1 and Section 2.3.\n\\url{https://doi.org/10.2140/ant.2014.8.89}.",
+        "files": [
+          {
+            "bytes": 1222544,
+            "retrieval_url": "https://msp.org/ant/2014/8-1/ant-v8-n1-p04-s.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "ec890fb41c58dee038ee2e06b530954f3aab85035238cd54a4c0ef081fcb8ea0",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/javanpeykar.pdf"
+          }
+        ],
+        "id": "javanpeykar",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://doi.org/10.2140/ant.2014.8.89"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "javanpeykar",
+    "span": {
+      "end_character": 791368,
+      "first_line": 16691,
+      "last_line": 16695,
+      "path": "quartic_1272.tex",
+      "start_character": 791114,
+      "text_sha256": "4217e9fa463432f3ddf51a17ff900932d0adf53e830884ebf9851d5fdb9c231b"
+    },
+    "text": "\\bibitem{javanpeykar} A. Javanpeykar, with an appendix by P. Bruin,\n\\emph{Polynomial bounds for Arakelov invariants of Belyi curves},\nAlgebra \\& Number Theory 8 (2014), 89--140,\nTheorem 1.1.1 and Section 2.3.\n\\url{https://doi.org/10.2140/ant.2014.8.89}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "\\'E. Gaudron and G. R\\'emond,\n\\emph{Polarisations et isog\\'enies}, Duke Mathematical Journal\n163 (2014), 2057--2108, Theorem 1.4 and Section 9.\n\\url{https://doi.org/10.1215/00127094-2782528}.",
+        "files": [
+          {
+            "bytes": 535639,
+            "sha256": "6d62ddb8a0aa8f8b8f803d70060c6a26c7a6f2a00936b85867c830946cf3db12",
+            "workspace_relative_path": "work/gaudron-remond-polarisations.pdf"
+          }
+        ],
+        "id": "gr2014",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://doi.org/10.1215/00127094-2782528"
+        ],
+        "version_notes": "Published Duke163 (2014),2057-2108,52pages."
+      }
+    ],
+    "key": "gr2014",
+    "span": {
+      "end_character": 791577,
+      "first_line": 16696,
+      "last_line": 16699,
+      "path": "quartic_1272.tex",
+      "start_character": 791368,
+      "text_sha256": "bb865d9b1452aac8cf82046972d825f695b81c018368ebe0e61660364d9d0d7b"
+    },
+    "text": "\\bibitem{gr2014} \\'E. Gaudron and G. R\\'emond,\n\\emph{Polarisations et isog\\'enies}, Duke Mathematical Journal\n163 (2014), 2057--2108, Theorem 1.4 and Section 9.\n\\url{https://doi.org/10.1215/00127094-2782528}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "G. Fowler, \\emph{Some uniform effective results on\nAndr\\'e--Oort for sums of powers in $\\mathbb C^n$}, Mathematical\nProceedings of the Cambridge Philosophical Society 180 (2026),\n607--641, Proposition 2.7.\n\\url{https://doi.org/10.1017/S0305004125101825}.",
+        "files": [
+          {
+            "bytes": 391611,
+            "retrieval_url": "https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/A72ABDB14BEB62DE7E9B47953B77DBDC/S0305004125101825a.pdf/some_uniform_effective_results_on_andreoort_for_sums_of_powers_in_mathbbcn.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "bc676f4d5b6a2a70fa3e6bed55a4449622d6728167d4c668068b89da6b2d55ae",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/fowler.pdf"
+          },
+          {
+            "bytes": 391611,
+            "retrieval_url": "https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/A72ABDB14BEB62DE7E9B47953B77DBDC/S0305004125101825a.pdf/some_uniform_effective_results_on_andreoort_for_sums_of_powers_in_mathbbcn.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "bc676f4d5b6a2a70fa3e6bed55a4449622d6728167d4c668068b89da6b2d55ae",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/fowler.pdf"
+          }
+        ],
+        "id": "fowler",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://doi.org/10.1017/S0305004125101825"
+        ],
+        "version_notes": "Published Mathematical Proceedings of the Cambridge Philosophical Society 180 (2026), 607-641, first online January 13, 2026. The publisher PDF was retrieved on 2026-11-05. Section 2.1 is on printed pp.612-613, PDF pp.6-7; Proposition 2.7 is on printed pp.615-616, PDF pp.9-10. These page correspondences were checked."
+      }
+    ],
+    "key": "fowler",
+    "span": {
+      "end_character": 791849,
+      "first_line": 16700,
+      "last_line": 16704,
+      "path": "quartic_1272.tex",
+      "start_character": 791577,
+      "text_sha256": "7d9ed7aca5bea022726e19f6d5464a0c79bef2234820b35865c629e33219394b"
+    },
+    "text": "\\bibitem{fowler} G. Fowler, \\emph{Some uniform effective results on\nAndr\\'e--Oort for sums of powers in $\\mathbb C^n$}, Mathematical\nProceedings of the Cambridge Philosophical Society 180 (2026),\n607--641, Proposition 2.7.\n\\url{https://doi.org/10.1017/S0305004125101825}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "A. Barquero-Sanchez, L. Cadwallader, O. Cannon,\nT. Genao and R. Masri, \\emph{Faltings heights of CM elliptic curves\nand special Gamma values}, Research in Number Theory 3 (2017),\narticle 13, Section 6, equation (6.2).\n\\url{https://doi.org/10.1007/s40993-017-0077-7}.",
+        "files": [
+          {
+            "bytes": 585415,
+            "retrieval_url": "https://tylergenao.com/wp-content/uploads/2017/09/faltings-heights-of-cm-elliptic-curves-and-special-gamma-values.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "f91cc2017dcc82dbc55d641d397c8b2bb5fc15205b1377cdaae8bdbbd7fc14a6",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/cmheight.pdf"
+          },
+          {
+            "bytes": 585415,
+            "retrieval_url": "https://tylergenao.com/wp-content/uploads/2017/09/faltings-heights-of-cm-elliptic-curves-and-special-gamma-values.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "f91cc2017dcc82dbc55d641d397c8b2bb5fc15205b1377cdaae8bdbbd7fc14a6",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/cmheight.pdf"
+          }
+        ],
+        "id": "cmheight",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://doi.org/10.1007/s40993-017-0077-7"
+        ],
+        "version_notes": "Published Research in Number Theory3 (2017),article13,16pages."
+      }
+    ],
+    "key": "cmheight",
+    "span": {
+      "end_character": 792135,
+      "first_line": 16705,
+      "last_line": 16709,
+      "path": "quartic_1272.tex",
+      "start_character": 791849,
+      "text_sha256": "858f86f028c543831894952338057e9a0af2c19aedbff6601a371c591e0ad8a9"
+    },
+    "text": "\\bibitem{cmheight} A. Barquero-Sanchez, L. Cadwallader, O. Cannon,\nT. Genao and R. Masri, \\emph{Faltings heights of CM elliptic curves\nand special Gamma values}, Research in Number Theory 3 (2017),\narticle 13, Section 6, equation (6.2).\n\\url{https://doi.org/10.1007/s40993-017-0077-7}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "A. Silverberg and Yu. G. Zarhin,\n\\emph{Semistable reduction and torsion subgroups of abelian varieties},\nAnnales de l'Institut Fourier 45 (1995), 403--420, Theorem 3.5.\n\\url{https://www.numdam.org/article/AIF_1995__45_2_403_0.pdf}.",
+        "files": [
+          {
+            "bytes": 1826653,
+            "sha256": "fc62ba1c9d1315a0c441a3dd7de46a254f379289e630c407a3336c0230d91052",
+            "workspace_relative_path": "work/independent-height-review-20261104/conductor/primary/silverberg-zarhin.pdf"
+          }
+        ],
+        "id": "silverbergzarhin",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.numdam.org/article/AIF_1995__45_2_403_0.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "silverbergzarhin",
+    "span": {
+      "end_character": 792394,
+      "first_line": 16710,
+      "last_line": 16713,
+      "path": "quartic_1272.tex",
+      "start_character": 792135,
+      "text_sha256": "c7c34c3b42806c0ee91576ad51b90971c8b2ef730e8d2d09cf7c7a7aee6a5648"
+    },
+    "text": "\\bibitem{silverbergzarhin} A. Silverberg and Yu. G. Zarhin,\n\\emph{Semistable reduction and torsion subgroups of abelian varieties},\nAnnales de l'Institut Fourier 45 (1995), 403--420, Theorem 3.5.\n\\url{https://www.numdam.org/article/AIF_1995__45_2_403_0.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J.-P. Serre, \\emph{Local class field theory},\nin J. W. S. Cassels and A. Fr\\\"ohlich (eds.), \\emph{Algebraic Number Theory},\nAcademic Press, 1967, Chapter VI, 128--161, Sections 4.1--4.3.",
+        "files": [
+          {
+            "bytes": 23921659,
+            "sha256": "e0367b25a022eb27ec220e3c15b474a94fb96d70a6bb89b77f4a02c2231950fe",
+            "workspace_relative_path": "work/independent-height-review-20261104/conductor/primary/serre-local-cft.pdf"
+          }
+        ],
+        "id": "serrelocal",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "Inspected extract of Serre, Local class field theory, Chapter VI in Cassels-Frohlich, Algebraic Number Theory (1967), pp.128-161, followed by Tate Chapter VII. Sections 4.1-4.3, pp.155-159, supply the ramification and conductor statements. This is not Serre Local Fields (1979). Original retrieval URL of these exact extract bytes is unknown."
+      }
+    ],
+    "key": "serrelocal",
+    "span": {
+      "end_character": 792602,
+      "first_line": 16714,
+      "last_line": 16716,
+      "path": "quartic_1272.tex",
+      "start_character": 792394,
+      "text_sha256": "fadfbaf14cb06043efe526502079d71ddff7074c6a751b0e06005e325a5c17d7"
+    },
+    "text": "\\bibitem{serrelocal} J.-P. Serre, \\emph{Local class field theory},\nin J. W. S. Cassels and A. Fr\\\"ohlich (eds.), \\emph{Algebraic Number Theory},\nAcademic Press, 1967, Chapter VI, 128--161, Sections 4.1--4.3.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "G. Faltings, \\emph{Endlichkeitss\\\"atze f\\\"ur\nabelsche Variet\\\"aten \\\"uber Zahlk\\\"orpern}, Inventiones Mathematicae\n73 (1983), 349--366; erratum, 75 (1984), 381.",
+        "files": [
+          {
+            "bytes": 2488206,
+            "retrieval_url": "https://pazuki.perso.math.cnrs.fr/index_fichiers/Faltings83.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "738d6b5f716e05b8180066f665e52170576061c1ba75802d1e4f3c4cc1d69614",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/faltings1983.pdf"
+          }
+        ],
+        "id": "faltings1983",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "Inventiones 73 (1983), pp.349–366. Read together with the separately pinned 1984 erratum: Satz 2 has eventual stationarity, not equality of all tower heights. The erratum states this suffices for subsequent results."
+      }
+    ],
+    "key": "faltings1983",
+    "span": {
+      "end_character": 792786,
+      "first_line": 16717,
+      "last_line": 16719,
+      "path": "quartic_1272.tex",
+      "start_character": 792602,
+      "text_sha256": "4c770c6f607b6673be06c99e5427663563e45c092a22b5fac59f9cfb5db6bb4a"
+    },
+    "text": "\\bibitem{faltings1983} G. Faltings, \\emph{Endlichkeitss\\\"atze f\\\"ur\nabelsche Variet\\\"aten \\\"uber Zahlk\\\"orpern}, Inventiones Mathematicae\n73 (1983), 349--366; erratum, 75 (1984), 381.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "G. Faltings, \\emph{$p$-adic Hodge theory},\nJournal of the American Mathematical Society 1 (1988), 255--299.",
+        "files": [
+          {
+            "bytes": 3980749,
+            "retrieval_url": "https://websites.umich.edu/~bhattb/almost_purity_2011/Faltings_-_p-adic-Hodge-theory.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "00f0ec8e07290a9f4538f56889fd74f673a5a6c336f6c3359308c840d508e617",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/faltings1988.pdf"
+          }
+        ],
+        "id": "faltings1988",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "Journal of the American Mathematical Society 1 (1988), pp.255-299; cached PDF has 46 scanned pages including cover. III Theorem 4.1, printed p.298, is Hodge-Tate comparison and does not supply de Rham comparison. The earlier de Rham attribution was superseded by the accepted comparison-and-finite-descent lemma in A009, using Scholze with its corrigendum and the stated supporting sources."
+      }
+    ],
+    "key": "faltings1988",
+    "span": {
+      "end_character": 792918,
+      "first_line": 16720,
+      "last_line": 16722,
+      "path": "quartic_1272.tex",
+      "start_character": 792786,
+      "text_sha256": "a5d227ed25f09c590ded621f55ed134931390efefeccee0c9735db062c8a84b4"
+    },
+    "text": "\\bibitem{faltings1988} G. Faltings, \\emph{$p$-adic Hodge theory},\nJournal of the American Mathematical Society 1 (1988), 255--299.\n\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "K. Lauter, M. Naehrig and T. Yang, \\emph{Hilbert theta\nseries and invariants of genus 2 curves}, Journal of Number Theory,\n2015, Section 2.2, doi:10.1016/j.jnt.2015.02.020.\n\\url{https://people.math.wisc.edu/~tonghaiyang/2015-LNYFinal-JNT.pdf}.",
+        "files": [
+          {
+            "bytes": 1185688,
+            "sha256": "42f1439a0ea42ca380f22bef22d53a56141ad468bf62328ace56ba9b25b09f8e",
+            "workspace_relative_path": "work/astra-final-height-producers-001/primary/lny-2015.pdf"
+          }
+        ],
+        "id": "lny",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://people.math.wisc.edu/~tonghaiyang/2015-LNYFinal-JNT.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "lny",
+    "span": {
+      "end_character": 793176,
+      "first_line": 16723,
+      "last_line": 16726,
+      "path": "quartic_1272.tex",
+      "start_character": 792918,
+      "text_sha256": "48d53831ca6aebcaacb6c68e4930802675a6313d0cc861a61c0005ccdf5c0d4b"
+    },
+    "text": "\\bibitem{lny} K. Lauter, M. Naehrig and T. Yang, \\emph{Hilbert theta\nseries and invariants of genus 2 curves}, Journal of Number Theory,\n2015, Section 2.2, doi:10.1016/j.jnt.2015.02.020.\n\\url{https://people.math.wisc.edu/~tonghaiyang/2015-LNYFinal-JNT.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "F. Pazuki, \\emph{Theta height and Faltings height},\nBulletin de la Soci\\'et\\'e Math\\'ematique de France, 2012,\nSections 2.2--2.3 and Corollary 1.3.\n\\url{https://www.numdam.org/item/10.24033/bsmf.2623.pdf}.",
+        "files": [
+          {
+            "bytes": 521460,
+            "sha256": "479d8157f118f6bb0df581deb57585d67a1c87fb0cec8867ca1bed30b75e7a96",
+            "workspace_relative_path": "work/astra-final-height-producers-001/primary/pazuki-2012.pdf"
+          },
+          {
+            "bytes": 917619,
+            "retrieval_url": "https://www.numdam.org/item/10.24033/bsmf.2623.pdf",
+            "retrieved_date": "2026-11-05",
+            "sha256": "9f957d234f98aee294676cc97e103a61559722ba1749c58d523bb1ca398c5206",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/pazuki-published.pdf"
+          }
+        ],
+        "id": "pazuki",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.numdam.org/item/10.24033/bsmf.2623.pdf"
+        ],
+        "version_notes": "The previously pinned24-page file is an author version dated4February2012, not the33-page Numdam published file. Both bounded interfaces compared. Published Bull.Soc.Math.France140(1) (2012),19-49,33PDFpages including cover; differs from author-version bytes. Applied constants, metrics and coordinates agree; no whole-document identity claim."
+      }
+    ],
+    "key": "pazuki",
+    "span": {
+      "end_character": 793399,
+      "first_line": 16727,
+      "last_line": 16730,
+      "path": "quartic_1272.tex",
+      "start_character": 793176,
+      "text_sha256": "86189acef4ea1e6b15f87f35aa54737b2f00cb21cc78d4df6e5b82e35ceb2510"
+    },
+    "text": "\\bibitem{pazuki} F. Pazuki, \\emph{Theta height and Faltings height},\nBulletin de la Soci\\'et\\'e Math\\'ematique de France, 2012,\nSections 2.2--2.3 and Corollary 1.3.\n\\url{https://www.numdam.org/item/10.24033/bsmf.2623.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "B. Poonen and M. Stoll, \\emph{The Cassels--Tate\npairing on polarized abelian varieties}, Annals of Mathematics 150\n(1999), 1109--1149. \\url{https://math.mit.edu/~poonen/papers/sha.pdf}.",
+        "files": [
+          {
+            "bytes": 509200,
+            "sha256": "3b9a619423358bc877fd2123b73a759157a728ec11e0f7b0aa48bd0333d7149a",
+            "workspace_relative_path": "work/astra-final-pole-completeness-review-001/poonen-stoll.pdf"
+          }
+        ],
+        "id": "poonenstoll",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://math.mit.edu/~poonen/papers/sha.pdf"
+        ],
+        "version_notes": "Author version dated November 6, 1998 with minor correction August 23, 2014; states publication in Annals of Mathematics 150 (1999), pp.1109–1149. Locator page numbers in this audit refer to the corrected author version, not journal pagination."
+      }
+    ],
+    "key": "poonenstoll",
+    "span": {
+      "end_character": 793607,
+      "first_line": 16731,
+      "last_line": 16733,
+      "path": "quartic_1272.tex",
+      "start_character": 793399,
+      "text_sha256": "fdf7148556a5ded53375e7063734406c72381f9e15fef7f2fd4d301fbcfb74fa"
+    },
+    "text": "\\bibitem{poonenstoll} B. Poonen and M. Stoll, \\emph{The Cassels--Tate\npairing on polarized abelian varieties}, Annals of Mathematics 150\n(1999), 1109--1149. \\url{https://math.mit.edu/~poonen/papers/sha.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "B. Green and T. Tao, \\emph{Linear equations in primes},\nAnnals of Mathematics 171 (2010), 1753--1850.\n\\url{https://annals.math.princeton.edu/2010/171-3/p08}.",
+        "files": [
+          {
+            "bytes": 1213124,
+            "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+            "workspace_relative_path": "work/astra-final-height-producers-001/primary/green-tao-linear.pdf"
+          },
+          {
+            "bytes": 1213124,
+            "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/green-tao-linear.pdf"
+          }
+        ],
+        "id": "greentao",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://annals.math.princeton.edu/2010/171-3/p08"
+        ],
+        "version_notes": "Annals171 (2010), published PDF; main theorem is unnumbered."
+      }
+    ],
+    "key": "greentao",
+    "span": {
+      "end_character": 793784,
+      "first_line": 16734,
+      "last_line": 16736,
+      "path": "quartic_1272.tex",
+      "start_character": 793607,
+      "text_sha256": "2f210af45b0d3d8b229fb6d158eb93a25bfd81b0e13607df6348773cd9de5add"
+    },
+    "text": "\\bibitem{greentao} B. Green and T. Tao, \\emph{Linear equations in primes},\nAnnals of Mathematics 171 (2010), 1753--1850.\n\\url{https://annals.math.princeton.edu/2010/171-3/p08}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "B. Green and T. Tao, \\emph{The M\\\"obius function is\nstrongly orthogonal to nilsequences}, Annals of Mathematics 175 (2012).\n\\url{https://annals.math.princeton.edu/2012/175-2/p03}.",
+        "files": [
+          {
+            "bytes": 502447,
+            "sha256": "5259dbc9ee73df46edd765ca27c8b3c0ec466f6b78abafa5f54237b11d44a314",
+            "workspace_relative_path": "work/astra-final-height-producers-001/primary/green-tao-mobius.pdf"
+          },
+          {
+            "bytes": 502447,
+            "sha256": "5259dbc9ee73df46edd765ca27c8b3c0ec466f6b78abafa5f54237b11d44a314",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/green-tao-mobius.pdf"
+          }
+        ],
+        "id": "moebius",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://annals.math.princeton.edu/2012/175-2/p03"
+        ],
+        "version_notes": "Annals175 (2012), published PDF."
+      }
+    ],
+    "key": "moebius",
+    "span": {
+      "end_character": 793982,
+      "first_line": 16737,
+      "last_line": 16739,
+      "path": "quartic_1272.tex",
+      "start_character": 793784,
+      "text_sha256": "b6df19c922631e33f3494c873471ab5a964af7bd8187006b59fcab7dc85e6cf2"
+    },
+    "text": "\\bibitem{moebius} B. Green and T. Tao, \\emph{The M\\\"obius function is\nstrongly orthogonal to nilsequences}, Annals of Mathematics 175 (2012).\n\\url{https://annals.math.princeton.edu/2012/175-2/p03}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "B. Green, T. Tao and T. Ziegler, \\emph{An inverse theorem\nfor the Gowers $U^{s+1}[N]$-norm}, arXiv:1009.3998v5, 2026 corrected version.\n\\url{https://arxiv.org/abs/1009.3998v5}; author erratum:\n\\url{https://people.maths.ox.ac.uk/greenbj/papers/GI(s)-erratum.pdf}.",
+        "files": [
+          {
+            "bytes": 983529,
+            "sha256": "24b5b74b1c4f31986bfc75955f8528e81753efc0c45bd99bc23fee58171a4711",
+            "workspace_relative_path": "work/astra-final-height-producers-001/primary/gtz-inverse-v5.pdf"
+          },
+          {
+            "bytes": 266792,
+            "sha256": "9d66017c15fc99bbae83726ef27bcc16d73128c13166916f00714c84c8523383",
+            "workspace_relative_path": "work/astra-final-height-producers-001/primary/gtz-erratum.pdf"
+          },
+          {
+            "bytes": 983529,
+            "sha256": "24b5b74b1c4f31986bfc75955f8528e81753efc0c45bd99bc23fee58171a4711",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/gtz-v5.pdf"
+          },
+          {
+            "bytes": 266792,
+            "sha256": "9d66017c15fc99bbae83726ef27bcc16d73128c13166916f00714c84c8523383",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/gtz-erratum.pdf"
+          }
+        ],
+        "id": "gtz",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://arxiv.org/abs/1009.3998v5",
+          "https://people.maths.ox.ac.uk/greenbj/papers/GI(s)-erratum.pdf"
+        ],
+        "version_notes": "The actual input is corrected arXiv:1009.3998v5 (23 April 2026), together with the separate author erratum. Do not describe the input as only the 2012 printed article. arXiv1009.3998v5, 23 April2026, 116pp. Repairs filtration in Lemma13.2 but retains original Proposition8.3; separate erratum still required. Not a claim that v5 alone contains every correction. Separate six-page author erratum, 2024; needed together with v5. Original Proposition8.3 is false as stated."
+      }
+    ],
+    "key": "gtz",
+    "span": {
+      "end_character": 794259,
+      "first_line": 16740,
+      "last_line": 16743,
+      "path": "quartic_1272.tex",
+      "start_character": 793982,
+      "text_sha256": "317cb4a2312297d453b63048678318442df14b6d2edd1f64953d1bf5db83f6cd"
+    },
+    "text": "\\bibitem{gtz} B. Green, T. Tao and T. Ziegler, \\emph{An inverse theorem\nfor the Gowers $U^{s+1}[N]$-norm}, arXiv:1009.3998v5, 2026 corrected version.\n\\url{https://arxiv.org/abs/1009.3998v5}; author erratum:\n\\url{https://people.maths.ox.ac.uk/greenbj/papers/GI(s)-erratum.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "M. A. Bennett, G. Martin, K. O'Bryant and A. Rechnitzer,\n\\emph{Explicit bounds for primes in arithmetic progressions},\nIllinois Journal of Mathematics 62 (2018), 427--532,\narXiv:1802.00085v3, Theorem 1.2.\n\\url{https://arxiv.org/abs/1802.00085v3}.",
+        "files": [
+          {
+            "bytes": 1122139,
+            "sha256": "e51f8b8f63486c2259efe076d367504f08dda0fe9e99dc35bf36de544ffc0601",
+            "workspace_relative_path": "work/astra-final-ordinary-definition-001/primary/bmor-2018-v3.pdf"
+          },
+          {
+            "bytes": 1122139,
+            "sha256": "e51f8b8f63486c2259efe076d367504f08dda0fe9e99dc35bf36de544ffc0601",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/bmor-v3.pdf"
+          },
+          {
+            "bytes": 933725,
+            "sha256": "958b0390475236b68afdec28ce006b1a1d6ac59484eea9443e0b287e9f61a541",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/bmor-published.pdf"
+          }
+        ],
+        "id": "bmor",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://arxiv.org/abs/1802.00085v3"
+        ],
+        "version_notes": "arXiv1802.00085v3, 27 November2018, 103pp. Illinois J.Math.62 (2018),427-532,106pp. These statements/constants agree with v3; no claim of whole-document identity."
+      }
+    ],
+    "key": "bmor",
+    "span": {
+      "end_character": 794521,
+      "first_line": 16744,
+      "last_line": 16748,
+      "path": "quartic_1272.tex",
+      "start_character": 794259,
+      "text_sha256": "acda5ca0843d0b71f22b24361de226bf96437a4d64067fa15292b05607e3801e"
+    },
+    "text": "\\bibitem{bmor} M. A. Bennett, G. Martin, K. O'Bryant and A. Rechnitzer,\n\\emph{Explicit bounds for primes in arithmetic progressions},\nIllinois Journal of Mathematics 62 (2018), 427--532,\narXiv:1802.00085v3, Theorem 1.2.\n\\url{https://arxiv.org/abs/1802.00085v3}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J. S. Milne, \\emph{Arithmetic duality theorems},\nsecond edition, 2006, Chapter I.\n\\url{https://www.jmilne.org/math/Books/ADTnot.pdf}.",
+        "files": [
+          {
+            "bytes": 2136045,
+            "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+            "workspace_relative_path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf"
+          }
+        ],
+        "id": "milne",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.jmilne.org/math/Books/ADTnot.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "milne",
+    "span": {
+      "end_character": 794671,
+      "first_line": 16749,
+      "last_line": 16751,
+      "path": "quartic_1272.tex",
+      "start_character": 794521,
+      "text_sha256": "e77c6b4d92dea34e7a5729c238ec514fc410222eee87ebca0cc7d69fa0eae15f"
+    },
+    "text": "\\bibitem{milne} J. S. Milne, \\emph{Arithmetic duality theorems},\nsecond edition, 2006, Chapter I.\n\\url{https://www.jmilne.org/math/Books/ADTnot.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "The Stacks Project,\n\\emph{Stalks of higher direct images} and \\emph{The Leray spectral sequence},\nTheorem 59.53.1, Tag 03Q9, and Proposition 59.54.2, Section Tag 03QA,\nHTML snapshots of November 5, 2026.\n\\url{https://stacks.math.columbia.edu/tag/03Q9};\n\\url{https://stacks.math.columbia.edu/tag/03QA}.",
+        "files": [
+          {
+            "bytes": 18979,
+            "sha256": "5821c51ab4e389b75768e7325758209859c56f7c9a29d589c8a6be3d7d375f48",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/forward-modularity/primary/stacks-03Q9.html"
+          },
+          {
+            "bytes": 15051,
+            "sha256": "18b9c7e277b11ffb8b921386556b24fe5131277c3f41a81aba2bdce867ddf218",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/forward-modularity/primary/stacks-03QA.html"
+          }
+        ],
+        "id": "stackscohom",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://stacks.math.columbia.edu/tag/03Q9",
+          "https://stacks.math.columbia.edu/tag/03QA"
+        ],
+        "version_notes": "Exact Stacks snapshots retrieved 2026-11-05 for higher direct image stalks and Leray."
+      }
+    ],
+    "key": "stackscohom",
+    "span": {
+      "end_character": 794995,
+      "first_line": 16752,
+      "last_line": 16757,
+      "path": "quartic_1272.tex",
+      "start_character": 794671,
+      "text_sha256": "fcefb23ff8f260d93319d8140fa1686325cb80d77bdbe1c8a776f2722d19d47c"
+    },
+    "text": "\\bibitem{stackscohom} The Stacks Project,\n\\emph{Stalks of higher direct images} and \\emph{The Leray spectral sequence},\nTheorem 59.53.1, Tag 03Q9, and Proposition 59.54.2, Section Tag 03QA,\nHTML snapshots of November 5, 2026.\n\\url{https://stacks.math.columbia.edu/tag/03Q9};\n\\url{https://stacks.math.columbia.edu/tag/03QA}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J. Nekov\\'a\\v r, \\emph{Selmer complexes},\nAst\\'erisque 310, 2006, Proposition 5.2.4, Theorems 6.3.4 and 7.8.8, and Sections 5.7 and 6.4.\n\\url{https://www.numdam.org/item/AST_2006__310__1_0/}.",
+        "files": [
+          {
+            "bytes": 42932456,
+            "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+            "workspace_relative_path": "work/nekovar-selmer-complexes-2006.pdf"
+          }
+        ],
+        "id": "nekovar",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.numdam.org/item/AST_2006__310__1_0/"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "nekovar",
+    "span": {
+      "end_character": 795205,
+      "first_line": 16758,
+      "last_line": 16760,
+      "path": "quartic_1272.tex",
+      "start_character": 794995,
+      "text_sha256": "0514c0a89bfbc9ce1f2959fb53ea64b8ee148ef1d6792a1bc2784a5935bd409f"
+    },
+    "text": "\\bibitem{nekovar} J. Nekov\\'a\\v r, \\emph{Selmer complexes},\nAst\\'erisque 310, 2006, Proposition 5.2.4, Theorems 6.3.4 and 7.8.8, and Sections 5.7 and 6.4.\n\\url{https://www.numdam.org/item/AST_2006__310__1_0/}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "Archive of Formal Proofs, \\emph{DPRM\\_Theorem},\n\\texttt{Alpha\\_Sequence}, \\texttt{Exponential\\_Relation}, and\n\\texttt{Exponentiation}, directory\n\\texttt{thys/DPRM\\_Theorem/Diophantine/}, AFP development git mirror\nrevision \\texttt{b4f3b892d0ae25cea27412ba4007cdb63e44b0eb}\n(May 10, 2026). The three source files match this revision byte for byte.\n\\url{https://isa-afp.org/entries/DPRM_Theorem.html}.",
+        "files": [
+          {
+            "bytes": 3733,
+            "sha256": "76a9dfa6bcebaebe17492d1aef32be7b1fec241529cc3fec3378e0c6d1210c23",
+            "workspace_relative_path": "work/Alpha_Sequence.thy"
+          },
+          {
+            "bytes": 8240,
+            "sha256": "515093945cfd56a09622c9bb6536f61c2dcc8f6d6798af1f28efafcd42a95069",
+            "workspace_relative_path": "work/Exponential_Relation.thy"
+          },
+          {
+            "bytes": 90303,
+            "sha256": "203431b551fd0ca218722583a2ba62c5959d8e72aea8c47eca975118e74f0946",
+            "workspace_relative_path": "work/Exponentiation.thy"
+          },
+          {
+            "bytes": 2317,
+            "sha256": "3e11270aed5d010fd0de73bcc36b9a0398598691942f7d2a613ac18b56dff1b1",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/geometry/afp-b4f3b892d0ae25cea27412ba4007cdb63e44b0eb-Modulo_Divisibility.thy"
+          }
+        ],
+        "id": "afp",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://isa-afp.org/entries/DPRM_Theorem.html"
+        ],
+        "version_notes": "The three original local Isabelle files match AFP development mirror revision b4f3b892d0ae25cea27412ba4007cdb63e44b0eb, dated 2026-05-10T07:38:12Z. The additional modulo-definition dependency is pinned at the same revision. This authenticates the exact source revision; it does not infer the original retrieval date, an Isabelle release, a stable AFP release, or an Isabelle rebuild."
+      }
+    ],
+    "key": "afp",
+    "span": {
+      "end_character": 795619,
+      "first_line": 16761,
+      "last_line": 16767,
+      "path": "quartic_1272.tex",
+      "start_character": 795205,
+      "text_sha256": "7ac0f6ad2cc86dc6bc6f5e8849e5aa8d0872f44e1ffd525e93ac46b532fd8390"
+    },
+    "text": "\\bibitem{afp} Archive of Formal Proofs, \\emph{DPRM\\_Theorem},\n\\texttt{Alpha\\_Sequence}, \\texttt{Exponential\\_Relation}, and\n\\texttt{Exponentiation}, directory\n\\texttt{thys/DPRM\\_Theorem/Diophantine/}, AFP development git mirror\nrevision \\texttt{b4f3b892d0ae25cea27412ba4007cdb63e44b0eb}\n(May 10, 2026). The three source files match this revision byte for byte.\n\\url{https://isa-afp.org/entries/DPRM_Theorem.html}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "B. Edixhoven, \\emph{N\\'eron models and tame ramification},\nCompositio Mathematica 81 (1992), 291--306,\nTheorem~5.3 and Remark~5.4.1.\n\\url{https://www.numdam.org/item/CM_1992__81_3_291_0/}.",
+        "files": [
+          {
+            "bytes": 1492562,
+            "sha256": "5ddfbee91284ef888d97106ff89c5f8f156377373b7af68942a5cf4453abd6cc",
+            "workspace_relative_path": "work/fable-review-packet-20261104/primary/edixhoven-1992.pdf"
+          }
+        ],
+        "id": "edixhoven",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.numdam.org/item/CM_1992__81_3_291_0/"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "edixhoven",
+    "span": {
+      "end_character": 795828,
+      "first_line": 16768,
+      "last_line": 16772,
+      "path": "quartic_1272.tex",
+      "start_character": 795619,
+      "text_sha256": "d1389d92d617d05a8c58fe28eced3265b6461caa5bbf93527278956448b0f67d"
+    },
+    "text": "\\bibitem{edixhoven}\nB. Edixhoven, \\emph{N\\'eron models and tame ramification},\nCompositio Mathematica 81 (1992), 291--306,\nTheorem~5.3 and Remark~5.4.1.\n\\url{https://www.numdam.org/item/CM_1992__81_3_291_0/}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "A. V. Sutherland,\n\\emph{Isogeny kernels and division polynomials}, MIT 18.783,\nFall 2025, Lecture 5, September 18, 2025, \\S\\S5.5--5.6.\n\\url{https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25_lec05.pdf}.",
+        "files": [
+          {
+            "bytes": 556484,
+            "sha256": "4d638ce3bbe1127ae7947a8b4deda6c6e51247912194bbacaf3920d4c9bb19d7",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/closure/primary/sutherland-2025-lecture05.pdf"
+          }
+        ],
+        "id": "sutherland",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25_lec05.pdf"
+        ],
+        "version_notes": "MIT 18.783 Fall 2025 Lecture 5; September 18 2025; lecture notes, not peer-reviewed article"
+      }
+    ],
+    "key": "sutherland",
+    "span": {
+      "end_character": 796076,
+      "first_line": 16773,
+      "last_line": 16776,
+      "path": "quartic_1272.tex",
+      "start_character": 795828,
+      "text_sha256": "40e22a09da78e789aaf06aa2e6f1232c495c2094fd346d27800737cc96646dad"
+    },
+    "text": "\\bibitem{sutherland} A. V. Sutherland,\n\\emph{Isogeny kernels and division polynomials}, MIT 18.783,\nFall 2025, Lecture 5, September 18, 2025, \\S\\S5.5--5.6.\n\\url{https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25_lec05.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+        "files": [
+          {
+            "bytes": 3658085,
+            "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+            "workspace_relative_path": "work/astra-final-size-independent-review-001/silverman-2009.pdf"
+          }
+        ],
+        "id": "silverman",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file."
+      }
+    ],
+    "key": "silverman",
+    "span": {
+      "end_character": 796208,
+      "first_line": 16777,
+      "last_line": 16778,
+      "path": "quartic_1272.tex",
+      "start_character": 796076,
+      "text_sha256": "1615ff55c2737519da52dead9d5b18be6aeba60f36af997ef24863c345b5c0f2"
+    },
+    "text": "\\bibitem{silverman} J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "T. Dokchitser and V. Dokchitser, \\emph{Root numbers and parity\nof ranks of elliptic curves}, Journal f\\\"ur die reine und angewandte\nMathematik 658 (2011), 39--64, Theorem 1.8.\n\\url{https://arxiv.org/abs/0906.1815v1}.",
+        "files": [
+          {
+            "bytes": 341969,
+            "sha256": "b0c625d49e99cfd7af1ef95d8bd7ec729dc2eba4a762b4869838f6052b103707",
+            "workspace_relative_path": "work/astra-weighted-theta-audit-001/primary/dokchitser-parity-2009.pdf"
+          }
+        ],
+        "id": "dd",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://arxiv.org/abs/0906.1815v1"
+        ],
+        "version_notes": "Consulted arXiv:0906.1815v1; bibliography also names 2011 journal. Exact publisher equivalence is unverified. Use Theorem 1.8, not the finite-Sha statement 1.2."
+      }
+    ],
+    "key": "dd",
+    "span": {
+      "end_character": 796438,
+      "first_line": 16779,
+      "last_line": 16782,
+      "path": "quartic_1272.tex",
+      "start_character": 796208,
+      "text_sha256": "a9539055fd08aa821d651c795810822f9fae7b2a28b2e49a3790829a616c6055"
+    },
+    "text": "\\bibitem{dd} T. Dokchitser and V. Dokchitser, \\emph{Root numbers and parity\nof ranks of elliptic curves}, Journal f\\\"ur die reine und angewandte\nMathematik 658 (2011), 39--64, Theorem 1.8.\n\\url{https://arxiv.org/abs/0906.1815v1}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "C. Breuil, B. Conrad, F. Diamond and R. Taylor,\n\\emph{On the modularity of elliptic curves over $\\Q$: wild 3-adic exercises},\nauthor manuscript, Theorem A and Introduction, conditions (1)--(6).\n\\url{https://virtualmath1.stanford.edu/~conrad/papers/tswfinal.pdf}.\nPublished in Journal of the American Mathematical Society 14 (2001), 843--939.",
+        "files": [
+          {
+            "bytes": 698482,
+            "sha256": "cbbdc24c26cdfcbd77f0e084194643e8804a724f004eb02e431ead9d932c498d",
+            "workspace_relative_path": "work/astra-final-pole-completeness-review-001/bcdt-2001.pdf"
+          },
+          {
+            "bytes": 685965,
+            "sha256": "13043cf6e9043a69dc7988882658cd92595efc88dfd4fd2f326ac3ef3cae8e06",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/forward-modularity/primary/bcdt-author-typeset.pdf"
+          }
+        ],
+        "id": "bcdt",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://virtualmath1.stanford.edu/~conrad/papers/tswfinal.pdf"
+        ],
+        "version_notes": "Author manuscript of On the modularity of elliptic curves over Q: wild 3-adic exercises. Its date line contains placeholders (? 2000; ? January 2001). Exact bytes are pinned, but equivalence to the final 2001 JAMS article has not been independently checked. Author typeset manuscript; journal and received-date placeholders, not publisher final"
+      }
+    ],
+    "key": "bcdt",
+    "span": {
+      "end_character": 796795,
+      "first_line": 16783,
+      "last_line": 16787,
+      "path": "quartic_1272.tex",
+      "start_character": 796438,
+      "text_sha256": "e81d82db08e5f6a16e320182910cf96e450d92a57a813d75d78dc341499b47bf"
+    },
+    "text": "\\bibitem{bcdt} C. Breuil, B. Conrad, F. Diamond and R. Taylor,\n\\emph{On the modularity of elliptic curves over $\\Q$: wild 3-adic exercises},\nauthor manuscript, Theorem A and Introduction, conditions (1)--(6).\n\\url{https://virtualmath1.stanford.edu/~conrad/papers/tswfinal.pdf}.\nPublished in Journal of the American Mathematical Society 14 (2001), 843--939.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J. S. Milne, \\emph{Modular functions and modular forms},\nv1.31, March 22, 2017, Remark 11.18 and Theorem 11.19.\n\\url{https://www.jmilne.org/math/CourseNotes/MF.pdf}.",
+        "files": [
+          {
+            "bytes": 1010364,
+            "sha256": "977f06a4e838c43c77a7c9398c090789e60d67f64e013e1dcd9bcce0e0c27b8d",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/forward-modularity/primary/milne-mf.pdf"
+          }
+        ],
+        "id": "milnemf",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.jmilne.org/math/CourseNotes/MF.pdf"
+        ],
+        "version_notes": "Author notes v1.31, March 22, 2017"
+      }
+    ],
+    "key": "milnemf",
+    "span": {
+      "end_character": 796979,
+      "first_line": 16788,
+      "last_line": 16790,
+      "path": "quartic_1272.tex",
+      "start_character": 796795,
+      "text_sha256": "b63bdaa4166637bf9135b1bc6b00cfca19040ad9bfbd188275c48236ad832504"
+    },
+    "text": "\\bibitem{milnemf} J. S. Milne, \\emph{Modular functions and modular forms},\nv1.31, March 22, 2017, Remark 11.18 and Theorem 11.19.\n\\url{https://www.jmilne.org/math/CourseNotes/MF.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "R. Elkik, \\emph{Le th\\'eor\\`eme de Manin--Drinfeld},\nAst\\'erisque 183 (1990), 59--67, Theorem, p.~59.\n\\url{https://www.numdam.org/item/AST_1990__183__59_0.pdf}.",
+        "files": [
+          {
+            "bytes": 606549,
+            "sha256": "7618e61b8ec287b9fcce61fb4ac7d89ea98d58ca9274fa899ed52cda670b19b5",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/forward-modularity/primary/elkik1990.pdf"
+          }
+        ],
+        "id": "elkik",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.numdam.org/item/AST_1990__183__59_0.pdf"
+        ],
+        "version_notes": "Published Asterisque 183 (1990) pp.59-67, Numdam scan"
+      }
+    ],
+    "key": "elkik",
+    "span": {
+      "end_character": 797156,
+      "first_line": 16791,
+      "last_line": 16793,
+      "path": "quartic_1272.tex",
+      "start_character": 796979,
+      "text_sha256": "fdc8a8b9cbd5700b61ab4c8e868067bd60be5616e939c65692e15e0b56a18fd8"
+    },
+    "text": "\\bibitem{elkik} R. Elkik, \\emph{Le th\\'eor\\`eme de Manin--Drinfeld},\nAst\\'erisque 183 (1990), 59--67, Theorem, p.~59.\n\\url{https://www.numdam.org/item/AST_1990__183__59_0.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "B. Gross and D. Zagier, \\emph{Heegner points and derivatives\nof $L$-series}, Inventiones Mathematicae 84 (1986), 225--320.",
+        "files": [
+          {
+            "bytes": 4395679,
+            "sha256": "8afee839cdc0e2056c6dcbe348e39c0a6aa27344125d8c3b80dd735f2e6d9521",
+            "workspace_relative_path": "work/gross-zagier-1986.pdf"
+          }
+        ],
+        "id": "gz",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "gz",
+    "span": {
+      "end_character": 797292,
+      "first_line": 16794,
+      "last_line": 16795,
+      "path": "quartic_1272.tex",
+      "start_character": 797156,
+      "text_sha256": "cfcd30db863930aafa01a6cedd3e245c567b177d8217cb479b3860faa992947b"
+    },
+    "text": "\\bibitem{gz} B. Gross and D. Zagier, \\emph{Heegner points and derivatives\nof $L$-series}, Inventiones Mathematicae 84 (1986), 225--320.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "V. A. Kolyvagin,\n\\emph{On the Mordell--Weil group and the Shafarevich--Tate group\nof modular elliptic curves}, MPIM preprint MPI/90-69 (1990),\nTheorems 1--5, pp.~4--5.\n\\url{https://archive.mpim-bonn.mpg.de/id/eprint/325/1/preprint_1990_69.pdf}.",
+        "files": [
+          {
+            "bytes": 380826,
+            "sha256": "bacdf23d05d5120defe923c8dcccd7c5bc525fe7b32239552b04fd6567726f2f",
+            "workspace_relative_path": "work/astra-weighted-theta-audit-001/primary/kolyvagin-1990.pdf"
+          }
+        ],
+        "id": "kolyvagin",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://archive.mpim-bonn.mpg.de/id/eprint/325/1/preprint_1990_69.pdf"
+        ],
+        "version_notes": "Inspected MPI/90-69 (1990), On the Mordell-Weil group and the Shafarevich-Tate group of modular elliptic curves. Theorem 1 is printed p.4; its explanation and auxiliary-field chain continue pp.4-5. This pinned file is not the Grothendieck Festschrift chapter Euler systems; no equivalence to that different text is asserted."
+      }
+    ],
+    "key": "kolyvagin",
+    "span": {
+      "end_character": 797557,
+      "first_line": 16796,
+      "last_line": 16800,
+      "path": "quartic_1272.tex",
+      "start_character": 797292,
+      "text_sha256": "26f438a418f8e1b032a3dfa5f79cc0ff8e7e499a5166f97d8bbec25c9a75eb2b"
+    },
+    "text": "\\bibitem{kolyvagin} V. A. Kolyvagin,\n\\emph{On the Mordell--Weil group and the Shafarevich--Tate group\nof modular elliptic curves}, MPIM preprint MPI/90-69 (1990),\nTheorems 1--5, pp.~4--5.\n\\url{https://archive.mpim-bonn.mpg.de/id/eprint/325/1/preprint_1990_69.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "K. Kato, \\emph{$p$-adic Hodge theory and values of zeta\nfunctions of modular forms}, Ast\\'erisque 295 (2004), 117--290.\n\\url{https://www.numdam.org/article/AST_2004__295__117_0.pdf}.",
+        "files": [
+          {
+            "bytes": 18010813,
+            "sha256": "3c6e14b11fa60262db8aff782ce3cf4d83e9100c0be83621a7e4ce502cec605d",
+            "workspace_relative_path": "work/kato-2004.pdf"
+          }
+        ],
+        "id": "kato",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.numdam.org/article/AST_2004__295__117_0.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "kato",
+    "span": {
+      "end_character": 797755,
+      "first_line": 16801,
+      "last_line": 16803,
+      "path": "quartic_1272.tex",
+      "start_character": 797557,
+      "text_sha256": "4ff65ccd2fa4706a35af3a11de07e4f6961b305688f59fd9eea9c1185abe3551"
+    },
+    "text": "\\bibitem{kato} K. Kato, \\emph{$p$-adic Hodge theory and values of zeta\nfunctions of modular forms}, Ast\\'erisque 295 (2004), 117--290.\n\\url{https://www.numdam.org/article/AST_2004__295__117_0.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "D. Bump, S. Friedberg and J. Hoffstein,\n\\emph{Nonvanishing theorems for $L$-functions of modular forms and their\nderivatives}, Inventiones Mathematicae 102 (1990), 543--618.\n\\url{https://wstein.org/papers/bib/bump-friedberg-hoffstein-nonvanishing.pdf}.",
+        "files": [
+          {
+            "bytes": 4760247,
+            "sha256": "d50ad2f11c992591de90f2cea59489ac436cce455e140e6eebf5053f49819f2c",
+            "workspace_relative_path": "work/bfh-1990.pdf"
+          }
+        ],
+        "id": "bfh",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://wstein.org/papers/bib/bump-friedberg-hoffstein-nonvanishing.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "bfh",
+    "span": {
+      "end_character": 798022,
+      "first_line": 16804,
+      "last_line": 16807,
+      "path": "quartic_1272.tex",
+      "start_character": 797755,
+      "text_sha256": "46f519979ab7462de8df53048a233b9ae68e8e471e73601c316b78b7d8a30e3d"
+    },
+    "text": "\\bibitem{bfh} D. Bump, S. Friedberg and J. Hoffstein,\n\\emph{Nonvanishing theorems for $L$-functions of modular forms and their\nderivatives}, Inventiones Mathematicae 102 (1990), 543--618.\n\\url{https://wstein.org/papers/bib/bump-friedberg-hoffstein-nonvanishing.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J. Hoffstein and W. Luo, \\emph{Nonvanishing of $L$-series and\nthe combinatorial sieve}, Mathematical Research Letters 4 (1997), 435--444.\n\\url{https://intlpress.com/site/pub/files/_fulltext/journals/mrl/1997/0004/0003/MRL-1997-0004-0003-a012.pdf}.",
+        "files": [
+          {
+            "bytes": 147594,
+            "sha256": "7d1d7e71edc7dfc5e17963e784a27c8bfad51eebec79f21f70fb6866f4304787",
+            "workspace_relative_path": "work/hoffstein-luo-1997.pdf"
+          }
+        ],
+        "id": "hl",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://intlpress.com/site/pub/files/_fulltext/journals/mrl/1997/0004/0003/MRL-1997-0004-0003-a012.pdf"
+        ],
+        "version_notes": "The cached PDF contains the main article pp.435–442. It does not contain Rohrlich’s separate appendix pp.443–444; no application here is assigned to that appendix."
+      }
+    ],
+    "key": "hl",
+    "span": {
+      "end_character": 798283,
+      "first_line": 16808,
+      "last_line": 16810,
+      "path": "quartic_1272.tex",
+      "start_character": 798022,
+      "text_sha256": "65399a057701dfe0e7c94b30de3ea77a788e1279f950b231132fe031ea62fa2a"
+    },
+    "text": "\\bibitem{hl} J. Hoffstein and W. Luo, \\emph{Nonvanishing of $L$-series and\nthe combinatorial sieve}, Mathematical Research Letters 4 (1997), 435--444.\n\\url{https://intlpress.com/site/pub/files/_fulltext/journals/mrl/1997/0004/0003/MRL-1997-0004-0003-a012.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J. Desjardins, \\emph{Root number of twists of an\nelliptic curve}, Journal de Th\\'eorie des Nombres de Bordeaux\n32 (2020), 73--101. \\url{https://jtnb.centre-mersenne.org/item/10.5802/jtnb.1112.pdf}.",
+        "files": [
+          {
+            "bytes": 793148,
+            "sha256": "9c77b1ca4721c814b3f6c8ac153a061132750fcda21249493349d11421e82533",
+            "workspace_relative_path": "work/astra-weighted-theta-audit-001/primary/desjardins-2020.pdf"
+          }
+        ],
+        "id": "desjardins",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://jtnb.centre-mersenne.org/item/10.5802/jtnb.1112.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "desjardins",
+    "span": {
+      "end_character": 798502,
+      "first_line": 16811,
+      "last_line": 16813,
+      "path": "quartic_1272.tex",
+      "start_character": 798283,
+      "text_sha256": "742a6d09f64e1f4bface60210a7e89c754cdba51c7e6f0a26e9d68a19d6bcc98"
+    },
+    "text": "\\bibitem{desjardins} J. Desjardins, \\emph{Root number of twists of an\nelliptic curve}, Journal de Th\\'eorie des Nombres de Bordeaux\n32 (2020), 73--101. \\url{https://jtnb.centre-mersenne.org/item/10.5802/jtnb.1112.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "L. Cai, J. Shu and Y. Tian, \\emph{Explicit Gross--Zagier\nand Waldspurger formulae}, Algebra \\& Number Theory 8 (2014).\n\\url{https://arxiv.org/abs/1408.1733}.",
+        "files": [
+          {
+            "bytes": 1409076,
+            "sha256": "3eef3f34a03d21575bdb352acfaa0bef2fbe3701068a65798cb89a6ae84333e7",
+            "workspace_relative_path": "work/cai-shu-tian-2014.pdf"
+          }
+        ],
+        "id": "cst",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://arxiv.org/abs/1408.1733"
+        ],
+        "version_notes": "Prior audit records cached PDF equality with publisher PDF, SHA256 3eef3f34a03d21575bdb352acfaa0bef2fbe3701068a65798cb89a6ae84333e7."
+      }
+    ],
+    "key": "cst",
+    "span": {
+      "end_character": 798674,
+      "first_line": 16814,
+      "last_line": 16816,
+      "path": "quartic_1272.tex",
+      "start_character": 798502,
+      "text_sha256": "ef74887f02f5892879f8c3b12b9143745b0419fa3b9d0c761e8436bcb794b691"
+    },
+    "text": "\\bibitem{cst} L. Cai, J. Shu and Y. Tian, \\emph{Explicit Gross--Zagier\nand Waldspurger formulae}, Algebra \\& Number Theory 8 (2014).\n\\url{https://arxiv.org/abs/1408.1733}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "L. Cai, Y. Chen and Y. Liu, \\emph{Heegner points on modular\ncurves}, Transactions of the American Mathematical Society 370 (2018),\n3721--3743. \\url{https://archive.ymsc.tsinghua.edu.cn/pacm_download/632/12220-Heegner_points_on_modular_curves.pdf}.",
+        "files": [
+          {
+            "bytes": 349879,
+            "sha256": "fd19f0588bf3cee285f731812ae058dc3f8527d30d26eac7c2b6a21bfa847522",
+            "workspace_relative_path": "work/astra-final-finite-arithmetic-audit-001/primary/cai-chen-liu-2018.pdf"
+          }
+        ],
+        "id": "ccl",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://archive.ymsc.tsinghua.edu.cn/pacm_download/632/12220-Heegner_points_on_modular_curves.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "ccl",
+    "span": {
+      "end_character": 798936,
+      "first_line": 16817,
+      "last_line": 16819,
+      "path": "quartic_1272.tex",
+      "start_character": 798674,
+      "text_sha256": "3f8501bd6bf0867cc574e00c2e9d822ac783116523a303fa3e3ce8aa36027359"
+    },
+    "text": "\\bibitem{ccl} L. Cai, Y. Chen and Y. Liu, \\emph{Heegner points on modular\ncurves}, Transactions of the American Mathematical Society 370 (2018),\n3721--3743. \\url{https://archive.ymsc.tsinghua.edu.cn/pacm_download/632/12220-Heegner_points_on_modular_curves.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "D. Jetchev and B. Kane,\n\\emph{Equidistribution of Heegner Points and Ternary Quadratic Forms},\narXiv:0908.3905 (2009), Sections 1.1--1.2 and 2.5.\n\\url{https://arxiv.org/abs/0908.3905}.",
+        "files": [
+          {
+            "bytes": 308433,
+            "sha256": "481234506a2de042dc05c98348c5b005ff2cdc2deb421b0edba179c42b6fa00a",
+            "workspace_relative_path": "work/jetchev-kane-2009.pdf"
+          }
+        ],
+        "id": "jetchevkane",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://arxiv.org/abs/0908.3905"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "jetchevkane",
+    "span": {
+      "end_character": 799143,
+      "first_line": 16820,
+      "last_line": 16823,
+      "path": "quartic_1272.tex",
+      "start_character": 798936,
+      "text_sha256": "b3ee3e664a204d479cac67f0696c8a79caf8545c9740ed7735e01c1e2b0155a5"
+    },
+    "text": "\\bibitem{jetchevkane} D. Jetchev and B. Kane,\n\\emph{Equidistribution of Heegner Points and Ternary Quadratic Forms},\narXiv:0908.3905 (2009), Sections 1.1--1.2 and 2.5.\n\\url{https://arxiv.org/abs/0908.3905}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "C. Cornut and D. Jetchev,\n\\emph{Liftings of reduction maps for quaternion algebras}, 2010 preprint.\n\\url{https://webusers.imj-prg.fr/~christophe.cornut/papers/liftings.pdf}.",
+        "files": [
+          {
+            "bytes": 255634,
+            "sha256": "379c173b9e491d7c868557274db4f48a4a1dfb9a83962e32267f9263f20fbae6",
+            "workspace_relative_path": "work/cornut-jetchev-2010.pdf"
+          },
+          {
+            "bytes": 309233,
+            "sha256": "7154ad8f261a625899562653d8b471d5d7dd31ddbb0afc071ef26f6e3acd93c8",
+            "workspace_relative_path": "work/astra-final-external-applicability-001/cornut-jetchev-author-current.pdf"
+          }
+        ],
+        "id": "cornutjetchev",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://webusers.imj-prg.fr/~christophe.cornut/papers/liftings.pdf"
+        ],
+        "version_notes": "Two author versions are pinned. Prior comparison found the used statements equivalent; publisher PDF equivalence remains unverified. Bibliography explicitly cites 2010 preprint."
+      }
+    ],
+    "key": "cornutjetchev",
+    "span": {
+      "end_character": 799341,
+      "first_line": 16824,
+      "last_line": 16826,
+      "path": "quartic_1272.tex",
+      "start_character": 799143,
+      "text_sha256": "04452a783c7f54c55360d5c2798f3f7035c789a8ffed94c512739d921ad74d7c"
+    },
+    "text": "\\bibitem{cornutjetchev} C. Cornut and D. Jetchev,\n\\emph{Liftings of reduction maps for quaternion algebras}, 2010 preprint.\n\\url{https://webusers.imj-prg.fr/~christophe.cornut/papers/liftings.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J.-L. Waldspurger, \\emph{Sur les coefficients de\nFourier des formes modulaires de poids demi-entier},\nJournal de Math\\'ematiques Pures et Appliqu\\'ees 60 (1981), 375--484,\nProposition 18 and Corollary 2.",
+        "files": [
+          {
+            "bytes": 4399118,
+            "sha256": "86e054b65e0ca727d5dc45cb8f711abf61ff0b373dab32da461fb248e05751ff",
+            "workspace_relative_path": "work/waldspurger-1981.pdf"
+          }
+        ],
+        "id": "waldspurger",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "waldspurger",
+    "span": {
+      "end_character": 799567,
+      "first_line": 16827,
+      "last_line": 16830,
+      "path": "quartic_1272.tex",
+      "start_character": 799341,
+      "text_sha256": "bb60b7c55a17222e75e51f01b0613bd70b180dbd7e54fee4539d490ffa93622b"
+    },
+    "text": "\\bibitem{waldspurger} J.-L. Waldspurger, \\emph{Sur les coefficients de\nFourier des formes modulaires de poids demi-entier},\nJournal de Math\\'ematiques Pures et Appliqu\\'ees 60 (1981), 375--484,\nProposition 18 and Corollary 2.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "N. Ramsey, \\emph{Geometric and $p$-adic modular forms\nof half-integral weight}, Annales de l'Institut Fourier 56 (2006),\n599--624. \\url{https://www.numdam.org/item/10.5802/aif.2195.pdf}.",
+        "files": [
+          {
+            "bytes": 455542,
+            "sha256": "c4dbde444169f075dc77dadb67a18f0348a450a9df32d16ef049e40e348ed0f4",
+            "workspace_relative_path": "work/ramsey-2006.pdf"
+          }
+        ],
+        "id": "ramsey",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.numdam.org/item/10.5802/aif.2195.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "ramsey",
+    "span": {
+      "end_character": 799771,
+      "first_line": 16831,
+      "last_line": 16833,
+      "path": "quartic_1272.tex",
+      "start_character": 799567,
+      "text_sha256": "c531d187cdd90f243a80b6396099f85e4705139cb288aac135af75777b54e9c2"
+    },
+    "text": "\\bibitem{ramsey} N. Ramsey, \\emph{Geometric and $p$-adic modular forms\nof half-integral weight}, Annales de l'Institut Fourier 56 (2006),\n599--624. \\url{https://www.numdam.org/item/10.5802/aif.2195.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "W. Casselman, \\emph{On some results of Atkin and Lehner},\nMathematische Annalen 201 (1973), 301--314,\nTheorem~1 and its proof, pp.~302--306, and Theorem~4, p.~313.",
+        "files": [
+          {
+            "bytes": 1208216,
+            "sha256": "7f91ebae1a8f5e695800f4afb9fc06d0e2ea0b3a476751a31a7c8c3f38ad537d",
+            "workspace_relative_path": "work/astra-t3-opus-reconciliation-001/primary/casselman-1973.pdf"
+          }
+        ],
+        "id": "casselman",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "casselman",
+    "span": {
+      "end_character": 799955,
+      "first_line": 16834,
+      "last_line": 16837,
+      "path": "quartic_1272.tex",
+      "start_character": 799771,
+      "text_sha256": "9f4fd7b063b06bc76b197120dd84cda14468ae12aa5e4648de36c2493d6b5679"
+    },
+    "text": "\\bibitem{casselman}\nW. Casselman, \\emph{On some results of Atkin and Lehner},\nMathematische Annalen 201 (1973), 301--314,\nTheorem~1 and its proof, pp.~302--306, and Theorem~4, p.~313.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "H. Carayol, \\emph{Sur les repr\\'esentations\n$\\ell$-adiques associ\\'ees aux formes modulaires de Hilbert},\nAnnales Scientifiques de l'\\'Ecole Normale Sup\\'erieure 19 (1986), 409--468,\nTheorem A. \\url{https://www.numdam.org/item/ASENS_1986_4_19_3_409_0/}.",
+        "files": [
+          {
+            "bytes": 5887969,
+            "sha256": "d4a5fb6b1cd76f944f8948e06df1c7ad5656ae5ee14b9189178ee1e8f2b0dab8",
+            "workspace_relative_path": "work/astra-t3-opus-reconciliation-001/primary/carayol-1986.pdf"
+          }
+        ],
+        "id": "carayol",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.numdam.org/item/ASENS_1986_4_19_3_409_0/"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "carayol",
+    "span": {
+      "end_character": 800227,
+      "first_line": 16838,
+      "last_line": 16841,
+      "path": "quartic_1272.tex",
+      "start_character": 799955,
+      "text_sha256": "2365d3f34ee1b19069a7ec42b25b4e3a2a21d3f588bc84f134e21afa9d9eec13"
+    },
+    "text": "\\bibitem{carayol} H. Carayol, \\emph{Sur les repr\\'esentations\n$\\ell$-adiques associ\\'ees aux formes modulaires de Hilbert},\nAnnales Scientifiques de l'\\'Ecole Normale Sup\\'erieure 19 (1986), 409--468,\nTheorem A. \\url{https://www.numdam.org/item/ASENS_1986_4_19_3_409_0/}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J.-L. Waldspurger,\n\\emph{Correspondances de Shimura}, Proceedings of the International\nCongress of Mathematicians, 1983, 525--531.\n\\url{https://www.imj-prg.fr/wp-content/uploads/2020/prix/waldspurger1983.pdf}.",
+        "files": [
+          {
+            "bytes": 1913443,
+            "sha256": "c2c4ee1cec4dbdf7d86e6a36b70476ae65858a006161c309e3347c321fada667",
+            "workspace_relative_path": "work/waldspurger-1983.pdf"
+          }
+        ],
+        "id": "waldspurgerICM",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.imj-prg.fr/wp-content/uploads/2020/prix/waldspurger1983.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "waldspurgerICM",
+    "span": {
+      "end_character": 800462,
+      "first_line": 16842,
+      "last_line": 16845,
+      "path": "quartic_1272.tex",
+      "start_character": 800227,
+      "text_sha256": "ec0d94d28847a3fc33de442fcf451572fe3856638b8a81ce57447a76ec5279fc"
+    },
+    "text": "\\bibitem{waldspurgerICM} J.-L. Waldspurger,\n\\emph{Correspondances de Shimura}, Proceedings of the International\nCongress of Mathematicians, 1983, 525--531.\n\\url{https://www.imj-prg.fr/wp-content/uploads/2020/prix/waldspurger1983.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "A. Weil, \\emph{Sur certains groupes d'op\\'erateurs unitaires},\nActa Mathematica 111 (1964), 143--211, I.13, II.25, II.28, III, Theorem 6.\n\\url{https://webhomes.maths.ed.ac.uk/~v1ranick/papers/weil2.pdf}.",
+        "files": [
+          {
+            "bytes": 3725156,
+            "sha256": "22df47cb98307aa77c46028cf5575eeb1d3524950dbdadb9c0c21890966039d2",
+            "workspace_relative_path": "work/astra-weighted-theta-audit-001/primary/weil-1964.pdf"
+          }
+        ],
+        "id": "weil",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/weil2.pdf"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "weil",
+    "span": {
+      "end_character": 800681,
+      "first_line": 16846,
+      "last_line": 16848,
+      "path": "quartic_1272.tex",
+      "start_character": 800462,
+      "text_sha256": "bc0a86ac49f6e694b5ab849bdf406f9e7206b9090e2ae9fea252d43feb78b2a2"
+    },
+    "text": "\\bibitem{weil} A. Weil, \\emph{Sur certains groupes d'op\\'erateurs unitaires},\nActa Mathematica 111 (1964), 143--211, I.13, II.25, II.28, III, Theorem 6.\n\\url{https://webhomes.maths.ed.ac.uk/~v1ranick/papers/weil2.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J.-P. Serre, \\emph{Propri\\'et\\'es galoisiennes des points\nd'ordre fini des courbes elliptiques}, Inventiones Mathematicae 15\n(1972), 259--331.",
+        "files": [
+          {
+            "bytes": 6148034,
+            "sha256": "93970ed93730194af8bed0f1f59d29cbed061d20f34f4bcffc079ad8aedf01d5",
+            "workspace_relative_path": "work/serre-1972-open-image.pdf"
+          }
+        ],
+        "id": "serre",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "serre",
+    "span": {
+      "end_character": 800840,
+      "first_line": 16849,
+      "last_line": 16851,
+      "path": "quartic_1272.tex",
+      "start_character": 800681,
+      "text_sha256": "1d667c1ec98d1e334e897d722b2734345c296fa6a8cd9eff57f481962ab7305c"
+    },
+    "text": "\\bibitem{serre} J.-P. Serre, \\emph{Propri\\'et\\'es galoisiennes des points\nd'ordre fini des courbes elliptiques}, Inventiones Mathematicae 15\n(1972), 259--331.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "B. Mazur,\n\\emph{Speculations about the topology of rational points: an up-date},\nAst\\'erisque 228 (1995), 165--181, Conjecture 3, p.~165.\n\\url{https://www.numdam.org/article/AST_1995__228__165_0.pdf}.",
+        "files": [
+          {
+            "bytes": 1552870,
+            "sha256": "94490a944040d9589595995389d499661a8facab8398af062d0c52e34d71aded",
+            "workspace_relative_path": "work/astra-mazur-corollary-001/primary/mazur-1995.pdf"
+          }
+        ],
+        "id": "mazur1995",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://www.numdam.org/article/AST_1995__228__165_0.pdf"
+        ],
+        "version_notes": "Published Asterisque228 (1995),165-181; Numdam cover retained."
+      }
+    ],
+    "key": "mazur1995",
+    "span": {
+      "end_character": 801061,
+      "first_line": 16852,
+      "last_line": 16855,
+      "path": "quartic_1272.tex",
+      "start_character": 800840,
+      "text_sha256": "a52c90476525ef900016e525baefb8ba922b34fa0bf302cfb462d7a35d75de6b"
+    },
+    "text": "\\bibitem{mazur1995} B. Mazur,\n\\emph{Speculations about the topology of rational points: an up-date},\nAst\\'erisque 228 (1995), 165--181, Conjecture 3, p.~165.\n\\url{https://www.numdam.org/article/AST_1995__228__165_0.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "Yu. V. Matiyasevich,\n\\emph{Diophantine representation of enumerable predicates},\nMathematics of the USSR-Izvestiya 5 (1971), 1--28,\nBasic Theorem, p.~3; integer-witness conversion, p.~2.\n\\url{https://doi.org/10.1070/IM1971v005n01ABEH001004}.",
+        "files": [
+          {
+            "bytes": 1030147,
+            "sha256": "18e824c01046ad49b079f91b567b27a928e737c598eb347c8a4f42128081ec83",
+            "workspace_relative_path": "work/astra-mazur-corollary-001/primary/matiyasevich-1971.pdf"
+          }
+        ],
+        "id": "matiyasevich1971",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://doi.org/10.1070/IM1971v005n01ABEH001004"
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "matiyasevich1971",
+    "span": {
+      "end_character": 801330,
+      "first_line": 16856,
+      "last_line": 16860,
+      "path": "quartic_1272.tex",
+      "start_character": 801061,
+      "text_sha256": "426f354b55c78959564810c2a76af05ea62f66b3029c046dc1bf91110f07071d"
+    },
+    "text": "\\bibitem{matiyasevich1971} Yu. V. Matiyasevich,\n\\emph{Diophantine representation of enumerable predicates},\nMathematics of the USSR-Izvestiya 5 (1971), 1--28,\nBasic Theorem, p.~3; integer-witness conversion, p.~2.\n\\url{https://doi.org/10.1070/IM1971v005n01ABEH001004}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "OpenAI,\n\\emph{Hilbert's tenth problem over the rational numbers},\nOpenAI Math Release preprint, 6 October 2026.\n\\url{https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/main.pdf}.",
+        "files": [],
+        "id": "openaihtp",
+        "source_status": "source_pin_missing",
+        "urls": [
+          "https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/main.pdf"
+        ],
+        "version_notes": "Provenance citation. No theorem from this preprint is granted as an external assumption by the present manuscript; reconstructed arguments need their own audit."
+      }
+    ],
+    "key": "openaihtp",
+    "span": {
+      "end_character": 801593,
+      "first_line": 16861,
+      "last_line": 16864,
+      "path": "quartic_1272.tex",
+      "start_character": 801330,
+      "text_sha256": "61964ac6a5609292d81c40795435cf266801a376ad600a636c617f661e1ea7b0"
+    },
+    "text": "\\bibitem{openaihtp} OpenAI,\n\\emph{Hilbert's tenth problem over the rational numbers},\nOpenAI Math Release preprint, 6 October 2026.\n\\url{https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/main.pdf}.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "B. Howard, \\emph{The Heegner point Kolyvagin system},\nCompositio Mathematica 140 (2004), 1439--1472; arXiv:1202.6340v1.",
+        "files": [
+          {
+            "bytes": 425583,
+            "sha256": "d2d06e851d6aa1fdc33a932b69b5c06a8c56dc2d9e05fb10d97c0358d6d6ea9a",
+            "workspace_relative_path": "work/astra-final-finite-arithmetic-audit-001/primary/howard-2012v1.pdf"
+          }
+        ],
+        "id": "howard2012",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "arXiv:1202.6340v1 is a 2012 posting of a paper published in 2004. Only Section 1.7 formula (13) is a comparison; the broader-conductor argument is local to the manuscript."
+      }
+    ],
+    "key": "howard2012",
+    "span": {
+      "end_character": 801734,
+      "first_line": 16865,
+      "last_line": 16866,
+      "path": "quartic_1272.tex",
+      "start_character": 801593,
+      "text_sha256": "ec968523e4340a7c5727382445e86a0339ad32bebaa79632e63dd2dd46d4fe35"
+    },
+    "text": "\\bibitem{howard2012} B. Howard, \\emph{The Heegner point Kolyvagin system},\nCompositio Mathematica 140 (2004), 1439--1472; arXiv:1202.6340v1.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "S. Lang, \\emph{Algebraic groups over finite fields},\nAmerican Journal of Mathematics 78 (1956), 555--563.",
+        "files": [
+          {
+            "bytes": 757414,
+            "sha256": "665286caefaa894cf789f3b4ce3027accdf4d583836e8b13aafeab744373b44d",
+            "workspace_relative_path": "work/astra-final-finite-arithmetic-audit-001/primary/lang-1956.pdf"
+          }
+        ],
+        "id": "lang1956",
+        "source_status": "bytes_pinned",
+        "urls": [],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename."
+      }
+    ],
+    "key": "lang1956",
+    "span": {
+      "end_character": 801859,
+      "first_line": 16867,
+      "last_line": 16868,
+      "path": "quartic_1272.tex",
+      "start_character": 801734,
+      "text_sha256": "74ddc3091ef0888c8d37572365ca65d39ff4de7781626bc60e0ed7c38bb49db8"
+    },
+    "text": "\\bibitem{lang1956} S. Lang, \\emph{Algebraic groups over finite fields},\nAmerican Journal of Mathematics 78 (1956), 555--563.\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "K. S. Williams, \\emph{Mertens' theorem for arithmetic progressions},\nJ. Number Theory \\textbf{6} (1974), 353--359, Theorem 1.\n\\url{https://people.math.carleton.ca/~williams/papers/pdf/057.pdf}.",
+        "files": [
+          {
+            "bytes": 218607,
+            "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/williams-mertens.pdf"
+          }
+        ],
+        "id": "williams-mertens",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://people.math.carleton.ca/~williams/papers/pdf/057.pdf"
+        ],
+        "version_notes": "Published JNT 6 (1974), 353-359. Published scan inspected, including image of Theorem1."
+      }
+    ],
+    "key": "williams-mertens",
+    "span": {
+      "end_character": 802081,
+      "first_line": 16869,
+      "last_line": 16873,
+      "path": "quartic_1272.tex",
+      "start_character": 801859,
+      "text_sha256": "5272f5d13e8f73b147e208098f00157e02d65ed5cd195667c156ba6e0552f8bf"
+    },
+    "text": "\\bibitem{williams-mertens}\nK. S. Williams, \\emph{Mertens' theorem for arithmetic progressions},\nJ. Number Theory \\textbf{6} (1974), 353--359, Theorem 1.\n\\url{https://people.math.carleton.ca/~williams/papers/pdf/057.pdf}.\n\n"
+  },
+  {
+    "historical_source_records": [
+      {
+        "bibliography": "J. Voight, \\emph{Quaternion algebras}, corrected online edition\nv1.0.7u, August 5, 2026, Main Theorem 14.6.1 and Proposition 14.6.7,\npp. 223--224.\n\\url{https://jvoight.github.io/quat-book.pdf}.",
+        "files": [
+          {
+            "bytes": 10663776,
+            "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+            "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/voight-quaternion.pdf"
+          }
+        ],
+        "id": "voight-quaternion",
+        "source_status": "bytes_pinned",
+        "urls": [
+          "https://jvoight.github.io/quat-book.pdf"
+        ],
+        "version_notes": "v1.0.7u, August 5, 2026, corrected online edition. Corrected online edition, not printed Springer pagination."
+      }
+    ],
+    "key": "voight-quaternion",
+    "span": {
+      "end_character": 802445,
+      "first_line": 16874,
+      "last_line": 16882,
+      "path": "quartic_1272.tex",
+      "start_character": 802081,
+      "text_sha256": "7fcd4f758715f803bc4034bd68f0bb3e90a5a8707a9efc3271fee29c6e81f73c"
+    },
+    "text": "\\bibitem{voight-quaternion}\nJ. Voight, \\emph{Quaternion algebras}, corrected online edition\nv1.0.7u, August 5, 2026, Main Theorem 14.6.1 and Proposition 14.6.7,\npp. 223--224.\n\\url{https://jvoight.github.io/quat-book.pdf}.\n\n\n% Insert inside the existing thebibliography environment.\n% This is the only new bibliography key used by assembled-original-extension.tex.\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "koenigsmann-defining",
+    "span": {
+      "end_character": 802744,
+      "first_line": 16883,
+      "last_line": 16888,
+      "path": "quartic_1272.tex",
+      "start_character": 802445,
+      "text_sha256": "a812e3f32e482a4fb1df8d9e34ac6a4cc0f8da53badbfea06cd34acd3c08b903"
+    },
+    "text": "\\bibitem{koenigsmann-defining} J. Koenigsmann,\n\\emph{Defining $\\mathbb Z$ in $\\mathbb Q$},\nAnnals of Mathematics \\textbf{183} (2016), 73--93.\n\\href{https://doi.org/10.4007/annals.2016.183.1.2}{doi:10.4007/annals.2016.183.1.2}.\n\n% Proposed additions only. No existing bibliography entry is replaced.\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "GonzalezRotger2006",
+    "span": {
+      "end_character": 803044,
+      "first_line": 16889,
+      "last_line": 16894,
+      "path": "quartic_1272.tex",
+      "start_character": 802744,
+      "text_sha256": "d2ce9068dd314a07136d4c376c655b7dd221086beadab23aa738f5010ff0e4db"
+    },
+    "text": "\\bibitem{GonzalezRotger2006} J. Gonz\\'alez and V. Rotger,\n\\emph{Non-elliptic Shimura curves of genus one},\nJournal of the Mathematical Society of Japan \\textbf{58} (2006), 927--948,\nTheorem 4.2 and Table 2, pp.~938--939; Proposition 5.2, pp.~940--941.\n\\url{https://doi.org/10.2969/jmsj/1179759530}.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "Yuan2024",
+    "span": {
+      "end_character": 803749,
+      "first_line": 16895,
+      "last_line": 16908,
+      "path": "quartic_1272.tex",
+      "start_character": 803044,
+      "text_sha256": "30a390ee4d1a286d7d740e61af2bfb8628d1a094231f029f92911c635471210e"
+    },
+    "text": "\\bibitem{Yuan2024} X. Yuan,\n\\emph{Explicit Kodaira--Spencer maps over Shimura curves},\nActa Mathematica Sinica, Chinese Series \\textbf{67} (2024), 227--249.\n\\url{https://doi.org/10.12386/A20220154}.\nWe use the English translation dated April 30, 2024, identified by\nthe author as a translation of the published Chinese article:\n\\url{https://faculty.bicmr.pku.edu.cn/~yxy/preprints/explicit_KS.pdf}.\nThe author identifies it at\n\\url{https://faculty.bicmr.pku.edu.cn/~yxy/publications.html}.\nThe relevant locators in that translation are Theorem 1.1, p.~3;\nmetric definitions, pp.~2--3; Sections 2.1--2.2 and Lemma 2.1,\npp.~4--10; and the analytic and metric calculations in Sections\n4.2--4.3, pp.~20--26.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "Deligne1979",
+    "span": {
+      "end_character": 804202,
+      "first_line": 16909,
+      "last_line": 16917,
+      "path": "quartic_1272.tex",
+      "start_character": 803749,
+      "text_sha256": "317a27f5e00153528ff2e1c3412d5b066056460e84173ca1add4c31471d56cdb"
+    },
+    "text": "\\bibitem{Deligne1979} P. Deligne,\n\\emph{Vari\\'et\\'es de Shimura: interpr\\'etation modulaire, et techniques\nde construction de mod\\`eles canoniques},\nin \\emph{Automorphic Forms, Representations and $L$-Functions},\nProceedings of Symposia in Pure Mathematics \\textbf{33}, Part 2 (1979),\n247--289, Sections 2.2.5 and 2.3.1.\nEnglish translation by J. S. Milne, corrected September 6, 2020, p.~29:\n\\url{https://www.jmilne.org/math/Documents/DeligneSV.pdf}.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "GaudronRemond2023",
+    "span": {
+      "end_character": 804475,
+      "first_line": 16918,
+      "last_line": 16923,
+      "path": "quartic_1272.tex",
+      "start_character": 804202,
+      "text_sha256": "2cfcb3fc9b927e9e13be8ed4f72e8330dd39e9885c2e88cf7c8dafb079d137af"
+    },
+    "text": "\\bibitem{GaudronRemond2023} \\'E. Gaudron and G. R\\'emond,\n\\emph{Nouveaux th\\'eor\\`emes d'isog\\'enie},\nM\\'emoires de la Soci\\'et\\'e Math\\'ematique de France \\textbf{176} (2023),\nvi+123 pp., Section 1.5 and Theorem 1.9(1), pp.~7--8.\n\\url{https://doi.org/10.24033/msmf.484}.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "vonKaenel2021",
+    "span": {
+      "end_character": 804750,
+      "first_line": 16924,
+      "last_line": 16929,
+      "path": "quartic_1272.tex",
+      "start_character": 804475,
+      "text_sha256": "8d8ba8c47209da2a25710e931c7c2996182bd68e702212e88803420ea0698205"
+    },
+    "text": "\\bibitem{vonKaenel2021} R. von K\\\"anel,\n\\emph{The effective Shafarevich conjecture for abelian varieties of\n$\\mathrm{GL}_2$-type}, Forum of Mathematics, Sigma \\textbf{9} (2021), e39,\n1--29, equations (2.2) and (5.9), pp.~5 and 13.\n\\url{https://doi.org/10.1017/fms.2021.29}.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "voight2021",
+    "span": {
+      "end_character": 805027,
+      "first_line": 16930,
+      "last_line": 16935,
+      "path": "quartic_1272.tex",
+      "start_character": 804750,
+      "text_sha256": "1e5aad2ea72506947d07772ab5f01e8b85d61a14d4ac24bd1c981f6d05d9ae54"
+    },
+    "text": "\\bibitem{voight2021} J. Voight, \\emph{Quaternion algebras},\nGraduate Texts in Mathematics \\textbf{288}, Springer, 2021,\nChapter 43, equations (43.1.2)--(43.1.3), p.~800, and\nMain Theorem 43.6.14, p.~819; proof pp.~822--823.\n\\url{https://doi.org/10.1007/978-3-030-56694-4_43}.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "calegari-icm2022",
+    "span": {
+      "end_character": 805369,
+      "first_line": 16936,
+      "last_line": 16942,
+      "path": "quartic_1272.tex",
+      "start_character": 805027,
+      "text_sha256": "3618138e89508afa3c511e11e25d026fe14a233b48d94abeb9faa2567fc14ed3"
+    },
+    "text": "\\bibitem{calegari-icm2022} F. Calegari,\n\\emph{Reciprocity in the Langlands program since Fermat's Last Theorem},\nin \\emph{Proceedings of the International Congress of Mathematicians 2022},\nVol.~2, EMS Press, 2023, 610--651, Section 7, p.~624;\ndefinition of geometric representations, pp.~611--612.\n\\url{https://doi.org/10.4171/ICM2022/101}.\n\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "diamond-im",
+    "span": {
+      "end_character": 805545,
+      "first_line": 16943,
+      "last_line": 16945,
+      "path": "quartic_1272.tex",
+      "start_character": 805369,
+      "text_sha256": "357c32395ae83ef10adc4b79f34348f452a613e7bf9f18ef0920052f6413f15b"
+    },
+    "text": "\\bibitem{diamond-im} F. Diamond and J. Im,\n\\emph{Modular forms and modular curves}, in Seminar on Fermat's Last Theorem,\nCMS Conference Proceedings 17 (1995), 39--133, \\S12.5.\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "baker-et-al-finiteness",
+    "span": {
+      "end_character": 805783,
+      "first_line": 16946,
+      "last_line": 16949,
+      "path": "quartic_1272.tex",
+      "start_character": 805545,
+      "text_sha256": "3c7bd9c956932f67e0002f40185145372991b8cbb4c1e06983690ce01fb4ddb3"
+    },
+    "text": "\\bibitem{baker-et-al-finiteness} M. H. Baker, E. Gonz\\'alez-Jim\\'enez,\nJ. Gonz\\'alez and B. Poonen, \\emph{Finiteness results for modular curves\nof genus at least 2}, American Journal of Mathematics 127 (2005),\n1325--1387, \\S\\S3.1, 3.2.1.\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "mascot-moduli",
+    "span": {
+      "end_character": 806078,
+      "first_line": 16950,
+      "last_line": 16954,
+      "path": "quartic_1272.tex",
+      "start_character": 805783,
+      "text_sha256": "5296ed5adfafc37e252684b27e9a007b8fef7ec0ca9277d9d1a42eddfee4686f"
+    },
+    "text": "\\bibitem{mascot-moduli} N. Mascot, \\emph{Moduli-friendly Eisenstein series\nover the p-adics and the computation of modular Galois representations},\nResearch in Number Theory 8 (2022), article 48,\n\\href{https://doi.org/10.1007/s40993-022-00329-6}{doi:10.1007/s40993-022-00329-6},\n\\S2.1, (2.1.8).\n"
+  },
+  {
+    "historical_source_records": [],
+    "key": "pheidas2000",
+    "span": {
+      "end_character": 806480,
+      "first_line": 16955,
+      "last_line": 16961,
+      "path": "quartic_1272.tex",
+      "start_character": 806078,
+      "text_sha256": "640f89302f71021bdcc52ad5c1bfe605ca81f23ddabea5ccc1a47133c5b0e819"
+    },
+    "text": "\\bibitem{pheidas2000} T. Pheidas,\n\\emph{An effort to prove that the existential theory of $\\Q$ is undecidable},\nin \\emph{Hilbert's Tenth Problem: Relations with Arithmetic and Algebraic Geometry},\nJ. Denef, L. Lipshitz, T. Pheidas and J. Van Geel, eds.,\nContemporary Mathematics \\textbf{270}, American Mathematical Society,\nProvidence, RI, 2000, 237--252.\n\\url{https://doi.org/10.1090/conm/270/04376}.\n"
+  }
+]

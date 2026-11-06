@@ -1,0 +1,23 @@
+{
+  "format": "quartic-asymmetric-contact-proposal/v1",
+  "status": "ARITHMETIC PROPOSAL; NEW SOURCE AUDIT REQUIRED",
+  "source_pin_authorized": false,
+  "root_comparison_positions": 37,
+  "raw_contact_order_unchanged": true,
+  "full_positions": [0,1,2,3,4,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36],
+  "beta_only_positions": [5,6,7,8,9,10,11,12],
+  "point_order": ["A","S","T","Z"],
+  "target_order": ["A.x0","A.x1","S.x0","S.x1","T.x0","T.x1","Z.x0","Z.x1"],
+  "beta_only_full_input_selection": [0,4,5,6,7,8,9,10,11,24,25,26,27,28,29,30],
+  "beta_only_free_inputs": 16,
+  "beta_only_private_primary_points": 2,
+  "beta_only_difference_points": 2,
+  "beta_precision": 12,
+  "beta_only_log_precisions": [12,12],
+  "beta_only_field_orders": [1,1,1,1,1,12,12,12],
+  "beta_only_rational_orders": [1,1,1,1,1,1,1,1,1,1,1,12,12,12,12,12,12],
+  "beta_only_G_profile": {"precision":12,"scheme":"direct","normalization":"unit","hscale":1,"bound_output":false},
+  "retain": ["all raw positions, including duplicates","all subtraction guards","constant-left norm rule","the common J over all selected primes","root-error test before field tests","all root points and proxies","scalar batch and anchor","input coordinate zero"],
+  "supported_height_families": ["H19 with reviewed parameter tuples","H18 with separately reviewed parameter tuples"],
+  "not_claimed": ["local projection-preserving edit of the old source","a measured variable saving","a full coefficient bound","source acceptance"]
+}

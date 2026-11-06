@@ -1,0 +1,77 @@
+{
+  "schema": "shared-conjugate-fJ-square-exact-source-delta-v1",
+  "status": "proposal requiring independent source reconstruction and endpoint replay",
+  "source_pin_authorized": false,
+  "equivalence": "exact rational projection equivalence to the selected parent, including zero branches",
+  "new_arithmetic_assumptions": [],
+  "divisions": [],
+  "root": {
+    "retain_original_coefficients_and_every_original_equation": true,
+    "original_field": "F=conj(f(J))=A+B*sqrt(2)",
+    "original_pair_in_censused_source": [200, 230],
+    "original_unconjugated_fJ_pair": [200, 201],
+    "retained_alias": "root[230]=-root[201]",
+    "new_coordinates": ["C", "D"],
+    "new_rows": ["C-A^2-2*B^2", "D-2*A*B"],
+    "allocation": "append exactly two fresh root coordinates and two residual rows; no new lift gates",
+    "changed_calls": "only the designated existing common-field argument pair of all 37 comparator calls"
+  },
+  "modes": {
+    "q_compare4": {"calls": 13, "free": 58, "common_slots": [21, 22], "batch": "q_conic13", "field_index": 5, "batch_input_slots": [11, 12]},
+    "q_compare_beta": {"calls": 8, "free": 28, "common_slots": [9, 10], "batch": "q_conic6", "field_index": 2, "batch_input_slots": [5, 6]},
+    "q_compare_lucas": {"calls": 16, "free": 47, "common_slots": [16, 17], "batch": "q_conic10", "field_index": 4, "batch_input_slots": [9, 10]}
+  },
+  "comparison_delta": {
+    "residual_changes": 0,
+    "arity_changes": 0,
+    "common_slot_outside_use": "none in residuals; exactly one use in the designated batch coefficient pair",
+    "new_channel_type": "coefficients of the square of the original shared field F",
+    "metadata_required": "explicit designated field index, pre-squared coefficient type, original order 1 and retained original field F=conj(f(J)); never silently reinterpret as an ordinary field input"
+  },
+  "batch_delta": {
+    "original_order": 1,
+    "power_coordinate": "same retained P=r^2",
+    "old_rows": ["Y-A-theta*B", "P*W-2*A*Y+A^2-2*B^2"],
+    "new_rows": ["P*W-C-theta*D"],
+    "delete": "only the designated private Y and its defining row",
+    "retain": "W, its exact tree position, all other fields/orders/powers, private conic, literal-one tree and pole",
+    "renumber": "uniform bijection on every later local variable and row index; check every metadata reference",
+    "private_Y_outside_use": "exactly the two old rows; no call argument, foreign row, or different field binding",
+    "do_not_square_again": true,
+    "do_not_double_the_original_order": true
+  },
+  "maps": {
+    "forward": "C=A^2+2B^2, D=2AB; delete 37 Y; retain all other coordinates",
+    "reverse": "Y_j=A+theta_j*B separately for each batch; delete C,D; retain all other coordinates",
+    "row_identity": "R_new=R_w+2*A*R_y-R_C-theta*R_D"
+  },
+  "source_checker": {
+    "root_square_rows_checked_before_restoring_parent_view": true,
+    "whole_parent_source_reconstruction_required": true,
+    "every_new_source_residual_and_flattened_map_checked": true,
+    "unchanged_modules_bound_to_exact_selected_parent": true,
+    "fresh_source_identity_required": true,
+    "old_hash_substitution_forbidden": true
+  },
+  "negative_cases_required": [
+    "wrong root square coefficient, conjugation sign, C/D order, or original source coefficient",
+    "missing root square row, fresh-coordinate collision, or alteration of an original root equation",
+    "one wrong designated root call pair in each comparator mode",
+    "wrong pre-squared channel type, field index, original order, or reused ordinary-field checker",
+    "missing or extra designated Y deletion, hidden Y row consumer, or hidden Y call consumer",
+    "wrong r^2 power, theta from another private batch, changed W, or wrong upper-tree position",
+    "changed non-designated field, contact power, conic row, literal-one leaf, or pole input",
+    "bad variable/row remapping, extra content, flattened row corruption, or construction-map corruption",
+    "timeout/resource failure must abort; never count it as a semantic rejection"
+  ],
+  "coefficient_degree_and_count": {
+    "new_residual_max_degree": 2,
+    "new_residual_max_abs_coefficient": 2,
+    "new_lift_gates": 0,
+    "removed_source_coordinates": 37,
+    "added_root_coordinates": 2,
+    "estimated_net_total_coordinate_reduction": 35,
+    "measured_new_endpoint": false,
+    "full_final_coefficient_replay_required": true
+  }
+}

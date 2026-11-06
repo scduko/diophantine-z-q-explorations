@@ -1,0 +1,24 @@
+{
+  "files": {
+    "modules/Z_definition.json": "5e96bf1b0de4e1694dcc7ff21a9a7b69b5e2cc61295c2fc2816696092c5dacde",
+    "modules/q_anchor.json": "3edef11d7871866f6224bf9a6e4a6f2d99d5c8f535eef2d3c2c57f98a33f0f6f",
+    "modules/q_compare4.json": "924daadfdb5fb9f13b9e06fc7e457f224115d2e34801c070810d3ab5eef310c4",
+    "modules/q_compare_beta.json": "75189120b018c23bbf1573de56687103160872aca41d3d1d35138abb7b05203e",
+    "modules/q_compare_lucas.json": "a9157980855175cc0072f63c193c43f31c1350d850fdaeb3569d75e738229feb",
+    "modules/q_conic10.json": "6eaba063e47fa2210528829077c88a0873d68e111ff9bea39efa4c91456e245a",
+    "modules/q_conic13.json": "e228d0556e6b2c3376d07e30ed9093f9cd456503689720de9535b11aabdab2dc",
+    "modules/q_conic6.json": "01b8559bfb5e7e03447225b50afe562f4d3428bfcd4ea8f8add4b6c7d5215f51",
+    "modules/q_height_batch.json": "22e3074cafdc80a71d39baf69d2012a8b039533d665f85f76da7f889dfe25761",
+    "modules/q_linearnormalpole.json": "b3f86d819e831eb6970ab4249cea9337a874a0adcdbc4bd13efef9678fba547d",
+    "modules/q_primeparity.json": "df89176d00ab6cc61e86416c5d1209554fcf87f45f30a866177c76683c2a306a"
+  },
+  "parent_construction_map_sha256": "85c62b411c112a639e5d1906259c7d57ee107eecca9baac3286ba5ec3834476a",
+  "parent_packet_manifest_sha256": "5884f634e36980f133a50266cc506c51a9b0733672a70309c29d97ea586e9267",
+  "parent_shared_sha256": "f879f79eb7e8072176c8204df4c07a0097a219b7c2452c7c09bd52ca04abe83e",
+  "parent_source_audit_sha256": "cdd8f03f79aaaa3f3445612c402b0e50dbf9dd8f2c73134802abb43e7fe465f7",
+  "parent_source_entry_sha256": "f9b10fde2222f228ccaea718c93f9a4dacaa18a6b30bef1ab4fca5ffc8438677",
+  "parent_source_id": "joint-chart-normalized-lucas-linear-pole-anchor4-k40-q12-a25-h19-s32-0f54051d0d14",
+  "parent_source_sha256": "2629edef151e8bf0cb366edc3bc5876bbd5c09d59e1785670848a6ce12c5d82e",
+  "parent_uncompressed_sha256": "0f54051d0d1400c9944688f9aaf1db4a65177b548609da424c98fe5172f8595a",
+  "scope": "Complete measured normalized10 module parent; arithmetic acceptance requires separate independent receipt"
+}

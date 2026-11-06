@@ -1,0 +1,41 @@
+{
+  "checker_sha256": "58bf1da4007247bc4558eacce6bdbbc83d2394ac2a47f128390f20f26567d50a",
+  "compiler_files": [
+    "archive_build.py",
+    "combined_kernel.py",
+    "lowprecision_kernel.py",
+    "beta_kernel.py",
+    "rational_difference.py",
+    "joint_chart.py",
+    "local_lucas.py",
+    "normalized_lucas.py",
+    "conic_lucas.py",
+    "anchor_four_kernel.py",
+    "linear_pole_kernel.py",
+    "emit_linear.py",
+    "target2_rewrite.py",
+    "compress_doublings.py",
+    "shared_square.py",
+    "first_norm.py",
+    "build_source.py"
+  ],
+  "helper_files": {
+    "BASELINE.json": "2a1c41a19f0813e8676c4cbe57eb49a3faa0926f095389d8a4a2b390ea91035d",
+    "SELECTED_PARENT.json": "248778bdda2810db04368a692bd39ff5e17edcf954585e19613493ec9b6f58d0",
+    "audit_conic_pole.py": "35b774437705759c2309aa905cf8f2d1fd91c19669dc35b1489b8a466db36bff",
+    "audit_first_norm.py": "5e13e16621f5de043a5bb63d069f91fbab7b6284e19c4f077b093746efa2a2a5",
+    "audit_linear_pole.py": "956d1f3f5d6e38248fde0edbedbf3c2ef5a175f89ac8770bb711a1490742ff9a",
+    "audit_normalized_lucas.py": "105f4cc79a85649041e95be4a9059ed93e1d296fb77e0937e612f54aa801bb33",
+    "audit_root_rewrite.py": "05fa04d6016212cdfde1613ce3c265f984cfa6f4adcc48737e714269dbbb01b2",
+    "audit_root_shared.py": "50add2b9cd294e86f91c45cc373b4433807a464a4a4cb7c8934688d0a623c281",
+    "audit_shared_square.py": "2e7498a05baad8996341ce7c87c839683a6f196a2682167a731fd329f9101fba",
+    "audit_target2.py": "b2737e3575ad8512dcc33c6c1d84f38178172e53b5d786193d8eed5c1df886c3",
+    "check_anchor_four.py": "0e5f93f61114f9bd6589dc950271938b5d630820a920565043f63ab749081e30",
+    "check_conic_pole.py": "d0e11d3fa4405eff7012bee7e112f74a6eda528382ebb14ca5433982fa4e4933",
+    "check_lucas_batch.py": "446ff0fb520d3922d1a3c96455dd4fade07206dbed5357dcc38700ce6eb2e0ce",
+    "core_audit.py": "0da0dfef661211fd4ada262050895ef24ca54dfdc1aca4aa4bec4e69c1dcbce8",
+    "probe_tangents.py": "75299d5a1118dd7d75892786079003cd8588dc0b814017ae33c82672d00b80b0",
+    "spec_linear.py": "86789c5fd288d2c739659b1f15779d9c81599f84d54c14d7d26f17efe083603b"
+  },
+  "status": "EXPLORATORY FINITE CHECKER PIN; NO ARITHMETIC ACCEPTANCE"
+}

@@ -1,0 +1,25 @@
+\subsubsection{The retained scalar, anchor and beta interfaces}
+The scalar input is still $\beta=X^2+2$. The scalar batch tests the two
+rational coefficients each of $f(J_0),f(S),z(S)/z(J_0)$, with orders
+$(1,1,1,1,32,32)$ in that order. Its original pole predicate is retained.
+The anchor constant is computed by
+\[
+ c_0=3,\qquad c_{i+1}=c_i^2\quad(0\le i<25),\qquad C=c_{25}.
+\]
+Thus the integer $C=3^{2^{25}}$ is a witness value, not a polynomial
+coefficient. The four-witness anchor below consumes this same terminal
+value. The height targets are the eight rational abscissa coefficients
+of Lemma~\ref{lem:quartic-rational37}.
+
+For every beta-bearing comparison, the common and beta quotient equations
+are explicitly
+\[
+ \Lambda p_H=G_H,\qquad B_A=C_Ap_A,\qquad B_A\Lambda=G_A.
+\]
+The global nonvanishing in Lemma~\ref{lem:quartic-reciprocal-nonzero}
+forces $\Lambda,p_H,B_A,p_A\ne0$. Hence $C_A$ is the ratio of the beta
+and common approximate logarithms, with their two minus signs cancelled.
+The beta residual is $C_A-2\beta$. In full comparisons $G_H$ has order
+$40$ and $G_A$ order $12$; in beta-only comparisons both have order $12$.
+The Lucas numerators use the normalized equations below, whose permitted
+zero-ordinate branches must not be excluded by this beta argument.

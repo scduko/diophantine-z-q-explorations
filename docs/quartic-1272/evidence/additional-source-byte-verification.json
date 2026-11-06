@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-06",
+  "files": [
+    {
+      "bytes": 3658085,
+      "release_copy": false,
+      "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+      "source": "Silverman second edition 2009",
+      "workspace_path": "work/astra-final-size-independent-review-001/silverman-2009.pdf"
+    },
+    {
+      "bytes": 448727,
+      "release_copy": false,
+      "sha256": "fc8bc7b8fae727e24f934ddd7de0a7cff8a005e89c3d0cac1ea14e5191b910ca",
+      "source": "Brox working version3",
+      "workspace_path": "work/josebrox-claims-audit-20261106/diophantine_optimization_20261106_v3.tex"
+    }
+  ],
+  "scope": "New applications of already pinned source versions; exact bytes rechecked. External full texts are not redistributed."
+}

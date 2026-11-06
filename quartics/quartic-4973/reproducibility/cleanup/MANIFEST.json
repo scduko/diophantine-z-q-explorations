@@ -1,0 +1,175 @@
+{
+  "baseline": {
+    "degree": 4,
+    "max_abs_coefficient": 685783949153203534233890,
+    "monomials": 74046,
+    "rows": 4873,
+    "variables": 5295,
+    "witnesses": 5294
+  },
+  "files": {
+    "BINDING.json": {
+      "bytes": 1509,
+      "sha256": "24c379b0564f3171cb6991ce42ebfdff7d41634ec36ee83979032f221906589f"
+    },
+    "PROOF.md": {
+      "bytes": 4859,
+      "sha256": "1e4f5cb9de4359dfec3271bbf466c5dc0510e7cf5c2da2330aa6577b3d762011"
+    },
+    "README.md": {
+      "bytes": 1798,
+      "sha256": "40627006c2effd2c309905afe9586dff7d3cf8940a1abb744ef4059d58986098"
+    },
+    "evidence/baseline-verification.json": {
+      "bytes": 1026,
+      "sha256": "a936cba03545c24633e7830f124f5733c8a6810b0f064c79c3b1871be787241c"
+    },
+    "inputs/adapter/construction-map.json": {
+      "bytes": 27743,
+      "sha256": "3d1e002eee34f4917605da1ddc7227e43bfaf4a5044d30d9a77f50fabc7380d2"
+    },
+    "inputs/adapter/source-entry.json": {
+      "bytes": 14068,
+      "sha256": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857"
+    },
+    "inputs/adapter/source/modules/q_conic13.json": {
+      "bytes": 10304,
+      "sha256": "6c8ae40d31ac835612fc2ae980e27e6bc6338190e4f4282b14637d08782a52a5"
+    },
+    "inputs/base-checker.py": {
+      "bytes": 59638,
+      "sha256": "324ab603f1ce1175da6de18f3f600aa2b0c1e2474ea65a575b4a4cac48e09f90"
+    },
+    "inputs/parent/candidate-rows.json.gz": {
+      "bytes": 110769,
+      "sha256": "b33bd777e52740c54041a541922cfca26e0788ce38d198d968936fcfb605304c"
+    },
+    "inputs/parent/certificate.jsonl.gz": {
+      "bytes": 123848,
+      "sha256": "232d536ee6e884cdc283e1ddd9528c2a7123e6c6ef1504019677b992874cf177"
+    },
+    "inputs/parent/polynomial.expanded.txt": {
+      "bytes": 1453900,
+      "sha256": "058e438b3112a8d463661663a7d6581e86760f5a9bc2cf5d5d0e3e2a5bba1bad"
+    },
+    "inputs/parent/polynomial.expanded.txt.gz": {
+      "bytes": 407747,
+      "sha256": "e8a3076afd64c0d97d1543153266d15a3d7077382bfe60afde0a930afbf649d3"
+    },
+    "inputs/parent/residuals.json.gz": {
+      "bytes": 111787,
+      "sha256": "9540b574b0dabcb1066269e341644f6348c8b3b43fed3c2c72f8bbc28f461900"
+    },
+    "inputs/parent/source-entry.json": {
+      "bytes": 14068,
+      "sha256": "39af6e354ce265a7954c2fbae53373862a89f81114e6c24c56eb9ff3020d9857"
+    },
+    "inputs/parent/source-residuals.jsonl.gz": {
+      "bytes": 108491,
+      "sha256": "94f8a1972cbfc0cf6493d418e628a18482307dec5c427db72e86d3eacb1a6f5d"
+    },
+    "inputs/parent/variable-map.json": {
+      "bytes": 25374,
+      "sha256": "f482e87e82a0dfca5cc8c1d8bf3c9de08eec43d608c36d7a7017bceeb8d31237"
+    },
+    "inputs/parent/weights.json": {
+      "bytes": 9748,
+      "sha256": "ac2322fafb905b05128688a0622bf78ce79d6aecfa74ddc8c0ea9758fe113e4c"
+    },
+    "run.py": {
+      "bytes": 13700,
+      "sha256": "d3d3b96f8cfff3a6de1318c4929d81eb4ae44ee9c908b18617542dd5a7bac4b0"
+    },
+    "support/MIXED_MODE_DENOMINATOR_CLARIFICATION.md": {
+      "bytes": 3183,
+      "sha256": "2a1eb8ed9a7175995afa665a08035728c1714b5fa30e1ba52030b6adf7b8ba34"
+    },
+    "tools/binding.py": {
+      "bytes": 7032,
+      "sha256": "42b1f0531ab69dbbec685d518a16f13cecaa7bc03f1de9c7b3a74542774a5340"
+    },
+    "tools/check_localized.py": {
+      "bytes": 8765,
+      "sha256": "9828978e58f6475ab1446b9d663dddb9632f35cade14d21162b6dc1e0d91e736"
+    },
+    "tools/check_relation_eliminate.py": {
+      "bytes": 5502,
+      "sha256": "fb24735fc9782d48281a820888050e8939c791f0167a45570643a21ab124db50"
+    },
+    "tools/export_artifact.py": {
+      "bytes": 2474,
+      "sha256": "791c8e503407b2b58cbdb788785a952e2d6bc2720f34802ece2b0958cb07ccb4"
+    },
+    "tools/make_checker.py": {
+      "bytes": 2392,
+      "sha256": "0c0b710c380c5890d52c920d262e9f248db28bee4d1cf31dfbf24f5aee399450"
+    },
+    "tools/make_frozen_checker.py": {
+      "bytes": 228,
+      "sha256": "78e70dd96ff98dd1df23682aeead811f5f50fc87d8009d5bd5f63ff6e6b0ab20"
+    },
+    "tools/merge_coordinates.py": {
+      "bytes": 5707,
+      "sha256": "bdb81b3fa2e99fe373da4f1e4b527c12decfa463da47e44f7ac7ddc304961f5e"
+    },
+    "tools/optimize.py": {
+      "bytes": 14119,
+      "sha256": "6a0653e237f87a31808f64938761b42168691eb7773bee0a7ac5aca762a9de97"
+    },
+    "tools/polynomial_ops.py": {
+      "bytes": 972,
+      "sha256": "fe325ee902ed3226da28277e4a70fd924a9628e40d5bea39451bba6c52a2b5c5"
+    },
+    "tools/power_chain.py": {
+      "bytes": 8296,
+      "sha256": "60b6c1ad7834ee6251bfb39a893c8ae38f56f289c92a0da167f5419e29d7a746"
+    },
+    "tools/probe_affine_unit_relations.py": {
+      "bytes": 1209,
+      "sha256": "d27ccfef903675d2574ae064fdae9a7233d1c05f66a56ba0a1b898f5a8fe675e"
+    },
+    "tools/probe_localized.py": {
+      "bytes": 13919,
+      "sha256": "b5c4775d1184b4aed17fd4bdb69180bb400dc5814c7347e9ccf6f41c8c231f76"
+    },
+    "tools/probe_relation_eliminate.py": {
+      "bytes": 16645,
+      "sha256": "c5f1f1a8a88c9a3eb77fb4bcf5344f23fb417946324591cfe1090f14e5a05e51"
+    },
+    "tools/probe_unit_relations.py": {
+      "bytes": 10973,
+      "sha256": "f26bc7738ca49855ac661cbcf7b3ed9203407355f2f199feda2df48dc6492ad4"
+    },
+    "tools/supplemental_tests.py": {
+      "bytes": 5527,
+      "sha256": "339174c5a9cafe08d460f05458829f318407d23b35110a0875f56ae01f78447f"
+    },
+    "tools/test_affine_units.py": {
+      "bytes": 1721,
+      "sha256": "1be353f506855fa533b910ed2c36229393c8ecf95d5e92480f28fc283f021d90"
+    },
+    "tools/test_power_chain.py": {
+      "bytes": 4590,
+      "sha256": "39213a8ddc83debfa9c1c33bf40fee6130fefc3597fdcc5840c6945d44496b85"
+    },
+    "tools/test_relation_eliminate.py": {
+      "bytes": 6363,
+      "sha256": "fe6ba8bf7706b2d7d4fdba9cfb72279e15a7aac310845193030ab6b406f14b00"
+    },
+    "tools/test_source_locator.py": {
+      "bytes": 3205,
+      "sha256": "2d601a76a99c81124d5ab79f358f9b0843df9af11df6a32acb0b96e42037d1a2"
+    },
+    "tools/test_unit_relations.py": {
+      "bytes": 6015,
+      "sha256": "57a47f5318de4771b48c22f4f708973875641eb9ae75aa40b0aae6a20fa4791e"
+    },
+    "tools/verify_elimination.py": {
+      "bytes": 73987,
+      "sha256": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe"
+    }
+  },
+  "format": "pinned-elimination-wave-v1",
+  "kit_manifest_sha256": "2dc466d42df919e443874c5960729730e23eb1a0bc41b547c1e7ed62f892883c",
+  "source_id": "target2-tangent-first-norm-normalized-linear-pole-k40-q12-a25-h19-s32-4a82d9a8dc1b"
+}

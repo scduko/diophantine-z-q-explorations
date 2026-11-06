@@ -1,0 +1,42 @@
+{
+  "H5": {
+    "B_star": "product of primes p <= 76176",
+    "CM_branch": "Same-field CM estimate included in the accepted assembled proof.",
+    "H": "2*(4608^165888+6^100)*B_star^24+128",
+    "M": "product of primes outside S_star with odd intersection multiplicity with one of the five contacts",
+    "closed_geometry_Q": "Published quotient identification replaces the former Padurariu-Saia source dependency.",
+    "contacts": [
+      "infinity",
+      "0",
+      "1",
+      "2401",
+      "-343/32"
+    ],
+    "exceptional_primes": "p <= 76176",
+    "excluded_shortcut": "von Kanel-Kret preprint not used",
+    "independent_acceptance_sha256": "3de379463fb4a32702f5098fd08dfa3d62a5a116641803c0411c48d212026b27",
+    "manuscript_sha256": "5907f81b41aa897b960c006abfcc0684aa7572d7d1fa3fa245b1dedc23cbe72e",
+    "not_assumed": "Bounded same-field descent to a rational GL2-type variety or a uniform scalar coefficient field.",
+    "numerical_constant_bound": "log2(H) < 4783227; this does not prove the height assertion",
+    "open_obligations": [],
+    "proof_method": "Published quotient geometry; non-CM modular-level bound with varying scalar-character order and coefficient field; arithmetic height transfer; same-field CM estimate.",
+    "required_bound": "h(s) <= H*M(s)^24",
+    "status": "Included unchanged in the independently reviewed smaller-only manuscript; baseline arithmetic proof status unchanged.",
+    "theorem_label": "hyp:o8-height"
+  },
+  "anchor": "Published Koenigsmann application and exact local subgroup proof; the accepted H5 theorem now supplies the original height-cutoff constant.",
+  "baseline_sha256": "cb1148cd6c7769d2af3f1636b60ff0ada4b40431978d1e98d0c339274b3d792b",
+  "current_proof_record": "current-proof.json",
+  "finite_checks_do_not_prove": [
+    "RC",
+    "H5",
+    "the full Diophantine characterization; its proof is in the accepted manuscript"
+  ],
+  "format": "original-degree8-assumptions/v2",
+  "generator_and_baseline_arithmetic": "Retained exactly as stated in the pinned baseline.",
+  "geometry_Q": "Closed by Gonzalez-Rotger, JMSJ 58(4) (2006), Theorem 4.2 and Tables 2-3, with exact labeled branch recovery; see geometry/source-application-ledger.json.",
+  "parity": "Proof supplied and independently reviewed using the baseline RC theorem at its stated proof status and the baseline arithmetic; no stronger realization hypothesis.",
+  "polynomial_changed": false,
+  "restricted_converse_RC": "Baseline restricted-converse theorem, used at the baseline manuscript's stated proof status; these small checks do not independently reprove it.",
+  "sieve": "Original41 and common-J proof supplied and independently reviewed with the source-version conventions in its ledger; no Sun cross-prime order input."
+}

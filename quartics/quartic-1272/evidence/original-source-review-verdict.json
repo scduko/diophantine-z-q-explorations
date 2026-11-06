@@ -1,0 +1,69 @@
+{
+  "status": "accepted_as_independent_semantic_reconstruction",
+  "date": "2026-11-06",
+  "builder_sha256": "ecbd266ca3728a6ea298475e059ce2541ae049d1ae4e1b75a4ea7a885d3e36fd",
+  "raw_ir_sha256": "d71ded4f434476cdc4bdd1ac309a19f57cb706ed3e714439c6ed32fd1f0b1731",
+  "translated_ir_sha256": "301e3d110d5618ecd172ca0eca45f71058d9177348c379256819f69bd89b3425",
+  "conclusion": "The frozen builder implements all public source formulas and domain conditions. No missing structural equation, field test, pole witness, or necessary denominator guard was found.",
+  "original_unpublished_identity_recovered": false,
+  "counts": {
+    "semantic_base_coordinates": 90,
+    "structural_equations": 47,
+    "raw_gate_coordinates": 1214,
+    "raw_total_coordinates": 1304,
+    "raw_total_equations": 1261,
+    "field_tests_by_order": {"1": 10, "16": 2, "52": 4},
+    "scalar_test_orders": [1, 1, 1, 1, 32, 32]
+  },
+  "scope": {
+    "full_source_inventory": "source_inventory.json",
+    "source_mathematical_review": "SOURCE_REVIEW.md",
+    "gate_and_source_comparison": "check_builder_semantics.py",
+    "comparison_receipt": "builder_semantic_checks.json",
+    "arithmetic_theorems_reproved": false,
+    "compiler_eliminations_reviewed_here": false,
+    "coefficient_table_verified_here": false
+  },
+  "important_checks": [
+    "All nine affine halfpoint modules and eighteen component curve equations are present.",
+    "All five subtractions use the correct sum-of-ordinates slope and retain explicit abscissa-difference inverses.",
+    "Eight logarithms use precision52 and two use precision16; denominator logarithms are precision52.",
+    "All sixteen field tests occur exactly once in the direct detector product.",
+    "The elementary-symmetric coefficient recurrence and each Horner evaluation agree with the direct product.",
+    "The compact weight identities reproduce the displayed q1, q16, q52 formulas exactly.",
+    "The scalar norm tree uses the exact upstream order with seven leaves and no padding.",
+    "The scalar block uses the original r_beta, original256 Boolean corrections, order32, and a retained preparation coordinate.",
+    "The strict scalar b nonzero guard is retained.",
+    "The raw physical anchor and the16-times-scaled affine translation are correct.",
+    "Every direct quotient has either an enforcing equation or the required mathematical nonvanishing proof."
+  ],
+  "supplementary_exact_checks": {
+    "prime_fields": [1000003, 1000033, 1000037],
+    "seeds_per_field": [1315, 2718, 3141],
+    "samples": 9,
+    "named_values_per_sample": 168,
+    "gate_equations_per_sample": 1214,
+    "structural_equations_per_sample": 47,
+    "all_passed": true,
+    "finite_sampling_claimed_as_proof": false
+  },
+  "findings": [
+    {
+      "type": "metadata_correction",
+      "description": "Preparation denominator domain tag originally referenced the wrong manuscript lines; the lead builder corrected the reference and added refinement anchors.",
+      "status": "fixed_before_frozen_hashes",
+      "changes_equations": false
+    },
+    {
+      "type": "normalization_qualification",
+      "description": "The translated raw anchor equals16 times the original after substitution. Rational zero-set equivalence holds; a literal identity of the complete unnormalized sums of squares is not asserted.",
+      "status": "recorded_in_review"
+    },
+    {
+      "type": "artifact_identity_limitation",
+      "description": "Public formulas do not uniquely determine the original gate order, reuse decisions, eleven row additions or sixty eliminations. The reconstructed program has a smaller raw count and is not claimed to be the original unpublished table.",
+      "status": "recorded_in_review"
+    }
+  ],
+  "reviewer_edited_builder_files": false
+}

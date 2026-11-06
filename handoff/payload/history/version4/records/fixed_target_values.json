@@ -1,0 +1,192 @@
+{
+  "coefficient_limit": 1208925819614629174706176,
+  "isolated_max_abs_coefficient": 395918230471021175779344,
+  "isolated_max_bits": 79,
+  "isolated_sum_of_squares_constant": 123824835334257812600380,
+  "point": "4R=2Pstar",
+  "proposed_bindings": [
+    {
+      "component": 0,
+      "name": "x",
+      "primitive_row": {
+        "constant": -8226963211,
+        "variable": 2285245536
+      },
+      "square": {
+        "constant": 67682923675147430521,
+        "variable": -37601261905547952192,
+        "variable_squared": 5222347159807927296
+      }
+    },
+    {
+      "component": 1,
+      "name": "x",
+      "primitive_row": {
+        "constant": 1063929023,
+        "variable": 1713934152
+      },
+      "square": {
+        "constant": 1131944965981734529,
+        "variable": 3647008575647386992,
+        "variable_squared": 2937570277391959104
+      }
+    },
+    {
+      "component": 0,
+      "name": "q",
+      "primitive_row": {
+        "constant": -70757419981,
+        "variable": 143614994586
+      },
+      "square": {
+        "constant": 5006612482367618040361,
+        "variable": -20323652974981286445732,
+        "variable_squared": 20625266669936809311396
+      }
+    },
+    {
+      "component": 1,
+      "name": "q",
+      "primitive_row": {
+        "constant": -344600359813,
+        "variable": 574459978344
+      },
+      "square": {
+        "constant": 118749407983249065394969,
+        "variable": -395918230471021175779344,
+        "variable_squared": 330004266718988948982336
+      }
+    }
+  ],
+  "scope": "Four separate reduced-rational x/q bindings; retain variable F/s/t equations. Full source and endpoint coefficient checks remain required.",
+  "source_script_sha256": "74ae8b6cd995ab1e3927ee570594100af2927ea789e4a5893f6167c6bf953346",
+  "status": "EXACT CONSTANTS AND ISOLATED ROWS ONLY",
+  "values": {
+    "F": [
+      {
+        "denominator": 24067746880321,
+        "denominator_bits": 45,
+        "numerator": 7108096214304,
+        "numerator_bits": 43
+      },
+      {
+        "denominator": 24067746880321,
+        "denominator_bits": 45,
+        "numerator": 1225646234496,
+        "numerator_bits": 41
+      }
+    ],
+    "c": [
+      {
+        "denominator": 55000711119831491497056,
+        "denominator_bits": 76,
+        "numerator": 343074833698058437168843,
+        "numerator_bits": 79
+      },
+      {
+        "denominator": 41250533339873618622792,
+        "denominator_bits": 76,
+        "numerator": -75595781233274594536319,
+        "numerator_bits": 77
+      }
+    ],
+    "inverse_q": [
+      {
+        "denominator": 3287811625151,
+        "denominator_bits": 42,
+        "numerator": -3396356159088,
+        "numerator_bits": 42
+      },
+      {
+        "denominator": 3287811625151,
+        "denominator_bits": 42,
+        "numerator": 4135204317756,
+        "numerator_bits": 42
+      }
+    ],
+    "q": [
+      {
+        "denominator": 143614994586,
+        "denominator_bits": 38,
+        "numerator": 70757419981,
+        "numerator_bits": 37
+      },
+      {
+        "denominator": 574459978344,
+        "denominator_bits": 40,
+        "numerator": 344600359813,
+        "numerator_bits": 39
+      }
+    ],
+    "s": [
+      {
+        "denominator": 472179048745848726432486,
+        "denominator_bits": 79,
+        "numerator": -5219201691248599336419853,
+        "numerator_bits": 83
+      },
+      {
+        "denominator": 1888716194983394905729944,
+        "denominator_bits": 81,
+        "numerator": 18393115582621449979840571,
+        "numerator_bits": 84
+      }
+    ],
+    "s_over_q": [
+      {
+        "denominator": 10809705282478059735772801,
+        "denominator_bits": 84,
+        "numerator": 388231837890210281654077057,
+        "numerator_bits": 89
+      },
+      {
+        "denominator": 10809705282478059735772801,
+        "denominator_bits": 84,
+        "numerator": -259024890294988956068474880,
+        "numerator_bits": 88
+      }
+    ],
+    "t": [
+      {
+        "denominator": 10809705282478059735772801,
+        "denominator_bits": 84,
+        "numerator": 45735064658550722798742816,
+        "numerator_bits": 86
+      },
+      {
+        "denominator": 10809705282478059735772801,
+        "denominator_bits": 84,
+        "numerator": -28089253307395763278333056,
+        "numerator_bits": 85
+      }
+    ],
+    "x": [
+      {
+        "denominator": 2285245536,
+        "denominator_bits": 32,
+        "numerator": 8226963211,
+        "numerator_bits": 33
+      },
+      {
+        "denominator": 1713934152,
+        "denominator_bits": 31,
+        "numerator": -1063929023,
+        "numerator_bits": 30
+      }
+    ],
+    "y": [
+      {
+        "denominator": 200694833462592,
+        "denominator_bits": 48,
+        "numerator": 206505981889175,
+        "numerator_bits": 48
+      },
+      {
+        "denominator": 802779333850368,
+        "denominator_bits": 50,
+        "numerator": 1488119581317589,
+        "numerator_bits": 51
+      }
+    ]
+  }
+}

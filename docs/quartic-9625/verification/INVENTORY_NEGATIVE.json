@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "baseline": {
+    "status": "PASS",
+    "scope": "Fail-closed Version3 inventory, text-bridge and artifact binding validator.\n\nThis checks finite bindings and dependency closure, not mathematical truth\nor a fresh replay of the arithmetic source/certificate. Run those separately.",
+    "manuscript_sha256": "dc77c88b5cc0819201343dc85d0891d4dad81d97ac3267ec1df34eb38003b552",
+    "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+    "arithmetic_lemmas": 11,
+    "inherited_applications": 10,
+    "published_applications": 4,
+    "retained_rules": 13,
+    "proof_artifacts": 18,
+    "dependency_edges": 74
+  },
+  "malformed_cases": [
+    "drop arithmetic node",
+    "change height statement",
+    "drop published application",
+    "drop inherited application",
+    "drop retained algebraic rule",
+    "erase source version limits",
+    "wrong finite target",
+    "drop dependency edge",
+    "duplicate dependency edge",
+    "drop historical anchor",
+    "drop historical citation",
+    "change historical scope",
+    "wrong registry target",
+    "unapproved layout change"
+  ],
+  "count": 14,
+  "validator_sha256": "557be94153cc77abc20be350bf0d978bc8be24c989ce83f83bd836a0db2b1b98",
+  "scope": "Metadata/binding rejection tests only; source and quartic replay are separate"
+}

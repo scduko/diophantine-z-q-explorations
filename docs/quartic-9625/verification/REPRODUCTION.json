@@ -1,0 +1,315 @@
+{
+  "certificate_comparison": "All records identical after removing only final.report.seconds",
+  "checker_sha256": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4",
+  "expected": {
+    "certificate_sha256": "8aaa2249eda6972c441d58b212ec64a53e1202d5e9f74ea4cbc53e7e3f71a0bd",
+    "checker_sha256": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4",
+    "compressed_bytes": 469949,
+    "degree": 4,
+    "expanded_bytes": 1558552,
+    "expanded_sha256": "6d67d45f3d615b7fd2242e3a9404dd9f5da570fc711a29ebe77f613e80ebbf99",
+    "max_abs_coefficient": 685783949153203534233601,
+    "monomials": 82476,
+    "rows": 9161,
+    "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+    "source_sha256": "97b7bc300084afaefe9980f1feea760be8b4dedaf6eb788fcc4c3af440262579",
+    "variables": 9625,
+    "witnesses": 9624
+  },
+  "named_source_mutations": {
+    "cases": [
+      {
+        "assertion": "assert source_id in SOURCE_ENTRIES",
+        "case": "unknown_source_id",
+        "line": 139,
+        "status": "EXPECTED SEMANTIC REJECTION"
+      },
+      {
+        "assertion": "assert first['source_entry_sha256']==hashlib.sha256(canonical(entry)+b'\\n').hexdigest()",
+        "case": "wrong_source_entry_digest",
+        "line": 143,
+        "status": "EXPECTED SEMANTIC REJECTION"
+      },
+      {
+        "assertion": "assert json.loads(gzip.decompress(source_bytes).splitlines()[0])==entry['source_header']",
+        "case": "changed_source_header",
+        "line": 144,
+        "status": "EXPECTED SEMANTIC REJECTION"
+      },
+      {
+        "assertion": "assert hashlib.sha256(gzip.decompress(source_bytes)).hexdigest()==entry['uncompressed_sha256']",
+        "case": "changed_source_body",
+        "line": 145,
+        "status": "EXPECTED SEMANTIC REJECTION"
+      },
+      {
+        "assertion": "assert hashlib.sha256(source_bytes).hexdigest()==SOURCE_SHA",
+        "case": "changed_source_gzip_bytes",
+        "line": 146,
+        "status": "EXPECTED SEMANTIC REJECTION"
+      }
+    ],
+    "checker_sha256": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4",
+    "scope": "Five source-name/byte binding mutations; full rule mutation coverage remains inherited from the exact pinned rule tests.",
+    "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+    "status": "PASS"
+  },
+  "package_manifest_sha256": "eb4b2ae93f932d96919d8779f937b7eec47163c8cf8909d1b66a55b1fdc08559",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "regenerated_certificate_sha256": "bdf4765cd001cf36e265ce964ace7cb045f1e74885e86d4425f78bbe89467ada",
+  "scope": "Exact finite construction, source audit, projection-preserving replay, full expansion and reproducibility; arithmetic theorem acceptance remains separate",
+  "seconds": 36.597,
+  "source_arithmetic_acceptance": false,
+  "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+  "source_mutations": {
+    "cases": [
+      "changed arithmetic",
+      "changed H.xf=1.0",
+      "changed X0.xf=1.1",
+      "changed H pH=GH.0",
+      "changed A=C p.0",
+      "changed A H=G.1",
+      "changed difference line at first point.0",
+      "changed difference line at negated second point.1",
+      "changed difference reciprocal abscissa.0",
+      "changed difference formal parameter.1",
+      "changed distinct abscissae guard",
+      "wrong denominator precision",
+      "wrong field order",
+      "wrong G profile",
+      "missing ordered test",
+      "wrong contact input",
+      "wrong batch module",
+      "wrong beta proxy",
+      "wrong selected contact",
+      "wrong selected free argument",
+      "wrong retained full call",
+      "changed root equation",
+      "changed root selection metadata",
+      "wrong batch order",
+      "wrong constant leaf",
+      "wrong batch power",
+      "wrong parity input"
+    ],
+    "malformed_sources_rejected": 27,
+    "resource_abort_propagation": "PASS",
+    "scope": "New module and exact root retargeting; inherited modules are byte-pinned and full flattening independently checked",
+    "status": "PASS",
+    "valid_source_status": "PASS: SOURCE CONSTRUCTION ONLY"
+  },
+  "source_sha256": "97b7bc300084afaefe9980f1feea760be8b4dedaf6eb788fcc4c3af440262579",
+  "status": "PASS: FROZEN REPLAY AND CLEAN REPRODUCTION",
+  "steps": [
+    {
+      "exit_code": 0,
+      "log": "syntax.log",
+      "log_sha256": "d74177cc0622452799e8364bf8993f76c478e79f66ce3cf404455430d040ba4d",
+      "seconds": 0.12,
+      "step": "syntax",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "locator-fixtures.log",
+      "log_sha256": "90bc168df78727d44ad9a459e5b144f9db1f4abb5593938cea2ce13e98d255aa",
+      "seconds": 1.478,
+      "step": "locator-fixtures",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "frozen-source-audit.log",
+      "log_sha256": "1de50ded380026aeacc48a7c3c2a9e1b66ec42ab8b721929de148c828d54ee8e",
+      "seconds": 0.269,
+      "step": "frozen-source-audit",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "source-mutations.log",
+      "log_sha256": "edc958f35784b3c782452ae4d96be2d205bf1acef1f8aa59c7aa8ee17d2a07bf",
+      "seconds": 0.824,
+      "step": "source-mutations",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "frozen-certificate.log",
+      "log_sha256": "23d8ba5211eba0f14728c66c069520b501c2b2296c73d88b986b6c63623258c1",
+      "seconds": 2.787,
+      "step": "frozen-certificate",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "frozen-named-mutations.log",
+      "log_sha256": "e23ab570965849f8184cdb6da0211f389a589678208996503555a368a8601b9a",
+      "seconds": 1.471,
+      "step": "frozen-named-mutations",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "source-regeneration.log",
+      "log_sha256": "81164127054f4a2b7b44fd2ccb46bbeb07381e89dfa6b8fb72b46915de0dc4c9",
+      "seconds": 0.318,
+      "step": "source-regeneration",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "rebuilt-source-audit.log",
+      "log_sha256": "1de50ded380026aeacc48a7c3c2a9e1b66ec42ab8b721929de148c828d54ee8e",
+      "seconds": 0.268,
+      "step": "rebuilt-source-audit",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "adapter-regeneration.log",
+      "log_sha256": "bff7fa7fc6924972123f30035d8b6f87b2da841ab88031c76030b34d6dbb204e",
+      "seconds": 0.318,
+      "step": "adapter-regeneration",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "fresh-lift.log",
+      "log_sha256": "024e9a1395e94cc4a27639cd4517d43a314e77a227c932e902d0478f14584f43",
+      "seconds": 1.07,
+      "step": "fresh-lift",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "verify-fresh-lift.log",
+      "log_sha256": "87a2c65431cfefe153624f4e66728f2cfe3902f90a175b3949356e28bdfb93f9",
+      "seconds": 1.471,
+      "step": "verify-fresh-lift",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "norms.log",
+      "log_sha256": "55c95a37054c84b1fa29f117cef1ed6ca0ad4b86c0c299979633de42e8fd26a8",
+      "seconds": 1.02,
+      "step": "norms",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "verify-norms.log",
+      "log_sha256": "b8915b9b9298761e43f3ea0611aa145bfbdf83a82f1b52c41002f1c14b0f4390",
+      "seconds": 1.622,
+      "step": "verify-norms",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "charts.log",
+      "log_sha256": "d4eaaab9f4c8ff7e185e46c2a283c34ca1d298b2163c7328b7eb0d426dc63a63",
+      "seconds": 1.022,
+      "step": "charts",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "verify-charts.log",
+      "log_sha256": "979438d79457342604dc9b181d5cd6fecec09f53223ec77b22b7746793244e15",
+      "seconds": 1.672,
+      "step": "verify-charts",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "ordinates.log",
+      "log_sha256": "8a521e974acc915a5c9c8ffaf5fc2e02e40c99c90215d7a4c887a06f6ed728a3",
+      "seconds": 1.02,
+      "step": "ordinates",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "verify-ordinates.log",
+      "log_sha256": "9b5bf5b99669759182a02ea8ac1bd82813c954e9ff13270cc20d4ae81f4a73fc",
+      "seconds": 1.623,
+      "step": "verify-ordinates",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "parity.log",
+      "log_sha256": "901e10cb6f2822c613212e22882efa5ea424654d8c741bad14f5f57ae0a641fb",
+      "seconds": 1.02,
+      "step": "parity",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "verify-parity.log",
+      "log_sha256": "58f758f55dd42e72d58c6ca6af4f288afc181239c60bf8fbbdc0201b5b4cc265",
+      "seconds": 1.671,
+      "step": "verify-parity",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "batch.log",
+      "log_sha256": "54570d4538e0fa93702099156a598aae080459187fafa4ef63ddbce0bc0dd561",
+      "seconds": 1.321,
+      "step": "batch",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "verify-batch.log",
+      "log_sha256": "ad84c22875ae66f1395b4262051a020c0c0f8b004ef99d39c483c9e4e989d480",
+      "seconds": 1.872,
+      "step": "verify-batch",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "optimize.log",
+      "log_sha256": "0586ad3a59d693e065a5695711efc9a64d66e2a60e23a01798c50664d0b27871",
+      "seconds": 4.18,
+      "step": "optimize",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "verify-optimized.log",
+      "log_sha256": "8c9a02fab5b9055271b1fc6625419497c88bc2d795c1eba5c5a41466ddf427e2",
+      "seconds": 2.423,
+      "step": "verify-optimized",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "merge-coordinates.log",
+      "log_sha256": "234b297588b1d059357a4f4f69c16ea5bc0a1e97712bb849c6216bfacc584d3a",
+      "seconds": 1.521,
+      "step": "merge-coordinates",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "verify-regenerated-endpoint.log",
+      "log_sha256": "faf7f20cc2b4aecc3486502aee47edc5d7b1b09ea28129c4996893d74108bd1f",
+      "seconds": 2.424,
+      "step": "verify-regenerated-endpoint",
+      "timeout": false
+    },
+    {
+      "exit_code": 0,
+      "log": "regenerated-named-mutations.log",
+      "log_sha256": "e23ab570965849f8184cdb6da0211f389a589678208996503555a368a8601b9a",
+      "seconds": 1.472,
+      "step": "regenerated-named-mutations",
+      "timeout": false
+    }
+  ],
+  "zlib_compile_version": "1.3",
+  "zlib_runtime_version": "1.3"
+}

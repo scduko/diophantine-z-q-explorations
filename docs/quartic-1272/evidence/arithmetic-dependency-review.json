@@ -1,0 +1,538 @@
+{
+  "schema_version": 1,
+  "task": "Version5 independent arithmetic bridge review",
+  "sources": {
+    "current_v4": {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+      "sha256": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34"
+    },
+    "bridges": {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+      "sha256": "94696c3d3113c6ff23b8ff3039a17447424151d49f5ecbf1f178304aaf2d5544"
+    },
+    "new1272": {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+      "sha256": "506675ede05bb3d369d9882945958c86d2d39c8fbe4d6e1e393c6a4e17f00000"
+    },
+    "sun_application_statement": {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\sun-proof\\sun_appendix.tex",
+      "sha256": "620e2e5652048c827efd8a1d9dae78462679e65992beeb20c3f089b3115fb77b",
+      "review_scope": "Exact theorem statement consumption only; surrounding proof is not reviewed by this receipt.",
+      "statement": {
+        "label": "thm:v5-simultaneous-primes",
+        "lines": [
+          24,
+          48
+        ],
+        "encoding": "UTF-8 with LF newlines and one terminal newline",
+        "sha256": "348c98050f778bb326b1811565deb2b37471a3104eeaf3be847bd6584c9f779e",
+        "snapshot_path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\sun_consumed_statement.tex"
+      },
+      "prior_container_sha256": "5acc5891dd791c56bb7b68342caf3d9ed3b3d3908e3af618773b9bea3791c594",
+      "revision_note": "After the FT norm-exponent proof repair, the theorem statement was reread and its unchanged application scope reaffirmed. The new proof is separately reviewed."
+    }
+  },
+  "exact_comparison_file": "foundation_comparison.json",
+  "entries": [
+    {
+      "id": "generator",
+      "statement": "For K=Q(sqrt(2)), d=3-sqrt(2), D=d^2=11-6sqrt(2), E:y^2=x^3-Dx and P*=(57/8-7sqrt(2)/2,-165/8+417sqrt(2)/32), 2E(K)=Z P*, P* has infinite order and E(K)_tors=E[2](K).",
+      "application_scope": "Every doubled half-point in the new rational source has a unique nonzero integer index; equality of indices follows from infinite order.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "prop:generator",
+          "line": 288
+        }
+      ],
+      "comparison_status": "Exact inherited generator block and exact inherited unit transport.",
+      "depends_on": [],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-point-domains",
+          "line": 101
+        }
+      ],
+      "additional_current_lines": [
+        7815,
+        7827
+      ]
+    },
+    {
+      "id": "point_chart_and_domains",
+      "statement": "The sparse affine chart with f=1/x and z=-x/y represents precisely nonzero points of 2E(K). For Q=[4]P* as subtraction reference, x(U)=x(Q) iff U=+/-Q; the source keeps this difference denominator invertible.",
+      "application_scope": "The new source uses explicit half-points and duplication, then differences from [4]P* and [4 n_i]P*. It does not consume the selected V4 doubled/private conic chart.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "eq:o8-chart",
+          "line": 7830
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:o8-chart",
+          "line": 7835
+        }
+      ],
+      "comparison_status": "Inherited chart scope checked; new quotient-domain proof supplies the changed chart.",
+      "depends_on": [
+        "generator"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-point-domains",
+          "line": 101
+        }
+      ],
+      "additional_current_lines": [
+        7868,
+        7875
+      ]
+    },
+    {
+      "id": "index_height",
+      "statement": "For every nonzero integer n, absolute logarithmic Weil height h(x([n]P*)) >= n^2-6.",
+      "application_scope": "Used for all nonzero integer root labels, with the normalized P* exactly as in the source; h is logarithmic height, not multiplicative height.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "eq:o8-indexheight",
+          "line": 7884
+        }
+      ],
+      "comparison_status": "Exact inherited block.",
+      "depends_on": [
+        "generator"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-height-transfer",
+          "line": 423
+        }
+      ],
+      "additional_current_lines": [
+        7877,
+        7886
+      ]
+    },
+    {
+      "id": "five_contact_height",
+      "statement": "For rational a outside {0,1,2401,-343/32}, h(a)<=H_* M_5(a)^24. M_5 uses normalized positive odd valuations outside primes <=76176 of the four finite contacts and infinity. H_*=2(4608^165888+6^100)(product_{p<=76176}p)^24+128 and log_2 H_*<4783227.",
+      "application_scope": "The new source uses this original exponent-24 bound. It does not substitute the V4 exponent-19 constant or its 2093966 bound. Nine scales transfer finite contacts and infinity through r and 1/(r-delta).",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "hyp:o8-height",
+          "line": 6675
+        }
+      ],
+      "comparison_status": "Entire 875-line proof block is exact inherited text.",
+      "depends_on": [
+        "inherited_published_inputs"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-height-transfer",
+          "line": 423
+        }
+      ],
+      "additional_current_lines": [
+        6657,
+        6681,
+        7493,
+        7505
+      ]
+    },
+    {
+      "id": "seven_witness_pole",
+      "statement": "For b!=0, B=17b and rational t,U,e,p,q,s,h: U(1+bt^2)=b(1-bt^2), p^2=B(1-e)(1+3e), h=e(B-U^2), Bq^2=(s^2-Bh)(s^2+3Bh). Existence excludes negative odd valuations of b outside {2,3,17}; converse holds for positive b with square reduced denominator and square in Q_2,Q_3,Q_17.",
+      "application_scope": "Scalar certificate retains preparation. Coordinate certificates specialize t=0,U=b, using the separate preparation-zero bridge. Degenerate e,h,s,U are permitted by soundness; no unjustified extra guard is introduced.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "eq:o8-pole",
+          "line": 7536
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "hyp:o8-pole",
+          "line": 7541
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-parity-soundness",
+          "line": 7575
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-parity-completeness",
+          "line": 7714
+        }
+      ],
+      "comparison_status": "Entire statement, obstruction, simultaneous realization and completeness block exact inherited text.",
+      "depends_on": [
+        "restricted_converse",
+        "simultaneous_realization"
+      ],
+      "new_anchors": []
+    },
+    {
+      "id": "restricted_converse",
+      "statement": "For every positive squarefree ell congruent 11 mod12 and E_ell:y^2=x(x-ell)(x+3ell), corank_Z2 Sel_{2^infinity}(E_ell/Q)=1 implies analytic order at s=1 equals1.",
+      "application_scope": "This non-CM rational family is used in the existing simultaneous-realization proof, not the CM normalized index curve. Its full inherited proof-status qualifications remain in force.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "hyp:RC",
+          "line": 1025
+        }
+      ],
+      "comparison_status": "Statement exact inherited text; this interface audit does not independently reprove the long restricted-converse chain.",
+      "depends_on": [
+        "inherited_published_inputs"
+      ],
+      "new_anchors": [],
+      "additional_current_lines": [
+        1006,
+        1039
+      ]
+    },
+    {
+      "id": "simultaneous_realization",
+      "statement": "For positive squarefree mu,theta with disjoint support avoiding2,3, mu=17 mod24, theta=1 mod24 and mutual local squareness at their supporting primes, some positive squarefree n prime to6theta gives nonzero rational points in squareclass mu on E_n and E_(n theta). Theta=1 is allowed.",
+      "application_scope": "This is the exact arithmetic existence input for the preparation-zero bridge; its squareclass, support, positivity and congruence assumptions are explicitly proved there.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-simultaneous-realization",
+          "line": 7609
+        }
+      ],
+      "comparison_status": "Exact inherited statement and proof.",
+      "depends_on": [
+        "restricted_converse"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+          "label": "v5:preparation-zero-bridge",
+          "line": 141
+        }
+      ],
+      "additional_current_lines": [
+        7608,
+        7711
+      ]
+    },
+    {
+      "id": "preparation_zero",
+      "statement": "The t=0 specialization with four witnesses e,p,q,s is complete when b>0 has square denominator, is locally square at2,3,17, b<17 and v_2(b)>=3,v_3(b)>=1,v_17(b)>=2. Its one-sided obstruction has no added nonzero witness assumptions.",
+      "application_scope": "All nine coordinate poles; all listed small-prime and archimedean conditions are constructed before completion.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-parity-soundness",
+          "line": 7575
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-simultaneous-realization",
+          "line": 7609
+        }
+      ],
+      "comparison_status": "New complete proof; not an invocation of arbitrary-preparation completeness.",
+      "depends_on": [
+        "seven_witness_pole",
+        "simultaneous_realization"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+          "label": "v5:preparation-zero-bridge",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "id": "finite_correction_and_scalar_units",
+      "statement": "The signed squarefree products of2,3,5,7,11,13,17 span the local squareclasses at Q_2,Q_3,Q_17 and the real sign. Deep successive choices of J0 and S make the norm tree a unit at every prime dividing c r.",
+      "application_scope": "Integral X gives nonzero integer r of absolute value>1. Choose c first, h0 second, a third; final h lies in a congruence class preserving all finite scalar conditions.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:original-seven-parity-completeness",
+          "line": 7714
+        }
+      ],
+      "comparison_status": "Exact finite-correction block plus full changed-order continuity argument in new bridge.",
+      "depends_on": [
+        "generator",
+        "seven_witness_pole"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+          "label": "v5:scalar32-bridge",
+          "line": 6
+        }
+      ],
+      "additional_current_lines": [
+        7763,
+        7815
+      ]
+    },
+    {
+      "id": "scalar32",
+      "statement": "For beta=X^2+2, r=beta(beta-1)(beta-2401)(32beta+343)(2beta-1), six component tests f(H),f(S),z(S)/z(H) with orders1,1,1,1,32,32 and the specified seven-leaf N_r norm tree imply M_5(beta)^32 divides a and h(beta)<=H_*|a|^(3/4).",
+      "application_scope": "The original scalar48 bound h(beta)<=H_*sqrt(|a|) is not applicable after changing the order. New proof supplies both directions, successive choices and stability under arbitrary later modulus enlargement.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "hyp:o8-height",
+          "line": 6675
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "eq:o8-scalarheight",
+          "line": 8531
+        }
+      ],
+      "comparison_status": "New changed-order proof; exact old norm argument and original height theorem are identified inputs.",
+      "depends_on": [
+        "five_contact_height",
+        "finite_correction_and_scalar_units",
+        "unramified_logarithm"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+          "label": "v5:scalar32-bridge",
+          "line": 6
+        }
+      ],
+      "additional_current_lines": [
+        8089,
+        8130,
+        8508,
+        8547
+      ]
+    },
+    {
+      "id": "lucas",
+      "statement": "For integer s,t,z with |s|>=7 and z!=0, t^2-s(s-2)tz+(s-2)^2z^2=1 implies |t|>exp(|s|-3). For every integer s with |s|>=7 a positive integral pair t,z exists.",
+      "application_scope": "Applies with (s,t,z)=(a,t,b), where a is the anchored scalar label. The new source tests the exact polynomial with constant term -1 directly; it does not divide by s(s-2) or use the V4 normalized beta-only variant.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "eq:o8-Lucas",
+          "line": 8551
+        },
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:o8-lucas",
+          "line": 8570
+        }
+      ],
+      "comparison_status": "Exact inherited statement and proof.",
+      "depends_on": [],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "eq:v5-lucas-polynomial",
+          "line": 200
+        }
+      ]
+    },
+    {
+      "id": "anchor_local_arithmetic",
+      "statement": "At3, P* reduces to order2 and v_3(z(2P*))=1. For nonzero even n, v_3(f(nP*))=2+2v_3(n); at2 both rational f coefficients are integral on nonzero even multiples.",
+      "application_scope": "The new quaternion three-witness certificate with C=3^(2^26) therefore selects exactly nonzero n in2*3^(2^25-1) Z and yields |n|>(21H_*)^(13/2)>(20H_*)^4.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "subsec:o8-anchor-subgroup",
+          "line": 7960
+        }
+      ],
+      "comparison_status": "Exact local calculation inherited; new exponent and three-witness formula are proved in new section.",
+      "depends_on": [
+        "generator",
+        "five_contact_height",
+        "quaternion_embedding_input"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-three-witness-anchor",
+          "line": 300
+        }
+      ],
+      "additional_current_lines": [
+        7994,
+        8020
+      ]
+    },
+    {
+      "id": "quaternion_embedding_input",
+      "statement": "A quadratic field embeds in quaternion algebra (2,3)_Q iff it is a field at its ramified places2,3; pure trace-zero square represents the corresponding ternary form.",
+      "application_scope": "Applied to 1-2/(3t^2), which is nonzero. Rational-square cases are separately excluded using division. Local squareclasses are explicitly computed; t=0 has explicit witness.",
+      "source_anchors": [],
+      "comparison_status": "Published input: Voight Proposition14.6.7, not a consequence of the finite coefficient checks.",
+      "depends_on": [],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-three-witness-anchor",
+          "line": 300
+        }
+      ]
+    },
+    {
+      "id": "unramified_logarithm",
+      "statement": "For rational prime p>76176 and either unramified completion of K, reciprocal logarithm truncations at e in{16,52,64} have the indicated error for formal points; denominator valuation is exactly -v(z) and truncation is globally nonzero for nonzero reciprocal f.",
+      "application_scope": "Both split and inert places are permitted in soundness. Completeness uses split places supplied by the Gaussian prime theorem. Formal logarithm comparison has exactly the integer index ratios.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "lem:quartic-uniform-reciprocal",
+          "line": 9031
+        }
+      ],
+      "comparison_status": "V4 extends truncation range to10..64 but still states split scope. New unramified proof closes that scope, rather than silently using the split statement.",
+      "depends_on": [
+        "generator"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-unramified-log",
+          "line": 141
+        }
+      ],
+      "additional_current_lines": [
+        9029,
+        9120
+      ]
+    },
+    {
+      "id": "global_reciprocal_nonvanishing",
+      "statement": "For nonzero f in K and integer J>=2, the finite reciprocal polynomial used in the denominator is nonzero, with proof from signs/conjugates; the corollary covers10<=e<=64.",
+      "application_scope": "The shared formal denominator is defined even at nonformal global points. This is needed when specifying the source before selecting contact primes.",
+      "source_anchors": [],
+      "comparison_status": "Main statement and proof exact inherited text; only the listed truncation range is enlarged in V4.",
+      "depends_on": [],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-point-domains",
+          "line": 101
+        }
+      ],
+      "additional_current_lines": [
+        9095,
+        9120
+      ]
+    },
+    {
+      "id": "uniform_real_progressions",
+      "statement": "The closure G of the integer orbit in the two real elliptic groups is a compact abelian Lie group whose identity torus surjects onto both identity circles. Every nonconstant arithmetic progression meets a fixed compact pole-free region with one uniform bound chosen before its modulus.",
+      "application_scope": "The sixteen comparison functions and their direct Lucas polynomial satisfy the finite-pole hypothesis. This removes the circularity of choosing archimedean bounds only after the Sun primes and CRT modulus.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\repository\\quartic_4973.tex",
+          "label": "prop:generator",
+          "line": 288
+        }
+      ],
+      "comparison_status": "New full compact-group proof; does not assert density in the whole product if the orbit closure is smaller.",
+      "depends_on": [
+        "generator"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\bridge-review\\arithmetic_bridges.tex",
+          "label": "v5:real-progression-bridge",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "id": "gaussian_prime_and_crt",
+      "statement": "Simultaneous prime values of the finite distinct forms u-c_j w^2 admit arbitrary finite exclusions/dilation, pi=9 mod16, pi=1+3i mod7, pi=i modM, and gcd(N(pi_p-1),N(pi_q+1))=4 for every pair p,q.",
+      "application_scope": "The inherited same-prime gcd theorem does not supply cross-prime compatibility. New Sun proof is required. It supplies gcds4,64,4 for the final three congruences after excluding odd prime factors of L.",
+      "source_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\sun-proof\\sun_appendix.tex",
+          "label": "thm:v5-simultaneous-primes",
+          "line": 24
+        }
+      ],
+      "comparison_status": "New prime theorem supplied by separate section/independent audit. Gaussian norms must explicitly be identified with the two curve reduction orders.",
+      "depends_on": [
+        "cm_reduction_identification",
+        "uniform_real_progressions"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "thm:v5-source-projection",
+          "line": 494
+        }
+      ],
+      "publication_status": "The new appendix explicitly consumes Frei-Tinkova arXiv version3 Theorem1.4, author-listed as accepted by Mathematika; a final published version has not been verified. This audit checks the new theorem statement against its application, not the entire new prime proof."
+    },
+    {
+      "id": "cm_reduction_identification",
+      "statement": "At p=1 mod8 and p=3 mod7 the conjugate values of d=3-sqrt(2) have product7 nonsquare, so the two curves are opposite quadratic twists of y^2=x^3-x. Frobenius belongs to Z[i]; full2-torsion makes its real coordinate odd. The two cardinalities are exactly the unordered pair N(pi-1),N(pi+1).",
+      "application_scope": "Orient the two places by v_2 of their orders:6 for minus,2 for plus. This ties the Gaussian theorem to the normalized index curve; no arbitrary choice of primary generator is silently made.",
+      "source_anchors": [],
+      "comparison_status": "Existing explicit CM derivation at current8348..8362 applies unchanged after checking the prescribed prime congruences. New explicit bridge lemma identifies Gaussian associates by parity.",
+      "depends_on": [
+        "generator"
+      ],
+      "new_anchors": [
+        {
+          "file": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-version5-release\\manuscript\\new1272.tex",
+          "label": "lem:v5-two-reductions",
+          "line": 466
+        }
+      ],
+      "additional_current_lines": [
+        8348,
+        8362
+      ]
+    },
+    {
+      "id": "inherited_published_inputs",
+      "statement": "The original height and restricted-converse proofs use the published arithmetic inputs with the five stated qualifications retained verbatim in substance.",
+      "application_scope": "This review compares and checks consumption of those statements; it does not claim a fresh proof of the complete restricted-converse, modularity, integral-moduli or prime-distribution literature.",
+      "source_anchors": [],
+      "comparison_status": "Declared trust boundary. Separate original source audits remain applicable; finite polynomial replay does not certify these inputs.",
+      "depends_on": [],
+      "new_anchors": [],
+      "additional_current_lines": [
+        9139,
+        9158
+      ]
+    }
+  ],
+  "preserved_qualifications": [
+    "Restricted-converse, rank, and original arithmetic assertions retain their stated proof status; this interface audit and finite replay do not strengthen them.",
+    "Prime-pattern inputs retain corrected author-version and erratum conventions, including the stated arXiv:1009.3998v5 version.",
+    "Pan interface uses the inspected author theorem and cited Calegari formulation; no comparison with inaccessible journal text is claimed.",
+    "Yuan input retains its author-attested translation qualification.",
+    "Stable Faltings metric, arithmetic Frobenius, diamond quotient, and final-twist conventions remain fixed."
+  ],
+  "forbidden_substitutions": [
+    "V4 H19 or exponent19 for the original H_* exponent24",
+    "Original scalar48 square-root bound for the changed scalar32 certificate",
+    "Original arbitrary-preparation completeness for preparation fixed to0 without the added inequalities",
+    "Same-prime order gcd for the cross-prime gcd needed by shared-point CRT",
+    "Split-only logarithm statement for inert-prime soundness",
+    "Finite-field/sample replay for an arithmetic existence theorem or the long restricted-converse proof"
+  ]
+}

@@ -1,0 +1,554 @@
+{
+  "format": "quartic-theorem-applications/12504-v1",
+  "scope": "Current 12,504-variable quartic and its newly justified reciprocal64/beta16 compressed arithmetic source. Historical F8 is not asserted equal to the new source.",
+  "manuscript": "quartic_12504.tex",
+  "manuscript_source_sha256": "38d458ba4178083766c5ae56a894da595fe27170c1ef07f6b49750fc5edf7c37",
+  "binding_status": "current labels and byte hash checked",
+  "section_label": "sec:quartics",
+  "new_external_theorem_applications": [],
+  "source_arithmetic_declaration": {
+    "label": "thm:quartic-source-arithmetic",
+    "statement": "For rational input X, the named reciprocal64/beta16 compressed source has rational witnesses exactly when X is an integer.",
+    "new_local_dependencies": [
+      "reciprocal_curve_and_logarithm_identity",
+      "reciprocal_logarithm_tail",
+      "reciprocal_global_nonvanishing",
+      "compressed_primary_equivalence",
+      "reciprocal_circuit_evaluation",
+      "mixed_precision_proxy_congruences",
+      "reciprocal_source_integer_projection"
+    ],
+    "inherited_dependencies": [
+      "five_contact_height",
+      "generator_index_height",
+      "formal_group",
+      "anchor",
+      "prime_pattern",
+      "pole_parity",
+      "norm_tests",
+      "common_auxiliary",
+      "root_approximation",
+      "scalar_height",
+      "lucas_growth"
+    ],
+    "scope": "Requires the explicit new source proof; thm:o8-conditional alone is insufficient."
+  },
+  "conventions": {
+    "scalar_domain": "Every scalar coordinate ranges over Q. The equivalences concern existence of rational witnesses for each fixed rational input X_0.",
+    "input": "Coordinate zero is the original input and is never deleted, redefined, or changed by the witness relabeling.",
+    "field": "K=Q(sqrt(2)); d=3-sqrt(2); D=d^2=11-6sqrt(2). A field coordinate is a pair of rational coordinates.",
+    "field_product": "(a_0,a_1)(b_0,b_1)=(a_0 b_0+2 a_1 b_1,a_0 b_1+a_1 b_0).",
+    "norm": "N(a)=a_0^2-2a_1^2. Irrationality of sqrt(2) implies N(a) is nonzero whenever the field element a is nonzero.",
+    "source_parameters": "Reciprocal finite logarithms: shared and Lucas precision64,beta16;41 contacts,anchor24 and scalar48 unchanged. Source arithmetic is newly proved.",
+    "definitions": "A definition has a nonzero rational constant coefficient on its target, no occurrence of that target in its body, and only external coordinates or earlier targets in its body.",
+    "interfaces": "New coordinates are fresh. Removed coordinates are private to the replaced rows unless every outside occurrence is explicitly substituted. All conditions are checked on the current residual system.",
+    "residuals": "Nonzero rational rescaling preserves a residual's zero set. After the initial lift, every retained or replacement residual has total degree at most two.",
+    "counts": "Total variables include X_0; witnesses exclude it. Degree is total degree. Nonzero monomials are counted after collecting like terms.",
+    "square_weights": "All11939 final square weights are one."
+  },
+  "source_contract": {
+    "source_id": "reciprocal64-beta16-compressed-s1-b5e836d77643",
+    "source_sha256": "ce9eeac7c4730aced8cfb70a1ab3b1b6a7fb2110c597afad1f56ddc92aeea73f",
+    "source_uncompressed_sha256": "b5e836d7764363fcbfdafbacefe80a5f53e0979eba73af990827942b0fa9351d",
+    "source_variables": 12064,
+    "source_rows": 11499,
+    "high": 64,
+    "beta": 16,
+    "anchor_squarings": 24,
+    "scalar_orders": [
+      1,
+      1,
+      1,
+      1,
+      48,
+      48
+    ],
+    "contact_count": 41,
+    "field_orders": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      16,
+      64,
+      64,
+      64,
+      64,
+      16,
+      64,
+      64,
+      64
+    ],
+    "rational_orders": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      16,
+      16,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      16,
+      16,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "height": "h(a)<=H_*M_5(a)^24; log2(H_*)<4783227",
+    "height_changed": false,
+    "primary_compressed": true,
+    "coefficient_scale": 1
+  },
+  "elementary_lemmas": [
+    {
+      "id": "quadratic_field_and_rational_inverse",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-source",
+        "region": "Opening field conventions before the reciprocal logarithm lemma",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "A nonzero rational pair in K has nonzero norm and rational inverse (a_0,-a_1)/(a_0^2-2a_1^2).",
+      "elementary_dependencies": [],
+      "standard_facts": [
+        "No rational number has square 2",
+        "Exact rational arithmetic"
+      ],
+      "conventions": "Nonzero means the field element is nonzero; either individual rational coordinate may vanish. This is an elementary fact, not a new external arithmetic theorem."
+    },
+    {
+      "id": "constant_definition_equivalence",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-reductions",
+        "paragraph": "Definitions, row operations, and interfaces.",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "For c in Q nonzero and F independent of v, eliminating cv-F=0 by substituting v=F/c everywhere else preserves rational solutions on the retained coordinates. Its reverse gives the initial product lift.",
+      "elementary_dependencies": [],
+      "proof": "Restrict an old solution; reconstruct the deleted coordinate as F/c. For a product lift, evaluate each new target in order.",
+      "conventions": "The target is not X_0; substitution covers every outside occurrence; division is by a nonzero rational constant; final residual degree stays at most two.",
+      "certificate_rules": [
+        "initial",
+        "eliminate"
+      ]
+    },
+    {
+      "id": "invertible_row_equivalence",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-reductions",
+        "paragraph": "Definitions, row operations, and interfaces.",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "Replacing R_i by a R_i+b R_j while retaining R_j preserves simultaneous vanishing when i differs from j and a is nonzero.",
+      "elementary_dependencies": [],
+      "proof": "Recover R_i=(R_i'-b R_j)/a.",
+      "conventions": "The row coefficients are rational constants and no coordinate is changed.",
+      "certificate_rules": [
+        "linear"
+      ]
+    },
+    {
+      "id": "acyclic_circuit_equivalence",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-reductions",
+        "paragraph": "Definitions, row operations, and interfaces.",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "Two acyclic constant-pivot defining circuits are interchangeable when their retained outputs are identical polynomials in the same external coordinates.",
+      "elementary_dependencies": [
+        "constant_definition_equivalence"
+      ],
+      "proof": "Evaluate either circuit uniquely from the external coordinates. Equal boundary outputs preserve every outside equation.",
+      "conventions": "Internal deleted coordinates have no outside uses; output identities and order, complete definitions, and fresh targets are checked. This does not require any input field element to be nonzero.",
+      "certificate_rules": [],
+      "scope_in_this_release": "Used for exact source-circuit evaluation and fresh product lift; there are no circuit events in the final replay."
+    },
+    {
+      "id": "scalar_norm_inverse_equivalence",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-reductions",
+        "paragraph": "Norm inverses.",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "The constraint u(A^2-2B^2)=1 is equivalent on retained coordinates to As+2Bt=1 and At+Bs=0.",
+      "elementary_dependencies": [
+        "constant_definition_equivalence"
+      ],
+      "proof": "Forward set s=Au and t=-Bu; reverse set u=s^2-2t^2. Use (A^2-2B^2)(s^2-2t^2)=(As+2Bt)^2-2(At+Bs)^2 and reconstruct deleted lift definitions.",
+      "conventions": "A and B are rational affine expressions in retained coordinates. The removed inverse and lift targets are private. No variable denominator or additional nonvanishing premise occurs.",
+      "certificate_rules": [
+        "norm_inverse"
+      ]
+    },
+    {
+      "id": "root_error_and_contact_nonvanishing",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-reductions",
+        "paragraph": "Private rational inverse guards.",
+        "part": "Nonvanishing premises",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "Retained epsilon=theta^2-2 and R(F-1)=epsilon^2 imply epsilon and R are nonzero.",
+      "elementary_dependencies": [],
+      "standard_facts": [
+        "No rational number has square 2",
+        "Q is a field"
+      ],
+      "conventions": "theta and all scalar coordinates are rational. The two displayed equations must remain available in the current residual system."
+    },
+    {
+      "id": "private_contact_inverse_removal",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-reductions",
+        "paragraph": "Private rational inverse guards.",
+        "part": "Deleting the inverse",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "When u occurs only in uR=1 and the retained root-error equations prove R nonzero, delete u and that equation.",
+      "elementary_dependencies": [
+        "root_error_and_contact_nonvanishing"
+      ],
+      "proof": "Restrict forward and reverse by u=1/R.",
+      "conventions": "u is not input zero, its complete current occurrence set is the guard row, and no premise of nonvanishing contains u. This describes the 41 comparison contact guards, not the separate scalar height guard.",
+      "certificate_rules": [
+        "redundant_inverse"
+      ]
+    },
+    {
+      "id": "point_chart_equivalence",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-reductions",
+        "paragraph": "Two reductions of the point chart.",
+        "part": "Replacing w,h by p",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "Replace the private field coordinates w,h in the displayed seven-equation chart by p=yf and p^2=x-Df, retaining u,v,z,f,x,y and their other equations.",
+      "elementary_dependencies": [
+        "quadratic_field_and_rational_inverse"
+      ],
+      "proof": "Forward set p=yf and derive h=up and fp^2=1-Df^2. Reverse the retained equations give p nonzero and fp^2=v^2(1+df), hence v nonzero; set h=up and w=up/v.",
+      "conventions": "d=3-sqrt(2), D=d^2. All old scalar coordinate pairs are distinct, the four deleted scalar coordinates are private, and p is fresh. Division by v is used only after its nonvanishing is proved.",
+      "certificate_rules": [
+        "gpoint_chart"
+      ]
+    },
+    {
+      "id": "ordinate_elimination_equivalence",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-reductions",
+        "paragraph": "Two reductions of the point chart.",
+        "part": "Eliminating y",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "Retain xf=1, replace p=yf and yz=-x by pz=-1, and substitute y=xp in every outside equation.",
+      "elementary_dependencies": [
+        "constant_definition_equivalence"
+      ],
+      "proof": "The old equations imply y=xp and pz=-1. Conversely, adjoining y=xp gives yf=p and yz=-x.",
+      "conventions": "Both rational components are substituted simultaneously in their entire occurrence set. Reject any substitution whose resulting residual degree exceeds two. No additional nonvanishing hypothesis is introduced.",
+      "certificate_rules": [
+        "field_ordinate"
+      ]
+    },
+    {
+      "id": "parity_block_existential_equivalence",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-reductions",
+        "paragraph": "A quadratic presentation of the parity block.",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "The displayed seven-witness source parity block and twelve-witness nine-quadratic block have the same existential projection on the unchanged rational input b.",
+      "elementary_dependencies": [
+        "constant_definition_equivalence"
+      ],
+      "proof": "The source equation forces delta=1+bt^2 nonzero. Set u=U, v=2bt/delta and the displayed products. Reverse with U=t=0 if b=0, U=u and t=v/(u+b) if b is nonzero and u+b is nonzero, or U=b and t=0 if u=-b. In every case U^2=z, and the remaining source equations follow by substitution.",
+      "conventions": "All old witnesses and deleted lift targets are private. The exceptional branch may change the sign of U. The conclusion is equality of existential projections, not inverse bijections of the full private witness tuples. No theorem about the arithmetic meaning of the parity predicate is used.",
+      "certificate_rules": [
+        "parity_conic"
+      ]
+    },
+    {
+      "id": "bottom_norm_absorption_equivalence",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "subsec:quartic-reductions",
+        "paragraph": "Absorbing the root error in a norm pair.",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "Replace the expanded row PN-epsilon^2 B^2-RT^2=0 by RO=P, Q=B^2 and ON-FQ+Q-T^2=0 while retaining N and the upper norm system.",
+      "elementary_dependencies": [
+        "root_error_and_contact_nonvanishing",
+        "constant_definition_equivalence"
+      ],
+      "proof": "Use PN-epsilon^2 B^2-RT^2=-N(RO-P)+Q(RF-R-epsilon^2)+epsilon^2(Q-B^2)+R(ON-FQ+Q-T^2). Forward set O=P/R and Q=B^2; reverse reconstruct deleted definitions in acyclic order and use R nonzero.",
+      "conventions": "B is affine. A retained P=R^2 permits O=R. A shared Q requires equality of the complete square polynomials. Retain every definition needed outside the replaced rows and its dependencies. A square target denotes B^2, not a chosen square root. Upper norm values and the parity input are unchanged; no leaf-order or square-class invariance theorem is assumed.",
+      "certificate_rules": [
+        "batch_absorb"
+      ]
+    },
+    {
+      "id": "normalization_and_sum_of_squares",
+      "latex_label": null,
+      "source": {
+        "anchor_label": "sec:quartics",
+        "region": "Final integer normalization and complete expansion",
+        "binding_status": "Inherited mathematical lemma retained in the current reductions section; historical line ranges are provenance only."
+      },
+      "statement": "Input-fixing witness relabeling and nonzero rational row normalization preserve solvability; Phi=sum_(i=1)^11939 R_i^2 vanishes over Q exactly when every R_i vanishes.",
+      "elementary_dependencies": [],
+      "standard_facts": [
+        "Nonzero rational rescaling preserves a zero set",
+        "Squares in Q are nonnegative",
+        "A finite sum of nonnegative rational numbers is zero only when each summand is zero"
+      ],
+      "conventions": "All final weights are one; the final integer residuals have degree at most two; input zero is fixed. Exact degree four and the numerical bounds require the full collected expansion, not only these zero-set observations."
+    },
+    {
+      "id": "reciprocal_curve_and_logarithm_identity",
+      "latex_label": "lem:quartic-reciprocal-log",
+      "statement": "On E:y²=x³-Dx, f=1/x and z=-x/y give z²=f/(1-Df²). For w=Df², log_E(z)=zG(w), where a0=1,a1=-2/5,a_j=(4j-5)a_(j-1)/(4j+1).",
+      "elementary_dependencies": [
+        "quadratic_field_and_rational_inverse"
+      ],
+      "inherited_dependencies": [
+        "formal_group"
+      ],
+      "proof": "The recurrence gives 4w(1-w)G'+(1+w)G=1-w. Differentiating the curve identity gives z dw/dz=4w(1-w)/(1+w). Thus d(zG)/dz=(1-w)/(1+w)=(1+4Dz⁴)^(-1/2), with the normalized constant term and zero value at zero.",
+      "conventions": "Formal series identity on the curve, not equality of old and new finite polynomials in independent variables. D=11-6sqrt(2), with norm49. Normalized invariant differential and z=-x/y are fixed."
+    },
+    {
+      "id": "reciprocal_logarithm_tail",
+      "latex_label": "lem:quartic-reciprocal-log",
+      "statement": "For e=16 or64, m=e/4, J=m-1 and L_e=z sum_(j=0)^J a_j(Df²)^j, a formal point at any selected p>76176 satisfies L_e/log_E(z) in1+p^e Z_p.",
+      "elementary_dependencies": [
+        "reciprocal_curve_and_logarithm_identity"
+      ],
+      "inherited_dependencies": [
+        "formal_group"
+      ],
+      "proof": "For r=v_p(z)>=1, v_p(f)=2r and v_p(w)=4r. Denominator(a_j) divides (4j+1)!; when4j+1<p the coefficient is integral. Otherwise j>=19044 and v_p(a_j)>=-(4j+1)/(p-1)>=-j, whence v_p(a_jw^j)>=4mr for every j>=m. These bounds tend to infinity. The full log divided by z is a unit.",
+      "conventions": "Controls the whole infinite tail, including nonunit denominators. Selected p splits in Q(sqrt(2)); D is a p-unit. The denominator uses64, not16."
+    },
+    {
+      "id": "reciprocal_global_nonvanishing",
+      "latex_label": "lem:quartic-reciprocal-nonzero",
+      "statement": "For J>=2 and f in Q(sqrt(2)), G_J(Df²) is nonzero. Thus zG_J(Df²) is nonzero exactly when z is nonzero.",
+      "elementary_dependencies": [
+        "quadratic_field_and_rational_inverse"
+      ],
+      "inherited_dependencies": [],
+      "proof": "Use v(a+b sqrt(2))=1/2 v2(a²-2b²)=min(v2(a),v2(b)+1/2). We have v(D)=0 and v(a_j)=1 for j>=1. If v(f)>=0 the constant term is uniquely least; if v(f)<=-1/2 the last term is uniquely least and has valuation<=1-J<0. Handle f=0 directly.",
+      "conventions": "Global rational-domain argument, independent of good reduction. Actual J values are3 and15. Applies to the exact new reciprocal polynomial, not the old z-polynomial."
+    },
+    {
+      "id": "compressed_primary_equivalence",
+      "latex_label": "lem:quartic-compressed-primary",
+      "statement": "The five primary charts with z_i and logarithm-ratio inverses are equivalent in rational existential projection to the four-equation charts and Lambda p0=G0, A_i=C_i p_i, A_i Lambda=G_i.",
+      "elementary_dependencies": [
+        "reciprocal_global_nonvanishing",
+        "quadratic_field_and_rational_inverse"
+      ],
+      "inherited_dependencies": [],
+      "proof": "Forward set p_i=y_if_i, Lambda=-L0=G0/p0 and A_i=C_ip_i. Reverse nonzero G_i force Lambda and every p_i nonzero. Set z_i=-1/p_i, y_i=x_ip_i, L_i=z_iG_i. Then C_i=L_i/L0. From f_ip_i²=v_i²(1+df_i), infer v_i nonzero and recover old h_i=u_ip_i,w_i=u_ip_i/v_i.",
+      "conventions": "Retain f=u²,v²+df=1,p²=x-Df,xf=1. Only private primary z coordinates are removed; all difference-point z and common J coordinates remain. Source audit checks all incidences. No rank theorem needed for this algebraic step."
+    },
+    {
+      "id": "reciprocal_circuit_evaluation",
+      "latex_label": null,
+      "statement": "The source's acyclic quadratic G circuits compute G15 and G3 exactly and their final output expressions are used in the corresponding ratio rows.",
+      "elementary_dependencies": [
+        "acyclic_circuit_equivalence",
+        "reciprocal_curve_and_logarithm_identity"
+      ],
+      "inherited_dependencies": [],
+      "proof": "Independent source checker derives coefficients by binomial convolution, expands each candidate circuit in its boundary variables, and compares every output and fused row. It also reconstructs all unchanged modules and flattening; a producer assertion alone is not evidence.",
+      "conventions": "This is a finite identity obligation within source construction, not a mathematical approximation theorem. The long circuit's fixed nonzero rational normalizations and hscale1 are pinned. No circuit events occur in the final1467-operation replay."
+    },
+    {
+      "id": "mixed_precision_proxy_congruences",
+      "latex_label": "thm:quartic-source-arithmetic",
+      "statement": "At each selected contact prime, proxies are integral and beta=n mod p16, while (xi,tau,zeta)=(s,t,z) mod p64.",
+      "elementary_dependencies": [
+        "reciprocal_logarithm_tail",
+        "compressed_primary_equivalence"
+      ],
+      "inherited_dependencies": [
+        "common_auxiliary",
+        "norm_tests",
+        "root_approximation",
+        "prime_pattern"
+      ],
+      "proof": "Alternate tests give h=4 mod p64 and m_i=4n_i mod p^(e_i), e1=16 and others64. Thus h is a unit. Both full log ratio m_i/h and the finite ratio have the same residue because the denominator error has order64. The two rational tests transfer through the same common theta.",
+      "conventions": "Exactly both beta primary and beta alternate tests use16; shared H alternate and three Lucas comparisons use64. One common theta is chosen last with coefficient-dependent precisions."
+    },
+    {
+      "id": "reciprocal_source_integer_projection",
+      "latex_label": "thm:quartic-source-arithmetic",
+      "statement": "For every rational input X, the pinned reciprocal64/beta16 compressed source has rational witnesses exactly when X is an integer.",
+      "elementary_dependencies": [
+        "mixed_precision_proxy_congruences",
+        "reciprocal_global_nonvanishing",
+        "compressed_primary_equivalence",
+        "reciprocal_circuit_evaluation"
+      ],
+      "inherited_dependencies": [
+        "five_contact_height",
+        "generator_index_height",
+        "anchor",
+        "scalar_height",
+        "lucas_growth",
+        "prime_pattern",
+        "pole_parity",
+        "norm_tests",
+        "common_auxiliary",
+        "root_approximation"
+      ],
+      "proof": "Keep H_*,41 contacts,anchor24 and scalar48. For a=|s|>(20H_*)² and B=max(|n|,|s|,|t|,|z|), nonzero Lucas defect gives B²-6<14H_*B^(3/2), contradiction. Hence log B>a-3. If beta!=n, p16 divisibilities give B²<7H_*N^(3/2)+6 and N<=2exp(h(beta))B, so log B<2log(32H_*)+3h(beta)<a/4, contradiction. Completeness retains original j and h_p=4 mod p^(64+v_p(j)), all guards and theta-last construction, then evaluates the new polynomials.",
+      "conventions": "A new arithmetic-source theorem, not an algebraic equal-output rewrite of F8. The older F8 arithmetic theorem alone does not prove this source. Retains all inherited proof-version qualifications."
+    },
+    {
+      "id": "rational_coordinate_shear",
+      "latex_label": null,
+      "statement": "Replacing an auxiliary coordinate v_old by v_new+c w everywhere, for rational c and w distinct from v, is an invertible rational change fixing the input.",
+      "elementary_dependencies": [],
+      "inherited_dependencies": [],
+      "proof": "The inverse is v_new=v_old-cw. Substitute simultaneously in every current incident row. The value of every other coordinate is unchanged.",
+      "conventions": "v is not input0; w may be input0. Full occurrence set must be covered and rows remain quadratic. Four actual shear events are used.",
+      "certificate_rules": [
+        "shear"
+      ]
+    }
+  ],
+  "declarations": [
+    {
+      "label": "thm:quartic",
+      "statement": "The specified integer polynomial has total degree4,135721 nonzero monomials,12504 total variables including input,12503 existential rational witnesses,and maximum absolute coefficient685783949153203534233601<2^80. Its rational input projection is Z.",
+      "inherited_manuscript_inputs": [
+        "thm:quartic-source-arithmetic"
+      ],
+      "elementary_dependencies": [
+        "quadratic_field_and_rational_inverse",
+        "constant_definition_equivalence",
+        "invertible_row_equivalence",
+        "acyclic_circuit_equivalence",
+        "scalar_norm_inverse_equivalence",
+        "root_error_and_contact_nonvanishing",
+        "private_contact_inverse_removal",
+        "point_chart_equivalence",
+        "ordinate_elimination_equivalence",
+        "parity_block_existential_equivalence",
+        "bottom_norm_absorption_equivalence",
+        "normalization_and_sum_of_squares",
+        "rational_coordinate_shear"
+      ],
+      "finite_inputs": [
+        "Pinned new-source equations and independent full source audit",
+        "Fresh quadratic lift of this source",
+        "1467 exact transformations with full current incidence checks",
+        "Input-fixing variable map",
+        "11939 unit square weights",
+        "Complete integer polynomial expansion"
+      ],
+      "review_limit": "Finite checks do not establish arithmetic height, rank, prime-pattern, parity or reciprocal approximation theorems."
+    }
+  ],
+  "certificate_binding": {
+    "directory": "quartics/quartic-12504/",
+    "source_directory": "quartics/quartic-12504/source/",
+    "source_id": "reciprocal64-beta16-compressed-s1-b5e836d77643",
+    "source_sha256": "ce9eeac7c4730aced8cfb70a1ab3b1b6a7fb2110c597afad1f56ddc92aeea73f",
+    "source_rows": 11499,
+    "source_variables": 12064,
+    "variables": 12504,
+    "witnesses": 12503,
+    "rows": 11939,
+    "monomials": 135721,
+    "degree": 4,
+    "max_abs_coefficient": "685783949153203534233601",
+    "expanded_sha256": "7f5aa3117af82a0b323f0a4e74a18599204f5540408106d3ce99612b5ed830ca",
+    "certificate_sha256": "9f7979c1e786bebad624b9ea4631b7eccd879f4bebb5b9ab69250b945973b268",
+    "checker_sha256": "d2079177a4960740c5b7d42fbd0756dfc4ce8953cc947cee91c8786ba26fa8ba",
+    "total_operations": 1467,
+    "operations": {
+      "norm_inverse": 205,
+      "redundant_inverse": 41,
+      "gpoint_chart": 6,
+      "field_ordinate": 2,
+      "parity_conic": 42,
+      "batch_absorb": 1,
+      "linear": 366,
+      "eliminate": 800,
+      "shear": 4
+    },
+    "all_weights_equal_one": true,
+    "checker_public_name": "verify_certificate.py"
+  },
+  "retired_active_claims": [
+    "Old z-polynomial finite-logarithm circuit identity",
+    "Old logarithm inverse-removal rule",
+    "Old field-ratio fusion replay events",
+    "13609-variable quartic statistics",
+    "The old source alone implies current source solvability"
+  ],
+  "label_lines": {
+    "thm:quartic": [
+      8688
+    ],
+    "lem:quartic-reciprocal-log": [
+      8754
+    ],
+    "lem:quartic-reciprocal-nonzero": [
+      8819
+    ],
+    "thm:quartic-source-arithmetic": [
+      8868
+    ],
+    "lem:quartic-compressed-primary": [
+      8990
+    ]
+  }
+}

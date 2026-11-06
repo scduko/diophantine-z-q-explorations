@@ -1,0 +1,38 @@
+{
+  "status": "PASS: REVIEWED RENDERED PAGES",
+  "pdf_sha256": "d56fd71b300136e1576af8d6dfd74b82fa47e825e6f2bade978d303a9ed8a6f6",
+  "pages": 199,
+  "reviewed_final_pages": [
+    1,
+    2,
+    3
+  ],
+  "previously_reviewed_pages_with_identical_final_pngs": [
+    "page-115.png",
+    "page-116.png",
+    "page-117.png",
+    "page-118.png",
+    "page-119.png",
+    "page-120.png",
+    "page-121.png",
+    "page-122.png",
+    "page-123.png",
+    "page-124.png",
+    "page-125.png",
+    "page-126.png",
+    "page-127.png",
+    "page-128.png",
+    "page-129.png",
+    "page-130.png",
+    "page-131.png",
+    "page-132.png",
+    "page-133.png",
+    "page-134.png",
+    "page-135.png",
+    "page-136.png",
+    "page-184.png",
+    "page-199.png"
+  ],
+  "scope": "Title, abstract, contents, all changed quartic pages 115-136, page 184 and final AI statement page 199. Other inherited pages were not newly reviewed.",
+  "correction": "Widened subsection number boxes in the contents. Final pages 1-3 have no touching numbers/titles. The other reviewed final page images are byte-identical to the previously inspected images."
+}

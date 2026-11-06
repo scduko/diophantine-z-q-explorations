@@ -1,0 +1,56 @@
+{
+  "format": "quartic-9625-inventory-spec/v1",
+  "source_id": "selective-beta-k40-q12-a25-h19-s32-d68d86cdf995",
+  "expected_final": {
+    "variables": 9625,
+    "witnesses": 9624,
+    "rows": 9161,
+    "monomials": 82476,
+    "degree": 4,
+    "max_abs_coefficient": 685783949153203534233601,
+    "total_operations": 1246,
+    "expanded_sha256": "6d67d45f3d615b7fd2242e3a9404dd9f5da570fc711a29ebe77f613e80ebbf99",
+    "certificate_sha256": "8aaa2249eda6972c441d58b212ec64a53e1202d5e9f74ea4cbc53e7e3f71a0bd",
+    "checker_sha256": "cf587ff9c28af5593e346eb7484d1713bd3f1ff77d28aa5ada06b2b92909d6f4",
+    "operations": {
+      "norm_inverse": 161,
+      "redundant_inverse": 37,
+      "gpoint_chart": 6,
+      "field_ordinate": 2,
+      "parity_conic": 38,
+      "batch_absorb": 1,
+      "linear": 312,
+      "eliminate": 685,
+      "shear": 4
+    }
+  },
+  "arithmetic_registry_sha256": "e06b377ecedd1bb42e0443606dd85cc54743e98a98188dfd2ddf9db4e06f29c1",
+  "required_arithmetic_lemmas": [
+    "V3_H19",
+    "V3_ROOT37",
+    "V3_RECIPROCAL",
+    "V3_NONZERO",
+    "V3_LOCAL",
+    "V3_ANCHOR",
+    "V3_LUCAS",
+    "V3_BETA",
+    "V3_SOURCE",
+    "V3_COMPRESSED",
+    "V3_CIRCUIT"
+  ],
+  "retained_algebraic_lemmas": [
+    "quadratic_field_and_rational_inverse",
+    "constant_definition_equivalence",
+    "invertible_row_equivalence",
+    "acyclic_circuit_equivalence",
+    "scalar_norm_inverse_equivalence",
+    "root_error_and_contact_nonvanishing",
+    "private_contact_inverse_removal",
+    "point_chart_equivalence",
+    "ordinate_elimination_equivalence",
+    "parity_block_existential_equivalence",
+    "bottom_norm_absorption_equivalence",
+    "normalization_and_sum_of_squares",
+    "rational_coordinate_shear"
+  ]
+}
