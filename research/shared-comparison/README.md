@@ -51,11 +51,18 @@ selected prime at once. By the Chinese remainder theorem this is **Lemma CPO**: 
 pattern exists in which, after orientation, gcd(d_{p,1}, d_{p′,2}) = 4 and p′ ∤ d_{p,1}
 for all distinct selected primes p, p′.
 
-* Proof: [CPO_PROOF.md](CPO_PROOF.md). Its only external input is the unconditional
-  Frei–Tinková theorem (arXiv:2408.17441, Theorem 1.4) on prime patterns with prescribed
-  Artin symbols. That theorem's exact hypotheses and local-factor formula (1.15) still
-  need to be confirmed against the paper.
-* Review: [REVIEW_CPO_PROOF.md](REVIEW_CPO_PROOF.md).
+* Current proof: [CPO_PROOF_V2.md](CPO_PROOF_V2.md), with expanded conditional-density
+  and uniform sieve calculations. Its external prime-pattern input is the unconditional
+  Frei–Tinková theorem (arXiv:2408.17441v3, Theorem 1.4).
+* [SHARED_COMPLETENESS.md](SHARED_COMPLETENESS.md) constructs the common points,
+  chart witnesses and root approximation, and explains why each contact retains its
+  own norm-batch witnesses. The precision is chosen after the primes and auxiliary
+  index j, before applying CRT for h.
+* [Follow-up verification](VERIFICATION_2026-11-06.md) checks the theorem's hypotheses
+  and local-factor normalization against the full paper. This is AI author self-review,
+  not independent mathematical review.
+* Historical records: [CPO_PROOF.md](CPO_PROOF.md) and
+  [REVIEW_CPO_PROOF.md](REVIEW_CPO_PROOF.md), preserved unchanged.
 
 ## Experiments (heuristic, not part of the proof)
 
@@ -112,13 +119,17 @@ are hard-wired to the Version 2 module layout.
 * **An external AI reasoning model**, supplied by the repository owner, wrote
   [CPO_PROOF.md](CPO_PROOF.md). It is preserved verbatim apart from math delimiters; see
   its provenance header.
+* **Subsequent AI author self-review:** the revised proof, completeness bridge,
+  source-application record, and strengthened product-definition checks. This review
+  is not independent of the original CPO proof.
 * **Verification performed:**
   * exact algebraic checks, reproducible with `check.sh`;
   * a step-by-step AI read of the proof;
+  * a direct check of Frei–Tinková Theorem 1.4 and its local-factor formula;
+  * an independent expansion of the committed quadratic residuals;
   * heuristic numerics.
 * **Not performed:**
   * human refereeing;
-  * a check of the cited Frei–Tinková theorem against the paper itself;
   * a Version 2 certificate replay of the variant;
   * Lean formalisation.
 
@@ -130,7 +141,9 @@ are hard-wired to the Version 2 module layout.
 | `quadratic_lift.py` | Plain quadratic lift with an exact check; writes `quartic/`. |
 | `source/` | Variant modules and flattened residuals (degree 8). |
 | `quartic/` | Quadratic residuals, expanded coefficient table, `stats.json` (with SHA-256). |
-| `CPO_PROOF.md`, `REVIEW_CPO_PROOF.md` | The completeness proof and its review. |
+| `CPO_PROOF_V2.md`, `SHARED_COMPLETENESS.md` | Current CPO proof and its application to the shared circuit. |
+| `VERIFICATION_2026-11-06.md` | Follow-up source check, checker explanation, and verification scope. |
+| `CPO_PROOF.md`, `REVIEW_CPO_PROOF.md` | Preserved original proof and earlier review. |
 | `experiments/` | Heuristic numerics. |
 | `check.sh` | Reproducibility check. |
 | `PROPOSAL.json` | Machine-readable record: base, change, counts, checks, inputs, AI contribution, what is not claimed. |
@@ -139,12 +152,12 @@ are hard-wired to the Version 2 module layout.
 
 ## Next steps
 
-1. Check Frei–Tinková Theorem 1.4 and (1.15) against CPO_PROOF.md §§3–5, then get a
-   number-theory referee for the whole proof.
+1. Obtain independent number-theory review of the revised proof and its completeness
+   bridge, especially the uniform estimates in §§5–9.
 2. Port the Version 2 reduction tools to the core-plus-batches layout and replay with
    `verify_certificate.py` to get the optimised count.
-3. Write the result up as a replacement for the private-shift paragraph of
-   `subsec:o8-common-J-proof`.
+3. After review, integrate `SHARED_COMPLETENESS.md` into the manuscript's private-shift
+   and reciprocal-comparison completeness arguments.
 4. Read Sun, *86 unknowns for Hilbert's tenth problem over the rationals*
    (arXiv:2610.20691). It builds on the same construction and may define Z far more
    compactly.

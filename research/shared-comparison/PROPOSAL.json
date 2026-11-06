@@ -43,26 +43,28 @@
  },
  "algebraic_checks": {
   "build_shared_source.py": "(1) flattener reproduces pinned residuals.jsonl row for row; (2) variant rows equal the pinned rows after identifying every q_compare4 instance's locals with the first instance's, under an injective renaming fixing X",
-  "quadratic_lift.py": "every lifted row equals its source row after recursive substitution of all product variables",
+  "quadratic_lift.py": "Selected product definitions are retained equations, reused definitions belong to the source, fresh definitions extend source assignments, the selected graph is acyclic and fixes X, and source/lifted rows agree modulo its triangular definition ideal.",
   "how_found": "construction by hand from the module structure; no search",
   "how_checked": "exact rational arithmetic in the same scripts, rerun by check.sh",
-  "toolchain": "CPython 3.13.18 on Linux, standard library only; check.sh uses python3 -I -B and refuses -O"
+  "toolchain": "CPython 3.13.18 on Linux, standard library only; check.sh uses python3 -I -B and refuses -O",
+  "follow_up_toolchain": "CPython 3.12.14 on Linux, standard library only"
  },
  "arithmetic_argument": {
   "solution_implies_integer": "inherited from Version 2 by algebraic check (2); no new mathematics",
-  "integer_implies_solution": "Lemma CPO, proved in CPO_PROOF.md",
+  "integer_implies_solution": "CPO_PROOF_V2.md together with SHARED_COMPLETENESS.md; original manuscript arithmetic inputs retained",
   "external_inputs": [
    {
     "reference": "C. Frei and M. Tinkova, Linear constellations in primes with arithmetic restrictions, arXiv:2408.17441v3, Theorem 1.4, (1.15), Corollary 1.6",
-    "status": "existence and unconditionality confirmed by search; exact hypotheses and local-factor formula NOT yet checked against the paper"
+    "status": "Theorem 1.4, (1.10), (1.15), and Corollary 1.6 checked directly against arXiv v3; application and normalization recorded in VERIFICATION_2026-11-06.md; AI author self-review, not independent refereeing"
    }
   ],
-  "review": "REVIEW_CPO_PROOF.md (AI review; no human referee yet)"
+  "review": "VERIFICATION_2026-11-06.md; earlier REVIEW_CPO_PROOF.md preserved as a historical record"
  },
  "ai_contribution": [
   "Claude Code (Anthropic): cost analysis, the shared-comparison construction, all scripts, experiments, the problem statement for Lemma CPO, an earlier conditional proof (superseded; in branch history), and the review of CPO_PROOF.md",
   "External AI reasoning model, supplied by the repository owner: CPO_PROOF.md",
-  "Repository owner (scduko): direction and selection of the work"
+  "Repository owner (scduko): direction and selection of the work",
+  "Subsequent AI author self-review: CPO_PROOF_V2.md, SHARED_COMPLETENESS.md, VERIFICATION_2026-11-06.md, and strengthened quadratic-lift checks; not independent of the supplied proof"
  ],
  "not_claimed": [
   "acceptance by the Version 2 authors",
@@ -73,7 +75,7 @@
  ],
  "files_sha256": {
   "build_shared_source.py": "3a03117c6582d66926f843d310925d15a69fbf2d2811258ea9387a01705409f5",
-  "quadratic_lift.py": "fe1439600cd6006e30ac10424ae08ab224146fa2c61cd2e947c320e2e989a774",
+  "quadratic_lift.py": "1522cde36f6501837c1c797e30b58255c52875b285a1923af28e3f0ba827e42c",
   "experiments/cross_prime_experiment.py": "af2868998ee739a1f824f04b7c4d265fc6eb96a05fe60d44f30a3383854365ea",
   "experiments/frobenius_mechanism.py": "404e7eef59fa5bbcd3c6225d6d849589603f44be32ba72eab783203fed44731c",
   "CPO_PROOF.md": "a748b64f10b61cae98ec56859e4f3a814e79241f48ab7279be5703235df64701",
@@ -87,6 +89,9 @@
   "source/modules/q_compare4_core.json": "9019efae32573c9cafa1a56de1b093a4a3f17f3facb0f82a234555ad2e56fe2d",
   "source/modules/q_height_batch.json": "0614a2e3d8204057cc2572b4d6f4407b49e12d314f1bc3c669a5185933b1cb6b",
   "source/modules/q_primeparity.json": "c147ada68c313011acbe39d9965fef7756bf10ca357c0a527f4de1ae2d125f93",
-  "source/residuals.jsonl": "2b5d24df86c35af57c4a58bac97984815bf70c2f69409b10aed8bc1c6e2f55b1"
+  "source/residuals.jsonl": "2b5d24df86c35af57c4a58bac97984815bf70c2f69409b10aed8bc1c6e2f55b1",
+  "CPO_PROOF_V2.md": "6907c4b34672a844be712d2113004db360211dd18d055f857d2edc9a6a1c9f59",
+  "SHARED_COMPLETENESS.md": "195f1acc3dfa0defd6bf51f256be17fea59df1cdea7da69101b554cbd9d6fc24",
+  "VERIFICATION_2026-11-06.md": "c6ffbbb8336124aff0ab7eebeadfa294eecc0ea4886687100d6ebea5d4a3e76f"
  }
 }
