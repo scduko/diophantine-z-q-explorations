@@ -3,9 +3,12 @@
 **Status: research proposal. Not accepted, not reviewed, not formally verified.**
 The variant below is a mechanically checked restriction of the Version 2 source.
 Its "solution ⇒ integer" direction follows from Version 2 with no new mathematics.
-Its "integer ⇒ solution" direction depends on one new lemma (§3). That lemma is now proved
-**conditionally on Hypothesis H**, a Green–Tao–Ziegler count for primes with prescribed
-Gaussian residue classes: see [LEMMA_CPO.md](LEMMA_CPO.md). H is not proved here.
+Its "integer ⇒ solution" direction depends on one new lemma (§3). That lemma now has a
+proof, [CPO_PROOF.md](CPO_PROOF.md). Its only external input is an unconditional published
+theorem: Frei–Tinková, arXiv:2408.17441, Theorem 1.4 (Green–Tao–Ziegler with prescribed
+Artin symbols). Review notes are in [REVIEW_CPO_PROOF.md](REVIEW_CPO_PROOF.md). The
+theorem's exact hypotheses and local-factor formula still need to be checked against the
+paper. If they hold, the variant defines Z in Q under the same inputs as Version 2.
 
 Base: Version 2, `quartics/quartic-12504/source` (source ID
 `reciprocal64-beta16-compressed-s1-b5e836d77643`, 12,063 witnesses, 11,499 residuals).
@@ -98,7 +101,10 @@ variant defines Z.**
 
 ### Status of Lemma CPO
 
-See [LEMMA_CPO.md](LEMMA_CPO.md). In summary:
+**Proved** in [CPO_PROOF.md](CPO_PROOF.md), using [FT] Theorem 1.4 in place of
+Hypothesis H, with conditional (abelian-compatible) class densities and uniform Gaussian
+lattice sieves. See [REVIEW_CPO_PROOF.md](REVIEW_CPO_PROOF.md). The earlier conditional
+write-up, [LEMMA_CPO.md](LEMMA_CPO.md), is kept for history. Its outline was:
 
 * **2-adic part: proved.** Exactly one of d_{p,1}, d_{p,2} is ≡ 4 (mod 8), and this
   forces the orientation.
@@ -158,9 +164,9 @@ quartic in the same format as Version 2's coefficient table.
 
 ## 5. Next steps
 
-1. Get number-theory review of [LEMMA_CPO.md](LEMMA_CPO.md), above all Hypothesis H and
-   the sieve bound (B1).
+1. Check [FT] Theorem 1.4 and formula (1.15) against [CPO_PROOF.md](CPO_PROOF.md) §§3–5,
+   then get number-theory review of the whole proof.
 2. Port the Version 2 reduction tools to the `q_compare4_core` / batch layout and rerun
    `verify_certificate.py`-style replays to get the optimised count.
-3. If H and Lemma CPO are accepted, write them up as a replacement for the private-shift paragraph
+3. Once the proof is accepted, write it up as a replacement for the private-shift paragraph
    of `subsec:o8-common-J-proof`.

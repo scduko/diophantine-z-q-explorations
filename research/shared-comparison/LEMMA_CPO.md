@@ -1,5 +1,10 @@
 # Lemma CPO: a proof conditional on one analytic hypothesis
 
+> **Superseded** by [CPO_PROOF.md](CPO_PROOF.md), which replaces Hypothesis H with
+> Frei–Tinková (arXiv:2408.17441) Theorem 1.4, and by its review in
+> [REVIEW_CPO_PROOF.md](REVIEW_CPO_PROOF.md). This file is kept for history. Note that its
+> §4 main term omitted the conditioning on abelian (norm) data.
+
 **Status.** This is a proof attempt written in this session and not reviewed by anyone else.
 Everything below is proved, or proved to the level of detail of `subsec:o8-pattern-proof`,
 **except Hypothesis H (§4)**. H is a Green–Tao–Ziegler (GTZ) count for prime patterns whose
