@@ -15,9 +15,11 @@ Checks performed (exact, no floating point):
      (soundness is inherited).  The converse is NOT claimed: it needs the
      cross-prime orientation lemma proved in CPO_PROOF.md.
 
-Usage: python3 -I build_shared_source.py SOURCE_DIR OUTPUT_DIR
+Usage: python3 -I -B build_shared_source.py SOURCE_DIR OUTPUT_DIR
 """
 import json, sys, os, copy, hashlib
+if sys.flags.optimize:
+    raise SystemExit('Run without -O: the exact checks are assertions')
 
 src, out = sys.argv[1], sys.argv[2]
 NAMES = ['q_primeparity', 'q_anchor', 'q_batch41', 'q_height_batch', 'q_compare4', 'Z_definition']

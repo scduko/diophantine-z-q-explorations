@@ -6,9 +6,11 @@ checks exactly that substituting the definitions back recovers every source
 row.  This is a baseline: it does not apply the pinned pipeline's norm,
 chart, ordinate, parity, batch, optimisation and merge reductions.
 
-Usage: python3 -I quadratic_lift.py residuals.jsonl [OUTPUT_DIR]
+Usage: python3 -I -B quadratic_lift.py residuals.jsonl [OUTPUT_DIR]
 """
 import json, sys
+if sys.flags.optimize:
+    raise SystemExit('Run without -O: the exact checks are assertions')
 from fractions import Fraction
 from collections import Counter
 rows = [{tuple(m): Fraction(c) for c, m in json.loads(l)} for l in open(sys.argv[1]).read().splitlines()[1:]]

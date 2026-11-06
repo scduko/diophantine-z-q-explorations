@@ -1,7 +1,21 @@
 # Review of CPO_PROOF.md
 
-**Reviewer:** Claude (AI), in the session that produced the shared-comparison variant.
-This is a careful read, not an independent human referee report.
+Reviewed 2026-11-06 by Claude Code (Anthropic), the AI agent that built the
+shared-comparison variant. This reviewer is **not independent** of the proposal, and this
+is not a human referee report.
+
+**Material reviewed.** The supplied proof (SHA-256
+`1235cd98a7791e4ba23aa079d0504a3b36687d4f4c0e4f599fa51418fb408d91`), committed as
+`CPO_PROOF.md` with only the math delimiters changed (its current hash is in
+`SHA256SUMS`). Manuscript context: Version 2 `quartic_12504.tex` at commit
+`28e87b1b62af0effd954605af7f70b2699dd5672`, in particular `subsec:o8-pattern-proof`,
+`subsec:o8-common-J-proof` and `eq:old41-private-crt`.
+
+**What was run.** Reading only, plus the heuristic numerics in `experiments/`, which
+exercise the mechanism of §§5 and 12 but prove nothing. The cited paper
+(arXiv:2408.17441) could not be opened: arXiv is unreachable from the review environment.
+Its existence and the unconditional status of its Artin-symbol theorem were confirmed by web
+search only.
 
 ## Verdict
 

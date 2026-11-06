@@ -1,8 +1,15 @@
 # Shared comparison: a 4,151-variable quartic
 
-**Status: research proposal.** Not accepted upstream, not refereed by a human, and not
-formally verified. Base: Version 2, `quartics/quartic-12504/source` (source ID
-`reciprocal64-beta16-compressed-s1-b5e836d77643`).
+**Status: proposal.** Not accepted by the Version 2 authors, not refereed by a human, and
+not formally verified. This proposes a **size reduction**, not a correction: nothing here
+asserts an error in Version 2, and no existing file is modified.
+
+**Base.** Version 2 at commit `28e87b1b62af0effd954605af7f70b2699dd5672`, source
+`quartics/quartic-12504/source` (ID `reciprocal64-beta16-compressed-s1-b5e836d77643`,
+`residuals.jsonl` SHA-256 `b5e836d7764363fcbfdafbacefe80a5f53e0979eba73af990827942b0fa9351d`).
+The pinned input hashes in [SHA256SUMS](SHA256SUMS) agree with
+`quartics/quartic-12504/source-entry.json`. [PROPOSAL.json](PROPOSAL.json) is the
+machine-readable record of this proposal.
 
 ## The change
 
@@ -73,13 +80,47 @@ for all distinct selected primes p, p′.
 
 ## Reproduce
 
-From this directory:
+From the repository root (Python 3, standard library only; tested with CPython 3.13.18 on
+Linux):
 
 ```sh
-sh check.sh                      # regenerate source/ and quartic/ and compare with the committed files
-python3 -I experiments/cross_prime_experiment.py 1 40
-python3 -I experiments/frobenius_mechanism.py 2000 20 41
+sh research/shared-comparison/check.sh
+python3 -I -B research/shared-comparison/experiments/cross_prime_experiment.py 1 40
+python3 -I -B research/shared-comparison/experiments/frobenius_mechanism.py 2000 20 41
 ```
+
+`check.sh` verifies the pinned Version 2 inputs and this directory's scripts and outputs
+against [SHA256SUMS](SHA256SUMS). It then regenerates `source/` and `quartic/`, rerunning
+both exact equivalence checks, and compares them byte for byte with the committed files.
+The scripts refuse to run under `python -O`, because their checks are assertions.
+
+**How the result was found and how it was checked.** The construction was designed by hand
+from the module structure; there was no search. It is checked by exact rational arithmetic
+in `build_shared_source.py` and `quadratic_lift.py`. Neither the Version 2 certificate
+checker (`verify_certificate.py`) nor its source auditor has been run on the variant. Both
+are hard-wired to the Version 2 module layout.
+
+## AI contribution and verification
+
+* **Claude Code (Anthropic):**
+  * the cost analysis and the shared-comparison construction;
+  * every script and experiment in this directory;
+  * the problem statement for Lemma CPO, and an earlier conditional proof (superseded; in
+    the branch history);
+  * the review in [REVIEW_CPO_PROOF.md](REVIEW_CPO_PROOF.md). That reviewer is not
+    independent of the proposal.
+* **An external AI reasoning model**, supplied by the repository owner, wrote
+  [CPO_PROOF.md](CPO_PROOF.md). It is preserved verbatim apart from math delimiters; see
+  its provenance header.
+* **Verification performed:**
+  * exact algebraic checks, reproducible with `check.sh`;
+  * a step-by-step AI read of the proof;
+  * heuristic numerics.
+* **Not performed:**
+  * human refereeing;
+  * a check of the cited Frei–Tinková theorem against the paper itself;
+  * a Version 2 certificate replay of the variant;
+  * Lean formalisation.
 
 ## Files
 
@@ -92,6 +133,9 @@ python3 -I experiments/frobenius_mechanism.py 2000 20 41
 | `CPO_PROOF.md`, `REVIEW_CPO_PROOF.md` | The completeness proof and its review. |
 | `experiments/` | Heuristic numerics. |
 | `check.sh` | Reproducibility check. |
+| `PROPOSAL.json` | Machine-readable record: base, change, counts, checks, inputs, AI contribution, what is not claimed. |
+| `SHA256SUMS` | Hashes of the pinned inputs, scripts, the proof and all generated files. |
+| `.gitattributes` | Marks this directory `-text`, so byte comparisons survive any checkout. |
 
 ## Next steps
 

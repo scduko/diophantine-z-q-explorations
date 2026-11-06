@@ -7,7 +7,7 @@ private multiplier h with h = 0 mod d_{p,1}, h = c mod d_{p,2} for all
 sampled p exists iff, for some orientation, gcd(d_{p,1}, d_{p',2}) | c and
 p' does not divide d_{p,1} (p != p').  Orientations are solved exactly by 2-SAT.
 
-Usage: python3 -I cross_prime_experiment.py [seed] [trials]
+Usage: python3 -I -B cross_prime_experiment.py [seed] [trials]
 """
 import math, random, sys
 random.seed(int(sys.argv[1]) if len(sys.argv) > 1 else 1)
