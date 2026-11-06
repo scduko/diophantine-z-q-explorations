@@ -1,0 +1,117 @@
+{
+  "baseCommit": "bf2fe53459c0cceff74566ea9b966eca54d11ca5",
+  "inputHashes": {
+    "quartics/quartic-1272/builder/build_source.cjs": "68c553f987f88780d28fbd21d625278701ecc38d8cc92160215e5bf44a270c78",
+    "quartics/quartic-1272/compiler/compile_ir.py": "c50510a5bed8f59543b64a3a2cb251e9aff4b300d4bfc750e13642e7b00eb46f",
+    "quartics/quartic-1272/checker/checker.cjs": "50f9924557f0594a0ddb2664260d2e382d80762a0d607d87203fb7ddfb4e1cb1",
+    "quartics/quartic-1272/sources/diophantine_optimization_20261106_v3.tex": "fc8bc7b8fae727e24f934ddd7de0a7cff8a005e89c3d0cac1ea14e5191b910ca",
+    "quartics/quartic-1272/builder/raw-translated-ir.json": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e",
+    "quartics/quartic-1272/compiler/translated/compiled-ir.json": "377cda57d18c320149f9cb47cbaeacf847ab0df1dd2a6cfd08a967f3c4af1433",
+    "quartics/quartic-1272/compiler/translated/polynomial.json": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586",
+    "quartic_4973.tex": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34",
+    "docs/quartic-1272/evidence/reviewed-new1272.tex": "506675ede05bb3d369d9882945958c86d2d39c8fbe4d6e1e393c6a4e17f00000",
+    "docs/quartic-1272/evidence/reviewed-arithmetic-bridges.tex": "94696c3d3113c6ff23b8ff3039a17447424151d49f5ecbf1f178304aaf2d5544",
+    "docs/quartic-1272/evidence/reviewed-sun-appendix.tex": "620e2e5652048c827efd8a1d9dae78462679e65992beeb20c3f089b3115fb77b"
+  },
+  "variants": {
+    "scalar_fused": {
+      "finite": {
+        "coordinates": 1270,
+        "compiledCoordinatesBeforeFreeOmission": 1270,
+        "residuals": 1227,
+        "activeCoordinates": 1270,
+        "ordinaryCoordinateMonomials": 45936,
+        "parameterCoefficientTerms": 45936,
+        "degree": 4,
+        "maxSPower": 2,
+        "integerCoefficients": true,
+        "sIndependentCoefficientGcd": 1
+      },
+      "builderSha256": "c37174871a8804a13f602a7cff234403335ce94aca124ae5e3a5b1248a3c61e5",
+      "polynomialSha256": "033b4bb710efde53cde0ef3ec726b4864233717a878b043e861ed42dbfac4bba",
+      "ordinary": {
+        "coordinates": 1288,
+        "compiledCoordinatesBeforeFreeOmission": 1288,
+        "residuals": 1245,
+        "activeCoordinates": 1288,
+        "ordinaryCoordinateMonomials": 45989,
+        "parameterCoefficientTerms": 45989,
+        "degree": 4,
+        "maxSPower": 0,
+        "integerCoefficients": true,
+        "sIndependentCoefficientGcd": 1,
+        "maximumCoefficientBits": 5339,
+        "polynomialSha256": "fe078fbeacbf6be7c2adac6772461dad2121338db6c897a4c335962b86171032",
+        "constantChainVariables": 18,
+        "anchorConstant": "3^(2^27)",
+        "ordinaryExportSha256": "d9cbd7dbbb7786ab74f9c0dbce7aeb12061caaec9b511f9a8b81558e90f745d3"
+      }
+    },
+    "h19_scalar32": {
+      "finite": {
+        "coordinates": 1250,
+        "compiledCoordinatesBeforeFreeOmission": 1250,
+        "residuals": 1207,
+        "activeCoordinates": 1250,
+        "ordinaryCoordinateMonomials": 45430,
+        "parameterCoefficientTerms": 45430,
+        "degree": 4,
+        "maxSPower": 2,
+        "integerCoefficients": true,
+        "sIndependentCoefficientGcd": 1
+      },
+      "builderSha256": "5b6ea6262ccea652f4597b3c2863841eb8cf9e8b5af4275bce982d4a4c2e9cf1",
+      "polynomialSha256": "42c1bcbb5f8a03a67520b8fa9d7132a752b7cfc82f9d6ede249218a6a438db79",
+      "ordinary": {
+        "coordinates": 1267,
+        "compiledCoordinatesBeforeFreeOmission": 1267,
+        "residuals": 1224,
+        "activeCoordinates": 1267,
+        "ordinaryCoordinateMonomials": 45480,
+        "parameterCoefficientTerms": 45480,
+        "degree": 4,
+        "maxSPower": 0,
+        "integerCoefficients": true,
+        "sIndependentCoefficientGcd": 1,
+        "maximumCoefficientBits": 4059,
+        "polynomialSha256": "d7854b2550e82414576c1410d6c957b2bbec3ededad9f483251b4ea685b92392",
+        "constantChainVariables": 17,
+        "anchorConstant": "3^(2^26)",
+        "ordinaryExportSha256": "b4db1d6b35d260fc68a2e49c82b5b61ff373a9584dfcd13446e1c98e40171496"
+      }
+    },
+    "h19_scalar24": {
+      "finite": {
+        "coordinates": 1250,
+        "compiledCoordinatesBeforeFreeOmission": 1250,
+        "residuals": 1207,
+        "activeCoordinates": 1250,
+        "ordinaryCoordinateMonomials": 45430,
+        "parameterCoefficientTerms": 45430,
+        "degree": 4,
+        "maxSPower": 2,
+        "integerCoefficients": true,
+        "sIndependentCoefficientGcd": 1
+      },
+      "builderSha256": "01b5eceba5023264e3e8947c90ae81485b619825a5e08eae2ada6ca9b1c2fbd0",
+      "polynomialSha256": "3a3502f85f6b2e0efef53b4b11c076a1f300a4da9e88b111a2f922f834a45d09",
+      "ordinary": {
+        "coordinates": 1267,
+        "compiledCoordinatesBeforeFreeOmission": 1267,
+        "residuals": 1224,
+        "activeCoordinates": 1267,
+        "ordinaryCoordinateMonomials": 45480,
+        "parameterCoefficientTerms": 45480,
+        "degree": 4,
+        "maxSPower": 0,
+        "integerCoefficients": true,
+        "sIndependentCoefficientGcd": 1,
+        "maximumCoefficientBits": 4059,
+        "polynomialSha256": "be0b1e9b504255edcfa1e6b32ed033b3d4861a213db09970f5391a010d5c19cb",
+        "constantChainVariables": 17,
+        "anchorConstant": "3^(2^26)",
+        "ordinaryExportSha256": "a4a711b925fa619b0ed6a38685297560c8a388298160b684f02c08eddb989796"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "budgets": {
+    "anchorLog2LowerBound": "50331647/2",
+    "requiredLog2UpperBound": 20939720,
+    "powerChain": [
+      1,
+      2,
+      3,
+      6,
+      9,
+      11,
+      22,
+      33,
+      39,
+      78
+    ],
+    "status": "exact rational budgets passed; not a proof of inherited theorems"
+  },
+  "variants": {
+    "scalar_fused": {
+      "chainCoordinates": 18,
+      "chainAndExport": "passed",
+      "changedConstantRejected": true
+    },
+    "h19_scalar32": {
+      "chainCoordinates": 17,
+      "chainAndExport": "passed",
+      "changedConstantRejected": true
+    },
+    "h19_scalar24": {
+      "chainCoordinates": 17,
+      "chainAndExport": "passed",
+      "changedConstantRejected": true
+    }
+  }
+}

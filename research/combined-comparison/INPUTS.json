@@ -1,0 +1,16 @@
+{
+  "baseCommit": "bf2fe53459c0cceff74566ea9b966eca54d11ca5",
+  "sha256": {
+    "quartics/quartic-1272/builder/build_source.cjs": "68c553f987f88780d28fbd21d625278701ecc38d8cc92160215e5bf44a270c78",
+    "quartics/quartic-1272/compiler/compile_ir.py": "c50510a5bed8f59543b64a3a2cb251e9aff4b300d4bfc750e13642e7b00eb46f",
+    "quartics/quartic-1272/checker/checker.cjs": "50f9924557f0594a0ddb2664260d2e382d80762a0d607d87203fb7ddfb4e1cb1",
+    "quartics/quartic-1272/sources/diophantine_optimization_20261106_v3.tex": "fc8bc7b8fae727e24f934ddd7de0a7cff8a005e89c3d0cac1ea14e5191b910ca",
+    "quartics/quartic-1272/builder/raw-translated-ir.json": "9ea55f4a3a5e54f8143a14bda7aebdd21adcd01a972c649653d9b7856a4ee69e",
+    "quartics/quartic-1272/compiler/translated/compiled-ir.json": "377cda57d18c320149f9cb47cbaeacf847ab0df1dd2a6cfd08a967f3c4af1433",
+    "quartics/quartic-1272/compiler/translated/polynomial.json": "02e4771ba6e6c2abc749e33e8440cc256939f48005d5102fba7d9853489c8586",
+    "quartic_4973.tex": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34",
+    "docs/quartic-1272/evidence/reviewed-new1272.tex": "506675ede05bb3d369d9882945958c86d2d39c8fbe4d6e1e393c6a4e17f00000",
+    "docs/quartic-1272/evidence/reviewed-arithmetic-bridges.tex": "94696c3d3113c6ff23b8ff3039a17447424151d49f5ecbf1f178304aaf2d5544",
+    "docs/quartic-1272/evidence/reviewed-sun-appendix.tex": "620e2e5652048c827efd8a1d9dae78462679e65992beeb20c3f089b3115fb77b"
+  }
+}

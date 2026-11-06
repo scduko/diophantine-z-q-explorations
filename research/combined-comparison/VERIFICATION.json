@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-06",
+  "status": "finite checks passed; arithmetic argument is an AI author proposal pending independent review",
+  "python": "3.12.14",
+  "node": "v24.22.1",
+  "baseCommit": "bf2fe53459c0cceff74566ea9b966eca54d11ca5",
+  "selectedVariant": "h19_scalar32",
+  "checks": [
+    "Upstream 1272 baseline: 1214 gate identities, 1187 certificate operations, exact polynomial comparison",
+    "All three parameter variants and all three chain variants: upstream independent gate/certificate/SOS checker passed",
+    "Selected compressed artifact: extracted and independently replayed",
+    "Separate chain projection, coefficient-export, power-chain and exact height-budget checks passed",
+    "Incorrect first chain constant rejected"
+  ],
+  "selected": {
+    "variablesIncludingInput": 1267,
+    "quadraticResiduals": 1224,
+    "degree": 4,
+    "monomials": 45480,
+    "primitiveContent": 1,
+    "maximumCoefficientBits": 4059
+  },
+  "notClaimed": [
+    "Independent human mathematical review",
+    "Formal verification",
+    "Replacement of Version 5 quadratic prime-pattern theorem by the earlier affine CPO lemma",
+    "Global minimality"
+  ]
+}
