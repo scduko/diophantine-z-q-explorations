@@ -3,7 +3,9 @@
 **Status: research proposal. Not accepted, not reviewed, not formally verified.**
 The variant below is a mechanically checked restriction of the Version 2 source.
 Its "solution ⇒ integer" direction follows from Version 2 with no new mathematics.
-Its "integer ⇒ solution" direction depends on one new lemma (§3), which is **open**.
+Its "integer ⇒ solution" direction depends on one new lemma (§3). That lemma is now proved
+**conditionally on Hypothesis H**, a Green–Tao–Ziegler count for primes with prescribed
+Gaussian residue classes: see [LEMMA_CPO.md](LEMMA_CPO.md). H is not proved here.
 
 Base: Version 2, `quartics/quartic-12504/source` (source ID
 `reciprocal64-beta16-compressed-s1-b5e836d77643`, 12,063 witnesses, 11,499 residuals).
@@ -94,59 +96,53 @@ p_k. The remaining choices (avoiding h ∈ {0, ±4}, nonzero subtraction denomin
 L(z(X_0)) ≠ 0, and choosing θ last) carry over verbatim. **So Lemma CPO implies that the
 variant defines Z.**
 
-### What is known about Lemma CPO
+### Status of Lemma CPO
 
-Write Frobenius at p as π = a + bi, so d_{p,1} = N(π − 1) and d_{p,2} = N(π + 1).
+See [LEMMA_CPO.md](LEMMA_CPO.md). In summary:
 
-* **2-adic part: solved.** p ≡ 1 (mod 8) gives d_{p,1} + d_{p,2} = 2(p+1) ≡ 4 (mod 16).
-  So exactly one of d_{p,1}, d_{p,2} is ≡ 4 (mod 8). Choosing it as d_{p,2} for every p
-  makes the 2-part of every cross gcd divide 4. This fixes the orientation completely, so
-  the odd part has no orientation freedom left.
-* **Inert ℓ ≡ 3 (mod 4), ℓ ≥ 7: controllable by a linear condition.** If ℓ | N(π ∓ 1),
-  then π ≡ ±1 in the field Z[i]/ℓ, so p = N(π) ≡ 1 (mod ℓ). Adding p ≢ 1 (mod ℓ) to the
-  local conditions excludes it. For ℓ = 11, 19, 23 this requires changing the residue
-  class c mod ℓ, which appears only in the existence proof, not in the polynomial. The sieve
-  density changes from ∏(1 − 2m/q) to ∏(1 − 3m/q).
-* **ℓ = 3: not controllable this way.** The conditions p ≢ 0, −1 (mod 3) force p ≡ 1, and
-  3 | d_{p,i} then depends on whether π ≡ ±1 or ±i (mod 3).
-* **Split ℓ ≡ 1 (mod 4): not controllable this way.** Whether ℓ | N(π − 1) depends on π
-  modulo a prime above ℓ, which is not determined by p mod ℓ. Over Q, this is a Chebotarev
-  condition in a non-abelian extension (ray class fields of Q(i)).
-* **Large ℓ > L: plausibly handled by the existing upper-bound sieve method.** The cross
-  event ℓ | d_{p,1}, ℓ | d_{p′,2} has two-fibre density about ℓ⁻². Its contribution
-  C_𝐚X³/(L(log X)^m) has the same form as `eq:old41-bad`. This needs a careful write-up.
-* **A fixed larger shift does not close the gap.** Replacing 4 by c = 4M (cost: about
-  log₂ M point operations per shifted point) absorbs ℓ | M. But L depends on 𝐚, so no
-  fixed M covers all small ℓ.
+* **2-adic part: proved.** Exactly one of d_{p,1}, d_{p,2} is ≡ 4 (mod 8), and this
+  forces the orientation.
+* **Small odd ℓ ≤ L₀:** handled by requiring each selected prime to be *L₀-good*
+  (ℓ ∤ d_{p,1}d_{p,2}). This is a ray-class condition on the Gaussian prime above p. It is
+  compatible with every residue condition of the manuscript, including the forced classes
+  at 3 and 5 (Lemma 3).
+* **Large ℓ > L₀ and (X2):** handled by unconditional upper bounds of the same shape as
+  `eq:old41-bad`.
+* **The one missing input is Hypothesis H**: GTZ for the manuscript's linear system with
+  each prime's Gaussian factor in a prescribed class mod M. It reduces to orthogonality of
+  Hecke-character-twisted Gaussian primes to polynomial nilsequences in the norm. It may
+  follow from Kai (arXiv:2306.16983) or Green–Sawhney (arXiv:2410.04189); this is
+  unverified.
 
-### Numerical evidence (`cross_prime_experiment.py`; heuristic only)
+### Numerical evidence (heuristic only)
 
-Primes near 10¹² with the pinned local conditions. Each cell counts trials (out of 40) in
-which an orientation satisfying (X1) and (X2) exists, solved exactly by 2-SAT.
+`cross_prime_experiment.py` uses primes near 10¹² with the pinned local conditions and
+solves the orientation constraints exactly. Each cell counts successful trials out of 40.
+(The first version of this table used the even square in p = a² + b². The Frobenius trace
+is twice the **odd** one; the numbers below are corrected.)
 
 | shift c | k=2 | k=3 | k=5 | k=9 | k=20 | k=41 |
 |---:|---:|---:|---:|---:|---:|---:|
-| 4 | 30 | 20 | 5 | 0 | 0 | 0 |
-| 12 | 30 | 14 | 5 | 0 | 0 | 0 |
-| 60 | 35 | 29 | 16 | 0 | 0 | 0 |
-| 16380 | 38 | 35 | 26 | 13 | 1 | 0 |
+| 4 | 19 | 9 | 1 | 0 | 0 | 0 |
+| 12 | 17 | 7 | 1 | 0 | 0 | 0 |
+| 60 | 33 | 16 | 4 | 0 | 0 | 0 |
+| 16380 | 35 | 33 | 14 | 5 | 0 | 0 |
 
-A random 41-prime pattern essentially never satisfies Lemma CPO. That is not a
-counterexample: the lemma asks for **some** pattern among infinitely many. If the
-Frobenius classes of the selected primes behave independently, the good patterns have
-positive (though tiny) relative density, so the lemma is heuristically true. Proving it
-seems to need a lower bound for prime patterns with prescribed Frobenius conditions modulo
-small primes, which is a Green–Tao–Ziegler theorem with Chebotarev conditions. I don't
-know whether a usable version exists in the literature. This is the question to put to
-number theorists.
+A random pattern essentially never works. `frobenius_mechanism.py` draws primes from the
+pinned progression, requires them to be L₀-good, and tests 41-prime sets:
+
+| L₀ | 30 | 200 | 2000 |
+|---|---:|---:|---:|
+| compatible 41-prime sets (of 20) | 0 | 3 | 18 |
+
+This is the behaviour the conditional proof predicts.
 
 ### Partial sharing
 
 Suppose the 41 contacts are split into g groups, each with its own core and with the
 group fixed in the polynomial. Cross-prime compatibility is then needed only within each
-group. With pairs, a random pair is compatible 75–95% of the time, depending on c. The
-cost is roughly ⌈41/g⌉·227 + 41·58 + 303 + 75. Any fixed g ≥ 2 still needs the same kind
-of Frobenius control, so partial sharing reduces the cost but not the difficulty.
+group. With pairs, a random pair is compatible about 45–90% of the time, depending on c. The
+cost is roughly ⌈41/g⌉·227 + 41·58 + 303 + 75. Any fixed g ≥ 2 still needs Hypothesis H, so partial sharing only reduces the cost.
 
 ## 4. Reproduce
 
@@ -154,6 +150,7 @@ of Frobenius control, so partial sharing reduces the cost but not the difficulty
 python3 -I build_shared_source.py ../../quartics/quartic-12504/source source
 python3 -I naive_lift.py source/residuals.jsonl quartic
 python3 -I cross_prime_experiment.py 1 40
+python3 -I frobenius_mechanism.py 2000 20 41
 ```
 
 `quartic/polynomial.expanded.txt` (SHA-256 in `quartic/stats.json`) lists the conditional
@@ -161,8 +158,9 @@ quartic in the same format as Version 2's coefficient table.
 
 ## 5. Next steps
 
-1. Get number-theory input on Lemma CPO, in particular the small-ℓ Frobenius control.
+1. Get number-theory review of [LEMMA_CPO.md](LEMMA_CPO.md), above all Hypothesis H and
+   the sieve bound (B1).
 2. Port the Version 2 reduction tools to the `q_compare4_core` / batch layout and rerun
    `verify_certificate.py`-style replays to get the optimised count.
-3. If Lemma CPO is accepted, write it up as a replacement for the private-shift paragraph
+3. If H and Lemma CPO are accepted, write them up as a replacement for the private-shift paragraph
    of `subsec:o8-common-J-proof`.

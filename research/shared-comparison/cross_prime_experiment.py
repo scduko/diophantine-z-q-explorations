@@ -34,7 +34,7 @@ def two_squares(p):                      # p = 1 mod 4
     t = pow(g, (p - 1) // 4, p); a, b = p, t
     while b * b > p: a, b = b, a % b
     c = math.isqrt(p - b * b); assert b * b + c * c == p
-    return b, c
+    return (b, c) if b % 2 else (c, b)   # odd part first: Frobenius trace is 2*(odd part)
 
 def sample(lo=10**12):
     while True:
