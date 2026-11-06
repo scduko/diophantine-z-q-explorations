@@ -1,0 +1,9 @@
+{
+ "variables_incl_X": 4151,
+ "variables_occurring": 4151,
+ "degree": 4,
+ "monomials": 19910,
+ "max_abs_coefficient": 685783949153203534233601,
+ "quadratic_residuals": 3986,
+ "expanded_sha256": "63defdb6a5578aeabe7779be7bb116e80a85b1de5fe6cfa20084c84db432e1cd"
+}
