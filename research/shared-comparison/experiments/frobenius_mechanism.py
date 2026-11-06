@@ -4,7 +4,7 @@ Primes are drawn from the pinned progression p = c (mod W) (c = 18484837801,
 W = 25878772920).  A prime is L0-good if no odd prime l <= L0 divides
 d_{p,1} d_{p,2} = (p+1)^2 - 4a^2.  Orientation is the forced 2-adic one
 (d_{p,2} = 4 mod 8).  For sets of k L0-good primes we test the CRT
-compatibility conditions (X1), (X2) of NOTE.md exactly.
+compatibility conditions (X1), (X2) of CPO_PROOF.md exactly.
 
 Usage: python3 -I frobenius_mechanism.py L0 trials k [seed]
 """

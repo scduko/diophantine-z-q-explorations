@@ -6,7 +6,8 @@ This is a careful read, not an independent human referee report.
 ## Verdict
 
 The argument is correct as far as I can check without reading the external theorem. It
-supersedes LEMMA_CPO.md: Hypothesis H is replaced by an unconditional published theorem,
+replaces the earlier conditional write-up (an unproved "Hypothesis H", in this branch's
+history) with an unconditional published theorem,
 **Frei–Tinková, *Linear constellations in primes with arithmetic restrictions*,
 arXiv:2408.17441, Theorem 1.4** (GTZ asymptotics with prescribed Artin symbols in fixed
 Galois extensions). A web search confirms that the paper exists and that its Artin-symbol

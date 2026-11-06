@@ -6,7 +6,7 @@ checks exactly that substituting the definitions back recovers every source
 row.  This is a baseline: it does not apply the pinned pipeline's norm,
 chart, ordinate, parity, batch, optimisation and merge reductions.
 
-Usage: python3 -I naive_lift.py residuals.jsonl
+Usage: python3 -I quadratic_lift.py residuals.jsonl [OUTPUT_DIR]
 """
 import json, sys
 from fractions import Fraction
@@ -61,43 +61,38 @@ for r in rows:
 defs = [{(pair[p][0],): Fraction(1), p: Fraction(-1)} for p in new]
 quad = out + defs
 assert all(len(m) <= 2 for r in quad for m in r)
-# exact back-substitution check
-back = {pair[p][0]: (p, pair[p][1]) for p in pair}   # v -> x*y / s
-def expand(m):
-    res = {(): Fraction(1)}
-    for v in m:
-        if v in back and back[v][0] in new or (v in back and v >= len_src):
-            p, s = back[v]; term = {tuple(p): 1 / s}
-        else:
-            term = {(v,): Fraction(1)}
-        res = {tuple(sorted(a + b)): ca * cb for a, ca in res.items() for b, cb in term.items()}
-    return res
-len_src = 1 + max(v for r in rows for m in r for v in m)
-for r0, r1 in zip(rows, out):
+# Exact check.  phi substitutes every product variable recursively, v := x*y/s, down to
+# variables that are not products.  phi is a ring homomorphism that kills exactly the
+# definition rows (all of which are rows of the lifted system), so
+# phi(lifted row) == phi(source row) for every row shows that the lifted and source
+# systems have the same rational zero set, with the same X.
+back = {pair[p][0]: (p, pair[p][1]) for p in pair}
+memo = {}
+def phi_var(v, depth=0):
+    assert depth < 64, 'cyclic product definitions'
+    if v not in back:
+        return {(v,): Fraction(1)}
+    if v not in memo:
+        (x, y), s_ = back[v]
+        memo[v] = {m: c / s_ for m, c in mul(phi_var(x, depth + 1), phi_var(y, depth + 1)).items()}
+    return memo[v]
+def mul(f, g):
+    h = {}
+    for x, cx in f.items():
+        for y, cy in g.items():
+            k = tuple(sorted(x + y)); h[k] = h.get(k, 0) + cx * cy
+    return h
+def phi(row):
     acc = {}
-    for m, c in r1.items():
-        for mm, cc in expand(m).items():
+    for m, c in row.items():
+        t = {(): Fraction(1)}
+        for v in m:
+            t = mul(t, phi_var(v))
+        for mm, cc in t.items():
             acc[mm] = acc.get(mm, 0) + c * cc
-    acc = {m: c for m, c in acc.items() if c}
-    # reused source definitions: residual equality holds modulo those rows, so compare after
-    # replacing source product vars too only when needed
-    if acc != r0:
-        # allow differences explained by reused source equations (v = x*y/s)
-        full = {}
-        for m, c in r1.items():
-            t = {(): Fraction(1)}
-            for v in m:
-                term = {tuple(back[v][0]): 1 / back[v][1]} if v in back else {(v,): Fraction(1)}
-                t = {tuple(sorted(a + b)): ca * cb for a, ca in t.items() for b, cb in term.items()}
-            for mm, cc in t.items(): full[mm] = full.get(mm, 0) + c * cc
-        r0f = {}
-        for m, c in r0.items():
-            t = {(): Fraction(1)}
-            for v in m:
-                term = {tuple(back[v][0]): 1 / back[v][1]} if v in back else {(v,): Fraction(1)}
-                t = {tuple(sorted(a + b)): ca * cb for a, ca in t.items() for b, cb in term.items()}
-            for mm, cc in t.items(): r0f[mm] = r0f.get(mm, 0) + c * cc
-        assert {m: c for m, c in full.items() if c} == {m: c for m, c in r0f.items() if c}
+    return {m: c for m, c in acc.items() if c}
+assert all(phi(r1) == phi(r0) for r0, r1 in zip(rows, out)), 'lift does not match source'
+len_src = 1 + max(v for r in rows for m in r for v in m)
 print(json.dumps({'source_vars_incl_X': len_src, 'lift_new_vars': len(new),
                   'quartic_vars_incl_X': nv, 'quadratic_residuals': len(quad)}))
 

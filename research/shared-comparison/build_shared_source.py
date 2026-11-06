@@ -13,7 +13,7 @@ Checks performed (exact, no floating point):
      duplicate rows and dead variables.  Hence every rational zero of the
      variant yields a rational zero of the pinned source with the same X
      (soundness is inherited).  The converse is NOT claimed: it needs the
-     cross-prime orientation lemma described in NOTE.md.
+     cross-prime orientation lemma proved in CPO_PROOF.md.
 
 Usage: python3 -I build_shared_source.py SOURCE_DIR OUTPUT_DIR
 """
