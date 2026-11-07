@@ -208,3 +208,39 @@ dense Galois matrices. Exact conjugation matrices have 43/49 and 73/81
 nonzero entries, so the naive power-basis tradeoff is rejected. Any next
 sparsification attempt must optimize multiplication and cyclic conjugation
 together.
+
+## Proof-from-the-book reorganization
+
+`PROOF_FROM_THE_BOOK.md` isolates the conceptual proof into one elementary
+lemma and one deep finite-contact lemma. The elementary lemma rewrites the
+Lucas equation as the norm-one equation $t^2-|a|tw+w^2=1$ with
+$w=\operatorname{sgn}(a)(a-2)b$. The divisibility by $|a-2|$ forces the
+unit exponent to be at least $|a|-2$ (and at least $|a|+2$ for negative
+labels), so
+the label t is exponentially large. This explains both the factor a-2 and
+the fourth elliptic label.
+
+The finite-contact lemma concentrates the current arithmetic engine into
+three exact consequences: a large anchor and sublinear scalar height; a
+constant bound if the Lucas defect is nonzero; and a subexponential bound
+if the input label differs from beta. Soundness is then two contradictions:
+the anchor kills the Lucas defect, the norm-one amplifier supplies
+log B>|a|-3, and the second contact bound would give
+log B<(31/200)|a|. Completeness remains the simultaneous-prime/common-index
+construction. Finally the finite quadratic source becomes one quartic by a
+sum of squares.
+
+This is a shorter and more motivated proof architecture, not a replacement
+for the Mordell--Weil, height, pole-converse or simultaneous-prime inputs.
+It identifies the finite-contact lemma as the single deep statement a
+proof-from-the-book exposition must establish.
+
+The amplifier proof has been aligned line by line with the source's sign
+convention. For negative labels it uses
+$w=\operatorname{sgn}(a)(a-2)b$ and the congruence modulo $|a|+2$;
+for positive labels it uses the congruence modulo $a-2$. The exact unit
+classification argument is included rather than cited. `check_book_proof.py`
+regresses both Lucas congruences, the growth induction, the positive odd
+completeness choice, the norm-one identity and the final $31/200$ gap.
+These are checks of the elementary layer only; they do not certify the
+finite-contact lemma.
