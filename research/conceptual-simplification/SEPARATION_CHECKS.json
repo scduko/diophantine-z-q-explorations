@@ -1,0 +1,14 @@
+{
+  "status": "PASS_FINITE_EXACT_CHECKS",
+  "abstract_group_order_cases": 131030,
+  "finite_field_curves": 588,
+  "primitive_bound_integer_cases": 9985,
+  "proof_scope": "Elementary separation lemma proved in prose; primitive replacement conditional on missing local encoding.",
+  "sha256": {
+    "research/conceptual-simplification/ELEMENTARY_SEPARATION.md": "7724ec0018e900cee1fec3d0a1d1554bb41d6dce9e67c697644c3602f445b4cc",
+    "research/conceptual-simplification/check_separation.py": "1e9c48679ed0f39830b50a88019ab628526b000761f128ce5abb3d9cc1210cb1",
+    "docs/quartic-523-540/addition.tex": "0c9444eac7cb889109cbf6e011667decd0aa7b2dfaf4169e4e01f4dbe4176d1e"
+  },
+  "independent_human_review": false,
+  "production_polynomial_changed": false
+}

@@ -96,3 +96,29 @@ No source polynomial, certificate, production builder, upstream manuscript
 or PR metadata changed. No candidate was promoted and no full polynomial
 replay is claimed for this documentation-only study. The work records one
 completed research pass, not execution between runs.
+
+## Elementary separation and largest-label follow-up
+
+PR #4 is closed and no longer a target. Preserve new work on the conceptual
+branch. `ELEMENTARY_SEPARATION.md` gives a proposed elementary proof of the
+existing separation lemma: full rational two-torsion implies 4 divides the
+group order, while direct point counting gives d<=2p-2. Primes within a
+factor of two therefore cannot divide any opposite group order. The stated
+prime theorem already permits this interval condition by increasing its
+fixed u/w^2 bound. No Hasse estimate, prime-spacing cutoff, or extra counting
+argument is needed for this lemma. The simultaneous-prime theorem and
+cross-group coprimality remain indispensable in the current construction.
+
+The primitive-divisor route is sharpened by selecting, only in the proof,
+the root with maximal absolute label B. Hasse then supplies a primitive
+prime large enough to annihilate the Lucas defect at order 40. A separate
+auxiliary index-size certificate is unnecessary if local divisibility can
+be imposed at all good root denominator places. That local encoding is
+still missing; the current contact tests cannot simply be reused. The
+primitive-divisor threshold may be ineffective and is not asserted below
+the current explicit anchor.
+
+Exact finite checks: 131,030 abstract group-order cases, 588 finite-field
+curves, and 9,985 integer bound cases; receipts pin notes and source.
+Prose proves the separation lemma; the replacement source remains conditional.
+No independent human review, new polynomial, manuscript edit or PR action.

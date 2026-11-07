@@ -21,6 +21,8 @@ separate from the preserved combined-comparison pull-request branch.
 
 Read:
 
+- ELEMENTARY_SEPARATION.md for an elementary replacement proof and the largest-label strategy;
+
 - TWO_ROUTES.md for the latest primitive-divisor and global-defect deductions;
 - TWO_ROUTES_CHECKS.json and check_two_routes.py for their finite checks;
 
