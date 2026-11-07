@@ -244,3 +244,11 @@ regresses both Lucas congruences, the growth induction, the positive odd
 completeness choice, the norm-one identity and the final $31/200$ gap.
 These are checks of the elementary layer only; they do not certify the
 finite-contact lemma.
+
+`FINITE_CONTACT_PROOF_PLAN.md` opens that lemma into five propositions:
+integer carrier, local contact, height transfer, anchor and simultaneous
+realization. Each proposition is mapped to exact Version 10 labels and has
+its remaining proof burden stated. This shows that the short architecture is
+not just a rename of the full proof. Soundness is concentrated in the
+exponent-19 transfer and completeness in the simultaneous realization; the
+prime-pattern theorem is used only for the latter.
