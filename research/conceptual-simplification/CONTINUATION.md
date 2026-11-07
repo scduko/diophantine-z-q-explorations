@@ -157,3 +157,54 @@ valuation patterns, the exact detector exponents, and the residue arithmetic
 modulo 97. An integral basis exists for the fixed field but has not been
 chosen and encoded as a norm circuit. This is not a production candidate: no compiler
 run or polynomial replay is claimed. No independent human review has occurred.
+
+## Two-norm and ray-class follow-up
+
+`TWO_NORM_PACKING.md` supersedes the one-norm design for a possible finite
+source. Pack the nine order-one tests in a degree-9 norm and the seven
+order-40 tests in a degree-7 norm. Exact homogeneity gives raw packed orders
+9 and 280, with only the already guarded factors delta^-8 and delta^-6.
+The existing one-place lemma selects one place for both packed factors and
+unpacks them to the original thresholds. This avoids all nine fortieth
+powers required by the literal one-norm design and lowers the maximum order
+from 640 to 280.
+
+One cyclic field supplies both extensions: the real subfield of Q(zeta_127)
+has degree 63 and unique subfields of degrees 9 and 7. The class 3 has order
+63 modulo sign. The Gaussian residue 1+16i has rational norm 3 and adjacent
+norms 2 and 6 modulo 127, so it gives inertness without introducing 127 into
+either reduced elliptic-group order.
+
+The proof of the simultaneous-prime theorem yields a ray-class flexibility
+lemma: any fixed auxiliary Gaussian class with nonzero norm and nonzero
+adjacent norms may be inserted into its fixed base modulus. The local main
+term uses u=N(r), w=0; the obstruction tails already allow prescribed
+generators; and the ray-fibre product starts beyond the fixed base. This
+also covers the case in which 127 divides a later progression modulus by
+replacing the specialized residue i at that factor.
+
+Finite checks cover 672 valuation patterns, both detector-normalization
+identities, the order of 3 modulo 127 and the Gaussian adjacent-norm
+arithmetic. Gaussian-period multiplication tables for the degree-7 and
+degree-9 subfields are exact integral bases: their trace discriminants are
+127^6 and 127^8. A preliminary quadratic count uses 52 assigned K-coordinates
+for the two norms, compared with 65 for the current sixteen test squares and
+symmetric-product trees before final evaluation. Dense structure constants
+make this only a reason to run the experiment. The remaining mathematical
+work is exceptional-prime approximation and reverse-map certification;
+the remaining computational direction is a sparser norm basis. No
+production promotion or independent human review is claimed.
+
+The isolated dense-period builder experiment has now been compiled and
+independently replayed. It gives 525 raw coordinates and 517 compiled active
+coordinates, versus 540 and 532 for the current precursor. All 443 gate
+identities and 421 certificate operations pass; the polynomial is primitive
+of degree four. But it has 451,149 monomials rather than 34,248. Preserve the
+exact 15-coordinate reduction as a minimum-variable branch and reject this
+basis for the balanced record. A power-basis calculation reduces the nonzero
+structure constants from 329 to 175 in degree 7 and from 603 to 369 in
+degree 9, at the cost of larger coefficients, nontrivial order indices and
+dense Galois matrices. Exact conjugation matrices have 43/49 and 73/81
+nonzero entries, so the naive power-basis tradeoff is rejected. Any next
+sparsification attempt must optimize multiplication and cyclic conjugation
+together.
