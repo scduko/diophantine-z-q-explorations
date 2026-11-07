@@ -1,0 +1,85 @@
+{
+  "status": "PASS_EXACT_FINITE_REGRESSIONS",
+  "finite_field_norm_degrees": {
+    "2": [
+      1,
+      1
+    ],
+    "3": [
+      1,
+      0,
+      1
+    ],
+    "4": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "5": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "6": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "7": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "8": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  "mixed_precision_cases": 3125,
+  "cyclotomic_field": {
+    "conductor": 97,
+    "frobenius_class": 5,
+    "ambient_frobenius_order": 96,
+    "quotient_frobenius_order": 16,
+    "relative_degree_over_Q_sqrt_2": 16,
+    "gaussian_residue": [
+      1,
+      2
+    ],
+    "reduced_group_orders_mod_97": [
+      4,
+      8
+    ]
+  },
+  "detector_normalization": {
+    "packed_order": 640,
+    "delta_exponent": 641,
+    "order_one_rescaling": -39,
+    "outer_rescaling": -15
+  },
+  "scope": "Finite norm anisotropy, mixed-valuation logic, and cyclotomic congruence arithmetic only.",
+  "prime_pattern_application_reproved": false,
+  "production_candidate": false,
+  "independent_human_review": false,
+  "sha256": {
+    "research/conceptual-simplification/NORM_PACKING.md": "f06e7516eb56a7998a3a6a49752e13b40c749696aeb46abd26cce36ac2c48870",
+    "research/conceptual-simplification/check_norm_packing.py": "20f23aae244facf485db3f0970fa8fbc656288775966d9d98900618674c268c3",
+    "manuscripts/quartic_v10.tex": "9559b22cc581346da1b3150fa9b8dfb62cfb048f6aac0b866448ae7ae879ff38"
+  }
+}
