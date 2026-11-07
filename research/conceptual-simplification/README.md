@@ -21,6 +21,8 @@ separate from the preserved combined-comparison pull-request branch.
 
 Read:
 
+- NORM_PACKING.md for a one-defect encoding of all mixed-precision local tests;
+
 - ELEMENTARY_SEPARATION.md for an elementary replacement proof and the largest-label strategy;
 
 - TWO_ROUTES.md for the latest primitive-divisor and global-defect deductions;
