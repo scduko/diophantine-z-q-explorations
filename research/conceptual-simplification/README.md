@@ -22,6 +22,7 @@ separate from the preserved combined-comparison pull-request branch.
 Read:
 
 - PROOF_FROM_THE_BOOK.md for the norm-one amplifier, finite-contact lemma and two-gap proof;
+- FINITE_CONTACT_PROOF_PLAN.md for the five-proposition proof of the remaining arithmetic lemma;
 - BOOK_PROOF_CHECKS.json and check_book_proof.py for exact finite checks of the elementary layer;
 
 - TWO_NORM_PACKING.md for the preferred two-precision norm architecture and ray-class flexibility lemma;
