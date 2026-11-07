@@ -310,6 +310,12 @@ There are now two distinct notions of a shorter proof.
 - Norm packing shortens the description of all local tests to one
   $K$-valued defect, at the cost of a larger fixed algebraic object.
 
+The follow-up `TWO_NORM_PACKING.md` improves the finite architecture by
+packing the order-one and order-forty groups separately. That avoids nine
+fortieth powers and lowers the packed orders to $9$ and $280$. The present
+one-norm construction remains the shortest literal one-defect statement,
+but it is no longer the preferred route to an explicit source.
+
 The remaining conceptual bottleneck is unchanged: the contact mechanism
 is still the finite existential substitute for testing denominator primes.
 Primitive divisors may eventually replace that mechanism for the Lucas
