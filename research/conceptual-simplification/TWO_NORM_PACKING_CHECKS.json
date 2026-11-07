@@ -1,0 +1,97 @@
+{
+  "status": "PASS_EXACT_FINITE_REGRESSIONS",
+  "groups": [
+    {
+      "count": 9,
+      "original_order": 1,
+      "packed_order": 9,
+      "outer_delta_exponent": -8,
+      "normalizing_delta_exponent": 10
+    },
+    {
+      "count": 7,
+      "original_order": 40,
+      "packed_order": 280,
+      "outer_delta_exponent": -6,
+      "normalizing_delta_exponent": 281
+    }
+  ],
+  "valuation_cases": 672,
+  "period_bases": [
+    {
+      "degree": 7,
+      "orbit_size": 18,
+      "discriminant": 4195872914689,
+      "coefficient_values": [
+        -18,
+        -16,
+        -14,
+        -13,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "nonzero_structure_constants": 329,
+      "structure_constants": 343
+    },
+    {
+      "degree": 9,
+      "orbit_size": 14,
+      "discriminant": 67675234241018881,
+      "coefficient_values": [
+        -14,
+        -12,
+        -11,
+        -10,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "nonzero_structure_constants": 603,
+      "structure_constants": 729
+    }
+  ],
+  "preliminary_K_coordinate_counts": {
+    "two_norms": {
+      "degree_9": 16,
+      "degree_7": 36
+    },
+    "two_norm_total": 52,
+    "current_test_squares_and_symmetric_trees": 65,
+    "scope": "Excludes weights, final factor evaluation, quotients, and optimization."
+  },
+  "cyclotomic_field": {
+    "conductor": 127,
+    "real_subfield_degree": 63,
+    "subfield_degrees": [
+      9,
+      7
+    ],
+    "frobenius_class": 3,
+    "ambient_order": 126,
+    "real_quotient_order": 63,
+    "gaussian_residue": [
+      1,
+      16
+    ],
+    "adjacent_norms_mod_127": [
+      2,
+      6
+    ]
+  },
+  "scope": "Normalization, valuation thresholds, and residue arithmetic only.",
+  "ray_flexibility_proved_in_prose": true,
+  "production_candidate": false,
+  "independent_human_review": false,
+  "sha256": {
+    "research/conceptual-simplification/TWO_NORM_PACKING.md": "6cb718b4e65b3e37b2218a78fbdd9c0188b810c6e21c60d6ea728e065d422baf",
+    "research/conceptual-simplification/check_two_norm_packing.py": "6fb40cc05efabfc33d609d4941f09a18ec69baaf63254584fa9e8cef0778cc21",
+    "manuscripts/quartic_v10.tex": "9559b22cc581346da1b3150fa9b8dfb62cfb048f6aac0b866448ae7ae879ff38",
+    "quartics/quartic-523-540/source-reproduction/builders/odd-product-asymmetric-source.cjs": "bf01e9b051c9f5f7db2b3a9b2e0122d0d37118b30422d1d2ef54f6c3c0829af1"
+  }
+}
