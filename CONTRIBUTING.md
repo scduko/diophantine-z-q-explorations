@@ -6,12 +6,14 @@ Mathematical corrections, dependency checks, reproducibility reports, and improv
 
 [Open an issue](https://github.com/elliotglazer/diophantine-z-q/issues/new) with:
 
-1. The manuscript version, exact commit or file hash, and the theorem, equation, TeX label, certificate step, or archive file under discussion. Distinguish the current Version 5, its three polynomials, the October 11 manuscript and historical revisions.
+1. The manuscript version, exact commit or file hash, and the theorem, equation, TeX label, certificate step, or archive file under discussion. Identify the edition listed as current in the README, the October 11 manuscript, or the particular historical revision.
 2. The exact step that needs justification or correction.
 3. The relevant hypotheses, definitions, and external theorem statements.
 4. A counterexample, calculation, proposed repair, or precise explanation of the missing implication, if available.
 
 Distinguish a false statement from an incomplete justification or an unclear exposition. Source-application checks should identify the actual theorem and verify its hypotheses, including fields, integral structures, normalizations, and quantifier order where relevant.
+
+Maintainers responding to a report must follow the [audit integration protocol](docs/audit-history/PROTOCOL.md). Record prior justification and current manuscript incorporation separately, with exact evidence and consuming passages. Do not describe a repair as new mathematics without inspecting the historical arguments. The [Issue 2 register](docs/audit-history/issue2/README.md) illustrates this distinction.
 
 ## Computation and formalization reports
 

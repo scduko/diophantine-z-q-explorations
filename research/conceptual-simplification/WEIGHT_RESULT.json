@@ -1,0 +1,10 @@
+{
+  "status": "passed_exact_algebra_checks",
+  "scope": "532-coordinate precursor; no final elimination claimed",
+  "coordinates": 532,
+  "residuals": 501,
+  "monomials": 34251,
+  "degree": 4,
+  "builderSha256": "0b7649bd7119fc3159483ea0556a085a2c2b9c165575722d0df58bb58fc86d15",
+  "polynomialSha256": "7d81bc3b49d7a8776cc272bd5c641c2df39e12fe2a2c36f2f243ed97baf80bdc"
+}

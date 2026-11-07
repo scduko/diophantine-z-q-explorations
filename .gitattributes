@@ -26,3 +26,4 @@ manuscripts/** -text
 docs/quartic-523-540/** -text
 scripts/check_odd_product.py -text
 docs/manuscript-revisions/version10/** -text
+docs/audit-history/** -text

@@ -36,6 +36,7 @@ jobs:
       - run: python -B docs/quartic-523-540/inventory.py validate
       - run: python -B docs/manuscript-revisions/version10/check.py
       - run: python -B docs/manuscript-revisions/version10/check_valuation.py
+      - run: python -B scripts/check_audit_history.py --self-test
       - run: python -B -m unittest discover -s docs/quartic-523-540 -p test_inventory.py -v
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
@@ -95,6 +96,7 @@ jobs:
         with:
           node-version: '24.22.1'
       - run: python scripts/check_construction.py --report build/construction-checks.json
+      - run: python -B docs/audit-history/issue3/replay_row_hash.py
       - run: python scripts/check_lean.py
       - name: Validate theorem inventory bindings and references
         run: python docs/theorem-application-audit/validate.py

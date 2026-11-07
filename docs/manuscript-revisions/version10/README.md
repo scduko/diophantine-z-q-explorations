@@ -2,6 +2,8 @@
 
 This revision addresses all nine points in [manvirjaswal's review](https://github.com/elliotglazer/diophantine-z-q/issues/2). It changes explanations, source applications and attribution. Every polynomial specification and coefficient file is unchanged from Version 9.
 
+The [historical follow-up](../../audit-history/issue2/README.md) distinguishes arguments already present in earlier research from explanations newly incorporated into this edition. In particular, the full valuation proof predates this revision; "missing" below refers to the printed derivation, not the entire research record.
+
 | Point | Revision |
 | --- | --- |
 | 1 | Credit Mazur's 1992 conjectures and projection observation; explicitly include Conjecture 2. |

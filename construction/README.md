@@ -32,6 +32,8 @@ Other JavaScript files are the local module dependencies of these entry points o
 
 ## What each check establishes
 
+The [Issue 3 reproducibility note](../docs/audit-history/issue3/README.md) gives every finite case range, the division-polynomial evaluation points, and the exact expression-hash serialization. It also documents the Version 4 quartic's terminal-row digest.
+
 | Check | Checked scope |
 | --- | --- |
 | Regeneration and structural audit | The saved expression is reproduced exactly from the pinned natural-polynomial input; source-node wiring, rational input conventions, recipe order, private witness blocks, and variable coverage are checked. |

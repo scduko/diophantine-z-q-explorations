@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-07",
+  "reviewed_current_commit": "8b1db08764b4935c37676ffa36f58ae084fa2ff0",
+  "files": [
+    {
+      "path": "construction/audit-rational-expression.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "9d7313e65e27996caa852fcf1102a4add3cda790c0ad1b2438c424c59e9870bc",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/bound-ordinary-integer-polynomial.py",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "d3c826dc4adbca3fa87bc5142ddee8d789e039eb316dbae10030120a161ae8ae",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/elliptic-division-polynomials.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "ce4d92950444eff9e590dfb3ecb9fa78e84fdbb7348891166f8f90b2300364d7",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/finite-polynomial-expressions.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "983a82e0a01d6bf7a19fef1d5f7e6a3a0493fb0b0592f283a073b0d147965a18",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/fixed-certificate-constants.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "de3ba41ede9447c4bdefa8534c6a478c0805580a770fdc1a72163d4573ecd932",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/integer-compiler-spec.txt",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "9a3a01fc78e922351cf4e6f47d1bc160c6f392d76279d71c9f0b9f2bc91d9eb1",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/integer-diophantine-compiler.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "c0c7e8f738fe9b7a07c82be1429e1924b772cd360058dc14f2b331555b1dc893",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/integer-halting-correctness-proof.txt",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "c7ed7faf156bfb6c769d2194335d84b807d32d89920b01dc07d986dd645f5fa3",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/multiplication-certificate.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "222975953ce1dd42de37ee6411e338a08eeb213e1f6c314627670f4d6a65011c",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/ordinary-integer-definition.json",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "4d639d4c44e69ea360d36d4591b8fdc82269d68b9363af0157d1e5c1174c7af6",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/ordinary-integer-definition.json.checks.json",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "038931df18514c3c4d49738892a8f4d85223b182ae2e34f1df7e1d0db95feb7a",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/ordinary-integer-polynomial-size-bounds.json",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "dfef3ff3da641814edf62f9992cb7a27aa0a770deccc95b084a65751289dbd9e",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/ordinary-integer-polynomial.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "a0f2c5915d479fbf4321e94c7d19b24b58eb8d618917a7b5a87fdb6943690846",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/precision-natural-polynomial.json",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "f3e163f5c60b972c98b48647274f956dd7d78428e27ddc0543574a5f18120b8c",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/rational-circuit-translator.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "d0c389916b10e8523877026dd89aa0163c1fe9fecc7a129f61231ff5683a4bbd",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/rational-elliptic-core.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "2c5ef4fa4a035e143fcce0a39eb9a98fccaf12f2f67569fe6af188552eb87bd6",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/rational-field-arithmetic.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "ea2f0f2bd5b1aafdb5acca92ae9f1e95cc6c2f3e00eb514e97fd2e70fcceafa0",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/rational-model-assembly.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "c581a45f68d4019452bf1c5c2b2f941a880b7a626a6e4ab83f3faae2d034bf2d",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/rational-polynomial-library.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "54c1488882c9ec67e59d6ea8a598b06f817eb136565af52a324c98ada8abce7e",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/variable-shift-polynomial-library.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "13c42d304e0bff268c382aab4cd8bd36f8e9d20c33d54b646ccdff92a0658767",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/verify-division-polynomials.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "9a97febb9cf8df081b16db2ce37f20772f3d473c584971a7abef3657796e42f8",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/verify-finite-polynomial-expressions.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "555564f5a215aabbfcddeffd01d161d6f4c4013d6e0743ac6b9243d8b42cf84f",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/verify-integer-compiler.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "891701e2b63df5ae0c0e300166cd8afabfe8277b6c2e4fba3826f8099f005907",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/verify-six-contact.js",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "45f3746130fa40ceed99a856e076d413485fcb52861256c4f16eb2f429a71910",
+      "identical_to_historical": true
+    },
+    {
+      "path": "construction/z-in-q-polynomial-size-bound-proof.txt",
+      "historical_commit": "97cec7fdd757d9a8e4f468151a47a6d3610fb2f2",
+      "sha256": "0ab03b116bab829cb9b8dbaea5ecd811d728ccf95345228a85a4fe37527b050e",
+      "identical_to_historical": true
+    },
+    {
+      "path": "quartics/quartic-4973/candidate-rows.json.gz",
+      "historical_commit": "5cb2c1997dde6e358f3c2fe9bbdb4b8f4c23bac6",
+      "sha256": "1399f9e16932863b4b46a8977061617ed2013ad0947f4b4b7742f07e8e30edd1",
+      "identical_to_historical": true
+    },
+    {
+      "path": "quartics/quartic-4973/certificate.jsonl.gz",
+      "historical_commit": "5cb2c1997dde6e358f3c2fe9bbdb4b8f4c23bac6",
+      "sha256": "81ca768459a13b76dbdf4bfe81e94fbab9ab99f14a5731f6b1a1b03e28c1df2b",
+      "identical_to_historical": true
+    },
+    {
+      "path": "quartics/quartic-4973/verify_certificate.py",
+      "historical_commit": "5cb2c1997dde6e358f3c2fe9bbdb4b8f4c23bac6",
+      "sha256": "b7180b01029b3d9364d94914401a4f1f66b190762f10b99a38e9fd4f49437ffe",
+      "identical_to_historical": true
+    }
+  ]
+}

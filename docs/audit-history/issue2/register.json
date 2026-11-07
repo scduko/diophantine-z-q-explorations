@@ -1,0 +1,345 @@
+{
+  "schema": 1,
+  "issue": "https://github.com/elliotglazer/diophantine-z-q/issues/2",
+  "date": "2026-11-07",
+  "scope": "Nine Issue 2 findings only. Structural validation does not prove mathematics or historical novelty.",
+  "manuscript": {
+    "path": "manuscripts/quartic_v10.tex",
+    "sha256": "9559b22cc581346da1b3150fa9b8dfb62cfb048f6aac0b866448ae7ae879ff38"
+  },
+  "responses": {
+    "path": "docs/manuscript-revisions/version10/responses.json",
+    "sha256": "051c23849cfc1d6ad084a15ea3bc7f0d038c3887759490688faddb1cc939e5cd"
+  },
+  "evidence": {
+    "valuation": {
+      "path": "docs/audit-history/issue2/evidence/valuation.md",
+      "sha256": "b9f620c44498b648cdaa529323a9ead32c89c46e54e81d5925fa65f60adcd118",
+      "origin": "drafts/z-in-q-candidate-preprint/review-v4b/supplements/formalization/z-in-q/ProofSources/outputs/multiplication-certificate-correctness-proof.txt",
+      "origin_sha256": "fb059d569484e38ca21648fd1cafcf7fd9d2f34f57c8293031a2e80e0f8429eb",
+      "origin_line_ranges": [
+        [
+          1,
+          2
+        ],
+        [
+          62,
+          89
+        ],
+        [
+          113,
+          142
+        ]
+      ]
+    },
+    "valuation-pin": {
+      "path": "docs/audit-history/issue2/evidence/valuation-pin.md",
+      "sha256": "8611c6e4e6d9693f39002e624b8bd05008a2d924e9825df061de3d14c26f8939",
+      "origin": "work/astra-final-ordinary-definition-001/SOURCE_PINS.json",
+      "origin_sha256": "bffc1e937dac017ffc7f6d6204982231a4e102de40a2f6e381be651e3a3d3dd0",
+      "origin_line_ranges": [
+        [
+          117,
+          124
+        ]
+      ]
+    },
+    "templates": {
+      "path": "docs/audit-history/issue2/evidence/templates.md",
+      "sha256": "b93967d44b73fed4b6fa0a8ae0cb82e4ce9e03a492acd762ef4fc31ef0a5db7f",
+      "origin": "work/astra-final-ordinary-definition-001/REPORT.md",
+      "origin_sha256": "154109196bdf6864d77542d52b5ae530fc25a5e54ec8fe486b17aff9f48ea345",
+      "origin_line_ranges": [
+        [
+          139,
+          151
+        ],
+        [
+          197,
+          206
+        ]
+      ]
+    },
+    "determinants": {
+      "path": "docs/audit-history/issue2/evidence/determinants.md",
+      "sha256": "648a83cfec26f3032dc75aa04be03870c1864173c60daed3ff082935db703bd5",
+      "origin": "work/astra-final-rc-limits-independent-001/REPORT.md",
+      "origin_sha256": "ce431d308658d891f8a90c1d79f006c1dfd52500341a1dc264e3fb7255ad6ec4",
+      "origin_line_ranges": [
+        [
+          159,
+          185
+        ]
+      ]
+    },
+    "corollaries": {
+      "path": "docs/audit-history/issue2/evidence/corollaries.md",
+      "sha256": "eef8f273b431f12d5c9374e6db08ea4a9ad4d8acce2b9164abca199ce1936b92",
+      "origin": "work/astra-four-corollaries-review-001/REPORT.md",
+      "origin_sha256": "cdd7d3a4c5c26d97aca27f30e1b41a0890a153c3bf249088ee8d054f644dbe24",
+      "origin_line_ranges": [
+        [
+          5,
+          10
+        ],
+        [
+          14,
+          34
+        ],
+        [
+          58,
+          78
+        ]
+      ]
+    },
+    "rc-provenance": {
+      "path": "docs/audit-history/issue2/evidence/rc-provenance.md",
+      "sha256": "4e27894fa661e16c6a4d8281c3f9b59e873798f8c52ff4b5884cd1fdc4adad4d",
+      "origin": "work/astra-final-rc-unconditional-closure-audit-001/REPORT.md",
+      "origin_sha256": "da18bc014ea500ed842950e31898cdf50ff7f9efcba68a0c66c7505e16255f72",
+      "origin_line_ranges": [
+        [
+          20,
+          27
+        ],
+        [
+          136,
+          152
+        ]
+      ]
+    },
+    "kato": {
+      "path": "docs/audit-history/issue2/evidence/kato.md",
+      "sha256": "7be7e0c3d3b3a4d0796d8c7c8b856251fecd164c7b0f7f7b24191a0f0c7c3284",
+      "origin": "work/quartic-version6-release/repository/docs/theorem-application-audit/evidence/applications.md",
+      "origin_sha256": "a8368a8ee209a53ca8d0ba424ef9727dfea3f0ba3155867d30e194e81b978038",
+      "origin_line_ranges": [
+        [
+          1,
+          5
+        ],
+        [
+          26,
+          60
+        ]
+      ]
+    },
+    "off-filter": {
+      "path": "docs/audit-history/issue2/evidence/off-filter.md",
+      "sha256": "a28679a3e8e9f25c5f65add0ae6b2e4117856a9570e2ca7e03a3c13cac616ce6",
+      "origin": "work/quartic-version6-release/repository/docs/theorem-application-audit/evidence/closure-batch-007.md",
+      "origin_sha256": "2215f8d893a5823dae13efb51283181978d9117adb849b7785ffe6261ff836f7",
+      "origin_line_ranges": [
+        [
+          17,
+          29
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "number": 1,
+      "historical_status": "attribution_or_history",
+      "historical_evidence": [
+        "corollaries"
+      ],
+      "assessment": "The projection deduction and 1995 source were reviewed earlier. Version 10 adds 1992 priority credit and the Conjecture 2 consequence; neither fills a missing premise of the earlier Conjecture 3 deduction.",
+      "manuscript_status": "incorporated",
+      "current_labels": [
+        "sec:main",
+        "cor:mazur"
+      ],
+      "application_spans": [
+        {
+          "start_line": 6650,
+          "end_line": 6700,
+          "sha256": "33ecf0be9fbc54fc02c5a636a6be39574f59464d2079d45a8d24e4426ae6140c"
+        }
+      ],
+      "assessment_scope": "Internal source comparison; not independent human review or whole-proof certification."
+    },
+    {
+      "number": 2,
+      "historical_status": "prior_justification_found",
+      "historical_evidence": [
+        "determinants",
+        "rc-provenance"
+      ],
+      "assessment": "The earlier review explicitly establishes generic rank at a known simple zero, regularity of the actual functional, and base change without nonunit t-disks. Version 10 places the general lemma and its application at the calibration.",
+      "manuscript_status": "incorporated",
+      "current_labels": [
+        "lem:v10-determinant-specialization",
+        "ex:arith-central-calibration",
+        "ex:arith-base-zero"
+      ],
+      "application_spans": [
+        {
+          "start_line": 4117,
+          "end_line": 4185,
+          "sha256": "ec1b2064b776012909c16ed53e43650aab3519c3f326c0a9e5b54b42edbdc16c"
+        }
+      ],
+      "assessment_scope": "Internal source comparison; not independent human review or whole-proof certification."
+    },
+    {
+      "number": 3,
+      "historical_status": "attribution_or_history",
+      "historical_evidence": [
+        "corollaries"
+      ],
+      "assessment": "The earlier audit constructs both many-one reductions. The correction identifies OpenAI's prior Turing-completeness result and specifies the stronger direction claimed here.",
+      "manuscript_status": "incorporated",
+      "current_labels": [
+        "cor:htp-degree"
+      ],
+      "application_spans": [
+        {
+          "start_line": 6733,
+          "end_line": 6785,
+          "sha256": "26a5c6ae40507578b4fb3a0bcc8a35a20f0b58abae9a27be5bec880865945439"
+        }
+      ],
+      "assessment_scope": "Internal source comparison; not independent human review or whole-proof certification."
+    },
+    {
+      "number": 4,
+      "historical_status": "prior_inputs_found_route_expanded",
+      "historical_evidence": [
+        "kato"
+      ],
+      "assessment": "Earlier applications.md explicitly records the stronger abelian-kernel condition and open commutator image, as well as the away-two supplied-class ideal and local cones. Version 10 expands and assembles the direct 1999 route and its precise comparison with the 2004 convention. This does not establish that every earlier audit repeated that complete assembly independently.",
+      "manuscript_status": "incorporated",
+      "current_labels": [
+        "sec:rc",
+        "ex:app-kato-system"
+      ],
+      "application_spans": [
+        {
+          "start_line": 12251,
+          "end_line": 12390,
+          "sha256": "cf0b3f3208c79059c77fe581704a79ccf64469b073c59026411c267bfa0f0016"
+        }
+      ],
+      "assessment_scope": "Internal source comparison; not independent human review or whole-proof certification."
+    },
+    {
+      "number": 5,
+      "historical_status": "prior_justification_found",
+      "historical_evidence": [
+        "valuation",
+        "templates"
+      ],
+      "assessment": "The original source writes conjugated primed ratios. The earlier audit identifies the saved pole square, shared witnesses and composition. Version 10 consolidates dispersed justifications into a printed dictionary; no earlier single complete dictionary is claimed.",
+      "manuscript_status": "incorporated",
+      "current_labels": [
+        "sec:mult",
+        "subsec:v10-template-dictionary"
+      ],
+      "application_spans": [
+        {
+          "start_line": 1251,
+          "end_line": 1261,
+          "sha256": "f902e5ca03dab3145c1c3e9f07ff00f558c9140502e35560bdaef52d45947cf5"
+        },
+        {
+          "start_line": 12054,
+          "end_line": 12240,
+          "sha256": "b1babc509ced939fb28a6a34f43823f06f4257b1b358b8da98b1d744ea987c41"
+        }
+      ],
+      "assessment_scope": "Internal source comparison; not independent human review or whole-proof certification."
+    },
+    {
+      "number": 6,
+      "historical_status": "prior_justification_found",
+      "historical_evidence": [
+        "valuation",
+        "valuation-pin"
+      ],
+      "assessment": "The November 3 source proves the common-group conclusion using the maximum product valuation. Its full hash matches the November 4 audit source pin. It does not assume every factor is a unit. Version 10 prints an alternative concise contradiction; it is not the first proof of the step.",
+      "manuscript_status": "incorporated",
+      "current_labels": [
+        "sec:mult"
+      ],
+      "application_spans": [
+        {
+          "start_line": 1281,
+          "end_line": 1309,
+          "sha256": "c0fc5f47fbab53c92fb17271980b591ea7b6d66f26f2599f8412e2d82a7580ad"
+        }
+      ],
+      "assessment_scope": "Internal source comparison; not independent human review or whole-proof certification."
+    },
+    {
+      "number": 7,
+      "historical_status": "attribution_or_history",
+      "historical_evidence": [
+        "rc-provenance"
+      ],
+      "assessment": "Frozen upstream RC sources were named in earlier research. Version 10 corrects local credit and the public preprint/section map. The existence of a source pin alone would not establish mathematical validity.",
+      "manuscript_status": "incorporated",
+      "current_labels": [
+        "sec:model",
+        "sec:height",
+        "sec:pole",
+        "sec:mult",
+        "hyp:RC",
+        "sec:rc",
+        "app:sources"
+      ],
+      "application_spans": [
+        {
+          "start_line": 1080,
+          "end_line": 1103,
+          "sha256": "1b589d9aaf2a4d947a79c0e6ab4423dc5d3e58d4c83a69495740f6c322abca0c"
+        },
+        {
+          "start_line": 11915,
+          "end_line": 11998,
+          "sha256": "4c6a6352b1ef62e7de12aee813bd857ce22edbbd8ef2702be6f3d313f4743542"
+        }
+      ],
+      "assessment_scope": "Internal source comparison; not independent human review or whole-proof certification."
+    },
+    {
+      "number": 8,
+      "historical_status": "attribution_or_history",
+      "historical_evidence": [],
+      "assessment": "This adds historical background. The Robinson, Poonen and Koenigsmann historical assertions are not new premises of the construction. No earlier audit of the newly added historical paragraph is claimed.",
+      "manuscript_status": "incorporated",
+      "current_labels": [
+        "sec:main"
+      ],
+      "application_spans": [
+        {
+          "start_line": 74,
+          "end_line": 81,
+          "sha256": "10fd53e4ef7f3331415fafd59d4965c49cdcb46512a77c8a4a02a44ea56b1fb6"
+        }
+      ],
+      "assessment_scope": "Internal source comparison; not independent human review or whole-proof certification."
+    },
+    {
+      "number": 9,
+      "historical_status": "prior_justification_found",
+      "historical_evidence": [
+        "off-filter"
+      ],
+      "assessment": "The earlier audit explicitly distinguishes total-label conditions from individual-prime filtering and records that the seed prime need not satisfy the individual filter. The appendix already supplied the scope; Version 10 makes the consuming lemma explicit.",
+      "manuscript_status": "incorporated",
+      "current_labels": [
+        "ex:sec7-ksplit-seed",
+        "ex:app-nonempty-seeds"
+      ],
+      "application_spans": [
+        {
+          "start_line": 2750,
+          "end_line": 2796,
+          "sha256": "314d929996efe9b4e417e4fcdb5ed10f329676d48d54ddef93bcfae35748ec3e"
+        }
+      ],
+      "assessment_scope": "Internal source comparison; not independent human review or whole-proof certification."
+    }
+  ]
+}
