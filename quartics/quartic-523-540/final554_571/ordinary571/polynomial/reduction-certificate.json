@@ -1,0 +1,92 @@
+{
+  "schema": "brox-reduction-v1",
+  "inputSha256": "57161b0d678fd468e4084c72a7b3e954af836d4934148f8451c8d0f3249892f7",
+  "fixedParameter": "S = 3^(2^26)",
+  "operations": [
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-0",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-1",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-10",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-11",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-12",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-13",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-14",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-15",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-16",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-2",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-3",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-4",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-5",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-6",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-7",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-8",
+      "multiplier": "-1"
+    },
+    {
+      "kind": "normalize",
+      "residual": "constant-chain-9",
+      "multiplier": "-1"
+    }
+  ]
+}

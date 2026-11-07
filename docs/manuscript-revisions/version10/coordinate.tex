@@ -1,0 +1,30 @@
+\begin{lemma}[Determinant specialization with no dimension jump]
+\label{lem:v10-determinant-specialization}
+Let $A$ be a discrete valuation ring with uniformizer $t$, fraction
+field $F$, and residue field $k$. Let $C$ be a bounded finite free
+complex over $A$. If
+\[
+ \dim_F H^i(C\otimes_A F)=\dim_k H^i(C\otimes_A k)
+ \quad\text{for every }i,
+\]
+then its cohomology is free and commutes with reduction modulo $t$.
+In particular, when the only nonzero dimensions are $(1,1)$ in
+degrees one and two, the coordinate of an actual cycle and an actual
+closed functional in $\det^{-1}C$ is regular at $t=0$ and specializes
+to the coordinate of their central tensor in the specialized retained
+determinant basis.
+\end{lemma}
+\begin{proof}
+Smith reduction splits the bounded free complex into free summands with
+zero differential and two-term summands $[A\xrightarrow{t^r u}A]$,
+where $u$ is a unit and $r\ge0$. A summand with $r>0$ contributes
+one extra residue-field cohomology dimension in each of two adjacent
+degrees and contributes none over $F$. The dimension equalities
+therefore exclude every such summand. The remaining two-term summands
+are contractible over $A$. On the zero-differential summands both
+cohomology and the class-functional tensor commute with base change.
+The determinant identifications include the same contractible
+summands before and after reduction, with their unit differentials;
+there is no independent rescaling of the retained basis.
+\end{proof}
+

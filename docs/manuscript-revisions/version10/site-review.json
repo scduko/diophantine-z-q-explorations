@@ -1,0 +1,12 @@
+{
+  "application_reviews": {
+    "A023": "Kato rational divisibility: preserve the away-from-two localization and actual supplied class; add the published 1999 route and exact local-complex comparison in the cited appendix.",
+    "A047": "Mazur projection: preserve the finite-component contradiction, credit its origin, and add the consequence for finite simplicial homotopy type. The 1995 source was checked; the original 1992 scan was not obtained.",
+    "A051": "Kato norm relation: the Euler-system relation is unchanged. The intersecting context now contains the new prime-two source comparison. The additional stronger G_Qab hypothesis follows from the same open SL2 subgroup.",
+    "A057": "Dirichlet application: the chosen congruence conditions and finite exclusions are unchanged. New text checks by reciprocity that the chosen prime lies outside the square filter; the preceding no-seed calculation explicitly covers that case.",
+    "A065": "The CM j-invariant argument is unchanged. The intersecting preceding context now gives the OpenAI provenance and identifies the restricted E_ell theorem."
+  },
+  "reviewer": "Codex internal source review",
+  "revision_sha256": "842306b6c0e4fa4680f9403f21153869bd663f78fef822337d974581e50ce9ed",
+  "scope": "Five inherited application nodes whose recorded context intersects a revision edit; no claim of a new independent whole-proof audit."
+}

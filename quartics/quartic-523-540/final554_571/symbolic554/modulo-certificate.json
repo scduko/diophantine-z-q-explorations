@@ -1,0 +1,2081 @@
+{
+  "baselineSha256": "6573ea64f0d31fff9e1b0e2c8c249efe86cdb6b3cc2a065a470b383c42a1f4de",
+  "operations": [
+    {
+      "coordinate": 489,
+      "name": "detector2.delta3.quadratic",
+      "pivot": 445,
+      "replacement": [
+        {
+          "monomial": [
+            37,
+            37
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            37,
+            481
+          ],
+          "sPower": 0,
+          "coefficient": "64"
+        },
+        {
+          "monomial": [
+            37,
+            482
+          ],
+          "sPower": 0,
+          "coefficient": "-1/2"
+        },
+        {
+          "monomial": [
+            481,
+            481
+          ],
+          "sPower": 0,
+          "coefficient": "1024"
+        },
+        {
+          "monomial": [
+            481,
+            482
+          ],
+          "sPower": 0,
+          "coefficient": "-16"
+        }
+      ],
+      "changes": [
+        {
+          "row": 446,
+          "result": [
+            {
+              "monomial": [
+                37,
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "3"
+            },
+            {
+              "monomial": [
+                481,
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "96"
+            },
+            {
+              "monomial": [
+                482,
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "-3"
+            },
+            {
+              "monomial": [
+                483,
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                488
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            }
+          ],
+          "multiples": [
+            {
+              "row": 439,
+              "factor": [
+                {
+                  "monomial": [
+                    490
+                  ],
+                  "sPower": 0,
+                  "coefficient": "-1"
+                }
+              ]
+            },
+            {
+              "row": 438,
+              "factor": [
+                {
+                  "monomial": [
+                    490
+                  ],
+                  "sPower": 0,
+                  "coefficient": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "coordinate": 442,
+      "name": "detector1.delta3.quadratic",
+      "pivot": 396,
+      "replacement": [
+        {
+          "monomial": [
+            434,
+            434
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            434,
+            435
+          ],
+          "sPower": 0,
+          "coefficient": "-2"
+        }
+      ],
+      "changes": [
+        {
+          "row": 397,
+          "result": [
+            {
+              "monomial": [
+                434,
+                443
+              ],
+              "sPower": 0,
+              "coefficient": "12"
+            },
+            {
+              "monomial": [
+                435,
+                443
+              ],
+              "sPower": 0,
+              "coefficient": "-48"
+            },
+            {
+              "monomial": [
+                436,
+                443
+              ],
+              "sPower": 0,
+              "coefficient": "64"
+            },
+            {
+              "monomial": [
+                441
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                443
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            }
+          ],
+          "multiples": [
+            {
+              "row": 390,
+              "factor": [
+                {
+                  "monomial": [
+                    443
+                  ],
+                  "sPower": 0,
+                  "coefficient": "-64"
+                }
+              ]
+            },
+            {
+              "row": 389,
+              "factor": [
+                {
+                  "monomial": [
+                    443
+                  ],
+                  "sPower": 0,
+                  "coefficient": "32"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "coordinate": 395,
+      "name": "detector0.delta3.quadratic",
+      "pivot": 347,
+      "replacement": [
+        {
+          "monomial": [
+            37,
+            37
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            37,
+            390
+          ],
+          "sPower": 0,
+          "coefficient": "-1/2"
+        }
+      ],
+      "changes": [
+        {
+          "row": 348,
+          "result": [
+            {
+              "monomial": [
+                37,
+                396
+              ],
+              "sPower": 0,
+              "coefficient": "3"
+            },
+            {
+              "monomial": [
+                390,
+                396
+              ],
+              "sPower": 0,
+              "coefficient": "-3"
+            },
+            {
+              "monomial": [
+                391,
+                396
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                394
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                396
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            }
+          ],
+          "multiples": [
+            {
+              "row": 343,
+              "factor": [
+                {
+                  "monomial": [
+                    396
+                  ],
+                  "sPower": 0,
+                  "coefficient": "-1"
+                }
+              ]
+            },
+            {
+              "row": 342,
+              "factor": [
+                {
+                  "monomial": [
+                    396
+                  ],
+                  "sPower": 0,
+                  "coefficient": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "coordinate": 393,
+      "name": "detector0.Adelta4.square.quadratic",
+      "pivot": 345,
+      "replacement": [
+        {
+          "monomial": [
+            37,
+            37
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            37,
+            390
+          ],
+          "sPower": 0,
+          "coefficient": "-1"
+        },
+        {
+          "monomial": [
+            390,
+            390
+          ],
+          "sPower": 0,
+          "coefficient": "1/4"
+        }
+      ],
+      "changes": [
+        {
+          "row": 346,
+          "result": [
+            {
+              "monomial": [],
+              "sPower": 0,
+              "coefficient": "1952786"
+            },
+            {
+              "monomial": [
+                37
+              ],
+              "sPower": 0,
+              "coefficient": "-9763930"
+            },
+            {
+              "monomial": [
+                37,
+                37
+              ],
+              "sPower": 0,
+              "coefficient": "15622288"
+            },
+            {
+              "monomial": [
+                37,
+                390
+              ],
+              "sPower": 0,
+              "coefficient": "-19527860"
+            },
+            {
+              "monomial": [
+                37,
+                394
+              ],
+              "sPower": 0,
+              "coefficient": "-32"
+            },
+            {
+              "monomial": [
+                390
+              ],
+              "sPower": 0,
+              "coefficient": "3905572"
+            },
+            {
+              "monomial": [
+                390,
+                390
+              ],
+              "sPower": 0,
+              "coefficient": "9763930"
+            },
+            {
+              "monomial": [
+                390,
+                391
+              ],
+              "sPower": 0,
+              "coefficient": "-1952786"
+            },
+            {
+              "monomial": [
+                390,
+                394
+              ],
+              "sPower": 0,
+              "coefficient": "76265"
+            },
+            {
+              "monomial": [
+                392,
+                394
+              ],
+              "sPower": 0,
+              "coefficient": "1205412"
+            }
+          ],
+          "multiples": [
+            {
+              "row": 343,
+              "factor": [
+                {
+                  "monomial": [
+                    390
+                  ],
+                  "sPower": 0,
+                  "coefficient": "1952786"
+                }
+              ]
+            },
+            {
+              "row": 342,
+              "factor": [
+                {
+                  "monomial": [
+                    37
+                  ],
+                  "sPower": 0,
+                  "coefficient": "7811144"
+                },
+                {
+                  "monomial": [
+                    390
+                  ],
+                  "sPower": 0,
+                  "coefficient": "-7811144"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "coordinate": 551,
+      "name": "scalar.leaf1.quadratic",
+      "pivot": 517,
+      "replacement": [
+        {
+          "monomial": [
+            141,
+            531
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "changes": [
+        {
+          "row": 522,
+          "result": [
+            {
+              "monomial": [
+                176,
+                531
+              ],
+              "sPower": 0,
+              "coefficient": "1/2"
+            },
+            {
+              "monomial": [
+                300,
+                531
+              ],
+              "sPower": 0,
+              "coefficient": "-41239624"
+            },
+            {
+              "monomial": [
+                300,
+                556
+              ],
+              "sPower": 0,
+              "coefficient": "82479248"
+            },
+            {
+              "monomial": [
+                528,
+                531
+              ],
+              "sPower": 0,
+              "coefficient": "-10525300"
+            },
+            {
+              "monomial": [
+                528,
+                556
+              ],
+              "sPower": 0,
+              "coefficient": "21050600"
+            },
+            {
+              "monomial": [
+                529,
+                531
+              ],
+              "sPower": 0,
+              "coefficient": "-3814850"
+            },
+            {
+              "monomial": [
+                529,
+                556
+              ],
+              "sPower": 0,
+              "coefficient": "7629700"
+            },
+            {
+              "monomial": [
+                530,
+                531
+              ],
+              "sPower": 0,
+              "coefficient": "-22885568"
+            },
+            {
+              "monomial": [
+                530,
+                556
+              ],
+              "sPower": 0,
+              "coefficient": "45771136"
+            },
+            {
+              "monomial": [
+                531
+              ],
+              "sPower": 0,
+              "coefficient": "-15790830"
+            },
+            {
+              "monomial": [
+                545,
+                545
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                555
+              ],
+              "sPower": 0,
+              "coefficient": "-1/2"
+            },
+            {
+              "monomial": [
+                556
+              ],
+              "sPower": 0,
+              "coefficient": "31581660"
+            }
+          ],
+          "multiples": [
+            {
+              "row": 521,
+              "factor": [
+                {
+                  "monomial": [
+                    531
+                  ],
+                  "sPower": 0,
+                  "coefficient": "-1/2"
+                }
+              ]
+            },
+            {
+              "row": 128,
+              "factor": [
+                {
+                  "monomial": [
+                    531
+                  ],
+                  "sPower": 0,
+                  "coefficient": "-1/2"
+                }
+              ]
+            },
+            {
+              "row": 497,
+              "factor": [
+                {
+                  "monomial": [
+                    555
+                  ],
+                  "sPower": 0,
+                  "coefficient": "-1/2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "shear",
+      "free": 503,
+      "shears": [
+        {
+          "coordinate": 456,
+          "factor": "1"
+        },
+        {
+          "coordinate": 409,
+          "factor": "1"
+        },
+        {
+          "coordinate": 345,
+          "factor": "-1"
+        }
+      ]
+    },
+    {
+      "coordinate": 503,
+      "name": "detector2.E1.high.0.quadratic",
+      "pivot": 459,
+      "replacement": [
+        {
+          "monomial": [
+            347,
+            490
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            349,
+            499
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            351,
+            500
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            353,
+            501
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            355,
+            502
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "changes": [
+        {
+          "row": 297,
+          "result": [
+            {
+              "monomial": [
+                176,
+                335
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                177,
+                336
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                188,
+                335
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                189,
+                336
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                194,
+                335
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                195,
+                336
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                206,
+                335
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                207,
+                336
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                218,
+                335
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                219,
+                336
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                230,
+                319
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                231,
+                320
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                242,
+                319
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                243,
+                320
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                248,
+                319
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                249,
+                320
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                260,
+                319
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                261,
+                320
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                272,
+                319
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                273,
+                320
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                307,
+                329
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                307,
+                333
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                308,
+                330
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                308,
+                334
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                309,
+                329
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                309,
+                333
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                310,
+                330
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                310,
+                334
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                311,
+                329
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                311,
+                333
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                312,
+                330
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                312,
+                334
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                313,
+                323
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                313,
+                325
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                313,
+                327
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                313,
+                331
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                314,
+                324
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                314,
+                326
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                314,
+                328
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                314,
+                332
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                315,
+                329
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                315,
+                333
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                316,
+                330
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                316,
+                334
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                317,
+                323
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                317,
+                325
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                317,
+                327
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                317,
+                331
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                318,
+                324
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                318,
+                326
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                318,
+                328
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                318,
+                332
+              ],
+              "sPower": 0,
+              "coefficient": "-8"
+            },
+            {
+              "monomial": [
+                345
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                347,
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                349,
+                499
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                351,
+                500
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                353,
+                501
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                355,
+                502
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            }
+          ],
+          "multiples": []
+        },
+        {
+          "row": 361,
+          "result": [
+            {
+              "monomial": [
+                347,
+                396
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                347,
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                349,
+                405
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                349,
+                499
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                351,
+                406
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                351,
+                500
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                353,
+                407
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                353,
+                501
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                355,
+                408
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                355,
+                502
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                409
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            }
+          ],
+          "multiples": []
+        },
+        {
+          "row": 410,
+          "result": [
+            {
+              "monomial": [
+                347,
+                443
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                347,
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                349,
+                452
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                349,
+                499
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                351,
+                453
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                351,
+                500
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                353,
+                454
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                353,
+                501
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                355,
+                455
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                355,
+                502
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                456
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            }
+          ],
+          "multiples": []
+        }
+      ]
+    },
+    {
+      "kind": "shear",
+      "free": 504,
+      "shears": [
+        {
+          "coordinate": 457,
+          "factor": "1"
+        },
+        {
+          "coordinate": 410,
+          "factor": "1"
+        },
+        {
+          "coordinate": 346,
+          "factor": "-1"
+        }
+      ]
+    },
+    {
+      "coordinate": 504,
+      "name": "detector2.E1.high.1.quadratic",
+      "pivot": 460,
+      "replacement": [
+        {
+          "monomial": [
+            348,
+            490
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            350,
+            499
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            352,
+            500
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            354,
+            501
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        },
+        {
+          "monomial": [
+            356,
+            502
+          ],
+          "sPower": 0,
+          "coefficient": "1"
+        }
+      ],
+      "changes": [
+        {
+          "row": 298,
+          "result": [
+            {
+              "monomial": [
+                176,
+                336
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                177,
+                335
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                188,
+                336
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                189,
+                335
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                194,
+                336
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                195,
+                335
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                206,
+                336
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                207,
+                335
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                218,
+                336
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                219,
+                335
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                230,
+                320
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                231,
+                319
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                242,
+                320
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                243,
+                319
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                248,
+                320
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                249,
+                319
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                260,
+                320
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                261,
+                319
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                272,
+                320
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                273,
+                319
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                307,
+                330
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                307,
+                334
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                308,
+                329
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                308,
+                333
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                309,
+                330
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                309,
+                334
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                310,
+                329
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                310,
+                333
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                311,
+                330
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                311,
+                334
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                312,
+                329
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                312,
+                333
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                313,
+                324
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                313,
+                326
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                313,
+                328
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                313,
+                332
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                314,
+                323
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                314,
+                325
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                314,
+                327
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                314,
+                331
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                315,
+                330
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                315,
+                334
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                316,
+                329
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                316,
+                333
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                317,
+                324
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                317,
+                326
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                317,
+                328
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                317,
+                332
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                318,
+                323
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                318,
+                325
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                318,
+                327
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                318,
+                331
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                346
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                348,
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                350,
+                499
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                352,
+                500
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                354,
+                501
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                356,
+                502
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            }
+          ],
+          "multiples": []
+        },
+        {
+          "row": 362,
+          "result": [
+            {
+              "monomial": [
+                348,
+                396
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                348,
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                350,
+                405
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                350,
+                499
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                352,
+                406
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                352,
+                500
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                354,
+                407
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                354,
+                501
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                356,
+                408
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                356,
+                502
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                410
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            }
+          ],
+          "multiples": []
+        },
+        {
+          "row": 411,
+          "result": [
+            {
+              "monomial": [
+                348,
+                443
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                348,
+                490
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                350,
+                452
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                350,
+                499
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                352,
+                453
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                352,
+                500
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                354,
+                454
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                354,
+                501
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                356,
+                455
+              ],
+              "sPower": 0,
+              "coefficient": "1"
+            },
+            {
+              "monomial": [
+                356,
+                502
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            },
+            {
+              "monomial": [
+                457
+              ],
+              "sPower": 0,
+              "coefficient": "-1"
+            }
+          ],
+          "multiples": []
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "coordinates": 554,
+    "residuals": 523,
+    "degree": 2
+  },
+  "scanned": 834,
+  "elapsedSeconds": 6.689727067947388,
+  "affineRounds": [
+    0
+  ],
+  "affineElapsedSeconds": 0.05065608024597168
+}

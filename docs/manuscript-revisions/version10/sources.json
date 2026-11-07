@@ -1,0 +1,71 @@
+[
+  {
+    "bytes": 4319206,
+    "id": "kato1999",
+    "scope": "Published original, pp.317-318: 0.6(i)-(iv), Example 0.6.2, Theorem 0.8. The all-inverted-primes kernel is compared explicitly to the 2004 j_* convention in the new text.",
+    "sha256": "483dc18c56b2fe9cfac4e37f2e6594399625c3f0ea98a05bb69116377c67fc06",
+    "url": "https://www.jstage.jst.go.jp/article/kodaimath1978/22/3/22_3_313/_pdf/-char/en",
+    "workspace_path": "work/astra-kato-primary-001/kato-1999.pdf"
+  },
+  {
+    "bytes": 18010813,
+    "id": "kato",
+    "scope": "Published original, Sections12.1 and13.1-13.5; p.226 inspected visually. Hypothesis(v) alone is not used as a substitute for the stronger 1999 hypothesis.",
+    "sha256": "3c6e14b11fa60262db8aff782ce3cf4d83e9100c0be83621a7e4ce502cec605d",
+    "url": "https://www.numdam.org/article/AST_2004__295__117_0.pdf",
+    "workspace_path": "work/kato-2004.pdf"
+  },
+  {
+    "bytes": 1552870,
+    "id": "mazur1995",
+    "scope": "Published original, pp.165-166. Conjectures2,3, variety convention, projection obstruction; original1992 publication credited via this update and publisher metadata.",
+    "sha256": "94490a944040d9589595995389d499661a8facab8398af062d0c52e34d71aded",
+    "url": "https://www.numdam.org/article/AST_1995__228__165_0.pdf",
+    "workspace_path": "work/astra-mazur-corollary-001/primary/mazur-1995.pdf"
+  },
+  {
+    "bytes": 1021040,
+    "id": "robinson1949",
+    "scope": "Published scan, Theorem3.1 pp.106-109. Historical attribution only; no new arithmetic input.",
+    "sha256": "607561f2b687c685ab929a9dbe975546e0150051c363466c6f595c8fead2b79c",
+    "url": "https://www.math.umd.edu/~laskow/713/Spring17/juliarobinson.pdf",
+    "workspace_path": "work/quartic-version10-release/sources/robinson1949.pdf"
+  },
+  {
+    "bytes": 283698,
+    "id": "poonen2009",
+    "scope": "Author version with April2019 correction, Theorems3.1 and4.1. Historical attribution only; final published typesetting not compared.",
+    "sha256": "07ad45edb2dfb46cafad7d4613cb44a9a72bd75cdc969ac51d024683f3df8b9a",
+    "url": "https://math.mit.edu/~poonen/papers/ae.pdf",
+    "workspace_path": "work/quartic-version10-release/sources/poonen2009.pdf"
+  },
+  {
+    "bytes": 701017,
+    "id": "openaihtp",
+    "scope": "Unpublished attribution source only. Exact revision4eaee87548250b2682affda7d05d947c05554bae. Main theorem or corollary inspected; not assumed as a new arithmetic premise.",
+    "sha256": "f79236c22b981fe66aaf3ba494a466bf26db212117db47d95a31bf0315af2b30",
+    "url": "https://raw.githubusercontent.com/openai/math/4eaee87548250b2682affda7d05d947c05554bae/preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/main.pdf",
+    "workspace_path": "work/quartic-version10-release/sources/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026-main.pdf"
+  },
+  {
+    "bytes": 893027,
+    "id": "openaipointwise",
+    "scope": "Unpublished attribution source only. Exact revision4eaee87548250b2682affda7d05d947c05554bae. Main theorem or corollary inspected; not assumed as a new arithmetic premise.",
+    "sha256": "df42f33f68fbef7766e5679b298e68e910157f78f2266889fb757824b9e44939",
+    "url": "https://raw.githubusercontent.com/openai/math/4eaee87548250b2682affda7d05d947c05554bae/preprints/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026/paper.pdf",
+    "workspace_path": "work/quartic-version10-release/sources/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026-paper.pdf"
+  },
+  {
+    "bytes": 1087540,
+    "id": "openaigoldfeld",
+    "scope": "Unpublished attribution source only. Exact revision4eaee87548250b2682affda7d05d947c05554bae. Main theorem or corollary inspected; not assumed as a new arithmetic premise.",
+    "sha256": "c417858c9fe566daacb7738741dc66e211eea148b3da587eb5ee68eaad208d64",
+    "url": "https://raw.githubusercontent.com/openai/math/4eaee87548250b2682affda7d05d947c05554bae/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026/paper.pdf",
+    "workspace_path": "work/quartic-version10-release/sources/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026-paper.pdf"
+  },
+  {
+    "id": "mazur1992",
+    "scope": "Publisher metadata verified. Full1992 scan was blocked by HTTP403; not claimed inspected. The conjecture statements and projection observation are checked in the published1995 update, pp.165-166. Historical attribution only.",
+    "url": "https://doi.org/10.1080/10586458.1992.10504244"
+  }
+]

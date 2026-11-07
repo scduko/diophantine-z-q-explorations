@@ -1,0 +1,6 @@
+{
+  "schema": "brox-reduction-v1",
+  "inputSha256": "40cdeb70bc4e2a6973e952fd2afefa6816002521b828811c255391151abe6334",
+  "fixedParameter": "S = 3^(2^26)",
+  "operations": []
+}

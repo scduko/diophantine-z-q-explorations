@@ -1,0 +1,98 @@
+{
+  "status": "accepted relative to inherited arithmetic inputs",
+  "primary": "Odd-index product-height architecture; full logarithms retained; exact height identity; seven projection-preserving eliminations",
+  "optional": "Additionally asymmetric formal-depth refinement; prime separation deduced from inspected source count; nine projection-preserving eliminations",
+  "independentChecks": "Fresh upstream gate/compiler/SOS checks for both precursors; both final verify_all.py scripts replayed successfully",
+  "specialization": "S=3^(2^26); individual coefficient monomials nonzero, no specialization cancellation",
+  "scope": "These are new soundness/completeness constructions, not full-witness projection equivalences to the earlier source; inherited arithmetic dependencies remain",
+  "results": {
+    "final554_571": {
+      "symbolic554": {
+        "coordinates": 554,
+        "compiledCoordinatesBeforeFreeOmission": 554,
+        "residuals": 523,
+        "activeCoordinates": 554,
+        "ordinaryCoordinateMonomials": 33440,
+        "parameterCoefficientTerms": 33440,
+        "degree": 4,
+        "maxSPower": 2,
+        "integerCoefficients": true,
+        "sIndependentCoefficientGcd": 1,
+        "polynomialSha256": "0a57e9be2cea1068bfbe211422e5123a2b045117e11a84cf8bdef207d5562f8e",
+        "maximumOrdinaryCoefficientBits": null
+      },
+      "ordinary571": {
+        "coordinates": 571,
+        "compiledCoordinatesBeforeFreeOmission": 571,
+        "residuals": 540,
+        "activeCoordinates": 571,
+        "ordinaryCoordinateMonomials": 33490,
+        "parameterCoefficientTerms": 33490,
+        "degree": 4,
+        "maxSPower": 0,
+        "integerCoefficients": true,
+        "sIndependentCoefficientGcd": 1,
+        "polynomialSha256": "82cc95d0731e7c33b0e9037a3a3700935097c37ed79378bc0ebbcfe206858397",
+        "maximumOrdinaryCoefficientBits": 3247
+      }
+    },
+    "final523_540": {
+      "symbolic523": {
+        "coordinates": 523,
+        "compiledCoordinatesBeforeFreeOmission": 523,
+        "residuals": 492,
+        "activeCoordinates": 523,
+        "ordinaryCoordinateMonomials": 35163,
+        "parameterCoefficientTerms": 35163,
+        "degree": 4,
+        "maxSPower": 2,
+        "integerCoefficients": true,
+        "sIndependentCoefficientGcd": 1,
+        "polynomialSha256": "6a3685980de4512bdc7f3a781d0c0d4b32cce5829ec83f03f318264931bdbbe3",
+        "maximumOrdinaryCoefficientBits": null
+      },
+      "ordinary540": {
+        "coordinates": 540,
+        "compiledCoordinatesBeforeFreeOmission": 540,
+        "residuals": 509,
+        "activeCoordinates": 540,
+        "ordinaryCoordinateMonomials": 35213,
+        "parameterCoefficientTerms": 35213,
+        "degree": 4,
+        "maxSPower": 0,
+        "integerCoefficients": true,
+        "sIndependentCoefficientGcd": 1,
+        "polynomialSha256": "b14e76dda63ea4bb8b012a89a4f052c73e19877b451633df6ee9c198b8d83571",
+        "maximumOrdinaryCoefficientBits": 3247
+      }
+    }
+  },
+  "sha256": {
+    "scales/odd_product_height.tex": "6a0c79bd35e9d22fd864d4949657295dcce65d582c2914f4df2984c94a6c4d46",
+    "integer_encoding/ODD_ROOT_COMPLETENESS.md": "9a2fb999d16b952ac04d01684eb8989a631a56b57910244638953cb700d856ac",
+    "odd_chart/patch.py": "d4cab00ad99a2d6a5d8f87f30da726dc48d9149b88919ca452cca63e05e8f02b",
+    "odd_product/patch_product_scales.py": "e230ff93e0ce0e22da56c551584d4c25525b8a7ce7987e997e8baa94fe45e6bf",
+    "integer_encoding/odd_scalar_patch.py": "54aab6f4e4b93c99659ec07b0f860b7546bf7b417962b8108d28276489b284f8",
+    "odd_product/integrated/build_source.cjs": "868498d02f2061250c9dcd03870e589e0e0cfcddca87b1322f4c7288bfe0e162",
+    "odd_product/integrated_asymmetric/build_source.cjs": "bf01e9b051c9f5f7db2b3a9b2e0122d0d37118b30422d1d2ef54f6c3c0829af1",
+    "logarithms/PROOF.md": "ebe78e6ec6205a902d376c1320da5b1298faaf9968b7cf307d6c07d714602d90",
+    "audit/odd-product-review.md": "43c859487b12ed106f483aed0bb0b480baddb80234d6d16f9b5c5aa10d686d57",
+    "audit/log-depth-review.md": "7b8bae5db6c74accf0cb8afda8fcbb14abe8b913e0548601e02ada97b8efc1d9",
+    "audit/odd561-independent-check.json": "ca5f6d702dd71a114619362e30fe55281847f39f90e6dab73e1db02207289719",
+    "audit/odd532-independent-check.json": "4fdcc79f4a715cc52a01c51bd45c707cea05388836f807e3e67c1e60886336fb",
+    "odd_product/final554_571/verify_all.py": "244fdf16c3c4696f6d12ba35eb18135f8e82fd7105b9f92d674d256210306985",
+    "odd_product/final554_571/verify_elimination.py": "4a7a8acfbd786a4c805a044341eef9f61d501e5fe519864c18d4b616234ec08a",
+    "odd_product/final554_571/MANIFEST.json": "e19a22e1970381f01b99f2b271c5fdd16736e9e3e0877f5b7133582d2cb04f1a",
+    "odd_product/final554_571/SUMMARY.json": "b8476b2636e775d1ed7e55d6c4e1ad063e7b8e82798bcffd2a7650fb8dfef72d",
+    "odd_product/final554_571/symbolic554/polynomial/polynomial.json": "0a57e9be2cea1068bfbe211422e5123a2b045117e11a84cf8bdef207d5562f8e",
+    "odd_product/final554_571/symbolic554/modulo-certificate.json": "09202f16d0038709d755faf471ba5135dc72a26d3eb1b8ec837c2fb8a588f4f9",
+    "odd_product/final554_571/ordinary571/polynomial/polynomial.json": "82cc95d0731e7c33b0e9037a3a3700935097c37ed79378bc0ebbcfe206858397",
+    "odd_product/final523_540/verify_all.py": "1154ce38f1c4d812aa14f328f8afc1681c649829a28e3b714ed579b9fa137347",
+    "odd_product/final523_540/verify_elimination.py": "cf1814a889f9b6822cf6f9f1438dea9a0ee4323ad03b392867ee36265369e7c2",
+    "odd_product/final523_540/MANIFEST.json": "0bda5a3071f5167957aecc90fccd780a2ad526f24374995d0fc3ff275d092165",
+    "odd_product/final523_540/SUMMARY.json": "1479d41bcfe5a394b331b873f93d60711a4343c7d397e017601f358cf4a32522",
+    "odd_product/final523_540/symbolic523/polynomial/polynomial.json": "6a3685980de4512bdc7f3a781d0c0d4b32cce5829ec83f03f318264931bdbbe3",
+    "odd_product/final523_540/symbolic523/modulo-certificate.json": "993f4fec1e26522f160be200231f9de67594c3f51d53529b4023dc00251b9796",
+    "odd_product/final523_540/ordinary540/polynomial/polynomial.json": "b14e76dda63ea4bb8b012a89a4f052c73e19877b451633df6ee9c198b8d83571"
+  }
+}

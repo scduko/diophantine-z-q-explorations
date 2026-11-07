@@ -22,3 +22,7 @@ scripts/check_quartic962.py -text
 scripts/quartic962_checks.cjs -text
 scripts/check_historical_inventory.py -text
 manuscripts/** -text
+
+docs/quartic-523-540/** -text
+scripts/check_odd_product.py -text
+docs/manuscript-revisions/version10/** -text

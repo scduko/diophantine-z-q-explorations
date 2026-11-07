@@ -1,0 +1,62 @@
+{
+  "all_archive_hashes_verified": 87,
+  "imports_submitted_code": false,
+  "variants": {
+    "final554_571": {
+      "certified_eliminations": 7,
+      "constant_chain": "17 unique rational coordinates",
+      "symbolic554": {
+        "variables": 554,
+        "residuals": 523,
+        "degree": 4,
+        "nonzero_monomials": 33440,
+        "content": 1,
+        "sha256": "0a57e9be2cea1068bfbe211422e5123a2b045117e11a84cf8bdef207d5562f8e",
+        "maximum_absolute_coefficient": "64*3^(2^27)",
+        "maximum_coefficient_integer_multipliers_by_S_power": {
+          "0": 32342558628366490523958090505137577127207666788272010514121214447529782641164116187119030726093150720667902069114633303663819344628711959349317400252596443885527565897256790971300704192409599390436731181452655668356998506023069549107151770397486097251277767085767051395915412347065187780512213046875304646705259362698639998819330718197810416613557658448307987213918746782428494356430635201635285362278400000000000000000000000000000000000000000000000000000000,
+          "1": 768,
+          "2": 64
+        }
+      },
+      "ordinary571": {
+        "variables": 571,
+        "residuals": 540,
+        "degree": 4,
+        "nonzero_monomials": 33490,
+        "content": 1,
+        "sha256": "82cc95d0731e7c33b0e9037a3a3700935097c37ed79378bc0ebbcfe206858397",
+        "maximum_absolute_coefficient_bits": 3247,
+        "maximum_minus_3_to_2048": "1005072314631333"
+      }
+    },
+    "final523_540": {
+      "certified_eliminations": 9,
+      "constant_chain": "17 unique rational coordinates",
+      "symbolic523": {
+        "variables": 523,
+        "residuals": 492,
+        "degree": 4,
+        "nonzero_monomials": 35163,
+        "content": 1,
+        "sha256": "6a3685980de4512bdc7f3a781d0c0d4b32cce5829ec83f03f318264931bdbbe3",
+        "maximum_absolute_coefficient": "64*3^(2^27)",
+        "maximum_coefficient_integer_multipliers_by_S_power": {
+          "0": 32342558628366490523958090505137577127207666788272010514121214447529782641164116187119030726093150720667902069114633303663819344628711959349317400252596443885527565897256790971300704192409599390436731181452655668356998506023069549107151770397486097251277767085767051395915412347065187780512213046875304646705259362698639998819330718197810416613557658448307987213918746782428494356430635201635285362278400000000000000000000000000000000000000000000000000000000,
+          "1": 768,
+          "2": 64
+        }
+      },
+      "ordinary540": {
+        "variables": 540,
+        "residuals": 509,
+        "degree": 4,
+        "nonzero_monomials": 35213,
+        "content": 1,
+        "sha256": "b14e76dda63ea4bb8b012a89a4f052c73e19877b451633df6ee9c198b8d83571",
+        "maximum_absolute_coefficient_bits": 3247,
+        "maximum_minus_3_to_2048": "1005072314631333"
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "upstreamCommit": "ba7a3e0a0c171b7cd2ce75976addba57fad8a5dd",
+  "priorIntegratedCommit": "5856286a57fba19574a40704571ee70e79738281",
+  "upstreamReplay": {
+    "status": "PASS",
+    "source_rebuilt": true,
+    "final_verifier_runs_per_package": 2,
+    "input_files_unchanged": true,
+    "independent_sparse_ring_check": true,
+    "text_downloads_match": true,
+    "arithmetic_theorem_proved_by_this_script": false
+  },
+  "sourceReplay": {
+    "status": "passed",
+    "offline": true,
+    "variants": {
+      "primary": {
+        "patchCompositionByteExact": true,
+        "compiledFieldsMatchExceptDocumentedParameterMetadata": true,
+        "coordinates": 561,
+        "residuals": 530,
+        "gateIdentitiesChecked": 495,
+        "degree": 4,
+        "monomials": 32857,
+        "builderSha256": "868498d02f2061250c9dcd03870e589e0e0cfcddca87b1322f4c7288bfe0e162",
+        "compiledPrecursorSha256": "a38a57863f777c9e5c7168776c18391d3a70018a38ba5da6b8b1756a950d9091",
+        "finalPackageVerification": "passed"
+      },
+      "asymmetric": {
+        "patchCompositionByteExact": true,
+        "compiledFieldsMatchExceptDocumentedParameterMetadata": true,
+        "coordinates": 532,
+        "residuals": 501,
+        "gateIdentitiesChecked": 458,
+        "degree": 4,
+        "monomials": 34248,
+        "builderSha256": "bf01e9b051c9f5f7db2b3a9b2e0122d0d37118b30422d1d2ef54f6c3c0829af1",
+        "compiledPrecursorSha256": "662ac16c35de7b373f1804763a746a2156c1d3520765c41220396bb08339618d",
+        "finalPackageVerification": "passed"
+      }
+    },
+    "finalPackageVerification": "passed"
+  },
+  "version10Bindings": {
+    "status": "PASS_DOCUMENT_BINDINGS",
+    "issue_items": 9,
+    "exact_edits": 29,
+    "inherited_application_nodes": 137,
+    "changed_application_nodes": [
+      "A023",
+      "A047",
+      "A051",
+      "A057",
+      "A065"
+    ],
+    "new_application_families": 2,
+    "citations": 255,
+    "references": 601,
+    "polynomial_data_changed": false,
+    "entire_mathematical_proof_verified": false,
+    "all_final_published_source_versions_compared": false
+  },
+  "version9Bindings": {
+    "status": "PASS_DOCUMENT_AND_DEPENDENCY_BINDING",
+    "new_application_families": 4,
+    "inherited_application_and_ledger_nodes": 133,
+    "new_declared_derivations": 16,
+    "new_result_environments": 8,
+    "reachable_source_nodes": 173,
+    "unresolved_references": [],
+    "new_citations": [
+      {
+        "keys": "silverman",
+        "span": {
+          "path": "manuscripts/quartic_v9.tex",
+          "start_character": 906580,
+          "end_character": 906623,
+          "first_line": 19091,
+          "last_line": 19091,
+          "text_sha256": "43bcf4ad02fa7fd5260f5d8d7dbce1878a8b0c1e7a2f1c5ba2feb9ff704d8f1b"
+        }
+      },
+      {
+        "keys": "silverman",
+        "span": {
+          "path": "manuscripts/quartic_v9.tex",
+          "start_character": 907778,
+          "end_character": 907829,
+          "first_line": 19103,
+          "last_line": 19103,
+          "text_sha256": "1d3b1eb9ddead5de024e6d065991792e1600423970762a513d79df44d21af36d"
+        }
+      },
+      {
+        "keys": "silverman",
+        "span": {
+          "path": "manuscripts/quartic_v9.tex",
+          "start_character": 922605,
+          "end_character": 922644,
+          "first_line": 19343,
+          "last_line": 19343,
+          "text_sha256": "63477f9206366fa065b192b0384a88643ac958444fe1501fb224d5d2265fffad"
+        }
+      },
+      {
+        "keys": "silverman",
+        "span": {
+          "path": "manuscripts/quartic_v9.tex",
+          "start_character": 924124,
+          "end_character": 924164,
+          "first_line": 19368,
+          "last_line": 19368,
+          "text_sha256": "a834ef2a9c8cac307033d269ebb35d1acb5f4e4cd04bffa1f12d731401bd19a0"
+        }
+      }
+    ],
+    "new_unpublished_theorems_assumed": [],
+    "inherited_scope": "All 125 existing application families and eight source ledgers retain their frozen scope. Closure here resolves new source dependencies to those existing proof sites; it does not independently re-prove the old arithmetic or the cited literature.",
+    "all_final_published_versions_checked": false,
+    "formal_proof": false,
+    "claim": "New dependencies resolve to explicit manuscript arguments and unchanged reviewed input sites. This check verifies bindings and coverage, not mathematical truth."
+  },
+  "historical933Replay": {
+    "status": "passed",
+    "coordinates": 933,
+    "residuals": 890,
+    "monomials": 51907,
+    "degree": 4,
+    "primitiveContent": 1,
+    "maximumCoefficientBits": 3247,
+    "sourceIdentities": {
+      "logarithmCircuits": [
+        {
+          "point": "U0",
+          "degree": 9,
+          "status": "exact_polynomial_identity"
+        },
+        {
+          "point": "U1",
+          "degree": 2,
+          "status": "exact_polynomial_identity"
+        },
+        {
+          "point": "U2",
+          "degree": 9,
+          "status": "exact_polynomial_identity"
+        },
+        {
+          "point": "U3",
+          "degree": 9,
+          "status": "exact_polynomial_identity"
+        },
+        {
+          "point": "U4",
+          "degree": 9,
+          "status": "exact_polynomial_identity"
+        },
+        {
+          "point": "V0",
+          "degree": 9,
+          "status": "exact_polynomial_identity"
+        },
+        {
+          "point": "V1",
+          "degree": 2,
+          "status": "exact_polynomial_identity"
+        },
+        {
+          "point": "V2",
+          "degree": 9,
+          "status": "exact_polynomial_identity"
+        },
+        {
+          "point": "V3",
+          "degree": 9,
+          "status": "exact_polynomial_identity"
+        },
+        {
+          "point": "V4",
+          "degree": 9,
+          "status": "exact_polynomial_identity"
+        }
+      ],
+      "weightExponentIdentities": [
+        22,
+        78
+      ],
+      "scope": "Exact symbolic emitted logarithm identities and exponent identities; denominator nonvanishing is proved in README.md"
+    },
+    "chainProjectionCheck": "passed",
+    "independentChecker": "passed_exact_algebra_checks"
+  },
+  "endpoint": {
+    "symbolic523": {
+      "coordinates": 523,
+      "compiledCoordinatesBeforeFreeOmission": 523,
+      "residuals": 492,
+      "activeCoordinates": 523,
+      "ordinaryCoordinateMonomials": 35163,
+      "parameterCoefficientTerms": 35163,
+      "degree": 4,
+      "maxSPower": 2,
+      "integerCoefficients": true,
+      "sIndependentCoefficientGcd": 1,
+      "polynomialSha256": "6a3685980de4512bdc7f3a781d0c0d4b32cce5829ec83f03f318264931bdbbe3",
+      "maximumOrdinaryCoefficientBits": null
+    },
+    "ordinary540": {
+      "coordinates": 540,
+      "compiledCoordinatesBeforeFreeOmission": 540,
+      "residuals": 509,
+      "activeCoordinates": 540,
+      "ordinaryCoordinateMonomials": 35213,
+      "parameterCoefficientTerms": 35213,
+      "degree": 4,
+      "maxSPower": 0,
+      "integerCoefficients": true,
+      "sIndependentCoefficientGcd": 1,
+      "polynomialSha256": "b14e76dda63ea4bb8b012a89a4f052c73e19877b451633df6ee9c198b8d83571",
+      "maximumOrdinaryCoefficientBits": 3247
+    }
+  },
+  "sha256": {
+    "manuscripts/quartic_v10.tex": "9559b22cc581346da1b3150fa9b8dfb62cfb048f6aac0b866448ae7ae879ff38",
+    "quartics/quartic-540-fully-expanded.txt": "83e7a31e11f9ad2edc2f67935e50bff437d87ef4b77d37b6a4391e8117770680",
+    "quartics/quartic-523-540/final523_540/ordinary540/polynomial/polynomial.json": "b14e76dda63ea4bb8b012a89a4f052c73e19877b451633df6ee9c198b8d83571",
+    "quartics/quartic-523-540/source-reproduction/builders/odd-product-asymmetric-source.cjs": "bf01e9b051c9f5f7db2b3a9b2e0122d0d37118b30422d1d2ef54f6c3c0829af1",
+    "docs/quartic-523-540/addition.tex": "0c9444eac7cb889109cbf6e011667decd0aa7b2dfaf4169e4e01f4dbe4176d1e"
+  },
+  "version10ValuationRegression": {
+    "status": "PASS",
+    "bounded_inequality_cases": 12650,
+    "universal_proof": "manuscript Section6",
+    "certifies_entire_proof": false
+  }
+}

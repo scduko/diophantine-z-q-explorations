@@ -1,18 +1,20 @@
 # Z is Diophantine in Q
 
-## Version 8
+## Version 10
 
-This repository contains *Z is Diophantine in Q*, Version 8, dated November 6, 2026. The manuscript presents three integer-coefficient polynomials whose rational zero projections it proves to be the ordinary integers. It retains the original large construction and the fully expanded Version 4 quartic, and includes the reconstructed quartic in 962 variables introduced in Version 6.
+This repository contains *Z is Diophantine in Q*, Version 10, dated November 7, 2026. It addresses the nine points in [Issue 2](https://github.com/elliotglazer/diophantine-z-q/issues/2), with unchanged polynomial data. Version 9 added quartics in 523 variables with exact symbolic coefficients and 540 variables with every coefficient written out in decimal. The original large construction and the earlier quartic proofs remain in the manuscript. The new reductions were contributed by Gabriel Conant with ChatGPT.
 
 The project uses the collective agentic notes from Stefan Baranczuk, Jose Brox, Gabe Conant, Sohail Farhangi, James Freitag, Elliot Glazer, Jennifer Park, and Caroline Terry.
 
 | To | Open |
 | --- | --- |
-| Read Version 8 | [Manuscript PDF](manuscripts/quartic_v8.pdf), [TeX source](manuscripts/quartic_v8.tex) |
-| Reproduce the new 962-variable quartic | [Polynomial, source program and independent checks](docs/quartic-962/README.md) |
+| Read Version 10 | [Manuscript PDF](manuscripts/quartic_v10.pdf), [TeX source](manuscripts/quartic_v10.tex) |
+| Reproduce the 523/540-variable quartics | [Tables, source, dependency chain and checks](docs/quartic-523-540/README.md) |
 | Read the fully expanded Version 4 quartic | [4,973-variable package](quartics/quartic-4973/README.md), [integer monomial table](quartics/quartic-4973/polynomial.expanded.txt) |
-| Inspect theorem applications and conventions | [Version 7 proof inventory](docs/quartic-962/README.md), [Version 8 revision check](docs/manuscript-revisions/version8/README.md) |
+| Inspect the nine review corrections | [Version 10 response and inventory](docs/manuscript-revisions/version10/README.md) |
+| Inspect theorem applications and conventions | [Version 9 extension](docs/quartic-523-540/README.md), [inherited proof inventory](docs/quartic-962/README.md) |
 | Build the manuscript or run the checks | [Build instructions](docs/building.md) |
+| Download the current audit supplement | [Version 10 supplement and guide](research/version10/README.md) |
 | Download the Version 7 research handoffs | [Full handoff](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-962-version-7/z-in-q-version7-full-handoff.zip), [current-only handoff](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-962-version-7/z-in-q-version7-current-handoff.zip), [contents and verification](handoff/README.md) |
 | Read collaborator notes and the height replacement | [Research update](research/2026-11-06-collaborator-notes/README.md) |
 | Read the October 11 manuscript | [Manuscript and provenance](October%2011%20Manuscript/README.md) |
@@ -20,13 +22,13 @@ The project uses the collective agentic notes from Stefan Baranczuk, Jose Brox, 
 | Inspect the partial formalization | [Accepted Lean helpers](lean/README.md) |
 | Cite the manuscript or report an issue | [BibTeX](CITATION.bib), [contribution guide](CONTRIBUTING.md) |
 
-Version 8 changes only the abstract and version number. The [revision check](docs/manuscript-revisions/version8/README.md) verifies that the proof body is unchanged from Version 7.
+Version 9 integrates the odd-product argument, smaller anchor, direct targets and asymmetric formal-depth refinement. The new inventory binds every addition and preserves the existing literature-version qualifications. Version 8 remains in the [manuscript archive](manuscripts/README.md).
 
 Version 7 incorporates four further audits of the Gaussian appendix and their repairs. See the [audit summary](docs/quartic-962/gaussian-audit-20261106.md) for the changes and review limits.
 
 The Version 7 full handoff includes the Version 7 public snapshot, selected research notes, and the unchanged Version 6 full handoff, which preserves the Version 5 and earlier November 4 archives. The current-only handoff omits the embedded historical archive. Neither includes a conversational transcript.
 
-## The three polynomials
+## Polynomial constructions
 
 For each polynomial, the input and all witnesses range over the rationals. The asserted defining property is
 
@@ -38,20 +40,24 @@ $$
 | Construction | Total variables, including input | Degree | Nonzero monomials | Coefficient magnitude |
 | --- | ---: | ---: | ---: | --- |
 | Original | 292,890,231,905 | Less than $2\uparrow\uparrow7$ | Not expanded | Less than $2\uparrow\uparrow8$ |
+| Version 9, decimal table | 540 | 4 | 35,213 | Maximum $3^{2048}+1005072314631333<2^{3247}$ |
+| Version 9, symbolic table | 523 | 4 | 35,163 | Maximum $64\cdot3^{2^{27}}$ |
 | Version 4 quartic, retained | 4,973 | 4 | 72,925 | Maximum 685,783,949,153,203,534,233,890, less than $2^{80}$ |
 | Version 6 quartic | 962 | 4 | 55,409 | Maximum $64\cdot3^{2^{28}}$ |
 
+The [540-variable table](quartics/quartic-540-fully-expanded.txt) contains all coefficients in decimal and occupies 708,848 bytes. The [523-variable table](quartics/quartic-523-symbolic-coefficients.json) uses the fixed integer $S=3^{2^{26}}$, not an extra variable. [Reproduction and convention checks](docs/quartic-523-540/README.md) cover both.
+
 The [original construction](construction/README.md) is specified by an expression tree. The [Version 4 monomial table](quartics/quartic-4973/polynomial.expanded.txt) writes every coefficient as an ordinary integer. Its SHA-256 is `094f6a7ed17e7cc8d5d17a2f809127bbaffd0fe343cb2a32d18ac97e61279876`.
 
-The [Version 6 table](quartics/quartic-962/polynomial.json) lists every monomial and specifies its integer coefficient using the fixed constant $S=3^{2^{27}}$. It has 55,401 coefficients independent of $S$, seven linear in $S$, and one equal to $64S^2$. Its SHA-256 is `6b798de7d00ac3c7d725ca0a69d39f1eac1ddb02fee2756cb6323770b952af32`. The large coefficients are not written out digit by digit. This difference is why the fully expanded Version 4 quartic remains in the manuscript.
+The [Version 6 table](quartics/quartic-962/polynomial.json) lists every monomial and specifies its integer coefficient using the fixed constant $S=3^{2^{27}}$. It has 55,401 coefficients independent of $S$, seven linear in $S$, and one equal to $64S^2$. Its SHA-256 is `6b798de7d00ac3c7d725ca0a69d39f1eac1ddb02fee2756cb6323770b952af32`. The large coefficients are not written out digit by digit. Version 9 provides a smaller complete decimal table, while retaining this older proof baseline.
 
-The new polynomial builds on an independent reconstruction of the public [agentic improvements notes](https://github.com/JoseBrox/diophantine-z-q_improvements), followed by changes of coordinates, smaller arithmetic circuits, and 32 certified eliminations. It is not identified with the unavailable original 1,315-variable table. Its 919 quadratic residuals and their complete sum of squares are included. The manuscript also gives the notes' degree-four lower-bound argument over the rationals. Thus degree four is necessary for a single defining polynomial; the variable and monomial counts are not claimed minimal.
+The earlier 962-variable polynomial builds on an independent reconstruction of the public [agentic improvements notes](https://github.com/JoseBrox/diophantine-z-q_improvements), followed by changes of coordinates, smaller arithmetic circuits, and 32 certified eliminations. It is not identified with the unavailable original 1,315-variable table. Its 919 quadratic residuals and their complete sum of squares are included. The manuscript also gives the notes' degree-four lower-bound argument over the rationals. Thus degree four is necessary for a single defining polynomial; the variable and monomial counts are not claimed minimal.
 
 ## Verification scope
 
 The finite checks verify the source program, algebraic coordinate changes, projection-preserving eliminations, complete sum-of-squares expansion and coefficient statistics. Independent checks and rejection tests accompany the package. These checks do not prove the source system's arithmetic characterization of the integers.
 
-The manuscript supplies that arithmetic argument. The [Version 7 inventory](docs/quartic-962/README.md) records exact theorem applications, source versions, hypotheses, conventions and translations. Version 6 proves the needed Gaussian ray-field estimate within the manuscript, following the method of Frei–Tinková without assuming their theorem. The replacement uses Mitsui's published prime-ideal estimate, Green–Tao's one-parameter results, and ordinary-prime transference.
+The manuscript supplies that arithmetic argument. The [Version 9 extension](docs/quartic-523-540/README.md) connects the new arithmetic arguments to the inherited proofs. The [Version 7 inventory](docs/quartic-962/README.md) records exact theorem applications, source versions, hypotheses, conventions and translations. Version 6 proves the needed Gaussian ray-field estimate within the manuscript, following the method of Frei–Tinková without assuming their theorem. The replacement uses Mitsui's published prime-ideal estimate, Green–Tao's one-parameter results, and ordinary-prime transference.
 
 The inventory retains source-version qualifications. In particular, the applications of Dodos–Kanellopoulos and Kollár were checked in the stated author versions of published works; their final typeset statements were not compared. This is not a claim that every cited source's final published text has been inspected.
 
@@ -61,7 +67,7 @@ The Lean formalization is incomplete. The accepted snapshot contains 48 helper m
 
 ## Earlier work and provenance
 
-The October 11, 2026 manuscript, *A conditional Diophantine definition of Z in Q from four arithmetic inputs*, was produced by Sohail Farhangi with ChatGPT 6. Its PDF is preserved without modification. Its provenance and conditional scope are distinct from Version 8.
+The October 11, 2026 manuscript, *A conditional Diophantine definition of Z in Q from four arithmetic inputs*, was produced by Sohail Farhangi with ChatGPT 6. Its PDF is preserved without modification. Its provenance and conditional scope are distinct from Version 10.
 
 The November manuscript was produced by Elliot Glazer with Astra 6, Sol 6.1, and Opus 5.5, with auditing from Fable 5.1. The [Version 5 manuscript](manuscripts/archive/quartic_1272.pdf), [Version 4 manuscript](manuscripts/archive/quartic_4973.pdf), [Version 3 manuscript](manuscripts/archive/quartic_9625.pdf) and [Version 2 manuscript](manuscripts/archive/quartic_12504.pdf) remain historical references, with their separate polynomial packages and inventories. Earlier research handoffs identify their own snapshots.
 

@@ -1,0 +1,146 @@
+--- direct-target source
++++ archive base833 source
+@@ -54,6 +54,7 @@
+ const fconj=a=>[a[0],scale(a[1],-1)];
+ const fc=(a,b=0)=>[Array.isArray(a)?term(a):C(a),Array.isArray(b)?term(b):C(b)];
+ const fscale=(a,c)=>[scale(a[0],c),scale(a[1],c)];
++const rawFmul=(a,b)=>[add(mul(a[0],b[0]),scale(mul(a[1],b[1]),2)),add(mul(a[0],b[1]),mul(a[1],b[0]))];
+ function fmul(name,a,b){return saveF(name,[assign(name+'.0',add(mul(a[0],b[0]),scale(mul(a[1],b[1]),2))),assign(name+'.1',add(mul(a[0],b[1]),mul(a[1],b[0])))]);}
+ function fsq(name,a){return fmul(name,a,a);}
+ function fscalar(name,a,b){return saveF(name,[rm(name+'.0',a[0],b),rm(name+'.1',a[1],b)]);}
+@@ -70,50 +71,52 @@
+ function start(name,lines){block=name;src=lines;census.push({block,startCoordinates:coords.length,startResiduals:residuals.length});}
+ // Allocate the displayed 90 base coordinates before arithmetic gates.
+ const X=fresh('input','input',true), names=['A','S','T','Z','H','UA','US','UT','UZ'];
+-let half={};for(let n of names)half[n]={x:[fresh(n+'.chart.t0','base'),fresh(n+'.chart.t1','base')],y:[fresh(n+'.chart.h0','base'),fresh(n+'.chart.h1','base')]};
++let half={};for(let n of names)half[n]={x:[fresh(n+'.chart.h0','base'),fresh(n+'.chart.h1','base')],y:[fresh(n+'.chart.j0','base'),fresh(n+'.chart.j1','base')]};
+ const lambda=fresh('lambda','base');
+ let poles=[];for(let r=0;r<9;r++)poles.push({e:fresh('detector'+r+'.scaled_e','base'),s:fresh('detector'+r+'.s','base'),p:fresh('detector'+r+'.p','base'),q:fresh('detector'+r+'.q','base')});
+ const scalar={t:fresh('scalar.preparation','base'),e:fresh('scalar.scaled_e','base'),s:fresh('scalar.s','base'),p:fresh('scalar.p','base'),q:fresh('scalar.q','base')};
+ const anchor=[fresh('anchor.u','base',true),fresh('anchor.v','base',true),fresh('anchor.w','base',true)];
+ const booleans=[2,3,5,7,11,13,17,'sign'].map(p=>fresh('correction.partial.'+p,'base'));
+ if(coords.length!==90)throw Error('base count '+coords.length);
+-const D=fc(11,-6), P={x:fc(Q(57,8),Q(-7,2)),y:fc(Q(-165,8),Q(417,32))};
++const D=fc(11,-6), P={x:fc(Q(57,8),Q(-7,2)),y:fc(Q(-165,8),Q(417,32)),h:fc(-1,Q(7,4)),j:fc(Q(39,8),Q(-9,2))};
+ function double(name,Qp,withCurve=false){
+- const xx=fsq(name+'.xSquare',Qp.x);
+- if(withCurve){
+-  let dx=fmul(name+'.Dx',D,Qp.x);
+-  residual(name+'.curve.0',add(sq(Qp.y[0]),scale(sq(Qp.y[1]),2),scale(mul(xx[0],Qp.x[0]),-1),scale(mul(xx[1],Qp.x[1]),-2),dx[0]));
+-  residual(name+'.curve.1',add(scale(mul(Qp.y[0],Qp.y[1]),2),scale(mul(xx[0],Qp.x[1]),-1),scale(mul(xx[1],Qp.x[0]),-1),dx[1]));
+- }
+- const slope=fquot(name+'.slope',fsub(fscale(xx,3),D),fscale(Qp.y,2),'doubling_slope_curve_forces_nonzero_y_Brox4311_4337');
+- const mx=fsq(name+'.slopeSquare',slope), x=fsub(mx,fscale(Qp.x,2));
+- const y=fsub(fmul(name+'.yProduct',slope,fsub(Qp.x,x)),Qp.y);
+- return {x:saveF(name+'.x',x),y:saveF(name+'.y',y)};
++ if(withCurve)throw Error('new double expects the already certified square-abscissa chart');
++ const k=fquot(name+'.k',fadd(rawFmul(Qp.x,Qp.x),D),fscale(Qp.j,2),'nonzero_j_on_square_abscissa_chart');
++ const h=fquot(name+'.h',k,Qp.h,'nonzero_h_on_square_abscissa_chart');
++ const x=fsq(name+'.xSquare',h);
++ const u=fquot(name+'.tSquare',rawFmul(Qp.j,Qp.j),fscale(Qp.x,2),'nonzero_x_on_square_abscissa_chart');
++ const j=fsub(u,x),y=rawFmul(h,j);
++ return {h:saveF(name+'.h',h),j:saveF(name+'.j',j),x:saveF(name+'.x',x),y:saveF(name+'.y',y)};
+ }
+ start('point_modules',[4311,4348]);
+-// Quartic coordinates for the halfpoint. half[n].x represents t=y/x,
+-// and half[n].y represents h=x/t-t/2. Both are elements of Q(sqrt(2)).
++// Square-abscissa Kummer chart; y=h*j is kept as an expression only.
+ let points={};for(let n of names){
+- const t=half[n].x,h=half[n].y,u=fsq(n+'.chart.tSquare',t),x=fsq(n+'.chart.x',h);
+- const rhs=fsub(x,fscale(u,Q(1,4)));
+- residual(n+'.chart.equation.0',sub(add(mul(u[0],rhs[0]),scale(mul(u[1],rhs[1]),2)),D[0]));
+- residual(n+'.chart.equation.1',sub(add(mul(u[0],rhs[1]),mul(u[1],rhs[0])),D[1]));
+- const y=fmul(n+'.chart.y',h,fsub(fscale(u,Q(1,2)),x));
+- points[n]={x:saveF(n+'.x',x),y:saveF(n+'.y',y)};
++ const h=half[n].x,j=half[n].y,x=fsq(n+'.chart.x',h);
++ residual(n+'.chart.equation.0',add(sq(j[0]),scale(sq(j[1]),2),scale(sq(x[0]),-1),scale(sq(x[1]),-2),D[0]));
++ residual(n+'.chart.equation.1',add(scale(mul(j[0],j[1]),2),scale(mul(x[0],x[1]),-2),D[1]));
++ const y=rawFmul(h,j);
++ points[n]={h:saveF(n+'.h',h),j:saveF(n+'.j',j),x:saveF(n+'.x',x),y:saveF(n+'.y',y)};
+ }
+ 
+ start('direct_targets',[2394,2399]);
+ let four={P};for(let n of ['A','S','T','Z'])four[n]=points[n];
+ start('five_differences',[2394,2399]);
+-function subtract(name,Qp,Rp){let dx=fsub(Qp.x,Rp.x),dy=fadd(Qp.y,Rp.y);let di=finv(name+'.dxInverse',dx);let m=fmul(name+'.slope',dy,di);let x=fsub(fsub(fsq(name+'.slopeSquare',m),Qp.x),Rp.x);let y=fsub(fmul(name+'.yProduct',m,fsub(Qp.x,x)),Qp.y);return{x:saveF(name+'.x',x),y:saveF(name+'.y',y)};}
++function subtract(name,Qp,Rp){
++ const dx=fsub(Qp.x,Rp.x),dy=fadd(Qp.y,Rp.y),di=finv(name+'.dxInverse',dx);
++ const m=fquot(name+'.slope',dy,dx,'retained_dxInverse');
++ const x=fsub(fsub(fsq(name+'.slopeSquare',m),Qp.x),Rp.x);
++ const yr=fsub(rawFmul(m,fsub(Qp.x,x)),Qp.y),y=yr.map((v,j)=>assign(name+'.yProduct.'+j,v));
++ return{x:saveF(name+'.x',x),y:saveF(name+'.y',y)};
++}
++
+ const U=[points.H,points.UA,points.US,points.UT,points.UZ], R=[four.P,four.A,four.S,four.T,four.Z];
+ const V=U.map((p,i)=>subtract('V'+i,p,R[i]));
+ start('parameters_and_logarithms',[2401,2411]);
+-function parameters(name,p){return{point:p,f:finv(name+'.f',p.x),z:(name==='U0'||name==='V0')?null:fquot(name+'.z',fscale(p.x,-1),p.y,'finite_double_or_difference_nonzero_y_Brox4311_4348')};}
++function parameters(name,p){return{point:p,f:finv(name+'.f',p.x),z:(name==='U0'||name==='V0')?null:(p.h?fquot(name+'.z',fscale(p.h,-1),p.j,'nonzero_h_and_j_on_square_abscissa_chart'):fquot(name+'.z',fscale(p.x,-1),p.y,'finite_double_or_difference_nonzero_y_Brox4311_4348'))};}
+ const PU=U.map((p,i)=>parameters('U'+i,p)),PV=V.map((p,i)=>parameters('V'+i,p));
+ const aCoeffs=[Q(1),Q(-2,5)];for(let j=2;j<=9;j++)aCoeffs.push(qmul(aCoeffs[j-1],Q(4*j-5,4*j+1)));
+ // Field polynomial helpers for the degree-nine block circuit.
+-const rawFmul=(a,b)=>[add(mul(a[0],b[0]),scale(mul(a[1],b[1]),2)),add(mul(a[0],b[1]),mul(a[1],b[0]))];
++
+ function rawPolynomial6(coeff,basis){
+  let out=fc(0);
+  for(let k=0;k<coeff.length;k++){
+@@ -131,11 +134,11 @@
+   let inner=fadd(block(6),fscale(w3,aCoeffs[9]));
+   let midraw=fadd(block(3),rawFmul(w3,inner)),mid=midraw.map((v,j)=>assign(name+'.middle.'+j,v));
+   let outraw=fadd(block(0),rawFmul(w3,mid)),out=outraw.map((v,j)=>assign(name+'.polynomial.'+j,v));
+-  return p.z?fmul(name,p.z,out):fquot(name,[scale(add(mul(p.point.x[0],out[0]),scale(mul(p.point.x[1],out[1]),2)),-1),scale(add(mul(p.point.x[0],out[1]),mul(p.point.x[1],out[0])),-1)],p.point.y,'finite_double_or_difference_nonzero_y_Brox4311_4348');
++  return p.z?fmul(name,p.z,out):fquot(name,fscale(rawFmul(p.point.h||p.point.x,out),-1),p.point.j||p.point.y,'nonzero_chart_j_or_difference_y');
+  }
+  let rawout=fadd(fadd(fc(aCoeffs[0]),fscale(w,aCoeffs[1])),fscale(rawFmul(w,w),aCoeffs[2]));
+  let out=saveF(name+'.polynomial',rawout.map((v,j)=>assign(name+'.polynomial.'+j,v)));
+- return p.z?fmul(name,p.z,out):fquot(name,[scale(add(mul(p.point.x[0],out[0]),scale(mul(p.point.x[1],out[1]),2)),-1),scale(add(mul(p.point.x[0],out[1]),mul(p.point.x[1],out[0])),-1)],p.point.y,'finite_double_or_difference_nonzero_y_Brox4311_4348');
++ return p.z?fmul(name,p.z,out):fquot(name,fscale(rawFmul(p.point.h||p.point.x,out),-1),p.point.j||p.point.y,'nonzero_chart_j_or_difference_y');
+ }
+ const LU=PU.map((p,i)=>log('logU'+i,p,i===1?12:40)),LV=PV.map((p,i)=>log('logV'+i,p,i===1?12:40));
+ let L=[],LP=[];for(let i=1;i<=4;i++){L[i]=fquot('L'+i,LU[i],LU[0],'global_reciprocal_log_nonvanishing_Brox4353_4360');LP[i]=fconj(fquot('LP'+i,LV[i],LV[0],'global_reciprocal_log_nonvanishing_Brox4353_4360'));}
+@@ -181,7 +184,12 @@
+ function pole(name,b,p,prep){
+  const B=scale(b,17), pp=rsq(name+'.p2',p.p);
+  residual(name+'.firstConic',sub(mul(B,pp),mul(sub(B,p.e),add(B,scale(p.e,3)))));
+- let Up=b;if(prep){let bt2=rm(name+'.bt2',b,rsq(name+'.t2',p.t));Up=rquot(name+'.U',mul(b,sub(one,bt2)),add(one,bt2),'preparation_equation_Brox2478_2487_forces_denominator_nonzero');}
++ let Up=b;if(prep){
++  const t2=rsq(name+'.t2',p.t);
++  const T=rquot(name+'.preparationT',add(one,mul(b,t2)),b,'scalar_b_guard_absorbed_into_preparation');
++  Up=sub(rquot(name+'.UplusB',C(2),T,'preparation_equation_forces_nonzero_T'),b);
++  save(name+'.U',Up);
++ }
+  let Bh=rm(name+'.Bh',p.e,sub(B,rsq(name+'.U2',Up))),ss=rsq(name+'.s2',p.s),qq=rsq(name+'.q2',p.q);
+  residual(name+'.secondConic',sub(mul(B,qq),mul(sub(ss,Bh),add(ss,scale(Bh,3)))));
+ }
+@@ -193,8 +201,14 @@
+  let Ad=rm('detector'+r+'.Adelta',A,delta);
+  let ep=rquot('detector'+r+'.eWeight',mul(rp('detector'+r+'.Adelta4',Ad,4),Ad),Fv,'positive_scale_and_norm_equation_make_numerator_nonzero');
+  let delta2=rsq('detector'+r+'.delta2',delta),delta3=rm('detector'+r+'.delta3',delta2,delta),q1=rquot('detector'+r+'.q1',ep,delta3,'norm_equation_forces_nonzero_delta');
+- let e2=rsq('detector'+r+'.e2',ep),e4=rsq('detector'+r+'.e4',e2),e8=rsq('detector'+r+'.e8',e4),e16=rsq('detector'+r+'.e16',e8),e24=rm('detector'+r+'.e24',e16,e8),e40=rm('detector'+r+'.e40',e24,e16),e80=rsq('detector'+r+'.e80',e40);
+- let q12=rquot('detector'+r+'.q12',mul(q1,e24),e2,'norm_equation_forces_nonzero_weight'),q40=rquot('detector'+r+'.q40',mul(q1,e80),e2,'norm_equation_forces_nonzero_weight');
++ let em1=rquot('detector'+r+'.eMinus1',one,ep,'weight_nonzero'),
++ em3=rquot('detector'+r+'.eMinus3',sq(em1),ep,'weight_nonzero'),
++ em7=rquot('detector'+r+'.eMinus7',sq(em3),ep,'weight_nonzero'),
++ em14=rsq('detector'+r+'.eMinus14',em7),
++ em29=rquot('detector'+r+'.eMinus29',sq(em14),ep,'weight_nonzero'),
++ em55=rquot('detector'+r+'.eMinus55',sq(em29),em3,'inverse_weight_power_nonzero');
++ let q12=rquot('detector'+r+'.q12',mul(q1,em7),em29,'inverse_weight_power_nonzero'),
++ q40=rquot('detector'+r+'.q40',mul(q12,ep),em55,'inverse_weight_power_nonzero');
+  let w=fmul('detector'+r+'.W',fmul('detector'+r+'.Wfirst',evalSym('detector'+r+'.E1',coeffs[1],q1),evalSym('detector'+r+'.E12',coeffs[12],q12)),evalSym('detector'+r+'.E40',coeffs[40],q40));
+  let wi=inv('detector'+r+'.w0Inverse',w[0]),nw=rquot('detector'+r+'.normOver2w0',scale(sub(sq(w[0]),scale(sq(w[1]),2)),Q(1,2)),w[0],'retained_w0Inverse'),eDelta=rm('detector'+r+'.eDelta',ep,delta),bv=rquot('detector'+r+'.B',sq(nw),eDelta,'retained_w0_inverse_and_nonsquare_two_force_nonzero_norm');
+  save('detector'+r+'.Bsemantic',bv);pole('detector'+r,bv,poles[r],false);
+@@ -205,12 +219,12 @@
+ let correction=booleans[7];
+ let r1=rm('scalar.rPair1',beta,sub(beta,one)),r2=rm('scalar.rPair2',sub(beta,C(2401)),add(scale(beta,32),C(343))),rr=rm('scalar.r',rm('scalar.rFour',r1,r2),sub(scale(beta,2),one));
+ let ri=inv('scalar.rInverse',rr),ri32=rp('scalar.rInverse32',ri,32);
+-const PS=parameters('Sscalar',points.S),zRatio=fquot('scalar.zRatio',[scale(add(mul(PS.z[0],PU[0].point.y[0]),scale(mul(PS.z[1],PU[0].point.y[1]),2)),-1),scale(add(mul(PS.z[0],PU[0].point.y[1]),mul(PS.z[1],PU[0].point.y[0])),-1)],PU[0].point.x,'retained_U0_f_inverse');
++const PS=parameters('Sscalar',points.S),zRatio=fquot('scalar.zRatio',fscale(rawFmul(PS.z,PU[0].point.j),-1),PU[0].point.h,'nonzero_h_on_square_abscissa_chart');
+ let leaves=[...PU[0].f,...PS.f,...zRatio].map((v,i)=>i===0||i===2?save('scalar.leaf'+i,mul(v,ri)):rm('scalar.leaf'+i,v,i<4?ri:ri32));
+ function normTree(name,a,b){return assign(name,add(sq(a),mul(rr,rsq(name+'.rightSquare',b))));}
+ let n0=rquot('scalar.n0',add(rr,sq(PU[0].f[0])),rr,'existing_scalar_r_inverse'),n1=rquot('scalar.n1',add(mul(leaves[1],PU[0].f[1]),sq(PS.f[0])),rr,'existing_scalar_r_inverse'),n3=normTree('scalar.n3',leaves[4],leaves[5]);
+ let nw=normTree('scalar.W',normTree('scalar.nLeft',n0,n1),normTree('scalar.nRight',leaves[3],n3));
+-let bs=rm('scalar.b',rm('scalar.correctedR',correction,rr),rsq('scalar.W2',nw));inv('scalar.bInverse',bs);pole('scalar',bs,scalar,true);
++let bs=rm('scalar.b',rm('scalar.correctedR',correction,rr),rsq('scalar.W2',nw));pole('scalar',bs,scalar,true);
+ start('anchor',[4160,4178]);
+ let fa=assign('anchor.physicalA',add(sq(PS.f[0]),mul(PS.f[0],PS.f[1]),scale(sq(PS.f[1]),-1)));
+ const anchorRow=residual('anchor.equation',add(sq(anchor[0]),scale(sq(anchor[1]),6),scale(sq(anchor[2]),-2),scale(sq(fa),-3),term(2,[],2)));

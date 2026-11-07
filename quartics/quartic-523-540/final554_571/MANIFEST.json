@@ -1,0 +1,28 @@
+{
+  "sha256": {
+    "ODD_INDEX_HEIGHT.tex": "e82435414261c7236f1e193857a8a8f1ff3f6adc98e8651152851e79d2d8b156",
+    "PROVENANCE.json": "20ef8f02221d71680c7a6c93a9c7df0603577b5c609d25095bb4eedd3aa0c61b",
+    "README.md": "b73d1a1e46630c58f431c90b0921226e94f77768aed12dad7e534d493a2c9a29",
+    "SUMMARY.json": "b8476b2636e775d1ed7e55d6c4e1ad063e7b8e82798bcffd2a7650fb8dfef72d",
+    "ordinary571/lifted-ir.json": "57161b0d678fd468e4084c72a7b3e954af836d4934148f8451c8d0f3249892f7",
+    "ordinary571/polynomial/compiled-ir.json": "5e5969acf51aeee9bf42f9c8662168c44e6ed3b9f3fa48f5ad45c8808d89de5e",
+    "ordinary571/polynomial/compiler-report.json": "cf91d1417dd4e143c6c607c80206849b766f2406dbe2be204f747562286ffa69",
+    "ordinary571/polynomial/coordinate-map.json": "0d42a045c042a71506d62b969790beaabb3da13f48e4f54a7001f88ef5b92b0a",
+    "ordinary571/polynomial/polynomial.json": "82cc95d0731e7c33b0e9037a3a3700935097c37ed79378bc0ebbcfe206858397",
+    "ordinary571/polynomial/reduction-certificate.json": "50b532047b834934d76f2a370a98e50b04170c8f2765559a11b85d35bc6e4669",
+    "ordinary571/polynomial/specialization-certificate.json": "24300eb77474a08e8b0d772e72c42d972195de2d1abf2c0bc00b24c56ca55fd5",
+    "source561.json": "6573ea64f0d31fff9e1b0e2c8c249efe86cdb6b3cc2a065a470b383c42a1f4de",
+    "symbolic554/candidate-ir.json": "924fb90102277b5d9aded665fdd27f7128547dc7993adfdb302673e92308b7db",
+    "symbolic554/integer-candidate-ir.json": "40cdeb70bc4e2a6973e952fd2afefa6816002521b828811c255391151abe6334",
+    "symbolic554/modulo-certificate.json": "09202f16d0038709d755faf471ba5135dc72a26d3eb1b8ec837c2fb8a588f4f9",
+    "symbolic554/polynomial/compiled-ir.json": "1f7ed9e52ca58f5be76d0ea2a00eb42be557f035fce528357ed6ede8c175b7b0",
+    "symbolic554/polynomial/compiler-report.json": "2388b80363f12b1178369ec0c6a734714455de47c58e06a79463ad3cafcc2268",
+    "symbolic554/polynomial/coordinate-map.json": "1b089f6c63eb08e3ee7844537be121bcfef7fe5b80a4410b92bc991b1762955e",
+    "symbolic554/polynomial/polynomial.json": "0a57e9be2cea1068bfbe211422e5123a2b045117e11a84cf8bdef207d5562f8e",
+    "symbolic554/polynomial/reduction-certificate.json": "9d9e2f0d3fce763f6f02c8565ef3f634aece448305c6dd732cb1df1d9b839415",
+    "symbolic554/polynomial/specialization-certificate.json": "3a9b10d4e1318097d392b94c1b5195ed2ec6510d1742e898ff4eb650d01ff2c9",
+    "symbolic554/verification.json": "8a6172ce1e2ad61d1d706a999b55cd07ecf909d7d8547f0a83c814677e0b5b69",
+    "verify_all.py": "244fdf16c3c4696f6d12ba35eb18135f8e82fd7105b9f92d674d256210306985",
+    "verify_elimination.py": "0d50fc1a679a9ae6c91f03eb2161a4b092d134c2ed45657156a27da8cd417481"
+  }
+}

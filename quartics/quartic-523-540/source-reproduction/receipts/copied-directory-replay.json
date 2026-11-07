@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "offline": true,
+  "variants": {
+    "primary": {
+      "patchCompositionByteExact": true,
+      "compiledFieldsMatchExceptDocumentedParameterMetadata": true,
+      "coordinates": 561,
+      "residuals": 530,
+      "gateIdentitiesChecked": 495,
+      "degree": 4,
+      "monomials": 32857,
+      "builderSha256": "868498d02f2061250c9dcd03870e589e0e0cfcddca87b1322f4c7288bfe0e162",
+      "compiledPrecursorSha256": "a38a57863f777c9e5c7168776c18391d3a70018a38ba5da6b8b1756a950d9091"
+    },
+    "asymmetric": {
+      "patchCompositionByteExact": true,
+      "compiledFieldsMatchExceptDocumentedParameterMetadata": true,
+      "coordinates": 532,
+      "residuals": 501,
+      "gateIdentitiesChecked": 458,
+      "degree": 4,
+      "monomials": 34248,
+      "builderSha256": "bf01e9b051c9f5f7db2b3a9b2e0122d0d37118b30422d1d2ef54f6c3c0829af1",
+      "compiledPrecursorSha256": "662ac16c35de7b373f1804763a746a2156c1d3520765c41220396bb08339618d"
+    }
+  },
+  "finalPackageVerification": "not requested; run with --packages PARENT_DIRECTORY for all four final quartics"
+}

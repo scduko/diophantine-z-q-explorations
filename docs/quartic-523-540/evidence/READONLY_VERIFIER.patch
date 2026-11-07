@@ -1,0 +1,26 @@
+--- a/final554_571/verify_elimination.py
++++ b/final554_571/verify_elimination.py
+@@ -105,8 +105,8 @@
+       'certificateSha256':hashlib.sha256((HERE/'modulo-certificate.json').read_bytes()).hexdigest(),
+       'proof':'Exact polynomial identities. Forward: invert each shear, then delete each pivot coordinate. Reverse: reinsert each pivot replacement, then apply each shear, processing operations in reverse order.'}
+     for r in candidate['residuals']:r['terms']=terms(rows[r['id']])
+-    (HERE/'integer-candidate-ir.json').write_text(json.dumps(candidate,indent=2)+'\n')
+-    (HERE/'verification.json').write_text(json.dumps(result,indent=2)+'\n')
++    assert json.loads((HERE/'integer-candidate-ir.json').read_text(encoding='utf-8')) == candidate
++    assert json.loads((HERE/'verification.json').read_text(encoding='utf-8')) == result
+     print(json.dumps(result,indent=2))
+ 
+ if __name__=='__main__':
+--- a/final523_540/verify_elimination.py
++++ b/final523_540/verify_elimination.py
+@@ -105,8 +105,8 @@
+       'certificateSha256':hashlib.sha256((HERE/'modulo-certificate.json').read_bytes()).hexdigest(),
+       'proof':'Exact polynomial identities. Forward: invert each shear, then delete each pivot coordinate. Reverse: reinsert each pivot replacement, then apply each shear, processing operations in reverse order.'}
+     for r in candidate['residuals']:r['terms']=terms(rows[r['id']])
+-    (HERE/'integer-candidate-ir.json').write_text(json.dumps(candidate,indent=2)+'\n')
+-    (HERE/'verification.json').write_text(json.dumps(result,indent=2)+'\n')
++    assert json.loads((HERE/'integer-candidate-ir.json').read_text(encoding='utf-8')) == candidate
++    assert json.loads((HERE/'verification.json').read_text(encoding='utf-8')) == result
+     print(json.dumps(result,indent=2))
+ 
+ if __name__=='__main__':

@@ -1,0 +1,14 @@
+{
+  "engine": "Tectonic 0.17.0",
+  "bundle_url": "https://relay.fullyjustified.net/default_bundle_v33.tar",
+  "bundle_fingerprint": "6ffe055852f8faf66c0acbe1a7fb27f87b869a90bad1204f3bf4d9683f597c7c",
+  "manuscript_version": 10,
+  "pdf": "quartic_v10.pdf",
+  "source_sha256": "9559b22cc581346da1b3150fa9b8dfb62cfb048f6aac0b866448ae7ae879ff38",
+  "pdf_sha256": "3243da953b312f3c43aff608b975a4834f82722180c2f1ec4d6e24bdac784882",
+  "pdf_bytes": 1551180,
+  "tex_errors": 0,
+  "unresolved_references": false,
+  "original_pdf_replaced": false,
+  "byte_identity_to_uploaded_pdf_claimed": false
+}

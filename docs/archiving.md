@@ -1,6 +1,6 @@
 # Citation and archival release
 
-Use [CITATION.bib](../CITATION.bib) for *Z is Diophantine in Q*, Version 8, dated November 6, 2026, and for the historical manuscripts and research handoffs. The current manuscript is [manuscripts/quartic_v8.pdf](../manuscripts/quartic_v8.pdf), with [TeX source](../manuscripts/quartic_v8.tex). Cite the version and commit or file hash when discussing an exact artifact.
+Use [CITATION.bib](../CITATION.bib) for *Z is Diophantine in Q*, Version 10, dated November 7, 2026, and for the historical manuscripts and research handoffs. The current manuscript is [manuscripts/quartic_v10.pdf](../manuscripts/quartic_v10.pdf), with [TeX source](../manuscripts/quartic_v10.tex). Cite the version and commit or file hash when discussing an exact artifact.
 
 The manuscript author field is blank, and the BibTeX entries intentionally omit author fields. Collaboration credit appears in the [README](../README.md). There is no `CITATION.cff`: the CFF 1.2 schema requires an author record, and the repository does not invent a person or organization to fill it.
 
@@ -12,7 +12,7 @@ The [Version 6 release](https://github.com/elliotglazer/diophantine-z-q/releases
 
 The [Version 2 release](https://github.com/elliotglazer/diophantine-z-q/releases/tag/quartic-12504-version-2) preserves the 12,504-variable quartic and its associated evidence. Its manuscript and package remain historical artifacts and are not relabeled as Version 4.
 
-The [November 4 research handoff](https://github.com/elliotglazer/diophantine-z-q/releases/tag/research-handoff-2026-11-04-r2) is a dated archive. It does not contain the Version 2 or Version 4 quartic package or all later review evidence. Its release tag and checksum continue to identify that historical snapshot. The [Version 5 release](https://github.com/elliotglazer/diophantine-z-q/releases/tag/quartic-1272-version-5) preserves the 1,272-variable construction. The current quartic and evidence are in [quartics/quartic-962](../quartics/quartic-962/polynomial.json) and [docs/quartic-962](quartic-962/README.md).
+The [November 4 research handoff](https://github.com/elliotglazer/diophantine-z-q/releases/tag/research-handoff-2026-11-04-r2) is a dated archive. It does not contain the Version 2 or Version 4 quartic package or all later review evidence. Its release tag and checksum continue to identify that historical snapshot. The [Version 5 release](https://github.com/elliotglazer/diophantine-z-q/releases/tag/quartic-1272-version-5) preserves the 1,272-variable construction. The current quartics and their evidence are in [quartics/quartic-523-540](../quartics/quartic-523-540/) and [docs/quartic-523-540](quartic-523-540/README.md).
 
 ## DOI status
 

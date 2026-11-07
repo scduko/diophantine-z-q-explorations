@@ -1,0 +1,9 @@
+{
+  "upstreamRepository": "https://github.com/elliotglazer/diophantine-z-q",
+  "mainCommit": "5856286a57fba19574a40704571ee70e79738281",
+  "pr4Commit": "772c4adf4a05e21255e4c1784e08e917fda4c68a",
+  "preMetadataCorrectionSourceSha256": "a38a57863f777c9e5c7168776c18391d3a70018a38ba5da6b8b1756a950d9091",
+  "metadataCorrection": "The source header retains S=3^(2^27); the intended and audited anchor is S=3^(2^26). Only descriptive metadata was corrected. Elimination identities hold formally over Q[S].",
+  "architecture": "odd-index product height with three coordinate detectors",
+  "optionalAsymmetricLogarithms": false
+}

@@ -72,46 +72,48 @@ def install():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tectonic", type=Path, help="Use an installed Tectonic 0.17.0 instead of downloading it")
+    parser.add_argument("--cache", type=Path, help="Reuse an existing Tectonic cache")
+    parser.add_argument("--bundle", default=BUNDLE, help="Bundle URL; the pinned content fingerprint is still required")
     args = parser.parse_args()
     executable = args.tectonic.resolve() if args.tectonic else install()
     version = subprocess.check_output([str(executable), "--version"], text=True).strip()
     if version != "Tectonic " + VERSION and version != "tectonic " + VERSION:
         raise RuntimeError("Unexpected engine version: " + version)
-    source = ROOT / "manuscripts" / "quartic_v8.tex"
+    source = ROOT / "manuscripts" / "quartic_v10.tex"
     source_bytes = source.read_bytes()
     output = ROOT / "build" / "paper"
     output.mkdir(parents=True, exist_ok=True)
-    cache = ROOT / ".cache" / "tectonic"
+    cache = args.cache.resolve() if args.cache else ROOT / ".cache" / "tectonic"
     env = os.environ.copy()
     env["TECTONIC_CACHE_DIR"] = str(cache)
-    env["SOURCE_DATE_EPOCH"] = "1793923200"
+    env["SOURCE_DATE_EPOCH"] = "1794009600"
     with tempfile.TemporaryDirectory(prefix="paper-", dir=output.parent) as temporary:
         temporary = Path(temporary)
         (temporary / source.name).write_bytes(source_bytes)
-        cmd = [str(executable), "--untrusted", "--bundle", BUNDLE, "--keep-logs", source.name]
+        cmd = [str(executable), "--untrusted", "--bundle", args.bundle, "--keep-logs", source.name]
         with (output / "compiler.log").open("wb") as log:
             result = subprocess.run(cmd, cwd=temporary, env=env, stdout=log, stderr=subprocess.STDOUT)
         if result.returncode:
             raise RuntimeError("Paper build failed; see build/paper/compiler.log")
-        log_path = temporary / "quartic_v8.log"
+        log_path = temporary / "quartic_v10.log"
         text = log_path.read_text(errors="replace")
         if any(line.startswith("!") for line in text.splitlines()) or "undefined references" in text or "undefined citations" in text:
             raise RuntimeError("TeX errors or unresolved references; see build/paper/compiler.log")
         # Tectonic escapes ':' and '/' as their decimal character values in this
         # cache key. Check the selected URL, never another cached bundle.
-        bundle_key = BUNDLE.replace(":", ",58,").replace("/", ",47,")
+        bundle_key = args.bundle.replace(":", ",58,").replace("/", ",47,")
         bundle_hash_file = cache / "bundles" / "hashes" / bundle_key
         if not bundle_hash_file.is_file() or bundle_hash_file.read_text().strip() != BUNDLE_DIGEST:
             raise RuntimeError("The selected TeX bundle fingerprint does not match the pin")
-        pdf = (temporary / "quartic_v8.pdf").read_bytes()
+        pdf = (temporary / "quartic_v10.pdf").read_bytes()
         if not pdf.startswith(b"%PDF-"):
             raise RuntimeError("Compiler did not produce a PDF")
-        (output / "quartic_v8.pdf").write_bytes(pdf)
-        shutil.copyfile(log_path, output / "quartic_v8.log")
+        (output / "quartic_v10.pdf").write_bytes(pdf)
+        shutil.copyfile(log_path, output / "quartic_v10.log")
     if source.read_bytes() != source_bytes:
         raise RuntimeError("Manuscript changed during build")
-    receipt = {"engine": version, "bundle_url": BUNDLE, "bundle_fingerprint": BUNDLE_DIGEST,
-               "manuscript_version": 8, "pdf": "quartic_v8.pdf",
+    receipt = {"engine": version, "bundle_url": args.bundle, "bundle_fingerprint": BUNDLE_DIGEST,
+               "manuscript_version": 10, "pdf": "quartic_v10.pdf",
                "source_sha256": sha(source_bytes), "pdf_sha256": sha(pdf), "pdf_bytes": len(pdf),
                "tex_errors": 0, "unresolved_references": False,
                "original_pdf_replaced": False, "byte_identity_to_uploaded_pdf_claimed": False}

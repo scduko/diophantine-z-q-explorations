@@ -1,0 +1,88 @@
+\subsection{The saved templates and the mathematical predicates}
+\label{subsec:v10-template-dictionary}
+The following dictionary identifies the relations encoded by the saved
+templates, in addition to the decoding rules above. Point arguments are
+canonical five-coordinate codes. Field values have their two rational
+components in the basis $(1,\sqrt2)$; conjugation negates the second
+component. An inverse equation guards each displayed quotient.
+Conjunction is encoded by a sum of squares, and disjunction by a
+product, with the private witness blocks specified in the file.
+The identities are identities of zero sets over $\Q$; squaring a
+callee polynomial can change the literal polynomial without changing
+the relation it defines.
+
+\begin{longtable}{p{.29\textwidth}p{.65\textwidth}}
+\toprule Saved template & Relation and constraints\\\midrule\endhead
+\nolinkurl{member} & Membership in the canonical code domain $D=2E(K)$
+of Section~\ref{sec:model}.\\
+\nolinkurl{raw_add}, \nolinkurl{raw_z}, \nolinkurl{raw_inverse_x} &
+The group-law relation on typed inputs, $z=-x/y$, and $w=1/x$,
+respectively, with $z(O)=w(O)=0$.\\
+\nolinkurl{log25} & The two-component equality to the displayed
+scaled degree-25 polynomial $L$ in Section~\ref{sec:mult}.\\
+\nolinkurl{pole} & $Q_{\rm pole}(B)^2$, where $Q_{\rm pole}$ is the
+eleven-witness polynomial of Section~\ref{sec:pole}. The outer square
+comes from the singleton conjunction added by the rational builder.\\
+\nolinkurl{test_group} & The twelve field tests of
+Section~\ref{sec:mult}, including $A_i-\sigma(A'_i)$ for $i=1,2,3$.
+Its four input points are $[c_*]P_0,[c_*]P_1,[c_*]P_2,[c_*]P_3$.
+It types the first four auxiliary points and obtains the second four
+by subtraction; its two denominator points and logarithms are nonzero.\\
+\nolinkurl{slope} & The normalized twelve-test products in six private
+groups, their traced inverses, and $\Phi(R/\Theta^2)$ from
+Section~\ref{sec:mult}, with all contact and denominator guards.\\
+\nolinkurl{height_certificate} & The 27 slopes summing in triples to
+the nine homogeneous coordinate quantities in that section, together
+with membership of the three input points.\\
+\nolinkurl{multiply.scalar}, \nolinkurl{multiply.guard},
+\nolinkurl{multiply} & The fixed $[c_*]$ graph; the inverse of the
+finite false-triple product; and their conjunction with the height
+certificate at the fixed $\ell_0$.\\
+\nolinkurl{natural} & Four model squares, formed by multiplication,
+whose sum is the input code, as in Section~\ref{sec:compiler}.\\
+\nolinkurl{value.signed_encode} & $N=\iota(n)$ and a natural code
+$C=\iota(c)$ with $n=c/2$ for even $c$, and $n=-(c+1)/2$ for odd
+$c$. The two branches use $c=2q$ and $c=2q+1$ with $q\ge0$.\\
+\nolinkurl{value.abs} & $a=|x|$: $a$ is a sum of four rational
+squares and $a^2=x^2$.\\
+\nolinkurl{value.close_coordinates} & The strict coordinate window
+of Section~\ref{sec:bridge}, using the typed points $A,L,J$,
+$r=\operatorname{Tr}(z(J)/z(A))/2$ and
+$\epsilon=|(z(L))_0|+|(z(L))_1|>0$, with $|t-r|<\epsilon$.
+This template alone does not assert the precision relation.\\
+\nolinkurl{value.test} & Exactly $\Test(N,\kappa,t)$ of
+Section~\ref{sec:bridge}: $C_1=[\kappa n]P_0$,
+$V_0=H-\kappa P_0$, $V_1=U-C_1$, the six displayed raw-$z$ tests,
+their normalization by $F(t)$, and the single guarded pole input.
+These ratios use $z$, not $L$.\\
+\nolinkurl{value.exceptions} & The six branches
+$N=\iota(c)$ and $t=c$, $c\in\Cset$, with the constant points
+computed by the fixed group-law chains.\\
+\nolinkurl{scalar.integer_constant_}\,$i$ & The fixed integer
+scalar graph requested by the translated precision computation.\\
+\bottomrule
+\end{longtable}
+
+The composition recipes make the remaining identifications explicit.
+\texttt{power\_value} translates the source power template with its
+three input codes and output code; \texttt{precision} translates
+the five-natural-input precision polynomial, in the order
+$(n,\kappa,a,\ell,j)$ after signed encoding. The recipe
+\texttt{close} introduces $A,L,J$, forms those five signed encodings,
+conjoins \texttt{precision}, and calls
+\nolinkurl{value.close_coordinates}. Thus it is the full $\Close$.
+The recipe \texttt{main} introduces one shared $\kappa$ and conjoins
+\texttt{close} and \nolinkurl{value.test} at exactly that same code.
+The product recipe \texttt{value\_union} joins this branch with
+\nolinkurl{value.exceptions}; \texttt{value} also imposes
+\texttt{member} on $N$. Finally \texttt{integers} existentially
+introduces $N$ and calls \texttt{value} with external coordinate
+$t=X_0$. These are precisely $\Val$ and its input projection.
+The ordered calls and private ranges are checked by
+\nolinkurl{auditOrdinaryIntegerPolynomial} in
+\nolinkurl{construction/ordinary-integer-polynomial.js}.
+\nolinkurl{scripts/check_construction.py} regenerates the saved
+expression byte for byte. The dictionary supplies the mathematical
+identification; those finite checks verify the stored syntax and
+wiring, not the arithmetic theorems used to prove the predicates.
+

@@ -1,0 +1,34 @@
+{
+  "reviewed_file": "/workspace/scratch/a2678df23453/output/pdf/h10-odd-product-reduction.tex",
+  "sha256": "5595a6cf5a5159ef1968296dbdd16c344c61652523cd342ce441841f6631d497",
+  "verdict": "No mathematical blocker found in article; arithmetic conclusion remains relative to the pinned repository inputs.",
+  "checked": [
+    "Exact product-height identity, including places above 2 and 7",
+    "Odd-coset chart soundness and completeness",
+    "Shifted scalar anchor and height margins",
+    "Odd Pell witnesses and input integrality encoding",
+    "Primary Lucas residual and beta discrepancy inequalities",
+    "Asymmetric depth bootstrap and local valuations",
+    "Prime-strip exclusion against actual weighted count and final diagonal",
+    "CRT compatibility and completeness order of choices",
+    "Reported package counts and scope against prior independent package review"
+  ],
+  "inequalities": {
+    "lucas_absolute_bound": "For B>4: |F| <= 2 B^4 + 6 B^3 + 5 B^2 + 1 < 5 B^4.",
+    "lucas_contradiction": "B^(1/10) < 7 H 5^(19/40)+6 <24 H.",
+    "beta_numerator": "|N| <= 2 exp(h(beta)) B.",
+    "beta_contradiction": "B^(5/12)<40 H exp(19 h(beta)/12), so log B<31|a|/200<|a|-3.",
+    "scalar_margin": "c>(80H)^10 implies h(beta)<c/80 and log(40H)<c/80, each <=|a|/40."
+  },
+  "prime_source": "Pinned PR4 manuscripts/quartic_v8.tex lines 18437-18461 and 18738-18779: exactly k Mangoldt factors, fixed positive proportion of NT after obstruction removal, compatible additional diagonal threshold.",
+  "limitations": [
+    "No independent human peer review",
+    "No complete formal proof verification",
+    "Inherited number-theoretic inputs not fully re-audited",
+    "Artifact exactness previously verified separately; not rerun for this textual review"
+  ],
+  "clarifications_incorporated": [
+    "Mention displayed P coordinates among the elementary inputs to the height lemma because its reduction at 7 is computed.",
+    "Display elementary absolute bound for F rather than only calling it inherited."
+  ]
+}

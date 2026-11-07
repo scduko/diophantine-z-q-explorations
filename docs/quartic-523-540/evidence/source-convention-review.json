@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-07",
+  "source": "Silverman, The arithmetic of elliptic curves, second edition, 2009",
+  "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+  "inspected_pages": [
+    "127-132",
+    "138",
+    "188-191"
+  ],
+  "applications": [
+    "V9-FORMAL-NEIGHBORHOOD",
+    "V9-NONSINGULAR-SUBGROUP",
+    "V9-HASSE-SEPARATION",
+    "V9-LOG-DEPTH"
+  ],
+  "findings": [
+    "VII.2.1 and VII.2.2 are stated for a minimal equation; the new text avoids applying that hypothesis at 2 and gives the integral formal-neighborhood argument.",
+    "Hasse uses the full group over F_p at split good primes, including infinity.",
+    "Formal isometry threshold is strict: r > v(p)/(p-1). Unramified r>=1 meets it for the consumed odd primes."
+  ],
+  "new_external_source": false,
+  "scope": "Internal source inspection; not an independent human review or complete re-audit of the inherited manuscript."
+}

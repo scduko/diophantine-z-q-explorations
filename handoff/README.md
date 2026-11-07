@@ -1,3 +1,7 @@
+# Current update: Version 9
+
+The [Version 9 supplement](../research/version9/README.md) adds the 523/540-variable source, complete tables, arithmetic audit, new inventory and current TeX/PDF. Pair it with the Version 7 full archive for earlier research history. The older archives below are unchanged.
+
 # Version 7 research handoffs
 
 The Version 7 handoff adds the four Gaussian appendix audits and repairs. It contains the unchanged 962-coordinate quartic, its source and certificates, the optimization history, lower-bound audit, analytic proof work, and independent reviews. Earlier quartics and the original construction remain at their existing repository paths.

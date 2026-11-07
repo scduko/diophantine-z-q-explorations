@@ -1,0 +1,40 @@
+{
+  "all_pages_visually_inspected": false,
+  "observed_utc": "2026-11-07T09:51:06.750432+00:00",
+  "pages": 269,
+  "pdf_sha256": "3243da953b312f3c43aff608b975a4834f82722180c2f1ec4d6e24bdac784882",
+  "remaining_overfull_boxes_points": [
+    1.08102,
+    0.66798
+  ],
+  "remaining_overfull_scope": "Two inherited sub-1.1pt text boxes; no material clipping. The long bibliography links, long file paths and wide appendix display were repaired.",
+  "result": "No clipping, overlaps or unreadable glyphs observed on the inspected pages. Tables repeat headers across page breaks. Title, date, version and bibliography links checked.",
+  "source_sha256": "9559b22cc581346da1b3150fa9b8dfb62cfb048f6aac0b866448ae7ae879ff38",
+  "tex_errors": 0,
+  "unresolved_references": false,
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    20,
+    21,
+    40,
+    41,
+    57,
+    58,
+    90,
+    91,
+    161,
+    162,
+    163,
+    169,
+    170,
+    171,
+    267,
+    268,
+    269
+  ]
+}

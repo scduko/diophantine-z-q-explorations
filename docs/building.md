@@ -1,8 +1,17 @@
 # Building and checking the research package
 
-Run these commands from the repository root. Python scripts use the standard library. The current quartic and the original large construction have separate checks. The Version 7 handoffs contain their own build instructions under `current/`; Version 8 adds only the [abstract revision](manuscript-revisions/version8/README.md). See the [handoff guide](../handoff/README.md) for the archive layout and verification procedure.
+Run these commands from the repository root. Python scripts use the standard library. The current quartic and the original large construction have separate checks. The Version 7 handoffs contain their own build instructions under `current/`; Version 9 adds the [odd-product constructions](quartic-523-540/README.md). See the [handoff guide](../handoff/README.md) for the archive layout and verification procedure.
 
-## Current 962-variable quartic
+## Current 523- and 540-variable quartics
+
+```sh
+python -B scripts/check_odd_product.py
+python -B docs/quartic-523-540/inventory.py validate
+```
+
+These offline checks require only Python and Node.js. They write into `build/odd-product/` and leave pinned source data unchanged. Both final verifiers run twice; every text coefficient is compared with its JSON value.
+
+## Historical 962-variable quartic
 
 The [Version 7 guide](quartic-962/README.md) describes the complete coefficient table, its fixed integer parameter, and the separate scopes of the finite checks and arithmetic proof. Run:
 
@@ -40,13 +49,13 @@ python -E -B /path/to/writable-copy/verify_certificate.py /path/to/writable-copy
 
 This portable checker writes `verification.json` in the supplied directory. Use the copy to keep the released package's exact file inventory unchanged. The packaged original receipt is [evidence/final-verification.json](../quartics/quartic-4973/evidence/final-verification.json). The checker verifies exact projection-preserving equivalence to the pinned source and the complete integer expansion, including the variable count, degree and coefficient bound. These checks do not prove the source system's arithmetic characterization of the integers. The [Version 4 evidence](quartic-4973/README.md) records that separate argument and its review scope.
 
-## Version 8 manuscript
+## Version 10 manuscript
 
 ```sh
 python scripts/build_paper.py
 ```
 
-The script downloads a SHA-256-verified Tectonic 0.17.0 binary for the host platform, then builds a copy of [manuscripts/quartic_v8.tex](../manuscripts/quartic_v8.tex) in an isolated temporary directory. It uses the fixed `tlextras-2022.0r0` bundle URL and checks the selected bundle's fingerprint. Tectonic fetches the required support files. The first run requires network access; later runs reuse the local resource cache.
+The script downloads a SHA-256-verified Tectonic 0.17.0 binary for the host platform, then builds a copy of [manuscripts/quartic_v10.tex](../manuscripts/quartic_v10.tex) in an isolated temporary directory. It uses the fixed `tlextras-2022.0r0` bundle URL and checks the selected bundle's fingerprint. Tectonic fetches the required support files. The first run requires network access; later runs reuse the local resource cache.
 
 If Tectonic 0.17.0 is already installed:
 
@@ -54,9 +63,9 @@ If Tectonic 0.17.0 is already installed:
 python scripts/build_paper.py --tectonic /path/to/tectonic
 ```
 
-Results are written to `build/paper/`, including `quartic_v8.pdf`, `quartic_v8.log`, `compiler.log`, and `build-report.json`. The script fails on a compilation error, unresolved references or citations, or an unexpected bundle fingerprint. Typesetting warnings remain in the log.
+Results are written to `build/paper/`, including `quartic_v10.pdf`, `quartic_v10.log`, `compiler.log`, and `build-report.json`. The script fails on a compilation error, unresolved references or citations, or an unexpected bundle fingerprint. Typesetting warnings remain in the log.
 
-The build does not replace the checked-in PDF. Fixed engine, bundle and timestamp inputs improve reproducibility, but PDF byte identity across operating systems is not claimed. The old receipts under `docs/theorem-application-audit/` describe their frozen historical manuscript, not the Version 8 build.
+The build does not replace the checked-in PDF. Fixed engine, bundle and timestamp inputs improve reproducibility, but PDF byte identity across operating systems is not claimed. The old receipts under `docs/theorem-application-audit/` describe their frozen historical manuscript, not the Version 10 build.
 
 ## Manuscript inventories
 
@@ -127,3 +136,5 @@ The [manuscript workflow](../.github/workflows/manuscript-integration.yml) repro
 GitHub Actions dependencies are pinned to commit hashes; the elan installer and Tectonic archives are pinned by SHA-256. Workflows upload their reports and logs. A green run means the named checks passed on that commit. It does not certify the global arithmetic inputs or complete the main Lean proof.
 
 The earlier Version 4 release digest remains in its historical evidence; use the Pheidas-update digest above for the retained current Version 4 source.
+
+The current revision and its inherited application bindings are checked with `python -B docs/manuscript-revisions/version10/check.py`. The bounded valuation regression is `python -B docs/manuscript-revisions/version10/check_valuation.py`. Neither is a decision procedure for the mathematical proof.

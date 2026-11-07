@@ -1,0 +1,445 @@
+{
+  "archive_sha256": "fcb169b0fe78b7d8c7badec083f23b543901ae0efa17f9bc38f3025511764141",
+  "files": [
+    {
+      "path": "H10-odd-product-reduction/FINAL_REPLAY.log",
+      "bytes": 1308,
+      "sha256": "3e94650438883c758b6a781d740657f8492d82849f37fc3943773d4df651232d"
+    },
+    {
+      "path": "H10-odd-product-reduction/README.md",
+      "bytes": 3432,
+      "sha256": "4a1980af2b348fb618f141e410fc490113d599177ba5146f3492e3f4c9407b5d"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/ASYMMETRIC_LOGARITHMS.md",
+      "bytes": 7766,
+      "sha256": "ebe78e6ec6205a902d376c1320da5b1298faaf9968b7cf307d6c07d714602d90"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/MANIFEST.json",
+      "bytes": 2735,
+      "sha256": "0bda5a3071f5167957aecc90fccd780a2ad526f24374995d0fc3ff275d092165"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/ODD_INDEX_HEIGHT.tex",
+      "bytes": 4216,
+      "sha256": "e82435414261c7236f1e193857a8a8f1ff3f6adc98e8651152851e79d2d8b156"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/PROVENANCE.json",
+      "bytes": 623,
+      "sha256": "ec555de9a83b019d69542c6cc28d41d119809193624dd48f0611f4273d9f94a3"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/README.md",
+      "bytes": 3794,
+      "sha256": "6f64cc3540e8200f9cbd267637e3375539ea74fcfe87916825aa8bb620420b2c"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/SUMMARY.json",
+      "bytes": 951,
+      "sha256": "1479d41bcfe5a394b331b873f93d60711a4343c7d397e017601f358cf4a32522"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/ordinary540/lifted-ir.json",
+      "bytes": 775758,
+      "sha256": "e8e888eee85df8effefd55180019cb398135ad7645ef54da0a0331ad68a0d48f"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/ordinary540/polynomial/compiled-ir.json",
+      "bytes": 775780,
+      "sha256": "3d4e68a0c118f24fa379507e18d694bdc423e73d30658e735d67d7820b20f2f9"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/ordinary540/polynomial/compiler-report.json",
+      "bytes": 1343,
+      "sha256": "6dec67d0d9c5e478a4ba49546379ddae17df6a90c25a346658cdfe51155ce74a"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/ordinary540/polynomial/coordinate-map.json",
+      "bytes": 52877,
+      "sha256": "6b6813c866bb19c0caae1d1b19772fd43339cf2df736059e1ddd7430accb12dd"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/ordinary540/polynomial/polynomial.json",
+      "bytes": 4309114,
+      "sha256": "b14e76dda63ea4bb8b012a89a4f052c73e19877b451633df6ee9c198b8d83571"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/ordinary540/polynomial/reduction-certificate.json",
+      "bytes": 2025,
+      "sha256": "f1b7a4214c8cf8197a8cb32f03a3452fa54c22488a26a225e741ac18fc8612fd"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/ordinary540/polynomial/specialization-certificate.json",
+      "bytes": 1681,
+      "sha256": "24300eb77474a08e8b0d772e72c42d972195de2d1abf2c0bc00b24c56ca55fd5"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/source532.json",
+      "bytes": 1781573,
+      "sha256": "f79805d930e10274bf445831942a0f0889323185f0f44a98879fbcfe5353182b"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/symbolic523/candidate-ir.json",
+      "bytes": 1060167,
+      "sha256": "48a8b8f9263a97d3a1c59f3f0f3553eae628b7aba342d44003e8da840ae84928"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/symbolic523/integer-candidate-ir.json",
+      "bytes": 1060165,
+      "sha256": "2ff844af7ef4ce8c8a3445da5a7e4a17ab55709100b3f07053279cac4ced214c"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/symbolic523/modulo-certificate.json",
+      "bytes": 74570,
+      "sha256": "993f4fec1e26522f160be200231f9de67594c3f51d53529b4023dc00251b9796"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/symbolic523/polynomial/compiled-ir.json",
+      "bytes": 1060166,
+      "sha256": "40acc2fe57868b0d02f6084fa91d8a61c78ff15ad3437e2f328220ea20e7b28f"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/symbolic523/polynomial/compiler-report.json",
+      "bytes": 1343,
+      "sha256": "16883eb7b4376fc53ac61985eb3f056534d2ca54d55352b4a5acd81df4133556"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/symbolic523/polynomial/coordinate-map.json",
+      "bytes": 51245,
+      "sha256": "bdbde285470c33611aceb56c94cf1115b7131afbf20f8288ef8fe7d99725c609"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/symbolic523/polynomial/polynomial.json",
+      "bytes": 4968112,
+      "sha256": "6a3685980de4512bdc7f3a781d0c0d4b32cce5829ec83f03f318264931bdbbe3"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/symbolic523/polynomial/reduction-certificate.json",
+      "bytes": 267,
+      "sha256": "e37ad8fbd4e2cbbcce1cdf3184bba5b988ef15086f3dda70962babbb3d5a779d"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/symbolic523/polynomial/specialization-certificate.json",
+      "bytes": 726,
+      "sha256": "3a9b10d4e1318097d392b94c1b5195ed2ec6510d1742e898ff4eb650d01ff2c9"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/symbolic523/verification.json",
+      "bytes": 469,
+      "sha256": "526641791e64ef7bff19f27949431edea9d88cffc8e75ba2666bcab89b6a2d8f"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/verify_all.py",
+      "bytes": 4311,
+      "sha256": "1154ce38f1c4d812aa14f328f8afc1681c649829a28e3b714ed579b9fa137347"
+    },
+    {
+      "path": "H10-odd-product-reduction/final523_540/verify_elimination.py",
+      "bytes": 5394,
+      "sha256": "cf1814a889f9b6822cf6f9f1438dea9a0ee4323ad03b392867ee36265369e7c2"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/MANIFEST.json",
+      "bytes": 2635,
+      "sha256": "e19a22e1970381f01b99f2b271c5fdd16736e9e3e0877f5b7133582d2cb04f1a"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/ODD_INDEX_HEIGHT.tex",
+      "bytes": 4216,
+      "sha256": "e82435414261c7236f1e193857a8a8f1ff3f6adc98e8651152851e79d2d8b156"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/PROVENANCE.json",
+      "bytes": 624,
+      "sha256": "20ef8f02221d71680c7a6c93a9c7df0603577b5c609d25095bb4eedd3aa0c61b"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/README.md",
+      "bytes": 3622,
+      "sha256": "b73d1a1e46630c58f431c90b0921226e94f77768aed12dad7e534d493a2c9a29"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/SUMMARY.json",
+      "bytes": 951,
+      "sha256": "b8476b2636e775d1ed7e55d6c4e1ad063e7b8e82798bcffd2a7650fb8dfef72d"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/ordinary571/lifted-ir.json",
+      "bytes": 776964,
+      "sha256": "57161b0d678fd468e4084c72a7b3e954af836d4934148f8451c8d0f3249892f7"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/ordinary571/polynomial/compiled-ir.json",
+      "bytes": 776985,
+      "sha256": "5e5969acf51aeee9bf42f9c8662168c44e6ed3b9f3fa48f5ad45c8808d89de5e"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/ordinary571/polynomial/compiler-report.json",
+      "bytes": 1343,
+      "sha256": "cf91d1417dd4e143c6c607c80206849b766f2406dbe2be204f747562286ffa69"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/ordinary571/polynomial/coordinate-map.json",
+      "bytes": 56024,
+      "sha256": "0d42a045c042a71506d62b969790beaabb3da13f48e4f54a7001f88ef5b92b0a"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/ordinary571/polynomial/polynomial.json",
+      "bytes": 4099114,
+      "sha256": "82cc95d0731e7c33b0e9037a3a3700935097c37ed79378bc0ebbcfe206858397"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/ordinary571/polynomial/reduction-certificate.json",
+      "bytes": 1937,
+      "sha256": "50b532047b834934d76f2a370a98e50b04170c8f2765559a11b85d35bc6e4669"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/ordinary571/polynomial/specialization-certificate.json",
+      "bytes": 1681,
+      "sha256": "24300eb77474a08e8b0d772e72c42d972195de2d1abf2c0bc00b24c56ca55fd5"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/source561.json",
+      "bytes": 1800831,
+      "sha256": "6573ea64f0d31fff9e1b0e2c8c249efe86cdb6b3cc2a065a470b383c42a1f4de"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/symbolic554/candidate-ir.json",
+      "bytes": 1076194,
+      "sha256": "924fb90102277b5d9aded665fdd27f7128547dc7993adfdb302673e92308b7db"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/symbolic554/integer-candidate-ir.json",
+      "bytes": 1076192,
+      "sha256": "40cdeb70bc4e2a6973e952fd2afefa6816002521b828811c255391151abe6334"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/symbolic554/modulo-certificate.json",
+      "bytes": 44441,
+      "sha256": "09202f16d0038709d755faf471ba5135dc72a26d3eb1b8ec837c2fb8a588f4f9"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/symbolic554/polynomial/compiled-ir.json",
+      "bytes": 1076192,
+      "sha256": "1f7ed9e52ca58f5be76d0ea2a00eb42be557f035fce528357ed6ede8c175b7b0"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/symbolic554/polynomial/compiler-report.json",
+      "bytes": 1343,
+      "sha256": "2388b80363f12b1178369ec0c6a734714455de47c58e06a79463ad3cafcc2268"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/symbolic554/polynomial/coordinate-map.json",
+      "bytes": 54392,
+      "sha256": "1b089f6c63eb08e3ee7844537be121bcfef7fe5b80a4410b92bc991b1762955e"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/symbolic554/polynomial/polynomial.json",
+      "bytes": 4725375,
+      "sha256": "0a57e9be2cea1068bfbe211422e5123a2b045117e11a84cf8bdef207d5562f8e"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/symbolic554/polynomial/reduction-certificate.json",
+      "bytes": 177,
+      "sha256": "9d9e2f0d3fce763f6f02c8565ef3f634aece448305c6dd732cb1df1d9b839415"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/symbolic554/polynomial/specialization-certificate.json",
+      "bytes": 726,
+      "sha256": "3a9b10d4e1318097d392b94c1b5195ed2ec6510d1742e898ff4eb650d01ff2c9"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/symbolic554/verification.json",
+      "bytes": 469,
+      "sha256": "8a6172ce1e2ad61d1d706a999b55cd07ecf909d7d8547f0a83c814677e0b5b69"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/verify_all.py",
+      "bytes": 4311,
+      "sha256": "244fdf16c3c4696f6d12ba35eb18135f8e82fd7105b9f92d674d256210306985"
+    },
+    {
+      "path": "H10-odd-product-reduction/final554_571/verify_elimination.py",
+      "bytes": 5394,
+      "sha256": "4a7a8acfbd786a4c805a044341eef9f61d501e5fe519864c18d4b616234ec08a"
+    },
+    {
+      "path": "H10-odd-product-reduction/h10-odd-product-reduction.pdf",
+      "bytes": 266961,
+      "sha256": "da54943dbd694901d6f7425d2fd8c7202415c4bd2a252fa6bbe9e64ef72aaacd"
+    },
+    {
+      "path": "H10-odd-product-reduction/h10-odd-product-reduction.tex",
+      "bytes": 24172,
+      "sha256": "5595a6cf5a5159ef1968296dbdd16c344c61652523cd342ce441841f6631d497"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/ARTICLE_REVIEW.json",
+      "bytes": 2025,
+      "sha256": "e72853054421c3c191ca5e1fde9104a893f04b37611c467f4f1ad99ffbf6e87b"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/ASYMMETRIC_DEPTH.md",
+      "bytes": 7766,
+      "sha256": "ebe78e6ec6205a902d376c1320da5b1298faaf9968b7cf307d6c07d714602d90"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/ASYMMETRIC_DEPTH_AUDIT.md",
+      "bytes": 3946,
+      "sha256": "7b8bae5db6c74accf0cb8afda8fcbb14abe8b913e0548601e02ada97b8efc1d9"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/FINAL_ARCHITECTURE_REVIEW.json",
+      "bytes": 6061,
+      "sha256": "1507bf54e2c1d8d8ec412e2d3db70991fc3726359ac04dbd06bc99d4c9c0e2f6"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/INTEGRATION.md",
+      "bytes": 3534,
+      "sha256": "22d15f88f560c7917c459af996e6b81411da8dd353319efd8c08834b0d96238f"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/ODD_CHART.md",
+      "bytes": 4576,
+      "sha256": "bc9172823b7e9063d38039ba801d03ba2627085948ad53aa1a213bb6b3597155"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/ODD_PRODUCT_AUDIT.md",
+      "bytes": 5443,
+      "sha256": "43c859487b12ed106f483aed0bb0b480baddb80234d6d16f9b5c5aa10d686d57"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/ODD_ROOT_COMPLETENESS.md",
+      "bytes": 8348,
+      "sha256": "9a2fb999d16b952ac04d01684eb8989a631a56b57910244638953cb700d856ac"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/UPSTREAM_DIRECT_TARGETS.md",
+      "bytes": 5742,
+      "sha256": "5b5b0dac1746ecc9b99a06e044d9c07dccbcb32fa11464e626ff9f7e4f85b883"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/odd_product_height.tex",
+      "bytes": 5565,
+      "sha256": "6a0c79bd35e9d22fd864d4949657295dcce65d582c2914f4df2984c94a6c4d46"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/previous-chart-proof.pdf",
+      "bytes": 233183,
+      "sha256": "6363afe60043dc60e8b09dbc70b1b222960759ec1abbb665c6a6aeaecb6e9a08"
+    },
+    {
+      "path": "H10-odd-product-reduction/proofs/previous-chart-proof.tex",
+      "bytes": 15078,
+      "sha256": "7ea6c0d0c821c398d43a4ba87a8c0683c3f52e3cc616789e76b9da8c71bb4ebd"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/MANIFEST.json",
+      "bytes": 2009,
+      "sha256": "b6245234b870009bb7c42996a3ac6fd5031055f2be990a9cee094501a124e563"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/PROVENANCE.json",
+      "bytes": 2794,
+      "sha256": "3b0df627f6bfedf871f79a23fe0877c5ec5eecc29d7d2c4600f671833939ee80"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/README.md",
+      "bytes": 3052,
+      "sha256": "e68a913933f9cb8924a2746689960710ffe6e219cbab594126086741f8d3f774"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/builders/base833-source.cjs",
+      "bytes": 20966,
+      "sha256": "5dfb2eb4bacb7f96a15b8dd71dc78b11c80c218ae3b12bfc9401abbd88b88279"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/builders/odd-product-asymmetric-source.cjs",
+      "bytes": 21685,
+      "sha256": "bf01e9b051c9f5f7db2b3a9b2e0122d0d37118b30422d1d2ef54f6c3c0829af1"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/builders/odd-product-source.cjs",
+      "bytes": 21824,
+      "sha256": "868498d02f2061250c9dcd03870e589e0e0cfcddca87b1322f4c7288bfe0e162"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/expected/source532.json",
+      "bytes": 1781573,
+      "sha256": "f79805d930e10274bf445831942a0f0889323185f0f44a98879fbcfe5353182b"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/expected/source561.json",
+      "bytes": 1800831,
+      "sha256": "6573ea64f0d31fff9e1b0e2c8c249efe86cdb6b3cc2a065a470b383c42a1f4de"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/patches/asymmetric_depth.py",
+      "bytes": 2278,
+      "sha256": "689c5d61065a22bd1c040d55c95573c345faa6fcbf49b30ae4dbe7569406ba60"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/patches/odd_chart.py",
+      "bytes": 1461,
+      "sha256": "d4cab00ad99a2d6a5d8f87f30da726dc48d9149b88919ca452cca63e05e8f02b"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/patches/odd_scalar.py",
+      "bytes": 877,
+      "sha256": "54aab6f4e4b93c99659ec07b0f860b7546bf7b417962b8108d28276489b284f8"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/patches/original_asymmetric_driver.py",
+      "bytes": 2394,
+      "sha256": "bd7828bc48a9caca57e900788d9edad9448205f3afc906ca6ebb1d37c32591c4"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/patches/original_integration_driver.py",
+      "bytes": 911,
+      "sha256": "228e4e9e91af56c8b108c592c0d89008b79e339865fcae51c1d6503705c8e606"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/patches/product_scales.py",
+      "bytes": 1348,
+      "sha256": "e230ff93e0ce0e22da56c551584d4c25525b8a7ce7987e997e8baa94fe45e6bf"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/receipts/copied-directory-replay.json",
+      "bytes": 1090,
+      "sha256": "05fa4f446845fd45ab3200ef2a340d8c0768f64aeb97ba21d566d6d94d47f7bb"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/receipts/full-replay.json",
+      "bytes": 1105,
+      "sha256": "e107e9dca8f4cf590386014efd38a783c24961d7adaed990e21867cf1c4616fa"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/reproduce.py",
+      "bytes": 5285,
+      "sha256": "965e3b7dab24760369d5533010a0907327e79d526635693c77b2f790757ac848"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/sources/diophantine_optimization_20261106_v3.tex",
+      "bytes": 448727,
+      "sha256": "fc8bc7b8fae727e24f934ddd7de0a7cff8a005e89c3d0cac1ea14e5191b910ca"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/tools/checker.cjs",
+      "bytes": 21177,
+      "sha256": "50f9924557f0594a0ddb2664260d2e382d80762a0d607d87203fb7ddfb4e1cb1"
+    },
+    {
+      "path": "H10-odd-product-reduction/source-reproduction/tools/compile_ir.py",
+      "bytes": 21954,
+      "sha256": "c50510a5bed8f59543b64a3a2cb251e9aff4b300d4bfc750e13642e7b00eb46f"
+    },
+    {
+      "path": "H10-odd-product-reduction/SHA256SUMS.json",
+      "bytes": 10069,
+      "sha256": "6f62da5f644f2a44913e1402b4479b5bd30291c72634fd389ec86164648c2d71"
+    }
+  ]
+}

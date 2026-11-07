@@ -49,6 +49,16 @@
       "bytes": 912132,
       "path": "manuscripts/archive/quartic_v7.tex",
       "sha256": "5399d2fb3c3beea388ccdb5719934772f222b49d02482a05ac3abc515321419a"
+    },
+    "manuscripts/quartic_v8.tex": {
+      "path": "manuscripts/archive/quartic_v8.tex",
+      "sha256": "7c1c16ec4affe6f5ca39eff25434686d15ae5ebffdd4142db37fcf363d0c3feb",
+      "bytes": 912103
+    },
+    "manuscripts/quartic_v8.pdf": {
+      "path": "manuscripts/archive/quartic_v8.pdf",
+      "sha256": "3f0a5d080849577b6a072edd280f8554f3a38d17403c2f051e1b26ea39a1b042",
+      "bytes": 1462053
     }
   },
   "schema": "manuscript-file-relocation-v1",

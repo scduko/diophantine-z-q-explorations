@@ -1,0 +1,17 @@
+{
+  "odd_chart_identities": [
+    "halfpoint_abscissa_identity",
+    "halfpoint_curve_equation",
+    "tangent_slope_identity",
+    "double_abscissa",
+    "double_ordinate"
+  ],
+  "fixed_point_doubling_and_chart": "PASS",
+  "bad_prime_7_reduction": [
+    1,
+    6
+  ],
+  "lucas_finite_examples": 10,
+  "anchor_integer_exponent_comparisons": "PASS",
+  "scope": "Exact algebra and finite sanity checks; general valuation and completeness arguments reviewed separately."
+}

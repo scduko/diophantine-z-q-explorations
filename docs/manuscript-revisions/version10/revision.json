@@ -1,0 +1,164 @@
+{
+  "version": 10,
+  "base_version": 9,
+  "date": "2026-11-07",
+  "issue": "https://github.com/elliotglazer/diophantine-z-q/issues/2",
+  "baseline": {
+    "path": "manuscripts/quartic_v9.tex",
+    "sha256": "6619f4d150e84815f26b78d41c30070ea9564345861b2808312bcb80aabb19b5",
+    "bytes": 951657
+  },
+  "candidate": {
+    "path": "manuscripts/quartic_v10.tex",
+    "sha256": "9559b22cc581346da1b3150fa9b8dfb62cfb048f6aac0b866448ae7ae879ff38",
+    "bytes": 969954
+  },
+  "sequential_edits": [
+    {
+      "issue_item": "version",
+      "old": "\\large Version 9.",
+      "new": "\\large Version 10."
+    },
+    {
+      "issue_item": "8",
+      "old": "partial valuation predicates anticipating the pole conditions used here.",
+      "new": "partial valuation predicates anticipating the pole conditions used here.\n\nEarlier definability results provide the logical context. Robinson\ngave a first-order definition of $\\Z$ in $\\Q$\n\\cite[Theorem 3.1]{robinson1949}. Poonen gave a definition with\nuniversal quantifiers followed by existential quantifiers\n\\cite[Theorems 3.1 and 4.1]{poonen2009}. Koenigsmann gave a universal\ndefinition and proved that $\\Q\\setminus\\Z$ is Diophantine in $\\Q$\n\\cite[Theorem 1 and Corollary 2]{koenigsmann-defining}. These are\nhistorical context, not additional premises of our construction."
+    },
+    {
+      "issue_item": "1",
+      "old": "connected components. It also gives a universal rational Diophantine",
+      "new": "connected components. Mazur proposed this in 1992\n\\cite{mazur1992}; his observation that it obstructs a Diophantine\ndefinition of $\\Z$ is recalled in \\cite[p.~166]{mazur1995}.\nIt also gives a universal rational Diophantine"
+    },
+    {
+      "issue_item": "version",
+      "old": "Version 9 incorporates Gabriel Conant's odd-index product-height argument",
+      "new": "Version 10 clarifies determinant specialization, the published\nprime-two Euler-system input, the local valuation deduction, and the\nidentification of the saved templates, following the review in repository\nIssue~2. It also corrects and expands the historical attribution.\nThe polynomial specifications and numerical bounds are unchanged.\nWe thank \\texttt{manvirjaswal} for the detailed review\n\\footnote{\\url{https://github.com/elliotglazer/diophantine-z-q/issues/2}}.\n\nVersion 9 incorporated Gabriel Conant's odd-index product-height argument"
+    },
+    {
+      "issue_item": "7",
+      "old": "\\section{The elliptic model of integer indices}\\label{sec:model}",
+      "new": "\\section{The elliptic model of integer indices}\\label{sec:model}\nThe rank-one model and its generator calculation adapt\n\\cite[Proposition 2.1 and its proof]{openaihtp}.\n"
+    },
+    {
+      "issue_item": "7",
+      "old": "\\section{The six-contact height estimate}\\label{sec:height}",
+      "new": "\\section{The six-contact height estimate}\\label{sec:height}\nThe contact and odd-support framework follows\n\\cite[Section 4]{openaihtp}. The effective geometric estimates below\ngive the height input used in this manuscript; the preprint's height\nassertion is not taken as an additional premise.\n"
+    },
+    {
+      "issue_item": "7",
+      "old": "\\section{The pole predicate and its converse input}\\label{sec:pole}",
+      "new": "\\section{The pole predicate and its converse input}\\label{sec:pole}\nThe pole construction and simultaneous-descent strategy adapt\n\\cite[Section 3]{openaihtp}.\n"
+    },
+    {
+      "issue_item": "7",
+      "old": "\\section{Multiplication and the finite false-triple guard}\\label{sec:mult}",
+      "new": "\\section{Multiplication and the finite false-triple guard}\\label{sec:mult}\nThe local-test construction and prime-pattern strategy adapt\n\\cite[Section 2 and Lemma 6.1]{openaihtp}.\n"
+    },
+    {
+      "issue_item": "7",
+      "old": "\\begin{theorem}[Restricted converse, $\\mathsf{RC}$]\\label{hyp:RC}",
+      "new": "The following statement is the $E=E_\\ell$, $s_2(E)=1$ case of\n\\cite[Theorem 1.1]{openaipointwise}, and also follows as a special\ncase of \\cite[Theorem 1.1]{openaigoldfeld}. We give the restricted\nargument here; these preprints are cited for attribution, not assumed\nas additional converse inputs.\n\n\\begin{theorem}[Restricted converse, $\\mathsf{RC}$]\\label{hyp:RC}"
+    },
+    {
+      "issue_item": "7",
+      "old": "\\section{The restricted converse and its dependency order}\\label{sec:rc}",
+      "new": "\\section{The restricted converse and its dependency order}\\label{sec:rc}\nThe organization of the restricted-converse argument follows\n\\cite{openaipointwise}, particularly its ring-class interpolation,\ndeterminant transfer, coefficient systems and fixed-curve assembly.\nThe broader converse is stated in \\cite{openaigoldfeld}. Our\nspecialization uses the same full Selmer-corank convention, including\nany divisible part of $\\Sha$, as those sources.\n"
+    },
+    {
+      "issue_item": "5",
+      "old": "their four conjugate counterparts at $V_0,V_i$, three differences of\nthe corresponding $L$-ratios, and the product of the first two unprimed\nratios minus the third.",
+      "new": "their four conjugate counterparts at $V_0,V_i$, the three differences\n$A_i-\\sigma(A'_i)$, and $A_1A_2-A_3$, where\n\\[\n A_i=\\frac{L(z(U_i))}{L(z(H))},\\qquad\n A'_i=\\frac{L(z(V_i))}{L(z(V_0))}\\quad(1\\le i\\le3),\n\\]\nand $\\sigma$ is the nontrivial automorphism of $K/\\Q$. In particular\nthe primed ratio is conjugated before the difference is taken."
+    },
+    {
+      "issue_item": "6",
+      "old": "At a positive odd contact prime outside $S_{\\rm mul}$, each factor\nvaluation is the minimum of zero and an odd integer. No cancellation\noccurs. The trace and Lemma~\\ref{lem:pole} force one common group and\nplace where the first eight tests have valuation at least one and\nthe last four at least 25.",
+      "new": "Here is the valuation deduction at a positive odd contact prime\n$p\\notin S_{\\rm mul}$. Normalize every $v\\mid p$ by $v(p)=1$ and\nput $\\delta=v_p(R_0)>0$. The contact roots are distinct modulo $p$,\nand $t-1$ is a unit, so $\\delta$ is the positive odd contact order.\nThe fixed $\\ell_0$ is supported on $S_{\\rm mul}$. Since\n$\\delta+2v_p(q)$ is odd, the two summands in $a=1-R_0q^2$ have\nunequal valuations. Thus $v_p(a)\\le0$ and\n\\[\n \\alpha=v_p(R)=\\delta+2v_p(a)\\le\\delta,\n \\qquad \\alpha\\text{ is odd}.\n\\]\nEvery factor has valuation\n$v(1+RC_{gj}^2)=\\min\\{0,\\alpha+2v(C_{gj})\\}\\le0$.\nIf test $j$ fails its threshold $v(D_{gj})\\ge k_j$ at $v$, then\n\\[\n v(1+RC_{gj}^2)\n \\le\\alpha+2(k_j-1)-2k_j\\delta\n \\le\\alpha-2\\delta<0.\n\\]\nConsequently $v(W_g^{-1})\\ge2\\delta-\\alpha$ for that group and\nplace. If every group fails at every place above $p$, the trace of\ntheir sum satisfies\n\\[\n v_p(\\Theta)\\ge2\\delta-\\alpha,\\qquad\n v_p(R/\\Theta^2)\\le3\\alpha-4\\delta\\le-\\delta<0.\n\\]\nThe latter valuation is odd, contradicting Lemma~\\ref{lem:pole}.\nTherefore one common group and place has its first eight tests of\nvaluation at least one and its last four of valuation at least 25.\nThis argument does not require all factors in that group to be units."
+    },
+    {
+      "issue_item": "2",
+      "old": "\\begin{proposition}[Arithmetic calibration at known simple zeros]\\label{ex:arith-central-calibration}",
+      "new": "\\begin{lemma}[Determinant specialization with no dimension jump]\n\\label{lem:v10-determinant-specialization}\nLet $A$ be a discrete valuation ring with uniformizer $t$, fraction\nfield $F$, and residue field $k$. Let $C$ be a bounded finite free\ncomplex over $A$. If\n\\[\n \\dim_F H^i(C\\otimes_A F)=\\dim_k H^i(C\\otimes_A k)\n \\quad\\text{for every }i,\n\\]\nthen its cohomology is free and commutes with reduction modulo $t$.\nIn particular, when the only nonzero dimensions are $(1,1)$ in\ndegrees one and two, the coordinate of an actual cycle and an actual\nclosed functional in $\\det^{-1}C$ is regular at $t=0$ and specializes\nto the coordinate of their central tensor in the specialized retained\ndeterminant basis.\n\\end{lemma}\n\\begin{proof}\nSmith reduction splits the bounded free complex into free summands with\nzero differential and two-term summands $[A\\xrightarrow{t^r u}A]$,\nwhere $u$ is a unit and $r\\ge0$. A summand with $r>0$ contributes\none extra residue-field cohomology dimension in each of two adjacent\ndegrees and contributes none over $F$. The dimension equalities\ntherefore exclude every such summand. The remaining two-term summands\nare contractible over $A$. On the zero-differential summands both\ncohomology and the class-functional tensor commute with base change.\nThe determinant identifications include the same contractible\nsummands before and after reduction, with their unit differentials;\nthere is no independent rescaling of the retained basis.\n\\end{proof}\n\n\\begin{proposition}[Arithmetic calibration at known simple zeros]\\label{ex:arith-central-calibration}"
+    },
+    {
+      "issue_item": "2",
+      "old": "Then the coordinate of\nDefinition~\\ref{ex:arith-coordinate}, with the central class and\nfunctional of Lemma~\\ref{ex:arith-central-specialization}, satisfies",
+      "new": "Then the specialization at $t=0$ of the generic coordinate in\nDefinition~\\ref{ex:arith-coordinate} is regular and satisfies"
+    },
+    {
+      "issue_item": "2",
+      "old": "\\begin{proof}\\leavevmode\nFor the ordinary compact Kummer complex $C_K$, universal coefficients",
+      "new": "\\begin{proof}\\leavevmode\nFirst we justify the specialization of the generic coordinate.\nThe forward theorem, Lemma~\\ref{lem:forward-rank}, gives rank one\nand finite $\\Sha$ for the first twist and rank zero and finite $\\Sha$\nfor its companion. Hence the central rational primitive complex has\ncohomology dimensions $(1,1)$ in degrees one and two and zero\nelsewhere. Over $A=\\Lambda_{(t)}$, cancel the unit disks outside\nthese two degrees; Nakayama's lemma permits these cancellations\nbecause the other central cohomology groups vanish. The retained\ncycle has nonzero central class by (4.5), the height formula at the\nknown simple zero, and its specified nonzero multipliers. In the\nremaining two-term free complex this forces a nonzero generic kernel.\nSemicontinuity bounds its dimension by one. The Euler characteristic\nis zero, so the generic dimensions are also $(1,1)$.\nLemma~\\ref{lem:v10-determinant-specialization} now identifies the\nspecialization of the generic coordinate with the central tensor\ncomputed in Lemma~\\ref{ex:arith-central-specialization}, in the same\nretained determinant basis. This step uses neither the numerical\ncalibration (4.6) nor the later uniform determinant bound.\n\nFor the ordinary compact Kummer complex $C_K$, universal coefficients"
+    },
+    {
+      "issue_item": "2",
+      "old": "In the second case the generic and central dimensions agree in\nevery degree. Hence no disk with $r>0$ occurs.",
+      "new": "In the second case the generic and central dimensions agree in\nevery degree. Lemma~\\ref{lem:v10-determinant-specialization} applies:\nno disk with $r>0$ occurs."
+    },
+    {
+      "issue_item": "4",
+      "old": "together with the nonzero-class input in 13.5(2)\n\\cite{kato}. We use the height-one primes not containing two.",
+      "new": "together with the nonzero-class input in 13.5(2)\n\\cite{kato}. At two we justify the divisibility through\n\\cite[Theorem 0.8]{kato1999}; Appendix~\\ref{app:even-source}\nchecks its stronger abelian-extension hypothesis and compares the\ntwo cohomology conventions. We use the height-one primes not\ncontaining two."
+    },
+    {
+      "issue_item": "4",
+      "old": "\\paragraph{8. Paying for the full global complex.}",
+      "new": "\\paragraph{The published prime-two Euler-system input.}\nFor $p=2$ we use the rational, away-from-two case of\n\\cite[Theorem 0.8, pp.~317--318]{kato1999}, with the stronger\nhypothesis in its condition 0.6(ii), to justify the application of\n\\cite[Theorem 13.4(2)]{kato}. For our non-CM elliptic representation\nthe image of $G_{\\Q^{\\rm ab}}$ contains an open subgroup of\n$\\mathrm{SL}_2(\\Z_2)$, as stated in\n\\cite[Example 0.6.2, pp.~317--318]{kato1999}, using Serre's open-image\ntheorem. A quadratic character $\\chi$ is trivial on $G_{\\Q^{\\rm ab}}$.\nThus the same subgroup acts on $V\\chi$ and contains a matrix\n$\\left(\\begin{smallmatrix}1&b\\\\0&1\\end{smallmatrix}\\right)$ with\n$b\\ne0$. Its fixed space over $\\Q_2$ has dimension one. This supplies\nthe unipotent in $G_{\\Q^{\\rm ab}}$, not merely in the cyclotomic\nsubgroup. The latter subgroup also contains this open\n$\\mathrm{SL}_2$ subgroup, so $V\\chi$ remains absolutely irreducible\nover $\\Q(\\mu_{2^\\infty})$. Indeed, a line invariant under both upper\nand lower nonidentity unipotents cannot exist, even over an algebraic\nclosure. No inference from irreducibility over $G_\\Q$ alone is needed.\n\nThe retained classes (K8) satisfy the Euler-system norm relation\n0.1.1 of \\cite{kato1999}, with the same inverse-Frobenius polynomial\n(K9). Enlarge the fixed inverted support to contain $2$, the bad\nprimes, and the conductor of $\\chi$; primes excluded only by smoothing\nbelong to $N'$ in that source and need not be inverted. The preceding\nnonvanishing argument supplies a nontorsion class on each sign\ncomponent, purity gives $w=-1$, and oddness gives condition\n0.6(iv$_{\\mathfrak p}$). At the height-one primes used here, $2$ is\ninvertible and the localized Iwasawa algebra is a DVR. Theorem 0.8\nthen bounds the coordinate ideal of this actual retained class. Its\nstrong residual and integral-cokernel assumptions concern primes\ncontaining $2$, which are not used here.\n\nWe also account for the difference between the two published\ncohomology conventions. Write $C_j$ for the $j_*$ Iwasawa complex of\n\\cite[Section 12.1]{kato}, and $C_S$ for full cochains on the open\nscheme with the odd support inverted, as in \\cite[Section 0.5]{kato1999}.\nWork in one rational sign component and localize at $\\mathfrak p$.\nTheir quotient is the direct sum of the odd local complexes (K16).\nEach differential has nonzero determinant, so its degree-one\ncohomology vanishes. Hence $H^1(C_j)\\simeq H^1(C_S)$ and\n$H^2(C_j)\\hookrightarrow H^2(C_S)$. At an odd prime $q$, the\nunramified local term has cohomological dimension one after inverting\n$2$. The localization triangle identifies the degree-two cohomology\nof (K16) with full local $H^2(\\Q_q,T\\chi)$ in Iwasawa cohomology.\nThe map from $H^2(C_S)$ is the usual local restriction. Exactness\ntherefore identifies $H^2(C_j)$ with the kernel of all those odd\nlocal restrictions. Intersecting with the kernel of restriction at\n$2$ gives\n\\[\n \\ker\\bigl(H^2(C_j)\\to H^2_{\\rm loc,2}\\bigr)\n \\simeq\n \\ker\\bigl(H^2(C_S)\\to\\!\\bigoplus_{q\\in S}H^2_{\\rm loc,q}\\bigr).\n\\]\nThis is precisely the comparison of the subscript-zero groups in\nthe two sources. The $H^1$ identification preserves the actual\nEuler-system class and its coordinate ideal $J$. Thus Theorem 0.8\ngives (K15) in the convention used here. The argument for (K16)\nbelow is local and does not use (K15). We do not invoke the\nodd-prime-only Perrin--Riou argument or an unchecked version of\nRubin's theorem at $2$.\n\n\\paragraph{8. Paying for the full global complex.}"
+    },
+    {
+      "issue_item": "9",
+      "old": "$a_p(E^{(k)})\\equiv p+1\\pmod8$ at the required good $K$-split primes.",
+      "new": "$a_p(E^{(k)})\\equiv p+1\\pmod8$ at every fresh good $K$-split\nprime outside the support, whether or not it lies in the coefficient\nfilter. Indeed, off the filter $a(p)=0$ in (G.4a); the second fresh\nprime $p'$ matches the old labels so that $pp'$ lies in the filter,\nas used in (G.4d). The selected $p$ below need not lie in the filter."
+    },
+    {
+      "issue_item": "9",
+      "old": "$(k/p)=1$, avoiding the finite support. The fresh ramification of $K$",
+      "new": "$(k/p)=1$, avoiding the finite support. In fact this $p$ is outside\nthe square filter: quadratic reciprocity and $p\\equiv1\\pmod4$ give\n$\\prod_{r\\mid\\ell}(p/r)=(\\ell/p)=-1$, so $p$ is a nonsquare at\nsome odd $r\\mid\\ell$, and $r\\mid N$. This is why the off-filter\nscope of the preceding calculation is needed. The fresh ramification of $K$"
+    },
+    {
+      "issue_item": "1",
+      "old": "finite-connected-components conjecture for the real-topological closure\nof rational points is false.",
+      "new": "finite-connected-components conjecture for the real-topological closure\nof rational points, Conjecture~3 of \\cite{mazur1992,mazur1995}, is\nfalse. Its stronger Conjecture~2 is false as well."
+    },
+    {
+      "issue_item": "1",
+      "old": "Mazur's Conjecture~3 in \\cite[p.~165]{mazur1995} asserts that the closure",
+      "new": "We recall Mazur's projection argument, originating in\n\\cite{mazur1992} and repeated in \\cite[p.~166]{mazur1995}.\nConjecture~3 in \\cite[p.~165]{mazur1995} asserts that the closure"
+    },
+    {
+      "issue_item": "1",
+      "old": "components, contradicting the stated conjecture.\n\\end{proof}",
+      "new": "components, contradicting the stated conjecture. Conjecture~2 in\nthe same source would give the homotopy type of a finite simplicial\ncomplex and hence only finitely many connected components, so it\nimplies Conjecture~3 and is contradicted too.\n\\end{proof}"
+    },
+    {
+      "issue_item": "3",
+      "old": "\\begin{corollary}[The many-one degree of $\\operatorname{HTP}(\\Q)$]",
+      "new": "OpenAI already obtained Turing degree $0'$ for this set in\n\\cite[Corollary 7.1, pp.~56--57]{openaihtp}; that paper explicitly\ndoes not assert many-one completeness. The stronger direction below\nis $0'\\le_m\\operatorname{HTP}(\\Q)$, obtained from the integer\ndefinition through the universal polynomial. The reverse many-one\nreduction is the standard enumeration of rational solutions.\n\n\\begin{corollary}[The many-one degree of $\\operatorname{HTP}(\\Q)$]"
+    },
+    {
+      "issue_item": "7",
+      "old": "The supplement manifest also records the revised fixed-degree CM proof,",
+      "new": "In particular S30, S18, S29 and S32 are, respectively, Sections\n2, 4, 5 and 9 of OpenAI's \\emph{A pointwise 2-converse for elliptic\ncurves with rational two-torsion}~\\cite{openaipointwise}, frozen at\n\\texttt{openai/math} commit\n\\nolinkurl{4eaee87548250b2682affda7d05d947c05554bae}.\nThe source filenames are provenance labels for those sections, not\nindependent publications or independent arithmetic assumptions.\n\nThe supplement manifest also records the revised fixed-degree CM proof,"
+    },
+    {
+      "issue_item": "5",
+      "old": "The following parameter and witness counts are extracted from the exact",
+      "new": "\\subsection{The saved templates and the mathematical predicates}\n\\label{subsec:v10-template-dictionary}\nThe following dictionary identifies the relations encoded by the saved\ntemplates, in addition to the decoding rules above. Point arguments are\ncanonical five-coordinate codes. Field values have their two rational\ncomponents in the basis $(1,\\sqrt2)$; conjugation negates the second\ncomponent. An inverse equation guards each displayed quotient.\nConjunction is encoded by a sum of squares, and disjunction by a\nproduct, with the private witness blocks specified in the file.\nThe identities are identities of zero sets over $\\Q$; squaring a\ncallee polynomial can change the literal polynomial without changing\nthe relation it defines.\n\n\\begin{longtable}{p{.29\\textwidth}p{.65\\textwidth}}\n\\toprule Saved template & Relation and constraints\\\\\\midrule\\endhead\n\\nolinkurl{member} & Membership in the canonical code domain $D=2E(K)$\nof Section~\\ref{sec:model}.\\\\\n\\nolinkurl{raw_add}, \\nolinkurl{raw_z}, \\nolinkurl{raw_inverse_x} &\nThe group-law relation on typed inputs, $z=-x/y$, and $w=1/x$,\nrespectively, with $z(O)=w(O)=0$.\\\\\n\\nolinkurl{log25} & The two-component equality to the displayed\nscaled degree-25 polynomial $L$ in Section~\\ref{sec:mult}.\\\\\n\\nolinkurl{pole} & $Q_{\\rm pole}(B)^2$, where $Q_{\\rm pole}$ is the\neleven-witness polynomial of Section~\\ref{sec:pole}. The outer square\ncomes from the singleton conjunction added by the rational builder.\\\\\n\\nolinkurl{test_group} & The twelve field tests of\nSection~\\ref{sec:mult}, including $A_i-\\sigma(A'_i)$ for $i=1,2,3$.\nIts four input points are $[c_*]P_0,[c_*]P_1,[c_*]P_2,[c_*]P_3$.\nIt types the first four auxiliary points and obtains the second four\nby subtraction; its two denominator points and logarithms are nonzero.\\\\\n\\nolinkurl{slope} & The normalized twelve-test products in six private\ngroups, their traced inverses, and $\\Phi(R/\\Theta^2)$ from\nSection~\\ref{sec:mult}, with all contact and denominator guards.\\\\\n\\nolinkurl{height_certificate} & The 27 slopes summing in triples to\nthe nine homogeneous coordinate quantities in that section, together\nwith membership of the three input points.\\\\\n\\nolinkurl{multiply.scalar}, \\nolinkurl{multiply.guard},\n\\nolinkurl{multiply} & The fixed $[c_*]$ graph; the inverse of the\nfinite false-triple product; and their conjunction with the height\ncertificate at the fixed $\\ell_0$.\\\\\n\\nolinkurl{natural} & Four model squares, formed by multiplication,\nwhose sum is the input code, as in Section~\\ref{sec:compiler}.\\\\\n\\nolinkurl{value.signed_encode} & $N=\\iota(n)$ and a natural code\n$C=\\iota(c)$ with $n=c/2$ for even $c$, and $n=-(c+1)/2$ for odd\n$c$. The two branches use $c=2q$ and $c=2q+1$ with $q\\ge0$.\\\\\n\\nolinkurl{value.abs} & $a=|x|$: $a$ is a sum of four rational\nsquares and $a^2=x^2$.\\\\\n\\nolinkurl{value.close_coordinates} & The strict coordinate window\nof Section~\\ref{sec:bridge}, using the typed points $A,L,J$,\n$r=\\operatorname{Tr}(z(J)/z(A))/2$ and\n$\\epsilon=|(z(L))_0|+|(z(L))_1|>0$, with $|t-r|<\\epsilon$.\nThis template alone does not assert the precision relation.\\\\\n\\nolinkurl{value.test} & Exactly $\\Test(N,\\kappa,t)$ of\nSection~\\ref{sec:bridge}: $C_1=[\\kappa n]P_0$,\n$V_0=H-\\kappa P_0$, $V_1=U-C_1$, the six displayed raw-$z$ tests,\ntheir normalization by $F(t)$, and the single guarded pole input.\nThese ratios use $z$, not $L$.\\\\\n\\nolinkurl{value.exceptions} & The six branches\n$N=\\iota(c)$ and $t=c$, $c\\in\\Cset$, with the constant points\ncomputed by the fixed group-law chains.\\\\\n\\nolinkurl{scalar.integer_constant_}\\,$i$ & The fixed integer\nscalar graph requested by the translated precision computation.\\\\\n\\bottomrule\n\\end{longtable}\n\nThe composition recipes make the remaining identifications explicit.\n\\texttt{power\\_value} translates the source power template with its\nthree input codes and output code; \\texttt{precision} translates\nthe five-natural-input precision polynomial, in the order\n$(n,\\kappa,a,\\ell,j)$ after signed encoding. The recipe\n\\texttt{close} introduces $A,L,J$, forms those five signed encodings,\nconjoins \\texttt{precision}, and calls\n\\nolinkurl{value.close_coordinates}. Thus it is the full $\\Close$.\nThe recipe \\texttt{main} introduces one shared $\\kappa$ and conjoins\n\\texttt{close} and \\nolinkurl{value.test} at exactly that same code.\nThe product recipe \\texttt{value\\_union} joins this branch with\n\\nolinkurl{value.exceptions}; \\texttt{value} also imposes\n\\texttt{member} on $N$. Finally \\texttt{integers} existentially\nintroduces $N$ and calls \\texttt{value} with external coordinate\n$t=X_0$. These are precisely $\\Val$ and its input projection.\nThe ordered calls and private ranges are checked by\n\\nolinkurl{auditOrdinaryIntegerPolynomial} in\n\\nolinkurl{construction/ordinary-integer-polynomial.js}.\n\\nolinkurl{scripts/check_construction.py} regenerates the saved\nexpression byte for byte. The dictionary supplies the mathematical\nidentification; those finite checks verify the stored syntax and\nwiring, not the arithmetic theorems used to prove the predicates.\n\nThe following parameter and witness counts are extracted from the exact"
+    },
+    {
+      "issue_item": "1,4,7,8",
+      "old": "\\bibitem{mazur1995}",
+      "new": "\\bibitem{mazur1992} B. Mazur,\n\\emph{The topology of rational points}, Experimental Mathematics 1\n(1992), 35--45.\n\\url{https://doi.org/10.1080/10586458.1992.10504244}.\n\\bibitem{robinson1949} J. Robinson,\n\\emph{Definability and decision problems in arithmetic},\nJournal of Symbolic Logic 14 (1949), 98--114, Theorem 3.1.\n\\url{https://doi.org/10.2307/2266510}.\n\\bibitem{poonen2009} B. Poonen,\n\\emph{Characterizing integers among rational numbers with a\nuniversal-existential formula}, American Journal of Mathematics 131\n(2009), 675--682, Theorems 3.1 and 4.1. Author version with the April 2019\ncorrection to Lemma 2.3.\n\\url{https://math.mit.edu/~poonen/papers/ae.pdf}.\n\\bibitem{kato1999} K. Kato,\n\\emph{Euler systems, Iwasawa theory, and Selmer groups},\nKodai Mathematical Journal 22 (1999), 313--372,\nSection 0.6, Example 0.6.2 and Theorem 0.8, pp.~317--318.\n\\url{https://doi.org/10.2996/kmj/1138044090}.\n\\bibitem{openaipointwise} OpenAI,\n\\emph{A pointwise 2-converse for elliptic curves with rational\ntwo-torsion}, preprint, 7 October 2026, Theorem 1.1; source revision\n\\nolinkurl{4eaee87548250b2682affda7d05d947c05554bae}.\n\\href{https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026/paper.pdf}{Pinned source PDF}.\n\\bibitem{openaigoldfeld} OpenAI,\n\\emph{Goldfeld's analytic density conjecture and the 2-converse\nfor elliptic curves}, preprint, 7 October 2026, Theorem 1.1;\nsame frozen source revision.\n\\href{https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026/paper.pdf}{Pinned source PDF}.\n\\bibitem{mazur1995}"
+    },
+    {
+      "issue_item": "format",
+      "old": " B=B_{\\{p\\}}=\\frac{(U_p-\\eta(p)V_p)g}{2},\\qquad\n b_1=B[1]=\\frac{a(p)}2,\\quad b_p=B[p],\\qquad\n H=H_{\\{p\\}}=\\frac{B-b_1\\Theta_1-b_p\\Theta_{\\{p\\}}}{2}.",
+      "new": "\\begin{gathered}\n B=B_{\\{p\\}}=\\frac{(U_p-\\eta(p)V_p)g}{2},\\qquad\n b_1=B[1]=\\frac{a(p)}2,\\quad b_p=B[p],\\\\\n H=H_{\\{p\\}}=\\frac{B-b_1\\Theta_1-b_p\\Theta_{\\{p\\}}}{2}.\n\\end{gathered}"
+    },
+    {
+      "issue_item": "format",
+      "old": "The files \\nolinkurl{quartics/quartic-523-symbolic-coefficients.json}\nand \\nolinkurl{quartics/quartic-540-fully-expanded.txt} give the complete\ntables. Their SHA-256 digests, respectively, are",
+      "new": "The complete tables are in the files\n\\begin{center}\\small\n\\nolinkurl{quartics/quartic-523-symbolic-coefficients.json}\\\\\n\\nolinkurl{quartics/quartic-540-fully-expanded.txt}.\n\\end{center}\nTheir SHA-256 digests, respectively, are"
+    }
+  ],
+  "polynomial_data_changed": false
+}

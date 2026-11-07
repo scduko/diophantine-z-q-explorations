@@ -1,0 +1,225 @@
+{
+  "date": "2026-11-07",
+  "review": "Source-level internal audit; not external peer review or a Lean proof.",
+  "source": {
+    "id": "silverman",
+    "edition": "Second edition, Springer 2009",
+    "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+    "bytes": 3658085,
+    "source_record": "docs/theorem-application-audit/sources.json",
+    "source_version_caveat": "Existing errata qualification retained; the precise cited statements and proofs were inspected again for this integration."
+  },
+  "applications": [
+    {
+      "id": "V9-FORMAL-NEIGHBORHOOD",
+      "label": "v9:lem:product",
+      "source_location": "Chapter IV, Sections 1-3; Proposition VII.2.2, p.191 (proof only for the nonminimal-model extension)",
+      "hypotheses": "Integral Weierstrass coefficients over the complete DVR of K_v. The formal power series at infinity converges on the maximal ideal.",
+      "conventions": "Use z=-x/y and w=-1/y. For the fixed integral short model x=z^-2 times a unit, y=-z^-3 times a unit; hence v(x)<0 iff the point belongs to this formal neighborhood.",
+      "translation": "At 2 no minimal-model theorem is invoked. The integral formal group gives a subgroup directly. It is open, so compactness of the projective curve gives finite index."
+    },
+    {
+      "id": "V9-NONSINGULAR-SUBGROUP",
+      "label": "v9:lem:product",
+      "source_location": "Proposition VII.2.1, pp.188-190",
+      "hypotheses": "At d=(3-sqrt2), residue field F7; integral model is minimal since v(a4)=2<4, and P reduces to nonsingular (1,6).",
+      "conventions": "E0 is preimage of the nonsingular locus under reduction of the minimal equation; its image is a group. Thus all multiples of P stay in E0.",
+      "translation": "Uses subgroup closure only, not an isomorphism E(K_v)=E_ns(F7). Positive x-valuation would reduce to singular (0,0)."
+    },
+    {
+      "id": "V9-HASSE-SEPARATION",
+      "label": "v9:lem:separation",
+      "source_location": "Theorem V.1.1, p.138",
+      "hypotheses": "The selected odd primes are split good-reduction primes, so the opposite reduced curve is elliptic over F_p, not F_(p^2).",
+      "conventions": "d_+(p) counts all F_p-points including infinity. |d_+(p)-(p+1)|<=2sqrt(p).",
+      "translation": "Uniform absolute bound with q=p; full rational two-torsion gives4|d_+(p). The integer divisibility argument uses both this and N^(2/3) separation."
+    },
+    {
+      "id": "V9-LOG-DEPTH",
+      "label": "subsec:v9-deep-completeness",
+      "source_location": "Proposition IV.5.5; Lemma IV.6.3; Theorem IV.6.4, pp.129-132",
+      "hypotheses": "K_v/Q_p unramified, p>76176, v(p)=1, formal depth r>=1>1/(p-1).",
+      "conventions": "log_E is normalized by linear coefficient1, preserves v(z), and is a homomorphism to addition on this disc.",
+      "translation": "Multiplication by p^19 increases v(log_E) and therefore v(z) by19. The 4r error and G9 tail are separately proved from the manuscript recurrence, not asserted by Silverman."
+    }
+  ],
+  "new_derivations": [
+    {
+      "label": "thm:v9-quartics",
+      "dependencies": [
+        "subsec:v9-finite",
+        "subsec:v9-soundness",
+        "subsec:v9-completeness",
+        "subsec:v9-local-depth",
+        "subsec:v9-deep-completeness"
+      ],
+      "check": "Final composition of arithmetic soundness, completeness, and exact projection-preserving compilation."
+    },
+    {
+      "label": "subsec:v9-inputs",
+      "dependencies": [
+        "subsec:v5-point-source",
+        "lem:v5-point-domains",
+        "eq:o8-indexheight",
+        "thm:quartic-height19",
+        "hyp:o8-pole",
+        "lem:original-seven-simultaneous-realization",
+        "lem:v5-one-place",
+        "v5:scalar32-bridge",
+        "lem:v5-three-witness-anchor",
+        "lem:v5-unramified-log",
+        "lem:quartic-reciprocal-log",
+        "thm:v5-simultaneous-primes",
+        "lem:v5-two-reductions",
+        "prop:v5-artin-patterns",
+        "subsec:v5-diagonal",
+        "v5:real-progression-bridge",
+        "lem:o8-lucas"
+      ],
+      "check": "Exact field, generator, valuation, height, scalar and prime conventions. The normalized generator is P_*."
+    },
+    {
+      "label": "lem:v9-bridge",
+      "dependencies": [
+        "subsec:v5-point-source",
+        "lem:v5-two-anchors",
+        "lem:v5-unramified-log",
+        "lem:quartic-reciprocal-log",
+        "thm:v5-simultaneous-primes",
+        "lem:v5-two-reductions",
+        "v5:real-progression-bridge",
+        "lem:v5-three-witness-anchor",
+        "subsec:o8-anchor-subgroup",
+        "v5:scalar32-bridge",
+        "thm:quartic-height19"
+      ],
+      "check": "Targets are already doubles. Use image orders d/4 and h,h-1. Recompute anchor with C=3^(2^25), not the previous C."
+    },
+    {
+      "label": "v9chart:lem:squares",
+      "dependencies": [],
+      "check": "Direct norm-Euclidean and unit-sign proof; integral valuations at 2 and 7, -4 nonsquare modulo 7."
+    },
+    {
+      "label": "v9chart:prop:chart",
+      "dependencies": [
+        "v9chart:lem:squares",
+        "lem:v5-point-domains"
+      ],
+      "check": "Both rational projections agree, with all nonzero factors justified before cancellation."
+    },
+    {
+      "label": "v9:lem:product",
+      "dependencies": [
+        "subsec:v5-point-source"
+      ],
+      "check": "Common weak valuation signs at each place; product remains in K, never replaced by its norm."
+    },
+    {
+      "label": "v9:cor:scales",
+      "dependencies": [
+        "v9:lem:product",
+        "thm:quartic-height19",
+        "lem:v5-height-transfer",
+        "lem:v5-one-place",
+        "eq:o8-indexheight"
+      ],
+      "check": "Three positive square scales, h(C)<=3T/2+3log(2)/2; retain constant 7H and use exponent19."
+    },
+    {
+      "label": "v9:prop:odd-chart",
+      "dependencies": [
+        "v9chart:prop:chart",
+        "subsec:v5-point-source"
+      ],
+      "check": "Elementary squareclass identity with exceptional cases; epsilon,-1,d independent; exact halfpoint formulas."
+    },
+    {
+      "label": "subsec:v9-soundness",
+      "dependencies": [
+        "lem:v9-bridge",
+        "v9:cor:scales",
+        "subsec:v9-local-depth",
+        "lem:o8-lucas"
+      ],
+      "check": "Order40 on Lucas residual and order12 on input difference give two explicit height contradictions."
+    },
+    {
+      "label": "subsec:v9-completeness",
+      "dependencies": [
+        "lem:v9-bridge",
+        "v9:prop:odd-chart",
+        "v9:cor:scales",
+        "lem:o8-lucas",
+        "v5:scalar32-bridge",
+        "v5:real-progression-bridge",
+        "thm:v5-simultaneous-primes",
+        "lem:original-seven-simultaneous-realization",
+        "thm:v5-source-projection"
+      ],
+      "check": "Choose scalar index divisible6, then odd Lucas roots, scales, fixed modulus, primes and final shared index in that order."
+    },
+    {
+      "label": "subsec:v9-local-depth",
+      "dependencies": [
+        "lem:v5-one-place",
+        "lem:v5-unramified-log",
+        "lem:quartic-reciprocal-log",
+        "lem:v9-bridge"
+      ],
+      "check": "First transfer integrality using a unit denominator; only then infer depth20 and absolute order40 congruences."
+    },
+    {
+      "label": "v9:lem:separation",
+      "dependencies": [
+        "prop:v5-artin-patterns",
+        "subsec:v5-diagonal",
+        "lem:v5-two-reductions"
+      ],
+      "check": "Choose the diagonal slowly, delete w<N^(1/3), retain positive weighted count, and use Hasse plus full two-torsion."
+    },
+    {
+      "label": "subsec:v9-deep-completeness",
+      "dependencies": [
+        "v9:lem:separation",
+        "lem:v9-bridge",
+        "subsec:v9-completeness",
+        "subsec:v9-local-depth",
+        "thm:v5-source-projection",
+        "v5:real-progression-bridge",
+        "lem:original-seven-simultaneous-realization"
+      ],
+      "check": "CRT includes Pi^19; formal logarithm raises depth from1 to20; fixed-order pole estimates still apply."
+    },
+    {
+      "label": "subsec:v9-finite",
+      "dependencies": [
+        "v9chart:prop:chart",
+        "v9:prop:odd-chart",
+        "v9:cor:scales",
+        "lem:v9-bridge",
+        "subsec:v9-local-depth",
+        "subsec:v9-laurent",
+        "subsec:v9-preparation"
+      ],
+      "check": "Pinned builders, compiler/checker, 7/9 exact eliminations, sum of squares, unique17-coordinate constant lift. All integer coefficients explicitly checked."
+    },
+    {
+      "label": "subsec:v9-laurent",
+      "dependencies": [],
+      "check": "Retained norm guard forces nonzero e; Laurent powers and quotients are uniquely determined and give the same order12/40 weights."
+    },
+    {
+      "label": "subsec:v9-preparation",
+      "dependencies": [],
+      "check": "b(T-t^2)=1 and TV=2 enforce nonzero denominators and give exactly the old scalar preparation U=V-b."
+    }
+  ],
+  "unlabelled_derivations": [
+    "Shorter Laurent circuit: e and all denominator powers nonzero by retained norm guard; reversible fixed powers.",
+    "Scalar preparation: b(T-t^2)=1 and TV=2 imply nonzero b,T and exactly U=V-b.",
+    "Coefficient normalization and eliminations: nonzero rational scales, no variable pivots; original input is fixed."
+  ],
+  "inherited_scope": "All 125 existing application families and eight source ledgers retain their frozen scope. Closure here resolves new source dependencies to those existing proof sites; it does not independently re-prove the old arithmetic or the cited literature.",
+  "assumed_new_unpublished_results": []
+}

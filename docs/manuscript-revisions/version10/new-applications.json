@@ -1,0 +1,43 @@
+{
+  "applications": [
+    {
+      "conventions": "Arithmetic Frobenius in P_q, roots/inverse eigenvalues have w=-1. Unipotent lies over Qab.1999 H2_0 kills all inverted local restrictions;2004 j_* H2_0 kills dyadic restriction.",
+      "hypotheses": "p=2; non-CM elliptic V tensor quadratic chi; actual norm-compatible retained system; nontorsion on each rational sign component; height-one prime not containing2; purity w=-1; rank-one real eigenspaces.",
+      "id": "V10-KATO-1999",
+      "labels": [
+        "ex:app-kato-system"
+      ],
+      "locator": "0.6(i)-(iv), Example0.6.2 and Theorem0.8, pp.317-318",
+      "source": "kato1999",
+      "translation": "Open SL2 image over Qab is unchanged by chi. Odd quotient local complexes preserve H1 and identify the two H2_0 kernels, preserving actual class and J. No residual irreducibility or primitive generator required."
+    },
+    {
+      "conventions": "Closure in real topology; ordinary embedded Z.",
+      "hypotheses": "Variety means reduced finite-type scheme over Q, without irreducibility requirement.",
+      "id": "V10-MAZUR-CONJECTURE2",
+      "labels": [
+        "cor:mazur"
+      ],
+      "locator": "Conjectures2-3 p.165; remark p.166",
+      "source": "mazur1995",
+      "translation": "Conjecture2 gives finite simplicial homotopy type, hence finitely many connected components. The same projection construction contradicts it."
+    }
+  ],
+  "assumed_new_unpublished_results": [],
+  "internal_derivations": [
+    "No-dimension-jump determinant specialization",
+    "Nonzero central class forces generic rank1 in calibration",
+    "1999-to2004 odd-local comparison",
+    "Trace valuation contradiction for multiplicative groups",
+    "Complete template/recipe identification",
+    "Off-filter prime scope"
+  ],
+  "new_citation_roles": {
+    "kato1999": "published theorem application",
+    "mazur1992": "historical attribution",
+    "openaigoldfeld": "unpublished provenance, not assumed theorem",
+    "openaipointwise": "unpublished provenance, not assumed theorem",
+    "poonen2009": "historical attribution",
+    "robinson1949": "historical attribution"
+  }
+}

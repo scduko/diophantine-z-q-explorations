@@ -2,8 +2,8 @@
 
 Version 8 is dated November 6, 2026. It uses the requested abstract verbatim and changes the title subtitle from Version 7 to Version 8. The proof body, definitions, theorem statements, references and AI usage statement are unchanged.
 
-- [PDF](../../../manuscripts/quartic_v8.pdf)
-- [TeX](../../../manuscripts/quartic_v8.tex)
+- [PDF](../../../manuscripts/archive/quartic_v8.pdf)
+- [TeX](../../../manuscripts/archive/quartic_v8.tex)
 - [Exact abstract](abstract.tex)
 - [Revision manifest](revision.json)
 - [Version 7 proof inventory](../../quartic-962/README.md)

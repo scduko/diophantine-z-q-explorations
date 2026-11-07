@@ -1,8 +1,8 @@
 # Research guide
 
-The current manuscript is [*Z is Diophantine in Q*, Version 8](../manuscripts/quartic_v8.pdf), dated November 6, 2026, with [TeX source](../manuscripts/quartic_v8.tex). It contains the original large polynomial, the retained [4,973-variable quartic](../quartics/quartic-4973/README.md), and the reconstructed [962-variable quartic](quartic-962/README.md).
+The current manuscript is [*Z is Diophantine in Q*, Version 10](../manuscripts/quartic_v10.pdf), dated November 7, 2026, with [TeX source](../manuscripts/quartic_v10.tex). It retains the [523- and 540-variable quartics](quartic-523-540/README.md) alongside the original construction and earlier proof baselines.
 
-Start with the [Version 7 theorem-application inventory](quartic-962/README.md). It records exact source versions, hypotheses, conventions and manuscript bindings, including the new prime-pattern argument and its publication-status qualifications. The [Version 8 revision check](manuscript-revisions/version8/README.md) verifies that only the abstract and version number changed. The finite polynomial checks and the arithmetic proof have separate scopes. The [build instructions](building.md) explain how to reproduce the artifacts.
+Start with the [Version 10 review response](manuscript-revisions/version10/README.md) and [supplement](../research/version10/README.md), followed by the [Version 9 inventory extension](quartic-523-540/README.md), then its [inherited inventory](quartic-962/README.md). It records exact source versions, hypotheses, conventions and manuscript bindings, including the new prime-pattern argument and its publication-status qualifications. The [Version 9 revision record](quartic-523-540/revision.json) binds the new section and every other edit to the exact Version 8 baseline. The finite polynomial checks and the arithmetic proof have separate scopes. The [build instructions](building.md) explain how to reproduce the artifacts.
 
 The [research handoff guide](../handoff/README.md) identifies the Version 7 full and current-only archives. Both contain the public snapshot and selected research notes, with no conversational transcript. The full archive also embeds the unchanged Version 6 full archive, with its earlier historical baseline.
 
@@ -34,7 +34,7 @@ The archived November 5 TeX source has descriptive labels such as `thm:target`, 
 
 ## Map of the argument
 
-Revision 2 of the November 4 research handoff added the later audit campaigns and the reviewed height replacement. Start with `current/diophantine_zq.tex`, its matching PDF, and `current/height-review.md`. The old height routes do not supply extra premises for Section 4 of that archived manuscript. The archive's revision number is distinct from the current manuscript's title, Version 8.
+Revision 2 of the November 4 research handoff added the later audit campaigns and the reviewed height replacement. Start with `current/diophantine_zq.tex`, its matching PDF, and `current/height-review.md`. The old height routes do not supply extra premises for Section 4 of that archived manuscript. The archive's revision number is distinct from the current manuscript's title, Version 10.
 
 The paths below are **original project-relative paths recorded in the archive manifest**. Search for them in `INDEX.html`, or restore them with `restore_history.py`. They are not paths in this Git checkout. Some files predate the archived November 5 manuscript; compare their scope with that revision and later audits.
 

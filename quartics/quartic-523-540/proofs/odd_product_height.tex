@@ -1,0 +1,129 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\begin{document}
+\title{An exact product-height identity for odd elliptic indices}
+\author{}\date{}\maketitle
+Put $K=\Q(\sqrt2)$, $d=3-\sqrt2$, $D=d^2$, and
+\[
+ E:y^2=x^3-Dx,\qquad
+ P=\left(\frac{57-28\sqrt2}{8},\frac{-660+417\sqrt2}{32}\right).
+\]
+Write $h$ for the absolute logarithmic Weil height. We use the source's
+facts that $P$ has infinite order and belongs to $2E(K)$.
+
+\begin{lemma}\label{lem:oddproduct}
+For any finite list of odd integers $n_1,\ldots,n_r$, one has
+\[
+ h\!\left(\prod_{i=1}^r x([n_i]P)\right)
+ =\sum_{i=1}^r h(x([n_i]P)).
+\]
+\end{lemma}
+\begin{proof}
+Put $T_0=(0,0)$. At every good finite place $v$, let $\bar P$ be the
+reduction of $P$ and let $m$ be its order. For a nonidentity point $Q$,
+$v(x(Q))<0$ means that $Q$ reduces to the identity, whereas
+$v(x(Q))>0$ means that it reduces to $T_0$. The latter has order two.
+If $m$ is odd, no multiple of $\bar P$ can equal $T_0$, so
+$v(x([n_i]P))\le0$ for all $i$. If $m$ is even, an odd multiple of
+$\bar P$ cannot be the identity, so $v(x([n_i]P))\ge0$ for all $i$.
+Thus at a good place all the valuations have the same weak sign.
+
+Here is a formulation which also treats the place above two without
+requiring a smooth reduction model. Let $E_1(K_v)$ be the formal
+subgroup, consisting of the identity and the points with $v(x)<0$.
+It is an open subgroup of finite index. The image of $T_0$ in
+$E(K_v)/E_1(K_v)$ has order two. For $Q\ne O,T_0$, the addition formula is
+\[
+ x(Q+T_0)=-D/x(Q).
+\]
+At every place with $v(D)=0$, positive valuation of $x(Q)$ is therefore
+equivalent to $Q+T_0\in E_1(K_v)$. Apply the preceding order-parity
+argument in the finite quotient $E(K_v)/E_1(K_v)$. It again shows that
+all $v(x([n_i]P))$ have the same weak sign.
+
+The only remaining place is the prime $\mathfrak d=(3-\sqrt2)$ above
+seven. The displayed integral Weierstrass model is minimal there,
+since $v_{\mathfrak d}(-D)=2<4$. Its reduction is the cuspidal cubic
+$y^2=x^3$ over $\mathbf F_7$. The point $P$ reduces to $(1,6)$:
+\[
+ \frac{57-28\cdot3}{8}\equiv1,\qquad
+ \frac{-660+417\cdot3}{32}\equiv6\pmod7.
+\]
+This point is nonsingular. Hence all multiples of $P$ belong to the
+subgroup $E_0(K_{\mathfrak d})$ of points with nonsingular reduction.
+If $v_{\mathfrak d}(x(Q))>0$, the curve equation implies
+$v_{\mathfrak d}(y(Q))>0$, so $Q$ reduces to the singular point $(0,0)$.
+Consequently $v_{\mathfrak d}(x([n_i]P))\le0$ for every $i$.
+This completes the finite-place argument.
+
+At each real embedding, $x([n_i]P)$ is strictly positive because
+$[n_i]P\in2E(K)$. Its ordinate is nonzero. The equation of $E$ then gives
+$x([n_i]P)>d$ at that embedding. Both values $3\pm\sqrt2$ of $d$ exceed
+one. Thus all the real absolute values of these abscissae exceed one.
+
+At a finite place where all valuations have the same weak sign,
+\[
+ \log\max\!\left(1,\left|\prod_i x([n_i]P)\right|_v\right)
+ =\sum_i\log\max(1,|x([n_i]P)|_v).
+\]
+The same identity holds at each real embedding by the preceding
+paragraph. Summing with the usual normalized local weights proves
+the result.
+\end{proof}
+
+\begin{corollary}[Three detector scales]\label{cor:threescales}
+Suppose that the four root points $Q_1,\ldots,Q_4$ in the shared-point
+construction have odd integer indices. Write
+\[
+ C=\prod_{i=1}^4x(Q_i)=C_0+C_1\sqrt2.
+\]
+The nine height-detector scales can be replaced by the three scales
+\[
+ 1,\qquad C_0^2,\qquad(1+C_1^2)^2.
+\]
+Let $\kappa$ be the radical exponent in the chosen source height theorem ($24$ in the historical shared-point source and $19$ in the current refinement). The point-height bound with the original constant $7H$ remains valid.
+The source's simultaneous-prime and pole-completeness construction
+continues to apply to these scales once the root points are fixed.
+\end{corollary}
+\begin{proof}
+The element $C$ is totally positive, so $C_0>0$. Thus the three scales
+are positive nonzero rational squares, exactly as required in the
+completeness argument.
+
+Let $N\ne0$ be an integer divisible by the $k$th power of each of the
+three contact radicals, and put $T=(H+\log3)|N|^{\kappa/k}$. The detector
+height transfer gives
+\[
+ h(\lambda),\ h(C_0^2\lambda),\ h((1+C_1^2)^2\lambda)\le T.
+\]
+Therefore $h(C_0)\le T$ and $h(C_1)\le T/2$, by the same elementary
+rational height identities used for the original fixed scales. Hence
+\[
+ h(C)\le h(C_0)+h(C_1)+\tfrac32\log2
+ \le\tfrac32T+\tfrac32\log2
+ <7H|N|^{\kappa/k}.
+\]
+Lemma~\ref{lem:oddproduct} now gives $h(x(Q_i))\le h(C)$ for every $i$.
+Thus the original bound for each root point holds with the same
+constant. In particular, if $B$ is the largest absolute value of the
+four indices, the original lower bound yields
+$B^2-6<7H|N|^{\kappa/k}$. No numerical constant or anchor enlargement is
+required for this replacement itself.
+
+The source's completeness proof uses the scales only as fixed positive
+rational squares after the root points have been selected. Its contact
+positions, prime avoidance, common slope, and pole witnesses therefore
+apply verbatim to this shorter list.
+\end{proof}
+
+\paragraph{Scope.}
+The oddness of all four indices is essential to this proof. This note
+does not assert that the existing source already enforces it. The
+construction must supply an odd-index version of its Lucas step and
+point predicates. Subject to that separate change, the detector
+replacement above is an unconditional exact height argument.
+\end{document}

@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/elliotglazer/diophantine-z-q",
+  "mainCommit": "5856286a57fba19574a40704571ee70e79738281",
+  "pr4Commit": "772c4adf4a05e21255e4c1784e08e917fda4c68a",
+  "upstreamCompilerCheckerLastRelevantCommit": "a9e834bac43b17e3f8415791f4adbd904f686b9d",
+  "baseline": "Previously supplied 833-variable source before its 13 certified eliminations (846-coordinate upstream-compiled precursor).",
+  "primary": {
+    "package": "final554_571",
+    "compiledPrecursor": 561,
+    "finalSymbolic": 554,
+    "finalOrdinary": 571
+  },
+  "optional": {
+    "package": "final523_540",
+    "compiledPrecursor": 532,
+    "finalSymbolic": 523,
+    "finalOrdinary": 540
+  },
+  "coefficientMetadata": "Builders retain the historical declaration S=3^(2^27). The final packages correct descriptive metadata to the intended S=3^(2^26). Reproduction compares coordinates and residual polynomials formally in S, and documents rather than hides this metadata-only difference.",
+  "asymmetricAdapter": "patches/asymmetric_depth.py is a pure-function adapter of original_asymmetric_driver.py; byte-exact final-builder comparisons verify that it makes the same source edits.",
+  "scope": "Source generation and exact algebraic checks do not prove the number-theoretic characterization of the integers.",
+  "copiedFrom": {
+    "builders/base833-source.cjs": "research/conant-2026-11-06/circuit/laurent_noy_scalar/build_source.cjs",
+    "builders/odd-product-source.cjs": "research/conant-2026-11-06/architecture/odd_product/integrated/build_source.cjs",
+    "builders/odd-product-asymmetric-source.cjs": "research/conant-2026-11-06/architecture/odd_product/integrated_asymmetric/build_source.cjs",
+    "patches/odd_chart.py": "research/conant-2026-11-06/architecture/odd_chart/patch.py",
+    "patches/product_scales.py": "research/conant-2026-11-06/architecture/odd_product/patch_product_scales.py",
+    "patches/odd_scalar.py": "research/conant-2026-11-06/architecture/integer_encoding/odd_scalar_patch.py",
+    "patches/original_asymmetric_driver.py": "research/conant-2026-11-06/architecture/logarithms/build_asymmetric.py",
+    "patches/original_integration_driver.py": "research/conant-2026-11-06/architecture/odd_product/build_integrated.py",
+    "tools/compile_ir.py": "quartics/quartic-962/compiler/compile_ir.py",
+    "tools/checker.cjs": "quartics/quartic-962/checker/checker.cjs",
+    "sources/diophantine_optimization_20261106_v3.tex": "research/conant-2026-11-06/architecture/odd_product/integrated/sources/diophantine_optimization_20261106_v3.tex",
+    "expected/source561.json": "research/conant-2026-11-06/architecture/odd_product/final554_571/source561.json",
+    "expected/source532.json": "research/conant-2026-11-06/architecture/odd_product/final523_540/source532.json"
+  }
+}

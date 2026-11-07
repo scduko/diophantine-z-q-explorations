@@ -1,4 +1,4 @@
-name: Version 8 manuscript and quartic verification
+name: Version 9 manuscript and quartic verification
 
 on:
   workflow_dispatch:
@@ -30,6 +30,8 @@ jobs:
         with:
           node-version: '24.22.1'
       - run: python scripts/check_quartic962.py --out build/quartic-962-reproduction
+      - run: python -B scripts/check_odd_product.py
+      - run: python -B docs/quartic-523-540/inventory.py validate
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
@@ -85,14 +87,14 @@ jobs:
         with:
           path: .cache/tectonic
           key: tectonic-${{ runner.os }}-0.17.0-6ffe055852f8faf66
-      - name: Compile the exact Version 8 manuscript
+      - name: Compile the exact Version 9 manuscript
         run: python scripts/build_paper.py
       - name: Render changed pages for visual review
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y poppler-utils
           ulimit -v 2097152
-          python scripts/render_quartic_review.py --pdf build/paper/quartic_v8.pdf --edition v8 --pages 1-2 --expected-pages 252
+          python scripts/render_quartic_review.py --pdf build/paper/quartic_v9.pdf --edition v9 --pages 1-2,245-259,265 --expected-pages 265
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:

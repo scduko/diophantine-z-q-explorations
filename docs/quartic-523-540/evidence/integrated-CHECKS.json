@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source_rebuilt": true,
+  "final_verifier_runs_per_package": 2,
+  "input_files_unchanged": true,
+  "independent_sparse_ring_check": true,
+  "text_downloads_match": true,
+  "arithmetic_theorem_proved_by_this_script": false
+}

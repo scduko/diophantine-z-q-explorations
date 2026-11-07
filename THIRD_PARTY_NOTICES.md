@@ -9,6 +9,10 @@ Project licensing applies only to original project material. It does not relicen
 - Jonas Bayer, Marco David, Benedikt Stock, Abhik Pal, Yuri Matiyasevich, and Dierk Schleicher, [*Diophantine Equations and the DPRM Theorem*](https://isa-afp.org/entries/DPRM_Theorem.html), Archive of Formal Proofs, June 6, 2022. The entry is distributed under the BSD license linked on its page. The alpha-sequence and exponentiation constructions are credited in the relevant project sources. The curated construction directory does not vendor the Isabelle development.
 - Other mathematical sources for [Version 3](manuscripts/archive/quartic_9625.pdf) are identified in its bibliography and [dependency evidence](docs/quartic-9625/README.md). The October 11 manuscript has its own bibliography. Historical review reports preserve their particular citations and scope.
 
+## Version 9 contribution
+
+Gabriel Conant with ChatGPT supplied the November 7, 2026 odd-product reduction and the November 6 point-chart note. The contributed files in `quartics/quartic-523-540/` preserve their credits. `INTEGRATION.json` identifies the exact source archive and the two verifier repairs. The current manuscript incorporates these arguments and explicitly connects their inherited inputs to its earlier proofs. The original project license does not relicense contributed or cited third-party material.
+
 ## Version 6 sources
 
 The current manuscript credits the collective agentic notes of Stefan Baranczuk, Jose Brox, Gabe Conant, Sohail Farhangi, James Freitag, Elliot Glazer, Jennifer Park, and Caroline Terry. The 962-variable construction continues the independent reconstruction described below, with its own source changes and checks. The degree-four obstruction also follows the public improvements notes. The [Version 6 inventory](docs/quartic-962/README.md) binds each application to its exact source and review scope.

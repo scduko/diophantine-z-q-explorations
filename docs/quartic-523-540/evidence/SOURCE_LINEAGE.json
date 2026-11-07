@@ -1,0 +1,27 @@
+{
+  "commit": "772c4adf4a05e21255e4c1784e08e917fda4c68a",
+  "checked_source_pins": {
+    "docs/quartic-962/evidence/gaussian-four-audit-20261106/baseline.tex": "06f98ff070139c3b6c60589c65867ceb4366b023f7960551abd52f85fa67e30c",
+    "manuscripts/archive/quartic_4973.tex": "d1700d3450e9646422516efc0d37ca657b89b7a10734496d7fc02a2c09b12c34",
+    "quartics/quartic-962/PROOF.md": "afc64705ce7c0d72163a35a4350a20b9293b259e411e99c542427c73d05d8ff2",
+    "quartics/quartic-962/build_source.cjs": "b99b000a57a904328d167a3b3fe9e319e84dc880f03071af9b4face29bc9a570",
+    "quartics/quartic-962/checker/checker.cjs": "50f9924557f0594a0ddb2664260d2e382d80762a0d607d87203fb7ddfb4e1cb1",
+    "quartics/quartic-962/compiler/compile_ir.py": "c50510a5bed8f59543b64a3a2cb251e9aff4b300d4bfc750e13642e7b00eb46f",
+    "quartics/quartic-962/sources/diophantine_optimization_20261106_v3.tex": "fc8bc7b8fae727e24f934ddd7de0a7cff8a005e89c3d0cac1ea14e5191b910ca",
+    "research/combined-comparison/ARITHMETIC.md": "7c884f34800dab12f2e9dffdbc304d7006d9bc78f346b7c8483c1cf51351b351",
+    "research/combined-comparison/REFINEMENTS.md": "6f32f4b0ba0507bd40b3d7a4644df51f4c1d051bc3a105ac66bd433578261299",
+    "research/combined-comparison/explore.py": "8fda22f03e4dcb737fc224393da46484d1c32c1cc0af0dec68ef1939262c9a23",
+    "research/combined-comparison/verify_variants.py": "6f65aea1e4da78d26a2dd9350a9b23b03a23218706b46746b22b1f6a95fec075",
+    "research/overnight-20261106/DIRECT_TARGETS.md": "5b5b0dac1746ecc9b99a06e044d9c07dccbcb32fa11464e626ff9f7e4f85b883",
+    "research/overnight-20261106/unit_target.py": "ae2c1ff50e12ad7b792429071240718b713c68e68e2f6c6cf7b8bc85a1edd487",
+    "research/v6-comparison/INPUTS.json": "0e98db89fa1c1a28080eee908917bce45938a5df89112ae4bf2e99e739981e74",
+    "research/v6-comparison/explore.py": "2d3c0affcf6eeb53cf7d970cabdf7ae1a5f83d7d8368535eaacfd203102fa390"
+  },
+  "compiler_checker_and_tex_byte_identical": {
+    "tools/compile_ir.py": true,
+    "tools/checker.cjs": true,
+    "sources/diophantine_optimization_20261106_v3.tex": true
+  },
+  "direct_target_note_byte_identical": true,
+  "source_diff": "SOURCE_DIFF.txt"
+}

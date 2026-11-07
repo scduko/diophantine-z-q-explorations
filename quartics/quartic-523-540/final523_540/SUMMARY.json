@@ -1,0 +1,30 @@
+{
+  "symbolic523": {
+    "coordinates": 523,
+    "compiledCoordinatesBeforeFreeOmission": 523,
+    "residuals": 492,
+    "activeCoordinates": 523,
+    "ordinaryCoordinateMonomials": 35163,
+    "parameterCoefficientTerms": 35163,
+    "degree": 4,
+    "maxSPower": 2,
+    "integerCoefficients": true,
+    "sIndependentCoefficientGcd": 1,
+    "polynomialSha256": "6a3685980de4512bdc7f3a781d0c0d4b32cce5829ec83f03f318264931bdbbe3",
+    "maximumOrdinaryCoefficientBits": null
+  },
+  "ordinary540": {
+    "coordinates": 540,
+    "compiledCoordinatesBeforeFreeOmission": 540,
+    "residuals": 509,
+    "activeCoordinates": 540,
+    "ordinaryCoordinateMonomials": 35213,
+    "parameterCoefficientTerms": 35213,
+    "degree": 4,
+    "maxSPower": 0,
+    "integerCoefficients": true,
+    "sIndependentCoefficientGcd": 1,
+    "polynomialSha256": "b14e76dda63ea4bb8b012a89a4f052c73e19877b451633df6ee9c198b8d83571",
+    "maximumOrdinaryCoefficientBits": 3247
+  }
+}

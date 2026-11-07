@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-07",
+  "contributor": "Gabriel Conant with ChatGPT",
+  "input_archive_sha256": "fcb169b0fe78b7d8c7badec083f23b543901ae0efa17f9bc38f3025511764141",
+  "repairs": [
+    {
+      "path": "final554_571/verify_elimination.py",
+      "original_sha256": "4a7a8acfbd786a4c805a044341eef9f61d501e5fe519864c18d4b616234ec08a",
+      "repaired_sha256": "0d50fc1a679a9ae6c91f03eb2161a4b092d134c2ed45657156a27da8cd417481"
+    },
+    {
+      "path": "final523_540/verify_elimination.py",
+      "original_sha256": "cf1814a889f9b6822cf6f9f1438dea9a0ee4323ad03b392867ee36265369e7c2",
+      "repaired_sha256": "ea67ec8575c8b4fbea0cd5ccffc60165263537f53d6b12febc99d7d4f974785e"
+    }
+  ],
+  "repair": "Compare computed residuals and certificate receipts with frozen JSON; never overwrite frozen inputs.",
+  "mathematical_data_changed": false,
+  "source_parameter_note": "Historical builder metadata says 3^(2^27); final fixed S is 3^(2^26). Arithmetic anchor justification is in Version 9."
+}

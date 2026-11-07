@@ -1,0 +1,12 @@
+{
+  "schema": "brox-reduction-v1",
+  "inputSha256": "2ff844af7ef4ce8c8a3445da5a7e4a17ab55709100b3f07053279cac4ced214c",
+  "fixedParameter": "S = 3^(2^26)",
+  "operations": [
+    {
+      "kind": "normalize",
+      "residual": 485,
+      "multiplier": "-1"
+    }
+  ]
+}

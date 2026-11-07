@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "baselineCoordinates": 561,
+  "coordinates": 554,
+  "residuals": 523,
+  "eliminated": 7,
+  "maxResidualDegree": 2,
+  "sumOfSquaresDegree": 4,
+  "certificateSha256": "09202f16d0038709d755faf471ba5135dc72a26d3eb1b8ec837c2fb8a588f4f9",
+  "proof": "Exact polynomial identities. Forward: invert each shear, then delete each pivot coordinate. Reverse: reinsert each pivot replacement, then apply each shear, processing operations in reverse order."
+}

@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\title{Height of a product of odd-index abscissae}
+\author{}\date{}\maketitle
+Put $K=\mathbb Q(\sqrt2)$, $d=3-\sqrt2$, $D=d^2$, and
+$E:y^2=x^3-Dx$. Write $h$ for the absolute logarithmic Weil height.
+\begin{proposition}
+Let $P\in E(K)$ and let $n_1,\ldots,n_k$ be odd integers such that
+$P_i=[n_i]P$ is a nonidentity point in $2E(K)$ for each $i$.
+Assume, as in the square-abscissa chart of the construction, that
+$x_i=x(P_i)$ is positive at both real embeddings. Then
+\[
+ \sum_{i=1}^k h(x_i)-(k-1)\log7
+ \ \leq\ h\left(\prod_{i=1}^k x_i\right)
+ \ \leq\ \sum_{i=1}^k h(x_i).
+\]
+In particular the lower error is $3\log7$ for four odd-index points.
+\end{proposition}
+\begin{proof}
+Fix a finite prime $\mathfrak p$ of $K$, and normalize $v=v_{\mathfrak p}$
+to have value group $\mathbb Z$. Since $D$ is integral, the points reducing
+to the point at infinity on the displayed integral Weierstrass equation
+form its formal subgroup
+\[
+ N=\{O\}\cup\{Q\in E(K_{\mathfrak p}):v(x(Q))<0\}.
+\]
+This is valid also at primes of bad reduction: the point at infinity is
+smooth on the integral Weierstrass equation. The subgroup is open, so
+$E(K_{\mathfrak p})/N$ is finite. The point $T=(0,0)$ has order two and
+does not belong to $N$.
+
+Suppose some $v(x_i)<0$. The image of $P$ in the finite quotient then has
+order dividing the odd integer $n_i$, and hence has odd order. No multiple
+of that image can equal the nonzero order-two image of $T$. If
+$v(x_j)>v(D)$, however, the translation identity
+\[
+                x(P_j+T)=-D/x_j
+\]
+would give $P_j+T\in N$, a contradiction. Consequently, if any $v(x_i)$
+is negative, every positive $v(x_j)$ is at most $v(D)$. There are at most
+$k-1$ positive valuations in this case. Thus, for every finite prime,
+\[
+ \max\left(0,-\sum_i v(x_i)\right)
+ \geq \sum_i\max(0,-v(x_i))-(k-1)v(D).
+\]
+If no valuation is negative the same inequality is immediate.
+
+At a real embedding, $x_i>0$ and the curve equation gives
+$x_i(x_i^2-D)\geq0$, so $x_i\geq\sqrt D=d$ in that embedding. Both
+conjugates $3\pm\sqrt2$ of $d$ are greater than one. Therefore the
+archimedean local height of the product is exactly the sum of the
+archimedean local heights. Summing the finite inequalities with weights
+$\frac12\log N\mathfrak p$, and using $N_{K/\mathbb Q}(D)=49$, gives
+\[
+ h\left(\prod_i x_i\right)
+ \geq\sum_i h(x_i)-\frac{k-1}{2}\log49.
+\]
+The upper bound is the usual product inequality for Weil height.
+\end{proof}
+
+\begin{proposition}
+For the construction's fixed point
+\[
+ P_*=(57/8-(7/2)\sqrt2,\,-165/8+(417/32)\sqrt2)
+\]
+and odd nonzero indices as above, one has the exact identity
+\[
+ h\left(\prod_i x([n_i]P_*)\right)=\sum_i h(x([n_i]P_*)).
+\]
+\end{proposition}
+\begin{proof}
+The preceding proof gives local additivity at every finite prime not
+dividing $D$. The only prime dividing $D$ is $(d)$ over seven. The
+Weierstrass equation is minimal there, since its discriminant has
+valuation six. Reducing $\sqrt2$ to three gives
+$P_*\bmod(d)=(1,6)$, a nonsingular point on $y^2=x^3$ over
+$\mathbb F_7$. The nonsingular-reduction subgroup $E_0(K_{(d)})$ therefore
+contains every multiple of $P_*$. If $v_{(d)}(x([n]P_*))>0$, the curve
+equation would also give positive ordinate valuation, and the point
+would reduce to the singular point $(0,0)$. This is impossible. Thus
+all the abscissa valuations at $(d)$ are nonpositive, which again gives
+local additivity. The archimedean additivity was proved above.
+\end{proof}
+
+For $U=\prod_i x_i=u_0+u_1\sqrt2$, the elementary height inequality gives
+\[
+ h(U)\leq h(u_0)+h(u_1)+\tfrac32\log2.
+\]
+Thus the same two-component comparison that bounds the height of one
+elliptic abscissa can bound the sum of all four abscissa heights, with no additive loss for the fixed generator $P_*$. The product is totally positive, so
+$u_0>0$ and the fixed positive scales $u_0^2$ and $(1+u_1^2)^2$ retain
+their domain properties.
+
+The proposition does not assert that arbitrary labels in the current
+construction are odd. A replacement of the index encoding and its
+completeness proof is required before reducing the detector family.
+\end{document}

@@ -1,0 +1,100 @@
+{
+  "issue": "https://github.com/elliotglazer/diophantine-z-q/issues/2",
+  "items": [
+    {
+      "change": "Credit Mazur1992 and the projection observation repeated in1995; explicitly deduce failure of Conjecture2 from failure of Conjecture3.",
+      "labels": [
+        "sec:main",
+        "cor:mazur"
+      ],
+      "number": 1,
+      "status": "addressed",
+      "verification": "Read1995 pp.165-166. A finite simplicial homotopy type has finitely many path components, hence finitely many connected components.1992 metadata checked, original scan not obtained."
+    },
+    {
+      "change": "General Smith-decomposition lemma; prove generic dimensions(1,1) from a lifted nonzero central class before using the central calibration; identify the exact specialized generic coordinate.",
+      "labels": [
+        "lem:v10-determinant-specialization",
+        "ex:arith-central-calibration",
+        "ex:arith-base-zero"
+      ],
+      "number": 2,
+      "status": "addressed",
+      "verification": "A positive t-power disk adds two adjacent central cohomology dimensions. Equal dimensions exclude all such disks. Nonzero retained central class and vanishing outside degrees1,2 force generic kernel rank1 without using calibration or the later determinant lower bound."
+    },
+    {
+      "change": "Credit OpenAI Corollary7.1 for Turing completeness and isolate the stronger many-one direction obtained here.",
+      "labels": [
+        "cor:htp-degree"
+      ],
+      "number": 3,
+      "status": "addressed",
+      "verification": "Inspected pinned preprint pp.56-57, including its explicit limitation on many-one completeness. Reverse reduction is enumeration."
+    },
+    {
+      "change": "Apply published Kato1999 Theorem0.8 away from2, prove stronger G_Qab unipotent hypothesis and cyclotomic absolute irreducibility, and compare1999 full/all-local and2004 j_*/dyadic-local conventions.",
+      "labels": [
+        "sec:rc",
+        "ex:app-kato-system"
+      ],
+      "number": 4,
+      "status": "addressed",
+      "verification": "Published pp.317-318 and2004 p.226 inspected. Odd local quotient complexes have injective differential, preserving H1 and identifying the subscript-zero H2 kernels. Actual retained class and coordinate ideal are unchanged. No Rubin draft or odd-prime Perrin-Riou theorem is assumed."
+    },
+    {
+      "change": "Print conjugated primed ratios and the complete template/recipe dictionary, including guards, shared shift, witness scope, and raw-z versus logarithmic ratios.",
+      "labels": [
+        "sec:mult",
+        "subsec:v10-template-dictionary"
+      ],
+      "number": 5,
+      "status": "addressed",
+      "verification": "Read the four source generator/assembler files and polynomial builder; matched every saved template and all seven recipes. Regeneration checks syntax, not arithmetic truth."
+    },
+    {
+      "change": "Give the delta/alpha argument and trace valuation contradiction, without asserting a group with only unit factors.",
+      "labels": [
+        "sec:mult"
+      ],
+      "number": 6,
+      "status": "addressed",
+      "verification": "For a failed threshold k, alpha+2(k-1)-2k delta <= alpha-2delta; alpha<=delta and odd. Every-group failure gives an odd negative pole. The bounded regression is supplementary, not the proof of the universal inequalities."
+    },
+    {
+      "change": "Local credit to H10 adaptations, bibliographic entries for both converse preprints, exact specialization, source-section map and full commit pin.",
+      "labels": [
+        "sec:model",
+        "sec:height",
+        "sec:pole",
+        "sec:mult",
+        "hyp:RC",
+        "sec:rc",
+        "app:sources"
+      ],
+      "number": 7,
+      "status": "addressed",
+      "verification": "Read exact October6/7 PDFs at4eaee875; rational-two-torsion and full-Selmer-corank conventions match. Height proof described as a replacement within the inherited contact framework."
+    },
+    {
+      "change": "Add Robinson1949, Poonen2009 and Koenigsmann2016 history.",
+      "labels": [
+        "sec:main"
+      ],
+      "number": 8,
+      "status": "addressed",
+      "verification": "Robinson Theorem3.1, Poonen Theorems3.1/4.1 and already pinned Koenigsmann Theorem1/Corollary2. Historical uses only."
+    },
+    {
+      "change": "State the congruence for every fresh good K-split prime, explicitly including primes outside the coefficient filter. Explain that the chosen prime must be outside it.",
+      "labels": [
+        "ex:sec7-ksplit-seed",
+        "ex:app-nonempty-seeds"
+      ],
+      "number": 9,
+      "status": "addressed",
+      "verification": "G.4a sets the off-filter coefficient to zero; p prime partner matches labels so pp-prime lies in the filter; G.4d and final trace computation use that product. Reciprocity shows a nonsquare modulo a divisor of ell."
+    }
+  ],
+  "reviewer": "manvirjaswal",
+  "scope": "Internal source and proof review of the nine specified points. Does not certify the entire manuscript, complete Lean, or claim independent human peer review."
+}
