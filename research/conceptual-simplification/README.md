@@ -21,6 +21,9 @@ separate from the preserved combined-comparison pull-request branch.
 
 Read:
 
+- TWO_ROUTES.md for the latest primitive-divisor and global-defect deductions;
+- TWO_ROUTES_CHECKS.json and check_two_routes.py for their finite checks;
+
 - SHORT_EXISTENTIAL_PROOF.md for the compact theorem architecture;
 - CONCEPTUAL_MAP.md for a blackboard explanation of the current proof;
 - ALTERNATIVE_ROUTES.md for new proof directions and their obstacles;

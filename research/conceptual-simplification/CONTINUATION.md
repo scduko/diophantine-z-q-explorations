@@ -59,3 +59,40 @@ unproductive.
 
 No independent human review is claimed. No pull request, upstream message,
 merge or metadata edit was made from this branch.
+
+## Two-route follow-up, 7 November 2026
+
+Continued the conceptual branch at `55060fe0`, keeping this new study separate
+from PR #4. Read the live contributor instructions and audit protocol and
+inspected `subsec:v9-soundness`, `subsec:v9-local-depth`,
+`v9:lem:separation` and `subsec:v9-deep-completeness` in the Version 10
+addition. This is not a reclassification of an upstream audit item.
+
+New file: `TWO_ROUTES.md`. The primitive-divisor route now has an elementary
+reduction-order/Hasse annihilation criterion: a single sufficiently large
+primitive prime can suffice, so radical growth is not the only possible
+approach. Exact consecutive-place and CRT obstructions show why a generic
+primitive-divisor theorem does not yet replace the common-prime argument.
+The needed next result is a finite index-size certificate plus a compatible
+local comparison; do not conflate arbitrary-large completeness witnesses
+with a constraint valid on every satisfying witness.
+
+The global-defect route yields an exact local binary-norm lemma, but rational
+coefficients cannot give residue anisotropy at inert quadratic places.
+Combining the Lucas and input defects also destroys the independence from
+input height required by the first contradiction. The useful next target
+is a global certificate for the Lucas defect alone. Full elimination of
+all witnesses cannot work: its elimination ideal in Q[X] must be zero.
+
+`check_two_routes.py` passes 163,968 exact local norm cases, 5,184 generalized
+CRT cases, and 198 denominator/reduction-order cases on a separate small
+elliptic-curve fixture. It also checks residue-field counterexamples and
+exact height-exponent bookkeeping. `TWO_ROUTES_CHECKS.json` pins the script,
+notes and reviewed source. These are finite regressions, not independent
+proofs of the universal lemmas or of the main arithmetic theorem. Universal
+lemmas have prose proofs; no independent human review has occurred.
+
+No source polynomial, certificate, production builder, upstream manuscript
+or PR metadata changed. No candidate was promoted and no full polynomial
+replay is claimed for this documentation-only study. The work records one
+completed research pass, not execution between runs.

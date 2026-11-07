@@ -1,0 +1,70 @@
+{
+  "status": "PASS_EXACT_FINITE_REGRESSIONS",
+  "checks": {
+    "binary_norm_rational_cases": 163968,
+    "real_positive_local_cancellation": {
+      "p": 5,
+      "x": 1,
+      "y": 2,
+      "norm": 5
+    },
+    "conjugate_ideal_example": {
+      "norm": 23,
+      "roots_mod_23": [
+        5,
+        18
+      ]
+    },
+    "rational_units_square_in_quadratic_residue_field": [
+      3,
+      5,
+      11,
+      13,
+      19,
+      29
+    ],
+    "generalized_CRT_cases": 5184,
+    "denominator_reduction_order_cases": 198,
+    "primitive_places_in_small_test": [
+      {
+        "index": 2,
+        "prime": 5,
+        "group_size": 6
+      },
+      {
+        "index": 3,
+        "prime": 19,
+        "group_size": 27
+      },
+      {
+        "index": 5,
+        "prime": 29,
+        "group_size": 30
+      },
+      {
+        "index": 6,
+        "prime": 43,
+        "group_size": 36
+      },
+      {
+        "index": 6,
+        "prime": 71,
+        "group_size": 72
+      }
+    ],
+    "packed_height_coefficients": {
+      "margin": "1/10",
+      "log29": "19/8",
+      "h_beta": "19/4"
+    }
+  },
+  "sha256": {
+    "docs/quartic-523-540/addition.tex": "0c9444eac7cb889109cbf6e011667decd0aa7b2dfaf4169e4e01f4dbe4176d1e",
+    "research/conceptual-simplification/TWO_ROUTES.md": "9b2c994253cf8b2c80d6d37230bc5b15b9a9b1ed34c241e07a96891bd29ed7bb",
+    "research/conceptual-simplification/check_two_routes.py": "fae6bfac3a185932e82508efcbf7d0d96cb12a3fc37def0789c04d5d0b613222"
+  },
+  "scope": "Finite regressions and rational exponent identities only; universal deductions are proved in prose.",
+  "main_arithmetic_theorem_verified": false,
+  "independent_human_review": false,
+  "polynomial_changed": false
+}
