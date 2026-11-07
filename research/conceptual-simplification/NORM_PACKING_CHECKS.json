@@ -78,7 +78,7 @@
   "production_candidate": false,
   "independent_human_review": false,
   "sha256": {
-    "research/conceptual-simplification/NORM_PACKING.md": "f06e7516eb56a7998a3a6a49752e13b40c749696aeb46abd26cce36ac2c48870",
+    "research/conceptual-simplification/NORM_PACKING.md": "b4bfb4ebcc741d07dfed701c7ff5ef1d0c25a8235981801cb72e0b3b2009aefd",
     "research/conceptual-simplification/check_norm_packing.py": "20f23aae244facf485db3f0970fa8fbc656288775966d9d98900618674c268c3",
     "manuscripts/quartic_v10.tex": "9559b22cc581346da1b3150fa9b8dfb62cfb048f6aac0b866448ae7ae879ff38"
   }
