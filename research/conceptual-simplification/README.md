@@ -21,6 +21,9 @@ separate from the preserved combined-comparison pull-request branch.
 
 Read:
 
+- TWO_NORM_PACKING.md for the preferred two-precision norm architecture and ray-class flexibility lemma;
+- TWO_NORM_EXPERIMENT.json and experiments/build_two_norm_candidate.py for the exact dense-basis compiler experiment;
+
 - NORM_PACKING.md for a one-defect encoding of all mixed-precision local tests;
 
 - ELEMENTARY_SEPARATION.md for an elementary replacement proof and the largest-label strategy;
