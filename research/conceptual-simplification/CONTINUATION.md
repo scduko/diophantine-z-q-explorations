@@ -122,3 +122,38 @@ Exact finite checks: 131,030 abstract group-order cases, 588 finite-field
 curves, and 9,985 integer bound cases; receipts pin notes and source.
 Prose proves the separation lemma; the replacement source remains conditional.
 No independent human review, new polynomial, manuscript edit or PR action.
+
+## Cyclotomic norm-packing follow-up
+
+`NORM_PACKING.md` gives a structural alternative to the symmetric local-test
+aggregation. The nine K-valued order-one tests and seven K-valued order-40
+tests can be kept over K and packed by a degree-16 extension L/K. Its norm
+is one K-valued order-640 test, with exact detector normalization after
+powers of the already guarded delta inverse. Local equivalence holds at
+inert unramified contact primes, and the construction preserves the proof's
+necessary two-stage Lucas-then-input contradiction. The earlier attempt to
+pack 32 rational coordinates is rejected: divisibility at one split K-place
+does not imply componentwise rational divisibility.
+
+A simpler explicit inertness construction supersedes the initial Gaussian
+ray-class idea: let F be the degree-16 subfield of Q(zeta_97) and take
+L=KF. It is disjoint from K, and primes congruent to 5 modulo 97 are inert
+because 5 has order 96 and order 16 in the relevant quotient. The Gaussian
+class 1+2i modulo 97 has norm 5 and leaves the two reduced group orders
+congruent to 4 and 8, so it remains compatible with their required avoidance.
+The conductor-17 attempt is rejected because a primitive class modulo 17 is
+a nonsquare, conflicting with the existing Q_17 pole-completeness condition.
+Compatibility with the complete prime-pattern application, exceptional-prime approximation,
+and source-level quotient gates has not been checked. The existing one-place
+lemma already proves soundness for the single order-640 test, and its local
+completeness residue calculation survives. Chevalley--Warning shows that
+degree 16 is minimal for any homogeneous one-scalar packer of sixteen
+independent residues. The cyclic degree-16 norm also admits a four-step
+quadratic-tower definition, avoiding an expanded determinant in the
+existential proof.
+
+Finite checks cover norm anisotropy in degrees 2 through 8, 3,125 mixed
+valuation patterns, the exact detector exponents, and the residue arithmetic
+modulo 97. An integral basis exists for the fixed field but has not been
+chosen and encoded as a norm circuit. This is not a production candidate: no compiler
+run or polynomial replay is claimed. No independent human review has occurred.
