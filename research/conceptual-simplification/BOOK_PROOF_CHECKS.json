@@ -1,0 +1,71 @@
+{
+  "status": "pass",
+  "scope": "finite regression; not a proof of the finite-contact lemma",
+  "lucas_parameters_checked": [
+    7,
+    41
+  ],
+  "congruences": [
+    "U_k = k mod (A-2)",
+    "U_k = (-1)^(k-1) k mod (A+2)"
+  ],
+  "completeness_samples": [
+    {
+      "a": 7,
+      "k": 10,
+      "b_bits": 23,
+      "t_bits": 28
+    },
+    {
+      "a": 13,
+      "k": 22,
+      "b_bits": 75,
+      "t_bits": 82
+    },
+    {
+      "a": 19,
+      "k": 34,
+      "b_bits": 136,
+      "t_bits": 145
+    },
+    {
+      "a": 25,
+      "k": 46,
+      "b_bits": 205,
+      "t_bits": 214
+    },
+    {
+      "a": 31,
+      "k": 58,
+      "b_bits": 278,
+      "t_bits": 288
+    },
+    {
+      "a": 37,
+      "k": 70,
+      "b_bits": 355,
+      "t_bits": 365
+    }
+  ],
+  "negative_label_samples": [
+    {
+      "a": -7,
+      "k": 9,
+      "b_bits": 20,
+      "t_bits": 26
+    },
+    {
+      "a": -19,
+      "k": 21,
+      "b_bits": 81,
+      "t_bits": 90
+    },
+    {
+      "a": -41,
+      "k": 43,
+      "b_bits": 220,
+      "t_bits": 231
+    }
+  ],
+  "final_gap": "(31/200)A < A-3 checked for integers 4 <= A < 10000; exact algebra gives A > 600/169"
+}
