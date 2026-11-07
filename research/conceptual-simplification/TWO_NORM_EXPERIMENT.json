@@ -1,0 +1,45 @@
+{
+  "status": "PASS_EXACT_ALGEBRA_REJECTED_FOR_BALANCED_RECORD",
+  "date": "2026-11-07",
+  "candidate": {
+    "raw_coordinates": 525,
+    "raw_residuals": 494,
+    "raw_gates": 443,
+    "compiled_coordinates": 517,
+    "compiled_residuals": 486,
+    "active_coordinates": 517,
+    "degree": 4,
+    "monomials": 451149,
+    "primitive_content": 1,
+    "maximum_formal_coefficient": "64*S^2",
+    "compiler_eliminations": 8,
+    "compiler_certificate_passed": true,
+    "independent_checker_passed": true
+  },
+  "baseline_precursor": {
+    "compiled_coordinates": 532,
+    "compiled_residuals": 501,
+    "degree": 4,
+    "monomials": 34248
+  },
+  "differences": {
+    "compiled_coordinates": -15,
+    "compiled_residuals": -15,
+    "monomials": 416901,
+    "monomial_ratio": 13.172681616445777
+  },
+  "assessment": "A genuine variable reduction and conceptual simplification, but the dense period-basis multiplication is not competitive for the balanced variable/monomial record. Preserve as a minimum-variable and sparse-basis research branch; do not promote to production.",
+  "scope": "Exact builder gates, compiler certificate, sum-of-squares polynomial and independent algebra replay. Arithmetic incorporation still requires exceptional-prime and reverse-map review; no independent human mathematical review.",
+  "final_source_specific_eliminations_run": false,
+  "production_candidate": false,
+  "independent_human_review": false,
+  "sha256": {
+    "generator_script": "31659b424ec39e0e757f6165741684386ccff9bd483ffda3e46e7353e7815e37",
+    "generated_builder": "0c011429b458bdbb8d706641aba6b9a27d3579da122a279f8ab8ee7869f2afb7",
+    "raw_translated_ir": "19d5497e88ef2f97a8220b26eddf134ff85b4e5dc04ac6863d4290bece6c8d3e",
+    "compiled_ir": "3c4a6510b2273a521c46ec10720c7825a74be8c29e98036c175ed14bbf4a7c07",
+    "polynomial": "bc42886c112b426056e93f1f789cfa7dcaa2cbeb5924c2ff36a0f0f755a0212a",
+    "reduction_certificate": "daba57a7eb5a891abff1a94a304bd3f527e4c987c865afdfd32cf3597be4a267",
+    "independent_check": "7bd3d125b087f483ac3540f23eaad1494580796ce15e7a19adfa6b155a4b8c6e"
+  }
+}
