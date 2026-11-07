@@ -21,6 +21,9 @@ separate from the preserved combined-comparison pull-request branch.
 
 Read:
 
+- PROOF_FROM_THE_BOOK.md for the norm-one amplifier, finite-contact lemma and two-gap proof;
+- BOOK_PROOF_CHECKS.json and check_book_proof.py for exact finite checks of the elementary layer;
+
 - TWO_NORM_PACKING.md for the preferred two-precision norm architecture and ray-class flexibility lemma;
 - TWO_NORM_EXPERIMENT.json and experiments/build_two_norm_candidate.py for the exact dense-basis compiler experiment;
 
