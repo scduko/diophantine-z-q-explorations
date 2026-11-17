@@ -1,0 +1,16 @@
+=== PR checker: check_graft (exit status recorded as 0)
+  "status": "PASS",
+=== PR checker: check_arithmetic (exit status recorded as 0)
+  "status": "PASS",
+=== PR checker: check (exit status recorded as 0)
+  "status": "PASS",
+  "monomials": 3312,
+  "bytes": 74007,
+=== PR checker: measure_plain_text (exit status recorded as 0)
+  "monomials": 3312,
+  "bytes": 74007,
+  "within_limit": true,
+=== PR checker: check_independent (exit status recorded as 0)
+  "status": "PASS",
+  "monomials": 3312,
+  "within_limit": true,

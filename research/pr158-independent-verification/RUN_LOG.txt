@@ -1,0 +1,147 @@
+inputs exported to WORK
+ok  195 table hash (paper §1 digest)
+ok  195 table == upstream main Version 19 quadratic-family.json
+ok  195 transformation == upstream main Version 19 transformation.json
+ok  229 source hash == transformation.json pin
+ok  229 source == Brox@7501669 explicit229_v62/quadratic.json
+ok  graft.json == Brox@7501669 copy
+ok  contact-change.json == Brox@7501669 copy
+ok  upstream/explicit-record-README.md == upstream main
+ok  upstream/measure_plain_text.py == upstream main
+ok  table sizes
+ok  row ids contiguous
+ok  input coordinate is 1 in both
+ok  parameter powers in {0,1}
+ok  first 195 coordinate names unchanged
+ok  second-detector local coordinates == {7..10} u {86..99} u {134..149} (paper §1)  [34 coordinates]
+ok  copies are x196..x229 in increasing order
+ok  new stored argument is x200 = copy of x86
+ok  copied guard coordinates are x204, x205
+ok  copied coordinate names: detector index replaced by 2
+ok  graft.json coordinate map agrees
+ok  only x86 is used outside the detector-1 rows, and only by row 175
+ok  rows 1..174 identical to the 195 table except the six contact rows  [[22, 24, 25, 34, 36, 37]]
+ok  contact-change.json lists the same changed rows (+ copies)
+ok  31 detector-1 rows
+ok  row 176 is the coordinate-mapped copy of row 34
+ok  row 177 is the coordinate-mapped copy of row 35
+ok  row 178 is the coordinate-mapped copy of row 36
+ok  row 179 is the coordinate-mapped copy of row 37
+ok  row 180 is the coordinate-mapped copy of row 38
+ok  row 181 is the coordinate-mapped copy of row 39
+ok  row 182 is the coordinate-mapped copy of row 40
+ok  row 183 is the coordinate-mapped copy of row 41
+ok  row 184 is the coordinate-mapped copy of row 42
+ok  row 185 is the coordinate-mapped copy of row 43
+ok  row 186 is the coordinate-mapped copy of row 44
+ok  row 187 is the coordinate-mapped copy of row 45
+ok  row 188 is the coordinate-mapped copy of row 46
+ok  row 189 is the coordinate-mapped copy of row 83
+ok  row 190 is the coordinate-mapped copy of row 84
+ok  row 191 is the coordinate-mapped copy of row 85
+ok  row 192 is the coordinate-mapped copy of row 86
+ok  row 193 is the coordinate-mapped copy of row 87
+ok  row 194 is the coordinate-mapped copy of row 88
+ok  row 195 is the coordinate-mapped copy of row 89
+ok  row 196 is the coordinate-mapped copy of row 90
+ok  row 197 is the coordinate-mapped copy of row 91
+ok  row 198 is the coordinate-mapped copy of row 92
+ok  row 199 is the coordinate-mapped copy of row 93
+ok  row 200 is the coordinate-mapped copy of row 94
+ok  row 201 is the coordinate-mapped copy of row 95
+ok  row 202 is the coordinate-mapped copy of row 96
+ok  row 203 is the coordinate-mapped copy of row 97
+ok  row 204 is the coordinate-mapped copy of row 98
+ok  row 205 is the coordinate-mapped copy of row 99
+ok  row 206 is the coordinate-mapped copy of row 100
+ok  residual names unique in the 229 table
+ok  ten contacts distinct, diameter 25/11, midpoint 3/22 not a contact
+ok  paired constants 9,196,625,(7175/2399)^2,(175/37)^2
+ok  L*e_j table (paper §3)
+ok  P5((22t-3)^2) = 22^10 prod_theta (t-theta)(t-c+theta)
+ok  detector 0 contactSquare: exactly one row
+ok  detector 0 contactSquare (row 22) = nonzero multiple of the physical equation  [factor -1*{'q': 2}]
+ok  detector 0 contactFourthPower: exactly one row
+ok  detector 0 contactFourthPower (row 23) = nonzero multiple of the physical equation  [factor -1*{'q': 2}]
+ok  detector 0 contactCombination: exactly one row
+ok  detector 0 contactCombination (row 24) = nonzero multiple of the physical equation  [factor -7878870169*{'q': 2}]
+ok  detector 0 contactRelation: exactly one row
+ok  detector 0 contactRelation (row 25) = nonzero multiple of the physical equation  [factor 7878870169*{'q': 2}]
+ok  detector 1 contactSquare: exactly one row
+ok  detector 1 contactSquare (row 34) = nonzero multiple of the physical equation  [factor -1*{'q': 2}]
+ok  detector 1 contactFourthPower: exactly one row
+ok  detector 1 contactFourthPower (row 35) = nonzero multiple of the physical equation  [factor 1*{'q': 2}]
+ok  detector 1 contactCombination: exactly one row
+ok  detector 1 contactCombination (row 36) = nonzero multiple of the physical equation  [factor -7878870169*{'q': 2}]
+ok  detector 1 contactRelation: exactly one row
+ok  detector 1 contactRelation (row 37) = nonzero multiple of the physical equation  [factor -7878870169*{'q': 2}]
+ok  detector 2 contactSquare: exactly one row
+ok  detector 2 contactSquare (row 176) = nonzero multiple of the physical equation  [factor -1*{'q': 2}]
+ok  detector 2 contactFourthPower: exactly one row
+ok  detector 2 contactFourthPower (row 177) = nonzero multiple of the physical equation  [factor 1*{'q': 2}]
+ok  detector 2 contactCombination: exactly one row
+ok  detector 2 contactCombination (row 178) = nonzero multiple of the physical equation  [factor -7878870169*{'q': 2}]
+ok  detector 2 contactRelation: exactly one row
+ok  detector 2 contactRelation (row 179) = nonzero multiple of the physical equation  [factor -7878870169*{'q': 2}]
+ok  guard x77*x78=1 present exactly once  [row [26]]
+ok  guard x90*x91=1 present exactly once  [row [38]]
+ok  guard x204*x205=1 present exactly once  [row [180]]
+ok  195 aggregate row 175 = 2q(x2-x86)+14q^2+A0 (nonzero multiple)
+ok  229 row 175 = 2q(x2-x86)+26q^2+A0 (eq:trace)
+ok  229 row 207 = 2q(x2-2x86+x200)-8q^2+A1 (eq:shift)
+ok  row 175 changes only its q^2 coefficient 14 -> 26
+ok  symbolic sum of squares == Brox's 490 kB polynomial family (assertion omitted by check_graft.py)  [3322 parameter terms]
+ok  fixed parameter C = 149^15
+ok  exponent list lengths; input exponent 0
+ok  paper.tex coordinate-exponent table == transformation.json  [127 nonzero entries]
+ok  paper.tex row-exponent table == transformation.json  [81 nonzero entries]
+ok  quadratic.json: 229 variables, input 1, 207 rows
+ok  every transformed row == quadratic.json (207/207)
+ok  every transformed row integral, primitive, degree <= 2
+ok  unnormalized N=15 quartic: max |coefficient| = 149^32 (thm:source)
+ok  expansion == polynomial.json (every coefficient)
+ok  3,312 monomials; degree 4; content 1; x1^4 coefficient 1
+ok  all 229 variables occur
+ok  max |coefficient| = 149^30 (217 bits)
+ok  monomial support unchanged by the normalization
+ok  independently rendered canonical text == quartic229-N15.txt  [74007 bytes]
+ok  74,007 bytes, strictly below 100,000; SHA-256 as claimed
+
+PASS: 107 checks
+REJECTED | final quadratic coefficient +1 | FAIL: every transformed row == quadratic.json (207/207)
+REJECTED | expanded coefficient +1 | FAIL: expansion == polynomial.json (every coefficient)
+REJECTED | transformation exponent changed | FAIL: paper.tex coordinate-exponent table == transformation.json 127 nonzero entries
+REJECTED | paper row-exponent table edited | FAIL: paper.tex row-exponent table == transformation.json 80 nonzero entries
+REJECTED | literal text: one digit changed | FAIL: independently rendered canonical text == quartic229-N15.txt 74007 bytes
+REJECTED | source table row edited (caught by hash pins) | FAIL: 229 source hash == transformation.json pin
+ok  all Gamma entries prime
+ok  contact denominators, differences and c/2-theta supported in Gamma
+ok  Gamma \ S = {79, 89, 647, 3593} is exactly what the contacts need
+ok  J* = 30366775457346956958330 < 2^75
+ok  c0*C0 < 2^149
+ok  calC = c0 C0 J*^2 E(J*) < 2^300
+ok  prod_{p<=1000, p not in Gamma} (1+1/p) < 21/10
+ok  p log p > 6006 for every prime p > 1000 (smallest is 1009)
+ok  inverse maps: height constants 3 and 33 (max row l1-norms)
+ok  coarse bound: 1 + 75 log 2 < 54 < 4*22
+ok  121 sqrt(21/10) 14^(1/3+1/36036) < 500
+ok  log J* + (1/6) log 14 < 53
+ok  exponent: 2 - 4(1/3+1/36036) = (2/3)(1-1/6006)
+ok  L_15 = floor(9(2N-1)/4)+1 = 66
+ok  decisive comparison at s = 66 log 149: 220.136979 > 219.768870 (margin 0.3681)
+ok  stated rational bounds: 220*6005/6006 > 219.963 and 25/4 + 300*173287/250000 + 45/8 = 219.8194
+ok  those rational bounds are valid: log149 in (5, 5.01), log 500 < 25/4, log 2 < 173287/250000, log 274 < 45/8, 53+44*5.01 < 274
+ok  f(s) = exp(a s)/(53 + 2s/3) increasing for s >= 0 (a*53 > 2/3)
+ok  484 * 529 = 256036
+ok  (23/22) log(256036 * 2^304) < 240
+ok  149^66 > 2^239, 149^66 > 600, log(149^66) > 330
+ok  (c-6)*330 > 320c + 240 for c >= 149^66 (so s > 320 c_a > 240 + c_a)
+ok  B_S = 1857890364330
+ok  H4.2 scalar constant c0 C0 B_S^2 E(B_S) log B_S < 2^237
+ok  |Delta| <= 14 B^4 for all B >= 1, where |a|,|t|,|b| <= B: 14B^4 - g(B) = 12B^4-2B^3-3B^2-1, = 6 at B=1, increasing on B >= 1
+PASS: 25 checks
+ALL PASS
+
+real	0m14.788s
+user	0m8.712s
+sys	0m1.435s
