@@ -1,5 +1,12 @@
 # Shared comparison: a 4,151-variable quartic
 
+> **Retired on 17 November 2026.** This proposal targeted Version 2 (12,504 variables) and is
+> superseded. Upstream Version 6 (962 variables) already proved the needed Gaussian ray-class
+> estimate by the Frei–Tinková method, the same step as Lemma CPO here, and the explicit record
+> is now 247 variables (Version 20), with a 229-variable candidate in upstream PR #158. The
+> complete history is kept on branch `archive/shared-comparison`. Nothing here is proposed
+> upstream.
+
 **Status: proposal.** Not accepted by the Version 2 authors, not refereed by a human, and
 not formally verified. This proposes a **size reduction**, not a correction: nothing here
 asserts an error in Version 2, and no existing file is modified.
